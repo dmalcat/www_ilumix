@@ -78,7 +78,7 @@
     <!-- CSS -->
     {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
     {%- include 'header-css' -%}
-    
+
     <style>*,::after,::before{box-sizing:border-box}body{font-family: var(--font-stack-body);font-weight: var(--font-weight-body);font-style: var(--font-style-body);}h1,h2,h3,h4,h5,h6{font-family: var(--font-stack-header);font-weight: var(--font-weight-header);font-style: var(--font-style-header);}
       {{ header_font | font_face: font_display: 'swap' }}
       {{ section_header_font | font_face: font_display: 'swap' }}
