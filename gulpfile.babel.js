@@ -18,16 +18,6 @@ const outputPath = './assets';
 
 const paths = {
 	styles: {
-		vendor: {
-			main: assetsPath + '/vendor/main.scss',
-			src: assetsPath + '/vendor/**/*.scss',
-			dest: outputPath
-		},
-		document: {
-			main: assetsPath + '/document/main.scss',
-			src: assetsPath + '/document/**/*.scss',
-			dest: outputPath
-		},
 		core: {
 			main: assetsPath + '/core/main.scss',
 			src: assetsPath + '/core/**/*.scss',
@@ -47,37 +37,13 @@ const paths = {
 
 };
 
-export function vendorStyles() {
-	return gulp.src(paths.styles.vendor.main)
-		.pipe(sass())
-		.pipe(cleanCSS())
-		.pipe(rename({
-			basename: '1-vendor',
-			suffix: '.min'
-		}))
-		.pipe(gulp.dest(paths.styles.vendor.dest));
-}
-
-export function documentStyles() {
-	return gulp.src(paths.styles.document.main)
-		.pipe(sourcemaps.init())
-		.pipe(sass())
-		.pipe(cleanCSS())
-		.pipe(rename({
-			basename: '2-document',
-			suffix: '.min'
-		}))
-		.pipe(sourcemaps.write(''))
-		.pipe(gulp.dest(paths.styles.document.dest));
-}
-
 export function coreStyles() {
 	return gulp.src(paths.styles.core.main)
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(cleanCSS())
 		.pipe(rename({
-			basename: '3-core',
+			basename: '1-core',
 			suffix: '.min'
 		}))
 		.pipe(sourcemaps.write(''))
@@ -90,7 +56,7 @@ export function componentStyles() {
 		.pipe(sass())
 		.pipe(cleanCSS())
 		.pipe(rename({
-			basename: '4-components',
+			basename: '2-components',
 			suffix: '.min'
 		}))
 		.pipe(sourcemaps.write(''))
@@ -103,7 +69,7 @@ export function uiStyles() {
 		.pipe(sass())
 		.pipe(cleanCSS())
 		.pipe(rename({
-			basename: '5-ui',
+			basename: '3-ui',
 			suffix: '.min'
 		}))
 		.pipe(sourcemaps.write(''))
@@ -111,8 +77,6 @@ export function uiStyles() {
 }
 
 function watchFiles() {
-	gulp.watch(paths.styles.vendor.src, vendorStyles);
-	gulp.watch(paths.styles.document.src, documentStyles);
 	gulp.watch(paths.styles.core.src, coreStyles);
 	gulp.watch(paths.styles.components.src, componentStyles);
 	gulp.watch(paths.styles.ui.src, uiStyles);
@@ -123,6 +87,6 @@ function watchFiles() {
 
 export { watchFiles as watch };
 
-const build = gulp.series(gulp.parallel(vendorStyles, documentStyles, coreStyles, componentStyles, uiStyles));
+const build = gulp.series(gulp.parallel(coreStyles, componentStyles, uiStyles));
 
 export default build;
