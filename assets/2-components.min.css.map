@@ -1,1 +1,1 @@
-{"version":3,"sources":["content.scss"],"names":[],"mappings":"AAAA,YACI,MAAO","file":"2-components.min.css","sourcesContent":[".link-title {\n    color: white !important;\n}"]}
+{"version":3,"sources":["content.scss"],"names":[],"mappings":"AAAA,MACI,QAAS","file":"2-components.min.css","sourcesContent":[".test {\n    display: none;\n}"]}
