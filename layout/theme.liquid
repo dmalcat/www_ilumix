@@ -78,15 +78,7 @@
     <!-- CSS -->
     {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
     {%- include 'header-css' -%}
-
-    {{ '1-vendor.min.css' | asset_url | stylesheet_tag }}
-    {{ '2-document.min.css' | asset_url | stylesheet_tag }}
-    {{ '3-core.min.css' | asset_url | stylesheet_tag }}
-    {{ '4-components.min.css' | asset_url | stylesheet_tag }}
-    {{ '5-ui.min.css' | asset_url | stylesheet_tag }}
-
     
-
     <style>*,::after,::before{box-sizing:border-box}body{font-family: var(--font-stack-body);font-weight: var(--font-weight-body);font-style: var(--font-style-body);}h1,h2,h3,h4,h5,h6{font-family: var(--font-stack-header);font-weight: var(--font-weight-header);font-style: var(--font-style-header);}
       {{ header_font | font_face: font_display: 'swap' }}
       {{ section_header_font | font_face: font_display: 'swap' }}
