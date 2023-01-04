@@ -1,0 +1,46 @@
+<div class="wishlist">
+    {% if customer %}
+    <a class="header-wishlist" href="/pages/wishlist">
+        <span class="wishlist-icon">{% if settings.heart_cart_icon %}{{ settings.heart_cart_icon }}{% else %}<i class="ti-heart"></i>{% endif %}</span>
+        <span class="wishlist-title">{{ settings.wishlist_title }}</span>
+        <span class="wishlist-counter">{% if wishlist.count %}{{ wishlist.count }}{% else %}0{% endif %}</span>
+    </a>    
+    {% else %}
+    <a class="header-wishlist" href="/account/login">
+        <span class="wishlist-icon">{% if settings.heart_cart_icon %}{{ settings.heart_cart_icon }}{% else %}<i class="ti-heart"></i>{% endif %}</span>
+        <span class="wishlist-title">{{ settings.wishlist_title }}</span>
+        <span class="wishlist-counter">{% if wishlist.count %}{{ wishlist.count }}{% else %}0{% endif %}</span>
+    </a>    
+    {% endif %}
+</div>
+<style>
+    .wishlist{
+        position: relative;
+    }
+    .wishlist a.header-wishlist:hover{
+        color: #fff;
+    }
+    .wishlist a.header-wishlist{
+        color: {{ settings.notification_txt_color }};
+        display: block;
+        position: relative;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1;
+    }
+    .wishlist a.header-wishlist:hover span.wishlist-icon{
+        color: #222;
+    }
+    .wishlist a.header-wishlist span.wishlist-counter{
+        display: none;
+    }
+    .wishlist a.header-wishlist .wishlist-icon{
+        display: none;
+    }
+    @media(max-width: 1199px){
+        .wishlist a.header-wishlist{
+            font-size: 14px;
+        }
+    }
+</style>

@@ -1,0 +1,297 @@
+<!-- banner-area start -->
+<section class="custom-banner">
+    <div class="banner-block">
+        <div class="banner-content">
+            {% if section.settings.video_btn_enable %}
+            <a class="play-button popup-youtube" href="{{ section.settings.banner_bg_button_url }}">
+                <i class="{{ section.settings.content_btn_icon }}"></i>
+            </a>
+            {% endif %}
+            <div class="main-title">
+                <span class="banner-lable">
+                    {{ section.settings.main_title_lable }}
+                </span>
+                <h1 class="banner-title">
+                    <span>{{ section.settings.main_title1 }}</span>
+                    <span>{{ section.settings.main_title2 }}</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner-area end -->
+{% schema %}
+{
+    "name": "Custom Banner",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Section Padding"
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Desktop / Laptop "
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 100
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Ipad"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top_lg",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 60
+        },
+        {
+            "type": "range",
+            "id": "csection_padding_bottom_lg",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Mobile"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top_xs",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom_xs",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Custom Banner1"
+        },
+        {
+            "type": "image_picker",
+            "id": "banner_bg_img",
+            "label": "Banner Image",
+            "info": "Recommended Size: 1920px x 727px"
+        },
+        {
+            "type": "header",
+            "content": "Video Button"
+        },
+        {
+            "type": "checkbox",
+            "id": "video_btn_enable",
+            "label": "Show Video",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "content_btn_icon",
+            "label": "Icon Class",
+            "default": "fa fa-play"
+        },
+        {
+            "type": "url",
+            "id": "banner_bg_button_url",
+            "label": "Button URL"
+        },
+        {
+            "type": "text",
+            "id": "main_title_lable",
+            "label": "Main Title Lable",
+            "default": "Brand presentation"
+        },
+        {
+            "type": "text",
+            "id": "main_title1",
+            "label": "Main Title Lable",
+            "default": "Organic beauty"
+        },
+        {
+            "type": "text",
+            "id": "main_title2",
+            "label": "Main Title Lable",
+            "default": "new products"
+        }
+    ],
+    "presets":[
+        {
+            "name": "Custom Banner",
+            "category": "Banner Grid"
+        }
+    ]
+}
+{% endschema %}
+<style>
+    .custom-banner{
+        padding-top: {{ section.settings.section_padding_top }}px;
+        padding-bottom: {{ section.settings.section_padding_bottom }}px;
+    }
+    @media(max-width: 1199px){
+        .custom-banner{
+            padding-top: {{ section.settings.section_padding_top_lg }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_lg}}px;
+        }
+    }
+    @media(max-width: 767px){
+        .custom-banner{
+            padding-top: {{ section.settings.section_padding_top_xs }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_xs }}px;
+        }
+    }
+    /* magificant css */
+    .custom-banner .banner-block{
+        position: relative;
+        background-image: url({% if section.settings.banner_bg_img %}{{ section.settings.banner_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x727/f7f7f7/999999{% endif %});
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 727px;
+        width: 100%;
+    }
+    .custom-banner .banner-block .banner-content{
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        text-align: center;
+        width: 100%;
+    }
+    .custom-banner .banner-block .banner-content .main-title {
+        margin-top: 35px;
+    }
+    .custom-banner .banner-block .banner-content .main-title span.banner-lable{
+        font-size: 22px;
+        line-height: 1;
+        color: #fff;
+        font-weight: 300;
+    }
+    .custom-banner .banner-block .banner-content .main-title h1.banner-title{
+        color: #fff;
+        font-size: 65px;
+        font-weight: 400;
+        letter-spacing: -2px;
+        line-height: 1.2;
+        margin-top: 50px;
+    }
+    .custom-banner .banner-block .banner-content .main-title h1.banner-title span{
+        display: block;
+    }
+    .custom-banner .banner-block .banner-content .main-title{
+        text-align: center;
+    }
+    .custom-banner .banner-block a.play-button {
+        color: #fff;
+        font-size: 18px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        width: 105px;
+        height: 105px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+    }
+    .custom-banner .mfp-container.mfp-iframe-holder{
+        width: auto;
+        left: 15px;
+        right: 15px;
+    }
+    .custom-banner .mfp-iframe-holder .mfp-close {
+        display: block!important;
+        font-size: 30px;
+        padding: 0;
+        height: auto;
+        width: auto;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        opacity: 1;
+        background-color: transparent!important;
+        line-height: 1;
+    }
+    .custom-banner .mfp-iframe-scaler iframe{
+        border: none;
+    }
+    @media(max-width: 1199px) {
+        .custom-banner .banner-block{
+            height: 530px;
+        }
+        .custom-banner .banner-block .banner-content .main-title h1.banner-title{
+            font-size: 45px;
+            margin-top: 30px;
+        }
+    }
+    @media(max-width: 767px) {
+        .custom-banner .mfp-iframe-holder .mfp-content{
+            max-width: 100%;
+        }
+        .custom-banner .banner-block{
+            height: 427px;
+        }
+        .custom-banner .banner-block a.play-button{
+            width: 70px;
+            height: 70px;
+            font-size: 14px;
+        }
+        .custom-banner .banner-block .banner-content .main-title{
+            margin-top: 20px;
+        }
+        .custom-banner .banner-block .banner-content .main-title span.banner-lable{
+            font-size: 18px;
+        }
+        .custom-banner .banner-block .banner-content .main-title h1.banner-title{
+            margin-top: 15px;
+            font-size: 30px;
+        }
+    }
+</style>
+<script>
+  $(document).ready(function() {
+    $('.play-button, .popup-vimeo, .popup-gmaps').magnificPopup({
+      tClose: 'Close (Esc)',
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+  });
+</script>

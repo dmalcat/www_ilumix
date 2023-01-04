@@ -1,0 +1,350 @@
+<section class="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+          <div class="section-capture">
+            <div class="main-title">
+              <h6>{{ section.settings.section_title }}</h6>
+            </div>
+          </div>
+            <div class="testimonial-slider owl-carousel owl-theme" id="testimonial-slider">
+              {% for block in section.blocks %}
+              <div class="item">
+                <div class="testi-content">
+                  <div class="testi-desc">
+                    <p>{{ block.settings.testi_desc }}</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="quots-img">
+                      <img src="{% if block.settings.quots_img %}{{ block.settings.quots_img | img_url: 'master' }}{% else %}https://dummyimage.com/74x74/f7f7f7/999999{% endif %}">
+                    </span>
+                    <div class="testi-author">
+                      <h6>{{ block.settings.testi_authrname }}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {%- endfor -%}
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $( document ).ready(function() {
+    $('#testimonial-slider').owlCarousel({
+      loop: false,
+      rewind: true,
+      items: 1,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ['<i class=" feather-arrow-left"></i>','<i class="feather-arrow-right"></i>'],
+      {%- if settings.enable_rtl -%}
+      rtl: true
+      {%- endif -%}
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type" : "header",
+      "content" : "Section Padding"
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Desktop / Laptop / tablet"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Ipad pro / Ipad"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_ipad",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_ipad",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_xs",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_xs",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Main Title",
+      "default": "What others say about us"
+    },
+    {
+        "type": "image_picker",
+        "id": "section_title_bg_img",
+        "label": "Title Background Image",
+        "info": "Recommended Size: 213x105px"
+    }
+  ],
+  "blocks" : [
+    {
+      "type" : "store_location",
+      "name" : "Our store",
+      "settings" : [
+        {
+          "type": "textarea",
+          "id": "testi_desc",
+          "label": "Review Content",
+          "default": "Really at the end of the day the only thing you can control is yourself the only person you can truly educate is yourself. You have to redefine what beauty is to you so you can't be affected by what people are saying"
+        },
+        {
+            "type": "image_picker",
+            "id": "quots_img",
+            "label": "Quots Image",
+            "info": "Recommended Size: 74x74px"
+        },
+        {
+          "type": "text",
+          "id": "testi_authrname",
+          "label": "Reviewer Name",
+          "default": "Rolly jonson"
+        }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name": "Testimonials",
+      "category": "Testimonials"
+    }
+  ]
+}
+{% endschema %}
+<style>
+  .testimonial {
+    padding-top: {{ section.settings.section_padding_top }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom }}px;
+  }
+  @media (max-width: 1199px) {
+    .testimonial {
+      padding-top: {{ section.settings.section_padding_top_ipad }}px;
+      padding-bottom: {{ section.settings.section_padding_bottom_ipad }}px;
+    }
+  }
+  @media (max-width: 767px) {
+    .testimonial {
+      padding-top: {{ section.settings.section_padding_top_xs }}px;
+      padding-bottom: {{ section.settings.section_padding_bottom_xs }}px;
+    }
+  }
+  /*section title*/
+  .testimonial .main-title {
+    text-align: center;
+  }
+  .testimonial .main-title h6{
+    position: relative;
+    z-index: 0;
+    color: {{ settings.color_secondary }};
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .testimonial .main-title h6:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-image: url({% if section.settings.section_title_bg_img %}{{ section.settings.section_title_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/213x105/f7f7f7/999999{% endif %});
+    width: 213px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  @media(max-width: 767px){
+    .testimonial .main-title h6:after{
+      width: 140px;
+    }
+  }
+
+  /*list content*/
+  .testimonial .testimonial-slider {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .testimonial .testi-content{
+    text-align: center;
+  }
+  .testimonial .testi-content .testi-desc p{
+    color: #353554;
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    max-width: 62%;
+    margin: 0 auto;
+  }
+  .testimonial .testi-content .testi-info {
+    margin-top: 55px;
+  }
+  .testimonial .testi-content .testi-info span.quots-icon{
+    color: {{ settings.color_primary }};
+    line-height: 1;
+    font-size: 58px;
+    margin-top: 60px;
+  }
+  .testimonial .testi-content .testi-author {
+    margin-top: 12px;
+  }
+  .testimonial .testi-content .testi-author h6{
+    color: {{ settings.color_primary }};
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .testimonial .testi-content .testi-author span.author-name{
+    font-size: 18px;
+    color: #6f6f6f;
+    margin-top: 10px;
+  }
+
+  @media(max-width: 1199px){
+    .testimonial .testi-content .testi-desc p{
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .testimonial .testi-content .testi-info{
+      margin-top: 30px;
+    }
+    .testimonial .testi-content .testi-info span.quots-icon{
+      margin-top: 30px;
+      font-size: 28px;
+    }
+    .testimonial .testi-content .testi-author{
+      margin-top: 15px;
+    }
+    .testimonial .testi-content .testi-author span.author-name{
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    .testimonial .testi-content .testi-author h6{
+      font-size: 14px;
+    }
+  }
+  @media(max-width: 991px){
+    .testimonial .testimonial-slider{
+      width: 100%;
+    }
+    .testimonial .testi-content .testi-desc p{
+      max-width: 80%;
+    }
+  }
+  @media(max-width: 767px){
+    .testimonial .testi-content{
+      width: 100%;
+    }
+    .testimonial .testi-content .testi-desc p {
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 0;
+    }
+  }
+
+  /*slider arrow*/
+  .testimonial .testimonial-slider .owl-nav{
+    margin: 0;
+  }
+  .testimonial .testimonial-slider .owl-nav button.owl-prev,
+  .testimonial .testimonial-slider .owl-nav button.owl-next{
+    position: absolute;
+    bottom: 50%;
+    transform: translate(50%);
+    margin: 0;
+    background: transparent;
+    color: {{ settings.color_secondary }};
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 1;
+  }
+  .testimonial .testimonial-slider .owl-nav button.owl-prev{
+    left: -10px;
+  }
+  .testimonial .testimonial-slider .owl-nav button.owl-next{
+    right: 30px;
+  }
+  @media(max-width: 1199px){
+    .testimonial .testimonial-slider .owl-nav button.owl-prev,
+    .testimonial .testimonial-slider .owl-nav button.owl-next{
+      font-size: 20px;
+    }
+  }
+  @media(max-width: 767px){
+    .testimonial .testimonial-slider .owl-nav{
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,369 @@
+<!-- header-area start -->
+<div class="header-transparent">
+  <div class="header-kaj">
+    <div class="header-area">
+      <div class="header-main-area">
+        <div class="container-fluid header-col">
+          <div class="row">
+            <div class="col">
+              <div class="header-main">
+                <ul class="shop-element mobile-menu-icon">
+                  <li class="side-wrap toggler-wrap">
+                    <button class="navbar-toggler" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                  </li>
+                  </ul>
+                <div class="header-element logo">
+                  {%- include 'company-logo' -%}
+                </div>
+                <div class="header-element megamenu-content">
+                  <div class="main-menu-area">
+                    <nav class="main-navigation navbar-expand-xl">
+                      <div class="box-header">
+                        <button class="close-box" type="button"><i class="ti-close"></i></button>
+                      </div>
+                      <div class="navbar-collapse" id="navbarContent">
+                        <div class="megamenu-content">
+                          <a href="#main-collapse" class="browse-cat" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="ti-menu"></i>
+                            <span>{{ section.settings.header_main_menu_title }}</span>
+                          </a>
+                          <div class="mainwrap collapse" id="main-collapse">
+                            <ul class="main-menu">
+                              {% assign header_main_menu = section.settings.header_main_menu %}
+                              {% for link in linklists[header_main_menu].links %}
+                              {% if linklists[header_main_menu].links != '' %}
+                              {% include 'main-menu' %}
+                              {% endif %}
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+                <div class="header-element right-block-box">
+                  <ul class="shop-element">
+                    <li class="side-wrap search-wrap">
+                      {%- include 'search-bar' -%}
+                    </li>
+                    <li class="side-wrap search-wrap">
+                      {%- include 'store-account-mobile' -%}
+                    </li>
+                    <li class="side-wrap search-wrap">
+                        {% include 'mini-cart' %}
+                    </li>
+                    {% if settings.multi_currency_enable and localization.available_countries.size > 1 %}
+                    <li class="side-wrap currency-wrapper">
+                      
+                      <div class="menu-currency">
+                          {%- include "shop-currency" -%}
+                      </div>
+                    </li>
+                    {%- endif -%}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="main-menu-area">
+              <nav class="main-navigation navbar-expand-xl">
+                <div class="box-header">
+                  <button class="close-box" type="button"><i class="ti-close"></i></button>
+                </div>
+                <div class="navbar-collapse" id="navbarContent">
+              {% comment %}<div class="vegamenu-content">
+                <a href="#vega-collapse" class="browse-cat" data-bs-toggle="collapse" aria-expanded="true">
+                  <i class="ti-menu"></i>
+                  <span>{{ section.settings.header_vega_menu_title }}</span>
+                </a>
+                <div class="vegawrap collapse" id="vega-collapse">
+                  <ul class="vega-menu">
+                    {% assign header_vega_menu = section.settings.header_vega_menu %}
+                    {% for link in linklists[header_vega_menu].links %}
+                      {% if linklists[header_vega_menu].links != '' %}
+                        {% include 'vega-menu' %}
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>{% endcomment %}
+              <div class="megamenu-content">
+                <a href="#main-collapse" class="browse-cat" data-bs-toggle="collapse" aria-expanded="false">
+                  <i class="ti-menu"></i>
+                  <span>{{ section.settings.header_main_menu_title }}</span>
+                </a>
+                <div class="mainwrap collapse show" id="main-collapse">
+                  <ul class="main-menu">
+                    {% assign header_main_menu = section.settings.header_main_menu %}
+                    {% for link in linklists[header_main_menu].links %}
+                    {% if linklists[header_main_menu].links != '' %}
+                    {% include 'main-menu' %}
+                    {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+{% include 'search-modal' %}
+<!-- header-area end -->
+<script>
+  $(window).scroll(function() {
+    var sticky = $(''),
+    scroll = $(window).scrollTop();
+    if (scroll >= 150) {
+      sticky.addClass('is-sticky');
+    }
+    else {
+      sticky.removeClass('is-sticky');
+    }
+  });
+</script>
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+  {
+    "type": "checkbox",
+    "id": "header_transparent",
+    "label": "Header Transparent",
+    "default": true
+  },
+  {
+    "type": "header",
+    "content": "Logo Notice"
+  },
+  {
+    "type": "paragraph",
+    "content": "For logo go to 'Theme Settings' click on 'Company Logo' & set both Header-Footer Logo"
+  },
+  {
+    "type": "header",
+    "content": "Section Background Color"
+  },
+  {
+    "type": "header",
+    "content": "Main Menu"
+  },
+  {
+    "type": "link_list",
+    "id": "header_main_menu",
+    "label": "Select Main Menu"
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Mainmenu title for responsive"
+  },
+  {
+    "type": "text",
+    "id": "header_main_menu_title",
+    "label": "Title",
+    "default": "Menu"
+  },
+  {
+    "type": "header",
+    "content": "Vega Menu"
+  },
+  {
+    "type" : "paragraph",
+    "content" : "For vega menu"
+  },
+  {
+    "type": "link_list",
+    "id": "header_vega_menu",
+    "label": "Select Vega Menu"
+  },  
+  {
+    "type" : "paragraph",
+    "content" : "Vegamenu title"
+  },
+  {
+    "type": "text",
+    "id": "header_vega_menu_title",
+    "label": "Title",
+    "default": "Shop By Categories"
+  }, {
+    "type": "product",
+    "id": "product_1",
+    "label": "Product 1 in megamenu"
+  }, {
+    "type": "product",
+    "id": "product_2",
+    "label": "Product 2 in megamenu"
+  }
+  ]
+}
+{% endschema %}
+<script>
+  {%- if template == 'index' or template == 'product' or template == 'collection' -%}
+  $(window).scroll(function() {
+    var sticky = $('.header-area'),
+    scroll = $(window).scrollTop();
+    if (scroll >= 150) {
+      sticky.addClass('is-sticky');
+    }
+    else {
+      sticky.removeClass('is-sticky');
+    }
+  });
+  {%- endif -%}
+</script>
+<style>
+{%- if section.settings.header_transparent -%}
+.header-transparent{
+  {%- if template == 'index' -%}
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  background-color: transparent;
+  {%- else -%}
+  background-color: #fff;
+  {%- endif -%}
+}
+{%- if template != 'index' -%}
+.header-area{
+  border-top: 1px solid #e2e2e2;
+}
+{%- endif -%}
+{%- endif -%}
+.header-col{
+  padding-right: 45px;
+  padding-left: 45px;
+}
+@media (max-width: 1599px) {
+  .header-col{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-transparent{
+    position: unset;
+    background-color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .header-col{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+/* sticky menu css */
+.is-sticky{
+  position: fixed;
+  top: 0;
+  {%- if settings.enable_rtl -%}
+  right: 0;
+  {%- else -%}
+  left: 0;
+  {%- endif -%}
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  animation: smoothScroll 1s forwards;
+  z-index: 30;
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*curerncy*/
+.menu-currency{
+  position: relative;
+}
+.menu-currency button{
+  color: {{ settings.color_secondary }};
+  position: relative;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.menu-currency ul{
+  position: absolute;
+  right: 0;
+  width: max-content;
+  top: calc(100% - -15px);
+  background-color: #fff;
+  z-index: 3;
+  box-shadow: 0 0 35px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+}
+.menu-currency ul li{
+  padding: 0 15px;
+  margin-top: 10px;
+}
+.menu-currency ul li:first-child{
+  margin-top: 15px;
+}
+.menu-currency ul li:last-child{
+  margin-bottom: 15px;
+}
+.menu-currency ul li.active a{
+  color: {{ settings.color_primary }};
+}
+
+.megamenu-product{
+  height: auto;
+  width: 300px;
+}
+.megamenu-title{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: none;
+    z-index: 3;
+  }
+  .megamenu-buy{
+    position: relative;
+    height: 100%;
+  }
+  .megamenu-buy .megamenu-overlay {
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 27%, rgba(255,255,255,1) 100%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20%;
+    opacity: 0.7;
+}
+.mobile-menu-icon{
+  margin-right:15px;
+}
+@media(min-width:1200px){
+  .mobile-menu-icon{
+    display:none;
+  }
+}
+</style>

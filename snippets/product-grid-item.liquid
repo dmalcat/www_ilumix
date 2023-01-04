@@ -1,0 +1,149 @@
+{%- assign on_sale = false -%}
+{%- if product.compare_at_price > product.price -%}
+{%- assign on_sale = true -%}
+{%- endif -%}
+{%- assign sold_out = true -%}
+{%- if product.available -%}
+{%- assign sold_out = false -%}
+{%- endif -%}
+{%- assign variant = product.selected_or_first_available_variant -%}
+{%- if product.available -%}
+{%- assign func = "Shopify.addItem(" | append: variant.id | append: ", 1)" -%}
+{%- endif -%}
+
+<div class="single-product-wrap {% unless product.available %}stock-out{% endunless %}">
+    {% for t in product.tags %}
+{% if t contains 'novinka' %}     
+  <div class="product-grid__badge badge-text" style="color:#86BAF5">
+    Novinka
+</div>
+{% endif %}
+{% endfor %}
+{% if on_sale %}
+<div class="product-grid__badge badge-text" style="color:#FD1342">
+Akce
+</div>
+{% endif %}
+    <div class="product-image {% unless product.available %}stock-out{% endunless %}">
+        {%- if product.variants.size > 1 -%}
+        <div class="variant-badge"><p>Více variant</p></div>
+        {%- endif -%}
+        <a class="pro-img" href="{{ product.url | within: collection }}">
+            <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '415X560', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
+            <img class="img-fluid img2" src="{{ product.images[1] | img_url: '415X560', crop: 'center' }}" alt="{{ product.images.last.alt | escape }}" />
+        </a>
+        <div class="product-label">
+            {%- include 'product-label' -%}
+        </div>
+        {% if product.available %}
+        <div class="product-action">
+            {% include 'wishlist-button' %}
+            {% if product.available %}
+            <a href="javascript:void(0);" onclick="{{ func }}; return false;" class="add-to-cart ajax-spin-cart cart-mobile">
+                
+                    <span class="cart-title">{% if settings.mini_cart_icon %}{{ settings.mini_cart_icon }}{% else %}<i class="ti-shopping-cart"></i>{% endif %}</span>
+                    
+                    <span class="cart-loading animated infinite rotateOut"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg></span>
+                    <span class="cart-added"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    <span class="cart-unavailable"><i class="ti-alert"></i></span>
+            </a>
+            {% else %}
+            <a class="disabled-add-to-cart add-to-cart disabled" disabled="disabled" href="#" title="Out of stock">{% if settings.mini_cart_icon %}{{ settings.mini_cart_icon }}{% else %}<i class="ti-shopping-cart"></i>{% endif %}</a>
+            {% endif %}
+        </div>
+        {% if product.available %}
+           {%- if product.variants.size > 1 -%}
+           <a href="{{ product.url }}" class="add-to-cart ajax-spin-cart cart-desktop">Zobrazit</a>
+            {%- else -%}
+            <a href="javascript:void(0);" onclick="{{ func }}; return false;" class="add-to-cart ajax-spin-cart cart-desktop">       
+                <span class="cart-loading animated infinite rotateOut"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg></span>
+                <span class="cart-added"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span class="cart-unavailable"><i class="ti-alert"></i></span>
+                <span class="add-to-cart-ti">{{ 'products.product.add_to_cart' | t }}</span>
+            </a>
+            {%- endif -%}
+        {% else %}
+        <a class="disabled-add-to-cart add-to-cart disabled" disabled="disabled" href="#" title="Out of stock">{% if settings.mini_cart_icon %}{{ settings.mini_cart_icon }}{% else %}<i class="ti-shopping-cart"></i>{% endif %}</a>
+        {% endif %}
+        {% endif %}
+    </div>
+    <div class="product-content">
+            <h6 class="product-colection">{{ collection.title }}</h6>
+            {% if section.settings.section_sub_title %}
+            <h6 class="product-colection">{{ section.settings.section_sub_title }}</h6>
+            {% endif %}
+        <div class="product-content-title">
+            <h6>
+               <a href="{{ product.url | within: collection }}" title="{{ product.title }}">{{ product.title }}</a>
+            </h6>
+            <div class="product-ratting">
+                <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+            </div>
+            <div class="price-box">
+                {% if product.compare_at_price_max > product.price %}
+                <span class="old-price">{{ product.compare_at_price | money }}</span>
+                {% endif %}
+                <span class="new-price">{{ product.price | money }}</span>
+            </div>
+            </div>
+            <div class="product-content-title">
+                {% assign colorVariant = product.metafields.my_fields.color_swatche.value %}
+                <div class="swatch-custom-container">
+                    {% include 'product-swatch-custom' %}
+                  </div>
+                <div class="product-inventory" id="variant-inventory">
+                    <h6>{{ section.settings.availability_title }}</h6>
+                    {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
+                    <span class="in-stock text-success">
+                        <span>{{ 'products.general.in_stock' | t }}</span>
+                      </span>
+                    {% else %}
+                    <span class="out-stock text-danger">
+                        <span>{{ 'products.general.out_of_stock' | t }}</span>
+                      </span>
+                    {% endif %}
+                  </div>
+            </div>
+        <div class="product-description">
+            {{ product.description }}
+        </div>
+        {% if product.available %}
+        <div class="product-action">
+            {% include 'wishlist-button' %}
+            {% if product.available %}
+            <a href="javascript:void(0);" onclick="{{ func }}; return false;" class="add-to-cart ajax-spin-cart">
+                
+                    <span class="cart-title">{% if settings.mini_cart_icon %}{{ settings.mini_cart_icon }}{% else %}<i class="ti-shopping-cart"></i>{% endif %}</span>
+                    
+                    <span class="cart-loading animated infinite rotateOut"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg></span>
+                    <span class="cart-added"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    <span class="cart-unavailable"><i class="ti-alert"></i></span>
+            </a>
+            {% else %}
+            <a class="disabled-add-to-cart add-to-cart disabled" disabled="disabled" href="#" title="Out of stock">{% if settings.mini_cart_icon %}{{ settings.mini_cart_icon }}{% else %}<i class="ti-shopping-cart"></i>{% endif %}</a>
+            {% endif %}            
+        </div>
+        {% endif %}
+    </div>
+</div>
+<style>
+    a.add-to-cart.disabled{
+        color: #eaeaea;
+        background-color: #ababab;
+        opacity: .65;
+        pointer-events: none;
+    }
+    .product-grid__badge{
+        position: absolute;
+        z-index: 10;
+        top: -10px;
+        right: 15px;
+        font-size: 40px;
+    }
+    .out-stock.text-danger{
+        text-align:right;
+    }
+    .swatch-custom-container{
+        width:80%;
+    }
+</style>

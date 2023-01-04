@@ -1,0 +1,309 @@
+<!-- banner-area start -->
+<section class="banner-grid banner1 {% if section.settings.mobile_design %} hide-mobile{% endif %}">
+    <ul class="banner-grid-wrap">
+        <li class="banner-block">
+            <a href="{{ section.settings.banner_url }}">
+                <img class="img-fluid" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x678/f7f7f7/999999{% endif %}">
+            </a>
+            {% if section.settings.banner_txt_enable %}
+            <div class="banner-content">
+                <span>
+                    {{ section.settings.banner_sub_title }}
+                    <b>{{ section.settings.banner_sub_title_bold }}</b>
+                </span>
+                <h1>{{ section.settings.banner_title1 }}</h1>
+                <div class="banner-description">
+                    <p>{{ section.settings.banner_desc1 }}</p>
+                    <p>{{ section.settings.banner_desc2 }}</p>
+                </div>
+                <a href="{{ section.settings.banner_url }}" class="btn btn-style8">{{ section.settings.banner_button_text }}</a>
+            </div>
+            {% endif %}
+        </li>
+    </ul>
+</section>
+<!-- banner-area end -->
+{% schema %}
+{
+    "name": "Banner Grid1",
+    "settings": [
+        {
+        "type": "checkbox",
+        "id": "mobile_design",
+        "label": "Hide on mobile?",
+        "default": false
+      },{
+            "type": "header",
+            "content": "Section Padding"
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Desktop / Laptop / tablet"
+        },
+        {
+            "type": "range",
+            "id": "banner1_padding_top",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "banner1_padding_bottom",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 60
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Ipad pro / Ipad"
+        },
+        {
+            "type": "range",
+            "id": "banner1_padding_top_ipad",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "banner1_padding_bottom_ipad",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Mobile"
+        },
+        {
+            "type": "range",
+            "id": "banner1_padding_top_xs",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "banner1_padding_bottom_xs",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+        },
+        {
+            "type": "image_picker",
+            "id": "banner_img",
+            "label": "Banner Image",
+            "info": "Recommended Size: 1920 x 678px"
+        },
+        {
+            "type": "checkbox",
+            "id": "banner_txt_enable",
+            "label": "Show Banner Text",
+            "default": true
+        },
+        {
+            "type": "paragraph",
+            "content": "Banner Title"
+        },
+        {
+            "type": "text",
+            "id": "banner_sub_title",
+            "label": "Banner Sub Title",
+            "default": "Best deal:"
+        },
+        {
+            "type": "text",
+            "id": "banner_sub_title_bold",
+            "label": "Banner Sub Title Bold",
+            "default": "$540.00"
+        },
+        {
+            "type": "text",
+            "id": "banner_title1",
+            "label": "Banner Title",
+            "default": "New decor"
+        },
+        {
+            "type": "richtext",
+            "id": "banner_desc1",
+            "label": "Banner Description"
+        },
+        {
+            "type": "richtext",
+            "id": "banner_desc2",
+            "label": "Banner Description"
+        },
+        {
+            "type": "paragraph",
+            "content": "Banner Button"
+        },
+        {
+            "type": "text",
+            "id": "banner_button_text",
+            "label": "Banner Button",
+            "default": "Only $55.00"
+        },
+        {
+            "type": "url",
+            "id": "banner_url",
+            "label": "Button URL"
+        }
+    ],
+    "presets":[
+        {
+            "name": "Banner Grid1",
+            "category": "Banner Grid"
+        }
+    ]
+}
+{% endschema %}
+<style>
+    .banner1{
+        padding-top: {{ section.settings.banner1_padding_top }}px;
+        padding-bottom: {{ section.settings.banner1_padding_bottom }}px;
+    }
+    @media(max-width: 1199px){
+        .banner1{
+            padding-top: {{ section.settings.banner1_padding_top_ipad }}px;
+            padding-bottom: {{ section.settings.banner1_padding_bottom_ipad }}px;
+        }
+    }
+    @media(max-width: 767px){
+        .banner1{
+            padding-top: {{ section.settings.banner1_padding_top_xs }}px;
+            padding-bottom: {{ section.settings.banner1_padding_bottom_xs }}px;
+        }
+    }
+    .banner1 .banner-grid-wrap .banner-block > a{
+        display: block;
+    }
+    .banner1 .banner-grid-wrap .banner-block > a > img{
+        width: 100%;
+    }
+    /* banner text css */
+    .banner1 .banner-block {
+        position: relative;
+        overflow: hidden;
+    }
+    .banner1 .banner-block .banner-content {
+        position: absolute;
+        z-index: 1;
+        {% if settings.enable_rtl %}
+        left: 16%;
+        {% else %}
+        right: 16%;
+        {% endif %}
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    .banner1 .banner-block .banner-content > span b{
+        font-weight: 600;
+    }
+    .banner1 .banner-block .banner-content > span{
+        font-size: 20px;
+        line-height: 1;
+    }
+    .banner1 .banner-block .banner-content h1{
+        font-size: 40px;
+        line-height: 1;
+        margin-top: 20px;
+    }
+    .banner1 .banner-block .banner-content .banner-description{
+        margin-top: 35px;
+    }
+    .banner1 .banner-block .banner-content .banner-description p{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .banner1 .banner-block .banner-content a.btn{
+        margin-top: 40px;
+    }
+
+    @media(max-width: 1599px){
+        .banner1 .banner-block .banner-content{
+            {% if settings.enable_rtl %}
+            left: 10%;
+            {% else %}
+            right: 10%;
+            {% endif %}
+        }
+    }
+    @media(max-width: 1199px){
+        .banner1 .banner-block .banner-content{
+            {% if settings.enable_rtl %}
+            left: 30px;
+            {% else %}
+            right: 30px;
+            {% endif %}
+        }
+        .banner1 .banner-block .banner-content > span{
+            font-size: 16px;
+        }
+        .banner1 .banner-block .banner-content h1{
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .banner1 .banner-block .banner-content .banner-description{
+            margin-top: 15px;
+        }
+        .banner1 .banner-block .banner-content a.btn{
+            margin-top: 20px;
+        }
+         .banner1 .banner-block .banner-content .banner-description p{
+            font-size: 16px;
+        }
+    }
+    @media(max-width: 991px){
+        .banner1 .banner-grid-wrap .banner-block > a > img{
+            height: 350px;
+            object-fit: cover;
+        }
+        .banner1 .banner-block .banner-content{
+            right: 15px;
+        }
+        .banner1 .banner-block .banner-content > span{
+            font-size: 14px;
+        } 
+        .banner1 .banner-block .banner-content .banner-description p{
+            font-size: 14px;
+            line-height: 20px;
+        }   
+    }
+    @media(max-width: 767px){        
+        .banner1 .banner-block .banner-content h1{
+            font-size: 28px;
+            letter-spacing: -.5px;
+        }
+        .banner1 .banner-block .banner-content .banner-description p{
+            font-size: 14px;
+        }
+        .banner1 .banner-block .banner-content{
+            background-color: rgba(255, 255, 255, .8);
+            left: 15px;
+            padding: 15px;
+            right: 15px;
+        }
+        .hide-mobile{
+            display:none;
+        }
+    }
+</style>

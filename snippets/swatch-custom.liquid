@@ -1,0 +1,19 @@
+{% comment %}
+  Set the extension of your color files below. Use 'png', 'jpeg', 'jpg' or 'gif'.
+ background-image: url({{ value | handle | append: '.' | append: file_extension | asset_url }})
+{% endcomment %}
+{% if colorVariant %}
+  
+
+<div class="swatch swatch-custom clearfix " data-option-index="{{ variants.nazev }}">
+  <h6 class="header">{{ 'products.general.custom' | t }} :</h6>
+  {% assign values = '' %}
+  {% for variants in colorVariant %}
+      <a href="{{ variants.link}}" data-value="{{ value | escape }}" class="swatch-element {% if is_color %}color {% endif %}{{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %}">
+        <input id="swatch-{{ variants.nazev }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} {% comment %}{% unless variant.available %}disabled{% endunless %}{% endcomment %} />
+        <label class="tooltip--top" for="swatch-{{ variants.nazev}}" style="{%- if block.settings.product_variant_color_image_enable -%}background-image: url({{ variant.image | img_url: 'small' }}{% else %}background-color: {{ variants.barva}}{% endif %};" data-tooltip="{{ variants.nazev}}">
+        </label>
+      </a>
+  {% endfor %}
+</div>
+{% endif %}

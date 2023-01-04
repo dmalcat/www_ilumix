@@ -1,0 +1,529 @@
+<section class="collection-category">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col main-column">
+        <div class="slider-col">
+          <div class="slider-wrap">
+            {% if section.settings.section_special_title1 !='' %}
+            <div class="main-title">
+              <h2>
+                <span>{{ section.settings.section_special_title1 }}</span>
+                <span>{{ section.settings.section_special_title2 }}</span>
+              </h2>
+            </div>
+            {% endif %}
+            {% assign category_product = collections[section.settings.special_label_product] %}
+            <div class="swiper-container pro-special" id="pro-special">
+              <div class="swiper-wrapper">
+                {% assign category_product_limit = section.settings.category_special_product_limit_handle %}
+                {% for product in category_product.products limit: category_product_limit %}
+                <div class="swiper-slide">
+                  {% include 'product-special-item' %}
+                </div>
+                {% endfor %}
+              </div>
+              <div class="swiper-buttons">
+                  <div class="swiper-button-next">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-col">
+          <div class="banner-text">
+            <span class="sub-title">{{ section.settings.banner_sub_title }}</span>
+            <h2 class="banner-title">{{ section.settings.banner_title }}</h2>
+            <a class="btn btn-style" href="{{ section.settings.banner_url }}">{{ section.settings.banner_button }}</a>
+          </div>
+          <div class="banner-block">
+            <a href="{{ section.settings.banner_url }}">
+              <img class="img-fluid" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1245x795/f7f7f7/999999{% endif %}">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  var swiper = new Swiper('.swiper-container.pro-special', {
+    slidesPerColumn: 1,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    observer: true,
+    observeParents: true,
+    {%- if settings.enable_rtl -%}
+    rtl: true,
+    {%- endif -%}
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      },
+      768: {
+        slidesPerView: 2
+      },
+      979: {
+        slidesPerView: 1
+      },
+      1199: {
+        slidesPerView: 1
+      }
+    }
+  });
+</script>
+{% schema %}
+{
+  "name": "Special Product",
+  "settings": [
+    {
+      "type" : "header",
+      "content" : "Section Padding"
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Desktop / Laptop / tablet"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Ipad pro / Ipad"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_lg",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_lg",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_xs",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_xs",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section Background Color",
+      "default": "#f6f6f6"
+    },
+    {
+      "type": "header",
+      "content": "Collection Title"
+    },
+    {
+      "type": "text",
+      "id": "section_special_title1",
+      "label": "Section Title",
+      "default": "#"
+    },
+    {
+      "type": "text",
+      "id": "section_special_title2",
+      "label": "Section Title",
+      "default": "Trending"
+    },
+    {
+      "type": "header",
+      "content": "Product"
+    },
+    {
+      "type": "select",
+      "id": "category_special_product_limit",
+      "label": "slides Per View",
+      "options":[
+        {
+          "label": "1 Products",
+          "value": "1"
+        },
+        {
+          "label": "2 Products",
+          "value": "2"
+        },
+        {
+          "label": "3 Products",
+          "value": "3"
+        },
+        {
+          "label": "4 Products",
+          "value": "4"
+        },
+        {
+          "label": "5 Products",
+          "value": "5"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "category_special_product_limit_handle",
+      "label": "Product Limit",
+      "default": "2"
+    },
+    {
+      "type" : "collection",
+      "id" : "special_label_product",
+      "label" : "Special Product"
+    },
+    {
+      "type": "text",
+      "id": "banner_sub_title",
+      "label": "Banner Sub Title",
+      "default": "Brand made with love"
+    },
+    {
+      "type": "text",
+      "id": "banner_title",
+      "label": "Banner Main Title",
+      "default": "Best selling products"
+    },
+    {
+      "type": "text",
+      "id": "banner_button",
+      "label": "Banner Button",
+      "default": "top rated products"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_img",
+      "label": "Banner Image",
+      "info": "Recommended Size: 1245px x 795px"
+    },
+    {
+      "type": "url",
+      "id": "banner_url",
+      "label": "Banner URL"
+    }
+  ],
+  "presets":[
+    {
+      "name": "Special Product",
+      "category": "Collecton"
+    }
+  ]
+}
+{% endschema %}
+<style>
+  .collection-category .slider-col{
+    padding-top: {{ section.settings.section_padding_top }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom }}px;
+  }
+  .collection-category .main-column{
+    background-color: {{ section.settings.section_bg_color }};
+  }
+  @media (max-width: 1199px){
+    .collection-category .slider-col{
+      padding-top: {{ section.settings.section_padding_top_lg }}px;
+      padding-bottom: {{ section.settings.section_padding_bottom_lg }}px;
+    }
+  }
+  @media (max-width: 767px){
+    .collection-category .slider-col{
+      padding-top: {{ section.settings.section_padding_top_xs }}px;
+      padding-bottom: {{ section.settings.section_padding_bottom_xs }}px;
+    }
+  }
+  /*special product*/
+  .collection-category .main-column{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+  .collection-category .slider-col{
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    position: relative;
+    width: 100%;
+  }
+  .collection-category .main-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .collection-category .main-title h2{
+    font-size: 36px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .collection-category .main-title h2 span:first-child{
+    font-weight: 300;
+  }
+  .single-product-wrap.trending-product{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .single-product-wrap.trending-product .product-image{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+  }
+  .single-product-wrap.trending-product .product-image a.pro-img:after {
+    display: none;
+  }
+  .single-product-wrap.trending-product:hover .product-image a.pro-img .img1{
+    opacity: 1;
+  }
+  @media(max-width: 1199px){
+    .collection-category .main-title h2{
+      font-size: 26px;
+    }
+    .single-product-wrap.trending-product{
+      width: 80%;
+    }
+  }
+  @media(max-width: 767px){
+    .collection-category .main-title h2{
+      font-size: 20px;
+    }
+  }
+  @media(max-width: 991px){
+    .collection-category .main-column{
+      flex-direction: column;
+    }
+    .collection-category .slider-col {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .single-product-wrap.trending-product{
+      width: 100%;
+    }
+  }
+  /*slider arrow*/
+  .pro-special .swiper-buttons .swiper-button-prev,
+  .pro-special .swiper-buttons .swiper-button-next{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    outline: 0;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+  }
+  .pro-special .swiper-buttons .swiper-button-prev{
+    {%- if settings.enable_rtl -%}
+    right: 60px;
+    {%- else-%}
+    left: 60px;
+    {%- endif-%}
+  }
+  .pro-special .swiper-buttons .swiper-button-next{
+    {%- if settings.enable_rtl -%}
+    left: 60px;
+    {%- else-%}
+    right: 60px;
+    {%- endif-%}
+  }
+  .pro-special .swiper-buttons .swiper-button-prev svg,
+  .pro-special .swiper-buttons .swiper-button-next svg{
+    width: 20px;
+    height: 20px;
+    stroke: #232323;
+  }
+  @media(max-width: 1199px){
+    .pro-special .swiper-buttons .swiper-button-prev,
+    .pro-special .swiper-buttons .swiper-button-next{
+      height: 40px;
+      width: 40px;
+    }
+    .pro-special .swiper-buttons .swiper-button-prev{
+      {%- if settings.enable_rtl -%}
+      right: 30px;
+      {%- else-%}
+      left: 30px;
+      {%- endif-%}
+    }
+    .pro-special .swiper-buttons .swiper-button-next{
+      {%- if settings.enable_rtl -%}
+      left: 30px;
+      {%- else-%}
+      right: 30px;
+      {%- endif-%}
+    }
+  }
+
+  /*main banner*/
+  .collection-category .banner-col{
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+    position: relative;
+    width: 100%;
+  }
+  @media(max-width: 1199px){
+    .collection-category .container-fluid{
+      padding: 0 15px;
+    }
+  }
+  @media(max-width: 991px){
+    .collection-category .banner-col{
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      position: relative;
+      width: 100%;
+      margin-top: ;
+    }
+  }
+
+  /*banner text content*/
+  .banner-col .banner-text{
+    position: absolute;
+    width: 40%;
+    left: 10%;
+    {%- if settings.enable_rtl -%}
+    right: 10%;
+    {%- else -%}
+    left: 10%;
+    {%- endif -%}
+    bottom: 50%;
+    transform: translateY(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-col .banner-text span.sub-title{
+    color: #888888;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .banner-col .banner-text h2.banner-title{
+    font-size: 70px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 33px;
+  }
+  .banner-col .banner-text a.btn{
+    margin-top: 39px;
+  }
+  @media (max-width: 1599px) and (min-width: 1220px){
+    .banner-col .banner-block img{
+      height: 632px;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 1366px) and (min-width: 767px){
+    .banner-col .banner-block img{
+      height: 617px;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 1359px) and (min-width: 1200px){
+    .banner-col .banner-block img{
+      height: 600px;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 1599px){
+    .banner-col .banner-text span.sub-title{
+      font-size: 18px;
+    }
+    .banner-col .banner-text h2.banner-title{
+      font-size: 50px;
+      margin-top: 27px;
+    }
+    .banner-col .banner-text a.btn{
+      margin-top: 28px;
+    }
+  }
+  @media(max-width: 1199px){
+    .banner-col .banner-block img{
+      height: 470px;
+      object-fit: cover;
+    }
+    .banner-col .banner-text h2.banner-title{
+      font-size: 40px;
+    }
+  }
+  @media(max-width: 991px){
+    .banner-col .banner-block img{
+      height: auto;
+      object-fit: unset;
+    }
+  }
+  @media(max-width: 767px){
+    .banner-col .banner-block img {
+      height: 370px;
+      object-fit: cover;
+    }
+    .banner-col .banner-text h2.banner-title{
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    .banner-col .banner-text a.btn {
+      margin-top: 20px;
+    }
+  }
+</style>

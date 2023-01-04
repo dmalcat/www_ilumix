@@ -1,0 +1,345 @@
+<!-- Browuse categoryies -->
+<section class="slider-category2">
+  <div class="container-fluid container-col">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <div class="cat-slider owl-carousel owl-theme" id="category-slider">
+          {% for block in section.blocks %}
+          {% case block.type %}
+          {% when 'slider_cat' %}
+          {% assign category_product = collections[block.settings.slider_category_handle] %}
+          <div class="item wow animate__fadeIn">
+            <div class="category-wrap">
+              <a href="{{ category_product.url }}" class="img-content">
+                <span class="visible-img">
+                  <img src="{% if block.settings.cat_img %}{{ block.settings.cat_img | img_url: 'master' }}{% else %}https://dummyimage.com/60x60/f7f7f7/999999{% endif %}">
+                </span>
+                <span class="hover-img">
+                  <img src="{% if block.settings.cat_hover_img %}{{ block.settings.cat_hover_img | img_url: 'master' }}{% else %}https://dummyimage.com/60x60/f7f7f7/999999{% endif %}">
+                </span>
+              </a>
+              <a href="{{ category_product.url }}" class="text-content">
+                <span class="cat-title">{{ category_product.title }}</span>
+                <span class="shop-title">{{ block.settings.shop_title }}</span>
+              </a>
+            </div>
+          </div>
+          {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  $( document ).ready(function() {
+    $('#category-slider').owlCarousel({
+      loop: false,
+      rewind: false,
+      margin: 0,
+      nav: false,
+      navText: ['<i class="feather-arrow-left"></i>','<i class="feather-arrow-right"></i>'],
+      dots: false,
+      {%- if settings.enable_rtl -%}
+      rtl: true,
+      {%- endif -%}
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive:{
+        0:{
+          items: 2
+        },
+        479:{
+          items: 2
+        },
+        768:{
+          items: 3
+        },
+        979:{
+          items: 4
+        },
+        1199:{
+          items: 5
+        }
+      }
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Slider Category 2",
+  "settings": [
+  {
+    "type" : "header",
+    "content" : "Section Padding"
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Desktop / Laptop / tablet"
+  },
+  {
+    "type": "range",
+    "id": "section_padding_top",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 60
+  },
+  {
+    "type": "range",
+    "id": "section_padding_bottom",
+    "label": "Section Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 60
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Ipad pro / Ipad"
+  },
+  {
+    "type": "range",
+    "id": "section_padding_top_ipad",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 30
+  },
+  {
+    "type": "range",
+    "id": "section_padding_bottom_ipad",
+    "label": "Section Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 30
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Mobile"
+  },
+  {
+    "type": "range",
+    "id": "section_padding_top_xs",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 20
+  },
+  {
+    "type": "range",
+    "id": "section_padding_bottom_xs",
+    "label": "Section Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 20
+  },
+  {
+    "type" : "color",
+    "id" : "slider_cat_bgcolor",
+    "label" : "Background Color",
+    "default" : "#fff"
+  },
+  {
+    "type" : "checkbox",
+    "id" : "slider_cat_bgcolor_enable",
+    "label" : "With Backgorund",
+    "default" : true
+  },
+  {
+    "type": "image_picker",
+    "id": "cat_hover_bg",
+    "label": "Category Hover Background",
+    "info": "Recommended Size: 125px x 125px"
+  }
+  ],
+  "blocks" : [
+  {
+    "type" : "slider_cat",
+    "name" : "Slider category2",
+    "settings" : [
+    {
+      "type" : "header",
+      "content" : "Slider Category2"
+    },
+    {
+      "type": "image_picker",
+      "id": "cat_img",
+      "label": "Category Image",
+      "info": "Recommended Size: 60px x 60px"
+    },
+    {
+      "type": "image_picker",
+      "id": "cat_hover_img",
+      "label": "Category Hover Image",
+      "info": "Recommended Size: 60px x 60px"
+    },
+    {
+      "type": "collection",
+      "id": "slider_category_handle",
+      "label": "Select Your Collection"
+    },
+    {
+      "type": "text",
+      "id": "shop_title",
+      "label": "Shopnow title",
+      "default": "Shop now"
+    }
+    ]
+  }
+  ],
+  "presets":[
+  {
+    "name": "Category 2",
+    "category": "Shop By Category"
+  }
+  ]
+}
+{% endschema %}
+<style>
+.slider-category2 {
+  padding-top: {{ section.settings.section_padding_top }}px;
+  padding-bottom: {{ section.settings.section_padding_bottom }}px;
+  {% if section.settings.slider_cat_bgcolor_enable %}
+  background-color: {{ section.settings.slider_cat_bgcolor }};
+  {% endif %}
+}
+@media (max-width: 1199px) {
+  .slider-category2 {
+    padding-top: {{ section.settings.section_padding_top_ipad }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom_ipad }}px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-category2 {
+    padding-top: {{ section.settings.section_padding_top_xs }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom_xs }}px;
+  }
+}
+.slider-category2 .container-col{
+  padding-left: 285px;
+  padding-right: 285px;
+}
+@media(max-width: 1599px){
+  .slider-category2 .container-col{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media(max-width: 1199px){
+  .slider-category2 .container-col{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media(max-width: 767px){
+  .slider-category2 .container-col{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.slider-category2 .cat-slider .category-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slider-category2 .cat-slider .category-wrap:hover a.img-content:before{
+  opacity: 1;
+  visibility: visible;
+}
+.slider-category2 .cat-slider .category-wrap a.img-content:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  background-image: url({% if section.settings.cat_hover_bg %}{{ section.settings.cat_hover_bg | img_url: 'master' }}{% else %}https://dummyimage.com/125x125/f7f7f7/999999{% endif %});
+  width: 125px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.slider-category2 .cat-slider .category-wrap a.img-content {
+  height: 125px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-category2 .cat-slider .category-wrap:hover a.img-content .visible-img,
+.slider-category2 .cat-slider .category-wrap a.img-content .hover-img{
+  display: none;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.slider-category2 .cat-slider .category-wrap:hover a.img-content .hover-img{
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.slider-category2 .cat-slider .category-wrap a.text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.slider-category2 .cat-slider .category-wrap a.text-content span.cat-title{
+  color: {{ settings.body_text_color }};
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.slider-category2 .cat-slider .category-wrap:hover a.text-content span.shop-title{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-15px);
+}
+.slider-category2 .cat-slider .category-wrap a.text-content span.shop-title{
+  color: {{ settings.color_secondary }};
+  border-bottom: 1px solid {{ settings.color_secondary }};
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.slider-category2 .cat-slider .category-wrap:hover a.text-content span.cat-title{
+  opacity: 0;
+  visibility: inherit;
+}
+@media(max-width: 1199px){
+  .slider-category2 .cat-slider .category-wrap a.text-content{
+    margin-top: 15px;
+  }
+}
+</style>

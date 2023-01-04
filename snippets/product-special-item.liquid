@@ -1,0 +1,75 @@
+{%- assign on_sale = false -%}
+{%- if product.compare_at_price > product.price -%}
+{%- assign on_sale = true -%}
+{%- endif -%}
+{%- assign sold_out = true -%}
+{%- if product.available -%}
+{%- assign sold_out = false -%}
+{%- endif -%}
+{%- assign variant = product.selected_or_first_available_variant -%}
+{%- if product.available -%}
+{%- assign func = "Shopify.addItem(" | append: variant.id | append: ", 1)" -%}
+{%- endif -%}
+<div class="single-product-wrap trending-product {% unless product.available %}stock-out{% endunless %}">
+    <div class="product-image {% unless product.available %}stock-out{% endunless %}">
+        <a class="pro-img" href="{{ product.url | within: collection }}">
+            <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '555X400', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
+        </a>
+        {% if product.available %}
+        <div class="product-action">
+            {% include 'wishlist-button' %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="product-content">
+
+        <div class="product-ratting">
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+        </div>
+        <h6>
+            <a href="{{ product.url | within: collection }}" title="{{ product.title }}">{{ product.title | truncate: 30 }}</a>
+        </h6>
+        <div class="price-box">
+            <span class="new-price">{{ product.price | money }}</span>
+            {% if product.compare_at_price_max > product.price %}
+            <span class="old-price">{{ product.compare_at_price | money }}</span>
+            {% endif %}
+        </div>
+        <p class="product-description">
+            {%- if product.description contains '[short_description]' -%}
+            {%- assign short_description_first = product.description | split:'[/short_description]' | first -%}
+            {%- assign short_description_final = short_description_first | split:'[short_description]' | last -%}
+            {{ short_description_final | truncate: 50 }}
+            {%- else -%}
+            {{ product.description | strip_html | truncatewords: 35 | split: '[short_description]' | first | split: '[product_description]' | first | split: '[new_products]' | first | split: '[product_video]' | first | split: '[affiliate_link]' | first }}
+            {%- endif -%}
+        </p>
+        {% if product.available %}
+        <div class="product-action">
+            {% include 'wishlist-button' %}
+            {% if product.available %}
+            <a href="javascript:void(0);" onclick="{{ func }}; return false;" class="add-to-cart ajax-spin-cart">
+                
+                    <span class="cart-title">{% if settings.mini_cart_icon %}{{ settings.mini_cart_icon }}{% else %}<i class="ti-shopping-cart"></i>{% endif %}</span>
+                    
+                    <span class="cart-loading animated infinite rotateOut"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg></span>
+                    <span class="cart-added"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    <span class="cart-unavailable"><i class="ti-alert"></i></span>
+                    <span class="add-to-cart-ti">{{ 'products.product.add_to_cart' | t }}</span>
+            </a>
+            {% else %}
+            <a class="disabled-add-to-cart add-to-cart disabled" disabled="disabled" href="#" title="Out of stock">{% if settings.mini_cart_icon %}{{ settings.mini_cart_icon }}{% else %}<i class="ti-shopping-cart"></i>{% endif %}</a>
+            {% endif %}
+            
+        </div>
+        {% endif %}
+    </div>
+</div>
+<style>
+    a.add-to-cart.disabled{
+        color: #eaeaea;
+        background-color: #ababab;
+        opacity: .65;
+        pointer-events: none;
+    }
+</style>

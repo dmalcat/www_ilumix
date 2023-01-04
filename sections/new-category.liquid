@@ -1,0 +1,234 @@
+<section class="new-category">
+  <div class="container-fluid container-col">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <div class="section-capture">
+          <div class="section-title">
+            {% if section.settings.section_sub_title !='' %}
+            <span>{{ section.settings.section_sub_title }}</span>
+            {% endif %}
+            {% if section.settings.section_title !='' %}
+            <h2>{{ section.settings.section_title }}</h2>
+            {% endif %}
+          </div>
+        </div>
+        {% assign category_product = collections[section.settings.new_label_product] %}
+        <div class="collection-slider owl-carousel owl-theme" id="new-{{ section.id }}">
+          {% assign category_product_limit = section.settings.category_new_product_limit_handle %}
+          {% for product in category_product.products limit: category_product_limit %}
+          <div class="item">
+            {% include 'product-grid-item' %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+  $('#new-{{ section.id }}').owlCarousel({
+    loop: false,
+    rewind: true,
+    margin: 30,
+    nav: false,
+    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    dots: false,
+    {%- if settings.enable_rtl -%}
+    rtl: true,
+    {%- endif -%}
+    autoplay: false,
+    responsive:{
+      0:{
+        items: 2,
+        margin: 15
+      },
+      479:{
+        items: 2,
+        margin: 15
+      },
+      768:{
+        items: 3
+      },
+      979:{
+        items: 3
+      },
+      1199:{
+        items: {{ section.settings.category_new_product_limit }}
+      }
+    }
+  });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "New Product",
+  "settings": [
+  {
+      "type" : "header",
+      "content" : "Section Padding"
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Desktop / Laptop / tablet"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_lg",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_lg",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_xs",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_xs",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Collection Title"
+    },
+    {
+      "type": "text",
+      "id": "section_sub_title",
+      "label": "Section Sub Title",
+      "default": "Premium designs"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Online store"
+    },
+  {
+    "type": "header",
+    "content": "Product"
+  },
+  {
+    "type": "select",
+    "id": "category_new_product_limit",
+    "label": "slides Per View",
+    "options":[
+    {
+      "label": "2 Products",
+      "value": "2"
+    },
+    {
+      "label": "3 Products",
+      "value": "3"
+    },
+    {
+      "label": "4 Products",
+      "value": "4"
+    }
+    ],
+    "default": "4"
+  },
+  {
+    "type": "text",
+    "id": "category_new_product_limit_handle",
+    "label": "Product Limit",
+    "default": "10"
+  },
+  {
+    "type" : "collection",
+    "id" : "new_label_product",
+    "label" : "Best Product"
+  }
+  ],
+  "presets":[
+  {
+    "name": "New Product",
+    "category": "Collecton"
+  }
+  ]
+}
+{% endschema %}
+<style>
+  .new-category{
+    padding-top:{{ section.settings.section_padding_top }}px;
+    padding-bottom:{{ section.settings.section_padding_bottom }}px;
+  }
+  @media (max-width: 767px){
+    .new-category{
+      padding-top:{{ section.settings.section_padding_top_lg }}px;
+      padding-bottom:{{ section.settings.section_padding_bottom_lg }}px;
+    }
+  }
+  @media (max-width: 767px){
+    .new-category{
+      padding-top:{{ section.settings.section_padding_top_xs }}px;
+      padding-bottom:{{ section.settings.section_padding_bottom_xs }}px;
+    }
+  }
+  .new-category .container-col{
+    padding-left: 285px;
+    padding-right: 285px;
+  }
+  @media(max-width: 1599px){
+    .new-category .container-col{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media(max-width: 767px){
+    .new-category .container-col{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+</style>

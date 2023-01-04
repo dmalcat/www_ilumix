@@ -1,0 +1,1141 @@
+<section class="cart-page">
+    {%- if cart.item_count > 0 -%}
+    <div id="bold-cart-msg"></div>
+    <form action="/cart" method="post" enctype="multipart/form-data" novalidate>
+        <div class="container">
+            <div class="row">
+                    <div class="cart-desktop cart-item-wrap ">
+                        <div class="item-wrap">
+                            <ul class="cart-wrap">
+                                <li class="item-info">
+                                    <div class="item-title">
+                                       Produkt
+                                    </div>
+                                </li>
+                                <li class="item-qty">
+                                   Množství
+                                </li>
+                                <li class="item-price">
+                                    Cena bez DPH
+                                </li>
+                                <li class="item-price">
+                                    Cena s DPH
+                                </li>
+                                <li class="item-trash"></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="item-wrap">
+                            {% for item in cart.items %}
+                            <ul class="cart-wrap">
+                                <li class="item-info">
+                                    <div class="item-img">
+                                        <a href="{{ item.url }}">
+                                            <img class="img-fluid" src="{{ item | img_url: '100x120', crop: 'center' }}" alt="{{ item.title | escape }}" />
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+
+                                        <a href="{{ item.url }}">{{ item.product.title | truncate: 30 }}</a>
+
+                                        {%- unless item.variant.title contains 'Default' -%}
+                                        {%- for option in item.product.options -%}
+                                        <span class="item-option">
+                                            <span class="pro-variant-title">{{ option }}:</span>
+                                            <span class="pro-variant-type">{{ item.variant.options[forloop.index0] }}</span>
+                                        </span>
+                                        {%- endfor -%}
+                                        {%- endunless -%}
+                                        {% if item.product.metafields.custom.zarovka %}
+                                            <div class="no-bulb">
+                                                <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 141.7 141.7" style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
+                                                <style type="text/css">
+                                                    .no-bulb .st0{fill:none!important;}
+                                                </style>
+                                                <g>
+                                                    <path class="st0" d="M71.1,128.8c3.8-0.1,7.5-3,8.4-6.5c-5.9,0-11.8,0-17.9,0C62.8,126.3,66.7,128.9,71.1,128.8z"/>
+                                                    <path class="st0" d="M58,116.6c8.4,0,16.8,0,25.1,0c0-2.2,0-4.3,0-6.4c-8.4,0-16.7,0-25.1,0C58,112.4,58,114.4,58,116.6z"/>
+                                                    <path class="st0" d="M62,14.2c-13.6,3.6-24.6,15.4-25.5,31.2c-0.5,8.7,2.3,16.5,7.8,23.2c3.8,4.6,6.9,9.6,9.2,14.9l48.7-48.7
+                                                        C96.1,19.1,78.9,9.7,62,14.2z"/>
+                                                    <path class="st0" d="M57.8,93c5.7,0,11.4,0,17,0c3.2,0,6.4,0,9.7,0c2.3-9.8,7.1-18.1,13.1-25.9c5.6-7.2,7.6-15.5,6.4-24.4
+                                                        L55.9,90.8c0.1,0.4,0.2,0.7,0.3,1C56.5,92.8,56.9,93,57.8,93z"/>
+                                                    <path class="st0" d="M58,104.5c8.4,0,16.7,0,25.1,0c0.1-2,0.3-3.9,0.4-5.9c-8.7,0-17.2,0-25.9,0C57.8,100.6,57.9,102.5,58,104.5z"
+                                                        />
+                                                    <path d="M97.7,67.1c-6,7.8-10.8,16.1-13.1,25.9c-3.3,0-6.5,0-9.7,0c-5.7,0-11.4,0-17,0c-0.9,0-1.3-0.2-1.5-1.2
+                                                        c-0.1-0.4-0.2-0.7-0.3-1l-4.5,4.5c0,0.2,0.1,0.5,0.1,0.7c0.7,4.6,0.8,9.4,1.1,14c-0.1,0-0.2,0-0.3,0c0,3,0,6,0,9
+                                                        c0,1.7,0.6,2.7,2,2.9c1.2,0.2,1.5,0.8,1.8,1.8c2.2,7.2,10.1,11.8,17.4,10.2c5.9-1.4,9.7-5,11.6-10.8c0.1-0.4,0.5-0.9,0.8-1
+                                                        c2.1-0.5,3-1.5,3-3.7c0-4.2,0-8.4,0-12.6c0-2.4,0-4.8,0.4-7.2c1.4-9.9,5.4-18.7,11.8-26.4c8.2-10.1,11.2-21.5,8.3-34.2
+                                                        c0-0.2-0.1-0.4-0.2-0.6l-5.1,5.1C105.3,51.6,103.3,59.9,97.7,67.1z M71.1,128.8c-4.4,0.1-8.4-2.6-9.5-6.5c6,0,11.9,0,17.9,0
+                                                        C78.7,125.8,74.9,128.8,71.1,128.8z M83.1,116.6c-8.3,0-16.7,0-25.1,0c0-2.2,0-4.3,0-6.4c8.4,0,16.7,0,25.1,0
+                                                        C83.1,112.3,83.1,114.4,83.1,116.6z M83.1,104.5c-8.4,0-16.7,0-25.1,0c-0.1-2-0.2-3.9-0.4-5.9c8.6,0,17.2,0,25.9,0
+                                                        C83.4,100.6,83.3,102.5,83.1,104.5z"/>
+                                                    <path d="M44.3,68.6c-5.5-6.8-8.2-14.5-7.8-23.2C37.4,29.6,48.4,17.8,62,14.2c16.9-4.4,34.1,4.9,40.2,20.6l4.6-4.6
+                                                        c-6-12.7-18.7-21.7-33-22.6C62.2,6.9,52,10.4,43.6,18.5c-10,9.6-13.8,21.4-11.8,35.1c1,7.3,4.3,13.7,9.1,19.4
+                                                        c3.7,4.4,6.6,9.3,8.6,14.6l4-4C51.1,78.1,48,73.2,44.3,68.6z"/>
+                                                    <path d="M128,13.9c-1.4-1.4-3.6-1.4-5,0l-16.3,16.3l-4.6,4.6L53.4,83.5l-4,4l-35.6,35.6c-1.4,1.4-1.4,3.6,0,4.9
+                                                        c0.7,0.7,1.6,1,2.5,1s1.8-0.3,2.5-1l32.7-32.7l4.5-4.5l48.1-48.1l5.1-5.1l18.7-18.7C129.3,17.5,129.3,15.2,128,13.9z"/>
+                                                </g>
+                                                </svg>
+
+
+
+                                                {{ section.settings.bulb }}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </li>
+                                <li class="item-qty">
+                                    <div class="product-quantity-action">
+                                        <div class="product-quantity" data-variant="{{ item.id }}">
+                                            <div class="cart-plus-minus">
+                                                <input type="text" value="{{ item.quantity }}" name="updates[]" class="qt" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-price">
+                                    <span class="money amount no-vat full-price">{{ item.line_price | divided_by:1.21 | money }}</span>
+                                </li>
+                                <li class="item-price">
+                                    <span class="money amount full-price">{{ item.line_price | money }}</span>
+                                </li>
+                                <li class="item-trash">
+                                    <div class="item-remove">
+                                        <span class="remove-wrap">
+                                            <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="text-danger">
+                                                <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 369 412" style="enable-background:new 0 0 369 412;" xml:space="preserve">
+                                           <g>
+                                               <path d="M88,397.6c-3.3-1.1-6.7-1.9-9.8-3.4c-12.9-6.4-18.3-17.4-19.4-31.4c-3.7-46.7-7.6-93.4-11.4-140.2
+                                                   c-1.9-22.5-3.8-45-5.7-67.5c-0.1-1.4,0-2.7,0-4.4c95.2,0,190.3,0,286,0c-0.7,8.3-1.3,16.6-2,24.9c-1.9,22.6-3.8,45.2-5.7,67.8
+                                                   c-2.2,26.1-4.3,52.2-6.5,78.3c-1.3,15.2-2.2,30.3-3.9,45.5c-1.7,15.8-11.7,26.3-27.2,29.7c-0.5,0.1-0.9,0.4-1.3,0.6
+                                                   C216.7,397.6,152.3,397.6,88,397.6z M128.4,263c0-25.9,0-51.9,0-77.8c0-6-2.4-9.7-7.2-11.4c-8.1-2.8-15.2,2.5-15.2,11.5
+                                                   c0,47.7,0,95.5,0,143.2c0,4.5-0.1,9,0,13.5c0.1,5,2.9,8.6,7.6,10c8,2.5,14.8-2.6,14.8-11.2C128.4,314.9,128.4,289,128.4,263z
+                                                    M195.7,263c0-25.9,0-51.9,0-77.8c0-6-2.4-9.7-7.3-11.3c-8.1-2.7-15.2,2.6-15.2,11.5c0,50.2,0,100.5,0,150.7c0,2.1-0.1,4.2,0.1,6.4
+                                                   c0.3,4.8,3.1,8.2,7.6,9.6c8,2.4,14.8-2.7,14.8-11.3C195.8,314.8,195.7,288.9,195.7,263z M240.7,262.9c0,3.9,0,7.7,0,11.6
+                                                   c0,22.1,0,44.1,0,66.2c0,5.9,2.5,9.7,7.4,11.3c8,2.6,15-2.6,15-11.3c0-34.9,0-69.8,0-104.8c0-16.8,0-33.7,0-50.5
+                                                   c0-4.9-1.8-8.8-6.3-11c-7.7-3.9-16.2,1.6-16.2,10.7C240.6,211,240.7,236.9,240.7,262.9z"/>
+                                               <path d="M185.3,126.7c-50.8,0-101.5,0-152.3,0c-3.1,0-6.2-0.2-9.3-0.8c-4.5-0.9-7.3-3.8-7.4-8.2c-0.1-10.1-0.7-20.3,0.6-30.2
+                                                   C19,71,33.1,59.4,49.7,59.3c21-0.1,41.9-0.1,62.9,0c3,0,4.4-0.7,5.3-3.7c1.8-6.1,3.9-12.1,6-18.1c5-14.4,17.2-23.1,32.3-23.2
+                                                   c19-0.1,37.9-0.1,56.9,0c14.8,0.1,27,8.7,32,22.6c2.3,6.3,4.4,12.7,6.3,19.1c0.7,2.5,1.9,3.2,4.5,3.2c20.5-0.1,40.9-0.1,61.4-0.1
+                                                   c21.4,0,35.7,14.3,35.7,35.6c0,6.4,0,12.7,0,19.1c0,8.2-4.5,12.7-12.8,12.7C288.5,126.7,236.9,126.7,185.3,126.7z M140.3,59.1
+                                                   c29.7,0,58.9,0,88.5,0c-1.8-5.3-3.3-10.2-5.2-15.1c-1.8-4.7-5.5-7.1-10.4-7.1c-19.1-0.1-38.2-0.1-57.2,0c-5,0-8.7,2.4-10.4,7.1
+                                                   C143.6,48.8,142.1,53.8,140.3,59.1z"/>
+                                           </g>
+                                           </svg>
+                                           </a>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            {% endfor %}
+                        </div>
+                    
+                </div>
+                <div class="cart-item-wrap2 cart-mobile">
+                    {% for item in cart.items %}
+                    <div class="cart-wrap item-block">
+                        <div class="item-info">
+                            <div class="item-info-row">
+                                <div class="item-img">
+                                    <a href="{{ item.url }}">
+                                        <img class="img-fluid" src="{{ item | img_url: '100x120', crop: 'center' }}" alt="{{ item.title | escape }}" />
+                                    </a>
+                                </div>
+                                <div class="item-title">
+                                    <a href="{{ item.url }}">{{ item.product.title | truncate: 30 }}</a>
+
+                                    {%- unless item.variant.title contains 'Default' -%}
+                                    {%- for option in item.product.options -%}
+                                    <span class="item-option">
+                                        <span class="pro-variant-title">{{ option }}:</span>
+                                        <span class="pro-variant-type">{{ item.variant.options[forloop.index0] }}</span>
+                                    </span>
+                                    {%- endfor -%}
+                                    {%- endunless -%}
+                                    {% if item.product.metafields.custom.zarovka %}
+                                        <div class="no-bulb">
+                                            <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 141.7 141.7" style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
+                                            <style type="text/css">
+                                                .no-bulb .st0{fill:none!important;}
+                                            </style>
+                                            <g>
+                                                <path class="st0" d="M71.1,128.8c3.8-0.1,7.5-3,8.4-6.5c-5.9,0-11.8,0-17.9,0C62.8,126.3,66.7,128.9,71.1,128.8z"/>
+                                                <path class="st0" d="M58,116.6c8.4,0,16.8,0,25.1,0c0-2.2,0-4.3,0-6.4c-8.4,0-16.7,0-25.1,0C58,112.4,58,114.4,58,116.6z"/>
+                                                <path class="st0" d="M62,14.2c-13.6,3.6-24.6,15.4-25.5,31.2c-0.5,8.7,2.3,16.5,7.8,23.2c3.8,4.6,6.9,9.6,9.2,14.9l48.7-48.7
+                                                    C96.1,19.1,78.9,9.7,62,14.2z"/>
+                                                <path class="st0" d="M57.8,93c5.7,0,11.4,0,17,0c3.2,0,6.4,0,9.7,0c2.3-9.8,7.1-18.1,13.1-25.9c5.6-7.2,7.6-15.5,6.4-24.4
+                                                    L55.9,90.8c0.1,0.4,0.2,0.7,0.3,1C56.5,92.8,56.9,93,57.8,93z"/>
+                                                <path class="st0" d="M58,104.5c8.4,0,16.7,0,25.1,0c0.1-2,0.3-3.9,0.4-5.9c-8.7,0-17.2,0-25.9,0C57.8,100.6,57.9,102.5,58,104.5z"
+                                                    />
+                                                <path d="M97.7,67.1c-6,7.8-10.8,16.1-13.1,25.9c-3.3,0-6.5,0-9.7,0c-5.7,0-11.4,0-17,0c-0.9,0-1.3-0.2-1.5-1.2
+                                                    c-0.1-0.4-0.2-0.7-0.3-1l-4.5,4.5c0,0.2,0.1,0.5,0.1,0.7c0.7,4.6,0.8,9.4,1.1,14c-0.1,0-0.2,0-0.3,0c0,3,0,6,0,9
+                                                    c0,1.7,0.6,2.7,2,2.9c1.2,0.2,1.5,0.8,1.8,1.8c2.2,7.2,10.1,11.8,17.4,10.2c5.9-1.4,9.7-5,11.6-10.8c0.1-0.4,0.5-0.9,0.8-1
+                                                    c2.1-0.5,3-1.5,3-3.7c0-4.2,0-8.4,0-12.6c0-2.4,0-4.8,0.4-7.2c1.4-9.9,5.4-18.7,11.8-26.4c8.2-10.1,11.2-21.5,8.3-34.2
+                                                    c0-0.2-0.1-0.4-0.2-0.6l-5.1,5.1C105.3,51.6,103.3,59.9,97.7,67.1z M71.1,128.8c-4.4,0.1-8.4-2.6-9.5-6.5c6,0,11.9,0,17.9,0
+                                                    C78.7,125.8,74.9,128.8,71.1,128.8z M83.1,116.6c-8.3,0-16.7,0-25.1,0c0-2.2,0-4.3,0-6.4c8.4,0,16.7,0,25.1,0
+                                                    C83.1,112.3,83.1,114.4,83.1,116.6z M83.1,104.5c-8.4,0-16.7,0-25.1,0c-0.1-2-0.2-3.9-0.4-5.9c8.6,0,17.2,0,25.9,0
+                                                    C83.4,100.6,83.3,102.5,83.1,104.5z"/>
+                                                <path d="M44.3,68.6c-5.5-6.8-8.2-14.5-7.8-23.2C37.4,29.6,48.4,17.8,62,14.2c16.9-4.4,34.1,4.9,40.2,20.6l4.6-4.6
+                                                    c-6-12.7-18.7-21.7-33-22.6C62.2,6.9,52,10.4,43.6,18.5c-10,9.6-13.8,21.4-11.8,35.1c1,7.3,4.3,13.7,9.1,19.4
+                                                    c3.7,4.4,6.6,9.3,8.6,14.6l4-4C51.1,78.1,48,73.2,44.3,68.6z"/>
+                                                <path d="M128,13.9c-1.4-1.4-3.6-1.4-5,0l-16.3,16.3l-4.6,4.6L53.4,83.5l-4,4l-35.6,35.6c-1.4,1.4-1.4,3.6,0,4.9
+                                                    c0.7,0.7,1.6,1,2.5,1s1.8-0.3,2.5-1l32.7-32.7l4.5-4.5l48.1-48.1l5.1-5.1l18.7-18.7C129.3,17.5,129.3,15.2,128,13.9z"/>
+                                            </g>
+                                            </svg>
+
+
+
+                                            {{ section.settings.bulb }}
+                                        </div>
+                                    {% endif %}
+                                    <div class="item-qty item-qty-mobile">
+                                        <div class="product-quantity-action">
+                                            <div class="product-quantity" data-variant="{{ item.id }}">
+                                                <div class="cart-plus-minus">
+                                                    <input type="text" value="{{ item.quantity }}" name="updates[]" class="qt" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-mobile-price">
+                                        <h4 class="info-row__heading">Cena bez DPH</h4>
+                                        <div class="item-price">
+                                            <span class="money amount no-vat full-price">{{ item.line_price | divided_by:1.21 | money }}</span>
+                                        </div>
+                                        <div class="mobile-remove"> </div>
+                                    </div>
+                                    <div class="cart-mobile-price">
+                                            <h4 class="info-row__heading">Cena s DPH</h4>
+                                            <div class="item-price">
+                                                <span class="money amount full-price">{{ item.line_price | money }}</span>
+                                            </div>
+                                        <div class="item-remove mobile-remove">
+                                            <span class="remove-wrap">
+                                                <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="text-danger">
+                                                    <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 369 412" style="enable-background:new 0 0 369 412;" xml:space="preserve">
+                                            <g>
+                                                <path d="M88,397.6c-3.3-1.1-6.7-1.9-9.8-3.4c-12.9-6.4-18.3-17.4-19.4-31.4c-3.7-46.7-7.6-93.4-11.4-140.2
+                                                    c-1.9-22.5-3.8-45-5.7-67.5c-0.1-1.4,0-2.7,0-4.4c95.2,0,190.3,0,286,0c-0.7,8.3-1.3,16.6-2,24.9c-1.9,22.6-3.8,45.2-5.7,67.8
+                                                    c-2.2,26.1-4.3,52.2-6.5,78.3c-1.3,15.2-2.2,30.3-3.9,45.5c-1.7,15.8-11.7,26.3-27.2,29.7c-0.5,0.1-0.9,0.4-1.3,0.6
+                                                    C216.7,397.6,152.3,397.6,88,397.6z M128.4,263c0-25.9,0-51.9,0-77.8c0-6-2.4-9.7-7.2-11.4c-8.1-2.8-15.2,2.5-15.2,11.5
+                                                    c0,47.7,0,95.5,0,143.2c0,4.5-0.1,9,0,13.5c0.1,5,2.9,8.6,7.6,10c8,2.5,14.8-2.6,14.8-11.2C128.4,314.9,128.4,289,128.4,263z
+                                                        M195.7,263c0-25.9,0-51.9,0-77.8c0-6-2.4-9.7-7.3-11.3c-8.1-2.7-15.2,2.6-15.2,11.5c0,50.2,0,100.5,0,150.7c0,2.1-0.1,4.2,0.1,6.4
+                                                    c0.3,4.8,3.1,8.2,7.6,9.6c8,2.4,14.8-2.7,14.8-11.3C195.8,314.8,195.7,288.9,195.7,263z M240.7,262.9c0,3.9,0,7.7,0,11.6
+                                                    c0,22.1,0,44.1,0,66.2c0,5.9,2.5,9.7,7.4,11.3c8,2.6,15-2.6,15-11.3c0-34.9,0-69.8,0-104.8c0-16.8,0-33.7,0-50.5
+                                                    c0-4.9-1.8-8.8-6.3-11c-7.7-3.9-16.2,1.6-16.2,10.7C240.6,211,240.7,236.9,240.7,262.9z"/>
+                                                <path d="M185.3,126.7c-50.8,0-101.5,0-152.3,0c-3.1,0-6.2-0.2-9.3-0.8c-4.5-0.9-7.3-3.8-7.4-8.2c-0.1-10.1-0.7-20.3,0.6-30.2
+                                                    C19,71,33.1,59.4,49.7,59.3c21-0.1,41.9-0.1,62.9,0c3,0,4.4-0.7,5.3-3.7c1.8-6.1,3.9-12.1,6-18.1c5-14.4,17.2-23.1,32.3-23.2
+                                                    c19-0.1,37.9-0.1,56.9,0c14.8,0.1,27,8.7,32,22.6c2.3,6.3,4.4,12.7,6.3,19.1c0.7,2.5,1.9,3.2,4.5,3.2c20.5-0.1,40.9-0.1,61.4-0.1
+                                                    c21.4,0,35.7,14.3,35.7,35.6c0,6.4,0,12.7,0,19.1c0,8.2-4.5,12.7-12.8,12.7C288.5,126.7,236.9,126.7,185.3,126.7z M140.3,59.1
+                                                    c29.7,0,58.9,0,88.5,0c-1.8-5.3-3.3-10.2-5.2-15.1c-1.8-4.7-5.5-7.1-10.4-7.1c-19.1-0.1-38.2-0.1-57.2,0c-5,0-8.7,2.4-10.4,7.1
+                                                    C143.6,48.8,142.1,53.8,140.3,59.1z"/>
+                                            </g>
+                                            </svg>
+                                            </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="special-notes col-xl-7 col-lg-5 col-md-12 col-12">
+                    <div class="proceed-to-discount">
+                        <label>Máte slevový kód?</label>
+                        <form action="/cart" method="post">
+                            <input type="text" id="input-discount" name="discount" placeholder="{{ section.settings.cart_discount_placeholder_text }}">
+                        </form>
+                    </div>
+                    {%- if section.settings.cart_notes_enable -%}
+                    <div class="">
+                        <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
+                        <textarea name="note" id="CartSpecialInstructions" data-cart-notes>{{ cart.note }}</textarea>
+                    </div>
+                    {%- endif -%}
+                    {% unless customer %}
+                                    <div class="cart-additional-company">
+                                        <label>Nakupujete na firmu? Zadejte prosím níže Vaše firemní údaje</label>
+                                        <div class="company-info">
+                                    <p class="">
+                                <label for="firma">Název firmy</label>
+                                <input type="text" id="firma" class="custom_field" name="attributes[Název firmy]" value="{{ cart.attributes["Název firmy"] }}">
+                            </p> 
+                                        <p class="">
+                                <label for="ic">IČO</label>
+                                <input type="text" class="custom_field" id="ic" name="attributes[IČO]" value="{{ cart.attributes["IČO"] }}">
+                            </p>
+                                        <p class="">
+                                <label for="dic">DIČ</label>
+                                <input type="text" class="custom_field" id="dic" name="attributes[DIČ]" value="{{ cart.attributes["DIČ"] }}">
+                            </p>
+                            </div>
+                            </div>
+                        {% endunless %}
+                    <div class="cart-buttons">
+                        <a href="/collections/all">{{ section.settings.continue_shopping_title }}</a>
+                        <!-- <a href="/cart/clear">{{ section.settings.clear_cart_title }}</a> -->
+                    </div>
+                    
+                </div>
+                <div class="col-xl-5 col-lg-7 col-md-12 col-12">
+                    <div class="cart-info-wrap">
+                        {%- if section.settings.shipping_calculator_enable -%}
+                        <div class="cart-calculator cart-info">
+                            <h6>{{ section.settings.shipping_calculator_heading | default: 'Shipping Charge' }}</h6>
+                            {%- include 'cart-shipping-calculator' -%}
+                        </div>
+                        {%- endif -%}
+                        <div class="cart-total-wrap cart-info">
+                            <h3>Shrnutí objednávky</h3>
+                            <div class="cart-total">
+                                <div class="total-amount">
+                                    <span class="total-title">{{ section.settings.cart_total_title }}</span>
+                                    <span class="money amount total-price">{{ cart.total_price | money }}</span>
+                                </div>
+
+                                {%- if cart.total_discounts > 0 -%}
+                                {% assign savings = cart.total_discounts | money %}
+                                <p>
+                                    <span class="money cart-subtotal__savings"><em>{{ 'cart.general.savings_html' | t: price: savings }}</em></span>
+                                </p>
+                                {%- endif -%}
+
+                                <div class="proceed-to-checkout btn btn-style2">
+                                    <input type="submit" name="checkout" value="{{ section.settings.checkout_button_title }}">
+                                </div>
+
+                                {%- if section.settings.cart_template_payment_img_enable -%}
+                                <div class="cart-payment-icon">
+                                    {% include 'payment-icon' %}
+                                </div>
+                                {%- endif -%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    {%- else -%}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="empty-cart-page">
+                    <h2>
+                        <span>{{ section.settings.cart_empty_title1 }}</span>
+                        <span>{{ section.settings.cart_empty_title2 }}</span>
+                    </h2>
+
+                    <h6>{{ section.settings.cart_empty_desc_text }}</h6>
+
+                    <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%- endif -%}
+    <div class="cart-navbar cart-mobile container">
+        <div class="total-amount">
+            <span class="total-title">Celkem s DPH</span>
+            <span class="money amount total-price">{{ cart.total_price | money }}</span>
+        </div>
+        <a class="proceed-to-checkout btn btn-style2" href="/checkout">
+            Pokračovat <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right-small"><path d="M9.294 8.777l-3.001-3a1 1 0 010-1.415l.069-.07a1 1 0 011.414 0l3.777 3.778a1 1 0 010 1.414l-3.777 3.777a1 1 0 01-1.414 0l-.07-.069a1 1 0 010-1.414l3.002-3.001z" fill="#fff" fill-rule="nonzero"/></svg>
+        </a>
+    </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Cart Page",
+    "settings": [
+    {
+        "type": "header",
+        "content": "Section Content"
+    },
+    {
+        "type": "text",
+        "id": "bulb",
+        "label": "Svítidlo bez žárovky",
+        "default": "Svítidlo bez žárovky"
+    },
+    {
+        "type": "text",
+        "id": "cart_title",
+        "label": "My Cart title",
+        "default": "My cart:"
+    },
+    {
+        "type": "text",
+        "id": "cart_item_title",
+        "label": "Item Title",
+        "default": "Item"
+    },
+    {
+        "type": "text",
+        "id": "cart_item_remove",
+        "label": "Remove Title",
+        "default": "Remove"
+    },
+    {
+        "type": "text",
+        "id": "continue_shopping_title",
+        "label": "Continue Shopping Button Title",
+        "default": "Continue shopping"
+    },
+    {
+        "type": "text",
+        "id": "clear_cart_title",
+        "label": "Clear Cart Button Title",
+        "default": "Clear cart"
+    },
+    {
+        "type": "checkbox",
+        "id": "cart_vendor_enable",
+        "label": "Show Product Vendor",
+        "default": false
+    },
+    {
+        "type": "header",
+        "content": "Note"
+    },
+    {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "Show Cart Notes",
+        "default": true
+    },
+    {
+        "type": "header",
+        "content": "Shipping Calculator"
+    },
+    {
+        "type": "checkbox",
+        "id": "shipping_calculator_enable",
+        "label": "Show Shipping Calculator",
+        "default": true
+    },
+    {
+        "type": "text",
+        "id": "shipping_calculator_heading",
+        "label": "Shipping Calculator Title",
+        "default": "Shipping info"
+    },
+    {
+        "type": "paragraph",
+        "content": "Shipping calculator response text when shipping rate are differrent"
+    },
+    {
+        "type": "text",
+        "id": "shipping_calculator_respose_text1",
+        "label": "Resposne Text 1",
+        "default": "There are"
+    },
+    {
+        "type": "text",
+        "id": "shipping_calculator_respose_text2",
+        "label": "Resposne Text 2",
+        "default": "shipping rates available for"
+    },
+    {
+        "type": "text",
+        "id": "shipping_calculator_respose_text3",
+        "label": "Resposne Text 3",
+        "default": "starting at"
+    },
+    {
+        "type": "paragraph",
+        "content": "Shipping calculator response text when one shipping rate"
+    },
+    {
+        "type": "textarea",
+        "id": "shipping_calculator_respose_text4",
+        "label": "Resposne Text 4",
+        "default": "There is one shipping rate available for"
+    },
+    {
+        "type": "paragraph",
+        "content": "Shipping calculator response text when not ship that destination"
+    },
+    {
+        "type": "textarea",
+        "id": "shipping_calculator_respose_text5",
+        "label": "Resposne Text 5",
+        "default": "We do not ship to this destination."
+    },
+    {
+        "type": "paragraph",
+        "content": "When shippping calculate"
+    },
+    {
+        "type": "text",
+        "id": "shipping_calculator_calculate_at_text",
+        "label": "Standard 'At' Title",
+        "default": "at"
+    },
+    {
+        "type": "text",
+        "id": "shipping_calculator_button_title",
+        "label": "Shipping Calculator Button Title",
+        "default": "Calculate"
+    },
+    {
+        "type": "header",
+        "content": "Cart Totals"
+    },
+    {
+        "type": "text",
+        "id": "cart_total_title",
+        "label": "Cart Total Title",
+        "default": "Total"
+    },
+    {
+        "type": "header",
+        "content": "Cart Discount Code"
+    },
+    {
+        "type": "text",
+        "id": "cart_discount_placeholder_text",
+        "label": "Discount Placeholder Text",
+        "default": "Discount code"
+    },
+    {
+        "type": "header",
+        "content": "Cart Checkout Button"
+    },
+    {
+        "type": "text",
+        "id": "checkout_button_title",
+        "label": "Checkout Button Title",
+        "default": "Checkout"
+    },
+    {
+        "type": "header",
+        "content": "Cart Payment Image"
+    },
+    {
+        "type": "checkbox",
+        "id": "cart_template_payment_img_enable",
+        "label": "Show Payment Image",
+        "default": true
+    },
+    {
+        "type": "header",
+        "content": "When Cart Is Empty"
+    },
+    {
+        "type": "text",
+        "id": "cart_empty_title1",
+        "label": "Cart Empty Title 1",
+        "default": "Cart"
+    },
+    {
+        "type": "text",
+        "id": "cart_empty_title2",
+        "label": "Cart Empty Title 2",
+        "default": "empty"
+    },
+    {
+        "type": "textarea",
+        "id": "cart_empty_desc_text",
+        "label": "Description",
+        "default": "Sorry your cart has currently no more products, click on 'here' given below for continue browsing."
+    }
+    ]
+  }
+{% endschema %}
+<style>
+    .breadcrumb-area{
+        min-height:100px;
+      }
+    .cart-page .cart-item-wrap {
+        padding: 30px 30px 0 30px;
+        background-color: #ffffff;
+        /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); */
+    }
+    .cart-page .cart-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .cart-page .cart-title h6 {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        line-height: 1;
+    }
+    .cart-page .cart-title span.cart-count {
+        color: {{ settings.color_primary }};
+        font-weight: 600;
+        border-bottom: 1px solid {{ settings.color_primary }};
+        line-height: 1;
+    }
+    @media (max-width: 767px) {
+        .cart-page .cart-item-wrap {
+            padding: 30px 15px;
+        }
+    }
+
+    /* cart item css */
+    .cart-page .item-wrap ul {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .cart-page .item-wrap ul li.item-info {
+        width: 50%;
+    }
+    .cart-page .item-wrap ul li.item-qty,
+    .cart-page .item-wrap ul li.item-price {
+        width: 10%;
+    }
+    .cart-page .item-wrap ul li.item-trash {
+        width: 5%;
+        text-align: right;
+    }
+    @media (max-width: 991px) {
+        .cart-page .item-wrap ul li.item-info {
+            width: 100%;
+        }
+        .cart-page .item-wrap ul li.item-qty,
+        .cart-page .item-wrap ul li.item-price {
+            width: 50%;
+            margin-top: 15px;
+        }
+    }
+
+    /* cart image css */
+    .cart-page .item-wrap ul li.item-info {
+        display: flex;
+        align-items: center;
+    }
+    .cart-page .item-wrap ul li.item-info .item-img {
+        width: 100px;
+    }
+    .cart-page .item-wrap ul li.item-info .item-img a {
+        border: 1px solid #e2e2e2;
+    }
+    .cart-page .item-wrap ul li.item-info .item-title {
+        width: calc(100% - 100px);
+        padding: 0 15px;
+        margin-left: 5px;
+    }
+    .cart-page .item-wrap ul li.item-info .item-title a {
+        display: block;
+        color: #000;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+    .cart-page .item-wrap ul li.item-info .item-title span.item-option {
+        display: flex;
+        margin-top: 11px;
+        line-height: 1;
+    }
+    .cart-page .item-wrap ul li.item-info .item-title span.item-option:first-of-type {
+        margin-top: 11px;
+    }
+    .cart-page .item-wrap ul li.item-info .item-title span.item-option span {
+        color: {{ settings.heading_text_color }};
+        text-transform: capitalize;
+    }
+    .cart-page .item-wrap ul li.item-info .item-title span.item-option span.pro-variant-title {
+        color: {{ settings.heading_text_color }};
+        font-weight: 500;
+    }
+    .cart-page .item-wrap ul li.item-info .item-title span.item-option span.pro-variant-type {
+        {% if settings.enable_rtl %}
+        margin-right: 5px;
+        {% else %}
+        margin-left: 5px;
+        {% endif %}
+    }
+
+    /* cart qty css */
+    .cart-page .item-wrap ul li.item-qty {
+        text-align: center;
+    }
+    .cart-page .item-wrap ul li.item-qty .product-quantity {
+        display: flex;
+        justify-content: center;
+    }
+    .cart-page .item-wrap ul li.item-qty .item-remove {
+        margin-top: 15px;
+    }
+    .cart-page .item-wrap ul li.item-qty .item-remove .remove-wrap a {
+        text-decoration: underline;
+    }
+    .item-remove svg {
+        height:20px;
+    }
+    @media (max-width: 991px) {
+        .cart-page .item-wrap ul li.item-qty {
+            display: flex;
+            align-items: center;
+            {% if settings.enable_rtl %}
+            text-align: right;
+            {% else %}
+            text-align: left;
+            {% endif %}
+        }
+        .cart-page .item-wrap ul li.item-qty .item-remove {
+            margin-top: 0;
+            {% if settings.enable_rtl %}
+            margin-right: 15px;
+            {% else %}
+            margin-left: 15px;
+            {% endif %}
+        }
+    }
+
+    /* cart price css */
+    .cart-page .item-wrap ul li.item-price {
+        {% if settings.enable_rtl %}
+        text-align: left;
+        {% else %}
+        text-align: right;
+        {% endif %}
+    }
+    .cart-page .item-price span.amount {
+        color: #000;
+        font-weight: 700;
+    }
+    .cart-page .item-price span.no-vat {
+        font-weight: 400;
+    }
+    /* cart button css */
+    .cart-page .cart-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+        /* border-bottom: 1px solid #e2e2e2; */
+    }
+    .cart-page .cart-buttons input {
+        color: {{ settings.body_text_color }};
+        font-size: 16px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
+    }
+    .cart-page .cart-buttons input:hover{
+        color: {{ settings.color_primary }};
+    }
+    .cart-page .cart-buttons a {
+        color: {{ settings.body_text_color }};
+        font-size: 16px;
+        text-decoration: underline;
+        -webkit-transition: all 0s ease-in-out 0s;
+        -o-transition: all 0s ease-in-out 0s;
+        transition: all 0s ease-in-out 0s;
+    }
+    .cart-page .cart-buttons a:hover {
+        color: {{ settings.color_primary }};
+    }
+    @media (max-width: 479px) {
+        .cart-page .cart-buttons {
+            flex-direction: column;
+        }
+        .cart-page .cart-buttons a {
+            margin-top: 15px;
+        }
+    }
+
+    /* special instruction css */
+    .cart-page .special-notes {
+        padding: 10px 30px 30px 30px;
+        /* margin-top: 30px; */
+        background-color: #ffffff;
+        /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); */
+    }
+    .cart-page .special-notes label {
+        display: block;
+        color: {{ settings.heading_text_color }};
+        font-size: 18px;
+        padding: 15px 0;   
+        font-weight: 500;        
+        /* border-bottom: 1px solid #e2e2e2;
+        border-top: 1px solid #e2e2e2; */
+        cursor: auto;
+        line-height: 1;
+    }
+    .cart-page .special-notes textarea {
+        width: 100%;
+        max-width: 400px;
+    }
+    @media (max-width: 767px) {
+        .cart-page .special-notes {
+            padding: 30px 15px;
+        }
+    }
+
+    /* cart info css */
+    .cart-page .cart-info-wrap {
+        margin-top:30px;
+    }
+    .cart-page .cart-info-wrap .cart-info {
+        margin-top: 30px;
+    }
+    .cart-page .cart-info-wrap .cart-info h5{
+        margin-bottom:10px;
+    }
+    .cart-page .cart-info-wrap .cart-info:first-child {
+        margin-top: 0;
+    }
+    @media (max-width: 991px) {
+        .cart-page .cart-info-wrap {
+            position: unset;
+            margin-top: 30px;
+        }
+    }
+
+    /* cart shipping css */
+    .cart-page .cart-info-wrap .cart-calculator {
+        padding: 30px;
+        background-color: #f6f6f6;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+    .cart-page .cart-info-wrap .cart-calculator h6 {
+        font-size: 18px;
+        padding: 15px 0;
+        text-transform: capitalize;
+        font-weight: 500;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        line-height: 1;
+    }
+    .cart-page .cart-info-wrap .cart-calculator .culculate-shipping {
+        margin-top: 15px;
+    }
+    .cart-page .cart-info-wrap .cart-calculator .culculate-shipping ul li.field {
+        margin-top: 13px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-page .cart-info-wrap .cart-calculator .culculate-shipping ul li.field:first-child {
+        margin-top: 0px;
+    }
+    .cart-page .cart-info-wrap .cart-calculator .culculate-shipping ul li.field label {
+        display: block;
+        cursor: auto;
+        margin-bottom: 8px;
+        line-height: 1;
+    }
+    @media (max-width: 767px) {
+        .cart-page .cart-info-wrap .cart-calculator {
+            padding: 30px 15px;
+        }
+    }
+
+    /* shipping calculator response text */
+    .cart-page .cart-info-wrap #wrapper-response p {
+        padding: 10px 0;
+        margin-top: 15px;
+        text-align: center;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        line-height: normal;
+    }
+    .cart-page .cart-info-wrap #wrapper-response ul#shipping-rates li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .cart-page .cart-info-wrap #wrapper-response ul#shipping-rates li span.calculate-title {
+        color: {{ settings.body_text_color }};
+    }
+    .cart-page .cart-info-wrap #wrapper-response ul#shipping-rates li span.calculate-rate {
+        color: {{ settings.color_primary }};
+        font-weight: 600;
+    }
+
+    /* shippping calculate */
+    .cart-page .cart-info-wrap .cart-calculator .culculate-shipping .shipping-info {
+        margin-top: 23px;
+        text-align: center;
+    }
+    .cart-page .cart-info-wrap .cart-calculator .culculate-shipping .shipping-info a {
+        color: {{ settings.body_text_color }};
+        font-size: 16px;
+        text-decoration: underline;
+        -webkit-transition: all 0s ease-in-out 0s;
+        -o-transition: all 0s ease-in-out 0s;
+        transition: all 0s ease-in-out 0s;
+    }
+    .cart-page .cart-info-wrap .cart-calculator .culculate-shipping .shipping-info a:hover{
+        color: {{ settings.color_primary }};
+    }
+    
+    /* cart total css */
+    .cart-page .cart-total-wrap {
+        padding: 30px 50px;
+        background-color: #EAEAEA;
+        /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); */
+    }
+    .cart-page .cart-total-wrap .cart-total .total-amount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 0;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        line-height: 1;
+        font-size:20px;
+    }
+    .cart-page .cart-total-wrap .cart-total .total-amount span.total-title {
+         color: {{ settings.body_text_color }};
+    }
+    .cart-page .cart-total-wrap .cart-total .total-amount span.amount {
+        color: #000;
+        font-weight: 600;
+    }
+    .cart-page  .proceed-to-discount input {
+        width: 100%;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+    .cart-page .cart-info-wrap .cart-total .proceed-to-checkout {
+        margin-top: 23px;
+        text-align: center;
+        display: block;
+        font-size:16px;
+    }
+    @media(max-width:500px){
+        .cart-page .cart-info-wrap .cart-total .proceed-to-checkout{
+            font-size:14px;
+        }
+    }
+    @media(max-width:350px){
+        .cart-page .cart-info-wrap .cart-total .proceed-to-checkout{
+            font-size:12px;
+        }
+    }
+    .cart-page .cart-info-wrap .cart-total .proceed-to-checkout input {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        text-decoration: inherit;
+        text-transform: inherit;
+        color:inherit;
+    }
+
+    .cart-page .cart-info-wrap .cart-total .cart-payment-icon {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .cart-page .cart-info-wrap .cart-total .cart-payment-icon a {
+        justify-content: center;
+    }
+    @media (max-width: 767px) {
+        .cart-page .cart-total-wrap {
+            padding: 30px 15px;
+        }
+    }
+    .cart-info h3{
+        margin-bottom: 10px;
+    }
+    /* cart empty css */
+    .cart-page .empty-cart-page {
+        max-width: 58.33%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cart-page .empty-cart-page h2 {
+        font-size: 60px;
+        text-transform: capitalize;
+        line-height: 1;
+    }
+    .cart-page .empty-cart-page h2 span {
+        display: block;
+    }
+    .cart-page .empty-cart-page h6 {
+        font-size: 18px;
+        margin-top: 14px;
+        font-weight: 500;
+    }
+    .cart-page .empty-cart-page p {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .cart-page .empty-cart-page p a {
+        color: {{ settings.color_primary }};
+        text-decoration: underline;
+    }
+    @media (max-width: 1199px) {
+        .cart-page .empty-cart-page {
+            max-width: 66.66%;
+        }
+    }
+    @media (max-width: 991px) {
+        .cart-page .empty-cart-page {
+            max-width: 83.33%;
+        }
+    }
+    @media (max-width: 767px) {
+        .cart-page .empty-cart-page {
+            max-width: 100%;
+        }
+    }
+    .no-bulb{
+        font-weight:bold;
+        margin-top:10px;
+        color:#232323;
+    }
+    .no-bulb svg{
+        height:25px;
+    }
+    @media(min-width:1000px){
+        .cart-mobile{
+            display:none!important;
+    }
+}
+    @media only screen and (max-width: 999px){
+        .cart-desktop{
+            display:none!important;
+        }
+        .section-ptb{
+            margin-top:0;
+            padding-top:0;
+        }
+        .cart-page .item-info-row{
+            display:flex;
+            border-bottom: 1px solid #e2e2e2;
+            align-items: center;
+            /* justify-content: space-between; */
+            padding: 15px 0;
+        }
+        .cart-page .info-row__heading{
+            min-width: 30%;
+            font-size:13px;
+            font-weight: normal;
+            color:#6f6f6f;
+        }
+        .cart-page .item-block{
+            margin-top: 35px;
+        }
+        .cart-page .item-title{
+            margin-left:10px;
+        }
+        .breadcrumb-area{
+            padding:0;        }
+    }
+    .cart-mobile .item-img a{
+        border: 1px solid #e2e2e2;
+    }
+    .cart-mobile .item-title{
+        display:flex;
+        flex-direction: column;
+        width:70%;
+    }
+    .cart-mobile .item-title a{
+        font-weight: bold;
+    }
+    .item-qty-mobile{
+        width:105px;
+        margin-top:20px;
+    }
+    .cart-mobile-price{
+        display:flex;
+        justify-content: space-between;
+    }
+    .cart-mobile-price .info-row__heading{
+        width:50%;
+    }
+    .cart-mobile-price .item-price{
+        width:30%;
+    }
+    .cart-mobile-price .mobile-remove{
+        width:20%;
+        text-align: right;
+    }
+    .cart-mobile .item-info-row{
+        align-items: flex-start;
+        gap:10px;
+    }
+    .cart-navbar{
+        position: fixed;
+        width:100%;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        align-items: center;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .nav--hidden {
+        display:none;
+        box-shadow: none;
+
+    }
+    .cart-navbar .total-amount{
+        display:flex;
+        flex-direction: column;
+    }
+    .cart-navbar .total-price{
+        font-weight: bold;
+        font-size:20px;
+        color:#000;
+    }
+    .cart-navbar input{
+        background: none;
+        background: none;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .custom_field{
+        max-width: 400px;
+        width: 100%;
+    }
+</style>
+<script>
+  $('.product-quantity').append('<span class="dec qtybtn"></span><span class="inc qtybtn"></span>');
+  $('.qtybtn').on('click', function() {
+    var $button = $(this);
+    var oldValue = $button.parent().find('input').val();
+    if ($button.hasClass('inc')) {
+      var newVal = parseFloat(oldValue) + 1;
+    } else {
+      // Don't allow decrementing below zero
+      if (oldValue > 0) {
+        var newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 0;
+      }
+    }
+    $button.parent().find('input').val(newVal);
+  });
+
+
+
+    window.onscroll = function() {
+    const cartBottomNav = document.querySelector(".cart-navbar");
+
+    if(cartBottomNav){
+        let topPosition = $(window).scrollTop();
+        let hideBreakpoint = document.querySelector(".cart-info-wrap").getBoundingClientRect().top;
+        
+        return topPosition >= hideBreakpoint ? cartBottomNav.classList.add("nav--hidden") : cartBottomNav.classList.remove("nav--hidden");
+    }
+};
+
+</script>

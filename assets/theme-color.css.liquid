@@ -1,0 +1,185 @@
+/* theme color */
+body{
+  color: {{ settings.body_text_color }};
+}
+/*=====================================
+tag element
+======================================*/
+a:hover{
+  color: {{ settings.color_primary }};
+}
+
+/* button type */
+.btn-style:hover{
+  background-color: {{ settings.color_primary }};
+}
+.btn-style3{
+  background-color: {{ settings.color_primary }};
+}
+.btn-style3:hover{
+  background-color:{{ settings.color_secondary }};
+}
+.btn-style2{
+  border: 2px solid {{ settings.color_secondary }};
+  background-color: {{ settings.color_secondary }};
+}
+.btn-style2:hover{
+  color: {{ settings.color_secondary }};
+  background-color: transparent;
+}
+.btn-style2.style2-diff{
+  border: 2px solid {{ settings.color_primary }};
+  background-color: {{ settings.color_primary }};
+}
+.btn-style2.style2-diff:hover{
+color: {{ settings.color_primary }};
+  background-color: transparent;
+}
+
+.btn-style4:hover {
+  background-color: {{ settings.color_secondary }};
+}
+.btn-style5{
+  border: 2px solid {{ settings.color_secondary }};
+  color: {{ settings.color_secondary }};
+}
+.btn-style5:hover{
+  background-color: {{ settings.color_secondary }};
+}
+.btn-style6:hover {
+  border-color: {{ settings.color_primary }};
+  color: {{ settings.color_primary }};
+}
+.btn-style7{
+  background-color:{{ settings.color_secondary }};
+}
+.btn-style7:hover{
+  background-color: {{ settings.color_primary }};
+}
+.btn-style8:hover{
+  background-color: {{ settings.color_secondary }}; 
+}
+
+.btn-style9 {
+  color: {{ settings.color_secondary }};
+}
+
+.btn-style9:hover,
+.btn-style9:after {
+  background-color: {{ settings.color_primary }};
+  border-color: {{ settings.color_primary }};
+}
+
+.btn-style10 {
+  color: {{ settings.color_secondary }};
+}
+.btn-style10:hover {
+  border-color: {{ settings.color_primary }};
+  background-color: {{ settings.color_primary }};
+}
+
+.btn-style11:hover {
+  border-color: {{ settings.color_primary }};
+  background-color: {{ settings.color_primary }};
+}
+
+
+/*=====================================
+  section title color
+======================================*/
+.section-title h2 {
+  color:{{ settings.color_secondary }};
+}
+
+/*=====================================
+  product tab color
+======================================*/
+.product-area .tab ul.nav-tabs li a{
+  color: {{ settings.color_secondary }};
+}
+.product-area .tab ul.nav-tabs li a.active::after{
+  background: {{ settings.color_primary }};
+}
+
+/*=====================================
+  header color
+======================================*/
+.header-bottom-area{
+  background-color:{{ settings.color_primary }};
+}
+.header-area .header-main button.navbar-toggler svg{
+  color:{{ settings.color_secondary }};
+}
+@media (max-width: 1199px) {
+  .header-bottom-area{
+    background-color: transparent;
+  }
+}
+.megamenu-content .mainwrap ul.main-menu li.menu-link ul.dropdown-submenu.mega-menu li.megamenu-li h2{
+  color: {{ settings.color_primary }};
+}
+.megamenu-content .mainwrap ul.main-menu li.menu-link a.link-title .sp-link-title:after{
+  background-color: {{ settings.color_secondary }};
+}
+.megamenu-content .mainwrap ul.main-menu li.menu-link a.link-title{
+  color: {{ settings.color_secondary }};
+}
+
+/* search button color */
+.right-block-box ul.shop-element li.search-wrap .search-rap .crap-search .form-search button:hover{
+  background-color: {{ settings.color_secondary }};
+}
+/* product-label color */
+.product-label span.new-title,
+.product-label span.percent-count,
+.product-label span.sale-title{
+  background-color: {{ settings.new_title_lable_color }};
+}
+
+/*=====================================
+  product color
+======================================*/
+.single-product-wrap .product-action a:hover{
+  background-color: {{ settings.color_secondary }};
+}
+.shop-product-list-wrap .product-layout-list .product-content .product-action a{
+  background-color: {{ settings.color_primary }};
+  border: 1px solid {{ settings.color_primary }};
+}
+.product-list-item .single-product-wrap .product-content .product-action a{
+  background-color: {{ settings.color_primary }};
+}
+.product-ratting .spr-badge .spr-icon-star:before,
+.product-ratting .spr-badge .spr-icon-star-half-alt:before,
+.product-ratting .spr-badge .spr-icon-star-empty:before{
+  color: {{ settings.color_primary }};
+}
+@media(max-width: 1199px){
+  .single-product-wrap .product-action a:hover{
+    color: #232323;
+    background-color: transparent;
+  }
+}
+
+/*=====================================
+  sortby css
+======================================*/
+.product-view-mode .change-view.active,
+.product-view-mode .change-view:hover{
+  color: {{ settings.color_primary }};
+}
+
+/*=====================================
+  other page content main title color
+======================================*/
+.content-main-title h2 span::before,
+.content-main-title h2 span::after{
+  background-color:{{ settings.color_primary }};
+}
+
+/*=====================================
+  account page color
+======================================*/
+.my-account-page .page-title h2::after {
+  background-color:{{ settings.color_primary }};
+}

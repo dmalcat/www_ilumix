@@ -1,0 +1,245 @@
+<section class="collection-category-best">
+    <div class="container-fluid container-col">
+        <div class="row">
+            <div class="section-capture">
+                <div class="section-title">
+                  {% if section.settings.section_sub_title !='' %}
+                  <span>{{ section.settings.section_sub_title }}</span>
+                  {% endif %}
+                  {% if section.settings.section_title !='' %}
+                  <h2>{{ section.settings.section_title }}</h2>
+                  {% endif %}
+                </div>
+              </div>
+            <div class="bestsellers-grid__left">
+                {% assign category_product = collections[section.settings.best_label_product] %}
+          {% for product in category_product.products limit: 5 %}
+          <div class="bestseller-item wow animate__fadeIn">
+            {% if forloop.index == 1 %}
+            {% include 'product-grid-item-best' %}
+            {% else %}
+            {% include 'product-grid-item' %}
+            {% endif %}
+          </div>
+          {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    if(variant.id) {
+        $productSelectoption.each(function() {
+          if($(this).val() == variant.id) {
+            var in_stocks = $(this).attr('data-stocks');
+            if(in_stocks == 0) {
+              $stockzero.show();
+              $stockmore.hide();
+              $stockkus.hide();
+              $availablestock.text(in_stocks);
+              $instock.hide();
+              $outstock.show();
+            } else {
+              $stockzero.hide();
+              $stockmore.hide();
+              $stockkus.show();
+              if(in_stocks > 5) {
+                $stockkus.hide();
+                $stockmore.show();
+              }
+              $availablestock.text(in_stocks);
+              $instock.show();
+              $outstock.hide();
+            }
+          }
+        });
+      }
+</script>
+<style>
+
+    a.add-to-cart.disabled{
+        color: #eaeaea;
+        background-color: #ababab;
+        opacity: .65;
+        pointer-events: none;
+    }
+    .product-grid__badge{
+        position: absolute;
+        z-index: 3;
+        top: -10px;
+        right: 15px;
+        font-size: 40px;
+    }
+    .img-best{
+        border:none!important;
+    }
+    .img1-best{
+        padding:0!important;
+    }
+
+    .bestseller-item{
+        position: relative;
+    }
+    .collection-category-best{
+    padding-top:{{ section.settings.section_padding_top }}px;
+    padding-bottom:{{ section.settings.section_padding_bottom }}px;
+  }
+  @media(min-width:992px){
+    .bestsellers-grid__left{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .bestsellers-grid__left > div:first-child { grid-area: 1 / 1 / 3 / 3;}
+    .bestseller-item{
+        height: 500px;
+    }
+  }
+  @media (max-width: 991px){
+    .collection-category-best{
+      padding-top:{{ section.settings.section_padding_top_lg }}px;
+      padding-bottom:{{ section.settings.section_padding_bottom_lg }}px;
+    }
+    .bestsellers-grid__left{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+    }
+    .bestsellers-grid__left > div:first-child { grid-area: 3 / 1 / 2 / 3; }
+  }
+  @media (max-width: 767px){
+    .collection-category-best{
+      padding-top:{{ section.settings.section_padding_top_xs }}px;
+      padding-bottom:{{ section.settings.section_padding_bottom_xs }}px;
+    }
+  }
+  .collection-category-best .container-col{
+    padding-left: 285px;
+    padding-right: 285px;
+  }
+  @media(max-width: 1599px){
+    .collection-category-best .container-col{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media(max-width: 767px){
+    .collection-category-best .container-col{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Bestsellers",
+  "settings": [
+    {
+      "type" : "header",
+      "content" : "Section Padding"
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Desktop / Laptop / tablet"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_lg",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_lg",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_xs",
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_xs",
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Collection Title"
+    },
+    {
+      "type": "text",
+      "id": "section_sub_title",
+      "label": "Section Sub Title",
+      "default": "Premium designs"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Online store"
+    },
+    {
+      "type": "header",
+      "content": "Product"
+    },
+    {
+      "type" : "collection",
+      "id" : "best_label_product",
+      "label" : "Best Product"
+    }
+  ],
+  "presets":[
+    {
+      "name": "Bestsellers left side",
+      "category": "Collecton"
+    }
+  ]
+}
+{% endschema %}

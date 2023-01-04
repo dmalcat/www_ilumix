@@ -1,0 +1,17 @@
+<div class="acc-desk">
+    {% if customer.id != null %}
+    <div class="acc-re-lo account-icon">
+      <a href="/account">{%- include 'login' -%}</a>
+    </div>
+    {% else %}
+    <div class="acc-re-lo account-icon">
+      <a href="/account/login">{%- include 'login' -%}</a>
+    </div>  
+    {% endif %}
+  </div>
+
+  <style>
+    .account-icon svg{
+        height: 16px;
+    }
+  </style>

@@ -1,0 +1,7 @@
+{% if product.variants.first.inventory_quantity > 5 %}
+    více jak 5 kusů skladem
+    {% elsif product.variants.first.inventory_quantity > 1 %}
+        kusů {{ block.settings.skladem }}
+    {% else %}
+            1 kus
+{% endif %}

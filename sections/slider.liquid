@@ -1,0 +1,498 @@
+<section class="slider-content">
+    <div class="home-slider-main">
+        <div class="home-slider swiper-container home-slider" id="home-slider">
+            <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+            <div class="swiper-slide">
+                <div class="slide-image{% if block.settings.slider_content_position == "right" %} slider-content-right{% else %} slider-content-left{% endif %}">
+                    <div class="slide-image-cont">
+                        <img class="img-fluid" src="{% if block.settings.slider_bg_img %}{{ block.settings.slider_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x1033/f7f7f7/999999{% endif %}">
+                        <div class="slider-text-info{% if block.settings.slider_text_position == "right" %} slider-text-right{% elsif block.settings.slider_text_position == "left" %} slider-text-left{% else %} slider-text-center{% endif %}">
+                            {% if block.settings.slider_sub_title != '' %}
+                            <span class="sub-title" style="color:{{ block.settings.slider_sub_title_color }};">
+                                {{ block.settings.slider_sub_title }}
+                                <b>{{ block.settings.slider_sub_title_bold }}</b>
+                            </span>
+                            {% endif %}
+
+                            {% if block.settings.slider_title != '' %}
+                            <h2 style="color:{{ block.settings.slider_title_color }};">
+                                <span class="slider-subheading">{{ block.settings.slider_title1 }}</span>
+                                <span>{{ block.settings.slider_title2 }}</span>
+                            </h2>
+                            {% endif %}
+                            {% if block.settings.slider_badge != '' %}
+                            <h2 class="badge-text" style="color:{{ block.settings.badge_color}}">
+                                {{ block.settings.slider_badge }}
+                            </h2>
+                            {% endif %}
+                            <div class="button-block">
+                                {% if block.settings.slider_button != '' %}
+                                <a href="{{ block.settings.slider_button_url }}" class="btn btn-style8">
+                                    <span>{{ block.settings.slider_button }}</span>
+                                </a>
+                                {% endif %}
+                            </div>
+                            {% if block.settings.slider_bottom_title != '' %}
+                            <h6 style="color:{{ block.settings.slider_bottom_title_color }};">
+                                {{ block.settings.slider_bottom_title }}
+                            </h6>
+                            {% endif %}              
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination"><span></span></div>
+        </div>
+    </div>
+</section>
+<script>
+  var swiper = new Swiper('.swiper-container#home-slider', {
+    slidesPerColumn: 1,
+    slidesPerView: 1,
+    {%- if settings.enable_rtl -%}
+    rtl: true,
+    {%- endif -%}
+    dots: false,
+    effect: 'fade',
+    navigation: {
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+        },
+    }
+  });
+</script>
+{% schema %}
+{
+    "name": "Slider",
+    "blocks":[
+    {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+        {
+            "type": "header",
+            "content": "Slider Background color"
+        },
+        {
+            "type": "header",
+            "content": "Slider Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "slider_bg_img",
+            "label": "Image",
+            "info": "Recommended Size: 1920px x 1080px"
+        },
+        {
+            "type": "header",
+            "content": "Slider Side Title Description"
+        },
+        {
+            "type": "header",
+            "content": "Slider Sub Title"
+        },
+        {
+            "type": "text",
+            "id": "slider_sub_title",
+            "label": "Sub Title",
+            "default": "20% off this week"
+        },
+        {
+            "type": "text",
+            "id": "slider_sub_title_bold",
+            "label": "Sub Title Bold",
+            "default": "$250.00"
+        },
+        {
+            "type": "color",
+            "id": "slider_sub_title_color",
+            "label": "Sub Title color",
+            "default": "#1d1d1d"
+        },
+        {
+            "type": "header",
+            "content": "Slider Title"
+        },
+        {
+            "type": "text",
+            "id": "slider_title1",
+            "label": "Title",
+            "default": "Wargo lounge"
+        },
+        {
+            "type": "text",
+            "id": "slider_title2",
+            "label": "Title",
+            "default": "green chair"
+        },
+        {
+            "type": "text",
+            "id": "slider_badge",
+            "label": "Badge text"
+        },
+        {
+            "type": "color",
+            "id": "badge_color",
+            "label": "Badge color"
+        },
+        {
+            "type": "color",
+            "id": "slider_title_color",
+            "label": "Title color",
+            "default": "#1d1d1d"
+        },
+        {
+            "type": "header",
+            "content": "Slider Button"
+        },
+        {
+            "type": "text",
+            "id": "slider_button",
+            "label": "Button Text",
+            "default": "Discover now"
+        },
+        {
+            "type": "url",
+            "id": "slider_button_url",
+            "label": "Button URL"
+        },
+        {
+            "type": "header",
+            "content": "Slider Content Position"
+        },
+        {
+            "type": "radio",
+            "id": "slider_content_position",
+            "label": "Content Position",
+            "options": [
+            {
+                "label": "left",
+                "value": "left"
+            },
+            {
+                "label": "Right",
+                "value": "right"
+            },
+            {
+                "label": "Center",
+                "value": "center"
+            }
+            ],
+            "default": "left"
+        },
+        {
+            "type": "header",
+            "content": "Slider Text Position"
+        },
+        {
+            "type": "radio",
+            "id": "slider_text_position",
+            "label": "Text Position",
+            "options": [
+            {
+                "label": "left",
+                "value": "left"
+            },
+            {
+                "label": "Right",
+                "value": "right"
+            },
+            {
+                "label": "Center",
+                "value": "center"
+            }
+            ],
+            "default": "center"
+        }
+        ]
+    }
+    ],
+    "presets":[
+    {
+        "name": "Slider",
+        "category": "1. slider",
+        "blocks":[
+        {
+            "type": "slide"
+        },
+        {
+            "type": "slide"
+        }
+        ]
+    }
+    ]
+}
+{% endschema %}
+<style>
+    .home-slider-main .img-fluid{
+        width: 100%;
+    }
+    .home-slider-main .swiper-container{
+        max-height: 100vh;
+    }
+    .slider-content .home-slider .slide-image {
+        position: relative;
+        overflow: hidden;
+    }
+    @media (max-width: 767px){
+        .slider-content .home-slider .slide-image img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+
+    /* slider content css */
+    .slider-content .home-slider .slide-image .slider-text-info{
+        position: absolute;
+        bottom: 12%;
+    }
+    /* content position css */
+    .slider-content .home-slider .slide-image.slider-content-left .slider-text-info{
+        left: 100px;
+        margin-right: auto;
+    }
+    .slider-content .home-slider .slide-image.slider-content-right .slider-text-info{
+        right: 17%;
+        margin-left: auto;
+    }
+    .slider-content .home-slider .slide-image.slider-content-center .slider-text-info{
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 1599px){
+        .slider-content .home-slider .slide-image.slider-content-left .slider-text-info{
+            left: 30px;
+        }
+    }
+    @media (max-width: 767px){
+        .slider-content .home-slider .slide-image.slider-content-left .slider-text-info{
+            left: 15px;
+        }
+        .slider-content .home-slider .slide-image.slider-content-right .slider-text-info{
+            right: 15px; 
+        }
+        .slider-content .home-slider .slide-image.slider-content-center .slider-text-info{
+            left: 15px;
+            right: 15px; 
+        }
+    }
+
+    /* text position css */
+    .slider-content .home-slider .slide-image .slider-text-info.slider-text-left{
+        {%- if settings.enable_rtl -%}
+        text-align: right;
+        {%- else -%}
+        text-align: left;
+        {%- endif -%}
+    }
+    .slider-content .home-slider .slide-image .slider-text-info.slider-text-right{
+        {%- if settings.enable_rtl -%}
+        text-align: left;
+        {%- else -%}
+        text-align: right;
+        {%- endif -%}
+    }
+    .slider-content .home-slider .slide-image .slider-text-info.slider-text-center{
+        text-align: center;
+    }
+
+
+    /* text effect css */
+    .slider-content .home-slider .swiper-slide.swiper-slide-active .slider-text-info span.sub-title,
+    .slider-content .home-slider .swiper-slide.swiper-slide-active h2,
+    .slider-content .home-slider .swiper-slide.swiper-slide-active .button-block{
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;      
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    .slider-content .home-slider .swiper-slide.swiper-slide-active .slider-text-info span.sub-title{
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+    }
+    .slider-content .home-slider .swiper-slide.swiper-slide-active .slider-text-info h2{
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+        -webkit-animation-duration: 0.6s;
+        animation-duration: 0.6s;
+    }
+    .slider-content .home-slider .swiper-slide.swiper-slide-active .slider-text-info .button-block{
+        -webkit-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+        -webkit-animation-duration: 0.9s;
+        animation-duration: 0.9s;
+    }
+
+
+    /* slider text css */
+    .slider-content .home-slider .slide-image .slider-text-info span.sub-title{
+        font-size: 20px;
+        line-height: 1;
+    }
+    .slider-content .home-slider .slide-image .slider-text-info span.sub-title b{
+        font-weight: 600;
+    }
+    .slider-content .home-slider .slide-image .slider-text-info h2{
+        font-size: 70px;
+        margin-top: 30px;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .slider-content .home-slider .slide-image .slider-text-info .slider-subheading{
+        font-size:40px;
+    }
+    .slider-content .home-slider .slide-image .slider-text-info .slider-subheading:last-child{
+        position: relative;
+    }
+    .slider-content .home-slider .slide-image .slider-text-info .badge-text{
+        position: absolute;
+        margin: 0;
+        top: 48%;
+        right: -35%;
+    }
+    .slider-content .home-slider .slide-image .slider-text-info h2 span{
+        display: block;
+    }
+    .slider-content .home-slider .slide-image .slider-text-info .button-block{
+        margin-top: 70px;
+    }
+    @media (max-width: 1199px){
+        .slider-content .home-slider .slide-image .slider-text-info span.sub-title{
+            font-size: 16px;
+        }
+        .slider-content .home-slider .slide-image .slider-text-info h2{
+            font-size: 50px;
+            margin-top: 15px;
+        }
+        .slider-content .home-slider .slide-image .slider-text-info .button-block{
+            margin-top: 40px;
+        }
+        .slider-content .home-slider .slide-image .slider-text-info .badge-text{
+            right: -5%;
+        }
+    }
+    @media(max-width: 991px){
+        .slider-content .home-slider .slide-image .slider-text-info span.sub-title{
+            font-size: 15px;
+        }
+        .slider-content .home-slider .slide-image .slider-text-info h2{
+            font-size: 40px;
+        }
+        .slider-content .home-slider .slide-image .slider-text-info .badge-text{
+            right: 20%;
+            top:50%;
+        }
+    }
+    @media(max-width: 767px){
+        .slider-content .home-slider .slide-image .slider-text-info{
+            bottom: 15px;
+        }
+        .slider-content .home-slider .slide-image .slider-text-info .button-block{
+            margin-top: 30px;
+        }
+        .slider-content .home-slider .slide-image .slider-text-info .badge-text{
+            top:52%;
+        }
+    }
+
+
+    /* slider number css */
+    .home-slider .swiper-pagination{
+        bottom: 12%;
+        display: flex;
+        {% if settings.enable_rtl %}
+        left: 100px;
+        right: auto;
+        {% else %}
+        right: 100px;
+        left: auto;
+        {% endif %}
+        width: auto;
+        z-index: 1;
+    }
+    .home-slider .swiper-pagination span.swiper-pagination-bullet{
+        font-size: 15px;
+        color: {{ settings.color_secondary }};
+        font-weight: 700;
+        width: 53px;
+        height: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        outline: none;
+        margin: 0;
+        {% if settings.enable_rtl %}
+        margin-left: 5px;
+        {% else %}
+        margin-right: 5px;
+        {% endif %}
+        position: relative;
+        opacity: 1;
+        background-color: transparent;
+        font-family: 'Open Sans', sans-serif;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .home-slider .swiper-pagination span.swiper-pagination-bullet:last-child{
+        {% if settings.enable_rtl %}
+        margin-left: 0px;
+        {% else %}
+        margin-right: 0px;
+        {% endif %}
+    }
+    .home-slider .swiper-pagination span.swiper-pagination-bullet-active{
+        opacity: 1;
+        color: #fff;
+        background-color: {{ settings.color_secondary }};
+    }
+    .home-slider .swiper-pagination span.swiper-pagination-bullet:focus{
+        outline: none;
+    }
+    @media (max-width: 1599px){
+        .home-slider .swiper-pagination {
+            {% if settings.enable_rtl %}
+            left: 30px;
+            right: auto;
+            {% else %}
+            right: 30px;
+            left: auto;
+            {% endif %}
+        }
+    }
+    @media (max-width: 1199px){
+        .home-slider .swiper-pagination span.swiper-pagination-bullet{
+            font-size: 14px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    @media (max-width: 767px){
+        .home-slider .swiper-pagination{
+            bottom: 15px;
+            {% if settings.enable_rtl %}
+            left: 15px;
+            right: auto;
+            {% else %}
+            left: auto;
+            right: 15px;
+            {% endif %}
+        }
+    }
+</style>

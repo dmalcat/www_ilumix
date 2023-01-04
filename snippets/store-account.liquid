@@ -1,0 +1,117 @@
+<div class="acc-desk">
+  {% if customer.id != null %}
+  <div class="acc-re-lo">
+    <a href="/account">Účet</a>
+    <a href="/account/logout">{{ settings.logout_title }}</a>
+  </div>
+  {% else %}
+  <div class="acc-re-lo">
+    <a href="/account/login">{{ settings.login_title }}</a>
+    <a href="/account/register">{{ settings.register_title }}</a>
+  </div>  
+  {% endif %}
+  <a class="user-mobile" href="/account">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+  </a>
+</div>
+<style>
+  .user-wrap .acc-desk{
+    position: relative;
+  }
+  .user-wrap .acc-desk .user-mobile{
+    display: none;
+  }
+  .user-wrap .acc-desk a.acc-ti span.acc-icon{
+    line-height: 0;
+  }
+  .user-wrap .acc-desk a.acc-ti span.acc-icon,
+  .user-wrap .acc-desk a.acc-ti[aria-expanded="false"] span.acc-icon{}
+
+  .user-wrap .acc-desk a.acc-ti:hover span.acc-icon,
+  .user-wrap .acc-desk a.acc-ti[aria-expanded="true"] span.acc-icon{}
+
+  .user-wrap .acc-desk a.acc-ti span.acc-icon,
+  .user-wrap .acc-desk a.acc-ti:hover span.acc-icon{
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .user-wrap .acc-desk a.acc-ti span.acc-detail{
+    display: none;
+    {% if settings.enable_rtl %}
+    margin-right: 10px;
+    {% else %}
+    margin-left: 10px;
+    {% endif %}
+  }
+  .user-wrap .acc-desk a.acc-ti span.acc-detail span.acc-text{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .user-wrap .acc-desk a.acc-ti span.acc-detail span.acc-user{
+    display: block;
+    margin-top: 5px;
+    text-transform: capitalize;
+  }
+  .user-wrap .acc-desk a.acc-ti::after{
+    display: none;
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    {% if settings.enable_rtl %}
+    left: 0;
+    {% else %}
+    right: 0;
+    {% endif %}
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .user-wrap .acc-desk .acc-re-lo {
+    display: flex;
+  }
+  .user-wrap .acc-desk .acc-re-lo a:hover{
+    color: #fff;
+  }
+  .user-wrap .acc-desk .acc-re-lo a{
+    color: {{ settings.notification_txt_color }};
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .user-wrap .acc-desk .acc-re-lo a:first-child{
+    {% if settings.enable_rtl %}
+    margin-right: 0px;
+    {% else %}
+    margin-left: 0px;
+    {% endif %}
+  }
+  .user-wrap .acc-desk .acc-re-lo a{
+    {% if settings.enable_rtl %}
+    margin-right: 40px;
+    {% else %}
+    margin-left: 40px;
+    {% endif %}
+  }
+  @media (max-width: 1199px) {
+    .user-wrap .acc-desk a.acc-ti span.acc-detail{
+      display: none;
+    }
+    .user-wrap .acc-desk .acc-re-lo a{
+      font-size: 14px;
+      {% if settings.enable_rtl %}
+      margin-right: 15px;
+      {% else %}
+      margin-left: 15px;
+      {% endif %}
+    }
+  }
+  @media(max-width: 767px){
+    .user-wrap .acc-desk .acc-re-lo a:nth-child(2){
+      display: none;
+    }
+  }
+</style>

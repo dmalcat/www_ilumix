@@ -1,0 +1,185 @@
+/* theme color */
+body{
+  color: #6f6f6f;
+}
+/*=====================================
+tag element
+======================================*/
+a:hover{
+  color: #393939;
+}
+
+/* button type */
+.btn-style:hover{
+  background-color: #393939;
+}
+.btn-style3{
+  background-color: #393939;
+}
+.btn-style3:hover{
+  background-color:#232323;
+}
+.btn-style2{
+  border: 2px solid #232323;
+  background-color: #232323;
+}
+.btn-style2:hover{
+  color: #232323;
+  background-color: transparent;
+}
+.btn-style2.style2-diff{
+  border: 2px solid #393939;
+  background-color: #393939;
+}
+.btn-style2.style2-diff:hover{
+color: #393939;
+  background-color: transparent;
+}
+
+.btn-style4:hover {
+  background-color: #232323;
+}
+.btn-style5{
+  border: 2px solid #232323;
+  color: #232323;
+}
+.btn-style5:hover{
+  background-color: #232323;
+}
+.btn-style6:hover {
+  border-color: #393939;
+  color: #393939;
+}
+.btn-style7{
+  background-color:#232323;
+}
+.btn-style7:hover{
+  background-color: #393939;
+}
+.btn-style8:hover{
+  background-color: #232323; 
+}
+
+.btn-style9 {
+  color: #232323;
+}
+
+.btn-style9:hover,
+.btn-style9:after {
+  background-color: #393939;
+  border-color: #393939;
+}
+
+.btn-style10 {
+  color: #232323;
+}
+.btn-style10:hover {
+  border-color: #393939;
+  background-color: #393939;
+}
+
+.btn-style11:hover {
+  border-color: #393939;
+  background-color: #393939;
+}
+
+
+/*=====================================
+  section title color
+======================================*/
+.section-title h2 {
+  color:#232323;
+}
+
+/*=====================================
+  product tab color
+======================================*/
+.product-area .tab ul.nav-tabs li a{
+  color: #232323;
+}
+.product-area .tab ul.nav-tabs li a.active::after{
+  background: #393939;
+}
+
+/*=====================================
+  header color
+======================================*/
+.header-bottom-area{
+  background-color:#393939;
+}
+.header-area .header-main button.navbar-toggler svg{
+  color:#232323;
+}
+@media (max-width: 1199px) {
+  .header-bottom-area{
+    background-color: transparent;
+  }
+}
+.megamenu-content .mainwrap ul.main-menu li.menu-link ul.dropdown-submenu.mega-menu li.megamenu-li h2{
+  color: #393939;
+}
+.megamenu-content .mainwrap ul.main-menu li.menu-link a.link-title .sp-link-title:after{
+  background-color: #232323;
+}
+.megamenu-content .mainwrap ul.main-menu li.menu-link a.link-title{
+  color: #232323;
+}
+
+/* search button color */
+.right-block-box ul.shop-element li.search-wrap .search-rap .crap-search .form-search button:hover{
+  background-color: #232323;
+}
+/* product-label color */
+.product-label span.new-title,
+.product-label span.percent-count,
+.product-label span.sale-title{
+  background-color: #000000;
+}
+
+/*=====================================
+  product color
+======================================*/
+.single-product-wrap .product-action a:hover{
+  background-color: #232323;
+}
+.shop-product-list-wrap .product-layout-list .product-content .product-action a{
+  background-color: #393939;
+  border: 1px solid #393939;
+}
+.product-list-item .single-product-wrap .product-content .product-action a{
+  background-color: #393939;
+}
+.product-ratting .spr-badge .spr-icon-star:before,
+.product-ratting .spr-badge .spr-icon-star-half-alt:before,
+.product-ratting .spr-badge .spr-icon-star-empty:before{
+  color: #393939;
+}
+@media(max-width: 1199px){
+  .single-product-wrap .product-action a:hover{
+    color: #232323;
+    background-color: transparent;
+  }
+}
+
+/*=====================================
+  sortby css
+======================================*/
+.product-view-mode .change-view.active,
+.product-view-mode .change-view:hover{
+  color: #393939;
+}
+
+/*=====================================
+  other page content main title color
+======================================*/
+.content-main-title h2 span::before,
+.content-main-title h2 span::after{
+  background-color:#393939;
+}
+
+/*=====================================
+  account page color
+======================================*/
+.my-account-page .page-title h2::after {
+  background-color:#393939;
+}

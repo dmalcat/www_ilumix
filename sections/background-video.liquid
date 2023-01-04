@@ -1,0 +1,113 @@
+<style>
+    .video-controls{
+        width: 100%;
+        height: 75vh;
+        object-fit: cover;
+    }
+    .video-container{
+        position: relative;
+    }
+    .video-text{
+        color:#fff;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .video-text p{
+        font-size: 22px;
+        opacity: 0.7;
+        margin-bottom: 30px;
+        color: #fff4d3;
+    }
+    .video-text h3{
+        color: #fff;
+    }
+    .video-box{
+        position: relative;
+    }
+    .video-overlay{
+        background: rgba(0,0,0,0.4);
+        height: 99.5%;
+        width: 100%;
+        position: absolute;
+    }
+    @media(max-width:900px){
+        .video-text p{
+            font-size: 18px;
+        }   
+        .video-text h3{
+            font-size: 20px;
+        }
+    }
+    @media(max-width:600px){
+        .video-text{
+            position: relative;
+            color:black;
+            margin-bottom: 30px;    
+        }
+        .video-text h3, .video-text p{
+            color: black;
+        }
+        .video-overlay{
+            display: none;
+        }
+    }
+</style>
+<section class="slider-category">
+<div class="video-container container-fluid category-col">
+    <div class="video-text">
+        <p>{{section.settings.subtitle}}</p>
+        <h3>{{section.settings.title | newline_to_br}}</h3>
+    </div>
+    <div class="video-box">
+        <div class="video-overlay"></div>
+        <video autoplay loop muted playsinline class="video-controls">
+
+            <source src="{{section.settings.video}}"
+                    type="video/mp4">
+        </video>
+    </div>
+</div>
+</section>
+
+{% schema %}
+
+{
+    "name":"Background video",
+    "settings":[
+       {
+          "id":"video",
+          "type":"text",
+          "label":"Video link",
+          "info":"Supports mp4, YouTube and Vimeo. Only mp4 videos will play on mobile."
+       },{
+        "id":"subtitle",
+        "type":"text",
+        "label":"Subtitle",
+        "default":"Proč ILUMIX light design?"
+     },{
+        "id":"title",
+        "type":"html",
+        "label":"Title"
+     }
+    ],
+    "presets":[
+       {
+          "name":"Background video"
+       }
+    ]
+ }
+
+{% endschema %}

@@ -1,0 +1,301 @@
+<section class="best-quality-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 col-lg-12 col-md-12 col-12 best-quality-col col-center">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-12 best-quality-img">
+                        <a href="javascript:void(0)">
+                            <img class="lazyload img-fluid" src="{% if section.settings.best_quality_img %}{{ section.settings.best_quality_img | img_url: 'master' }}{% else %}https://dummyimage.com/711x546/f7f7f7/999999{% endif %}');">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 col-12 best-quality-cont">
+                        <div class="best-quality-desc">
+                            {% if section.settings.sub_title != '' %}
+                            <span style="color:{{ section.settings.sub_title_color }};" class="sub-title">{{ section.settings.sub_title }}</span>
+                            {% endif %}
+
+                            {% if section.settings.title != '' %}
+                            <h2 style="color:{{ section.settings.title_color }};">{{ section.settings.title }}</h2>
+                            {% endif %}
+
+                            {% if section.settings.best_desc != '' %}
+                            <p>{{ section.settings.best_desc }}</p>
+                            {% endif %}
+
+                            {%if section.settings.button_text != '' %} 
+                            <a href="{{ section.settings.button_url }}" class="btn btn-style3"><span>{{ section.settings.button_text }}</span>
+                                <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Best Quality Product",
+    "settings": [
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type" : "paragraph",
+      "content" : "Desktop / Laptop / tablet"
+    },
+    {
+      "type": "range",
+      "id": "best_quality_padding_top",  
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },           
+    {
+      "type": "range",
+      "id": "best_quality_padding_bottom", 
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
+       "type" : "paragraph",
+       "content" : "Mobile"
+    },
+    {
+       "type": "range",
+       "id": "best_quality_padding_top_xs",
+       "label": "Section Padding Top",
+       "min": 0,
+       "max": 100,
+       "step": 1,
+       "unit": "px",
+       "default": 40
+    },
+    {
+        "type": "range",
+        "id": "best_quality_padding_bottom_xs",
+        "label": "Section Padding Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 40
+    },
+    {
+        "type": "header",
+        "content": "Content"
+    },
+    {
+        "type": "image_picker",
+        "id": "best_quality_img",
+        "label": "Image",
+        "info": "Recommended Size: 711 x 546px"
+    },
+    {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub Title",
+        "default": "Living room"
+    },
+    {
+        "type": "color",
+        "id": "sub_title_color",
+        "label": "Sub Title color",
+        "default": "#171717"
+    },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Quality poying"
+    },
+    {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title color",
+        "default": "#bf8c4c"
+    },
+    {
+        "type": "text",
+        "id": "best_desc",
+        "label": "Description",
+        "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Shop Now"
+    },
+    {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+    }
+    
+    ],
+    "presets":[
+    {
+        "name": "Best Quality",
+        "category": "best quality"
+    }
+    ]
+}
+{% endschema %}
+<style>
+    .best-quality-area{
+        padding-top: {{ section.settings.best_quality_padding_top }}px;
+        padding-bottom: {{ section.settings.best_quality_padding_bottom }}px;
+    }
+    @media (max-width: 767px){
+        .best-quality-area{
+            padding-top: {{ section.settings.best_quality_padding_top_xs }}px;
+            padding-bottom: {{ section.settings.best_quality_padding_bottom_xs }}px;
+        }
+    }
+    @media (max-width: 1359px) and (min-width: 1200px){
+        .best-quality-col {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .best-quality-cont{
+        display: flex;
+        align-items: center;
+    }
+    .best-quality-cont .best-quality-desc{
+        padding: 45px 45px;
+        position: relative;
+    }
+    .best-quality-cont .best-quality-desc::before{
+        content: '';
+        position: absolute;
+        top: -15px;
+        {%- if settings.enable_rtl -%}
+        right: -15px;
+        {%- else -%}
+        left: -15px;
+        {%- endif -%}
+        width: 135px;
+        height: 135px;
+        background-color: {{ settings.color_primary }};
+        border-radius: 100%;
+        z-index: -1;
+        opacity: 0.1;
+    }
+    .best-quality-cont .best-quality-desc span.sub-title{
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    .best-quality-cont .best-quality-desc h2{
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 1;
+        margin-top: 30px;
+    }
+    .best-quality-cont .best-quality-desc p{
+        font-size: 16px;
+        margin-top: 25px;
+    }
+    .best-quality-cont .best-quality-desc a{
+        margin-top: 32px;
+    }
+    .best-quality-cont .best-quality-desc a span{
+        {%- if settings.enable_rtl -%}
+        margin-left: 10px;
+        {%- else -%}
+        margin-right: 10px;
+        {%- endif -%}
+    }
+    .best-quality-cont .best-quality-desc a i{
+        {%- if settings.enable_rtl -%}
+        -webkit-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+        {%- endif -%}
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .best-quality-cont .best-quality-desc a:hover i{
+        {%- if settings.enable_rtl -%}
+        -webkit-transform: translateX(-5px) scaleX(-1);
+        -o-transform: translateX(-5px) scaleX(-1);
+        transform: translateX(-5px) scaleX(-1);
+        {%- else -%}
+        -webkit-transform: translateX(5px);
+        -o-transform: translateX(5px);
+        transform: translateX(5px);
+        {%- endif -%}
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    @media (max-width: 1199px){
+        .best-quality-cont .best-quality-desc {
+            padding: 30px 30px;
+        }
+        .best-quality-cont .best-quality-desc::before {
+            width: 100px;
+            height: 100px;
+        }
+        .best-quality-cont .best-quality-desc span.sub-title{
+            font-size: 16px;
+        }
+        .best-quality-cont .best-quality-desc h2{
+            font-size: 24px;
+            margin-top: 22px;
+        }
+        .best-quality-cont .best-quality-desc p{
+            margin-top: 20px;
+        }
+        .best-quality-cont .best-quality-desc a{
+            margin-top: 22px;
+        }
+    }
+    @media (max-width: 991px){
+        .best-quality-img{
+            display: flex;
+            align-items: center;
+        }       
+    }
+    @media (max-width: 767px){
+        .best-quality-cont{
+            margin-top: 20px;
+        }
+        .best-quality-cont .best-quality-desc {
+            padding: 15px 15px;
+        }
+        .best-quality-cont .best-quality-desc::before{
+            width: 75px;
+            height: 75px;
+        }
+        .best-quality-cont .best-quality-desc span.sub-title{
+            font-size: 14px;
+        }
+        .best-quality-cont .best-quality-desc h2{
+            font-size: 18px;
+            margin-top: 13px;
+        }
+        .best-quality-cont .best-quality-desc p{
+            font-size: 14px;
+            margin-top: 9px;
+        }
+        .best-quality-cont .best-quality-desc a {
+            margin-top: 12px;
+        }
+    }
+</style>

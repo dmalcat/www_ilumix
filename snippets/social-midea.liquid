@@ -1,0 +1,87 @@
+<ul class="social-icon">
+  {% if settings.social_icon_1_name != blank %}
+  <li>
+    <a href="{{ settings.social_icon_1_link }}">
+      <i class="{{ settings.social_icon_1_name }}"></i>
+      <span>{{ settings.social_1_name }}</span>
+    </a>
+  </li>        
+  {% endif %}
+
+  {% if settings.social_icon_2_name != blank %}
+  <li>
+    <a href="{{ settings.social_icon_2_link }}">
+      <i class="{{ settings.social_icon_2_name }}"></i>
+      <span>{{ settings.social_2_name }}</span>
+    </a>
+  </li>        
+  {% endif %}
+
+  {% if settings.social_icon_3_name != blank %}
+  <li>
+    <a href="{{ settings.social_icon_3_link }}">
+      <i class="{{ settings.social_icon_3_name }}"></i>
+      <span>{{ settings.social_3_name }}</span>
+    </a>
+  </li>        
+  {% endif %}
+
+  {% if settings.social_icon_4_name != blank %}
+  <li>
+    <a href="{{ settings.social_icon_4_link }}">
+      <i class="{{ settings.social_icon_4_name }}"></i>
+      <span>{{ settings.social_4_name }}</span>
+    </a>
+  </li>        
+  {% endif %}
+
+  {% if settings.social_icon_5_name != blank %}
+  <li>
+    <a href="{{ settings.social_icon_5_link }}">
+      <i class="{{ settings.social_icon_5_name }}"></i>
+      <span>{{ settings.social_5_name }}</span>
+    </a>
+  </li>        
+  {% endif %}
+
+  {% if settings.social_icon_6_name != blank %}
+  <li>
+    <a href="{{ settings.social_icon_6_link }}">
+      <i class="{{ settings.social_icon_6_name }}"></i>
+      <span>{{ settings.social_6_name }}</span>
+    </a>
+  </li>        
+  {% endif %}
+</ul>
+<style>
+  /* social icon css */
+  ul.social-icon{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  ul.social-icon li{
+    line-height: 1;
+    {% if settings.enable_rtl %}
+    margin-left: 25px;
+    {% else %}
+    margin-right: 25px;
+    {% endif %}
+  }
+  ul.social-icon li:last-child{
+    {% if settings.enable_rtl %}
+    margin-left: 0px;
+    {% else %}
+    margin-right: 0px;
+    {% endif %}
+  }
+  @media(max-width: 1199px){
+    ul.social-icon li{
+      {% if settings.enable_rtl %}
+      margin-left: 15px;
+      {% else %}
+      margin-right: 15px;
+      {% endif %}
+    }
+  }
+</style>

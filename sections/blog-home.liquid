@@ -1,0 +1,278 @@
+<section class="blog-wrap">
+  <div class="container-fluid container-col">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        {% if section.settings.blog_title !='' %}
+        <div class="section-capture">
+          <div class="section-title">
+            {% if section.settings.section_subtitle !='' %}
+            <span class="sub-title">{{ section.settings.section_subtitle }}</span>
+            {% endif %}
+            {% if section.settings.blog_title !='' %}
+            <h2><span>{{ section.settings.blog_title }}</span></h2>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+        {% assign blog_handle = 'news' %}
+        {% unless blogs[blog_handle].empty? or blogs[blog_handle].articles.size == 0 %}
+        {% if blogs[blog_handle].articles.size >= 4 %}
+        {% assign container_width = 'one-whole' %}
+        {% assign article_width = 'large-up--one-third medium--one-third small--one-whole' %}
+        {% elsif blogs[blog_handle].articles.size == 2 %}
+        {% assign container_width = 'large-up--two-thirds large-up--push-one-sixth' %}
+        {% assign article_width = 'large-up--one-half medium--one-half small--one-whole' %}
+        {% elsif blogs[blog_handle].articles.size == 1 %}
+        {% assign container_width = 'large-up--two-thirds large-up--push-one-sixth' %}
+        {% assign article_width = 'one-whole' %}
+        {% endif %}
+        <div class="blog-slider owl-carousel owl-theme" id="blog-slider">
+          {% for article in blogs[blog_handle].articles %}
+          <div class="item">
+            {% include 'blog-grid-item' %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endunless %}
+        {% if section.settings.blog_view_btn_enable %}
+        <div class="blog-view-wrap">
+          <a href="{{ section.settings.blog_view_btn_url }}" class="btn btn-style9">{{ section.settings.blog_view_btn }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  $( document ).ready(function() {
+  $('#blog-slider').owlCarousel({
+    loop: false,
+    rewind: true,
+    margin: 30,
+    nav: false,
+    items: 3,
+    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    dots: false,
+    {%- if settings.enable_rtl -%}
+    rtl: true,
+    {%- endif -%}
+    responsive:{
+      0:{
+        items: 1,
+        margin: 15
+      },
+      479:{
+        items: 1,
+        margin: 15
+      },
+      768:{
+        items: 2
+      },
+      979:{
+        items: 3
+      },
+      1199: {
+        items: 3
+      }
+    }
+  });
+  });
+</script>
+{% schema %}
+{
+  "name": "Home Blog",
+  "settings": [
+  {
+    "type": "header",
+    "content": "Section Padding"
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Desktop / Laptop / tablet"
+  },
+  {
+    "type": "range",
+    "id": "blog_padding_top",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 90
+  },
+  {
+    "type": "range",
+    "id": "blog_padding_bottom",
+    "label": "Section Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 0
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Ipad pro / Ipad"
+  },
+  {
+    "type": "range",
+    "id": "blog_padding_top_ipad",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 60
+  },
+  {
+    "type": "range",
+    "id": "blog_padding_bottom_ipad",
+    "label": "Section Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 0
+  }, 
+  {
+    "type" : "paragraph",
+    "content" : "Mobile"
+  },
+  {
+    "type": "range",
+    "id": "blog_padding_top_xs",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 40
+  },
+  {
+    "type": "range",
+    "id": "blog_padding_bottom_xs",
+    "label": "Section Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 0
+  }, 
+  {
+    "type": "text",
+    "id": "section_subtitle",
+    "label": "Section Sub Title",
+    "default": "Inspirational post"
+  },
+  {
+    "type": "text",
+    "id": "blog_title",
+    "label": "Section Title",
+    "default": "Fashion story"
+  },
+  {
+    "type" : "header",
+    "content" : "Background Color"
+  },
+  {
+    "type" : "checkbox",
+    "id" : "blog_check",
+    "label" : "With Backgorund",
+    "default" : true
+  },
+  {
+    "type" : "color",
+    "id" : "blog_bgcolor",
+    "label" : "Background Color",
+    "default" : "#fff"
+  },
+  {
+    "type" : "header",
+    "content" : "View All Blog"
+  },
+  {
+    "type": "text",
+    "id": "blog_view_btn",
+    "label": "Button Text",
+    "default": "View All News"
+  },
+  {
+    "type": "url",
+    "id": "blog_view_btn_url",
+    "label": "Button URL"
+  },
+  {
+    "type": "checkbox",
+    "id": "blog_view_btn_enable",
+    "label": "Show View All Button",
+    "default": false
+  }
+  ],
+  "presets": [
+  {
+    "name": "Home Blog",
+    "category": "Blog Post"
+  }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}
+<style>
+  .blog-wrap .container-col{
+    padding-left: 285px;
+    padding-right: 285px;
+  }
+  @media(max-width: 1599px){
+    .blog-wrap .container-col{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media(max-width: 767px){
+    .blog-wrap .container-col{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .our-brand-logo .brand-logo .brand-img{
+    text-align: center;
+  }
+  .blog-wrap {
+    padding-top: {{ section.settings.blog_padding_top }}px;
+    padding-bottom: {{ section.settings.blog_padding_bottom }}px;
+    {% if section.settings.blog_check %}
+    background-color: {{ section.settings.blog_bgcolor }};
+    {% endif %}
+  }
+  @media (max-width: 1199px) {
+    .blog-wrap {
+      padding-top: {{ section.settings.blog_padding_top_ipad }}px;
+      padding-bottom: {{ section.settings.blog_padding_bottom_ipad }}px;
+    }
+  }
+  @media (max-width: 767px) {
+    .blog-wrap {
+      padding-top:{{ section.settings.blog_padding_top_xs }}px;
+      padding-bottom:{{ section.settings.blog_padding_bottom_xs }}px;
+    }
+  }
+  {% if section.settings.blog_view_btn_enable %}
+  .blog-wrap .blog-view-wrap {
+    text-align: center;
+    margin-top: 100px;
+  }
+  @media (max-width: 1199px){
+    .blog-wrap .blog-view-wrap {
+      margin-top: 60px;
+    }
+  }
+  @media (max-width: 767px){
+    .blog-wrap .blog-view-wrap {
+      margin-top: 30px;
+    }
+  }
+  {% endif %}
+</style>

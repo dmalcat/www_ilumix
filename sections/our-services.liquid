@@ -1,0 +1,322 @@
+<section class="our-service-area" {% if section.settings.service_bg_img_check %}style="background-image: url('{% if section.settings.service_bg_img %}{{ section.settings.service_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x1024/f7f7f7/999999{% endif %}');"{% endif %}>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <ul class="single-service">
+          {% for block in section.blocks %}
+          <li class="ser-box wow animate__fadeInUp">
+            <div class="ser-block">
+              <a href="javascript:void(0)">
+                {% if block.settings.service_img %}
+                <img class="img-fluid img1" src="{{ block.settings.service_img | img_url: '50x50' }}">
+                {% if block.settings.service_img2 %}
+                <img class="img-fluid img2" src="{{ block.settings.service_img2 | img_url: '50x50' }}">
+                {% endif %}
+                {% elsif block.settings.service_svg_icon %}
+                {{ block.settings.service_svg_icon }}
+                {% else %}
+                <i class="{{ block.settings.service_icon }}"></i>
+                {% endif %}
+              </a>
+              <div class="service-text">
+                {%if block.settings.service_title != '' %}
+                <h6>{{ block.settings.service_title }}</h6>
+                {% endif %}
+                {%if block.settings.service_desc != '' %}
+                <p>{{ block.settings.service_desc }}</p>
+                {% endif %} 
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Service",
+  "settings": [
+  {
+    "type": "header",
+    "content": "Section Padding"
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Desktop / Laptop / tablet"
+  },
+  {
+    "type": "range",
+    "id": "our_ser_padding_top",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 60
+  },
+  {
+    "type": "range",
+    "id": "our_ser_padding_bottom",
+    "label": "Section Padding bottom",
+    "min": 0,
+    "max": 100,
+    "step": 2,
+    "unit": "px",
+    "default": 60
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Ipad pro / Ipad"
+  },
+  {
+    "type": "range",
+    "id": "our_ser_padding_top_ipad",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 2,
+    "unit": "px",
+    "default": 30
+  },
+  {
+    "type": "range",
+    "id": "our_ser_padding_bottom_ipad",
+    "label": "Section Padding bottom",
+    "min": 0,
+    "max": 100,
+    "step": 2,
+    "unit": "px",
+    "default": 30
+  },
+  {
+    "type" : "paragraph",
+    "content" : "Mobile"
+  },
+  {
+    "type": "range",
+    "id": "our_ser_padding_top_xs",
+    "label": "Section Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 20
+  },
+  {
+    "type": "range",
+    "id": "our_ser_padding_bottom_xs",
+    "label": "Section Padding bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "default": 20
+  },
+  {
+    "type" : "header",
+    "content" : "Background Image"
+  },
+  {
+    "type": "image_picker",
+    "id": "service_bg_img",
+    "label": "Image",
+    "info": "Recommended Size: 1920 x 770px"
+  },
+  {
+    "type" : "checkbox",
+    "id" : "service_bg_img_check",
+    "label" : "Show Backgorund Image",
+    "default" : true
+  },
+  {
+    "type" : "header",
+    "content" : "Background Color"
+  },
+  {
+    "type" : "color",
+    "id" : "our_ser_bgcolor",
+    "label" : "Background Color",
+    "default" : "#fff"
+  },
+  {
+    "type" : "checkbox",
+    "id" : "our_ser_check",
+    "label" : "Show Backgorund Color",
+    "default" : true
+  }
+  ],
+  "blocks":[
+  {
+    "type": "our_services",
+    "name": "Our Services",
+    "settings": [
+    {
+      "type" : "paragraph",
+      "content" : "For service No Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "service_img",
+      "label": "Service Image",
+      "info": "Recommended Size: 512px x 512px"
+    },
+    {
+      "type": "image_picker",
+      "id": "service_img2",
+      "label": "Service Image2",
+      "info": "Recommended Size: 512px x 512px"
+    },
+    {
+      "type" : "paragraph",
+      "content" : "For svg icon "
+    },
+    {
+      "type": "textarea",
+      "id": "service_svg_icon",
+      "label": "Svg Icon",
+      "info": "Whatever you want like 'icon' or 'svg-icon' code just copy paste here feathericons.com"
+    },
+    {
+      "type" : "paragraph",
+      "content" : "For icon "
+    },
+    {
+      "type": "text",
+      "id": "service_icon",
+      "label": "Icon Class"
+    },
+    {
+      "type": "text",
+      "id": "service_title",
+      "label": "Service Title",
+      "default": "Choose products"
+    },
+    {
+      "type": "text",
+      "id": "service_desc",
+      "label": "Service Description",
+      "default": "Lorem Ipsum is simply dummy text printing and typesetting"
+    }
+    ]
+  }
+  ],
+  "presets":[
+  {
+    "name": "Service",
+    "category": "Our Service"
+  }
+  ]
+}
+{% endschema %}
+<style>
+  .our-service-area {
+    padding-top: {{ section.settings.our_ser_padding_top }}px;
+    padding-bottom: {{ section.settings.our_ser_padding_bottom }}px;
+    {% if section.settings.service_bg_img_check %}
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    {% endif %}
+
+    {% if section.settings.our_ser_check %}
+    background-color: {{ section.settings.our_ser_bgcolor }};
+    {% endif %}
+    
+  }
+  @media (max-width: 1199px) {
+    .our-service-area {
+      padding-top: {{ section.settings.our_ser_padding_top_ipad }}px;
+      padding-bottom: {{ section.settings.our_ser_padding_bottom_ipad }}px;
+    }
+  }
+  @media (max-width: 767px) {
+    .our-service-area {
+      padding-top: {{ section.settings.our_ser_padding_top_xs }}px;
+      padding-bottom: {{ section.settings.our_ser_padding_bottom_xs }}px;
+    }
+  }
+  ul.single-service{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  ul.single-service li{
+    width: 25%;
+  }
+  ul.single-service li .ser-block{
+    display: flex;
+    align-items: center;
+  }
+  ul.single-service li.ser-box:nth-child(4){
+animation-delay: 0.4s;
+  }
+  ul.single-service li.ser-box:nth-child(3){
+animation-delay: 0.3s;
+  }
+  ul.single-service li.ser-box:nth-child(2){
+animation-delay: 0.2s;
+  }
+  ul.single-service li.ser-box:nth-child(1){
+animation-delay: 0.1s;
+  }
+  ul.single-service li.ser-box .ser-block a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #e2e2e2;
+    border-radius: 100%;
+  }
+  ul.single-service li.ser-box .ser-block a svg{
+    width: 24px;
+    height: 24px;
+    stroke: {{ settings.color_primary }};
+  }
+  ul.single-service li.ser-box .ser-block .service-text{
+    {% if settings.enable_rtl %}
+    margin-right: 20px;
+    {% else %}
+    margin-left: 20px;
+    {% endif %}
+  }
+  ul.single-service li.ser-box .ser-block h6{
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  ul.single-service li.ser-box .ser-block p{
+    color: #888888;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 400;
+    
+  }
+  @media (max-width: 1199px) {
+    ul.single-service{
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      -webkit-scrollbar-width: thin;
+    }
+    ul.single-service::-webkit-scrollbar {
+      height: 1px;
+    }
+    ul.single-service li.ser-box{
+      min-width: 325px;
+    }
+  }
+  @media(max-width: 767px){
+    ul.single-service li{
+      width: calc(25% - 15px);
+      margin-left: 15px;
+    }
+    ul.single-service li.ser-box .ser-block h6{
+      font-size: 16px;
+    }
+  }
+</style>

@@ -1,0 +1,39 @@
+<div class="blog-post">
+  <div class="blog-img-post">
+    {% assign article_has_image = false %}
+  {% assign content = article.excerpt_or_content %}
+  {% if article.image %}
+  <a href="{{ article.url }}" class="blog-img">
+    <img class="img-fluid" src="{{ article.image | img_url: '800x813', crop: "center" }}" alt="{{ article.title | escape }}" />
+    <span class="date-time">
+      <span class="date">{{ article.published_at | date: '%d' }}</span>
+      <span class="time">{{ article.published_at | date: '%b' }}</span>
+      <span class="year">{{ article.published_at | date: '%Y' }}</span>
+    </span>
+  </a>
+
+  {% if article.content contains '[blog_video]' %}
+  {% assign blog_video_first = article.content | split:'[/blog_video]' | first %}
+  {% assign blog_video_final = blog_video_first | split:'[blog_video]' | last %}
+  {{blog_video_final}}
+  {% endif %}
+  </div>
+  <div class="blog-post-content">
+    <h2 class="blog-title">{{ article.title }}</h2>
+    <p class="blog-desc">{{ article.content | strip_html | strip | truncate: 100 }}</p>
+    {% comment %}
+    <a href="{{ article.url }}" class="read-btn" aria-label="Read more: {{ article.title }}">
+      <span>{{ settings.blog_read_btn }}</span>
+      <i class="fa fa-long-arrow-right"></i>
+    </a>
+    {% endcomment %}
+    {% comment %}
+    <ul class="post-tag">
+        {% for tag in article.tags %}
+        <li><a href="{{ tag | handleize | prepend:'/blogs/news/tagged/' }}">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endcomment %}
+  </div>
+  {% endif %}
+</div>

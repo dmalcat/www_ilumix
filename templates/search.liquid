@@ -1,0 +1,200 @@
+{% assign grid_results = false %}
+{% assign respond_js_secret_key = shop.domain | md5 %}
+{% unless search.terms == respond_js_secret_key %}
+{% paginate search.results by 12 %}
+<section class="section-ptb search-page">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="section-capture">
+        </div>
+        <div class="page-search-bar">
+          <form action="/search" method="get" class="page-search-form" role="search">
+            <input type="hidden" name="type" value="product">
+            <input type="hidden" name="options[unavailable_products]" value="show">
+            <input type="hidden" name="options[prefix]" value="last">
+            <input type="search" name="q" placeholder="{{ 'general.search.placeholder' | t }}" value="{{ search.terms | escape }}"  aria-label="{{ 'general.search.placeholder' | t }}">
+            <!-- <button type="submit" class="page-search-button">
+              <i class="ti-search"></i>
+            </button> -->
+            <button type="submit" class="page-search-button">
+              {{ 'general.search.submit' | t }}
+            </button>
+          </form>
+        </div>
+        {% if search.performed %}
+        <div id="gf-products" class="search-list">
+          {% paginate search.results by 50 %}
+          {% for item in search.results %}
+          {%- assign product = item -%}
+          {%- include "product-grid-item" -%}
+          {% endfor %}
+          {%- endpaginate %}
+        </div>
+        {% endif %}
+        {% if paginate.pages > 1 %}
+        <div class="paginatoin-area">
+          <ul class="paginate">
+            <li class="page-numerous">
+              {%- include 'pagination' -%}
+            </li>
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endpaginate %}
+{% else %}
+{% include 'respond' %}
+{% layout none %}
+{% endunless %}
+<style>
+/*=====================================
+search page css
+======================================*/
+.breadcrumb-area{
+  min-height:100px;
+}
+.breadcrumb-area .breadcrumb-index .breadcrumb-title h1{
+  font-size:20px!important;
+}
+.search-page{
+  padding-top:0;
+}
+.search-page .section-capture{
+  margin:0;
+}
+.search-page .page-search-bar{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-page .page-search-bar form.page-search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-page .page-search-bar form input {
+  width: 100%;
+  height: 42px;
+  background-color: #fff;
+}
+.search-page .page-search-bar form button.page-search-button {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 25px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  {% if settings.enable_rtl %}
+  left: 0;
+  {% else %}
+  right: 0;
+  {% endif %}
+  width: auto;
+  height: 100%;
+  background-color: {{ settings.color_primary }};
+  text-transform: uppercase;
+}
+.search-page .page-search-bar form button.page-search-button:hover{
+  background-color: {{ settings.color_secondary }};
+}
+@media (max-width: 991px){
+  .search-page .page-search-bar{
+    width: 100%;
+  }
+}
+/* search list css */
+.search-page .search-list {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  {% if settings.enable_rtl %}
+  margin-right: -30px;
+  {% else %}
+  margin-left: -30px;
+  {% endif %}  
+}
+@media (max-width: 767px) {
+  .search-page .search-list {
+    {% if settings.enable_rtl %}
+    margin-right: -15px;
+    {% else %}
+    margin-left: -15px;
+    {% endif %}
+  }
+}
+
+/* search item css */
+.search-page .search-list .single-product-wrap  {
+  width: calc(25% - 30px);
+  {% if settings.enable_rtl %}
+  margin: 30px 30px 0 0;
+  {% else %}
+  margin: 30px 0 0 30px;
+  {% endif %}
+}
+.search-page .search-list .single-product-wrap .single-product-wrap .product-content h6{
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .search-page .search-list .single-product-wrap  {
+    width: calc(33.33% - 30px);
+  }
+}
+@media (max-width: 767px) {
+  .search-page .search-list .single-product-wrap  {
+    width: calc(50% - 15px);
+    {% if settings.enable_rtl %}
+    margin: 20px 15px 0 0;
+    {% else %}
+    margin: 20px 0 0 15px;
+    {% endif %}
+  }
+}
+
+/* search blog css */
+.search-page .search-list .search-blog-item {
+  width: calc(33.33% - 30px);
+  {% if settings.enable_rtl %}
+  margin: 30px 30px 0 0;
+  {% else %}
+  margin: 30px 0 0 30px;
+  {% endif %}
+  border: 1px solid #eee;
+}
+.search-page .search-list .search-blog-item .search-blog-content {
+  padding: 15px;
+}
+.search-page .search-list .search-blog-item .search-blog-content h6 {
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1;
+}
+.search-page .search-list .search-blog-item .search-blog-content h6 a{
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.search-page .search-list .search-blog-item .search-blog-content p {
+  margin-top: 5px;
+}
+@media (max-width: 991px) {
+  .search-page .search-list .search-blog-item {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 767px) {
+  .search-page .search-list .search-blog-item {
+    width: calc(100% - 15px);
+    {% if settings.enable_rtl %}
+    margin: 20px 15px 0 0;
+    {% else %}
+    margin: 20px 0 0 15px;
+    {% endif %}
+  }
+}
+</style>

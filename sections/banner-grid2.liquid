@@ -1,0 +1,261 @@
+<!-- banner-area start -->
+<section class="banner-grid banner3">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-6 col-md-6 col-12">
+                <div class="banner-block wow animate__fadeInLeft">
+                    <a href="{{ block.settings.banner_url }}">
+                        <img class="img-fluid" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/635x600/f7f7f7/999999{% endif %}">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-6 col-12">
+                <div class="banner-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        {% for block in section.blocks %}
+                        {% case block.type %}
+                        {% when 'text_tab' %}
+                        <li role="presentation">
+                            <a class="{% if forloop.first == true %}active show{% endif %}" role="tab" data-bs-toggle="tab" href="#tab-{{ block.id }}">{{ block.settings.banner_tab_title }}</a>
+                        </li>
+                        {% endcase %}
+                        {% endfor %}
+                    </ul>
+                    <div class="tab-content">
+                        {% for block in section.blocks %}
+                        {% case block.type %}
+                        {% when 'text_tab' %}
+                        <div class="tab-pane fade{% if forloop.first == true %} active show{% endif %}" id="tab-{{ block.id }}" role="tabpanel">
+                            <h5>
+                                <span>{{ block.settings.banner_tab_desc1 }}</span>
+                                <span>{{ block.settings.banner_tab_desc2 }}</span>
+                            </h5>
+                        </div>
+                        {% endcase %}
+                        {% endfor %}
+                         <a class="btn btn-style7" href="{{ section.settings.banner_button_link }}">{{ section.settings.banner_button }}</a>
+                    </div>                   
+                </div>        
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner-area end -->
+{% schema %}
+{
+    "name": "Banner Grid2",
+    "settings": [
+        {
+            "type" : "header",
+            "content" : "Section Padding"
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Desktop / Laptop / tablet"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 60
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 60
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Ipad pro / Ipad"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top_ipad",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom_top_ipad",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Mobile"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top_xs",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom_xs",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+        },
+        {
+            "type": "image_picker",
+            "id": "banner_img",
+            "label": "Banner Image",
+            "info": "Recommended Size: 606px x 313px"
+        },
+        {
+            "type": "url",
+            "id": "banner_button_link",
+            "label": "Banner URL"
+        },
+        {
+            "type": "text",
+            "id": "banner_button",
+            "label": "banner_button",
+            "default": "Shopping now"
+        }
+    ],
+    "blocks":[
+        {
+            "type" : "text_tab",
+            "name": "Banner Grid",
+            "limit": 3,
+            "settings": [
+                {
+                    "type" : "header",
+                    "content" : "Tab Detail"
+                },
+                {
+                    "type": "text",
+                    "id": "banner_tab_title",
+                    "label": "Banner Tab Title",
+                    "default": "#wooden"
+                },
+                {
+                    "type": "text",
+                    "id": "banner_tab_desc1",
+                    "label": "Banner Tab Description",
+                    "default": "Up to 60% off final sale items"
+                },
+                {
+                    "type": "text",
+                    "id": "banner_tab_desc2",
+                    "label": "Banner Tab Description",
+                    "default": "low prices and best quality"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name": "Banner Grid2",
+            "category": "Banner Grid"
+        }
+    ]
+}
+{% endschema %}
+<style>
+    .banner-grid.banner3 {
+        padding-top: {{ section.settings.section_padding_top }}px;
+        padding-bottom: {{ section.settings.section_padding_bottom }}px;
+        {% if section.settings.slider_cat_bgcolor_enable %}
+        background-color: {{ section.settings.slider_cat_bgcolor }};
+        {% endif %}
+        {% if section.settings.slider_cat_bg_img_enable %}
+        background-repeat: no-repeat;
+        {% endif %}
+    }
+    @media (max-width: 1199px) {
+        .banner-grid.banner3 {
+            padding-top: {{ section.settings.section_padding_top_ipad }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_ipad }}px;
+        }
+    }
+    @media (max-width: 767px) {
+        .banner-grid.banner3 {
+            padding-top: {{ section.settings.section_padding_top_xs }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_xs }}px;
+        }
+    }
+
+    .banner3 .banner-tab {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .banner3 .banner-tab ul.nav.nav-tabs{
+        border-bottom: none;
+    }
+
+    .banner3 .banner-tab ul.nav.nav-tabs li {
+        margin-right: 30px;
+    }
+    .banner3 .banner-tab ul.nav.nav-tabs li:last-child{
+        margin-right: 0;
+    } 
+    .banner3 .banner-tab ul.nav.nav-tabs li a{
+        font-size: 20px;
+        color: {{ settings.color_primary }};
+        font-weight: 400;
+        border-bottom: 1px solid transparent;
+        
+    }
+    .banner3 .banner-tab ul.nav.nav-tabs li a.active{
+        border-color: {{ settings.color_primary }};
+    }
+    .banner3 .banner-tab .tab-content .tab-pane h5{
+        font-size: 22px;
+        font-weight: 400;
+        padding-top: 30px;
+    }
+    .banner3 .banner-tab .tab-content .btn{
+        margin-top: 40px;
+    }
+    @media(max-width: 991px){
+        .banner3 .banner-tab ul.nav.nav-tabs li a{
+            font-size: 18px;
+        }
+        .banner3 .banner-tab .tab-content .tab-pane h5{
+            font-size: 20px;
+            padding-top: 15px;
+        }
+        .banner3 .banner-tab .tab-content .btn{
+            margin-top: 20px; 
+        } 
+    }
+    @media(max-width: 767px){
+        .banner3 .row{
+            flex-direction: column-reverse;
+        }
+        .banner3 .banner-tab{
+            margin-bottom: 30px;
+            height: auto;
+        }
+    }
+</style>

@@ -1,0 +1,215 @@
+{%- if settings.topbar_notification_enable -%}
+<section class="top-notification-bar">
+  <div class="container-fluid header-col">
+    <div class="row">
+      <div class="col">
+        <ul class="notification-entry">
+          {% comment %}
+          <li class="notify-wrap">
+            <div class="contact-wrap">
+              <a href="tel:{{ settings.contact }}">
+                <i class="fa fa-phone"></i>
+                <span>{{ settings.contact }}</span>
+              </a>
+            </div>
+            <div class="mail-wrap">
+              <a href="mailto:{{ settings.email }}">
+                <i class="fa fa-envelope"></i>
+                <span>{{ settings.email }}</span>
+              </a>
+            </div>
+          </li>
+          {% endcomment %}
+          <li class="notify-wrap link-wrap">
+            <p>{{ settings.topbar_notification_text2 }} <b>{{ settings.topbar_notification_text_link }}</b></p>
+          </li>
+          {% comment %}
+          <li class="notify-wrap social-wrap">
+            {%- include 'social-midea' -%}
+          </li>
+          {% endcomment %}
+          <li class="notify-wrap right-content">
+            <div class="user-wrap">
+              {%- include 'store-account' -%}
+            </div>
+            <div class="wishlist-wrap">
+               {%- include 'wishlist-4' -%}
+            </div>
+            <!-- <div class="cart-wrap">
+              {% include 'mini-cart' %}
+            </div> -->
+          </li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .top-notification-bar{
+    padding: 12px 0;
+    position: relative;
+    color: {{ settings.notification_txt_color }};
+    background-color: {{ settings.notification_bg_color }};
+  }
+  .top-notification-bar ul.notification-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-notification-bar ul li.notify-wrap{
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+  }
+  .top-notification-bar ul li.notify-wrap.right-content{
+    justify-content: flex-end;
+  }
+  .top-notification-bar ul li.notify-wrap.social-wrap{
+    justify-content: center;
+  }
+  .top-notification-bar ul li.notify-wrap p{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+  .top-notification-bar ul li.notify-wrap p a.link-text{
+    position: relative;
+    text-transform: uppercase;
+    color: {{ settings.color_primary }};
+    {% if settings.enable_rtl %}
+    margin-right: : 8px;
+    {% else %}
+    margin-left: 8px;
+    {% endif %}
+  }
+  .top-notification-bar ul li.notify-wrap p a.link-text:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    background: {{ settings.color_primary }};
+    height: 2px;
+    -moz-transition: width 0.2s linear;
+    -o-transition: width 0.2s linear;
+    -webkit-transition: width 0.2s linear;
+    transition: width 0.2s linear;
+  }
+  .top-notification-bar ul li.notify-wrap p a.link-text:hover:after{
+    width: 0%
+  }
+  .top-notification-bar ul li.notify-wrap .mail-wrap{
+    {% if settings.enable_rtl %}
+    margin-right: 15px;
+    {% else %}
+    margin-left: 15px;
+    {% endif %}
+  }
+  .top-notification-bar ul li.notify-wrap .contact-wrap a,
+  .top-notification-bar ul li.notify-wrap .mail-wrap a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .top-notification-bar ul li.notify-wrap .contact-wrap a i,
+  .top-notification-bar ul li.notify-wrap .mail-wrap a i{
+    line-height: 17px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: wobble;
+    animation-timing-function: ease-in-out
+  }
+  @keyframes wobble{
+    30%,70%{
+        transform: rotate(0deg)
+    }
+    35%,65%{
+        transform: rotate(10deg)
+    }
+    40%,60%{
+        transform: rotate(-10deg)
+    }
+    45%,55%{
+        transform: rotate(10deg)
+    }
+    50%{
+        transform: rotate(-10deg)
+    }
+  }
+  .top-notification-bar ul li.notify-wrap .contact-wrap a span,
+  .top-notification-bar ul li.notify-wrap .mail-wrap a span{
+    {% if settings.enable_rtl %}
+    margin-right: 5px;
+    {% else %}
+    margin-left: 5px;
+    {% endif %}
+  }
+  @media (max-width : 1199px){
+    .top-notification-bar ul li.notify-wrap p{
+      font-size: 14px;
+    }
+  }
+  @media (max-width : 991px){
+    .top-notification-bar ul.notification-entry{
+      flex-direction: column;
+    }
+    .top-notification-bar ul li.notify-wrap.txt-wrap{
+      display: flex;
+      padding-top: 5px;
+    }
+    .top-notification-bar ul li.notify-wrap.link-wrap,
+    .top-notification-bar ul li.notify-wrap.social-wrap{
+      display: none;
+    }
+    .top-notification-bar ul li.notify-wrap.right-content,
+    .top-notification-bar ul li.notify-wrap{
+      width: 100%;
+      justify-content: center;
+    }
+    .top-notification-bar ul li.notify-wrap .wishlist-wrap{
+      {% if settings.enable_rtl %}
+      margin-left: 0px;
+      {% else %}
+      margin-right: 0px;
+      {% endif %}
+    }
+  }
+
+  /*sicial icon*/
+  .top-notification-bar ul li.notify-wrap.social-wrap .social-icon a{
+    color: {{ settings.notification_txt_color }};
+    font-size: 16px;
+  }
+  .top-notification-bar ul li.notify-wrap.social-wrap .social-icon a:hover{
+    color: {{ settings.notification_txt_hover_color }};
+  }
+
+  /*right box*/
+  .top-notification-bar ul li.notify-wrap .cart-wrap,
+  .top-notification-bar ul li.notify-wrap .wishlist-wrap{
+    {% if settings.enable_rtl %}
+    margin-right: 40px;
+    {% else %}
+    margin-left: 40px;
+    {% endif %}
+  }
+  @media(max-width: 1199px){
+    .top-notification-bar ul li.notify-wrap .cart-wrap,
+    .top-notification-bar ul li.notify-wrap .wishlist-wrap{
+      {% if settings.enable_rtl %}
+      margin-right: 15px;
+      {% else %}
+      margin-left: 15px;
+      {% endif %}
+    }
+  }
+  @media(max-width:767px){
+    .top-notification-bar{
+      display:none;
+  }
+  }
+</style>
+{% endif %}

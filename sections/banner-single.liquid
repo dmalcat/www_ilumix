@@ -1,0 +1,225 @@
+<!-- banner-area start -->
+<section class="banner-grid banner2">
+    <div class="banner-block">
+        <a href="{{ section.settings.banner2_url }}">
+            <img class="img-fluid" src="{% if section.settings.banner2_img %}{{ section.settings.banner2_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x417/f7f7f7/999999{% endif %}">
+        </a>
+        <div class="banner-text">
+            <span class="sub-title">{{ section.settings.banner_sub_title }}</span>
+            <h2 class="main-title">{{ section.settings.banner_title }}</h2>
+            <a class="btn btn-style6" href="{{ block.settings.banner_url }}">{{ section.settings.banner_button }}</a>
+        </div>
+    </div>
+</section>
+<!-- banner-area end -->
+{% schema %}
+{
+    "name": "Banner Single",
+    "settings": [
+        {
+            "type" : "header",
+            "content" : "Section Padding"
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Desktop / Laptop / tablet"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 60
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 60
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Ipad pro / Ipad"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top_ipad",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom_top_ipad",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type" : "paragraph",
+            "content" : "Mobile"
+        },
+        {
+            "type": "range",
+            "id": "section_padding_top_xs",
+            "label": "Section Padding Top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "section_padding_bottom_xs",
+            "label": "Section Padding Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+        },
+        {
+            "type": "header",
+            "content": "Banner"
+        },
+        {
+            "type": "text",
+            "id": "banner_sub_title",
+            "label": "Banner Sub Title",
+            "default": "Brand made with love"
+        },
+        {
+            "type": "text",
+            "id": "banner_title",
+            "label": "Banner Main Title",
+            "default": "Best selling products"
+        },
+        {
+            "type": "text",
+            "id": "banner_button",
+            "label": "Banner Button",
+            "default": "top rated products"
+        },
+        {
+            "type": "image_picker",
+            "id": "banner2_img",
+            "label": "Banner Image",
+            "info": "Recommended Size: 1920px x 714px"
+        },
+        {
+            "type": "url",
+            "id": "banner2_url",
+            "label": "URL"
+        }
+    ],
+    "presets":[
+        {
+            "name": "Banner Single",
+            "category": "Banner Grid"
+        }
+    ]
+}
+{% endschema %}
+<style>
+    .banner2{
+        padding-top: {{ section.settings.section_padding_top }}px;
+        padding-bottom: {{ section.settings.section_padding_bottom }}px;
+    }
+    @media(max-width: 1199px){
+        .banner2{
+            padding-top: {{ section.settings.section_padding_top_lg }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_lg }}px;
+        }
+    }
+    @media(max-width: 1199px){
+        .banner2{
+            padding-top: {{ section.settings.section_padding_top_xs }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_xs }}px;
+        }
+    }
+    /*banner text content*/
+    .banner-grid.banner2 .banner-block{
+        position: relative;
+    }
+    .banner-grid.banner2 .banner-text{
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+    .banner-grid.banner2 .banner-text span.sub-title{
+        color: #888888;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .banner-grid.banner2 .banner-text h2.main-title{
+        font-size: 70px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: 33px;
+    }
+
+    .banner-grid.banner2 .banner-text a.btn{
+        border-color: {{ settings.color_primary }};
+        color: {{ settings.color_primary }};
+        margin-top: 35px;
+    }
+    .banner-grid.banner2 .banner-text a.btn:hover{
+        border-color: {{ settings.color_secondary }};
+        color: {{ settings.color_secondary }};
+    }
+    @media (max-width: 1599px){
+        .banner-grid.banner2 .banner-text span.sub-title{
+            font-size: 18px; 
+        }
+        .banner-grid.banner2 .banner-text h2.main-title{
+            font-size: 50px;
+            margin-top: 27px;
+        }
+        .banner-grid.banner2 .banner-text a.btn{
+            margin-top: 28px;
+        }
+    }
+    @media(max-width: 1199px){
+        .banner-grid.banner2 .banner-text h2.main-title{
+            font-size: 40px;
+        }
+        .banner-grid.banner2 .banner-block img{
+            height: 280px;
+            object-fit: cover;
+        }
+    }
+    @media(max-width: 767px){
+        .banner-grid.banner2 .banner-text h2.main-title{
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .banner-grid.banner2 .banner-text a.btn {
+            margin-top: 20px;
+        }
+        .banner-grid.banner2 .banner-block img{
+            object-position: right;
+        }
+    }
+</style>

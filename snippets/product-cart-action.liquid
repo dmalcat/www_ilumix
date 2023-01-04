@@ -1,0 +1,65 @@
+{% if product.available %}
+<button type="submit" class="btn add-to-cart ajax-spin-cart" id="AddToCart">
+  <span class="cart-title">{{ 'products.product.add_to_cart' | t }}</span>
+  <span class="cart-loading animated infinite rotateOut"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+  </span>
+  <span class="cart-added"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"/></svg>
+  </span>
+
+  <span class="cart-unavailable">{{ 'products.product.sold_out' | t }}</span>
+</button>
+{% else %}
+<button class="btn add-to-cart disabled" disabled="disabled">
+  <span class="cart-text">{{ 'products.product.sold_out' | t }}</span>
+</button>
+{% endif %}
+
+<script>
+  jQuery('.ajax-spin-cart').click(function(e) {
+    e.preventDefault();
+    Shopify.addItemFromForm('add-item-form');
+  });
+</script>
+<style>
+    .product-actions button.add-to-cart{
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 30px;
+        background-color: #222;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 180px;
+        border-radius: 0;
+        line-height: 1;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-actions button.add-to-cart svg{
+      width: 16px;
+      height: 16px;
+    }
+    .product-actions button.add-to-cart:hover{
+        color: #fff;
+        background-color: {{ settings.color_primary }};
+    }
+    .product-actions button.add-to-cart.btn[disabled],
+    .product-actions button.add-to-cart.btn.disabled{
+        color: #eaeaea;
+        background-color: #ababab;
+        opacity: .65;
+        pointer-events: none;
+    }
+    @media(max-width: 1199px){
+      .product-actions button.add-to-cart{
+        font-size: 16px;
+      }
+    }
+    @media(max-width: 767px){
+      .product-actions button.add-to-cart{
+        font-size: 14px;
+      }
+    }
+</style>
