@@ -1623,7 +1623,7 @@ single product gride list
 /* product content css */
 @media(min-width:768px){
   .product-content h6{
-    font-size: 16px;
+    font-size: 14px;
     max-width: 75%;
   }
 }
