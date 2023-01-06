@@ -22,10 +22,14 @@
                     <span>{{ section.settings.contact_page_bankid }}</span>
                 </div>
                 {% endif %}
-                
-                
+
+                {% if section.settings.contact_page_phone != '' %}
+                <div class="contactPage__contacts">
+                    <a href="tel:{{ section.settings.contact_page_phone }}">{{ section.settings.contact_page_phone }}</a>
+                    <a href="mailto:{{ section.settings.contact_page_email }}">{{ section.settings.contact_page_email }}</a>
+                </div>
+                {% endif %}
             </div>
-          
         </div>
     </div>
 </section>
