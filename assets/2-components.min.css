@@ -1,2 +1,2 @@
-.test{display:none}.contactPage .contactPage__row{display:flex}
+.test{display:none}.contactPage .contactPage__row{display:flex}.contactPage .contactPage__col--info{width:40%}.contactPage .contactPage__col--map{width:60%}.contactPage .contactPage__map{width:100%;height:450px}
 /*# sourceMappingURL=2-components.min.css.map */
