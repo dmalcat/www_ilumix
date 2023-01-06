@@ -6,9 +6,9 @@
 		<div class="contactPage__row">
             <div class="contactPage__col contactPage__col--info">
                 {% if section.settings.contact_page_companyname != '' %}
-                <div class="contactPage__companyName">
-                    <strong>{{ section.settings.contact_page_companyname }}</strong>
-                </div>  
+                <span class="contactPage__companyName">
+                    {{ section.settings.contact_page_companyname }}
+                </span>  
                 {% endif %}
 
                 {% if section.settings.contact_page_phone != '' %}
@@ -32,7 +32,7 @@
             </div>
 
             <div class="contactPage__col contactPage__col--map">
-                <iframe class="contactPage__map" src="https://maps.google.com/maps?q=Hole%C4%8Dkova%20368/4%20Karlovy%20Vary&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="contactPage__map" src="https://maps.google.com/maps?q=Hole%C4%8Dkova%20368/4%20Karlovy%20Vary&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
