@@ -1,1 +1,1 @@
-{"version":3,"sources":["content.scss"],"names":[],"mappings":"AAAA,MACI,QAAS","file":"2-components.min.css","sourcesContent":[".test {\n    display: none;\n}"]}
+{"version":3,"sources":["content.scss","contact.scss"],"names":[],"mappings":"AAAA,MACI,QAAS,KCDb,+BAEQ,QAAS","file":"2-components.min.css","sourcesContent":[".test {\n    display: none;\n}",".contactPage {\n    .contactPage__row {\n        display: flex;\n    }\n}"]}
