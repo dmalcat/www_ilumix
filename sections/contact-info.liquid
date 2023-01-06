@@ -10,11 +10,14 @@
                     <strong>{{ section.settings.contact_page_companyname }}</strong>
                 </div>  
                 {% endif %}
-                {% if section.settings.contact_page_companyinfo != '' %}
+                
+                {% if section.settings.contact_page_bankid != '' %}
                 <div class="contactPage__companyInfo">
-                    <span>{{ section.settings.contact_page_companyinfo }}</span>
+                    <span>{{ section.settings.contact_page_bankid }}</span>
                 </div>
                 {% endif %}
+                
+                
             </div>
           
         </div>
@@ -48,18 +51,18 @@
       },
       {
         "type": "textarea",
-        "id": "conact_page_bankid",
+        "id": "contact_page_bankid",
         "label": "Bankovní informace"
       },
       {
         "type": "text",
-        "id": "conact_page_phone",
+        "id": "contact_page_phone",
         "label": "Telefonní číslo",
         "default": "123456789"
       },
       {
         "type": "text",
-        "id": "conact_page_email",
+        "id": "contact_page_email",
         "label": "E-mail",
         "default": "email@email.cz"
       }
