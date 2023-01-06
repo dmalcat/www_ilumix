@@ -1,10 +1,10 @@
 {
   "sections": {
-    "29bacde3-e98e-41f7-8a6b-d0b3f6860b9f": {
+    "d728499e-6c83-4b7c-90c0-2eda0378a3a4": {
       "type": "contact-info",
       "settings": {
         "conact_page_title": "Kontakty",
-        "conact_page_companyinfo": "ILUMIX light s.r.o. <br>\nHolečkova 368\/4 <br>\nKarlovy Vary 36017 <br>\nIČO: 29115728 <br>\nDIČ: 29115728 <br>\nObchodní rejstřík... vložka ...složka",
+        "contact_page_companyinfo": "ILUMIX light s.r.o. <br>\nHolečkova 368\/4 <br>\nKarlovy Vary <br>\nIČO: 29115728 | DIČ: 29115728 <br>\nObchodní rejstřík... vložka ...složka",
         "conact_page_bankid": "",
         "conact_page_phone": "123456789",
         "conact_page_email": "email@email.cz"
@@ -124,7 +124,7 @@
     }
   },
   "order": [
-    "29bacde3-e98e-41f7-8a6b-d0b3f6860b9f",
+    "d728499e-6c83-4b7c-90c0-2eda0378a3a4",
     "165935635076221324",
     "form-contact2",
     "our-store2",
