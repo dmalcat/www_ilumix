@@ -1,1 +1,1 @@
-{"version":3,"sources":["document.scss"],"names":[],"mappings":"AAAA,SACI,QAAS,MACT,UAAW,OACX,MAAO,KACP,OAAQ,EAAA","file":"1-core.min.css","sourcesContent":[".wrapper {\n    display: block;\n    max-width: 1280px;\n    width: 100%;\n    margin: 0 auto;\n}"]}
+{"version":3,"sources":["document.scss"],"names":[],"mappings":"AAAA,SACI,QAAS,MACT,UAAW,OACX,MAAO,KACP,OAAQ,MAAA","file":"1-core.min.css","sourcesContent":[".wrapper {\n    display: block;\n    max-width: 1280px;\n    width: 100%;\n    margin: 100px auto;\n}"]}
