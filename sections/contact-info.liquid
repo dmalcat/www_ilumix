@@ -6,9 +6,9 @@
 		<div class="contactPage__row">
             <div class="contactPage__col contactPage__col--info">
                 {% if section.settings.contact_page_companyname != '' %}
-                <div class="contactPage__companyName">
-                    <strong>{{ section.settings.contact_page_companyname }}</strong>
-                </div>  
+                <span class="contactPage__companyName">
+                    {{ section.settings.contact_page_companyname }}
+                </span>  
                 {% endif %}
 
                 {% if section.settings.contact_page_phone != '' %}
