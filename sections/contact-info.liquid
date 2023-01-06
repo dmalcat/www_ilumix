@@ -10,6 +10,12 @@
                     <strong>{{ section.settings.contact_page_companyname }}</strong>
                 </div>  
                 {% endif %}
+
+                {% if section.settings.contact_page_companyinfo != '' %}
+                <div class="contactPage__companyName">
+                    <strong>{{ section.settings.contact_page_companyinfo }}</strong>
+                </div>  
+                {% endif %}
                 
                 {% if section.settings.contact_page_bankid != '' %}
                 <div class="contactPage__companyInfo">
