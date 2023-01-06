@@ -1,5 +1,8 @@
 <section class="contactPage">
 	<div class="contactPage__wrapper">
+        {% if section.settings.contact_page_title != '' %}
+          <h1>{{ section.settings.contact_page_title }}</h1>
+        {% endif %}
 		<div class="contactPage__row">
             <div class="contactPage__col">
                 {% if section.settings.contact_page_companyinfo != '' %}
@@ -23,7 +26,7 @@
       },
       {
         "type": "text",
-        "id": "conact_page_title",
+        "id": "contact_page_title",
         "label": "Page title",
         "default": "Kontakty"
       },
