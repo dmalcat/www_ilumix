@@ -4,7 +4,8 @@
       "type": "contact-info",
       "settings": {
         "contact_page_title": "Kontakty",
-        "contact_page_companyinfo": "ILUMIX light s.r.o. <br>\nHolečkova 368\/4 <br>\nKarlovy Vary <br>\nIČO: 29115728 | DIČ: 29115728 <br>\nObchodní rejstřík... vložka ...složka",
+        "contact_page_companyname": "ILUMIX light s.r.o.",
+        "contact_page_companyinfo": "Holečkova 368\/4 <br>\nKarlovy Vary <br>\nIČO: 29115728 | DIČ: 29115728 <br>\nObchodní rejstřík... vložka ...složka",
         "conact_page_bankid": "ČSOB: 47779\/0300 <br>\nRB: 333888999\/5500",
         "conact_page_phone": "+420 774 109 102",
         "conact_page_email": "info@360design.cz"
