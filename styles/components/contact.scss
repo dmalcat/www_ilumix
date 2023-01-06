@@ -1,9 +1,27 @@
 .contactPage {
     .contactPage__row {
         display: flex;
+        margin-top: 4rem;
     }
 
     .contactPage__col {
-        
+
+    }
+
+    .contactPage__col--info {
+        width: 40%;
+    }
+
+    .contactPage__col--map {
+        width: 60%;
+    }
+
+    .contactPage__contacts {
+        display: block;
+    }
+
+    .contactPage__map {
+        width: 100%;
+        height: 450px;
     }
 }
