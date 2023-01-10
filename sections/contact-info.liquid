@@ -18,6 +18,12 @@
                 </div>  
                 {% endif %}
 
+                {% if section.settings.contact_page_address != '' %}
+                  <div class="contactPage__contacts">
+                    <span>{{ section.settings.contact_page_address }}</span>
+                  </div>
+                  {% endif %}
+
                 {% if section.settings.contact_page_phone != '' %}
                   <div class="contactPage__contacts">
                       <a class="contactPage__contact contactPage__contact--phone" href="tel:{{ section.settings.contact_page_phone }}">
