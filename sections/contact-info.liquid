@@ -18,13 +18,6 @@
                   </div>
                 {% endif %}
 
-                {% if section.settings.contact_page_companyinfo != '' %}
-                <div class="contactPage__companyInfo">
-                  
-                  <span>{{ section.settings.contact_page_companyinfo }}</span>
-                </div>  
-                {% endif %}
-
                 {% if section.settings.contact_page_phone != '' %}
                   <div class="contactPage__contacts">
                       <a class="contactPage__contact contactPage__contact--phone" href="tel:{{ section.settings.contact_page_phone }}">
@@ -32,7 +25,13 @@
                       </a>
                       <a class="contactPage__contact contactPage__contact--email" href="mailto:{{ section.settings.contact_page_email }}">{{ section.settings.contact_page_email }}</a>
                   </div>
-                  {% endif %}
+                {% endif %}
+
+                {% if section.settings.contact_page_companyinfo != '' %}
+                  <div class="contactPage__companyInfo">
+                    <span>{{ section.settings.contact_page_companyinfo }}</span>
+                  </div>  
+                {% endif %}
                 
                 {% if section.settings.contact_page_bankid != '' %}
                 <div class="contactPage__companyInfo">
