@@ -71,7 +71,7 @@
     "breadcrumb_padding_bottom_xs": 40,
     "breadcrumb_bg_image_enable": true,
     "breadcrumb_bg_image": "shopify:\/\/shop_images\/barva.jpg",
-    "about_breadcrumb_bg_image": "shopify:\/\/shop_images\/about-modern-01.jpg",
+    "about_breadcrumb_bg_image": "shopify:\/\/shop_images\/barva.jpg",
     "about_02_breadcrumb_bg_image": "shopify:\/\/shop_images\/about-modern-01.jpg",
     "breadcrumb_bg_image_overlay_color": "rgba(0,0,0,0)",
     "breadcrumb_bg_image_overlay_color_opacity": 0,
