@@ -141,6 +141,23 @@
         "best_quality_padding_top_xs": 40,
         "best_quality_padding_bottom_xs": 40,
         "best_quality_img": "shopify:\/\/shop_images\/b2b.jpg",
+        "sub_title": "Kvalitní design a funkčnost",
+        "sub_title_color": "#171717",
+        "title": "Krátké představení ILUMIX light",
+        "title_color": "#000000",
+        "best_desc": "Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.",
+        "button_text": "Více o ILUMIX light",
+        "button_url": "shopify:\/\/pages\/b2b"
+      }
+    },
+    "a0675b43-1602-435f-a19d-dafbbe8cea87": {
+      "type": "beat-quality",
+      "settings": {
+        "best_quality_padding_top": 60,
+        "best_quality_padding_bottom": 60,
+        "best_quality_padding_top_xs": 40,
+        "best_quality_padding_bottom_xs": 40,
+        "best_quality_img": "shopify:\/\/shop_images\/b2b.jpg",
         "sub_title": "B2B partnerský program",
         "sub_title_color": "#171717",
         "title": "Spolupráce",
@@ -311,6 +328,7 @@
     "about-template3",
     "1bd8c7fc-0226-45ef-be41-a6a5414db132",
     "fc669c50-e9e3-4175-bdab-40cfe20818c3",
+    "a0675b43-1602-435f-a19d-dafbbe8cea87",
     "about-template2",
     "08ed1a96-0ab8-48b2-98b0-1720241ec3ee",
     "our-team",
