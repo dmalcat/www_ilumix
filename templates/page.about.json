@@ -14,6 +14,23 @@
         "section_arrow": "Od roku 2010 se věnujeme světlu. Začali jsme velkými světelnými projekty – díky nám svítí třeba Kongresové centrum v Praze, desítky českých obchoďáků i nemocnic. Postupně jsme dali dohromady rozsáhlou nabídku vlastních interiérových i exteriérových svítidel a stali se výhradními distributory předních evropských výrobců designových světel."
       }
     },
+    "fc669c50-e9e3-4175-bdab-40cfe20818c3": {
+      "type": "beat-quality",
+      "settings": {
+        "best_quality_padding_top": 60,
+        "best_quality_padding_bottom": 60,
+        "best_quality_padding_top_xs": 40,
+        "best_quality_padding_bottom_xs": 40,
+        "best_quality_img": "shopify:\/\/shop_images\/11.jpg",
+        "sub_title": "Kvalitní design a funkčnost",
+        "sub_title_color": "#171717",
+        "title": "Krátké představení ILUMIX light",
+        "title_color": "#000000",
+        "best_desc": "Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.",
+        "button_text": "Více o ILUMIX light",
+        "button_url": "shopify:\/\/pages\/b2b"
+      }
+    },
     "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb": {
       "type": "terms-conditions2",
       "settings": {
@@ -131,23 +148,6 @@
         "title_button": "POSVIŤTE SI NAŠE PRODUKTY",
         "title_button_url": "shopify:\/\/collections",
         "about_banner": "shopify:\/\/shop_images\/vime.jpg"
-      }
-    },
-    "fc669c50-e9e3-4175-bdab-40cfe20818c3": {
-      "type": "beat-quality",
-      "settings": {
-        "best_quality_padding_top": 60,
-        "best_quality_padding_bottom": 60,
-        "best_quality_padding_top_xs": 40,
-        "best_quality_padding_bottom_xs": 40,
-        "best_quality_img": "shopify:\/\/shop_images\/b2b.jpg",
-        "sub_title": "Kvalitní design a funkčnost",
-        "sub_title_color": "#171717",
-        "title": "Krátké představení ILUMIX light",
-        "title_color": "#000000",
-        "best_desc": "Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.",
-        "button_text": "Více o ILUMIX light",
-        "button_url": "shopify:\/\/pages\/b2b"
       }
     },
     "a0675b43-1602-435f-a19d-dafbbe8cea87": {
@@ -324,10 +324,10 @@
   },
   "order": [
     "about-template1",
+    "fc669c50-e9e3-4175-bdab-40cfe20818c3",
     "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb",
     "about-template3",
     "1bd8c7fc-0226-45ef-be41-a6a5414db132",
-    "fc669c50-e9e3-4175-bdab-40cfe20818c3",
     "a0675b43-1602-435f-a19d-dafbbe8cea87",
     "about-template2",
     "08ed1a96-0ab8-48b2-98b0-1720241ec3ee",
