@@ -24,7 +24,7 @@
         "best_quality_img": "shopify:\/\/shop_images\/11.jpg",
         "sub_title": "",
         "sub_title_color": "#171717",
-        "title": "Kvalita, design <br> a funkčnost",
+        "title": "Kvalita, design  a funkčnost",
         "title_color": "#000000",
         "best_desc": "Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.",
         "button_text": "Více o ILUMIX light",
@@ -33,6 +33,7 @@
     },
     "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb": {
       "type": "terms-conditions2",
+      "disabled": true,
       "settings": {
         "section_padding_top": 100,
         "section_padding_bottom": 100,
