@@ -155,8 +155,8 @@
         "about_banner": "shopify:\/\/shop_images\/vime.jpg"
       }
     },
-    "c0f2842f-3f11-41d7-b8a1-396edab721cd": {
-      "type": "beat-quality",
+    "ec0c0445-f222-402d-ae7f-063ec6754f6c": {
+      "type": "best-quality-right",
       "settings": {
         "best_quality_padding_top": 60,
         "best_quality_padding_bottom": 60,
@@ -169,7 +169,7 @@
         "title_color": "#171717",
         "best_desc": "Tak jako si hlídáme kvalitu našich světel, věnujeme pozornost také kvalitě našich služeb. Rádi poradíme s výběrem, doporučíme správný stupeň chromatičnosti nebo spočítáme správnou intenzitu osvětlení.",
         "button_text": "Posviťte si na naše produkty",
-        "button_url": ""
+        "button_url": "shopify:\/\/collections"
       }
     },
     "a0675b43-1602-435f-a19d-dafbbe8cea87": {
@@ -350,7 +350,7 @@
     "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb",
     "about-template3",
     "1bd8c7fc-0226-45ef-be41-a6a5414db132",
-    "c0f2842f-3f11-41d7-b8a1-396edab721cd",
+    "ec0c0445-f222-402d-ae7f-063ec6754f6c",
     "a0675b43-1602-435f-a19d-dafbbe8cea87",
     "about-template2",
     "08ed1a96-0ab8-48b2-98b0-1720241ec3ee",
