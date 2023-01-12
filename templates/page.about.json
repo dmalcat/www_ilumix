@@ -108,6 +108,7 @@
     },
     "1bd8c7fc-0226-45ef-be41-a6a5414db132": {
       "type": "about-modern-template5",
+      "disabled": true,
       "blocks": {
         "17818822-55db-4159-8211-b2fe22597318": {
           "type": "counter",
