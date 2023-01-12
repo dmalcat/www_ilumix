@@ -111,6 +111,7 @@
       "blocks": {
         "17818822-55db-4159-8211-b2fe22597318": {
           "type": "counter",
+          "disabled": true,
           "settings": {
             "list_counter": "10+",
             "counter_list_title": "evropských výrobců"
@@ -118,6 +119,7 @@
         },
         "d6994558-0b92-434b-97e3-56647637fa4e": {
           "type": "counter",
+          "disabled": true,
           "settings": {
             "list_counter": "1000+",
             "counter_list_title": "svítidel skladem"
@@ -125,6 +127,7 @@
         },
         "e0b7760d-26cd-46b6-8ca8-f412c32b2338": {
           "type": "counter",
+          "disabled": true,
           "settings": {
             "list_counter": "1000+",
             "counter_list_title": "zrealizovaných projektů"
