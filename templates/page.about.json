@@ -1,1 +1,360 @@
-{"sections":{"about-template1":{"type":"about-template1","settings":{"about_product_padding_top":60,"about_product_padding_bottom":35,"about_product_padding_top_ipad":40,"about_product_padding_bottom_ipad":35,"about_product_padding_top_xs":40,"about_product_padding_bottom_xs":25,"section_sub_title":"více než 10 let","section_title":"SVĚTELNÝCH ZKUŠENOSTÍ ","section_arrow":"Od roku 2010 se věnujeme světlu. Začali jsme velkými světelnými projekty – díky nám svítí třeba Kongresové centrum v Praze, desítky českých obchoďáků i nemocnic. Postupně jsme dali dohromady rozsáhlou nabídku vlastních interiérových i exteriérových svítidel a stali se výhradními distributory předních evropských výrobců designových světel."}},"6207130e-7bb1-4c5c-a4a3-b8fed29db9eb":{"type":"terms-conditions2","settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"section_bg_color":"#f6f6f6","section_title1":"Krátké představení","section_title2":"ILUMIX light","block_quot":"Kvalita, design a funkčnost","block_desc":"Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.","content_button_url1":"","content_button1":"více o ilumix light","term_condition_img":"shopify:\/\/shop_images\/11.jpg"}},"about-template3":{"type":"about-template3","blocks":{"4d39f127-743b-4bfc-951c-6e98947ed629":{"type":"about_service","settings":{"service_svg_icon":"","service_icon":"icon-trophy","service_title":"Dodání rychlostí světla","service_desc":"Objednávky do 13:00, odesíláme ještě tentýž den."}},"9c29c3fe-64d4-47bd-9716-b2c529b34e44":{"type":"about_service","settings":{"service_svg_icon":"","service_icon":"icon-happy","service_title":"Ověřená kvalita","service_desc":"Světla vybíráme pečlivě a velkou péči věnujeme i naší vlastní výrobě."}},"23dd9faa-dd84-4e01-8c13-a633213a7999":{"type":"about_service","settings":{"service_svg_icon":"","service_icon":"icon-flag","service_title":"Záruční i pozáruční servis","service_desc":"Kvalitní servis k našim svítidlům nerozlučně patří."}},"91da4078-ccf2-434f-8512-becb679e7075":{"type":"about_service","settings":{"service_svg_icon":"","service_icon":"icon-lightbulb","service_title":"Ekologie a úspora","service_desc":"Nejmodernější čipy v našich světlech zaručují vysokou svítivost a nízkou spotřebu."}}},"block_order":["4d39f127-743b-4bfc-951c-6e98947ed629","9c29c3fe-64d4-47bd-9716-b2c529b34e44","23dd9faa-dd84-4e01-8c13-a633213a7999","91da4078-ccf2-434f-8512-becb679e7075"],"settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40}},"1bd8c7fc-0226-45ef-be41-a6a5414db132":{"type":"about-modern-template5","blocks":{"17818822-55db-4159-8211-b2fe22597318":{"type":"counter","settings":{"list_counter":"10+","counter_list_title":"evropských výrobců"}},"d6994558-0b92-434b-97e3-56647637fa4e":{"type":"counter","settings":{"list_counter":"1000+","counter_list_title":"svítidel skladem"}},"e0b7760d-26cd-46b6-8ca8-f412c32b2338":{"type":"counter","settings":{"list_counter":"1000+","counter_list_title":"zrealizovaných projektů"}}},"block_order":["17818822-55db-4159-8211-b2fe22597318","d6994558-0b92-434b-97e3-56647637fa4e","e0b7760d-26cd-46b6-8ca8-f412c32b2338"],"settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"section_bg_color":"#f6f6f6","section_title":"Víme, co prodáváme","section_sub_des":"Tak jako si hlídáme kvalitu našich světel, věnujeme pozornost také kvalitě našich služeb. Rádi poradíme s výběrem, doporučíme správný stupeň chromatičnosti nebo spočítáme správnou intenzitu osvětlení.","title_button":"POSVIŤTE SI NAŠE PRODUKTY","title_button_url":"shopify:\/\/collections","about_banner":"shopify:\/\/shop_images\/vime.jpg"}},"fc669c50-e9e3-4175-bdab-40cfe20818c3":{"type":"beat-quality","settings":{"best_quality_padding_top":60,"best_quality_padding_bottom":60,"best_quality_padding_top_xs":40,"best_quality_padding_bottom_xs":40,"best_quality_img":"shopify:\/\/shop_images\/b2b.jpg","sub_title":"B2B partnerský program","sub_title_color":"#171717","title":"Spolupráce","title_color":"#bf8c4c","best_desc":"Našim partnerům poskytujeme vzorky a katalogy, připravujeme vizualizace i dokumentaci. U větších projektů nabízíme cenové zvýhodnění.","button_text":"VÝHODY B2B SPOLUPRÁCE","button_url":"shopify:\/\/pages\/b2b"}},"about-template2":{"type":"about-template2","blocks":{"3b80a6f9-ae04-4a83-8dfd-d8e1b6cc8cfc":{"type":"about_template2","settings":{"list_title":"Interiérová svítidla","list_desc":"Nástěnná, závěsná, či zápustná svítidla. Stojací i stolní lampy. Bodová svítidla i svítidla do závěsných lišt."}},"823a988a-1780-48a7-9c08-afa51c064cca":{"type":"about_template2","settings":{"list_title":"Venkovní svítidla","list_desc":"Sloupková svítidla, solární světla nebo světla s čidlem pohybu. Posvítí vám na (příjezdovou) cestu nebo dodají atmosféru večernímu posezení na terase."}},"f481fae2-c446-4518-8094-f627c675f802":{"type":"about_template2","settings":{"list_title":"Lištové systémy","list_desc":"S lištovými systémy vytvoříte osobité světelné systémy. Vynikají sou variabilitou a jednoduchou instalací. Originální, moderní a přesně na míru vašemu prostoru."}}},"block_order":["3b80a6f9-ae04-4a83-8dfd-d8e1b6cc8cfc","823a988a-1780-48a7-9c08-afa51c064cca","f481fae2-c446-4518-8094-f627c675f802"],"settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"section_title":"360design","section_desc":"S výrobci svítidel úzce spolupracujeme mnoho let a zakládáme si na osobních vztazích. Vyberete si u nás svítidla do domácnosti, na terasu nebo do bazénu.","more_button":"PODÍVEJTE SE NA NAŠE ZNAČKY","more_button_url":""}},"08ed1a96-0ab8-48b2-98b0-1720241ec3ee":{"type":"contact-store-information","settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"contact_drop_title":"Ozvěte se nám","info_icon1":"","info_title1":"+420 773 335 535","info_link1":"Zavolejte nám","info_icon2":"","info_title2":"info@360design.cz","info_link2":"Napište nám","info_icon3":"","info_title3":"Kontaktní formulář","info_link3":"Nechte nám zprávu"}},"our-team":{"type":"our-team","blocks":{"e479550e-4616-4523-9875-e5af4a306ee2":{"type":"our-vision","settings":{"member_name":"David Helebrant","member_position":"B2B program","member_desc":"b2b@360design.cz | +420 773 335 535"}},"830aba81-79e5-440b-8dd9-9184d267a1e2":{"type":"our-vision","settings":{"member_name":"Martin Jaroš","member_position":"objednávky","member_desc":"eshop@360design.cz | +420 773 900 590"}},"697bb707-8daf-46af-9843-1becd3093e49":{"type":"our-vision","settings":{"member_name":"Libor jára","member_position":"showroom","member_desc":"info@360design.cz | +420 773 900 507"}}},"block_order":["e479550e-4616-4523-9875-e5af4a306ee2","830aba81-79e5-440b-8dd9-9184d267a1e2","697bb707-8daf-46af-9843-1becd3093e49"],"settings":{"section_padding_top":80,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"our_team_title":"Posvítíme si na to"}},"about-template4":{"type":"about-template4","blocks":{"658952b8-0e70-47d7-a819-318129dbfef2":{"type":"about_category","settings":{"slider_category_handle":"interierova-svitidla","collection_img":"shopify:\/\/shop_images\/interier.jpg"}},"a88264b6-8e2e-40d7-98fc-5b4c9454210d":{"type":"about_category","settings":{"slider_category_handle":"exterierova-svitidla","collection_img":"shopify:\/\/shop_images\/exterier.jpg"}},"5a51497b-47fa-4fa3-a801-3f1ef5ef4542":{"type":"about_category","settings":{"slider_category_handle":"3f-listy","collection_img":"shopify:\/\/shop_images\/listove_systemy.jpg"}},"d204988d-1561-43d6-82c2-899724c67569":{"type":"about_category","settings":{"slider_category_handle":"prislusenstvi","collection_img":"shopify:\/\/shop_images\/prislusenstvi_d1aba3de-6846-49fa-b60b-6f7db1977840.jpg"}}},"block_order":["658952b8-0e70-47d7-a819-318129dbfef2","a88264b6-8e2e-40d7-98fc-5b4c9454210d","5a51497b-47fa-4fa3-a801-3f1ef5ef4542","d204988d-1561-43d6-82c2-899724c67569"],"settings":{"section_padding_top":80,"section_padding_bottom":45,"section_padding_top_lg":60,"section_padding_bottom_lg":0,"section_padding_top_xs":40,"section_padding_bottom_xs":20}}},"order":["about-template1","6207130e-7bb1-4c5c-a4a3-b8fed29db9eb","about-template3","1bd8c7fc-0226-45ef-be41-a6a5414db132","fc669c50-e9e3-4175-bdab-40cfe20818c3","about-template2","08ed1a96-0ab8-48b2-98b0-1720241ec3ee","our-team","about-template4"]}
+{
+  "sections": {
+    "about-template1": {
+      "type": "about-template1",
+      "settings": {
+        "about_product_padding_top": 60,
+        "about_product_padding_bottom": 35,
+        "about_product_padding_top_ipad": 40,
+        "about_product_padding_bottom_ipad": 35,
+        "about_product_padding_top_xs": 40,
+        "about_product_padding_bottom_xs": 25,
+        "section_sub_title": "více než 10 let",
+        "section_title": "SVĚTELNÝCH ZKUŠENOSTÍ ",
+        "section_arrow": "Od roku 2010 se věnujeme světlu. Začali jsme velkými světelnými projekty – díky nám svítí třeba Kongresové centrum v Praze, desítky českých obchoďáků i nemocnic. Postupně jsme dali dohromady rozsáhlou nabídku vlastních interiérových i exteriérových svítidel a stali se výhradními distributory předních evropských výrobců designových světel."
+      }
+    },
+    "fc669c50-e9e3-4175-bdab-40cfe20818c3": {
+      "type": "beat-quality",
+      "settings": {
+        "best_quality_padding_top": 60,
+        "best_quality_padding_bottom": 60,
+        "best_quality_padding_top_xs": 40,
+        "best_quality_padding_bottom_xs": 40,
+        "best_quality_img": "shopify:\/\/shop_images\/11.jpg",
+        "sub_title": "",
+        "sub_title_color": "#171717",
+        "title": "Kvalita, design  a funkčnost",
+        "title_color": "#000000",
+        "best_desc": "Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.",
+        "button_text": "Více o ILUMIX light",
+        "button_url": "shopify:\/\/pages\/b2b"
+      }
+    },
+    "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb": {
+      "type": "terms-conditions2",
+      "disabled": true,
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_bg_color": "#f6f6f6",
+        "section_title1": "Krátké představení",
+        "section_title2": "ILUMIX light",
+        "block_quot": "Kvalita, design a funkčnost",
+        "block_desc": "Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.",
+        "content_button_url1": "",
+        "content_button1": "více o ilumix light",
+        "term_condition_img": "shopify:\/\/shop_images\/11.jpg"
+      }
+    },
+    "about-template3": {
+      "type": "about-template3",
+      "blocks": {
+        "4d39f127-743b-4bfc-951c-6e98947ed629": {
+          "type": "about_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "icon-trophy",
+            "service_title": "Dodání rychlostí světla",
+            "service_desc": "Objednávky do 13:00 odesíláme ještě tentýž den."
+          }
+        },
+        "9c29c3fe-64d4-47bd-9716-b2c529b34e44": {
+          "type": "about_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "icon-happy",
+            "service_title": "Ověřená kvalita",
+            "service_desc": "Světla vybíráme pečlivě a velkou péči věnujeme i naší vlastní výrobě."
+          }
+        },
+        "23dd9faa-dd84-4e01-8c13-a633213a7999": {
+          "type": "about_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "icon-flag",
+            "service_title": "Záruční i pozáruční servis",
+            "service_desc": "Kvalitní servis k našim svítidlům nerozlučně patří."
+          }
+        },
+        "91da4078-ccf2-434f-8512-becb679e7075": {
+          "type": "about_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "icon-lightbulb",
+            "service_title": "Ekologie a úspora",
+            "service_desc": "Nejmodernější čipy v našich světlech zaručují vysokou svítivost a nízkou spotřebu."
+          }
+        }
+      },
+      "block_order": [
+        "4d39f127-743b-4bfc-951c-6e98947ed629",
+        "9c29c3fe-64d4-47bd-9716-b2c529b34e44",
+        "23dd9faa-dd84-4e01-8c13-a633213a7999",
+        "91da4078-ccf2-434f-8512-becb679e7075"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40
+      }
+    },
+    "1bd8c7fc-0226-45ef-be41-a6a5414db132": {
+      "type": "about-modern-template5",
+      "disabled": true,
+      "blocks": {
+        "17818822-55db-4159-8211-b2fe22597318": {
+          "type": "counter",
+          "disabled": true,
+          "settings": {
+            "list_counter": "10+",
+            "counter_list_title": "evropských výrobců"
+          }
+        },
+        "d6994558-0b92-434b-97e3-56647637fa4e": {
+          "type": "counter",
+          "disabled": true,
+          "settings": {
+            "list_counter": "1000+",
+            "counter_list_title": "svítidel skladem"
+          }
+        },
+        "e0b7760d-26cd-46b6-8ca8-f412c32b2338": {
+          "type": "counter",
+          "disabled": true,
+          "settings": {
+            "list_counter": "1000+",
+            "counter_list_title": "zrealizovaných projektů"
+          }
+        }
+      },
+      "block_order": [
+        "17818822-55db-4159-8211-b2fe22597318",
+        "d6994558-0b92-434b-97e3-56647637fa4e",
+        "e0b7760d-26cd-46b6-8ca8-f412c32b2338"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_bg_color": "#f6f6f6",
+        "section_title": "Víme, co prodáváme",
+        "section_sub_des": "Tak jako si hlídáme kvalitu našich světel, věnujeme pozornost také kvalitě našich služeb. Rádi poradíme s výběrem, doporučíme správný stupeň chromatičnosti nebo spočítáme správnou intenzitu osvětlení.",
+        "title_button": "POSVIŤTE SI NAŠE PRODUKTY",
+        "title_button_url": "shopify:\/\/collections",
+        "about_banner": "shopify:\/\/shop_images\/vime.jpg"
+      }
+    },
+    "ec0c0445-f222-402d-ae7f-063ec6754f6c": {
+      "type": "best-quality-right",
+      "settings": {
+        "best_quality_padding_top": 60,
+        "best_quality_padding_bottom": 60,
+        "best_quality_padding_top_xs": 40,
+        "best_quality_padding_bottom_xs": 40,
+        "best_quality_img": "shopify:\/\/shop_images\/vime.jpg",
+        "sub_title": "",
+        "sub_title_color": "#171717",
+        "title": "Víme, co prodáváme",
+        "title_color": "#171717",
+        "best_desc": "Tak jako si hlídáme kvalitu našich světel, věnujeme pozornost také kvalitě našich služeb. Rádi poradíme s výběrem, doporučíme správný stupeň chromatičnosti nebo spočítáme správnou intenzitu osvětlení.",
+        "button_text": "Posviťte si na naše produkty",
+        "button_url": "shopify:\/\/collections"
+      }
+    },
+    "a0675b43-1602-435f-a19d-dafbbe8cea87": {
+      "type": "beat-quality",
+      "settings": {
+        "best_quality_padding_top": 60,
+        "best_quality_padding_bottom": 60,
+        "best_quality_padding_top_xs": 40,
+        "best_quality_padding_bottom_xs": 40,
+        "best_quality_img": "shopify:\/\/shop_images\/b2b.jpg",
+        "sub_title": "B2B partnerský program",
+        "sub_title_color": "#171717",
+        "title": "Spolupráce",
+        "title_color": "#000000",
+        "best_desc": "Našim partnerům poskytujeme vzorky a katalogy, připravujeme vizualizace i dokumentaci. U větších projektů nabízíme cenové zvýhodnění.",
+        "button_text": "VÝHODY B2B SPOLUPRÁCE",
+        "button_url": "shopify:\/\/pages\/b2b"
+      }
+    },
+    "about-template2": {
+      "type": "about-template2",
+      "blocks": {
+        "3b80a6f9-ae04-4a83-8dfd-d8e1b6cc8cfc": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Interiérová svítidla",
+            "list_desc": "Nástěnná, závěsná, či zápustná svítidla. Stojací i stolní lampy. Bodová svítidla i svítidla do závěsných lišt."
+          }
+        },
+        "823a988a-1780-48a7-9c08-afa51c064cca": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Venkovní svítidla",
+            "list_desc": "Sloupková svítidla, solární světla nebo světla s čidlem pohybu. Posvítí vám na (příjezdovou) cestu nebo dodají atmosféru večernímu posezení na terase."
+          }
+        },
+        "f481fae2-c446-4518-8094-f627c675f802": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Lištové systémy",
+            "list_desc": "S lištovými systémy vytvoříte osobité světelné systémy. Vynikají sou variabilitou a jednoduchou instalací. Originální, moderní a přesně na míru vašemu prostoru."
+          }
+        }
+      },
+      "block_order": [
+        "3b80a6f9-ae04-4a83-8dfd-d8e1b6cc8cfc",
+        "823a988a-1780-48a7-9c08-afa51c064cca",
+        "f481fae2-c446-4518-8094-f627c675f802"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_title": "360design",
+        "section_desc": "S výrobci svítidel úzce spolupracujeme mnoho let a zakládáme si na osobních vztazích. Vyberete si u nás svítidla do domácnosti, na terasu nebo do bazénu.",
+        "more_button": "PODÍVEJTE SE NA NAŠE ZNAČKY",
+        "more_button_url": ""
+      }
+    },
+    "08ed1a96-0ab8-48b2-98b0-1720241ec3ee": {
+      "type": "contact-store-information",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "contact_drop_title": "Ozvěte se nám",
+        "info_icon1": "",
+        "info_title1": "+420 773 335 535",
+        "info_link1": "Zavolejte nám",
+        "info_icon2": "",
+        "info_title2": "info@360design.cz",
+        "info_link2": "Napište nám",
+        "info_icon3": "",
+        "info_title3": "Kontaktní formulář",
+        "info_link3": "Nechte nám zprávu"
+      }
+    },
+    "our-team": {
+      "type": "our-team",
+      "blocks": {
+        "e479550e-4616-4523-9875-e5af4a306ee2": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "David Helebrant",
+            "member_position": "B2B program",
+            "member_desc": "b2b@360design.cz | +420 773 335 535"
+          }
+        },
+        "830aba81-79e5-440b-8dd9-9184d267a1e2": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Martin Jaroš",
+            "member_position": "objednávky",
+            "member_desc": "eshop@360design.cz | +420 773 900 590"
+          }
+        },
+        "697bb707-8daf-46af-9843-1becd3093e49": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Libor jára",
+            "member_position": "showroom",
+            "member_desc": "info@360design.cz | +420 773 900 507"
+          }
+        }
+      },
+      "block_order": [
+        "e479550e-4616-4523-9875-e5af4a306ee2",
+        "830aba81-79e5-440b-8dd9-9184d267a1e2",
+        "697bb707-8daf-46af-9843-1becd3093e49"
+      ],
+      "settings": {
+        "section_padding_top": 80,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "our_team_title": "Posvítíme si na to"
+      }
+    },
+    "about-template4": {
+      "type": "about-template4",
+      "blocks": {
+        "658952b8-0e70-47d7-a819-318129dbfef2": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "interierova-svitidla",
+            "collection_img": "shopify:\/\/shop_images\/interier.jpg"
+          }
+        },
+        "a88264b6-8e2e-40d7-98fc-5b4c9454210d": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "exterierova-svitidla",
+            "collection_img": "shopify:\/\/shop_images\/exterier.jpg"
+          }
+        },
+        "5a51497b-47fa-4fa3-a801-3f1ef5ef4542": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "3f-listy",
+            "collection_img": "shopify:\/\/shop_images\/listove_systemy.jpg"
+          }
+        },
+        "d204988d-1561-43d6-82c2-899724c67569": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "prislusenstvi",
+            "collection_img": "shopify:\/\/shop_images\/prislusenstvi_d1aba3de-6846-49fa-b60b-6f7db1977840.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "658952b8-0e70-47d7-a819-318129dbfef2",
+        "a88264b6-8e2e-40d7-98fc-5b4c9454210d",
+        "5a51497b-47fa-4fa3-a801-3f1ef5ef4542",
+        "d204988d-1561-43d6-82c2-899724c67569"
+      ],
+      "settings": {
+        "section_padding_top": 80,
+        "section_padding_bottom": 45,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 0,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 20
+      }
+    }
+  },
+  "order": [
+    "about-template1",
+    "fc669c50-e9e3-4175-bdab-40cfe20818c3",
+    "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb",
+    "about-template3",
+    "1bd8c7fc-0226-45ef-be41-a6a5414db132",
+    "ec0c0445-f222-402d-ae7f-063ec6754f6c",
+    "a0675b43-1602-435f-a19d-dafbbe8cea87",
+    "about-template2",
+    "08ed1a96-0ab8-48b2-98b0-1720241ec3ee",
+    "our-team",
+    "about-template4"
+  ]
+}
