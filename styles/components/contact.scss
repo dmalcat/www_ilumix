@@ -4,10 +4,6 @@
         margin-top: 4rem;
     }
 
-    .contactPage__col {
-
-    }
-
     .contactPage__col--info {
         width: 40%;
     }
@@ -16,12 +12,54 @@
         width: 60%;
     }
 
-    .contactPage__contacts {
+    .contactPage__companyName {
         display: block;
+        font-size: 22px;
+        color: #000;
+        margin-bottom: 2rem;
     }
 
+    .contactPage__companyInfo {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contactPage__icon {
+        margin-right: 1.5rem;
+        width: 38px;
+        height: 38px;
+    }
+
+    .contactPage__link {
+        color: #6f6f6f;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .contactPage__contacts {
+        display: flex;
+        margin-bottom: 30px;
+        
+        .contactPage__contact {
+            display: block;
+        }
+    }
+
+    .contactPage__sectionHeadline {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #232323;
+        margin-bottom: 0.5rem;
+    }
+    
     .contactPage__map {
         width: 100%;
-        height: 450px;
+        height: 550px;
     }
+}
+
+.form-contact2 {
+    margin-bottom: 8rem;
 }
