@@ -28,9 +28,11 @@
     </div>
     <div class="row row--button">
       {% if section.settings.more_button != '' %}
-        <a href="{{ block.settings.more_button_url }}" class="btn btn-style7">
-            {{ section.settings.more_button }}
-        </a>
+        <div>
+          <a href="{{ block.settings.more_button_url }}" class="btn btn-style7">
+              {{ section.settings.more_button }}
+          </a>
+        </div>
       {% endif %}
     </div>
   </div>
