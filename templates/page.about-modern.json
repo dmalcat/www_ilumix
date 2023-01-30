@@ -320,9 +320,9 @@
           "type": "about_service",
           "settings": {
             "service_svg_icon": "",
-            "service_icon": "",
-            "service_title": "Choose products",
-            "service_desc": "Lorem Ipsum is simply dummy text printing and typesetting"
+            "service_icon": "icon-trophy",
+            "service_title": "Exkluzivní zastoupení",
+            "service_desc": "Jsme výhradní dovozci pro většinu našich značek."
           }
         }
       },
