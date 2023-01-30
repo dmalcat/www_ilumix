@@ -87,6 +87,114 @@
         "button_url": ""
       }
     },
+    "23454e21-cad0-4295-a13c-bb0e85521bae": {
+      "type": "payment-policy-service",
+      "blocks": {
+        "91c135bc-bfa8-47f7-925d-840a1812ca2d": {
+          "type": "payment_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "",
+            "service_title": "Osobní vztahy s výrobci",
+            "service_desc": "Na původu svítidel i na kvalitě jejich provedení nám záleží. Všechny dodavatele známe osobně a spolupracujeme s nimi dlouhodobě."
+          }
+        },
+        "041cd79f-2105-401e-aa0c-655e3853368f": {
+          "type": "payment_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "",
+            "service_title": "Vážíme si každého zákazníka",
+            "service_desc": "Rádi vám poradíme s výběrem a je jedno, jestli hledáte jedno světlo do obýváku nebo chcete rozsvítit celý dům. Není malých zakázek."
+          }
+        },
+        "b0718c2e-43f2-4a83-a2b7-0f4dfaa26912": {
+          "type": "payment_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "",
+            "service_title": "Dodržujeme termíny",
+            "service_desc": "Vše včas a bezpečně doručíme na domluvené místo. Dobře víme, že u velkých projektů je přesnost dílčích dodávek klíčová."
+          }
+        },
+        "c96854b4-1032-4e7a-b0b1-ecdc8a593fba": {
+          "type": "payment_service",
+          "settings": {
+            "service_svg_icon": "",
+            "service_icon": "",
+            "service_title": "Ekologie a udržitelnost",
+            "service_desc": "Naše světla jsou vybavena těmi nejmodernějšími čipy, takže mají vysokou svítivost a zároveň nízkou spotřebu energie."
+          }
+        }
+      },
+      "block_order": [
+        "91c135bc-bfa8-47f7-925d-840a1812ca2d",
+        "041cd79f-2105-401e-aa0c-655e3853368f",
+        "b0718c2e-43f2-4a83-a2b7-0f4dfaa26912",
+        "c96854b4-1032-4e7a-b0b1-ecdc8a593fba"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_sub_title": "BUSINESS PROCESS",
+        "section_title": "Hodnoty, kterých se držíme"
+      }
+    },
+    "3cb9b947-c4b4-45ae-a39a-bc5c8d0db66e": {
+      "type": "about-template2",
+      "blocks": {
+        "c44c48b1-e2e8-4d95-924a-4ca0c3832cc2": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Osobní vztahy s výrobci",
+            "list_desc": "Na původu svítidel i na kvalitě jejich provedení nám záleží. Všechny dodavatele známe osobně a spolupracujeme s nimi dlouhodobě."
+          }
+        },
+        "9992ea8a-919a-4335-a1df-82cfbd2e904f": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Vážíme si každého zákazníka",
+            "list_desc": "Rádi vám poradíme s výběrem a je jedno, jestli hledáte jedno světlo do obýváku nebo chcete rozsvítit celý dům. Není malých zakázek."
+          }
+        },
+        "a1e034f0-99d2-4224-9475-598b8756771e": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Dodržujeme termíny",
+            "list_desc": "Vše včas a bezpečně doručíme na domluvené místo. Dobře víme, že u velkých projektů je přesnost dílčích dodávek klíčová."
+          }
+        },
+        "3673201a-e681-4095-84b6-a0766e25ed7d": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Ekologie a udržitelnost",
+            "list_desc": "Naše světla jsou vybavena těmi nejmodernějšími čipy, takže mají vysokou svítivost a zároveň nízkou spotřebu energie."
+          }
+        }
+      },
+      "block_order": [
+        "c44c48b1-e2e8-4d95-924a-4ca0c3832cc2",
+        "9992ea8a-919a-4335-a1df-82cfbd2e904f",
+        "a1e034f0-99d2-4224-9475-598b8756771e",
+        "3673201a-e681-4095-84b6-a0766e25ed7d"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_title": "Hodnoty, kterých se držíme",
+        "section_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website.",
+        "more_button": "ABOUT SERVICES",
+        "more_button_url": ""
+      }
+    },
     "86200c53-661e-41ec-9675-0225db85ed49": {
       "type": "contact-store-information",
       "settings": {
@@ -173,63 +281,6 @@
         "section_sub_title": "Naše reference"
       }
     },
-    "23454e21-cad0-4295-a13c-bb0e85521bae": {
-      "type": "payment-policy-service",
-      "blocks": {
-        "91c135bc-bfa8-47f7-925d-840a1812ca2d": {
-          "type": "payment_service",
-          "settings": {
-            "service_svg_icon": "",
-            "service_icon": "",
-            "service_title": "Osobní vztahy s výrobci",
-            "service_desc": "Na původu svítidel i na kvalitě jejich provedení nám záleží. Všechny dodavatele známe osobně a spolupracujeme s nimi dlouhodobě."
-          }
-        },
-        "041cd79f-2105-401e-aa0c-655e3853368f": {
-          "type": "payment_service",
-          "settings": {
-            "service_svg_icon": "",
-            "service_icon": "",
-            "service_title": "Vážíme si každého zákazníka",
-            "service_desc": "Rádi vám poradíme s výběrem a je jedno, jestli hledáte jedno světlo do obýváku nebo chcete rozsvítit celý dům. Není malých zakázek."
-          }
-        },
-        "b0718c2e-43f2-4a83-a2b7-0f4dfaa26912": {
-          "type": "payment_service",
-          "settings": {
-            "service_svg_icon": "",
-            "service_icon": "",
-            "service_title": "Dodržujeme termíny",
-            "service_desc": "Vše včas a bezpečně doručíme na domluvené místo. Dobře víme, že u velkých projektů je přesnost dílčích dodávek klíčová."
-          }
-        },
-        "c96854b4-1032-4e7a-b0b1-ecdc8a593fba": {
-          "type": "payment_service",
-          "settings": {
-            "service_svg_icon": "",
-            "service_icon": "",
-            "service_title": "Ekologie a udržitelnost",
-            "service_desc": "Naše světla jsou vybavena těmi nejmodernějšími čipy, takže mají vysokou svítivost a zároveň nízkou spotřebu energie."
-          }
-        }
-      },
-      "block_order": [
-        "91c135bc-bfa8-47f7-925d-840a1812ca2d",
-        "041cd79f-2105-401e-aa0c-655e3853368f",
-        "b0718c2e-43f2-4a83-a2b7-0f4dfaa26912",
-        "c96854b4-1032-4e7a-b0b1-ecdc8a593fba"
-      ],
-      "settings": {
-        "section_padding_top": 100,
-        "section_padding_bottom": 100,
-        "section_padding_top_lg": 60,
-        "section_padding_bottom_lg": 60,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 40,
-        "section_sub_title": "BUSINESS PROCESS",
-        "section_title": "Hodnoty, kterých se držíme"
-      }
-    },
     "about-modern-template6": {
       "type": "about-modern-template6",
       "blocks": {
@@ -301,9 +352,10 @@
     "edaa3903-fcf2-4781-8c38-675639e9e20d",
     "309a85dd-bc30-4375-96b7-16d1ef20f8c5",
     "87fe9425-5478-4f13-bb3a-424531ebe4d5",
+    "23454e21-cad0-4295-a13c-bb0e85521bae",
+    "3cb9b947-c4b4-45ae-a39a-bc5c8d0db66e",
     "86200c53-661e-41ec-9675-0225db85ed49",
     "about-modern-template2",
-    "23454e21-cad0-4295-a13c-bb0e85521bae",
     "about-modern-template6",
     "fb8345a0-914a-481f-8c75-bd793ac2968a"
   ]
