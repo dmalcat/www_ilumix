@@ -33,26 +33,6 @@
         "info_link3": "Napište nám zprávu"
       }
     },
-    "form-contact2": {
-      "type": "form-contact2",
-      "settings": {
-        "section_padding_top": 20,
-        "section_padding_bottom": 0,
-        "section_padding_top_ipad": 60,
-        "section_padding_bottom_ipad": 0,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 0,
-        "section_bg_color": "#ffffff",
-        "section_title": "Máte nějaké dotazy?",
-        "section_des": "Pomocí níže uvedeného formuláře můžete kontaktovat náš prodejní tým",
-        "name_placeholder": "Vaše jméno",
-        "email_placeholder": "Váš email",
-        "phone_placeholder": "Váš telefon",
-        "message_placeholder": "Zpráva...",
-        "form_button_name": "Odeslat zprávu",
-        "read_agree_text": "Souhlasím s podmínkami a beru na vědomí, že mé údaje budou bezpečně uchovávány v souladu se zásadami ochrany osobních údajů."
-      }
-    },
     "our-store2": {
       "type": "our-store2",
       "disabled": true,
@@ -151,7 +131,6 @@
   "order": [
     "d728499e-6c83-4b7c-90c0-2eda0378a3a4",
     "165935635076221324",
-    "form-contact2",
     "our-store2",
     "contact-banner",
     "contact-map2",
