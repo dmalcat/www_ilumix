@@ -291,8 +291,8 @@
                   {% endfor %}
 
 
-                  {% for availabilities in product.variants.first.store_availabilities %}
-                    
+                  {% for availability in product.variants.first.store_availabilities %}
+                      {{ availability }}  
                   {% endfor %}
 
                   
