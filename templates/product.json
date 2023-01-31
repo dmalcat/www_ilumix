@@ -28,8 +28,8 @@
         "0dff3674-84a0-4caa-b318-f8e3ba87c209": {
           "type": "product_availability",
           "settings": {
-            "availability_title": "Dostupnost: <span>{{ product.metafields.custom.skladova_dostupnost | metafield_text }}<\/span>",
-            "in_stock_title": "Skladem",
+            "availability_title": "Dostupnost",
+            "in_stock_title": "Skladem <span>({{ product.metafields.custom.skladova_dostupnost | metafield_text }})<\/span>",
             "out_of_stock_title": "Není skladem"
           }
         },
