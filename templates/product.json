@@ -1,1 +1,146 @@
-{"sections":{"product-template":{"type":"product-template","blocks":{"title_wrap":{"type":"title_wrap","settings":{}},"495fc553-1e36-4d91-be60-08907eb74999":{"type":"product_variant_picker","settings":{"product_variant_handle":"product_variant_swatch_option","product_variant_color_image_enable":true,"product_variant_color_enable":true}},"wishlist_button":{"type":"wishlist_button","disabled":true,"settings":{"sizeguide_enable":false,"sizeguide_title":"Sizeguide","sizeguide_page":""}},"0dff3674-84a0-4caa-b318-f8e3ba87c209":{"type":"product_availability","settings":{"availability_title":"Dostupnost:","in_stock_title":"Skladem","out_of_stock_title":"Na centrálním skladě"}},"d2151862-b6be-4781-a6e9-b0743c4084c8":{"type":"product_description_tab","settings":{"product_info_tab_title":"Description","additional_information_title":"Technická data","product_review_tab_title":"Reviews","product_video_title":"Video"}}},"block_order":["title_wrap","495fc553-1e36-4d91-be60-08907eb74999","wishlist_button","0dff3674-84a0-4caa-b318-f8e3ba87c209","d2151862-b6be-4781-a6e9-b0743c4084c8"],"settings":{"product_sku_title":"Kód zboží:","swatch":"Barva:","product_vendor_title":"Výrobce:","product_cena":"Cena:","social_share_title":"Sdílet:","velkoobchod":"<p>Jste z oboru? Zaregistrujte se do našeho <a href=\"\/pages\/velkoobchodni-program\" title=\"Velkoobchodní program\">velkoobchodního programu <\/a>a čerpejte veškeré výhody na maximum.<\/p>","navod":"Návod k montáži:","sheet":"Data sheet:","download":"ke stažení","section_padding_top":0,"section_padding_bottom":100,"section_padding_top_ipad":0,"section_padding_bottom_ipad":60,"section_padding_top_xs":0,"section_padding_bottom_xs":40,"product_style_handle":"style_1","pro_bg_color":"#ffffff","zoom_enable":false}},"16542542550640dac9":{"type":"image-with-text","settings":{"section_padding_top":0,"section_padding_bottom":0,"section_padding_top_lg":0,"section_padding_bottom_lg":0,"section_padding_top_xs":0,"section_padding_bottom_xs":0,"about_banner_img":"{{ product.metafields.my_fields.obr_zek_1.value }}","about_title":"{{ product.metafields.my_fields.nadpis_u_obr_zku_1.value }}","about_des1":"<p>{{ product.metafields.my_fields.text_u_obr_zku_1 | metafield_tag }}<\/p>"}},"165425517781de3512":{"type":"image-with-text2","settings":{"section_padding_top":0,"section_padding_bottom":0,"section_padding_top_lg":0,"section_padding_bottom_lg":0,"section_padding_top_xs":0,"section_padding_bottom_xs":0,"banner_title":"","banner_sub_title":"","about_banner_img":"{{ product.metafields.my_fields.obr_zek_2.value }}","about_title":"{{ product.metafields.my_fields.nadpis_u_obr_zku_2.value }}","about_des1":"<p>{{ product.metafields.my_fields.text_u_obr_zku_2 | metafield_tag }}<\/p>"}},"related-product":{"type":"related-product","settings":{"related_products_enable":true,"related_padding_top":0,"related_padding_bottom":50,"related_padding_top_ipad":0,"related_padding_bottom_ipad":30,"related_padding_top_xs":0,"related_padding_bottom_xs":10,"related_title":"Podobné produkty"}},"16545024540f92bb28":{"type":"banner-grid","settings":{"mobile_design":true,"banner1_padding_top":0,"banner1_padding_bottom":60,"banner1_padding_top_ipad":0,"banner1_padding_bottom_ipad":30,"banner1_padding_top_xs":0,"banner1_padding_bottom_xs":20,"banner_img":"shopify:\/\/shop_images\/ilumix_eshop_banner_2.jpg","banner_txt_enable":true,"banner_sub_title":"Akce měsíce:","banner_sub_title_bold":"3.751 Kč","banner_title1":"Stolní lampa Taichi T","banner_desc1":"<p>Stolní lampa Branch na černém podstavci<\/p><p>a konstrukce z dubového dřeva.<\/p><p>Vyrobeno z dubového dřeva.<\/p><p>Jedná se o velmi univerzální svítidlo,<\/p><p>protože jej lze instalovat v ložnicích, kancelářích,<\/p><p>zasedacích místnostech apod.<\/p>","banner_desc2":"","banner_button_text":"Detail produktu","banner_url":"shopify:\/\/products\/taichi-t"}}},"order":["product-template","16542542550640dac9","165425517781de3512","related-product","16545024540f92bb28"]}
+{
+  "sections": {
+    "product-template": {
+      "type": "product-template",
+      "blocks": {
+        "title_wrap": {
+          "type": "title_wrap",
+          "settings": {
+          }
+        },
+        "495fc553-1e36-4d91-be60-08907eb74999": {
+          "type": "product_variant_picker",
+          "settings": {
+            "product_variant_handle": "product_variant_swatch_option",
+            "product_variant_color_image_enable": true,
+            "product_variant_color_enable": true
+          }
+        },
+        "wishlist_button": {
+          "type": "wishlist_button",
+          "disabled": true,
+          "settings": {
+            "sizeguide_enable": false,
+            "sizeguide_title": "Sizeguide",
+            "sizeguide_page": ""
+          }
+        },
+        "0dff3674-84a0-4caa-b318-f8e3ba87c209": {
+          "type": "product_availability",
+          "settings": {
+            "availability_title": "Dostupnost:",
+            "in_stock_title": "Skladem",
+            "out_of_stock_title": "Není skladem"
+          }
+        },
+        "d2151862-b6be-4781-a6e9-b0743c4084c8": {
+          "type": "product_description_tab",
+          "settings": {
+            "product_info_tab_title": "Description",
+            "additional_information_title": "Technická data",
+            "product_review_tab_title": "Reviews",
+            "product_video_title": "Video"
+          }
+        }
+      },
+      "block_order": [
+        "title_wrap",
+        "495fc553-1e36-4d91-be60-08907eb74999",
+        "wishlist_button",
+        "0dff3674-84a0-4caa-b318-f8e3ba87c209",
+        "d2151862-b6be-4781-a6e9-b0743c4084c8"
+      ],
+      "settings": {
+        "product_sku_title": "Kód zboží:",
+        "swatch": "Barva:",
+        "product_vendor_title": "Výrobce:",
+        "product_cena": "Cena:",
+        "social_share_title": "Sdílet:",
+        "velkoobchod": "<p>Jste z oboru? Zaregistrujte se do našeho <a href=\"\/pages\/velkoobchodni-program\" title=\"Velkoobchodní program\">velkoobchodního programu <\/a>a čerpejte veškeré výhody na maximum.<\/p>",
+        "navod": "Návod k montáži:",
+        "sheet": "Data sheet:",
+        "download": "ke stažení",
+        "section_padding_top": 0,
+        "section_padding_bottom": 100,
+        "section_padding_top_ipad": 0,
+        "section_padding_bottom_ipad": 60,
+        "section_padding_top_xs": 0,
+        "section_padding_bottom_xs": 40,
+        "product_style_handle": "style_1",
+        "pro_bg_color": "#ffffff",
+        "zoom_enable": false
+      }
+    },
+    "16542542550640dac9": {
+      "type": "image-with-text",
+      "settings": {
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_padding_top_lg": 0,
+        "section_padding_bottom_lg": 0,
+        "section_padding_top_xs": 0,
+        "section_padding_bottom_xs": 0,
+        "about_banner_img": "{{ product.metafields.my_fields.obr_zek_1.value }}",
+        "about_title": "{{ product.metafields.my_fields.nadpis_u_obr_zku_1.value }}",
+        "about_des1": "<p>{{ product.metafields.my_fields.text_u_obr_zku_1 | metafield_tag }}<\/p>"
+      }
+    },
+    "165425517781de3512": {
+      "type": "image-with-text2",
+      "settings": {
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_padding_top_lg": 0,
+        "section_padding_bottom_lg": 0,
+        "section_padding_top_xs": 0,
+        "section_padding_bottom_xs": 0,
+        "banner_title": "",
+        "banner_sub_title": "",
+        "about_banner_img": "{{ product.metafields.my_fields.obr_zek_2.value }}",
+        "about_title": "{{ product.metafields.my_fields.nadpis_u_obr_zku_2.value }}",
+        "about_des1": "<p>{{ product.metafields.my_fields.text_u_obr_zku_2 | metafield_tag }}<\/p>"
+      }
+    },
+    "related-product": {
+      "type": "related-product",
+      "settings": {
+        "related_products_enable": true,
+        "related_padding_top": 0,
+        "related_padding_bottom": 50,
+        "related_padding_top_ipad": 0,
+        "related_padding_bottom_ipad": 30,
+        "related_padding_top_xs": 0,
+        "related_padding_bottom_xs": 10,
+        "related_title": "Podobné produkty"
+      }
+    },
+    "16545024540f92bb28": {
+      "type": "banner-grid",
+      "settings": {
+        "mobile_design": true,
+        "banner1_padding_top": 0,
+        "banner1_padding_bottom": 60,
+        "banner1_padding_top_ipad": 0,
+        "banner1_padding_bottom_ipad": 30,
+        "banner1_padding_top_xs": 0,
+        "banner1_padding_bottom_xs": 20,
+        "banner_img": "shopify:\/\/shop_images\/ilumix_eshop_banner_2.jpg",
+        "banner_txt_enable": true,
+        "banner_sub_title": "Akce měsíce:",
+        "banner_sub_title_bold": "3.751 Kč",
+        "banner_title1": "Stolní lampa Taichi T",
+        "banner_desc1": "<p>Stolní lampa Branch na černém podstavci<\/p><p>a konstrukce z dubového dřeva.<\/p><p>Vyrobeno z dubového dřeva.<\/p><p>Jedná se o velmi univerzální svítidlo,<\/p><p>protože jej lze instalovat v ložnicích, kancelářích,<\/p><p>zasedacích místnostech apod.<\/p>",
+        "banner_desc2": "",
+        "banner_button_text": "Detail produktu",
+        "banner_url": "shopify:\/\/products\/taichi-t"
+      }
+    }
+  },
+  "order": [
+    "product-template",
+    "16542542550640dac9",
+    "165425517781de3512",
+    "related-product",
+    "16545024540f92bb28"
+  ]
+}
