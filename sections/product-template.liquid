@@ -281,11 +281,6 @@
               {% elsif product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
               <span class="in-stock text-success">
                 <span>{{ block.settings.in_stock_title }}</span>
-                {% if consolidated_estimated_delivery_time %}
-                  <p>
-                    Odhadované doručení <b>{{ consolidated_estimated_delivery_time }}</b>
-                  </p>
-                {% endif %}
               </span>
               <span class="out-stock text-danger">
                 <span>{{ block.settings.out_of_stock_title }}</span>
