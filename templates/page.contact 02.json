@@ -126,6 +126,26 @@
         "info_title3": "Email",
         "info_link3": "info@360design.cz"
       }
+    },
+    "626de182-dc50-4f58-8433-ddaf51ce2059": {
+      "type": "form-contact",
+      "settings": {
+        "contact_us_padding_top": 60,
+        "contact_us_padding_bottom": 60,
+        "contact_us_padding_top_ipad": 30,
+        "contact_us_padding_bottom_ipad": 30,
+        "contact_us_padding_top_xs": 20,
+        "contact_us_padding_bottom_xs": 20,
+        "section_bg_color": "#f6f6f6",
+        "section_title": "Napište nám a rozsvítíme to společně",
+        "section_des": "Obratem zodpovíme veškeré vaše otázky i zpracujeme cenovou nabídku.",
+        "name_placeholder": "Jméno",
+        "email_placeholder": "E-mail",
+        "phone_placeholder": "Telefon",
+        "message_placeholder": "Zpráva",
+        "form_button_name": "Odeslat",
+        "read_agree_text": "Souhlasím se zpracováním osobních údajů"
+      }
     }
   },
   "order": [
@@ -134,6 +154,7 @@
     "form-contact2",
     "our-store2",
     "contact-banner",
-    "contact-map2"
+    "contact-map2",
+    "626de182-dc50-4f58-8433-ddaf51ce2059"
   ]
 }
