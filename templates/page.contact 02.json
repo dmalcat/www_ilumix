@@ -6,7 +6,7 @@
         "contact_page_title": "Kontakty",
         "contact_page_companyname": "ILUMIX light s.r.o.",
         "contact_page_address": "Holečkova 368\/4 <br>\nKarlovy Vary <br>\nČeská republika",
-        "contact_page_companyinfo": "IČO: 29115728 <br>\nDIČ: CZ29115728 <br> <br>\nČSOB: 47779\/0300\nRB: 333888999\/5500\nObchodní rejstřík... vložka ...složka",
+        "contact_page_companyinfo": "IČO: 29115728 <br>\nDIČ: CZ29115728 <br> <br>\nČSOB: 47779\/0300 <br>\nRB: 333888999\/5500 <br>\nObchodní rejstřík... vložka ...složka",
         "contact_page_phone": "+420 774 109 102",
         "contact_page_email": "info@360design.cz"
       }
@@ -31,26 +31,6 @@
         "info_icon3": "",
         "info_title3": "Potřebujete poradit?",
         "info_link3": "Napište nám zprávu"
-      }
-    },
-    "form-contact2": {
-      "type": "form-contact2",
-      "settings": {
-        "section_padding_top": 20,
-        "section_padding_bottom": 0,
-        "section_padding_top_ipad": 60,
-        "section_padding_bottom_ipad": 0,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 0,
-        "section_bg_color": "#ffffff",
-        "section_title": "Máte nějaké dotazy?",
-        "section_des": "Pomocí níže uvedeného formuláře můžete kontaktovat náš prodejní tým",
-        "name_placeholder": "Vaše jméno",
-        "email_placeholder": "Váš email",
-        "phone_placeholder": "Váš telefon",
-        "message_placeholder": "Zpráva...",
-        "form_button_name": "Odeslat zprávu",
-        "read_agree_text": "Souhlasím s podmínkami a beru na vědomí, že mé údaje budou bezpečně uchovávány v souladu se zásadami ochrany osobních údajů."
       }
     },
     "our-store2": {
@@ -126,14 +106,34 @@
         "info_title3": "Email",
         "info_link3": "info@360design.cz"
       }
+    },
+    "626de182-dc50-4f58-8433-ddaf51ce2059": {
+      "type": "form-contact",
+      "settings": {
+        "contact_us_padding_top": 60,
+        "contact_us_padding_bottom": 60,
+        "contact_us_padding_top_ipad": 30,
+        "contact_us_padding_bottom_ipad": 30,
+        "contact_us_padding_top_xs": 20,
+        "contact_us_padding_bottom_xs": 20,
+        "section_bg_color": "#f6f6f6",
+        "section_title": "Napište nám a rozsvítíme to společně",
+        "section_des": "Obratem zodpovíme veškeré vaše otázky i zpracujeme cenovou nabídku.",
+        "name_placeholder": "Jméno",
+        "email_placeholder": "E-mail",
+        "phone_placeholder": "Telefon",
+        "message_placeholder": "Zpráva",
+        "form_button_name": "Odeslat",
+        "read_agree_text": "Souhlasím se zpracováním osobních údajů"
+      }
     }
   },
   "order": [
     "d728499e-6c83-4b7c-90c0-2eda0378a3a4",
     "165935635076221324",
-    "form-contact2",
     "our-store2",
     "contact-banner",
-    "contact-map2"
+    "contact-map2",
+    "626de182-dc50-4f58-8433-ddaf51ce2059"
   ]
 }
