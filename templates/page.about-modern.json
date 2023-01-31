@@ -148,7 +148,7 @@
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40,
         "contact_drop_title": "Kontaktujte nás",
-        "info_icon1": "",
+        "info_icon1": "<i class=\"fa-thin fa-phone\"><\/i>",
         "info_title1": "Telefonicky",
         "info_link1": "+420 773 335 535",
         "info_icon2": "",
