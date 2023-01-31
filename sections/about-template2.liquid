@@ -275,4 +275,19 @@
   .best-quality-cont .best-quality-desc a span {
     margin-right: 10px;
   }
+
+  .best-quality-cont .best-quality-desc a:hover i{
+    {%- if settings.enable_rtl -%}
+    -webkit-transform: translateX(-5px) scaleX(-1);
+    -o-transform: translateX(-5px) scaleX(-1);
+    transform: translateX(-5px) scaleX(-1);
+    {%- else -%}
+    -webkit-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
+    {%- endif -%}
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
 </style>
