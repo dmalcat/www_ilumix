@@ -6,3 +6,37 @@
         font-size: 18px;
     }
 }
+
+.about-section2 {
+    h2, h3, h6 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    p {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .list-content {
+        margin-top: 60px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            width: 30%;
+            p {
+                
+            }
+        }
+    }
+}

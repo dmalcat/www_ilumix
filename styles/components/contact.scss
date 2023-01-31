@@ -63,3 +63,30 @@
 .form-contact2 {
     margin-bottom: 8rem;
 }
+
+.contact-store-information {
+    h6 {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .info_wrapper {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 33%;
+    }
+
+    .info_wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-block {
+        flex-direction: column;
+    }
+
+    .icon {
+        margin-bottom: 30px;
+    }
+}

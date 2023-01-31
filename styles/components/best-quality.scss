@@ -2,10 +2,21 @@
     .best-quality-desc {
         h2 {
             color: #000;
+            margin-bottom: 30px;
         }
+    }
+}
 
-        p {
-            
+.best-quality-area {
+    .best-quality-img {
+        .img-fluid {
+            max-width: 500px;
         }
+    }
+}
+
+.best-quality-area--rtl {
+    .best-quality-cont {
+        padding-right: 6rem;
     }
 }

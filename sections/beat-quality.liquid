@@ -49,48 +49,8 @@
       "content" : "Desktop / Laptop / tablet"
     },
     {
-      "type": "range",
-      "id": "best_quality_padding_top",  
-      "label": "Section Padding Top",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 60
-    },           
-    {
-      "type": "range",
-      "id": "best_quality_padding_bottom", 
-      "label": "Section Padding Bottom",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 60
-    },
-    {
        "type" : "paragraph",
        "content" : "Mobile"
-    },
-    {
-       "type": "range",
-       "id": "best_quality_padding_top_xs",
-       "label": "Section Padding Top",
-       "min": 0,
-       "max": 100,
-       "step": 1,
-       "unit": "px",
-       "default": 40
-    },
-    {
-        "type": "range",
-        "id": "best_quality_padding_bottom_xs",
-        "label": "Section Padding Bottom",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "default": 40
     },
     {
         "type": "header",
@@ -155,13 +115,11 @@
 {% endschema %}
 <style>
     .best-quality-area{
-        padding-top: {{ section.settings.best_quality_padding_top }}px;
-        padding-bottom: {{ section.settings.best_quality_padding_bottom }}px;
+        padding: 80px 0;
     }
     @media (max-width: 767px){
         .best-quality-area{
-            padding-top: {{ section.settings.best_quality_padding_top_xs }}px;
-            padding-bottom: {{ section.settings.best_quality_padding_bottom_xs }}px;
+            padding: 100px 0;
         }
     }
     @media (max-width: 1359px) and (min-width: 1200px){
@@ -206,7 +164,7 @@
         font-size: 40px;
         font-weight: 600;
         line-height: 1.5;
-        margin-top: 30px;
+        margin-top: 0;
     }
     .best-quality-cont .best-quality-desc p{
         font-size: 16px;
@@ -290,7 +248,7 @@
         }
         .best-quality-cont .best-quality-desc h2{
             font-size: 18px;
-            margin-top: 13px;
+            margin-top: 0;
         }
         .best-quality-cont .best-quality-desc p{
             font-size: 14px;
