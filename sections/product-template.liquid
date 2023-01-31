@@ -273,10 +273,10 @@
               {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity == 0 %}
               <span class="out-stock text-danger">
                 <span>{{ block.settings.out_of_stock_title }}</i></span>
-                {{ block.settings.stock_vice }}
               </span>
               <span class="in-stock text-success">
                 <span>{{ block.settings.in_stock_title }}</span>
+                {{ block.settings.stock_vice }}
               </span>
               {% elsif product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
               <span class="in-stock text-success">
