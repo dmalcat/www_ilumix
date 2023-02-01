@@ -6,7 +6,7 @@
           <div class="log-acc-page">
             <div class="acc-page">
               <div class="registers">
-                {% form 'create_customer', return_to: routes.account_url %}
+                {% form 'create_customer', return_to: routes.account_addresses_url %}
                 <div class="login-form-container">
                   <div class="title-text">
                     <h2>{{ 'customer.register.title' | t }}</h2>
@@ -44,7 +44,7 @@
                       <input type="text" id="DIC" name="customer[note][DIČ]" placeholder="DIČ" class="input-full">
                     </li>
                     -->
-                    
+
                     <li class="log-pwd">
                       <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
                       <i class="feather-lock"></i>
