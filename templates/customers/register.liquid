@@ -79,11 +79,15 @@
 <script>
   function showCompanyAddress() {
     var remember = document.getElementById("form-companyAddress-checkbox");
+    var companyAddressGroup = document.getElementById("form-companyAddress-checkbox");
+
     if (remember.checked) {
-      alert("checked");
+      //companyAddressGroup.
+      alert("Checked!");
     } else {
       alert("You didn't check it! Let me check it for you.");
     }
+    
   }
 </script>
 
@@ -91,7 +95,7 @@
   .fill-form--companyAddress {
     display: none;
   }
-  
+
   .breadcrumb-area{
     display:none;
   }
