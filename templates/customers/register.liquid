@@ -37,7 +37,7 @@
                       </label>
                     </li>
                   </ul>
-                  <ul class="fill-form" id="company-address">
+                  <ul class="fill-form fill-form--companyAddress" id="company-address">
                     <li>
                       <input type="text" id="BusinessName" name="customer[note][Název firmy]" placeholder="Název firmy" class="input-full">
                     </li>
@@ -88,6 +88,10 @@
 </script>
 
 <style>
+  .fill-form--companyAddress {
+    display: none;
+  }
+  
   .breadcrumb-area{
     display:none;
   }
