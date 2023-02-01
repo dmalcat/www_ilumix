@@ -79,14 +79,13 @@
 
 <script>
   function showCompanyAddress() {
-    var remember = document.getElementById("form-companyAddress-checkbox");
+    var companyAddress = document.getElementById("form-companyAddress-checkbox");
     var companyAddressGroup = document.getElementById("form-companyAddress-checkbox");
 
-    if (remember.checked) {
-      //companyAddressGroup.
-      alert("Checked!");
+    if (companyAddress.checked) {
+      companyAddressGroup.style.display = "block";
     } else {
-      alert("You didn't check it! Let me check it for you.");
+      companyAddressGroup.style.display = "none";
     }
 
   }
