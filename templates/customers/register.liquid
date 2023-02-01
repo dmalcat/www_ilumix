@@ -30,9 +30,9 @@
                       <input bss-b2b-is-email-field type="email" name="customer[email]" id="Email" class="input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.register.email' | t }}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" required>
                       <i class="feather-mail"></i>
                     </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" id="form-companyAddress-checkbox" class="cust-checkbox">
+                    <li class="checkbox">
+                      <label class="checkbox__label">
+                        <input type="checkbox" id="form-companyAddress-checkbox" class="checkbox__input">
                         Nakupuji na firmu
                       </label>
                     </li>
