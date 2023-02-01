@@ -37,6 +37,7 @@
                       </label>
                     </li>
                   </ul>
+                  <ul class="fill-form" id="company-address">
                     <li>
                       <input type="text" id="BusinessName" name="customer[note][Název firmy]" placeholder="Název firmy" class="input-full">
                     </li>
@@ -74,6 +75,18 @@
     </div>
   </div>
 </section>
+
+<script>
+  function showCompanyAddress() {
+    var remember = document.getElementById("form-companyAddress-checkbox");
+    if (remember.checked) {
+      alert("checked");
+    } else {
+      alert("You didn't check it! Let me check it for you.");
+    }
+  }
+</script>
+
 <style>
   .breadcrumb-area{
     display:none;
