@@ -30,6 +30,10 @@
                       <input bss-b2b-is-email-field type="email" name="customer[email]" id="Email" class="input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.register.email' | t }}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" required>
                       <i class="feather-mail"></i>
                     </li>
+                    <li class="log-pwd">
+                      <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
+                      <i class="feather-lock"></i>
+                    </li>
                     <li class="checkbox">
                       <label class="checkbox__label">
                         <input type="checkbox" id="form-companyAddress-checkbox" class="checkbox__input" onclick="showCompanyAddress()">
@@ -50,10 +54,7 @@
                     <li>
                       <input type="text" id="DIC" name="customer[note][DIČ]" placeholder="DIČ" class="input-full">
                     </li>
-                    <li class="log-pwd">
-                      <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
-                      <i class="feather-lock"></i>
-                    </li>
+                    
                   </ul>
                   <div class="form-action-button">
                     <button class="btn btn-style7" type="submit">{{ 'customer.register.submit' | t }}</button>
