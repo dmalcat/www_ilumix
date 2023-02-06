@@ -132,6 +132,13 @@
             "list_title": "16. \tMimosoudní řešení spotřebitelských sporů",
             "list_desc": "1. \tPro mimosoudní řešení spotřebitelských sporů vzniklých z Kupní smlouvy, tedy sporů mezi Prodávajícím a Kupujícím, který je spotřebitelem, je příslušná Česká obchodní inspekce. Poštovní adresa pro doručování návrhů je:\n<br>Česká obchodní inspekce\n<br>Ústřední inspektorát – oddělení ADR\n<br>Štěpánská 15\n<br>120 00 Praha 2\n<br>E-mail: adr@coi.cz\n<br>Web: adr.coi.cz\n<br>telefon: +420 296 366 \n<br> 2. Právo na mimosoudní řešení spotřebitelského sporu může Kupující, který je spotřebitelem, uplatnit nejpozději do 1 roku ode dne, kdy u Prodávajícího poprvé uplatnil právo, které je předmětem spotřebitelského sporu.\t\n<br>3. Pro podání stížnosti týkající se Předmětu koupě a pro vyhledání subjektu alternativního řešení sporů může Kupující, který je spotřebitelem, rovněž využít on-line platformu, která je zřízena Evropskou komisí na internetových stránkách na adrese: http:\/\/ec.europa.eu\/consumers\/odr\/.   "
           }
+        },
+        "a70c34ab-9eb8-44f9-a4e2-6474a724a56d": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "17. \tDalší informace pro Kupujícího, který je spotřebitelem",
+            "list_desc": "1.   \tProdávající má potřebná oprávnění na základě živnostenského zákona, přičemž kontrolu v této oblasti vykonává v rámci své působnosti příslušný živnostenský úřad. \n<br>2. Případné stížnosti vyřizuje Kupující, který je spotřebitelem, prostřednictvím emailu uvedeného v čl. I. těchto podmínek.\n<br>3. Dozor spojený s ochranou osobních údajů vykonává Úřad pro ochranu osobních údajů.\n<br>4. Dohled nad dodržováním zákona č. 634\/1992 Sb., o ochraně spotřebitele, ve znění pozdějších předpisů, provádí Česká obchodní inspekce.\n<br>5. Při uzavírání Kupní smlouvy použitím prostředku komunikace na dálku (zejména síť internet) hradí Kupující, který je spotřebitelem, náklady vzniklé při použití prostředků komunikace na dálku (především náklady na internetové připojení nebo na telefonní hovory). Tyto náklady se neliší od běžné sazby."
+          }
         }
       },
       "block_order": [
@@ -150,7 +157,8 @@
         "b05cc6fc-35c5-4047-8a58-47b8ff06f9ab",
         "ffb3fba6-8d5a-4e3f-b79b-2bd0b864eda7",
         "0536ff0c-8fb8-482f-941f-0c8f7e505e10",
-        "28939dc0-de99-42c2-8ada-053c745f8993"
+        "28939dc0-de99-42c2-8ada-053c745f8993",
+        "a70c34ab-9eb8-44f9-a4e2-6474a724a56d"
       ],
       "settings": {
         "section_padding_top": 100,
