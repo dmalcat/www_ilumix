@@ -139,6 +139,13 @@
             "list_title": "17. \tDalší informace pro Kupujícího, který je spotřebitelem",
             "list_desc": "1.   \tProdávající má potřebná oprávnění na základě živnostenského zákona, přičemž kontrolu v této oblasti vykonává v rámci své působnosti příslušný živnostenský úřad. \n<br>2. Případné stížnosti vyřizuje Kupující, který je spotřebitelem, prostřednictvím emailu uvedeného v čl. I. těchto podmínek.\n<br>3. Dozor spojený s ochranou osobních údajů vykonává Úřad pro ochranu osobních údajů.\n<br>4. Dohled nad dodržováním zákona č. 634\/1992 Sb., o ochraně spotřebitele, ve znění pozdějších předpisů, provádí Česká obchodní inspekce.\n<br>5. Při uzavírání Kupní smlouvy použitím prostředku komunikace na dálku (zejména síť internet) hradí Kupující, který je spotřebitelem, náklady vzniklé při použití prostředků komunikace na dálku (především náklady na internetové připojení nebo na telefonní hovory). Tyto náklady se neliší od běžné sazby."
           }
+        },
+        "6437170e-9c8d-450d-997f-1971acfd6f07": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "18. \tDalší ujednání",
+            "list_desc": "1.  \tNad rámec výslovných ustanovení Kupní smlouvy nebudou jakákoliv práva a povinnosti smluvních stran dovozovány z dosavadní či budoucí praxe zavedené mezi smluvními stranami či zvyklostí zachovávaných obecně či v odvětví týkajícím se předmětu plnění dle Kupní smlouvy, ledaže je v Kupní smlouvě výslovně sjednáno jinak. \n<br>2. Vylučuje se povinnost Prodávajícího nahradit Kupujícímu, který je podnikatelem, újmu, kterou nebylo možno v době uzavření Kupní smlouvy rozumně předvídat. Rovněž se vylučuje povinnost Prodávajícího nahradit Kupujícímu, který je podnikatelem, nemajetkovou újmu ve smyslu ust. § 2971 Občanského zákoníku. Nedohodnou-li se smluvní strany jinak, nahrazuje se veškerá škoda vzniklá v souvislosti s Kupní smlouvou v penězích.\n<br>3. V souladu s ust. § 2898 Občanského zákoníku se sjednává limitace náhrady škody hrazené Prodávajícím Kupujícímu, který je podnikatelem, dle Kupní smlouvy částkou odpovídající 30% celkové Kupní ceny bez DPH sjednané v Kupní smlouvě, přičemž limit náhrady škody je sjednán pro souhrn veškerých nároků na náhradu škody uplatněných Kupujícím, a to ať jednotlivých, či dílčích."
+          }
         }
       },
       "block_order": [
@@ -158,7 +165,8 @@
         "ffb3fba6-8d5a-4e3f-b79b-2bd0b864eda7",
         "0536ff0c-8fb8-482f-941f-0c8f7e505e10",
         "28939dc0-de99-42c2-8ada-053c745f8993",
-        "a70c34ab-9eb8-44f9-a4e2-6474a724a56d"
+        "a70c34ab-9eb8-44f9-a4e2-6474a724a56d",
+        "6437170e-9c8d-450d-997f-1971acfd6f07"
       ],
       "settings": {
         "section_padding_top": 100,
