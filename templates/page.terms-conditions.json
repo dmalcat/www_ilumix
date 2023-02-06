@@ -1,23 +1,5 @@
 {
   "sections": {
-    "terms-conditions2": {
-      "type": "terms-conditions2",
-      "settings": {
-        "section_padding_top": 100,
-        "section_padding_bottom": 100,
-        "section_padding_top_lg": 60,
-        "section_padding_bottom_lg": 60,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 40,
-        "section_bg_color": "#f6f6f6",
-        "section_title1": "The company",
-        "section_title2": "private limited policy",
-        "block_quot": "We work to ensure that your business prospers and brings you sufficient profit",
-        "block_desc": "Lorem ipsum is simply dummy text of the printing and typeing industry. Lorem ipsum has been the industry's standard dummy text ever since text.",
-        "content_button_url1": "",
-        "content_button1": "Read more"
-      }
-    },
     "terms-conditions": {
       "type": "terms-conditions",
       "blocks": {
@@ -219,7 +201,6 @@
     }
   },
   "order": [
-    "terms-conditions2",
     "terms-conditions",
     "terms-conditions4"
   ]
