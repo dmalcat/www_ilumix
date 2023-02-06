@@ -125,6 +125,13 @@
             "list_title": "15. \tŘešení sporů",
             "list_desc": "1. Případné spory z Kupní smlouvy mezi Prodávajícím a Kupujícím, který je podnikatelem, bude výlučně rozhodovat Okresní soud v Karlových Varech, bude-li dána věcná příslušnost okresního soudu jakožto soudu I. stupně, resp. Krajský soud v Plzni, bude-li dána věcná příslušnost krajského soudu jakožto soudu I. stupně."
           }
+        },
+        "28939dc0-de99-42c2-8ada-053c745f8993": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "16. \tMimosoudní řešení spotřebitelských sporů",
+            "list_desc": "1. \tPro mimosoudní řešení spotřebitelských sporů vzniklých z Kupní smlouvy, tedy sporů mezi Prodávajícím a Kupujícím, který je spotřebitelem, je příslušná Česká obchodní inspekce. Poštovní adresa pro doručování návrhů je:\n<br>Česká obchodní inspekce\n<br>Ústřední inspektorát – oddělení ADR\n<br>Štěpánská 15\n<br>120 00 Praha 2\n<br>E-mail: adr@coi.cz\n<br>Web: adr.coi.cz\n<br>telefon: +420 296 366 \n<br> 2. Právo na mimosoudní řešení spotřebitelského sporu může Kupující, který je spotřebitelem, uplatnit nejpozději do 1 roku ode dne, kdy u Prodávajícího poprvé uplatnil právo, které je předmětem spotřebitelského sporu.\t\n<br>3. Pro podání stížnosti týkající se Předmětu koupě a pro vyhledání subjektu alternativního řešení sporů může Kupující, který je spotřebitelem, rovněž využít on-line platformu, která je zřízena Evropskou komisí na internetových stránkách na adrese: http:\/\/ec.europa.eu\/consumers\/odr\/.   "
+          }
         }
       },
       "block_order": [
@@ -142,7 +149,8 @@
         "d6b41c04-81b8-4a2d-951d-178e28dc990f",
         "b05cc6fc-35c5-4047-8a58-47b8ff06f9ab",
         "ffb3fba6-8d5a-4e3f-b79b-2bd0b864eda7",
-        "0536ff0c-8fb8-482f-941f-0c8f7e505e10"
+        "0536ff0c-8fb8-482f-941f-0c8f7e505e10",
+        "28939dc0-de99-42c2-8ada-053c745f8993"
       ],
       "settings": {
         "section_padding_top": 100,
