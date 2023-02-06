@@ -69,6 +69,27 @@
             "list_title": "7. Výhrada vlastnického práva",
             "list_desc": "1. Dle ust. § 2132 Občanského zákoníku vlastnické právo k Předmětu koupě přechází z Prodávajícího na Kupujícího až okamžikem úplné úhrady Kupní ceny, není-li v Kupní smlouvě dohodnuto jinak.\n<br>2. Předmět koupě zůstává ve vlastnictví Prodávajícího až do úplného uhrazení Kupní ceny bez ohledu na spojení Předmětu koupě nebo jakékoli jeho části s věcmi ve vlastnictví Kupujícího či třetí osoby."
           }
+        },
+        "d9477901-2f6f-4039-ae45-13cb4be3070b": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "8. Dodací podmínky",
+            "list_desc": "1. \tTermín dodání sjednaný v Kupní smlouvě je termínem závazným, pokud v Kupní smlouvě není uvedeno jinak. \n<br>2. \tTermín dodání Předmětu koupě je závislý na dostupnosti a zvoleném způsobu dopravy Předmětu koupě a úhrady Kupní ceny.\n<br>3. \tProdávající splní svou povinnost z Kupní smlouvy dodáním Předmětu koupě Kupujícímu za dohodnutých podmínek.\n<br>4. \tVyplývá-li z Kupní smlouvy, že Prodávající zajistí dopravu Předmětu koupě na sjednané místo dodání, je povinen tak učinit prostřednictvím dopravce, jehož za tímto účelem Prodávající zajistí. \n<br>5. \tVyplývá-li z Kupní smlouvy, že Kupující zajistí dopravu Předmětu koupě od Prodávajícího, je povinen tak učinit prostřednictvím dopravce, jehož za tímto účelem Kupující zajistí.\n<br>6. \tProdávající je povinen předat Kupujícímu doklady, jež jsou nutné k převzetí a užívání Předmětu koupě.\n<br>7. \tKupující je povinen uhradit Prodávajícímu náklady, které mu vzniknou, pokud Kupující neposkytne Prodávajícímu potřebnou součinnost při dodání Předmětu koupě. Těmito náklady se rozumí především náklady na složení či uskladnění Předmětu koupě.\n<br>8. \tČástečné dodávky Předmětu koupě jsou přípustné a Kupující je povinen je převzít. \n<br>9. \tBude-li Předmět koupě dodán Kupujícímu před termínem sjednaným v Kupní smlouvě, je Kupující povinen jej převzít či zajistit jeho odvoz, podle toho, co bylo dojednáno v Kupní smlouvě.\n<br>10. \tPři převzetí Předmětu koupě je Kupující povinen zkontrolovat neporušenost obalu Předmětu koupě. Zjistí-li Kupující nedostatky, je povinen neprodleně informovat o těchto nedostatcích Prodávajícího a dopravce.\n<br>11. \tNepřevezme-li Kupující Předmět koupě bez vážného důvodu, vzniká Prodávajícímu ze strany Kupujícího nárok na náhradu nákladů spojených s dodáním Předmětu koupě a jeho uskladněním a Prodávající má právo od Kupní smlouvy odstoupit.\n<br>12. \tDrobné vady Předmětu koupě, které samy o sobě, ale ani ve spojení s jinými, nebrání užívání Předmětu koupě, nemají za následek odklad povinnosti Kupujícího uhradit Kupní cenu Prodávajícímu a nejsou důvodem pro nepřevzetí Předmětu koupě Kupujícím."
+          }
+        },
+        "ca026312-23c0-44db-8748-895d1b3c96b1": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "9. Přechod nebezpečí škody na Předmětu koupě",
+            "list_desc": "1. Nebezpečí škody na Předmětu koupě na Kupujícího přechází již převzetím Předmětu koupě od Prodávajícího. Stejný následek má, nepřevezme-li Kupující Předmět koupě, ač mu s ním Prodávající umožnil nakládat. \n<br>2. Předá-li Prodávající dopravci Předmět koupě pro přepravu ke Kupujícímu v místě určeném Kupní smlouvou, přechází na Kupujícího nebezpečí škody na Předmětu koupě předáním Předmětu koupě dopravci v tomto místě, a nebylo-li místo smluveno, předáním prvnímu dopravci pro přepravu do místa určení.\n<br>3. Škoda na Předmětu koupě, která vznikla po přechodu jejího nebezpečí na Kupujícího, nemá vliv na povinnost Kupujícího uhradit Kupní cenu Prodávajícímu."
+          }
+        },
+        "2a2418b0-bdcf-4476-b803-32f568482fdd": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "Introduction",
+            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+          }
         }
       },
       "block_order": [
@@ -78,7 +99,10 @@
         "6ed7ded9-4141-4598-8edc-d847abb35c45",
         "4eb36caf-5134-4ec8-bdb6-8f78ad215e13",
         "5a2cbc87-4da5-489b-975c-3858255cfa7f",
-        "ba654182-cb42-4599-b391-64929dd1ecab"
+        "ba654182-cb42-4599-b391-64929dd1ecab",
+        "d9477901-2f6f-4039-ae45-13cb4be3070b",
+        "ca026312-23c0-44db-8748-895d1b3c96b1",
+        "2a2418b0-bdcf-4476-b803-32f568482fdd"
       ],
       "settings": {
         "section_padding_top": 100,
