@@ -111,6 +111,13 @@
             "list_title": "13.     \tOdstoupení Prodávajícího",
             "list_desc": "1. Prodávající je oprávněn odstoupit od Kupní smlouvy uzavřené s Kupujícím, který je spotřebitelem, vedle případů stanovených obecně závaznými právními předpisy, pokud:\n<br>a) Kupující, který je spotřebitelem, neuhradí Kupní cenu ve lhůtě splatnosti,\n<br>b) Kupující, který je spotřebitelem, Předmět koupě bez vážného důvodu nepřevezme,\n<br>c) není-li plnění ze strany Prodávajícího možné za původních podmínek dodat (především proto, že se Předmět koupě nevyrábí, dodavatel přestal Předmět koupě dodávat do České republiky apod.),\n<br>d) plnění ze strany Prodávajícího se stane objektivně nemožným nebo protiprávním.\n<br>2. Prodávající je oprávněn odstoupit od Kupní smlouvy uzavřené s Kupujícím, který je podnikatelem, vedle případů stanovených obecně závaznými právními předpisy:\n<br> a) bez uvedení důvodu do doby, než na základě uzavřené Kupní smlouvy dojde k převzetí Předmětu koupě ze strany Kupujícího, který je podnikatelem,\n<br>b) Kupující, který je podnikatelem, neuhradí Kupní cenu ve lhůtě splatnosti,\n<br>c) Kupující, který je podnikatelem, Předmět koupě bez vážného důvodu nepřevezme,\n<br>d) není-li plnění ze strany Prodávajícího možné za původních podmínek dodat (především proto, že se Předmět koupě nevyrábí, dodavatel přestal Předmět koupě dodávat do České republiky apod.),\n<br>e) plnění ze strany Prodávajícího se stane objektivně nemožným nebo protiprávním.\n<br>3. O odstoupení od Kupní smlouvy je Prodávající povinen bez zbytečného odkladu Kupujícího informovat.\n<br>4. Na vrácení Kupní ceny uhrazené Kupujícím se přiměřeně použije ustanovení čl. 11. bodu 9. těchto obchodních podmínek."
           }
+        },
+        "ffb3fba6-8d5a-4e3f-b79b-2bd0b864eda7": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "14. \tVyšší moc",
+            "list_desc": "1.\tSmluvní strany nemohou nést odpovědnost za nesplnění svých smluvních závazků z důvodů vyšší moci.\n<br>2.\tPod pojmem vyšší moc se rozumí působení nepředvídatelných událostí, vyskytnuvších se po uzavření Kupní smlouvy, které jsou mimo možnosti zvládnutí smluvními stranami, nebo proti kterým nemohou smluvní strany přijmout dostatečná opatření, jako jsou např. stávky, výluky, blokády, válka nebo hrozba války, mobilizace, převraty, přírodní pohromy takového rozsahu, že zabraňují nebo zpožďují plnění smluvních závazků z Kupní smlouvy některé ze smluvních stran.\n<br>3.\tSmluvní strana, která se dovolává vyšší moci, je povinna bez prodlení informovat druhou smluvní stranu o události, jejím začátku a pravděpodobném trvání. Podobným způsobem musí být sdělen okamžik ukončení události."
+          }
         }
       },
       "block_order": [
@@ -126,7 +133,8 @@
         "2a2418b0-bdcf-4476-b803-32f568482fdd",
         "53e9eab2-4f1a-4c6d-937f-dd9c4b56b58d",
         "d6b41c04-81b8-4a2d-951d-178e28dc990f",
-        "b05cc6fc-35c5-4047-8a58-47b8ff06f9ab"
+        "b05cc6fc-35c5-4047-8a58-47b8ff06f9ab",
+        "ffb3fba6-8d5a-4e3f-b79b-2bd0b864eda7"
       ],
       "settings": {
         "section_padding_top": 100,
