@@ -146,6 +146,20 @@
             "list_title": "18. \tDalší ujednání",
             "list_desc": "1.  \tNad rámec výslovných ustanovení Kupní smlouvy nebudou jakákoliv práva a povinnosti smluvních stran dovozovány z dosavadní či budoucí praxe zavedené mezi smluvními stranami či zvyklostí zachovávaných obecně či v odvětví týkajícím se předmětu plnění dle Kupní smlouvy, ledaže je v Kupní smlouvě výslovně sjednáno jinak. \n<br>2. Vylučuje se povinnost Prodávajícího nahradit Kupujícímu, který je podnikatelem, újmu, kterou nebylo možno v době uzavření Kupní smlouvy rozumně předvídat. Rovněž se vylučuje povinnost Prodávajícího nahradit Kupujícímu, který je podnikatelem, nemajetkovou újmu ve smyslu ust. § 2971 Občanského zákoníku. Nedohodnou-li se smluvní strany jinak, nahrazuje se veškerá škoda vzniklá v souvislosti s Kupní smlouvou v penězích.\n<br>3. V souladu s ust. § 2898 Občanského zákoníku se sjednává limitace náhrady škody hrazené Prodávajícím Kupujícímu, který je podnikatelem, dle Kupní smlouvy částkou odpovídající 30% celkové Kupní ceny bez DPH sjednané v Kupní smlouvě, přičemž limit náhrady škody je sjednán pro souhrn veškerých nároků na náhradu škody uplatněných Kupujícím, a to ať jednotlivých, či dílčích."
           }
+        },
+        "a3d5fbdc-00a4-494c-a0a6-4f4b97ea75cc": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "19.  \tOchrana osobních údajů",
+            "list_desc": "1. Informace týkající se ochrany osobních údajů v souvislosti s Nařízením Evropského parlamentu a Rady (EÚ) 2016\/679 o ochraně fyzických osob v souvislosti se zpracování osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95\/46\/ES (dále také jen GDPR) a zavedení opatření na zajištění souladu postupů Prodávajícího s GDPR a se souvisejícími právními předpisy upravujícími ochranu osobních údajů, jsou umístěny na internetových stránkách Prodávajícího na adrese www.360design.cz."
+          }
+        },
+        "edb7dd5e-34fa-4e11-a65b-da6c74828262": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "20. \tZávěrečná ujednání",
+            "list_desc": "1. Na otázky, které nejsou výslovně upraveny Kupní smlouvou ani těmito podmínkami, budou použita příslušná ustanovení Občanského zákoníku v platném znění.\n<br>2. Tyto podmínky v jejich aktuálně účinném znění jsou dostupné elektronicky na Webové stránce Prodávajícího. \n<br>3. V případě neplatnosti některého z ustanovení těchto podmínek, nezakládá taková skutečnost neplatnost podmínek jako celku. Namísto neplatného ustanovení vstupuje v platnost obecně platná norma, v opačném případě jsou strany povinny se vzájemně dohodnout na řešení, které je nejblíže původně sledovanému obchodnímu účelu.\n<br>4. Prodávající je oprávněn tyto podmínky zveřejněné způsobem dle odstavce 2. tohoto článku obchodních podmínek kdykoliv změnit nebo doplnit, a to zejména při změně souvisejících právních norem nebo při změně způsobu vedení obchodní činnosti. Takováto změna či doplnění však nemá vliv na práva ani povinnosti smluvních stran z Kupních smluv uzavřených do doby účinnosti takto upravených obchodních podmínek. Upravené znění obchodních podmínek zveřejní Prodávající na Webové stránce Prodávajícího. \n<br>5. Uzavřením Kupní smlouvy vyjadřuje Kupující souhlas s těmito podmínkami."
+          }
         }
       },
       "block_order": [
@@ -166,7 +180,9 @@
         "0536ff0c-8fb8-482f-941f-0c8f7e505e10",
         "28939dc0-de99-42c2-8ada-053c745f8993",
         "a70c34ab-9eb8-44f9-a4e2-6474a724a56d",
-        "6437170e-9c8d-450d-997f-1971acfd6f07"
+        "6437170e-9c8d-450d-997f-1971acfd6f07",
+        "a3d5fbdc-00a4-494c-a0a6-4f4b97ea75cc",
+        "edb7dd5e-34fa-4e11-a65b-da6c74828262"
       ],
       "settings": {
         "section_padding_top": 100,
