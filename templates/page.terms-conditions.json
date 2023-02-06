@@ -39,14 +39,14 @@
           "type": "terms-condition",
           "settings": {
             "list_title": "3. \tKupní cena",
-            "list_desc": "1. \tKupní cena za Předmět koupě je stanovena dohodou smluvních stran v Kupní smlouvě a je pevná (dále jen Kupní cena). Pokud není v Kupní smlouvě dohodnuto jinak, zahrnuje Kupní cena i náklady na zabalení Předmětu koupě.\n2. \tV Kupní ceně nejsou zahrnuty náklady na dopravu Předmětu koupě a pojištění Předmětu koupě během přepravy, není-li v Kupní smlouvě dohodnuto jinak."
+            "list_desc": "1. \tKupní cena za Předmět koupě je stanovena dohodou smluvních stran v Kupní smlouvě a je pevná (dále jen Kupní cena). Pokud není v Kupní smlouvě dohodnuto jinak, zahrnuje Kupní cena i náklady na zabalení Předmětu koupě.\n<br>2. \tV Kupní ceně nejsou zahrnuty náklady na dopravu Předmětu koupě a pojištění Předmětu koupě během přepravy, není-li v Kupní smlouvě dohodnuto jinak."
           }
         },
         "6ed7ded9-4141-4598-8edc-d847abb35c45": {
           "type": "terms-condition",
           "settings": {
             "list_title": "4. \tZjevná chyba",
-            "list_desc": "1. V případě, že na straně Prodávajícího došlo ke zcela zjevné technické chybě při uvedení ceny Předmětu koupě na Webových stránkách Prodávajícího nebo v průběhu uzavírání Kupní smlouvy, jedná se o zdánlivé právní jednání a Prodávající nemá povinnost objednaný Předmět koupě Kupujícímu dodat za tuto zcela zjevně chybnou cenu pro zdánlivost právního jednání, eventuálně pro omyl. \n\n2. Za zjevnou chybu v ceně Předmětu koupě se považuje například situace, kdy cena Předmětu koupě neodpovídá obvyklé ceně u jiných prodejců nebo chybí či přebývá cifra."
+            "list_desc": "1. V případě, že na straně Prodávajícího došlo ke zcela zjevné technické chybě při uvedení ceny Předmětu koupě na Webových stránkách Prodávajícího nebo v průběhu uzavírání Kupní smlouvy, jedná se o zdánlivé právní jednání a Prodávající nemá povinnost objednaný Předmět koupě Kupujícímu dodat za tuto zcela zjevně chybnou cenu pro zdánlivost právního jednání, eventuálně pro omyl. \n<br>2. Za zjevnou chybu v ceně Předmětu koupě se považuje například situace, kdy cena Předmětu koupě neodpovídá obvyklé ceně u jiných prodejců nebo chybí či přebývá cifra."
           }
         },
         "4eb36caf-5134-4ec8-bdb6-8f78ad215e13": {
