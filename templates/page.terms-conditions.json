@@ -1,5 +1,29 @@
 {
   "sections": {
+    "21eeacbf-f0d2-4366-a69e-92925b917a36": {
+      "type": "terms-conditions4",
+      "blocks": {
+        "47df8a45-2dad-4f20-8e14-d8cbe0932eb1": {
+          "type": "terms_condition",
+          "settings": {
+            "list_title": "Governing Law & Jurisdiction",
+            "list_desc": "These terms will be governed by and interpreted in accordance with the Laws of the state of country, and you submit to the non-exclusive jurisdiction Of the state and federal courts located in country for the resolution of any disputes."
+          }
+        }
+      },
+      "block_order": [
+        "47df8a45-2dad-4f20-8e14-d8cbe0932eb1"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_title": "Indemnificationyou hereby indemnify to the fullest extent staffy wordpress Theme from and against any and\/or all liabilities, costs, demands, causes of Action, damages and expenses arising in any way related to your breach of Any of the provisions of these terms."
+      }
+    },
     "terms-conditions": {
       "type": "terms-conditions",
       "blocks": {
@@ -201,6 +225,7 @@
     }
   },
   "order": [
+    "21eeacbf-f0d2-4366-a69e-92925b917a36",
     "terms-conditions",
     "terms-conditions4"
   ]
