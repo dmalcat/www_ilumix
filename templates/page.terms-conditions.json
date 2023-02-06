@@ -118,6 +118,13 @@
             "list_title": "14. \tVyšší moc",
             "list_desc": "1.\tSmluvní strany nemohou nést odpovědnost za nesplnění svých smluvních závazků z důvodů vyšší moci.\n<br>2.\tPod pojmem vyšší moc se rozumí působení nepředvídatelných událostí, vyskytnuvších se po uzavření Kupní smlouvy, které jsou mimo možnosti zvládnutí smluvními stranami, nebo proti kterým nemohou smluvní strany přijmout dostatečná opatření, jako jsou např. stávky, výluky, blokády, válka nebo hrozba války, mobilizace, převraty, přírodní pohromy takového rozsahu, že zabraňují nebo zpožďují plnění smluvních závazků z Kupní smlouvy některé ze smluvních stran.\n<br>3.\tSmluvní strana, která se dovolává vyšší moci, je povinna bez prodlení informovat druhou smluvní stranu o události, jejím začátku a pravděpodobném trvání. Podobným způsobem musí být sdělen okamžik ukončení události."
           }
+        },
+        "0536ff0c-8fb8-482f-941f-0c8f7e505e10": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "15. \tŘešení sporů",
+            "list_desc": "1. Případné spory z Kupní smlouvy mezi Prodávajícím a Kupujícím, který je podnikatelem, bude výlučně rozhodovat Okresní soud v Karlových Varech, bude-li dána věcná příslušnost okresního soudu jakožto soudu I. stupně, resp. Krajský soud v Plzni, bude-li dána věcná příslušnost krajského soudu jakožto soudu I. stupně."
+          }
         }
       },
       "block_order": [
@@ -134,7 +141,8 @@
         "53e9eab2-4f1a-4c6d-937f-dd9c4b56b58d",
         "d6b41c04-81b8-4a2d-951d-178e28dc990f",
         "b05cc6fc-35c5-4047-8a58-47b8ff06f9ab",
-        "ffb3fba6-8d5a-4e3f-b79b-2bd0b864eda7"
+        "ffb3fba6-8d5a-4e3f-b79b-2bd0b864eda7",
+        "0536ff0c-8fb8-482f-941f-0c8f7e505e10"
       ],
       "settings": {
         "section_padding_top": 100,
