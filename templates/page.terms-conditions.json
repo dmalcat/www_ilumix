@@ -1,1 +1,164 @@
-{"sections":{"terms-conditions2":{"type":"terms-conditions2","settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"section_bg_color":"#f6f6f6","section_title1":"The company","section_title2":"private limited policy","block_quot":"We work to ensure that your business prospers and brings you sufficient profit","block_desc":"Lorem ipsum is simply dummy text of the printing and typeing industry. Lorem ipsum has been the industry's standard dummy text ever since text.","content_button_url1":"","content_button1":"Read more","term_condition_img":"shopify:\/\/shop_images\/terms-condition-img_c8023893-dafb-4f7c-9729-c1917a49b62b.jpg"}},"terms-conditions":{"type":"terms-conditions","blocks":{"6103a853-eaf8-4e90-837a-8c1c4323fcc8":{"type":"terms-condition","settings":{"list_title":"Introduction","list_desc":"These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"}},"4215fff1-2829-40fb-a915-acd06dba6b96":{"type":"terms-condition","settings":{"list_title":"Introduction","list_desc":"These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"}},"72345072-984d-4a73-b870-ce97baeab3e6":{"type":"terms-condition","settings":{"list_title":"Introduction","list_desc":"These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"}},"6ed7ded9-4141-4598-8edc-d847abb35c45":{"type":"terms-condition","settings":{"list_title":"Introduction","list_desc":"These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"}},"4eb36caf-5134-4ec8-bdb6-8f78ad215e13":{"type":"terms-condition","settings":{"list_title":"Introduction","list_desc":"These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"}},"5a2cbc87-4da5-489b-975c-3858255cfa7f":{"type":"terms-condition","settings":{"list_title":"Introduction","list_desc":"These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"}}},"block_order":["6103a853-eaf8-4e90-837a-8c1c4323fcc8","4215fff1-2829-40fb-a915-acd06dba6b96","72345072-984d-4a73-b870-ce97baeab3e6","6ed7ded9-4141-4598-8edc-d847abb35c45","4eb36caf-5134-4ec8-bdb6-8f78ad215e13","5a2cbc87-4da5-489b-975c-3858255cfa7f"],"settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40}},"terms-conditions3":{"type":"terms-conditions3","blocks":{"e4602800-663a-4b1e-b4be-0d5e25d5c6c0":{"type":"terms-condition","settings":{"list_desc":"Publishing any website material in any other media;"}},"f8553c56-7513-4e71-a8c6-4f5f10d0f2be":{"type":"terms-condition","settings":{"list_desc":"Publishing any website material in any other media;"}},"7027e382-be31-4cbd-a469-940fd8f73732":{"type":"terms-condition","settings":{"list_desc":"Publishing any website material in any other media;"}},"a44b0d94-882b-40f3-8231-0205115e4539":{"type":"terms-condition","settings":{"list_desc":"Publishing any website material in any other media;"}}},"block_order":["e4602800-663a-4b1e-b4be-0d5e25d5c6c0","f8553c56-7513-4e71-a8c6-4f5f10d0f2be","7027e382-be31-4cbd-a469-940fd8f73732","a44b0d94-882b-40f3-8231-0205115e4539"],"settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"term_condition_img":"shopify:\/\/shop_images\/terms-condition-img2_4c4aba90-569e-4be4-8f25-7e3c5e3d0bd9.jpg","term_condition_img_title":"Limitation of liability","term_condition_img_desc":"n no event shall staffy wordpress theme, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this website whether such liability is under contract","section_bg_color":"#f6f6f6","section_title":"Restrictions","section_title_label":"You are specifically restricted from all of the following:","section_description":"Certain areas of this website are restricted from being access by you and staffy wordpress theme may further restrict access by you to any areas of this website, at any time, in absolute discretion. any user id and password you may have for this website are confidential and you must maintain confidentiality as well"}},"terms-conditions4":{"type":"terms-conditions4","blocks":{"67746960-b5cf-4873-a21a-9a67dd36cff0":{"type":"terms_condition","settings":{"list_title":"Governing Law & Jurisdiction","list_desc":"These terms will be governed by and interpreted in accordance with the Laws of the state of country, and you submit to the non-exclusive jurisdiction Of the state and federal courts located in country for the resolution of any disputes."}}},"block_order":["67746960-b5cf-4873-a21a-9a67dd36cff0"],"settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"section_title":"Indemnificationyou hereby indemnify to the fullest extent staffy wordpress Theme from and against any and\/or all liabilities, costs, demands, causes of Action, damages and expenses arising in any way related to your breach of Any of the provisions of these terms."}}},"order":["terms-conditions2","terms-conditions","terms-conditions3","terms-conditions4"]}
+{
+  "sections": {
+    "terms-conditions2": {
+      "type": "terms-conditions2",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_bg_color": "#f6f6f6",
+        "section_title1": "The company",
+        "section_title2": "private limited policy",
+        "block_quot": "We work to ensure that your business prospers and brings you sufficient profit",
+        "block_desc": "Lorem ipsum is simply dummy text of the printing and typeing industry. Lorem ipsum has been the industry's standard dummy text ever since text.",
+        "content_button_url1": "",
+        "content_button1": "Read more"
+      }
+    },
+    "terms-conditions": {
+      "type": "terms-conditions",
+      "blocks": {
+        "6103a853-eaf8-4e90-837a-8c1c4323fcc8": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "1. \tVšeobecná ustanovení",
+            "list_desc": "1. \tNíže uvedené obchodní podmínky upravují vzájemná práva a povinnosti vzniklé v souvislosti nebo na základě kupní smlouvy uzavírané mezi společností ILUMIX light s.r.o., IČO: 29115728 (dále jen Prodávající), a jejími zákazníky (dále jen Kupující) při prodeji\/nákupu výrobků, zboží a služeb nabízeného Prodávajícím (dále jen Předmět koupě) prostřednictvím internetového obchodu Prodávajícího provozovaného na webové stránce umístěné na internetové adrese www.360design.cz (dále jen Webová stránka Prodávajícího) a jsou její nedílnou součástí.\n<br>2. \tPro účely těchto obchodních podmínek bude dále kupní smlouva uzavřená mezi Prodávajícím a Kupujícím označována také jako Kupní smlouva.<br> \n3. \tTyto obchodní podmínky se vztahují na všechny kupní smlouvy, které byly uzavřeny mezi Prodávajícím a Kupujícím po nabytí jejich účinnosti. \n<br>4. \tOdchylná ujednání od těchto obchodních podmínek dohodnutá v Kupní smlouvě mají přednost před těmito obchodními podmínkami. Práva a povinnosti smluvních stran, která nejsou v Kupní smlouvě výslovně upravena, se řídí těmito obchodními podmínkami."
+          }
+        },
+        "4215fff1-2829-40fb-a915-acd06dba6b96": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "2. \tKupní smlouva",
+            "list_desc": "1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího. \n<br>2. Kupní smlouva je mezi Prodávajícím a Kupujícím uzavřena na základě objednávky učiněné Kupujícím prostřednictvím Webové stránky Prodávajícího, a to okamžikem doručení potvrzení objednávky Kupujícího ze strany Prodávajícího zaslaného Prodávajícím Kupujícímu prostřednictvím elektronické pošty na elektronickou adresu Kupujícího uvedenou v objednávce Kupujícího.   \n<br>3. Do doby potvrzení objednávky Kupujícího Prodávajícím není tato objednávka pro Prodávajícího závazná a zavazuje pouze Kupujícího. \n<br>4. Prodávající není povinen na objednávku Kupujícího reagovat a jeho případnou nečinnost nelze považovat za přijetí objednávky Kupujícího.\n<br>5. Objednávku, jejíž přijetí Prodávající dosud nepotvrdil, může Kupující zrušit či změnit e‑mailem zaslaným na e-mailovou adresu Prodávajícího info@360design.cz Odeslaná zpráva musí obsahovat identifikační údaje Kupujícího, datum provedení objednávky a specifikaci Předmětu koupě.\n<br>6. Pozdější změna či zrušení přijaté objednávky ze strany Kupujícího jsou možné pouze na základě dohody mezi Kupujícím a Prodávajícím. \n<br>7. Prodávající vždy dodá Kupujícímu Předmět koupě v množstvích, termínech a za podmínek stanovených v potvrzené objednávce Kupujícího."
+          }
+        },
+        "72345072-984d-4a73-b870-ce97baeab3e6": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "3. \tKupní cena",
+            "list_desc": "1. \tKupní cena za Předmět koupě je stanovena dohodou smluvních stran v Kupní smlouvě a je pevná (dále jen Kupní cena). Pokud není v Kupní smlouvě dohodnuto jinak, zahrnuje Kupní cena i náklady na zabalení Předmětu koupě.\n2. \tV Kupní ceně nejsou zahrnuty náklady na dopravu Předmětu koupě a pojištění Předmětu koupě během přepravy, není-li v Kupní smlouvě dohodnuto jinak."
+          }
+        },
+        "6ed7ded9-4141-4598-8edc-d847abb35c45": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "4. \tZjevná chyba",
+            "list_desc": "1. V případě, že na straně Prodávajícího došlo ke zcela zjevné technické chybě při uvedení ceny Předmětu koupě na Webových stránkách Prodávajícího nebo v průběhu uzavírání Kupní smlouvy, jedná se o zdánlivé právní jednání a Prodávající nemá povinnost objednaný Předmět koupě Kupujícímu dodat za tuto zcela zjevně chybnou cenu pro zdánlivost právního jednání, eventuálně pro omyl. \n\n2. Za zjevnou chybu v ceně Předmětu koupě se považuje například situace, kdy cena Předmětu koupě neodpovídá obvyklé ceně u jiných prodejců nebo chybí či přebývá cifra."
+          }
+        },
+        "4eb36caf-5134-4ec8-bdb6-8f78ad215e13": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "Introduction",
+            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+          }
+        },
+        "5a2cbc87-4da5-489b-975c-3858255cfa7f": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "Introduction",
+            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+          }
+        }
+      },
+      "block_order": [
+        "6103a853-eaf8-4e90-837a-8c1c4323fcc8",
+        "4215fff1-2829-40fb-a915-acd06dba6b96",
+        "72345072-984d-4a73-b870-ce97baeab3e6",
+        "6ed7ded9-4141-4598-8edc-d847abb35c45",
+        "4eb36caf-5134-4ec8-bdb6-8f78ad215e13",
+        "5a2cbc87-4da5-489b-975c-3858255cfa7f"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40
+      }
+    },
+    "terms-conditions3": {
+      "type": "terms-conditions3",
+      "blocks": {
+        "e4602800-663a-4b1e-b4be-0d5e25d5c6c0": {
+          "type": "terms-condition",
+          "settings": {
+            "list_desc": "Publishing any website material in any other media;"
+          }
+        },
+        "f8553c56-7513-4e71-a8c6-4f5f10d0f2be": {
+          "type": "terms-condition",
+          "settings": {
+            "list_desc": "Publishing any website material in any other media;"
+          }
+        },
+        "7027e382-be31-4cbd-a469-940fd8f73732": {
+          "type": "terms-condition",
+          "settings": {
+            "list_desc": "Publishing any website material in any other media;"
+          }
+        },
+        "a44b0d94-882b-40f3-8231-0205115e4539": {
+          "type": "terms-condition",
+          "settings": {
+            "list_desc": "Publishing any website material in any other media;"
+          }
+        }
+      },
+      "block_order": [
+        "e4602800-663a-4b1e-b4be-0d5e25d5c6c0",
+        "f8553c56-7513-4e71-a8c6-4f5f10d0f2be",
+        "7027e382-be31-4cbd-a469-940fd8f73732",
+        "a44b0d94-882b-40f3-8231-0205115e4539"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "term_condition_img_title": "Limitation of liability",
+        "term_condition_img_desc": "n no event shall staffy wordpress theme, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this website whether such liability is under contract",
+        "section_bg_color": "#f6f6f6",
+        "section_title": "Restrictions",
+        "section_title_label": "You are specifically restricted from all of the following:",
+        "section_description": "Certain areas of this website are restricted from being access by you and staffy wordpress theme may further restrict access by you to any areas of this website, at any time, in absolute discretion. any user id and password you may have for this website are confidential and you must maintain confidentiality as well"
+      }
+    },
+    "terms-conditions4": {
+      "type": "terms-conditions4",
+      "blocks": {
+        "67746960-b5cf-4873-a21a-9a67dd36cff0": {
+          "type": "terms_condition",
+          "settings": {
+            "list_title": "Governing Law & Jurisdiction",
+            "list_desc": "These terms will be governed by and interpreted in accordance with the Laws of the state of country, and you submit to the non-exclusive jurisdiction Of the state and federal courts located in country for the resolution of any disputes."
+          }
+        }
+      },
+      "block_order": [
+        "67746960-b5cf-4873-a21a-9a67dd36cff0"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_title": "Indemnificationyou hereby indemnify to the fullest extent staffy wordpress Theme from and against any and\/or all liabilities, costs, demands, causes of Action, damages and expenses arising in any way related to your breach of Any of the provisions of these terms."
+      }
+    }
+  },
+  "order": [
+    "terms-conditions2",
+    "terms-conditions",
+    "terms-conditions3",
+    "terms-conditions4"
+  ]
+}
