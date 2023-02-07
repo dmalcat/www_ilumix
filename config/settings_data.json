@@ -880,7 +880,7 @@
               "category_enable": true,
               "slider_category_handle": "prisazena-interierova-svitidla",
               "shop_button": "ZOBRAZIT",
-              "sale_title": "Sleva",
+              "sale_title": "",
               "sale_title_color": "#cb6b34",
               "special_label_product": "frontpage"
             }
@@ -902,7 +902,7 @@
               "category_enable": true,
               "slider_category_handle": "exterierova-svitidla",
               "shop_button": "ZOBRAZIT",
-              "sale_title": "Akce",
+              "sale_title": "",
               "sale_title_color": "#de7c71",
               "special_label_product": ""
             }
@@ -912,8 +912,8 @@
             "settings": {
               "category_enable": true,
               "slider_category_handle": "sloupkova-exterierova-svitidla",
-              "shop_button": "Shop now",
-              "sale_title": "Sale",
+              "shop_button": "ZOBRAZIT",
+              "sale_title": "",
               "sale_title_color": "#333333",
               "special_label_product": ""
             }
@@ -923,8 +923,8 @@
             "settings": {
               "category_enable": true,
               "slider_category_handle": "prisazena-interierova-svitidla",
-              "shop_button": "Shop now",
-              "sale_title": "Sale",
+              "shop_button": "ZOBRAZIT",
+              "sale_title": "",
               "sale_title_color": "#333333",
               "special_label_product": ""
             }
@@ -934,8 +934,8 @@
             "settings": {
               "category_enable": true,
               "slider_category_handle": "exterierova-svitidla",
-              "shop_button": "Shop now",
-              "sale_title": "Sale",
+              "shop_button": "ZOBRAZIT",
+              "sale_title": "",
               "sale_title_color": "#333333",
               "special_label_product": ""
             }
