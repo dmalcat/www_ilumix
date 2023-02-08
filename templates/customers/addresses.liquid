@@ -232,6 +232,21 @@ Shopify.CustomerAddress = {
   }
 }
 </script>
+
+<script>
+  function showCompanyAddress() {
+    var companyAddress = document.getElementById("form-companyAddress-checkbox");
+    var companyAddressGroup = document.getElementById("company-address");
+
+    if (companyAddress.checked) {
+      companyAddressGroup.style.display = "block";
+    } else {
+      companyAddressGroup.style.display = "none";
+    }
+
+  }
+</script>
+
 <style>
 .my-account-page .return-acc-detail a {
   color: #666;
