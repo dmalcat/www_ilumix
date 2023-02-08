@@ -75,16 +75,18 @@
               
               <ul class="cust-form">
                 <li class="checkbox">
-                  <label class="checkbox__label">
-                    <input type="checkbox" id="form-companyAddress-checkbox" class="checkbox__input" onclick="showCompanyAddress()">
-                    Nakupuji na firmu
-                  </label>
+                  <span>
+                    <label class="checkbox__label">
+                      <input type="checkbox" id="form-companyAddress-checkbox" class="checkbox__input" onclick="showCompanyAddress()">
+                      Nakupuji na firmu
+                    </label>
+                  </span>
+                  <li class="form-input form-input--CompanyName" id="company-address">
+                    <label for="AddressCompany_{{ form.id }}">Název firmy</label>
+                    <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words">
+                  </li>
                 </li>
 
-                <li class="form-input form-input--CompanyName" id="company-address">
-                  <label for="AddressCompany_{{ form.id }}">Název firmy</label>
-                  <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words">
-                </li>
                 <li class="form-input">
                   <label for="AddressAddress1_{{ form.id }}">Adresa</label>
                   <input type="text" id="AddressAddress1_{{ form.id }}" class="input-full" name="address[address1]" value="{{ form.address1 }}" autocapitalize="words">
