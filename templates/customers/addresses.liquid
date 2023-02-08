@@ -72,8 +72,8 @@
                   <input type="text" id="AddressLastName_{{ form.id }}" class="input-full" name="address[last_name]" value="{{ form.last_name }}" autocapitalize="words">
                 </li>
                 <li class="form-input">
-                  <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
-                  <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]">
+                  <label for="company-checkbox">{{ 'customer.addresses.company' | t }}</label>
+                  <input type="checkbox" id="company-checkbox" class="input-checkbox" name="company-checkbox">
                 </li>
                 <li class="form-input">
                   <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
