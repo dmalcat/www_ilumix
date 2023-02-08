@@ -290,7 +290,12 @@
                 <span>{{ block.settings.in_stock_title }}</span>
               </span>
               {% endif %}
-              <span class="location">{{ product.variants }}</span>
+              <span class="location">
+                {% for variant in product.variants %}
+                  {{ variant }}  
+                {% endfor %}    
+
+              </span>
             </div>
             
             {%- when 'product_stock_inventory' -%}
