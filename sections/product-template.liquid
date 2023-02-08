@@ -292,7 +292,7 @@
               {% endif %}
               <span class="location">
                 {% for variant in product.variants %}
-                  {{ variant }}  
+                  {{ variant.inventory_quantity }}  
                 {% endfor %}    
 
               </span>
