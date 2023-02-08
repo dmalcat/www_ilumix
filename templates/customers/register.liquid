@@ -34,12 +34,6 @@
                       <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
                       <i class="feather-lock"></i>
                     </li>
-                    <li class="checkbox">
-                      <label class="checkbox__label">
-                        <input type="checkbox" id="form-companyAddress-checkbox" class="checkbox__input" onclick="showCompanyAddress()">
-                        Nakupuji na firmu
-                      </label>
-                    </li>
                   </ul>
                   <div class="form-action-button">
                     <button class="btn btn-style7" type="submit">{{ 'customer.register.submit' | t }}</button>
