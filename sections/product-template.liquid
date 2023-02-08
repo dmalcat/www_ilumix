@@ -290,18 +290,6 @@
                 <span>{{ block.settings.in_stock_title }}</span>
               </span>
               {% endif %}
-              <span class="location">
-                {% for variant in product.variants %}
-                  {{ variant.store_availabilities }}  
-                {% endfor %}  
-                
-                {% for variant in product.selected_or_first_available_variant %}
-                  {% for avail in variant.store_availabilities %}
-                    {{ avail.id }}
-                  {% endfor %}
-                {% endfor %}
-
-              </span>
             </div>
             
             {%- when 'product_stock_inventory' -%}
