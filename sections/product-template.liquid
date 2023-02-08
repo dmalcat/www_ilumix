@@ -297,7 +297,7 @@
                 
                 {% for variant in product.selected_or_first_available_variant %}
                   {% for avail in variant.store_availabilities %}
-                    {{ avail }}
+                    {{ avail.id }}
                   {% endfor %}
                 {% endfor %}
 
