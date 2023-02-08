@@ -27,7 +27,8 @@
                 <span>{{ customer.phone }}</span>
                 {% endcomment %}
 
-                <span>{{ customer }}</span>
+                <span>{{ customer.default_address.company }}</span>
+                
                 {% if customer.default_address != ""  %}
                 <span>{{ customer.default_address.address1 }}</span>
 
