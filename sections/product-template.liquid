@@ -295,7 +295,9 @@
                   {{ variant.store_availabilities }}  
                 {% endfor %}  
                 
-                {{ product.selected_or_first_available_variant }}
+                {% for variant in product.selected_or_first_available_variant %}
+                  {{ variant.store_availabilities }}
+                {% endfor %}
 
               </span>
             </div>
