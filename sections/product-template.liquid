@@ -290,10 +290,11 @@
                 <span>{{ block.settings.in_stock_title }}</span>
               </span>
               {% endif %}
+              {{ store_availability.location }}
             </div>
             
             {%- when 'product_stock_inventory' -%}
-              foo
+              
             {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity == 0 %}
             {% elsif product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
             <div class="stock-inventory">
