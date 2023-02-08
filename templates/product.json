@@ -29,7 +29,7 @@
           "type": "product_availability",
           "settings": {
             "availability_title": "Dostupnost:",
-            "in_stock_title": "Skladem <span>({{ product.metafields.custom.skladova_dostupnost | metafield_text }})<\/span>",
+            "in_stock_title": "Skladem",
             "out_of_stock_title": "Není skladem"
           }
         },
