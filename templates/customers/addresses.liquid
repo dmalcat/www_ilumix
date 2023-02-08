@@ -73,10 +73,13 @@
                 </li>
               </ul>
               <ul class="cust-form">
-                <li class="form-input">
-                  <label for="company-checkbox">Firemní adresa</label>
-                  <input type="checkbox" id="company-checkbox" class="input-checkbox" name="company-checkbox">
+                <li class="checkbox">
+                  <label class="checkbox__label">
+                    <input type="checkbox" id="form-companyAddress-checkbox" class="checkbox__input" onclick="showCompanyAddress()">
+                    Nakupuji na firmu
+                  </label>
                 </li>
+
                 <li class="form-input">
                   <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
                   <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words">
