@@ -260,18 +260,16 @@
                     {%- endif -%}
                     
                     <div class="cart-additional-company">
-                        <h6>Nakupujete na firmu? Zadejte prosím níže Vaše firemní údaje</h6>
+                        <label>Nakupujete na firmu? Zadejte prosím níže Vaše firemní údaje</label>
                         <div class="company-info">
-                            <ul class="cust-form">
-                                <li class="form-input">
-                                    <label for="ic">IČO</label>
-                                    <input type="text" class="input-full" id="ic" name="attributes[IČO]" value="{{ cart.attributes["IČO"] }}">
-                                </li>
-                                <li class="form-input">
-                                    <label for="dic">DIČ</label>
-                                    <input type="text" class="input-full" id="dic" name="attributes[DIČ]" value="{{ cart.attributes["DIČ"] }}">
-                                </li>
-                            </ul>
+                            <p class="">
+                                <label for="ic">IČO</label>
+                                <input type="text" class="custom_field" id="ic" name="attributes[IČO]" value="{{ cart.attributes["IČO"] }}">
+                            </p>
+                            <p class="">
+                                <label for="dic">DIČ</label>
+                                <input type="text" class="custom_field" id="dic" name="attributes[DIČ]" value="{{ cart.attributes["DIČ"] }}">
+                            </p>
                         </div>
                     </div>
                     
