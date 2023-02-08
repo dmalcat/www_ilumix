@@ -73,6 +73,10 @@
                 </li>
                 <li class="form-input">
                   <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
+                  <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]">
+                </li>
+                <li class="form-input">
+                  <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
                   <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words">
                 </li>
                 <li class="form-input">
