@@ -163,7 +163,7 @@
           <ul class="cust-form cust-form--companyInput">
             <li class="checkbox">
               <label class="checkbox__label">
-                <input type="checkbox" id="form-companyAddress-checkbox-2" class="checkbox__input" onclick="showCompanyAddress()">
+                <input type="checkbox" id="form-companyAddress-checkbox-2" class="checkbox__input" onclick="showCompanyAddressSecond()">
                 Firemní údaje
               </label>
             </li>
@@ -262,6 +262,17 @@ Shopify.CustomerAddress = {
   function showCompanyAddress() {
     var companyAddress = document.getElementById("form-companyAddress-checkbox");
     var companyAddressGroup = document.getElementById("company-address");
+
+    if (companyAddress.checked) {
+      companyAddressGroup.style.display = "block";
+    } else {
+      companyAddressGroup.style.display = "none";
+    }
+  }
+
+  function showCompanyAddressSecond() {
+    var companyAddress = document.getElementById("form-companyAddress-checkbox-2");
+    var companyAddressGroup = document.getElementById("company-address-2");
 
     if (companyAddress.checked) {
       companyAddressGroup.style.display = "block";
