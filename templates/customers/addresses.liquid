@@ -158,6 +158,8 @@
               <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
               <input type="text" id="AddressLastNameNew" class="input-full{% if form.errors contains 'last_name' %} error{% endif %}" name="address[last_name]" value="{{ form.last_name }}" autocapitalize="words" placeholder="{{ 'customer.addresses.last_name' | t }}">
             </li>
+          </ul>
+          <ul class="cust-form">
             <li class="form-input">
               <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
               <input type="text" id="AddressCompanyNew" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words" placeholder="{{ 'customer.addresses.company' | t }}">
