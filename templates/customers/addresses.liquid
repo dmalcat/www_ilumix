@@ -59,7 +59,7 @@
               </div>
             </li>
             {% form 'customer_address', address %}
-            <div id="EditAddress_{{ address.id }}" class="address-form" {% unless form.errors %}style="display:none;"{% endunless %}>
+            <div id="EditAddress_{{ address.id }}" class="address-form">
               <h6>{{ 'customer.addresses.edit_address' | t }}</h6>
               {{ form.errors | default_errors }}
               <ul class="cust-form">
