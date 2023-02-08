@@ -125,7 +125,7 @@
               </p>
               <p class="update-cancel-btn">
                 <input type="submit" class="button button--black" value="{{ 'customer.addresses.update' | t }}">
-                <a href="#" class="button button--black" onclick="Shopify.CustomerAddress.toggleForm({{ form.id }}); return false;">{{ 'customer.addresses.cancel' | t }}</a>
+                <a href="#" class="button button--red" onclick="Shopify.CustomerAddress.toggleForm({{ form.id }}); return false;">{{ 'customer.addresses.cancel' | t }}</a>
               </p>
             </div>
             {% endform %}
