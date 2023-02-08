@@ -259,24 +259,24 @@
                     </div>
                     {%- endif -%}
                     {% unless customer %}
-                                    <div class="cart-additional-company">
-                                        <label>Nakupujete na firmu? Zadejte prosím níže Vaše firemní údaje</label>
-                                        <div class="company-info">
-                                    <p class="">
-                                <label for="firma">Název firmy</label>
-                                <input type="text" id="firma" class="custom_field" name="attributes[Název firmy]" value="{{ cart.attributes["Název firmy"] }}">
-                            </p> 
-                                        <p class="">
-                                <label for="ic">IČO</label>
-                                <input type="text" class="custom_field" id="ic" name="attributes[IČO]" value="{{ cart.attributes["IČO"] }}">
-                            </p>
-                                        <p class="">
-                                <label for="dic">DIČ</label>
-                                <input type="text" class="custom_field" id="dic" name="attributes[DIČ]" value="{{ cart.attributes["DIČ"] }}">
-                            </p>
+                        <div class="cart-additional-company">
+                            <label>Nakupujete na firmu? Zadejte prosím níže Vaše firemní údaje</label>
+                            <div class="company-info">
+                                <p class="">
+                                    <label for="firma">Název firmy</label>
+                                    <input type="text" id="firma" class="custom_field" name="attributes[Název firmy]" value="{{ cart.attributes["Název firmy"] }}">
+                                </p> 
+                                <p class="">
+                                    <label for="ic">IČO</label>
+                                    <input type="text" class="custom_field" id="ic" name="attributes[IČO]" value="{{ cart.attributes["IČO"] }}">
+                                </p>
+                                <p class="">
+                                    <label for="dic">DIČ</label>
+                                    <input type="text" class="custom_field" id="dic" name="attributes[DIČ]" value="{{ cart.attributes["DIČ"] }}">
+                                </p>
                             </div>
-                            </div>
-                        {% endunless %}
+                        </div>
+                    {% endunless %}
                     <div class="cart-buttons">
                         <a href="/collections/all">{{ section.settings.continue_shopping_title }}</a>
                         <!-- <a href="/cart/clear">{{ section.settings.clear_cart_title }}</a> -->
