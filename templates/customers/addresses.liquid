@@ -82,15 +82,16 @@
                 </li>
               </ul>
 
-              <li class="checkbox">
-                <span class="form-input form-input--CompanyName" id="company-address">
-                  <label for="AddressCompany_{{ form.id }}">Název firmy</label>
-                  <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words">
-                </span>
-              </li>
+              <ul class="cust-form">
+                <li class="checkbox">
+                  <span class="form-input form-input--CompanyName" id="company-address">
+                    <label for="AddressCompany_{{ form.id }}">Název firmy</label>
+                    <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words">
+                  </span>
+                </li>
+              </ul>
               
               <ul class="cust-form">
-                
                 <li class="form-input">
                   <label for="AddressAddress1_{{ form.id }}">Adresa</label>
                   <input type="text" id="AddressAddress1_{{ form.id }}" class="input-full" name="address[address1]" value="{{ form.address1 }}" autocapitalize="words">
