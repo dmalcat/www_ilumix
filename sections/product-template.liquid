@@ -293,7 +293,9 @@
               <span class="location">
                 {% for variant in product.variants %}
                   {{ variant.store_availabilities }}  
-                {% endfor %}    
+                {% endfor %}  
+                
+                {{ product.selected_or_first_available_variant }}
 
               </span>
             </div>
