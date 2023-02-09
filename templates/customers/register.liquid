@@ -34,27 +34,6 @@
                       <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
                       <i class="feather-lock"></i>
                     </li>
-                    <li class="checkbox">
-                      <label class="checkbox__label">
-                        <input type="checkbox" id="form-companyAddress-checkbox" class="checkbox__input" onclick="showCompanyAddress()">
-                        Nakupuji na firmu
-                      </label>
-                    </li>
-                  </ul>
-                  <ul class="fill-form fill-form--companyAddress" id="company-address">
-                    <li>
-                      <input type="text" id="BusinessName" name="customer[note][Název firmy]" placeholder="Název firmy" class="input-full">
-                    </li>
-                    <li>
-                      <input type="text" id="BusinessAddress" name="customer[note][Adresa firmy]" placeholder="Adresa firmy" class="input-full">
-                    </li>
-                    <li>
-                      <input type="text" id="ICO" name="customer[note][IČO]" placeholder="IČO" class="input-full">
-                    </li>
-                    <li>
-                      <input type="text" id="DIC" name="customer[note][DIČ]" placeholder="DIČ" class="input-full">
-                    </li>
-                    
                   </ul>
                   <div class="form-action-button">
                     <button class="btn btn-style7" type="submit">{{ 'customer.register.submit' | t }}</button>
