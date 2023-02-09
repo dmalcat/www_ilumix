@@ -2473,6 +2473,29 @@
           "feed_width": 100,
           "html_area": ""
         }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "pwd_heder_soon_title": "Již brzy"
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "newsletter_enable": true,
+          "newsletter_form_heading": "Buďte první, kdo o tom bude vědět.",
+          "newsletter_form_subheading": "",
+          "newsletter_placeholder": "E-mailová adresa",
+          "newsletter_button_text": "Dejte mi vědět"
+        }
+      },
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+          "show_share_buttons": true,
+          "social_message": "Sledujte nás"
+        }
       }
     },
     "content_for_index": [
