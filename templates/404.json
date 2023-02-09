@@ -5,6 +5,7 @@
       "settings": {
         "section_title_bold": "Ups!",
         "section_title": "Nedá se svítit, ale tudy to nepůjde.",
+        "section_img": "shopify:\/\/shop_images\/404.jpg",
         "section_des": "Je nám líto, ale tento odkaz neexistuje.",
         "home_button": "Hlavní stránka",
         "back_button": "Jít zpět"
