@@ -911,11 +911,11 @@
             "type": "slider_cat",
             "settings": {
               "category_enable": true,
-              "slider_category_handle": "exterierova-svitidla",
+              "slider_category_handle": "dekorativni-exterierova-svitidla",
               "shop_button": "ZOBRAZIT",
               "sale_title": "",
               "sale_title_color": "#de7c71",
-              "special_label_product": ""
+              "special_label_product": "dekorativni-exterierova-svitidla"
             }
           },
           "98266ad2-0743-4d8c-bdae-ac5a4c02ab6e": {
