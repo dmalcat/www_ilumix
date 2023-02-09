@@ -291,8 +291,9 @@
               </span>
               {% endif %}
             </div>
-          {%- when 'product_stock_inventory' -%}
-          
+            
+            {%- when 'product_stock_inventory' -%}
+              
             {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity == 0 %}
             {% elsif product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
             <div class="stock-inventory">
