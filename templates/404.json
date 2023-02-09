@@ -4,9 +4,9 @@
       "type": "404-template",
       "settings": {
         "section_title_bold": "Ups!",
-        "section_title": "Nedá se svítit, tudy to nepůjde.",
+        "section_title": "Nedá se svítit, ale tento odkaz neexistuje.",
         "section_img": "shopify:\/\/shop_images\/404.jpg",
-        "section_des": "Je nám líto, ale tento odkaz neexistuje.",
+        "section_des": "Světlo vám přinesou odkazy níže.",
         "home_button": "Hlavní stránka",
         "back_button": "Jít zpět"
       }
