@@ -885,6 +885,17 @@
               "special_label_product": "stolni"
             }
           },
+          "464944c7-df6e-461a-abf2-dbf9b1723ce8": {
+            "type": "slider_cat",
+            "settings": {
+              "category_enable": true,
+              "slider_category_handle": "prisazena-interierova-svitidla",
+              "shop_button": "ZOBRAZIT",
+              "sale_title": "",
+              "sale_title_color": "#333333",
+              "special_label_product": "prisazena-interierova-svitidla"
+            }
+          },
           "78bb2e62-2497-4487-bc5b-c7577f380d8d": {
             "type": "slider_cat",
             "settings": {
@@ -918,17 +929,6 @@
               "special_label_product": ""
             }
           },
-          "464944c7-df6e-461a-abf2-dbf9b1723ce8": {
-            "type": "slider_cat",
-            "settings": {
-              "category_enable": true,
-              "slider_category_handle": "prisazena-interierova-svitidla",
-              "shop_button": "ZOBRAZIT",
-              "sale_title": "",
-              "sale_title_color": "#333333",
-              "special_label_product": ""
-            }
-          },
           "6fcd7fd1-2c86-465a-b905-de88e34e77e8": {
             "type": "slider_cat",
             "settings": {
@@ -943,10 +943,10 @@
         },
         "block_order": [
           "822e884e-cdee-4532-bc59-3de8dfb5ed7a",
+          "464944c7-df6e-461a-abf2-dbf9b1723ce8",
           "78bb2e62-2497-4487-bc5b-c7577f380d8d",
           "0a43c2dc-afa7-41f2-934f-e105e86dd2b9",
           "98266ad2-0743-4d8c-bdae-ac5a4c02ab6e",
-          "464944c7-df6e-461a-abf2-dbf9b1723ce8",
           "6fcd7fd1-2c86-465a-b905-de88e34e77e8"
         ],
         "settings": {
