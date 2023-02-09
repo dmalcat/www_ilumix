@@ -2261,17 +2261,17 @@
           "bb9fac8d-7e9a-4e7a-8f12-8301f02d2fed": {
             "type": "slide",
             "settings": {
-              "slider_bg_img": "shopify:\/\/shop_images\/ilumix_carousel_2_1ac88ac6-f6b5-4c8d-a27d-44a008dfe6a0.jpg",
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_SUPERFICIE.jpg",
               "slider_sub_title": "Cena:",
-              "slider_sub_title_bold": "3.120 Kč",
-              "slider_sub_title_color": "#252525",
-              "slider_title1": "Závěsné",
-              "slider_title2": "Britta W",
+              "slider_sub_title_bold": "od 3.630 Kč",
+              "slider_sub_title_color": "#ee5e24",
+              "slider_title1": "Přisazené",
+              "slider_title2": "Superficie Arm",
               "slider_badge": "",
               "badge_color": "",
-              "slider_title_color": "#252525",
-              "slider_button": "DETAIL PRODUKTU",
-              "slider_button_url": "shopify:\/\/collections\/mordern-chair",
+              "slider_title_color": "#ee5e24",
+              "slider_button": "zobrazit produkt",
+              "slider_button_url": "shopify:\/\/products\/superficie-arm",
               "slider_content_position": "left",
               "slider_text_position": "left"
             }
