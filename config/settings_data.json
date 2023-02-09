@@ -2297,17 +2297,17 @@
           "ca134d30-d1e7-4b2a-ad45-dcf05dfc6023": {
             "type": "slide",
             "settings": {
-              "slider_bg_img": "shopify:\/\/shop_images\/ilumix_carousel_1_2b2975d9-53c9-4b5e-a97a-217d1d73d954.webp",
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_DEA.jpg",
               "slider_sub_title": "Cena:",
-              "slider_sub_title_bold": "2.500 Kč",
+              "slider_sub_title_bold": "5.445 Kč",
               "slider_sub_title_color": "#252525",
-              "slider_title1": "Stolní lampa",
-              "slider_title2": "Valan T",
-              "slider_badge": "Skladem",
+              "slider_title1": "3F svítidlo",
+              "slider_title2": "Dea Juno",
+              "slider_badge": "",
               "badge_color": "#7f9fae",
               "slider_title_color": "#252525",
-              "slider_button": "DETAIL PRODUKTU",
-              "slider_button_url": "shopify:\/\/products\/copy-of-copy-of-full-t-shirt",
+              "slider_button": "ZOBRAZIT PRODUKT",
+              "slider_button_url": "shopify:\/\/products\/dea-juno-s-cerna",
               "slider_content_position": "left",
               "slider_text_position": "left"
             }
