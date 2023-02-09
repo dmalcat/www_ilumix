@@ -878,11 +878,11 @@
             "type": "slider_cat",
             "settings": {
               "category_enable": true,
-              "slider_category_handle": "prisazena-interierova-svitidla",
+              "slider_category_handle": "stolni",
               "shop_button": "ZOBRAZIT",
               "sale_title": "",
               "sale_title_color": "#cb6b34",
-              "special_label_product": "frontpage"
+              "special_label_product": "stolni"
             }
           },
           "78bb2e62-2497-4487-bc5b-c7577f380d8d": {
