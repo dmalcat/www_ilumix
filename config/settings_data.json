@@ -2293,16 +2293,16 @@
           "b2b230de-9ce3-4dc2-a873-9fef9cb04aba": {
             "type": "slide",
             "settings": {
-              "slider_bg_img": "shopify:\/\/shop_images\/ilumix_eshop_carousel_3.jpg",
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_DEA.jpg",
               "slider_sub_title": "Special offer:",
-              "slider_sub_title_bold": "$99.00",
+              "slider_sub_title_bold": "5.445 Kč",
               "slider_sub_title_color": "#1d1d1d",
-              "slider_title1": "Lounge",
-              "slider_title2": "chair",
+              "slider_title1": "3F svítidlo",
+              "slider_title2": "Dea Juno",
               "slider_badge": "",
               "badge_color": "",
               "slider_title_color": "#1d1d1d",
-              "slider_button": "Discover now",
+              "slider_button": "Zobrazit produkt",
               "slider_button_url": "",
               "slider_content_position": "left",
               "slider_text_position": "left"
