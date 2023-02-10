@@ -71,7 +71,7 @@ $('.stickprcol-js').length && initStickPrLeft();
 
 
 $(document).ready(function() {
-  var addToCartButton = $('#')
+  var addToCartButton = $('#AddToCart');
 });
 
 /*--
