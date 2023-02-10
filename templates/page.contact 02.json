@@ -138,10 +138,20 @@
             "member_phone": "+420 773 900 590",
             "member_mail": "m.olah@ilumix.cz"
           }
+        },
+        "6de61e8a-e1c7-4924-a038-6c2387e21d02": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Richard Šimůnek",
+            "member_position": "Projektový manažer",
+            "member_phone": "+420 775 672 230",
+            "member_mail": "simunek@ilumix.cz"
+          }
         }
       },
       "block_order": [
-        "93bbdb45-2a2c-4231-9b69-8c3d848ad63a"
+        "93bbdb45-2a2c-4231-9b69-8c3d848ad63a",
+        "6de61e8a-e1c7-4924-a038-6c2387e21d02"
       ],
       "settings": {
         "section_padding_top": 100,
