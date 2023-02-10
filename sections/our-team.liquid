@@ -19,8 +19,11 @@
                             <div class="team-info">
                                 <h6>{{ block.settings.member_name }}</h6>
                                 <span>{{ block.settings.member_position }}</span>
-                                {% if block.settings.member_desc != '' %}
-                                <p>{{ block.settings.member_desc }}</p>
+                                {% if block.settings.member_phone != '' %}
+                                <a href="{{ block.settings.member_phone }}">{{ block.settings.member_phone }}</p>
+                                {% endif %}
+                                {% if block.settings.member_mail != '' %}
+                                <a href="{{ block.settings.member_phone }}">{{ block.settings.member_phone }}</p>
                                 {% endif %}
                             </div>
                         </li>
