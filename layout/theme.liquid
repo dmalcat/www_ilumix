@@ -23,6 +23,20 @@
     <link rel="preload" as="font" href="{{ other_font | font_url }}" type="font/woff2" crossorigin>
     <link rel="preload" as="font" href="{{ body_font_bold | font_url }}" type="font/woff2" crossorigin>
 
+    <!-- Foxentry start -->
+<script type="text/javascript" async>
+  var Foxentry;
+  (function () {
+    var e = document.querySelector("script"), s = document.createElement('script');
+    s.setAttribute('type', 'text/javascript');
+    s.setAttribute('async', 'true');
+    s.setAttribute('src', 'https://cdn.foxentry.cz/lib');
+    e.parentNode.appendChild(s);
+    s.onload = function(){ Foxentry = new FoxentryBase('bwZYwKv6VP'); }
+  })();
+</script>
+<!-- Foxentry end -->
+
     <link rel="canonical" href="{{ canonical_url }}">
     {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
