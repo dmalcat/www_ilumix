@@ -246,19 +246,6 @@
                     {% endfor %}
                 </div>
                 <div class="special-notes col-xl-7 col-lg-5 col-md-12 col-12">
-                    <div class="proceed-to-discount">
-                        <label>Máte slevový kód?</label>
-                        <form action="/cart" method="post">
-                            <input type="text" id="input-discount" name="discount" placeholder="{{ section.settings.cart_discount_placeholder_text }}">
-                        </form>
-                    </div>
-                    {%- if section.settings.cart_notes_enable -%}
-                    <div class="">
-                        <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
-                        <textarea name="note" id="CartSpecialInstructions" data-cart-notes>{{ cart.note }}</textarea>
-                    </div>
-                    {%- endif -%}
-                    
                     <div class="cart-additional-company">
                         <h6>Nakupujete na firmu? Zadejte prosím níže Vaše firemní údaje.</h6>
                         <div class="company-info">
@@ -276,6 +263,21 @@
                             </p>
                         </div>
                     </div>
+                    
+                    <div class="proceed-to-discount">
+                        <label>Máte slevový kód?</label>
+                        <form action="/cart" method="post">
+                            <input type="text" id="input-discount" name="discount" placeholder="{{ section.settings.cart_discount_placeholder_text }}">
+                        </form>
+                    </div>
+                    {%- if section.settings.cart_notes_enable -%}
+                    <div class="">
+                        <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
+                        <textarea name="note" id="CartSpecialInstructions" data-cart-notes>{{ cart.note }}</textarea>
+                    </div>
+                    {%- endif -%}
+                    
+                    
                     
                     <div class="cart-buttons">
                         <a href="/collections/all">{{ section.settings.continue_shopping_title }}</a>
