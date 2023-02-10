@@ -126,6 +126,31 @@
         "form_button_name": "Odeslat",
         "read_agree_text": "Souhlasím se zpracováním osobních údajů"
       }
+    },
+    "ea5f593d-e910-4744-ac79-7ce9c5de9fd9": {
+      "type": "our-team",
+      "blocks": {
+        "93bbdb45-2a2c-4231-9b69-8c3d848ad63a": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Michal Oláh",
+            "member_position": "Vedoucí projektů",
+            "member_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "93bbdb45-2a2c-4231-9b69-8c3d848ad63a"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "our_team_title": "Náš tým"
+      }
     }
   },
   "order": [
@@ -134,6 +159,7 @@
     "our-store2",
     "contact-banner",
     "contact-map2",
-    "626de182-dc50-4f58-8433-ddaf51ce2059"
+    "626de182-dc50-4f58-8433-ddaf51ce2059",
+    "ea5f593d-e910-4744-ac79-7ce9c5de9fd9"
   ]
 }
