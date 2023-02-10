@@ -69,15 +69,6 @@ function initStickPrLeft(){
 }
 $('.stickprcol-js').length && initStickPrLeft();
 
-
-$(document).ready(function() {
-  var addToCartButton = $('#AddToCart');
-
-  $(addToCartButton).click(function() {
-    //alert('přidáno');
-  });
-});
-
 /*--
 Mobile Menu
 ------------------------*/

@@ -49,8 +49,48 @@
       "content" : "Desktop / Laptop / tablet"
     },
     {
+      "type": "range",
+      "id": "best_quality_padding_top",  
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },           
+    {
+      "type": "range",
+      "id": "best_quality_padding_bottom", 
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
        "type" : "paragraph",
        "content" : "Mobile"
+    },
+    {
+       "type": "range",
+       "id": "best_quality_padding_top_xs",
+       "label": "Section Padding Top",
+       "min": 0,
+       "max": 100,
+       "step": 1,
+       "unit": "px",
+       "default": 40
+    },
+    {
+        "type": "range",
+        "id": "best_quality_padding_bottom_xs",
+        "label": "Section Padding Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 40
     },
     {
         "type": "header",
@@ -114,6 +154,16 @@
 }
 {% endschema %}
 <style>
+    .best-quality-area{
+        padding-top: {{ section.settings.best_quality_padding_top }}px;
+        padding-bottom: {{ section.settings.best_quality_padding_bottom }}px;
+    }
+    @media (max-width: 767px){
+        .best-quality-area{
+            padding-top: {{ section.settings.best_quality_padding_top_xs }}px;
+            padding-bottom: {{ section.settings.best_quality_padding_bottom_xs }}px;
+        }
+    }
     @media (max-width: 1359px) and (min-width: 1200px){
         .best-quality-col {
             flex: 0 0 100%;
@@ -125,12 +175,10 @@
         align-items: center;
     }
     .best-quality-cont .best-quality-desc{
-        padding: 0;
+        padding: 45px 45px;
         position: relative;
     }
     .best-quality-cont .best-quality-desc::before{
-        display: none;
-
         content: '';
         position: absolute;
         top: -15px;
@@ -153,10 +201,10 @@
         line-height: 1;
     }
     .best-quality-cont .best-quality-desc h2{
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 600;
-        line-height: 1.5;
-        margin-top: 0;
+        line-height: 1;
+        margin-top: 30px;
     }
     .best-quality-cont .best-quality-desc p{
         font-size: 16px;
@@ -239,8 +287,8 @@
             font-size: 14px;
         }
         .best-quality-cont .best-quality-desc h2{
-            font-size: 22px;
-            margin-top: 0;
+            font-size: 18px;
+            margin-top: 13px;
         }
         .best-quality-cont .best-quality-desc p{
             font-size: 14px;

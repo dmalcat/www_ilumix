@@ -30,7 +30,7 @@
           "settings": {
             "availability_title": "Dostupnost:",
             "in_stock_title": "Skladem",
-            "out_of_stock_title": "Skladem"
+            "out_of_stock_title": "Na centrálním skladě"
           }
         },
         "d2151862-b6be-4781-a6e9-b0743c4084c8": {
@@ -56,7 +56,7 @@
         "product_vendor_title": "Výrobce:",
         "product_cena": "Cena:",
         "social_share_title": "Sdílet:",
-        "velkoobchod": "<p>Jste z oboru? Zaregistrujte se do našeho <a href=\"\/pages\/velkoobchodni-program\" title=\"Velkoobchodní program\">velkoobchodního programu <\/a>a čerpejte veškeré výhody na maximum.<\/p>",
+        "velkoobchod": "<p>Jste z oboru? Zaregistrujte se do našeho <a href=\"\/pages\/b2b\" title=\"B2B\">velkoobchodního programu <\/a>a čerpejte veškeré výhody na maximum.<\/p>",
         "navod": "Návod k montáži:",
         "sheet": "Data sheet:",
         "download": "ke stažení",
