@@ -156,12 +156,22 @@
             "member_phone": "+420 602 120 666",
             "member_mail": "huml@ilumix.cz"
           }
+        },
+        "1d9d54d0-4130-4fa4-9553-c388d09e39ed": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Libor Jára",
+            "member_position": "Vedoucí pobočky KV",
+            "member_phone": "+420 773 900 507",
+            "member_mail": "info@ilumix.cz"
+          }
         }
       },
       "block_order": [
         "93bbdb45-2a2c-4231-9b69-8c3d848ad63a",
         "6de61e8a-e1c7-4924-a038-6c2387e21d02",
-        "9823b1b4-f916-4d96-8cf2-968c20d9db4e"
+        "9823b1b4-f916-4d96-8cf2-968c20d9db4e",
+        "1d9d54d0-4130-4fa4-9553-c388d09e39ed"
       ],
       "settings": {
         "section_padding_top": 100,
