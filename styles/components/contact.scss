@@ -1,15 +1,26 @@
+@import '../core/breakpoints';
+
 .contactPage {
     .contactPage__row {
         display: flex;
         margin-top: 4rem;
+        @include max768px {
+            flex-direction: column;
+        }
     }
 
     .contactPage__col--info {
         width: 40%;
+        @include max768px {
+            width: 100%;
+        }
     }
 
     .contactPage__col--map {
         width: 60%;
+        @include max768px {
+            width: 100%;
+        }
     }
 
     .contactPage__companyName {
@@ -66,16 +77,23 @@
         margin-top: 0;
     }
     
+    .info_wrap {
+        display: flex;
+        justify-content: center;
+        @include max768px {
+            flex-wrap: wrap !important;
+        }
+    }
+
     .info_wrapper {
         display: flex;
         text-align: center;
         justify-content: center;
         width: 33%;
-    }
-
-    .info_wrap {
-        display: flex;
-        justify-content: center;
+        @include max640px {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
     }
 
     .info-block {

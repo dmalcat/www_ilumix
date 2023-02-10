@@ -220,6 +220,10 @@
   ul.about-service-wrap li:nth-child(4){
     animation-delay: 0.4s; 
   }
+  ul.about-service-wrap li.about-service-wrapper {
+    margin-bottom: 1rem;
+  }
+
   ul.about-service-wrap li.about-service-wrapper .service-block { 
     width: 70%;
     margin: 0 auto;
@@ -265,8 +269,7 @@
   }
   @media (max-width: 1199px) {
     ul.about-service-wrap{
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       overflow-x: auto;
       scrollbar-width: thin;
       -webkit-scrollbar-width: thin;
@@ -295,6 +298,7 @@
   @media (max-width: 767px) {
     ul.about-service-wrap li.about-service-wrapper{
       min-width: 260px;
+      margin-bottom: 2rem;
     }
     ul.about-service-wrap li.about-service-wrapper .service-block h2{
       font-size: 40px;

@@ -1,9 +1,15 @@
+@import '../core/breakpoints';
+
 .about-section1 {
     .section-arrow {
         max-width: 500px;
         width: 100%;
         margin: 40px auto 0;
         font-size: 18px;
+        @include max640px {
+            font-size: 15px;
+            padding: 40px 20px 0;
+        }
     }
 }
 
@@ -16,6 +22,9 @@
         font-size: 40px;
         margin-bottom: 30px;
         font-weight: 600;
+        @include max640px {
+            font-size: 24px;
+        }
     }
 
     p {
@@ -30,13 +39,28 @@
         ul {
             display: flex;
             justify-content: space-between;
+            @include max768px {
+                flex-flow: row wrap;
+                justify-content: center;
+            }
         }
 
         li {
             width: 30%;
-            p {
-                
+            @include max768px {
+                width: 42.5%;
+                padding: 0 1.5rem;
             }
+
+            @include max480px {
+                width: 100%;
+            }
+        
         }
     }
 }
+
+.about-section4 {
+    overflow: hidden;
+}
+  
