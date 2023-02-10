@@ -147,11 +147,21 @@
             "member_phone": "+420 775 672 230",
             "member_mail": "simunek@ilumix.cz"
           }
+        },
+        "9823b1b4-f916-4d96-8cf2-968c20d9db4e": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Pavel Huml",
+            "member_position": "Projektový manažer",
+            "member_phone": "+420 602 120 666",
+            "member_mail": "huml@ilumix.cz"
+          }
         }
       },
       "block_order": [
         "93bbdb45-2a2c-4231-9b69-8c3d848ad63a",
-        "6de61e8a-e1c7-4924-a038-6c2387e21d02"
+        "6de61e8a-e1c7-4924-a038-6c2387e21d02",
+        "9823b1b4-f916-4d96-8cf2-968c20d9db4e"
       ],
       "settings": {
         "section_padding_top": 100,
