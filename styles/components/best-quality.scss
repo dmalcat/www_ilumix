@@ -1,0 +1,59 @@
+.best-quality-cont {
+    padding: 0 2rem;
+    @include max768px {
+        padding: 0;
+    }
+    
+    .best-quality-desc {
+        @include max768px {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        p {
+            @include max768px {
+               margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.best-quality-col {
+    @include max640px {
+        margin-bottom: 4rem;
+    }
+}
+
+.best-quality-area {
+    padding: 80px 0;
+    @include max640px {
+        padding: 0;
+    }
+
+    .best-quality-img {
+        @include max768px {
+            justify-content: center;
+        }
+
+        .img-fluid {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+}
+
+.best-quality-area--rtl {
+    .best-quality-cont {
+        padding-right: 6rem;
+        @include max768px {
+            order: 1;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
