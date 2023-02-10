@@ -1,1 +1,18 @@
-{"sections":{"404-template":{"type":"404-template","settings":{"section_title_bold":"Oops!","section_title":"Page not found!","section_img":"shopify:\/\/shop_images\/404.gif","section_des":"Sorry, But the page you are looking for does't exist!","home_button":"Home page","back_button":"Go back"}}},"order":["404-template"]}
+{
+  "sections": {
+    "404-template": {
+      "type": "404-template",
+      "settings": {
+        "section_title_bold": "Ups!",
+        "section_title": "Nedá se svítit, ale tento odkaz neexistuje.",
+        "section_img": "shopify:\/\/shop_images\/404.jpg",
+        "section_des": "Světlo vám přinesou odkazy níže.",
+        "home_button": "Hlavní stránka",
+        "back_button": "Jít zpět"
+      }
+    }
+  },
+  "order": [
+    "404-template"
+  ]
+}
