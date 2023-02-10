@@ -1,39 +1,36 @@
 <section class="about-section2">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="main-title">
-          {% if section.settings.section_title != '' %}
-          <h2>{{ section.settings.section_title }}</h2>
-          {% endif %}
-          {% if section.settings.section_desc != '' %}
-          <p>{{ section.settings.section_desc }}</p>
-          {% endif %}
+          <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+            <div class="main-title">
+              {% if section.settings.section_title != '' %}
+              <h3>{{ section.settings.section_title }}</h3>
+              {% endif %}
+              {% if section.settings.section_desc != '' %}
+              <p>{{ section.settings.section_desc }}</p>
+              {% endif %}
+              {% if section.settings.more_button != '' %}
+              <a href="{{ block.settings.more_button_url }}" class="btn btn-style7">
+                  {{ section.settings.more_button }}
+              </a>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+            <div class="list-content">
+              <ul>
+                {% for block in section.blocks %}
+                <li>
+                  <div class="list-block">
+                    <h6>{{ block.settings.list_title }}</h6>
+                    <p>{{ block.settings.list_desc }}</p>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="list-content">
-          <ul>
-            {% for block in section.blocks %}
-            <li>
-              <div class="list-block">
-                <h6>{{ block.settings.list_title }}</h6>
-                <p>{{ block.settings.list_desc }}</p>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row row--button">
-      {% if section.settings.more_button != '' %}
-        <a href="{{ block.settings.more_button_url }}" class="btn btn-style3">
-            <span>{{ section.settings.more_button }}</span>
-            <i class="fa fa-long-arrow-right"></i>
-        </a>
-      {% endif %}
-    </div>
   </div>
 </section>
 {% schema %}
@@ -193,7 +190,7 @@
 
   /*section title*/
   .about-section2 .main-title {
-    width: 100%;
+    width: 85%;
   }
   .about-section2 .main-title h3{
     font-size: 40px;
@@ -234,6 +231,17 @@
     }
   }
   /*section content*/
+  .about-section2 .list-content ul li {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .about-section2 .list-content ul li:first-child {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .about-section2 .list-content ul li .list-block{
+    width: 55%;
+  }
   .about-section2 .list-content ul li h6{
     font-size: 20px;
     font-weight: 500;
@@ -270,18 +278,4 @@
       margin-top: 20px;
     }
   }
-
-  /* section button */
-  .about-section2 .btn span {
-    margin-right: 10px;
-  }
-
-  .about-section2 .btn:hover i{
-    -webkit-transform: translateX(5px);
-    -o-transform: translateX(5px);
-    transform: translateX(5px);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
 </style>

@@ -16,7 +16,6 @@
     },
     "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb": {
       "type": "terms-conditions2",
-      "disabled": true,
       "settings": {
         "section_padding_top": 100,
         "section_padding_bottom": 100,
@@ -43,7 +42,7 @@
             "service_svg_icon": "",
             "service_icon": "icon-trophy",
             "service_title": "Dodání rychlostí světla",
-            "service_desc": "Objednávky do 13:00 odesíláme ještě tentýž den."
+            "service_desc": "Objednávky do 13:00, odesíláme ještě tentýž den."
           }
         },
         "9c29c3fe-64d4-47bd-9716-b2c529b34e44": {
@@ -89,26 +88,11 @@
         "section_padding_bottom_xs": 40
       }
     },
-    "fc669c50-e9e3-4175-bdab-40cfe20818c3": {
-      "type": "beat-quality",
-      "settings": {
-        "best_quality_img": "shopify:\/\/shop_images\/11.jpg",
-        "sub_title": "",
-        "sub_title_color": "#171717",
-        "title": "Kvalita, design  a funkčnost",
-        "title_color": "#000000",
-        "best_desc": "Naše hlavní kritéria při výběru i výrobě svítidel. Chceme rozsvitit české domácnosti kvalitním evropským designem. Za přijatelné ceny.",
-        "button_text": "Více o ILUMIX light",
-        "button_url": "shopify:\/\/pages\/b2b"
-      }
-    },
     "1bd8c7fc-0226-45ef-be41-a6a5414db132": {
       "type": "about-modern-template5",
-      "disabled": true,
       "blocks": {
         "17818822-55db-4159-8211-b2fe22597318": {
           "type": "counter",
-          "disabled": true,
           "settings": {
             "list_counter": "10+",
             "counter_list_title": "evropských výrobců"
@@ -116,7 +100,6 @@
         },
         "d6994558-0b92-434b-97e3-56647637fa4e": {
           "type": "counter",
-          "disabled": true,
           "settings": {
             "list_counter": "1000+",
             "counter_list_title": "svítidel skladem"
@@ -124,7 +107,6 @@
         },
         "e0b7760d-26cd-46b6-8ca8-f412c32b2338": {
           "type": "counter",
-          "disabled": true,
           "settings": {
             "list_counter": "1000+",
             "counter_list_title": "zrealizovaných projektů"
@@ -151,31 +133,18 @@
         "about_banner": "shopify:\/\/shop_images\/vime.jpg"
       }
     },
-    "ec0c0445-f222-402d-ae7f-063ec6754f6c": {
-      "type": "best-quality-right",
+    "fc669c50-e9e3-4175-bdab-40cfe20818c3": {
+      "type": "beat-quality",
       "settings": {
         "best_quality_padding_top": 60,
         "best_quality_padding_bottom": 60,
         "best_quality_padding_top_xs": 40,
         "best_quality_padding_bottom_xs": 40,
-        "best_quality_img": "shopify:\/\/shop_images\/vime-new.jpg",
-        "sub_title": "",
-        "sub_title_color": "#171717",
-        "title": "Víme, co prodáváme",
-        "title_color": "#171717",
-        "best_desc": "Tak jako si hlídáme kvalitu našich světel, věnujeme pozornost také kvalitě našich služeb. Rádi poradíme s výběrem, doporučíme správný stupeň chromatičnosti nebo spočítáme správnou intenzitu osvětlení.",
-        "button_text": "Posviťte si na naše produkty",
-        "button_url": "shopify:\/\/collections"
-      }
-    },
-    "a0675b43-1602-435f-a19d-dafbbe8cea87": {
-      "type": "beat-quality",
-      "settings": {
-        "best_quality_img": "shopify:\/\/shop_images\/b2b-new.jpg",
+        "best_quality_img": "shopify:\/\/shop_images\/b2b.jpg",
         "sub_title": "B2B partnerský program",
         "sub_title_color": "#171717",
         "title": "Spolupráce",
-        "title_color": "#000000",
+        "title_color": "#bf8c4c",
         "best_desc": "Našim partnerům poskytujeme vzorky a katalogy, připravujeme vizualizace i dokumentaci. U větších projektů nabízíme cenové zvýhodnění.",
         "button_text": "VÝHODY B2B SPOLUPRÁCE",
         "button_url": "shopify:\/\/pages\/b2b"
@@ -234,15 +203,15 @@
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40,
         "contact_drop_title": "Ozvěte se nám",
-        "info_icon1": "<svg class=\"contactPage__icon\" viewbox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"1\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"><\/path><\/svg>",
-        "info_title1": "Telefonicky",
-        "info_link1": "+420 773 335 535",
-        "info_icon2": "<svg class=\"contactPage__icon\" viewbox=\"0 0 24 24\" width=\"24\" height=\"24\" stroke=\"currentColor\" stroke-width=\"1\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"><\/path><polyline points=\"22,6 12,13 2,6\"><\/polyline><\/svg>",
-        "info_title2": "E-mailem",
-        "info_link2": "info@360design.cz",
-        "info_icon3": "<svg version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"42.4px\" height=\"33.8px\" viewbox=\"0 0 42.4 33.8\" style=\"enable-background:new 0 0 42.4 33.8;\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\">\n<defs>\n<\/defs>\n<path d=\"M24.2,0c4.9,0,9.4,1.4,12.7,3.7c3.4,2.4,5.5,5.7,5.5,9.4c0,1.9-0.6,3.7-1.6,5.4c-0.9,1.5-2.2,2.8-3.8,4l2,7.1\n\tc0.1,0.5-0.1,1-0.7,1.2c-0.3,0.1-0.6,0-0.8-0.1L29,25.8c-0.7,0.1-1.5,0.2-2.2,0.3c-0.9,0.1-1.8,0.1-2.6,0.1c-5,0-9.5-1.4-12.8-3.7\n\tC8.1,20.2,6,16.8,6,13.1c0-3.7,2.1-7,5.5-9.4C14.7,1.4,19.2,0,24.2,0L24.2,0z M5.3,9.3C3.2,11.2,2,13.5,2,16c0,1.6,0.5,3,1.3,4.4\n\tc0.9,1.4,2.2,2.7,3.8,3.7c0.4,0.3,0.6,0.7,0.4,1.1L6,30.7l6.7-3.9c0.2-0.1,0.5-0.1,0.7-0.1c0.8,0.1,1.5,0.3,2.3,0.4\n\tc0.8,0,1.6,0.1,2.4,0.1c0.4,0,0.8,0,1.1,0c1.7,0.3,3.4,0.4,5.1,0.4c0.2,0,0.4,0.1,0.4,0.3c0,0.2-0.1,0.4-0.3,0.5\n\tc-1.9,0.5-4.1,0.8-6.3,0.8c-0.9,0-1.8,0-2.6-0.1c-0.8-0.1-1.5-0.2-2.2-0.3l-8.5,4.9c-0.2,0.1-0.5,0.2-0.8,0.1\n\tc-0.5-0.1-0.8-0.7-0.7-1.2l2-7.1c-1.6-1.1-2.9-2.5-3.8-3.9C0.6,19.8,0,18,0,16c0-3.7,2.1-7,5.5-9.4C6.9,6.4,6.4,8.6,5.3,9.3L5.3,9.3\n\tz M35.8,5.4c-2.9-2.1-7-3.4-11.6-3.4s-8.7,1.3-11.6,3.4c-2.8,2-4.7,4.7-4.7,7.8c0,3,1.8,5.8,4.7,7.8c2.9,2.1,7.1,3.4,11.6,3.4\n\tc0.8,0,1.6,0,2.4-0.1c0.8-0.1,1.6-0.2,2.3-0.4c0.2,0,0.5,0,0.7,0.1l6.8,3.9l-1.6-5.5c-0.1-0.4,0-0.8,0.4-1c1.6-1.1,2.9-2.4,3.8-3.8\n\tc0.8-1.3,1.3-2.8,1.3-4.4C40.4,10.1,38.7,7.4,35.8,5.4L35.8,5.4z\"><\/path>\n<\/svg>",
-        "info_title3": "Nechte nám zprávu",
-        "info_link3": "Kontaktní formulář"
+        "info_icon1": "",
+        "info_title1": "+420 773 335 535",
+        "info_link1": "Zavolejte nám",
+        "info_icon2": "",
+        "info_title2": "info@360design.cz",
+        "info_link2": "Napište nám",
+        "info_icon3": "",
+        "info_title3": "Kontaktní formulář",
+        "info_link3": "Nechte nám zprávu"
       }
     },
     "our-team": {
@@ -253,26 +222,23 @@
           "settings": {
             "member_name": "David Helebrant",
             "member_position": "B2B program",
-            "member_phone": "+420 774 109 102",
-            "member_mail": "helebrant@ilumix.cz"
+            "member_desc": "b2b@360design.cz | +420 773 335 535"
           }
         },
         "830aba81-79e5-440b-8dd9-9184d267a1e2": {
           "type": "our-vision",
           "settings": {
             "member_name": "Martin Jaroš",
-            "member_position": "Objednávky",
-            "member_phone": "",
-            "member_mail": "jaros@ilumix.cz"
+            "member_position": "objednávky",
+            "member_desc": "eshop@360design.cz | +420 773 900 590"
           }
         },
         "697bb707-8daf-46af-9843-1becd3093e49": {
           "type": "our-vision",
           "settings": {
             "member_name": "Libor jára",
-            "member_position": "Showroom",
-            "member_phone": "+420 773 900 507",
-            "member_mail": "info@ilumix.cz"
+            "member_position": "showroom",
+            "member_desc": "info@360design.cz | +420 773 900 507"
           }
         }
       },
@@ -343,10 +309,8 @@
     "about-template1",
     "6207130e-7bb1-4c5c-a4a3-b8fed29db9eb",
     "about-template3",
-    "fc669c50-e9e3-4175-bdab-40cfe20818c3",
     "1bd8c7fc-0226-45ef-be41-a6a5414db132",
-    "ec0c0445-f222-402d-ae7f-063ec6754f6c",
-    "a0675b43-1602-435f-a19d-dafbbe8cea87",
+    "fc669c50-e9e3-4175-bdab-40cfe20818c3",
     "about-template2",
     "08ed1a96-0ab8-48b2-98b0-1720241ec3ee",
     "our-team",
