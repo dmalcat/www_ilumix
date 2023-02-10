@@ -69,6 +69,11 @@ function initStickPrLeft(){
 }
 $('.stickprcol-js').length && initStickPrLeft();
 
+
+$(document).ready(function() {
+  
+});
+
 /*--
 Mobile Menu
 ------------------------*/
