@@ -19,8 +19,11 @@
                             <div class="team-info">
                                 <h6>{{ block.settings.member_name }}</h6>
                                 <span>{{ block.settings.member_position }}</span>
-                                {% if block.settings.member_desc != '' %}
-                                <p>{{ block.settings.member_desc }}</p>
+                                {% if block.settings.member_phone != '' %}
+                                <a class="team-info__link" href="tel:{{ block.settings.member_phone }}">{{ block.settings.member_phone }}</a>
+                                {% endif %}
+                                {% if block.settings.member_mail != '' %}
+                                <a class="team-info__link" href="mailto:{{ block.settings.member_mail }}">{{ block.settings.member_mail }}</a>
                                 {% endif %}
                             </div>
                         </li>
@@ -126,7 +129,6 @@
         {
             "type": "our-vision",
             "name": "Our Vision",
-            "limit": 3,
             "settings": [
             {
                 "type": "image_picker",
@@ -148,8 +150,13 @@
             },
             {
                 "type": "text",
-                "id": "member_desc",
-                "label": "About Team Member Information"
+                "id": "member_phone",
+                "label": "About Team Member Phone"
+            },
+            {
+                "type": "text",
+                "id": "member_mail",
+                "label": "About Team Member Mail"
             }
             ]
         }
@@ -187,8 +194,9 @@
     }
     .about-team .main-title h2{
         font-size: 40px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1;
+        margin-bottom: 50px;
     }
     @media(max-width: 1199px){
         .about-team .main-title h2{
@@ -238,11 +246,20 @@
     }
     .our-team ul.team-wrap li.team-content .team-info span{
         display: block;
-        margin-top: 5px;
+        margin: 5px 0;
         font-size: 18px;
     }
     .our-team ul.team-wrap li.team-content .team-info p{
         margin-top: 16px;
+    }
+
+    .team-info__link {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .team-info__link:hover {
+        text-decoration: underline;
     }
 
     @media (max-width: 991px) {
@@ -272,7 +289,5 @@
             margin-left: 15px;
             {%- endif -%}
         }
-
-
     }
 </style>

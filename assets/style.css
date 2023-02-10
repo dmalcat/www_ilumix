@@ -550,7 +550,7 @@ sidesection title css
 section title css
 ======================================*/
 .section-capture{
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 .section-title{
   text-align: center;
@@ -558,7 +558,7 @@ section title css
 .section-title h2 {
   font-size: 40px;
   font-weight: 600;
-  margin-top: 20px;
+  margin: 20px 0 40px;
   line-height: 1;
 }
 .section-title > span{
@@ -1623,7 +1623,7 @@ single product gride list
 /* product content css */
 @media(min-width:768px){
   .product-content h6{
-    font-size: 14px;
+    font-size: 13px;
     max-width: 75%;
   }
 }

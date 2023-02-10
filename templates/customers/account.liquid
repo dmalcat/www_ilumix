@@ -13,7 +13,6 @@
                 <h6>{{ 'customer.account.title' | t }}</h6>
                 <span class="acc-info-link">
                   <a href="/pages/wishlist">Seznam přání(<span class="wishlist-counter">{{ wishlist.count }}</span>)</a>
-                  <a href="/account/addresses">{{ 'customer.account.view_addresses' | t }}<span class="address-counter">({{ customer.addresses_count }})</span></a>
                   <a href="/account/logout">Odhlásit se</a>
                 </span>
               </div>
@@ -28,6 +27,8 @@
                 {% endcomment %}
 
                 {% if customer.default_address != ""  %}
+
+                <span>{{ customer.default_address.company }}</span>
                 <span>{{ customer.default_address.address1 }}</span>
 
                 {% if customer.default_address.address2 != "" %}
@@ -55,6 +56,8 @@
                 {% endif %}
 
                 {% endif %}
+
+                <a href="/account/addresses" class="btn btn-small btn-style3">Upravit údaje</a>
 
               </div>
             </li>

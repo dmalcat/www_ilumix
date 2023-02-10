@@ -23,24 +23,25 @@
     <link rel="preload" as="font" href="{{ other_font | font_url }}" type="font/woff2" crossorigin>
     <link rel="preload" as="font" href="{{ body_font_bold | font_url }}" type="font/woff2" crossorigin>
 
+    <!-- Foxentry start -->
+<script type="text/javascript" async>
+  var Foxentry;
+  (function () {
+    var e = document.querySelector("script"), s = document.createElement('script');
+    s.setAttribute('type', 'text/javascript');
+    s.setAttribute('async', 'true');
+    s.setAttribute('src', 'https://cdn.foxentry.cz/lib');
+    e.parentNode.appendChild(s);
+    s.onload = function(){ Foxentry = new FoxentryBase('bwZYwKv6VP'); }
+  })();
+</script>
+<!-- Foxentry end -->
+
     <link rel="canonical" href="{{ canonical_url }}">
     {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
     {%- endif -%}
-      <!-- Foxentry start -->
-      <script type="text/javascript" async>
-        var Foxentry;
-        (function () {
-        var e = document.querySelector("script"), s = document.createElement('script');
-        s.setAttribute('type', 'text/javascript');
-        s.setAttribute('async', 'true');
-        s.setAttribute('src', 'https://cdn.foxentry.cz/lib');
-        e.parentNode.appendChild(s);
-        s.onload = function(){ Foxentry = new FoxentryBase('bwZYwKv6VP'); }
-        })();
-        </script>
-        <!-- Foxentry end -->
-        <script>
+      <script>
 
           const input = document.getElementById('search');
           
@@ -78,7 +79,7 @@
     <!-- CSS -->
     {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
     {%- include 'header-css' -%}
-    
+
     <style>*,::after,::before{box-sizing:border-box}body{font-family: var(--font-stack-body);font-weight: var(--font-weight-body);font-style: var(--font-style-body);}h1,h2,h3,h4,h5,h6{font-family: var(--font-stack-header);font-weight: var(--font-weight-header);font-style: var(--font-style-header);}
       {{ header_font | font_face: font_display: 'swap' }}
       {{ section_header_font | font_face: font_display: 'swap' }}
@@ -119,6 +120,4 @@
     {% include 'back-to-top' %}
   <!-- Necessary JS -->
     {% include 'footer-js' %}
-
-{% if content_for_header contains 'bss-b2b-cp' %}{% include 'bss-b2b-jquery-341-js' %}{% include 'bss-b2b-js' %}{% endif %}</body>
 </html>
