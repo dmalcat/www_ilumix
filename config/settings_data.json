@@ -2275,17 +2275,17 @@
           "ca134d30-d1e7-4b2a-ad45-dcf05dfc6023": {
             "type": "slide",
             "settings": {
-              "slider_bg_img": "shopify:\/\/shop_images\/ilumix_carousel_1_2b2975d9-53c9-4b5e-a97a-217d1d73d954.webp",
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_BUCKET.jpg",
               "slider_sub_title": "Cena:",
-              "slider_sub_title_bold": "2.500 Kč",
+              "slider_sub_title_bold": "od 4.991 Kč",
               "slider_sub_title_color": "#252525",
-              "slider_title1": "Stolní lampa",
-              "slider_title2": "Valan T",
+              "slider_title1": "Exteriérová svítidla",
+              "slider_title2": "Bucket",
               "slider_badge": "Skladem",
               "badge_color": "#7f9fae",
               "slider_title_color": "#252525",
-              "slider_button": "DETAIL PRODUKTU",
-              "slider_button_url": "shopify:\/\/products\/copy-of-copy-of-full-t-shirt",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "https:\/\/360design.cz\/search?type=product&options%5Bunavailable_products%5D=show&options%5Bprefix%5D=last&q=bucket",
               "slider_content_position": "left",
               "slider_text_position": "left"
             }
