@@ -905,6 +905,7 @@
           },
           "0a43c2dc-afa7-41f2-934f-e105e86dd2b9": {
             "type": "slider_cat",
+            "disabled": true,
             "settings": {
               "category_enable": true,
               "slider_category_handle": "exterierova-svitidla",
@@ -916,6 +917,7 @@
           },
           "98266ad2-0743-4d8c-bdae-ac5a4c02ab6e": {
             "type": "slider_cat",
+            "disabled": true,
             "settings": {
               "category_enable": true,
               "slider_category_handle": "sloupkova-exterierova-svitidla",
@@ -927,6 +929,7 @@
           },
           "6fcd7fd1-2c86-465a-b905-de88e34e77e8": {
             "type": "slider_cat",
+            "disabled": true,
             "settings": {
               "category_enable": true,
               "slider_category_handle": "exterierova-svitidla",
