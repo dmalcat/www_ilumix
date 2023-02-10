@@ -253,23 +253,26 @@
           "settings": {
             "member_name": "David Helebrant",
             "member_position": "B2B program",
-            "member_desc": "b2b@360design.cz | +420 773 335 535"
+            "member_phone": "+420 774 109 102",
+            "member_mail": "helebrant@ilumix.cz"
           }
         },
         "830aba81-79e5-440b-8dd9-9184d267a1e2": {
           "type": "our-vision",
           "settings": {
             "member_name": "Martin Jaroš",
-            "member_position": "objednávky",
-            "member_desc": "eshop@360design.cz | +420 773 900 590"
+            "member_position": "Objednávky",
+            "member_phone": "",
+            "member_mail": "jaros@ilumix.cz"
           }
         },
         "697bb707-8daf-46af-9843-1becd3093e49": {
           "type": "our-vision",
           "settings": {
             "member_name": "Libor jára",
-            "member_position": "showroom",
-            "member_desc": "info@360design.cz | +420 773 900 507"
+            "member_position": "Showroom",
+            "member_phone": "+420 773 900 507",
+            "member_mail": "info@ilumix.cz"
           }
         }
       },
