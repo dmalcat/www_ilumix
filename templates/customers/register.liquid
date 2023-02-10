@@ -6,7 +6,7 @@
           <div class="log-acc-page">
             <div class="acc-page">
               <div class="registers">
-                {% form 'create_customer' %}
+                {% form 'create_customer', return_to: routes.account_addresses_url %}
                 <div class="login-form-container">
                   <div class="title-text">
                     <h2>{{ 'customer.register.title' | t }}</h2>
@@ -29,18 +29,6 @@
                     <li class="log-email">
                       <input bss-b2b-is-email-field type="email" name="customer[email]" id="Email" class="input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.register.email' | t }}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off" required>
                       <i class="feather-mail"></i>
-                    </li>
-                    <li>
-                      <input type="text" id="BusinessName" name="customer[note][Název firmy]" placeholder="Název firmy" class="input-full">
-                    </li>
-                    <li>
-                      <input type="text" id="BusinessAddress" name="customer[note][Adresa firmy]" placeholder="Adresa firmy" class="input-full">
-                    </li>
-                    <li>
-                      <input type="text" id="ICO" name="customer[note][IČO]" placeholder="IČO" class="input-full">
-                    </li>
-                    <li>
-                      <input type="text" id="DIC" name="customer[note][DIČ]" placeholder="DIČ" class="input-full">
                     </li>
                     <li class="log-pwd">
                       <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}" required>
@@ -67,7 +55,26 @@
     </div>
   </div>
 </section>
+
+<script>
+  function showCompanyAddress() {
+    var companyAddress = document.getElementById("form-companyAddress-checkbox");
+    var companyAddressGroup = document.getElementById("company-address");
+
+    if (companyAddress.checked) {
+      companyAddressGroup.style.display = "block";
+    } else {
+      companyAddressGroup.style.display = "none";
+    }
+
+  }
+</script>
+
 <style>
+  .fill-form--companyAddress {
+    display: none;
+  }
+
   .breadcrumb-area{
     display:none;
   }
@@ -231,4 +238,4 @@
   .customer-page .log-acc-page .errors ul li:first-child{
     margin-top: 0px;
   }
-</style>{% include 'bss-b2b-wholesaler-default-login-form' %}
+</style>

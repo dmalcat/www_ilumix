@@ -1,16 +1,18 @@
 <section class="contact-store-information">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
-			<div class="col-xl-10 col-center">
-			    <div class="row">
-			    	<div class="col-xl-3 col-lg-3 col-md-3">
-			    		<div class="contact-store-title wow animate__fadeIn">
-					        {% if section.settings.contact_drop_title != '' %}
-					        <h6>{{ section.settings.contact_drop_title }}</h6>
-					        {% endif %}
-					    </div>
-			    	</div>
-			    	<div class="col-xl-9 col-lg-9 col-md-9 info-list-col">
+			<div class="col-xl-12 col-center">
+			    
+          <div class="row">
+			    	<div class="contact-store-title wow animate__fadeIn">
+                {% if section.settings.contact_drop_title != '' %}
+                <h2>{{ section.settings.contact_drop_title }}</h6>
+                {% endif %}
+            </div>
+			    </div>
+
+          <div class="row">
+			    	<div class="col-xl-12 info-list-col">
 			    		<div class="info-list">
 			    			<ul class="info_wrap">
 			    				<li class="info_wrapper wow animate__fadeIn">
@@ -20,7 +22,7 @@
 			    						</div>
 			    						<div class="text-block">
 		    								<h6>{{ section.settings.info_title1 }}</h6>
-		    								<p>{{ section.settings.info_link1 }}</p>
+		    								<a href="tel:{{ section.settings.info_link1 }}">{{ section.settings.info_link1 }}</a>
 			    						</div>
 			    					</div>
 			    				</li>
@@ -31,7 +33,7 @@
 			    						</div>
 			    						<div class="text-block">
 		    								<h6>{{ section.settings.info_title2 }}</h6>
-		    								<p>{{ section.settings.info_link2 }}</p>
+		    								<a href="mailto:{{ section.settings.info_link2 }}">{{ section.settings.info_link2 }}</a>
 			    						</div>
 			    					</div>
 			    				</li>
@@ -42,7 +44,7 @@
 			    						</div>
 			    						<div class="text-block">
 		    								<h6>{{ section.settings.info_title3 }}</h6>
-		    								<p>{{ section.settings.info_link3 }}</p>
+		    								<a href="">{{ section.settings.info_link3 }}</a>
 			    						</div>
 			    					</div>
 			    				</li>
@@ -229,10 +231,13 @@
     }
 
     /*section title*/
-    .contact-store-title h6{
-		font-size: 36px;
-		font-weight: 500;
+    .contact-store-title h2 {
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 50px
     }
+    
     @media(max-width: 1199px){
     	.contact-store-title h6{
 			font-size: 26px;
@@ -242,6 +247,10 @@
     	.contact-store-title{
     		text-align: center;
     	}
+      .contact-store-title h2 {
+        font-size: 24px;
+      }
+
     	.contact-store-title h6{
 			font-size: 20px;
     	}
@@ -267,10 +276,6 @@
     .info-list ul.info_wrap::-webkit-scrollbar{
     	height: 1px;
     }
-    .info-list ul.info_wrap li.info_wrapper{
-    	width: 33.33%;
-	    min-width: 330px;
-    }
     .info-list ul.info_wrap li.info_wrapper:nth-child(2){
       animation-delay: 0.2s;
     }
@@ -281,13 +286,6 @@
     	display: flex;
     	align-items: center;
     }
-    .info-list ul li .info-block .text-block {
-      {% if settings.enable_rtl %}
-      margin-right: 30px;
-      {% else %}
-      margin-left: 30px;
-      {% endif %}
-    }
     .info-list ul li .info-block .icon svg{
     	width: 38px;
     	height: 38px;
@@ -295,13 +293,22 @@
     }
     .info-list ul li .info-block .text-block h6{
     	font-size: 20px;
+      margin-bottom: 10px;
     }
-    .info-list ul li .info-block .text-block p{
+    .info-list ul li .info-block .text-block a{
     	font-size: 16px;
     	padding-top: 3px;
     	display: inline-block;
     	border-bottom: 2px solid #c5c5c5;
+      color: #6f6f6f;
     }
+
+    .info-list ul li .info-block .text-block a:hover{
+    	border-bottom: 2px solid #6f6f6f;
+      color: #232323;
+      transition: all 300ms ease-in-out;
+    }
+
     @media(max-width: 1199px){
     	.info-list ul li .info-block .text-block h6{
 	    	font-size: 18px;

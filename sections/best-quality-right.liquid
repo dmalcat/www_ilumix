@@ -1,13 +1,8 @@
-<section class="best-quality-area">
+<section class="best-quality-area best-quality-area--rtl">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-8 col-lg-12 col-md-12 col-12 best-quality-col col-center">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-5 col-12 best-quality-img">
-                        <a href="javascript:void(0)">
-                            <img class="lazyload img-fluid" src="{% if section.settings.best_quality_img %}{{ section.settings.best_quality_img | img_url: 'master' }}{% else %}https://dummyimage.com/711x546/f7f7f7/999999{% endif %}');">
-                        </a>
-                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-7 col-12 best-quality-cont">
                         <div class="best-quality-desc">
                             {% if section.settings.sub_title != '' %}
@@ -30,6 +25,11 @@
 
                         </div>
                     </div>
+                    <div class="col-xl-6 col-lg-6 col-md-5 col-12 best-quality-img">
+                        <a href="javascript:void(0)">
+                            <img class="lazyload img-fluid" src="{% if section.settings.best_quality_img %}{{ section.settings.best_quality_img | img_url: 'master' }}{% else %}https://dummyimage.com/711x546/f7f7f7/999999{% endif %}');">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
 
 {% schema %}
 {
-    "name": "Best Quality Product",
+    "name": "Best Quality RTL",
     "settings": [
     {
       "type": "header",
@@ -49,8 +49,48 @@
       "content" : "Desktop / Laptop / tablet"
     },
     {
+      "type": "range",
+      "id": "best_quality_padding_top",  
+      "label": "Section Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },           
+    {
+      "type": "range",
+      "id": "best_quality_padding_bottom", 
+      "label": "Section Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 60
+    },
+    {
        "type" : "paragraph",
        "content" : "Mobile"
+    },
+    {
+       "type": "range",
+       "id": "best_quality_padding_top_xs",
+       "label": "Section Padding Top",
+       "min": 0,
+       "max": 100,
+       "step": 1,
+       "unit": "px",
+       "default": 40
+    },
+    {
+        "type": "range",
+        "id": "best_quality_padding_bottom_xs",
+        "label": "Section Padding Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 40
     },
     {
         "type": "header",
@@ -107,8 +147,8 @@
     ],
     "presets":[
     {
-        "name": "Best Quality",
-        "category": "best quality"
+        "name": "Best Quality RTL",
+        "category": "best quality rtl"
     }
     ]
 }
@@ -156,7 +196,7 @@
         font-size: 40px;
         font-weight: 600;
         line-height: 1.5;
-        margin-top: 0;
+        margin-top: 30px;
     }
     .best-quality-cont .best-quality-desc p{
         font-size: 16px;
@@ -239,8 +279,8 @@
             font-size: 14px;
         }
         .best-quality-cont .best-quality-desc h2{
-            font-size: 22px;
-            margin-top: 0;
+            font-size: 18px;
+            margin-top: 13px;
         }
         .best-quality-cont .best-quality-desc p{
             font-size: 14px;
