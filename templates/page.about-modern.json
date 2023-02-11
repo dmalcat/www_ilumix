@@ -62,6 +62,7 @@
     "309a85dd-bc30-4375-96b7-16d1ef20f8c5": {
       "type": "beat-quality",
       "settings": {
+        "best_quality_img": "shopify:\/\/shop_images\/B2B_1.jpg",
         "sub_title": "",
         "sub_title_color": "#171717",
         "title": "S čím vám pomůžeme?",
@@ -78,6 +79,7 @@
         "best_quality_padding_bottom": 60,
         "best_quality_padding_top_xs": 40,
         "best_quality_padding_bottom_xs": 40,
+        "best_quality_img": "shopify:\/\/shop_images\/B2B_2.jpg",
         "sub_title": "",
         "sub_title_color": "#171717",
         "title": "Co umíme?",
