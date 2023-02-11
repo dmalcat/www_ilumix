@@ -346,19 +346,7 @@ li.bss-qi-text-warning::before {
     visibility: hidden;
 }
 .bss-b2b-vat-input-wrapper {
-    min-height: 35px;
     display: flex;
-    width: 300px;
-    box-shadow: unset !important;
-}
-.bss-b2b-vat-selected{
-    box-shadow: unset;
-    outline: none;
-}
-.bss-b2b-vat-input{
-    width: 100%;
-    outline: none;
-    box-shadow: unset;
 }
 .bss-custom-modal-container {
     position: fixed;
@@ -407,6 +395,7 @@ li.bss-qi-text-warning::before {
 	          BSS_B2B.cpSettings = null;
 	          BSS_B2B.currentPlan = "false";
 	          BSS_B2B.planCode = "null";
+	          BSS_B2B.isAllowFree = true;
 	          BSS_B2B.customPricingSettings = null;
 	          BSS_B2B.qbRules = null;
 	          BSS_B2B.qbTranslations = null;
@@ -446,7 +435,7 @@ li.bss-qi-text-warning::before {
 	          var bssB2BVatExemptSelectedOriginal = null;
 	          var bssB2BVatExemptSelected = null;
 	        </script>
-	        <style type="text/css">.bss-b2b-tax-ex-wrapper, .bss-b2b-product-vat, .bss-b2b-discount-code-wrapper {display: none !important}</style>
+	        
 			<script id="bss-b2b-wholesaler-form-default">
                  BSS_B2B.formDataRenderDefault = null;
                  BSS_B2B.formIdDef = null;
