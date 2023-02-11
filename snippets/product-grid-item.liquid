@@ -11,11 +11,6 @@
 {%- assign func = "Shopify.addItem(" | append: variant.id | append: ", 1)" -%}
 {%- endif -%}
 
-<h6 class="product-colection">{{ collection.title }}</h6>
-{% if section.settings.section_sub_title %}
-<h6 class="product-colection">{{ section.settings.section_sub_title }}</h6>
-{% endif %}
-
 <div class="single-product-wrap {% unless product.available %}stock-out{% endunless %}">
     {% for t in product.tags %}
 {% if t contains 'novinka' %}     
