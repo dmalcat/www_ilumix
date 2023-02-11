@@ -380,8 +380,8 @@
           "header_main_menu_title": "Menu",
           "header_vega_menu": "",
           "header_vega_menu_title": "Top Categories",
-          "product_1": "selene",
-          "product_2": "table-lamp-nell"
+          "product_1": "dirk-s-zlate",
+          "product_2": "lua"
         }
       },
       "collection-template": {
@@ -874,11 +874,22 @@
             "type": "slider_cat",
             "settings": {
               "category_enable": true,
-              "slider_category_handle": "prisazena-interierova-svitidla",
+              "slider_category_handle": "stolni",
               "shop_button": "ZOBRAZIT",
-              "sale_title": "Sleva",
+              "sale_title": "",
               "sale_title_color": "#cb6b34",
-              "special_label_product": "frontpage"
+              "special_label_product": "stolni"
+            }
+          },
+          "464944c7-df6e-461a-abf2-dbf9b1723ce8": {
+            "type": "slider_cat",
+            "settings": {
+              "category_enable": true,
+              "slider_category_handle": "prisazena-interierova-svitidla",
+              "shop_button": "Zobrazit",
+              "sale_title": "",
+              "sale_title_color": "#333333",
+              "special_label_product": "prisazena-interierova-svitidla"
             }
           },
           "78bb2e62-2497-4487-bc5b-c7577f380d8d": {
@@ -889,18 +900,7 @@
               "shop_button": "ZOBRAZIT",
               "sale_title": "",
               "sale_title_color": "#333333",
-              "special_label_product": "zavesna-svitidla"
-            }
-          },
-          "0a43c2dc-afa7-41f2-934f-e105e86dd2b9": {
-            "type": "slider_cat",
-            "settings": {
-              "category_enable": true,
-              "slider_category_handle": "exterierova-svitidla",
-              "shop_button": "ZOBRAZIT",
-              "sale_title": "Akce",
-              "sale_title_color": "#de7c71",
-              "special_label_product": ""
+              "special_label_product": "zavesna-interierova-svitidla"
             }
           },
           "98266ad2-0743-4d8c-bdae-ac5a4c02ab6e": {
@@ -908,42 +908,30 @@
             "settings": {
               "category_enable": true,
               "slider_category_handle": "sloupkova-exterierova-svitidla",
-              "shop_button": "Shop now",
-              "sale_title": "Sale",
+              "shop_button": "Zobrazit",
+              "sale_title": "",
               "sale_title_color": "#333333",
-              "special_label_product": ""
+              "special_label_product": "sloupkova-exterierova-svitidla"
             }
           },
-          "464944c7-df6e-461a-abf2-dbf9b1723ce8": {
+          "0a43c2dc-afa7-41f2-934f-e105e86dd2b9": {
             "type": "slider_cat",
             "settings": {
               "category_enable": true,
-              "slider_category_handle": "prisazena-interierova-svitidla",
-              "shop_button": "Shop now",
-              "sale_title": "Sale",
-              "sale_title_color": "#333333",
-              "special_label_product": ""
-            }
-          },
-          "6fcd7fd1-2c86-465a-b905-de88e34e77e8": {
-            "type": "slider_cat",
-            "settings": {
-              "category_enable": true,
-              "slider_category_handle": "exterierova-svitidla",
-              "shop_button": "Shop now",
-              "sale_title": "Sale",
-              "sale_title_color": "#333333",
-              "special_label_product": ""
+              "slider_category_handle": "dekorativni-exterierova-svitidla",
+              "shop_button": "ZOBRAZIT",
+              "sale_title": "",
+              "sale_title_color": "#de7c71",
+              "special_label_product": "dekorativni-exterierova-svitidla"
             }
           }
         },
         "block_order": [
           "822e884e-cdee-4532-bc59-3de8dfb5ed7a",
-          "78bb2e62-2497-4487-bc5b-c7577f380d8d",
-          "0a43c2dc-afa7-41f2-934f-e105e86dd2b9",
-          "98266ad2-0743-4d8c-bdae-ac5a4c02ab6e",
           "464944c7-df6e-461a-abf2-dbf9b1723ce8",
-          "6fcd7fd1-2c86-465a-b905-de88e34e77e8"
+          "78bb2e62-2497-4487-bc5b-c7577f380d8d",
+          "98266ad2-0743-4d8c-bdae-ac5a4c02ab6e",
+          "0a43c2dc-afa7-41f2-934f-e105e86dd2b9"
         ],
         "settings": {
           "section_padding_top": 100,
@@ -2246,7 +2234,7 @@
           "footer_newsletter_title": "",
           "footer_newsletter_des": "",
           "footer_kontakt": "Kontakty",
-          "call": "<p><a href=\"mailto:eshop@ilumix.cz\" title=\"mailto:info@360design.cz\">info@360design.cz<\/a><\/p><p><a href=\"tel:+420774109102\" title=\"tel:+420774109102\">+420 774 109 102<\/a><\/p>",
+          "call": "<p><a href=\"mailto:eshop@ilumix.cz\" title=\"mailto:info@360design.cz\">info@360design.cz<\/a><\/p><p><a href=\"tel:+420774109102\" title=\"tel:+420773335535\">+420 773 33 55 35<\/a><\/p>",
           "ico": "<p>Provozovatel:<br\/>ILUMIX light s.r.o.<br\/>IČO: 24766062<\/p>",
           "adresa": "<p>Holečkova 368\/4<br\/>Karlovy Vary 360 17<\/p>"
         }
@@ -2257,17 +2245,17 @@
           "bb9fac8d-7e9a-4e7a-8f12-8301f02d2fed": {
             "type": "slide",
             "settings": {
-              "slider_bg_img": "shopify:\/\/shop_images\/ilumix_carousel_2_1ac88ac6-f6b5-4c8d-a27d-44a008dfe6a0.jpg",
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_SUPERFICIE.jpg",
               "slider_sub_title": "Cena:",
-              "slider_sub_title_bold": "3.120 Kč",
+              "slider_sub_title_bold": "od 3.630 Kč",
               "slider_sub_title_color": "#252525",
-              "slider_title1": "Závěsné",
-              "slider_title2": "Britta W",
+              "slider_title1": "Přisazené svítidlo",
+              "slider_title2": "Superficie Arm",
               "slider_badge": "",
               "badge_color": "",
               "slider_title_color": "#252525",
-              "slider_button": "DETAIL PRODUKTU",
-              "slider_button_url": "shopify:\/\/collections\/mordern-chair",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "shopify:\/\/products\/superficie-arm",
               "slider_content_position": "left",
               "slider_text_position": "left"
             }
@@ -2275,17 +2263,17 @@
           "ca134d30-d1e7-4b2a-ad45-dcf05dfc6023": {
             "type": "slide",
             "settings": {
-              "slider_bg_img": "shopify:\/\/shop_images\/ilumix_carousel_1_2b2975d9-53c9-4b5e-a97a-217d1d73d954.webp",
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_BUCKET.jpg",
               "slider_sub_title": "Cena:",
-              "slider_sub_title_bold": "2.500 Kč",
+              "slider_sub_title_bold": "od 4.991 Kč",
               "slider_sub_title_color": "#252525",
-              "slider_title1": "Stolní lampa",
-              "slider_title2": "Valan T",
-              "slider_badge": "Skladem",
+              "slider_title1": "Exteriérová svítidla",
+              "slider_title2": "Bucket",
+              "slider_badge": "",
               "badge_color": "#7f9fae",
               "slider_title_color": "#252525",
-              "slider_button": "DETAIL PRODUKTU",
-              "slider_button_url": "shopify:\/\/products\/copy-of-copy-of-full-t-shirt",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "https:\/\/360design.cz\/search?type=product&options%5Bunavailable_products%5D=show&options%5Bprefix%5D=last&q=bucket",
               "slider_content_position": "left",
               "slider_text_position": "left"
             }
@@ -2293,16 +2281,16 @@
           "b2b230de-9ce3-4dc2-a873-9fef9cb04aba": {
             "type": "slide",
             "settings": {
-              "slider_bg_img": "shopify:\/\/shop_images\/ilumix_eshop_carousel_3.jpg",
-              "slider_sub_title": "Special offer:",
-              "slider_sub_title_bold": "$99.00",
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_DEA.jpg",
+              "slider_sub_title": "Cena:",
+              "slider_sub_title_bold": "5.445 Kč",
               "slider_sub_title_color": "#1d1d1d",
-              "slider_title1": "Lounge",
-              "slider_title2": "chair",
+              "slider_title1": "3F svítidlo",
+              "slider_title2": "Dea Juno",
               "slider_badge": "",
               "badge_color": "",
               "slider_title_color": "#1d1d1d",
-              "slider_button": "Discover now",
+              "slider_button": "Zobrazit produkt",
               "slider_button_url": "",
               "slider_content_position": "left",
               "slider_text_position": "left"

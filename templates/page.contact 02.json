@@ -6,13 +6,14 @@
         "contact_page_title": "Kontakty",
         "contact_page_companyname": "ILUMIX light s.r.o.",
         "contact_page_address": "Holečkova 368\/4 <br>\nKarlovy Vary <br>\nČeská republika",
-        "contact_page_companyinfo": "IČO: 29115728 <br>\nDIČ: CZ29115728 <br> <br>\nČSOB: 47779\/0300 <br>\nRB: 333888999\/5500 <br>\nSpisová značka: C 25969 vedená u Krajského soudu v Plzni.",
-        "contact_page_phone": "+420 774 109 102",
+        "contact_page_companyinfo": "ILUMIX light s.r.o. <br>\nIČO: 29115728 <br>\nDIČ: CZ29115728 <br> <br>\nČSOB: 4377999\/0300 <br>\nRB: 333888999\/5500 <br>\nSpisová značka: C 25969 vedená u Krajského soudu v Plzni.",
+        "contact_page_phone": "+420 773 33 55 35",
         "contact_page_email": "info@360design.cz"
       }
     },
     "ea5f593d-e910-4744-ac79-7ce9c5de9fd9": {
       "type": "our-team",
+      "disabled": true,
       "blocks": {
         "93bbdb45-2a2c-4231-9b69-8c3d848ad63a": {
           "type": "our-vision",
@@ -98,7 +99,7 @@
         "contact_us_padding_bottom_xs": 20,
         "section_bg_color": "#f6f6f6",
         "section_title": "Napište nám a rozsvítíme to společně",
-        "section_des": "Obratem zodpovíme veškeré vaše otázky i zpracujeme cenovou nabídku.",
+        "section_des": "Obratem zodpovíme veškeré vaše otázky a zpracujeme cenovou nabídku.",
         "name_placeholder": "Jméno",
         "email_placeholder": "E-mail",
         "phone_placeholder": "Telefon",
