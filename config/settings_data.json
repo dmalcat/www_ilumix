@@ -886,10 +886,10 @@
             "settings": {
               "category_enable": true,
               "slider_category_handle": "prisazena-interierova-svitidla",
-              "shop_button": "Shop now",
-              "sale_title": "Sale",
+              "shop_button": "Zobrazit",
+              "sale_title": "",
               "sale_title_color": "#333333",
-              "special_label_product": ""
+              "special_label_product": "prisazena-interierova-svitidla"
             }
           },
           "78bb2e62-2497-4487-bc5b-c7577f380d8d": {
