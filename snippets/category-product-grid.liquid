@@ -11,7 +11,6 @@
 {%- assign func = "Shopify.addItem(" | append: variant.id | append: ", 1)" -%}
 {%- endif -%}
 <div class="single-product-wrap teest{% unless product.available %}stock-out{% endunless %}">
-    
     <div class="product-image {% unless product.available %}stock-out{% endunless %}">
         <a class="pro-img" href="{{ product.url | within: collection }}">
             <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '800X834', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
