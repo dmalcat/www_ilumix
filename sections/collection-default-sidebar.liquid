@@ -20,11 +20,7 @@
       </div>
         {%- endif -%}
 
-        <div class="get-data-products t">
-          <h6 class="product-colection">{{ collection.title }}</h6>
-            {% if section.settings.section_sub_title %}
-            <h6 class="product-colection">{{ section.settings.section_sub_title }}</h6>
-            {% endif %}
+        <div class="get-data-products">
           <div class="shop-grid">
             <div id="ProductGridContainer">
               {%- assign products_limit = section.settings.products_limit_handle -%}
