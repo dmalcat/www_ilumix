@@ -226,6 +226,7 @@
     },
     "about-modern-template6": {
       "type": "about-modern-template6",
+      "disabled": true,
       "blocks": {
         "f640e173-f9e1-4969-8369-4a655b331d64": {
           "type": "store_location",
@@ -280,7 +281,7 @@
         "contact_us_padding_bottom_xs": 20,
         "section_bg_color": "#f6f6f6",
         "section_title": "Napište nám a rozsvítíme to společně",
-        "section_des": "Obratem zodpovíme veškeré vaše otázky i zpracujeme cenovou nabídku.",
+        "section_des": "Obratem zodpovíme veškeré vaše otázky a zpracujeme cenovou nabídku.",
         "name_placeholder": "Jméno",
         "email_placeholder": "E-mail",
         "phone_placeholder": "Telefon",
