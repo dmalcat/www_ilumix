@@ -2428,7 +2428,6 @@
       },
       "16551950844e66ffa0": {
         "type": "background-video",
-        "disabled": true,
         "settings": {
           "video": "https:\/\/www.ilumix.cz\/assets\/video\/svetla.mp4",
           "subtitle": "Proč 360design?",
