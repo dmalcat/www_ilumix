@@ -18,7 +18,7 @@
         {%- if section.settings.tab_bar_enable -%}
         {%- include 'collection-sorting' -%}
         {%- endif -%}
-        <div class="get-data-products">
+        <div class="get-data-products t">
           <div class="shop-grid">
             {%- assign products_limit = section.settings.products_limit_handle -%}
             {%- paginate collection.products by products_limit -%}
