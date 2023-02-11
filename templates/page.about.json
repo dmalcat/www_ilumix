@@ -247,6 +247,7 @@
     },
     "our-team": {
       "type": "our-team",
+      "disabled": true,
       "blocks": {
         "e479550e-4616-4523-9875-e5af4a306ee2": {
           "type": "our-vision",
