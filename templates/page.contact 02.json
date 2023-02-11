@@ -13,6 +13,7 @@
     },
     "ea5f593d-e910-4744-ac79-7ce9c5de9fd9": {
       "type": "our-team",
+      "disabled": true,
       "blocks": {
         "93bbdb45-2a2c-4231-9b69-8c3d848ad63a": {
           "type": "our-vision",
