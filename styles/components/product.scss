@@ -2,7 +2,13 @@
     .in-stock {
         span {
             margin-left: 5px;
-            font-size: 16px;
+            font-size: 14px;
+        }
+    }
+
+    .out-stock {
+        span {
+            color: #198754;
         }
     }
 }
