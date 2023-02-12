@@ -10,7 +10,7 @@
 {%- if product.available -%}
 {%- assign func = "Shopify.addItem(" | append: variant.id | append: ", 1)" -%}
 {%- endif -%}
-<div class="single-product-wrap {% unless product.available %}stock-out{% endunless %}">
+<div class="single-product-wrap test{% unless product.available %}stock-out{% endunless %}">
     <div class="product-image {% unless product.available %}stock-out{% endunless %}">
         {%- if product.variants.size > 1 -%}
         <div class="variant-badge"><p>Více variant</p></div>

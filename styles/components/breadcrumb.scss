@@ -1,3 +1,14 @@
 .breadcrumb-area {
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
+
+#o-nas,
+#pro-b2b-partnery-360-design,
+#obchodni-podminky,
+#reklamacni-rad,
+#ochrana-osobnich-udaju-a-zpracovani-cookies,
+#vas-nakupni-kosik {
+    .breadcrumb-area {
+        display: none;
+    }
+}
