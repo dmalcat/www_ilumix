@@ -722,7 +722,8 @@
           "foot_bt_padding_top_xs": 0,
           "foot_bt_padding_bottom_xs": 15,
           "foot_bt_bg_color": "#f4f2f1",
-          "copy_right_text1": "© 2022 ILUMIX light s.r.o."
+          "copy_right_text1": "© 2022 ILUMIX light s.r.o.",
+          "payment_img": "shopify:\/\/shop_images\/360design_logo.png"
         }
       },
       "our-team": {

@@ -29,7 +29,7 @@
           "type": "product_availability",
           "settings": {
             "availability_title": "Dostupnost:",
-            "in_stock_title": "Skladem",
+            "in_stock_title": "Ihned k odeslání",
             "out_of_stock_title": "Skladem"
           }
         },
