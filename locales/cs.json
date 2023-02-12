@@ -492,8 +492,8 @@
     "filters": {
       "availability": {
         "value": {
-          "in_stock": "Skladem",
-          "out_of_stock": "Vyprodáno"
+          "in_stock": "Ihned k odeslání",
+          "out_of_stock": "Skladem"
         }
       }
     },
@@ -842,8 +842,8 @@
       "weight": "",
       "vendor": "",
       "availability": "",
-      "in_stock": "Skladem",
-      "out_of_stock": "Na centrálním skladě",
+      "in_stock": "Ihned k odeslání",
+      "out_of_stock": "Skladem",
       "many_in_stock": "",
       "view_full_info": "",
       "sizeguid": "",

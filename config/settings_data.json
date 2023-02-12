@@ -62,7 +62,7 @@
     "cart_checkout": "Pokladna",
     "product_quickview_enalbe": false,
     "quick_view_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-eye\"><path d=\"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z\"><\/path><circle cx=\"12\" cy=\"12\" r=\"3\"><\/circle><\/svg>",
-    "breadcrumb_banner_enable": false,
+    "breadcrumb_banner_enable": true,
     "breadcrumb_padding_top": 100,
     "breadcrumb_padding_bottom": 100,
     "breadcrumb_padding_top_ip": 60,
@@ -722,7 +722,8 @@
           "foot_bt_padding_top_xs": 0,
           "foot_bt_padding_bottom_xs": 15,
           "foot_bt_bg_color": "#f4f2f1",
-          "copy_right_text1": "© 2022 ILUMIX light s.r.o."
+          "copy_right_text1": "© 2022 ILUMIX light s.r.o.",
+          "payment_img": "shopify:\/\/shop_images\/360design_logo.png"
         }
       },
       "our-team": {
