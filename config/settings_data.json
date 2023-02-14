@@ -24,8 +24,8 @@
     "register_title": "Registrace",
     "wishlist_title": "",
     "shopping_cart_title": "Košík",
-    "company_logo": "shopify:\/\/shop_images\/360design_logo_df8f6bd9-b989-4414-bccb-0a0cf5555afe.svg",
-    "company_logo_footer": "shopify:\/\/shop_images\/360design_logo_df8f6bd9-b989-4414-bccb-0a0cf5555afe.svg",
+    "company_logo": "shopify:\/\/shop_images\/ilumix_logo_mensi.webp",
+    "company_logo_footer": "shopify:\/\/shop_images\/ilumix_logo.png",
     "logo_font_size": 16,
     "logo_font_weight": 600,
     "company_title": "",
@@ -39,7 +39,7 @@
     "fax_icon": "",
     "mail_icon": "",
     "email": "Email: info@domain.com",
-    "favicon": "shopify:\/\/shop_images\/360favicon-new_164a92ae-f320-4ea3-acbe-4616075577b8.png",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
     "new_title": "New",
     "new_title_lable_color": "#000000",
     "sale_title": "Sale",
@@ -2236,7 +2236,7 @@
           "footer_newsletter_des": "",
           "footer_kontakt": "Kontakty",
           "call": "<p><a href=\"mailto:eshop@ilumix.cz\" title=\"mailto:info@360design.cz\">info@360design.cz<\/a><\/p><p><a href=\"tel:+420774109102\" title=\"tel:+420773335535\">+420 773 33 55 35<\/a><\/p>",
-          "ico": "<p>Provozovatel:<br\/>ILUMIX light s.r.o.<br\/>IČO: 24766062<\/p>",
+          "ico": "<p>Provozovatel:<br\/>ILUMIX light s.r.o.<br\/>IČO: 29115728<\/p>",
           "adresa": "<p>Holečkova 368\/4<br\/>Karlovy Vary 360 17<\/p>"
         }
       },
