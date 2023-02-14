@@ -43,6 +43,11 @@
         width: 100%;
         position: absolute;
     }
+
+    .btn {
+        margin-top: 40px;
+    }
+
     @media(max-width:900px){
         .video-text p{
             font-size: 18px;
@@ -63,23 +68,31 @@
         .video-overlay{
             display: none;
         }
+
+        .btn {
+            margin-top: 20px;
+        }
     }
 </style>
 <section class="slider-category">
-<div class="video-container container-fluid category-col">
-    <div class="video-text">
-        <p>{{section.settings.subtitle}}</p>
-        <h3>{{section.settings.title | newline_to_br}}</h3>
+    <div class="video-container container-fluid category-col">
+        <div class="video-text">
+            <p>{{section.settings.subtitle}}</p>
+            <h3>{{section.settings.title | newline_to_br}}</h3>
+            {% if section.settings.button != '' %}
+                <a href="{{ block.settings.button_url }}" class="btn btn-style3">
+                    <span>{{ section.settings.button }}</span>
+                    <i class="fa fa-long-arrow-right"></i>
+                </a>
+              {% endif %}
+        </div>
+        <div class="video-box">
+            <div class="video-overlay"></div>
+            <video autoplay loop muted playsinline class="video-controls">
+                <source src="{{section.settings.video}}" type="video/mp4">
+            </video>
+        </div>
     </div>
-    <div class="video-box">
-        <div class="video-overlay"></div>
-        <video autoplay loop muted playsinline class="video-controls">
-
-            <source src="{{section.settings.video}}"
-                    type="video/mp4">
-        </video>
-    </div>
-</div>
 </section>
 
 {% schema %}
@@ -92,16 +105,29 @@
           "type":"text",
           "label":"Video link",
           "info":"Supports mp4, YouTube and Vimeo. Only mp4 videos will play on mobile."
-       },{
-        "id":"subtitle",
-        "type":"text",
-        "label":"Subtitle",
-        "default":"Proč ILUMIX light design?"
-     },{
-        "id":"title",
-        "type":"html",
-        "label":"Title"
-     }
+       },
+       {
+            "id":"subtitle",
+            "type":"text",
+            "label":"Subtitle",
+            "default":"Proč ILUMIX light design?"
+        },
+        {
+            "id":"title",
+            "type":"html",
+            "label":"Title"
+        },
+        {
+            "type": "text",
+            "id": "button",
+            "label": "Button",
+            "default": "O nás"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button URL"
+        }
     ],
     "presets":[
        {
