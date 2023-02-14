@@ -66,20 +66,18 @@
     }
 </style>
 <section class="slider-category">
-<div class="video-container container-fluid category-col">
-    <div class="video-text">
-        <p>{{section.settings.subtitle}}</p>
-        <h3>{{section.settings.title | newline_to_br}}</h3>
+    <div class="video-container container-fluid category-col">
+        <div class="video-text">
+            <p>{{section.settings.subtitle}}</p>
+            <h3>{{section.settings.title | newline_to_br}}</h3>
+        </div>
+        <div class="video-box">
+            <div class="video-overlay"></div>
+            <video autoplay loop muted playsinline class="video-controls">
+                <source src="{{section.settings.video}}" type="video/mp4">
+            </video>
+        </div>
     </div>
-    <div class="video-box">
-        <div class="video-overlay"></div>
-        <video autoplay loop muted playsinline class="video-controls">
-
-            <source src="{{section.settings.video}}"
-                    type="video/mp4">
-        </video>
-    </div>
-</div>
 </section>
 
 {% schema %}
