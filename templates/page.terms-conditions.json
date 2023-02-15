@@ -205,10 +205,42 @@
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40
       }
+    },
+    "69401360-c0a5-4786-b775-4f01ce56d679": {
+      "type": "terms-conditions",
+      "blocks": {
+        "9134827d-3dcd-4b89-a56a-8944af098d6c": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "Tyto podmínky jsou účinné od 1.1.2023",
+            "list_desc": ""
+          }
+        },
+        "a33207dd-3fcf-4ee5-8aed-fd0f7719710a": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "Pro více informací nás kontaktujte na:",
+            "list_desc": "info@360design.cz"
+          }
+        }
+      },
+      "block_order": [
+        "9134827d-3dcd-4b89-a56a-8944af098d6c",
+        "a33207dd-3fcf-4ee5-8aed-fd0f7719710a"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40
+      }
     }
   },
   "order": [
     "df8c9060-d64d-4db8-954b-e987a5bbae7d",
-    "terms-conditions"
+    "terms-conditions",
+    "69401360-c0a5-4786-b775-4f01ce56d679"
   ]
 }
