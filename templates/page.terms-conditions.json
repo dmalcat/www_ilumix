@@ -1,67 +1,146 @@
 {
   "sections": {
-    "terms-conditions2": {
-      "type": "terms-conditions2",
-      "settings": {
-        "section_padding_top": 100,
-        "section_padding_bottom": 100,
-        "section_padding_top_lg": 60,
-        "section_padding_bottom_lg": 60,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 40,
-        "section_bg_color": "#f6f6f6",
-        "section_title1": "The company",
-        "section_title2": "private limited policy",
-        "block_quot": "We work to ensure that your business prospers and brings you sufficient profit",
-        "block_desc": "Lorem ipsum is simply dummy text of the printing and typeing industry. Lorem ipsum has been the industry's standard dummy text ever since text.",
-        "content_button_url1": "",
-        "content_button1": "Read more",
-        "term_condition_img": "shopify:\/\/shop_images\/terms-condition-img_c8023893-dafb-4f7c-9729-c1917a49b62b.jpg"
-      }
-    },
     "terms-conditions": {
       "type": "terms-conditions",
       "blocks": {
         "6103a853-eaf8-4e90-837a-8c1c4323fcc8": {
           "type": "terms-condition",
           "settings": {
-            "list_title": "Introduction",
-            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+            "list_title": "1. \tVšeobecná ustanovení",
+            "list_desc": "1. \tNíže uvedené obchodní podmínky upravují vzájemná práva a povinnosti vzniklé v souvislosti nebo na základě kupní smlouvy uzavírané mezi společností ILUMIX light s.r.o., IČO: 29115728 (dále jen Prodávající), a jejími zákazníky (dále jen Kupující) při prodeji\/nákupu výrobků, zboží a služeb nabízeného Prodávajícím (dále jen Předmět koupě) prostřednictvím internetového obchodu Prodávajícího provozovaného na webové stránce umístěné na internetové adrese www.360design.cz (dále jen Webová stránka Prodávajícího) a jsou její nedílnou součástí.\n<br>2. \tPro účely těchto obchodních podmínek bude dále kupní smlouva uzavřená mezi Prodávajícím a Kupujícím označována také jako Kupní smlouva.<br> \n3. \tTyto obchodní podmínky se vztahují na všechny kupní smlouvy, které byly uzavřeny mezi Prodávajícím a Kupujícím po nabytí jejich účinnosti. \n<br>4. \tOdchylná ujednání od těchto obchodních podmínek dohodnutá v Kupní smlouvě mají přednost před těmito obchodními podmínkami. Práva a povinnosti smluvních stran, která nejsou v Kupní smlouvě výslovně upravena, se řídí těmito obchodními podmínkami."
           }
         },
         "4215fff1-2829-40fb-a915-acd06dba6b96": {
           "type": "terms-condition",
           "settings": {
-            "list_title": "Introduction",
-            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+            "list_title": "2. \tKupní smlouva",
+            "list_desc": "1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího. \n<br>2. Kupní smlouva je mezi Prodávajícím a Kupujícím uzavřena na základě objednávky učiněné Kupujícím prostřednictvím Webové stránky Prodávajícího, a to okamžikem doručení potvrzení objednávky Kupujícího ze strany Prodávajícího zaslaného Prodávajícím Kupujícímu prostřednictvím elektronické pošty na elektronickou adresu Kupujícího uvedenou v objednávce Kupujícího.   \n<br>3. Do doby potvrzení objednávky Kupujícího Prodávajícím není tato objednávka pro Prodávajícího závazná a zavazuje pouze Kupujícího. \n<br>4. Prodávající není povinen na objednávku Kupujícího reagovat a jeho případnou nečinnost nelze považovat za přijetí objednávky Kupujícího.\n<br>5. Objednávku, jejíž přijetí Prodávající dosud nepotvrdil, může Kupující zrušit či změnit e‑mailem zaslaným na e-mailovou adresu Prodávajícího info@360design.cz Odeslaná zpráva musí obsahovat identifikační údaje Kupujícího, datum provedení objednávky a specifikaci Předmětu koupě.\n<br>6. Pozdější změna či zrušení přijaté objednávky ze strany Kupujícího jsou možné pouze na základě dohody mezi Kupujícím a Prodávajícím. \n<br>7. Prodávající vždy dodá Kupujícímu Předmět koupě v množstvích, termínech a za podmínek stanovených v potvrzené objednávce Kupujícího."
           }
         },
         "72345072-984d-4a73-b870-ce97baeab3e6": {
           "type": "terms-condition",
           "settings": {
-            "list_title": "Introduction",
-            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+            "list_title": "3. \tKupní cena",
+            "list_desc": "1. \tKupní cena za Předmět koupě je stanovena dohodou smluvních stran v Kupní smlouvě a je pevná (dále jen Kupní cena). Pokud není v Kupní smlouvě dohodnuto jinak, zahrnuje Kupní cena i náklady na zabalení Předmětu koupě.\n<br>2. \tV Kupní ceně nejsou zahrnuty náklady na dopravu Předmětu koupě a pojištění Předmětu koupě během přepravy, není-li v Kupní smlouvě dohodnuto jinak."
           }
         },
         "6ed7ded9-4141-4598-8edc-d847abb35c45": {
           "type": "terms-condition",
           "settings": {
-            "list_title": "Introduction",
-            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+            "list_title": "4. \tZjevná chyba",
+            "list_desc": "1. V případě, že na straně Prodávajícího došlo ke zcela zjevné technické chybě při uvedení ceny Předmětu koupě na Webových stránkách Prodávajícího nebo v průběhu uzavírání Kupní smlouvy, jedná se o zdánlivé právní jednání a Prodávající nemá povinnost objednaný Předmět koupě Kupujícímu dodat za tuto zcela zjevně chybnou cenu pro zdánlivost právního jednání, eventuálně pro omyl. \n<br>2. Za zjevnou chybu v ceně Předmětu koupě se považuje například situace, kdy cena Předmětu koupě neodpovídá obvyklé ceně u jiných prodejců nebo chybí či přebývá cifra."
           }
         },
         "4eb36caf-5134-4ec8-bdb6-8f78ad215e13": {
           "type": "terms-condition",
           "settings": {
-            "list_title": "Introduction",
-            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+            "list_title": "5. \tSlevy z Kupní ceny",
+            "list_desc": "1. Prodávající může Kupujícímu poskytnout různé druhy a typy slev z Kupní ceny (věrnostní, objemové, za použití akčních kódů apod.).\n<br>2. Kupující je slevu z Kupní ceny oprávněn uplatnit pouze jednou, pokud není mezi Prodávajícím a Kupujícím výslovně sjednáno jinak.\n<br>3. V případě uplatnění slevy z Kupní ceny v rozporu s podmínkami poskytnutí dané slevy z Kupní ceny či s těmito obchodními podmínkami má Prodávající právo odmítnout takovou slevu z Kupní ceny Kupujícímu poskytnout.\n<br>4. V případě prodlení s úhradou Kupní ceny strany Kupujícího, který je podnikatelem, je Prodávající oprávněn poskytnutí Kupujícím, který je podnikatelem, požadované či jiné slevy z Kupní ceny odmítnout a slevu z Kupní ceny Kupujícímu, který je podnikatelem, neposkytnout."
           }
         },
         "5a2cbc87-4da5-489b-975c-3858255cfa7f": {
           "type": "terms-condition",
           "settings": {
-            "list_title": "Introduction",
-            "list_desc": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
+            "list_title": "6.     \tPlatební podmínky",
+            "list_desc": "1. \tÚhrada Kupní ceny může být provedena následujícími způsoby:\n<br> a) v hotovosti při zaslání Předmětu koupě na dobírku,\n<br>b) bezhotovostně před dodáním Předmětu koupě převodem na bankovní účet Prodávajícího,\n<br>c) bezhotovostně před dodáním Předmětu koupě prostřednictvím on-line platební karty,\n<br>d) bezhotovostně před dodáním Předmětu koupě prostřednictvím platební brány.\n<br>2. \tProdávající může po vzájemné dohodě umožnit Kupujícímu, který je podnikatelem, uhradit Kupní cenu bezhotovostně po dodání Předmětu koupě bezhotovostním převodem na bankovní účet Prodávajícího na základě daňového dokladu – faktury.\n<br>3. \tPřípadné poplatky spojené s některými způsoby plateb budou uvedeny na Webové stránce Prodávajícího.\n<br>4. \tV případě platby v hotovosti je cena za Předmět koupě splatná při převzetí Předmětu koupě Kupujícím.\n<br>5. \tV případě bezhotovostní platby je cena za Předmět koupě splatná do 14. dnů ode dne přijetí objednávky ze strany Prodávajícího.\n<br>6. \tCena za Předmět koupě se považuje za uhrazenou okamžikem připsání příslušné částky na bankovní účet Prodávajícího.\n<br>7. \tV případě bezhotovostní platby se platba považuje za uskutečněnou okamžikem připsání příslušných finančních prostředků na bankovní účet Prodávajícího.\n<br>8. \tPlatby provedené Kupujícím dle Kupní smlouvy budou Prodávajícím započítávány nejprve na úhradu nejstarších dlužných částek, a to nejdříve na vedlejší náklady, smluvní pokutu, zákonné úroky z prodlení a poté na úhradu jistiny.\n<br>9. \tPokud má být Kupní cena uhrazena ve splátkách, nezaplacením jedné splátky Kupní ceny ztrácí Kupující výhodu splátek a Kupní cena se stává splatnou celá.\n<br>10. \tV případě prodlení Kupujícího, který je podnikatelem, s úhradou Kupní ceny (zálohy na Kupní cenu) je Kupující povinen uhradit Prodávajícímu smluvní pokutu ve výši 0,1% z dlužné částky za každý den prodlení s její úhradou. Ujednáním o smluvní pokutě uvedeným shora není dotčeno právo Prodávajícího na úhradu případně vzniklé škody v plné výši a na úhradu zákonného úroku z prodlení."
+          }
+        },
+        "43144a29-1003-49f4-9a63-61766c4b1076": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "7. Výhrada vlastnického práva",
+            "list_desc": "1. Dle ust. § 2132 Občanského zákoníku vlastnické právo k Předmětu koupě přechází z Prodávajícího na Kupujícího až okamžikem úplné úhrady Kupní ceny, není-li v Kupní smlouvě dohodnuto jinak.\n<br>2. Předmět koupě zůstává ve vlastnictví Prodávajícího až do úplného uhrazení Kupní ceny bez ohledu na spojení Předmětu koupě nebo jakékoli jeho části s věcmi ve vlastnictví Kupujícího či třetí osoby."
+          }
+        },
+        "16556781-73c1-4635-98d0-35538aecfd78": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "8. Dodací podmínky",
+            "list_desc": "1. \tTermín dodání sjednaný v Kupní smlouvě je termínem závazným, pokud v Kupní smlouvě není uvedeno jinak. \n<br>2. \tTermín dodání Předmětu koupě je závislý na dostupnosti a zvoleném způsobu dopravy Předmětu koupě a úhrady Kupní ceny.\n<br>3. \tProdávající splní svou povinnost z Kupní smlouvy dodáním Předmětu koupě Kupujícímu za dohodnutých podmínek.\n<br>4. \tVyplývá-li z Kupní smlouvy, že Prodávající zajistí dopravu Předmětu koupě na sjednané místo dodání, je povinen tak učinit prostřednictvím dopravce, jehož za tímto účelem Prodávající zajistí. \n<br>5. \tVyplývá-li z Kupní smlouvy, že Kupující zajistí dopravu Předmětu koupě od Prodávajícího, je povinen tak učinit prostřednictvím dopravce, jehož za tímto účelem Kupující zajistí.\n<br>6. \tProdávající je povinen předat Kupujícímu doklady, jež jsou nutné k převzetí a užívání Předmětu koupě.\n<br>7. \tKupující je povinen uhradit Prodávajícímu náklady, které mu vzniknou, pokud Kupující neposkytne Prodávajícímu potřebnou součinnost při dodání Předmětu koupě. Těmito náklady se rozumí především náklady na složení či uskladnění Předmětu koupě.\n<br>8. \tČástečné dodávky Předmětu koupě jsou přípustné a Kupující je povinen je převzít. \n<br>9. \tBude-li Předmět koupě dodán Kupujícímu před termínem sjednaným v Kupní smlouvě, je Kupující povinen jej převzít či zajistit jeho odvoz, podle toho, co bylo dojednáno v Kupní smlouvě.\n<br>10. \tPři převzetí Předmětu koupě je Kupující povinen zkontrolovat neporušenost obalu Předmětu koupě. Zjistí-li Kupující nedostatky, je povinen neprodleně informovat o těchto nedostatcích Prodávajícího a dopravce.\n<br>11. \tNepřevezme-li Kupující Předmět koupě bez vážného důvodu, vzniká Prodávajícímu ze strany Kupujícího nárok na náhradu nákladů spojených s dodáním Předmětu koupě a jeho uskladněním a Prodávající má právo od Kupní smlouvy odstoupit.\n<br>12. \tDrobné vady Předmětu koupě, které samy o sobě, ale ani ve spojení s jinými, nebrání užívání Předmětu koupě, nemají za následek odklad povinnosti Kupujícího uhradit Kupní cenu Prodávajícímu a nejsou důvodem pro nepřevzetí Předmětu koupě Kupujícím."
+          }
+        },
+        "9697da66-44c2-422d-a18d-01cc15553545": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "9. Přechod nebezpečí škody na Předmětu koupě",
+            "list_desc": "1. Nebezpečí škody na Předmětu koupě na Kupujícího přechází již převzetím Předmětu koupě od Prodávajícího. Stejný následek má, nepřevezme-li Kupující Předmět koupě, ač mu s ním Prodávající umožnil nakládat. \n<br>2. Předá-li Prodávající dopravci Předmět koupě pro přepravu ke Kupujícímu v místě určeném Kupní smlouvou, přechází na Kupujícího nebezpečí škody na Předmětu koupě předáním Předmětu koupě dopravci v tomto místě, a nebylo-li místo smluveno, předáním prvnímu dopravci pro přepravu do místa určení.\n<br>3. Škoda na Předmětu koupě, která vznikla po přechodu jejího nebezpečí na Kupujícího, nemá vliv na povinnost Kupujícího uhradit Kupní cenu Prodávajícímu."
+          }
+        },
+        "713751d2-ba77-4ce0-999a-56652f30c3f1": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "10. \tUplatnění práv z odpovědnosti za vady",
+            "list_desc": "1. Prodávající zaručuje, že v době přechodu nebezpečí škody na Předmětu koupě je Předmět koupě bez vad, zejména pak, že:\n<br>a) má vlastnosti, které byli mezi Prodávajícím a Kupujícím dohodnuty, a pokud nebyly výslovně dohodnuty, pak takové, které byly uvedeny u popisu Předmětu koupě, případně takové, které lze s ohledem na povahu Předmětu koupě očekávat,\n<br>b) je vhodný pro účely, které uvedl Prodávající nebo pro účely, které jsou pro Předmět koupě tohoto typu obvyklé,\n<br>c) odpovídá jakosti nebo provedení dohodnutého vzorku, pakliže byla jakost nebo provedení stanovena podle vzorku,\n<br>d) je v odpovídajícím množství a hmotnosti,\n<br>e) splňuje požadavky na něj kladené právními předpisy,\n<br>f) není zatížen právy třetích stran.\n<br>2. Práva a povinnosti ohledně práv z vadného plnění se řídí příslušnými obecně závaznými právními předpisy.\n<br>3. V případě, že má Předmět koupě vadu, tedy zejména pokud není splněna některá z podmínek dle bodu 1. tohoto článku obchodních podmínek, může Kupující takovou vadu oznámit Prodávajícímu a uplatnit práva z vadného plnění (tedy Předmět koupě reklamovat) zasláním e-mailu na emailovou adresu Prodávajícího či dopisu na adresu ILUMIX light s.r.o., Holečkova 368\/4, Karlovy Vary 36017, přičemž pro uplatnění reklamace může Kupující využít vzorový formulář, který je přílohou č. 2 těchto obchodních podmínek. V uplatnění práva z vadného plnění musí Kupující uvést, jak chce Kupující vadu Předmětu koupě vyřešit, přičemž tuto volbu nemůže Kupující následně, s výjimkou případů uvedených v bodu 4. tohoto článku obchodních podmínek, bez souhlasu Prodávajícího změnit. Reklamaci vyřídí Prodávající v souladu s Kupujícím uplatněným právem z vadného plnění. V případě, že si Kupující nezvolí řešení vady Předmětu koupě, má Kupující práva z vadného plnění uvedená v odstavci 5. tohoto článku obchodních podmínek, kdy vadné plnění bylo nepodstatným porušením Kupní smlouvy. \n<br>4. Je-li vadné plnění podstatným porušením Kupní smlouvy, má Kupující následující práva z vadného plnění:\n<br>a) na odstranění vady dodáním nového Předmětu koupě bez vady, nebo dodáním chybějící části Předmětu koupě,\n<br>b) na odstranění vady opravou Předmětu koupě,\n<br>c) na přiměřenou slevu z Kupní ceny,\n<br>d) na odstoupení od Kupní smlouvy.\n<br>V případě, že Kupující zvolí řešení dle bodů a) nebo b) tohoto bodu obchodních podmínek a Prodávající vadu neodstraní v přiměřené lhůtě, kterou uvedl, nebo sdělí Kupujícímu, že tímto způsobem vadu Předmětu koupě neodstraní vůbec, má Kupující práva z vadného plnění dle bodů c) a d) tohoto bodu obchodních podmínek, i když je v rámci reklamace původně Kupující nepožadoval. Zároveň pokud si Kupující zvolí odstranění vady opravou Předmětu koupě a Prodávající zjistí, že je vada Předmětu koupě neodstranitelná, oznámí Prodávající Kupujícímu tuto skutečnost a Kupující si bude moci zvolit jiný způsob odstranění vady Předmětu koupě.\n<br>5. Je-li vadné plnění nepodstatným porušením Kupní smlouvy, má Kupující následující práva z vadného plnění:\n<br>a) na odstranění vady dodáním nového Předmětu koupě bez vady, nebo dodáním chybějící části Předmětu koupě,\n<br>b) na odstranění vady opravou Předmětu koupě,\n<br>c) na přiměřenou slevu z Kupní ceny.\n<br>\nPokud však Prodávající neodstraní vadu Předmětu koupě včas nebo odmítne vadu Koupě odstranit, vznikne Kupujícímu právo od Kupní smlouvy odstoupit. Odstoupit může Kupující také v případě, kdy nemůže Předmět koupě řádně užívat pro opakovaný výskyt vad po opravě Předmětu koupě nebo při větším počtu vad Předmětu koupě.\n<br> 6. V případě podstatného i nepodstatného porušení Kupní smlouvy nemůže Kupující odstoupit od Kupní smlouvy, ani požadovat dodání nové věci, pokud nemůže vrátit Předmět koupě ve stavu, v jakém ho obdržel. To ale neplatí v následujících případech:\n<br> a) došlo-li ke změně stavu Předmětu koupě v důsledku prohlídky za účelem zjištění vady Předmětu koupě,\n<br>b) byl-li Předmět koupě použit ještě před objevením vady Předmětu koupě,\n<br>c) nebyla-li nemožnost vrácení Předmětu koupě v nezměněném stavu způsobena jednáním Kupujícího anebo opomenutím Kupujícího,\n<br>d) došlo-li ze strany Kupujícího před objevením vady Předmětu koupě k prodeji, spotřebování nebo pozměnění Předmětu koupě při obvyklém použití; pokud k tomu však došlo jen částečně, je povinností Kupujícího vrátit tu část Předmětu koupě, kterou lze vrátit a v takovém případě nebude Kupujícímu vrácena část Kupní ceny odpovídající prospěchu Kupujícího z užití části Předmětu koupě.\n<br> 7. Do 3 dnů od obdržení reklamace potvrdí Prodávající e-mailem na e-mailovou adresu Kupujícího, že reklamaci obdržel, kdy ji obdržel a uvede předpokládanou dobu trvání vyřízení reklamace. Reklamaci vyřídí Prodávající bez zbytečného odkladu, nejpozději však do 30 dnů od jejího obdržení. Lhůta může být po vzájemné dohodě Prodávajícího a Kupujícího prodloužena. \n<br>8. O vyřízení reklamace bude Prodávající Kupujícího informovat e-mailem zaslaným na e-mailovou adresu Kupujícího. Pokud bude reklamace oprávněná, náleží Kupujícímu náhrada účelně vynaložených nákladů. Tyto náklady je Kupující povinen prokázat, např. účtenkami či potvrzeními o ceně za dopravu. V případě, že došlo k odstranění vady dodáním nového Předmětu koupě, je povinností Kupujícího vrátit Prodávajícímu Předmět koupě, přičemž náklady na toto vrácení hradí Prodávající.\n<br>9. V případě, že je Kupující podnikatelem, je jeho povinností oznámit a vytknout vadu Předmětu koupě bez zbytečného odkladu poté, co ji mohl zjistit, nejpozději však do 3 dnů od převzetí Předmětu koupě.\n<br>10. V případě, že je Kupující spotřebitelem, má právo uplatit práva z vadného plnění u vady Předmětu koupě, která se vyskytne u Předmětu koupě ve lhůtě 24 měsíců od převzetí Předmětu koupě. \n<br>11. Ustanovení ohledně práva z vadného plnění se nepoužijí v případě:\n<br>a) Předmětu koupě, který je prodáván za nižší Kupní cenu, na vadu, pro kterou byla nižší Kupní cena sjednána,\n<br>b) opotřebení Předmětu koupě způsobeného jeho obvyklým užíváním,\n<br>c) použitého Předmětu koupě na vadu Předmětu koupě odpovídající míře používání nebo opotřebení, kterou Předmět koupě měl, když jej Kupující převzal,\n<br>d) kdy to vyplývá z povahy Předmětu koupě."
+          }
+        },
+        "92b386b3-0aa4-46ac-a782-c75c65b05f28": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "11. \tOdstoupení Kupujícího, který je spotřebitelem, od Kupní smlouvy",
+            "list_desc": "1. Kupující, který je spotřebitelem, je oprávněn i bez udání důvodu od uzavřené Kupní smlouvy odstoupit ve lhůtě 14 dnů ode dne převzetí Předmětu koupě. Byla-li dodávka Předmětu koupě rozdělena do více částí, běží tato lhůta ode dne převzetí poslední dodávky.\n<br>2. Pro odstoupení od Kupní smlouvy může Kupující, který je spotřebitelem, využít vzorový formulář, který je přílohou č. 1 těchto obchodních podmínek. Odstoupení od Kupní smlouvy musí být učiněno v písemné formě.\n<br>3. Oznámení o odstoupení od Kupní smlouvy Kupující, který je spotřebitelem, zašle:\n<br> a) buď na adresu Prodávajícího ILUMIX light s.r.o., Holečkova 368\/4, Karlovy Vary 36017 společně s Předmětem koupě, nebo\n<br>b) e-mailem na e-mailovou adresu Prodávajícího info@360design.cz\n<br>4. Odstoupením od Kupní smlouvy se Kupní smlouva od počátku ruší a hledí se na ni, jako kdyby nebyla uzavřena.\n<br>5. Kupující, který je spotřebitelem, je povinen Předmět koupě, jehož se odstoupení od Kupní smlouvy týká, zaslat Prodávajícímu bez zbytečného odkladu na adresu ILUMIX light s.r.o., Holečkova 368\/4, Karlovy Vary 36017, a to nejpozději do 14 dnů ode dne odstoupení od Kupní smlouvy. Kupující, který je spotřebitelem, rovněž v této zásilce zašle Prodávajícímu číslo účtu popřípadě uvede způsob pro vrácení Kupní ceny.\n<br>6. Kupující, který je spotřebitelem, je povinen zabalit vracený Předmět koupě tak, aby nedošlo k jeho znečištění či poškození. \n<br>7. V případě odstoupení od Kupní smlouvy je Kupující, který je spotřebitelem, povinen vrátit Prodávajícímu Předmět koupě bez jakýchkoliv známek použití či úprav a v originálním balení. V jiném případě má Prodávající nárok na náhradu za snížení hodnoty Předmětu koupě. Kupující, který je spotřebitelem, odpovídá Prodávajícímu pouze za snížení hodnoty Předmětu koupě, které vzniklo v důsledku nakládání s Předmětem koupě jinak, než je nutné s ním nakládat s ohledem na jeho povahu a vlastnosti.\n<br>8. Prodávající je povinen vrátit Kupujícímu, který je spotřebitelem, Kupní cenu za Předmět koupě, jehož se odstoupení od Kupní smlouvy týká, nejpozději do 14 dnů od odstoupení od Kupní smlouvy, avšak ne dříve, než Kupující, který je spotřebitelem, vrátí Předmět koupě, jehož se odstoupení od Kupní smlouvy týká, Prodávajícímu nebo prokáže odeslání tohoto Předmětu koupě zpět Prodávajícímu.\n<br>9. V případě odstoupení od Kupní smlouvy nese Kupující, který je spotřebitelem, náklady spojené s navrácením Předmětu koupě, případně náklady za navrácení Předmětu koupě, jestliže Předmět koupě nemůže být vrácen pro svou povahu obvyklou poštovní cestou.\n<br>10. Kupní cenu uhrazenou Kupujícím, který je spotřebitelem, za Předmět koupě, jehož se ze strany Kupujícího, který je spotřebitelem, týkalo odstoupení od Kupní smlouvy, Prodávající vrátí:\n<br>a) způsobem, jakým byla ze strany Kupujícího, který je spotřebitelem, uhrazena,\n<br>b)  \tzpůsobem určeným Kupujícím, který je spotřebitelem, v odstoupení od Kupní smlouvy,\n<br>c) poštovní složenkou, není-li žádný jiný způsob možný.\n<br>11. Kupující, který je spotřebitelem, nemá právo odstoupit od Kupní smlouvy:\n<br>a) o dodávce Předmětu koupě, který byl upraven podle přání Kupujícího, který je spotřebitelem, nebo pro Kupujícího, který je spotřebitelem,\n<br>b) o dodávce Předmětu koupě, který podléhá rychlé zkáze, a Předmětu koupě, který byl po dodání smísen s jiným zbožím,\n<br>c) o dodávce Předmětu koupě v uzavřeném obalu, který Kupující, který je spotřebitelem, z obalu vyňal a z hygienických důvodů jej není možné vrátit."
+          }
+        },
+        "4660211e-3298-41c4-afea-be2b5c912778": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "12. \tOdstoupení Kupujícího, který je podnikatelem, od Kupní smlouvy",
+            "list_desc": "1. Odstoupení od Kupní smlouvy musí být ze strany Kupujícího, který je podnikatelem, učiněno v písemné formě.\n<br>2. \tKupující, který je podnikatelem, je oprávněn odstoupit od Kupní smlouvy uzavřené s Prodávajícím kromě případů stanovených obecně závaznými právními předpisy, dále také tehdy, pokud neobdrží objednaný Předmět koupě déle než 30 dnů po dni sjednaném jako den dodání.\n<br>3. \tKupující, který je podnikatelem, není oprávněn odstoupit od Kupní smlouvy týkající se Předmětu koupě, které bylo ze strany Prodávajícího dodáno řádně, včas a bez vad."
+          }
+        },
+        "9da71487-6afd-42d1-b33f-4f932ee8c24b": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "13.     \tOdstoupení Prodávajícího",
+            "list_desc": "1. Prodávající je oprávněn odstoupit od Kupní smlouvy uzavřené s Kupujícím, který je spotřebitelem, vedle případů stanovených obecně závaznými právními předpisy, pokud:\n<br>a) Kupující, který je spotřebitelem, neuhradí Kupní cenu ve lhůtě splatnosti,\n<br>b) Kupující, který je spotřebitelem, Předmět koupě bez vážného důvodu nepřevezme,\n<br>c) není-li plnění ze strany Prodávajícího možné za původních podmínek dodat (především proto, že se Předmět koupě nevyrábí, dodavatel přestal Předmět koupě dodávat do České republiky apod.),\n<br>d) plnění ze strany Prodávajícího se stane objektivně nemožným nebo protiprávním.\n<br>2. Prodávající je oprávněn odstoupit od Kupní smlouvy uzavřené s Kupujícím, který je podnikatelem, vedle případů stanovených obecně závaznými právními předpisy:\n<br> a) bez uvedení důvodu do doby, než na základě uzavřené Kupní smlouvy dojde k převzetí Předmětu koupě ze strany Kupujícího, který je podnikatelem,\n<br>b) Kupující, který je podnikatelem, neuhradí Kupní cenu ve lhůtě splatnosti,\n<br>c) Kupující, který je podnikatelem, Předmět koupě bez vážného důvodu nepřevezme,\n<br>d) není-li plnění ze strany Prodávajícího možné za původních podmínek dodat (především proto, že se Předmět koupě nevyrábí, dodavatel přestal Předmět koupě dodávat do České republiky apod.),\n<br>e) plnění ze strany Prodávajícího se stane objektivně nemožným nebo protiprávním.\n<br>3. O odstoupení od Kupní smlouvy je Prodávající povinen bez zbytečného odkladu Kupujícího informovat.\n<br>4. Na vrácení Kupní ceny uhrazené Kupujícím se přiměřeně použije ustanovení čl. 11. bodu 9. těchto obchodních podmínek."
+          }
+        },
+        "3a9525d5-e096-4ec5-ac9c-9eab32065944": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "14. \tVyšší moc",
+            "list_desc": "1.\tSmluvní strany nemohou nést odpovědnost za nesplnění svých smluvních závazků z důvodů vyšší moci.\n<br>2.\tPod pojmem vyšší moc se rozumí působení nepředvídatelných událostí, vyskytnuvších se po uzavření Kupní smlouvy, které jsou mimo možnosti zvládnutí smluvními stranami, nebo proti kterým nemohou smluvní strany přijmout dostatečná opatření, jako jsou např. stávky, výluky, blokády, válka nebo hrozba války, mobilizace, převraty, přírodní pohromy takového rozsahu, že zabraňují nebo zpožďují plnění smluvních závazků z Kupní smlouvy některé ze smluvních stran.\n<br>3.\tSmluvní strana, která se dovolává vyšší moci, je povinna bez prodlení informovat druhou smluvní stranu o události, jejím začátku a pravděpodobném trvání. Podobným způsobem musí být sdělen okamžik ukončení události."
+          }
+        },
+        "e0db0859-9899-4629-b0df-e5aa37b2e417": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "15. \tŘešení sporů",
+            "list_desc": "1. Případné spory z Kupní smlouvy mezi Prodávajícím a Kupujícím, který je podnikatelem, bude výlučně rozhodovat Okresní soud v Karlových Varech, bude-li dána věcná příslušnost okresního soudu jakožto soudu I. stupně, resp. Krajský soud v Plzni, bude-li dána věcná příslušnost krajského soudu jakožto soudu I. stupně."
+          }
+        },
+        "92dd8926-d196-479e-9e91-8a9e182d7d52": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "16. \tMimosoudní řešení spotřebitelských sporů",
+            "list_desc": "1. \tPro mimosoudní řešení spotřebitelských sporů vzniklých z Kupní smlouvy, tedy sporů mezi Prodávajícím a Kupujícím, který je spotřebitelem, je příslušná Česká obchodní inspekce. Poštovní adresa pro doručování návrhů je:\n<br>Česká obchodní inspekce\n<br>Ústřední inspektorát – oddělení ADR\n<br>Štěpánská 15\n<br>120 00 Praha 2\n<br>E-mail: adr@coi.cz\n<br>Web: adr.coi.cz\n<br>telefon: +420 296 366 \n<br> 2. Právo na mimosoudní řešení spotřebitelského sporu může Kupující, který je spotřebitelem, uplatnit nejpozději do 1 roku ode dne, kdy u Prodávajícího poprvé uplatnil právo, které je předmětem spotřebitelského sporu.\t\n<br>3. Pro podání stížnosti týkající se Předmětu koupě a pro vyhledání subjektu alternativního řešení sporů může Kupující, který je spotřebitelem, rovněž využít on-line platformu, která je zřízena Evropskou komisí na internetových stránkách na adrese: http:\/\/ec.europa.eu\/consumers\/odr\/.   "
+          }
+        },
+        "460b2d73-7b2e-41c4-9aac-4084ba9aaca3": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "17. \tDalší informace pro Kupujícího, který je spotřebitelem",
+            "list_desc": "1.   \tProdávající má potřebná oprávnění na základě živnostenského zákona, přičemž kontrolu v této oblasti vykonává v rámci své působnosti příslušný živnostenský úřad. \n<br>2. Případné stížnosti vyřizuje Kupující, který je spotřebitelem, prostřednictvím emailu uvedeného v čl. I. těchto podmínek.\n<br>3. Dozor spojený s ochranou osobních údajů vykonává Úřad pro ochranu osobních údajů.\n<br>4. Dohled nad dodržováním zákona č. 634\/1992 Sb., o ochraně spotřebitele, ve znění pozdějších předpisů, provádí Česká obchodní inspekce.\n<br>5. Při uzavírání Kupní smlouvy použitím prostředku komunikace na dálku (zejména síť internet) hradí Kupující, který je spotřebitelem, náklady vzniklé při použití prostředků komunikace na dálku (především náklady na internetové připojení nebo na telefonní hovory). Tyto náklady se neliší od běžné sazby."
+          }
+        },
+        "fc51b4b4-cfb3-4600-a5b9-a10751a8b40b": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "18. \tDalší ujednání",
+            "list_desc": "1.  \tNad rámec výslovných ustanovení Kupní smlouvy nebudou jakákoliv práva a povinnosti smluvních stran dovozovány z dosavadní či budoucí praxe zavedené mezi smluvními stranami či zvyklostí zachovávaných obecně či v odvětví týkajícím se předmětu plnění dle Kupní smlouvy, ledaže je v Kupní smlouvě výslovně sjednáno jinak. \n<br>2. Vylučuje se povinnost Prodávajícího nahradit Kupujícímu, který je podnikatelem, újmu, kterou nebylo možno v době uzavření Kupní smlouvy rozumně předvídat. Rovněž se vylučuje povinnost Prodávajícího nahradit Kupujícímu, který je podnikatelem, nemajetkovou újmu ve smyslu ust. § 2971 Občanského zákoníku. Nedohodnou-li se smluvní strany jinak, nahrazuje se veškerá škoda vzniklá v souvislosti s Kupní smlouvou v penězích.\n<br>3. V souladu s ust. § 2898 Občanského zákoníku se sjednává limitace náhrady škody hrazené Prodávajícím Kupujícímu, který je podnikatelem, dle Kupní smlouvy částkou odpovídající 30% celkové Kupní ceny bez DPH sjednané v Kupní smlouvě, přičemž limit náhrady škody je sjednán pro souhrn veškerých nároků na náhradu škody uplatněných Kupujícím, a to ať jednotlivých, či dílčích."
+          }
+        },
+        "062b7d93-4bf9-48d0-8e0b-1aefe484d463": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "19.  \tOchrana osobních údajů",
+            "list_desc": "1. Informace týkající se ochrany osobních údajů v souvislosti s Nařízením Evropského parlamentu a Rady (EÚ) 2016\/679 o ochraně fyzických osob v souvislosti se zpracování osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95\/46\/ES (dále také jen GDPR) a zavedení opatření na zajištění souladu postupů Prodávajícího s GDPR a se souvisejícími právními předpisy upravujícími ochranu osobních údajů, jsou umístěny na internetových stránkách Prodávajícího na adrese www.360design.cz."
+          }
+        },
+        "7b604acf-5b1d-4e67-90fa-64f05ce7bdc4": {
+          "type": "terms-condition",
+          "settings": {
+            "list_title": "20. \tZávěrečná ujednání",
+            "list_desc": "1. Na otázky, které nejsou výslovně upraveny Kupní smlouvou ani těmito podmínkami, budou použita příslušná ustanovení Občanského zákoníku v platném znění.\n<br>2. Tyto podmínky v jejich aktuálně účinném znění jsou dostupné elektronicky na Webové stránce Prodávajícího. \n<br>3. V případě neplatnosti některého z ustanovení těchto podmínek, nezakládá taková skutečnost neplatnost podmínek jako celku. Namísto neplatného ustanovení vstupuje v platnost obecně platná norma, v opačném případě jsou strany povinny se vzájemně dohodnout na řešení, které je nejblíže původně sledovanému obchodnímu účelu.\n<br>4. Prodávající je oprávněn tyto podmínky zveřejněné způsobem dle odstavce 2. tohoto článku obchodních podmínek kdykoliv změnit nebo doplnit, a to zejména při změně souvisejících právních norem nebo při změně způsobu vedení obchodní činnosti. Takováto změna či doplnění však nemá vliv na práva ani povinnosti smluvních stran z Kupních smluv uzavřených do doby účinnosti takto upravených obchodních podmínek. Upravené znění obchodních podmínek zveřejní Prodávající na Webové stránce Prodávajícího. \n<br>5. Uzavřením Kupní smlouvy vyjadřuje Kupující souhlas s těmito podmínkami."
           }
         }
       },
@@ -71,7 +150,21 @@
         "72345072-984d-4a73-b870-ce97baeab3e6",
         "6ed7ded9-4141-4598-8edc-d847abb35c45",
         "4eb36caf-5134-4ec8-bdb6-8f78ad215e13",
-        "5a2cbc87-4da5-489b-975c-3858255cfa7f"
+        "5a2cbc87-4da5-489b-975c-3858255cfa7f",
+        "43144a29-1003-49f4-9a63-61766c4b1076",
+        "16556781-73c1-4635-98d0-35538aecfd78",
+        "9697da66-44c2-422d-a18d-01cc15553545",
+        "713751d2-ba77-4ce0-999a-56652f30c3f1",
+        "92b386b3-0aa4-46ac-a782-c75c65b05f28",
+        "4660211e-3298-41c4-afea-be2b5c912778",
+        "9da71487-6afd-42d1-b33f-4f932ee8c24b",
+        "3a9525d5-e096-4ec5-ac9c-9eab32065944",
+        "e0db0859-9899-4629-b0df-e5aa37b2e417",
+        "92dd8926-d196-479e-9e91-8a9e182d7d52",
+        "460b2d73-7b2e-41c4-9aac-4084ba9aaca3",
+        "fc51b4b4-cfb3-4600-a5b9-a10751a8b40b",
+        "062b7d93-4bf9-48d0-8e0b-1aefe484d463",
+        "7b604acf-5b1d-4e67-90fa-64f05ce7bdc4"
       ],
       "settings": {
         "section_padding_top": 100,
@@ -123,7 +216,6 @@
         "section_padding_bottom_lg": 60,
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40,
-        "term_condition_img": "shopify:\/\/shop_images\/terms-condition-img2_4c4aba90-569e-4be4-8f25-7e3c5e3d0bd9.jpg",
         "term_condition_img_title": "Limitation of liability",
         "term_condition_img_desc": "n no event shall staffy wordpress theme, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this website whether such liability is under contract",
         "section_bg_color": "#f6f6f6",
@@ -158,7 +250,6 @@
     }
   },
   "order": [
-    "terms-conditions2",
     "terms-conditions",
     "terms-conditions3",
     "terms-conditions4"
