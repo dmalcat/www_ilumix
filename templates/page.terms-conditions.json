@@ -1,49 +1,26 @@
 {
   "sections": {
-    "terms-conditions3": {
-      "type": "terms-conditions3",
+    "df8c9060-d64d-4db8-954b-e987a5bbae7d": {
+      "type": "terms-conditions",
       "blocks": {
-        "e4602800-663a-4b1e-b4be-0d5e25d5c6c0": {
+        "35659ec4-1078-44b4-b489-a0bf80c75dc3": {
           "type": "terms-condition",
-          "disabled": true,
           "settings": {
-            "list_desc": "Publishing any website material in any other media;"
+            "list_title": "Provozovatel e-shopu 360design.cz",
+            "list_desc": "ILUMIX light s.r.o. <br>\nIČO: 29115728 <br>\nDIČ: CZ29115728 <br>\nHolečkova 368\/4 <br>\nKarlovy Vary 36017"
           }
         },
-        "f8553c56-7513-4e71-a8c6-4f5f10d0f2be": {
-          "type": "terms-condition",
-          "disabled": true,
-          "settings": {
-            "list_desc": "Publishing any website material in any other media;"
-          }
-        },
-        "7027e382-be31-4cbd-a469-940fd8f73732": {
-          "type": "terms-condition",
-          "disabled": true,
-          "settings": {
-            "list_desc": "Publishing any website material in any other media;"
-          }
-        },
-        "a44b0d94-882b-40f3-8231-0205115e4539": {
+        "d1d6b371-1e1c-4c8a-b062-7314b33044d2": {
           "type": "terms-condition",
           "settings": {
-            "list_desc": "Publishing any website material in any other media;"
-          }
-        },
-        "5eeb62b4-7c24-4afb-b79e-1926fc28dbe2": {
-          "type": "terms-condition",
-          "disabled": true,
-          "settings": {
-            "list_desc": "Publishing any website material in any other media;"
+            "list_title": "Adresa pro vrácení\/reklamaci zboží:",
+            "list_desc": "ILUMIX light s.r.o.<br>Holečkova 368\/4,<br>Karlovy Vary 36017"
           }
         }
       },
       "block_order": [
-        "e4602800-663a-4b1e-b4be-0d5e25d5c6c0",
-        "f8553c56-7513-4e71-a8c6-4f5f10d0f2be",
-        "7027e382-be31-4cbd-a469-940fd8f73732",
-        "a44b0d94-882b-40f3-8231-0205115e4539",
-        "5eeb62b4-7c24-4afb-b79e-1926fc28dbe2"
+        "35659ec4-1078-44b4-b489-a0bf80c75dc3",
+        "d1d6b371-1e1c-4c8a-b062-7314b33044d2"
       ],
       "settings": {
         "section_padding_top": 100,
@@ -51,13 +28,7 @@
         "section_padding_top_lg": 60,
         "section_padding_bottom_lg": 60,
         "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 40,
-        "term_condition_img_title": "Limitation of liability",
-        "term_condition_img_desc": "n no event shall staffy wordpress theme, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this website whether such liability is under contract",
-        "section_bg_color": "#f6f6f6",
-        "section_title": "Restrictions",
-        "section_title_label": "",
-        "section_description": "Certain areas of this website are restricted from being access by you and staffy wordpress theme may further restrict access by you to any areas of this website, at any time, in absolute discretion. any user id and password you may have for this website are confidential and you must maintain confidentiality as well"
+        "section_padding_bottom_xs": 40
       }
     },
     "terms-conditions": {
@@ -234,42 +205,10 @@
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40
       }
-    },
-    "df8c9060-d64d-4db8-954b-e987a5bbae7d": {
-      "type": "terms-conditions",
-      "blocks": {
-        "d1d6b371-1e1c-4c8a-b062-7314b33044d2": {
-          "type": "terms-condition",
-          "settings": {
-            "list_title": "Adresa pro vrácení\/reklamaci zboží:",
-            "list_desc": "ILUMIX light s.r.o.<br>Holečkova 368\/4,<br>Karlovy Vary 36017"
-          }
-        },
-        "35659ec4-1078-44b4-b489-a0bf80c75dc3": {
-          "type": "terms-condition",
-          "settings": {
-            "list_title": "Provozovatel e-shopu 360design.cz",
-            "list_desc": "ILUMIX light s.r.o. <br>\nIČO: 29115728 <br>\nDIČ: CZ29115728 <br>\nHolečkova 368\/4 <br>\nKarlovy Vary 36017"
-          }
-        }
-      },
-      "block_order": [
-        "d1d6b371-1e1c-4c8a-b062-7314b33044d2",
-        "35659ec4-1078-44b4-b489-a0bf80c75dc3"
-      ],
-      "settings": {
-        "section_padding_top": 100,
-        "section_padding_bottom": 100,
-        "section_padding_top_lg": 60,
-        "section_padding_bottom_lg": 60,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 40
-      }
     }
   },
   "order": [
-    "terms-conditions3",
-    "terms-conditions",
-    "df8c9060-d64d-4db8-954b-e987a5bbae7d"
+    "df8c9060-d64d-4db8-954b-e987a5bbae7d",
+    "terms-conditions"
   ]
 }
