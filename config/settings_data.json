@@ -149,9 +149,9 @@
     "newsletter_img": "shopify:\/\/shop_images\/newslatter-bg.jpg",
     "newletter_title": "10% off your first order",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/360design_logo.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/360design_logo_df8f6bd9-b989-4414-bccb-0a0cf5555afe.svg",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "large",
+    "checkout_logo_size": "small",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
@@ -2454,8 +2454,6 @@
       "1658755145eb79d41e": {
         "type": "instafeed",
         "settings": {
-          "section_title1": "Inspirace z našeho Instagramu",
-          "section_subtitle": "Sledujte nás",
           "heading_size": 20,
           "feed_width": 100,
           "html_area": ""
