@@ -2,17 +2,6 @@
   "sections": {
     "16766350232ceca4b3": {
       "type": "apps",
-      "blocks": {
-        "88277572-954b-487a-a16c-80c3e0a0f716": {
-          "type": "shopify:\/\/apps\/essential-free-shipping-bar\/blocks\/app-block\/4125375e-37c8-4137-949d-c4e1a3aac572",
-          "settings": {
-            "id": "cle8gs16d6299411ox8kiy8t8s9"
-          }
-        }
-      },
-      "block_order": [
-        "88277572-954b-487a-a16c-80c3e0a0f716"
-      ],
       "settings": {
       }
     },
