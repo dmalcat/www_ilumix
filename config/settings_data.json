@@ -2483,6 +2483,22 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "6471712195879653093": {
+        "type": "shopify:\/\/apps\/customer-accounts-concierge\/blocks\/social_logins\/3c495b68-652c-468d-a0ef-5bad6935d104",
+        "disabled": false,
+        "settings": {
+          "position": "below",
+          "divider": true,
+          "style": "icon_and_text",
+          "text_alignment": "center",
+          "icon_alignment": "left",
+          "icon_style": "white",
+          "border_radius": 4,
+          "spacing": 8,
+          "shadow": false,
+          "custom_css": ""
+        }
       }
     }
   },
