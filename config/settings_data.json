@@ -2454,8 +2454,6 @@
       "1658755145eb79d41e": {
         "type": "instafeed",
         "settings": {
-          "section_title1": "Inspirace z našeho Instagramu",
-          "section_subtitle": "Sledujte nás",
           "heading_size": 20,
           "feed_width": 100,
           "html_area": ""
@@ -2478,6 +2476,22 @@
         "type": "shopify:\/\/apps\/eu-gdpr-cookies-notification\/blocks\/omega-cookies-notification\/13cba824-a338-452e-9b8e-c83046a79f21",
         "disabled": false,
         "settings": {
+        }
+      },
+      "6471712195879653093": {
+        "type": "shopify:\/\/apps\/customer-accounts-concierge\/blocks\/social_logins\/3c495b68-652c-468d-a0ef-5bad6935d104",
+        "disabled": false,
+        "settings": {
+          "position": "below",
+          "divider": true,
+          "style": "icon_and_text",
+          "text_alignment": "center",
+          "icon_alignment": "left",
+          "icon_style": "white",
+          "border_radius": 4,
+          "spacing": 8,
+          "shadow": false,
+          "custom_css": ""
         }
       }
     }
