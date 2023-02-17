@@ -2490,7 +2490,7 @@
         "settings": {
           "position": "below",
           "divider": true,
-          "style": "icon_and_text",
+          "style": "only_icon",
           "text_alignment": "center",
           "icon_alignment": "left",
           "icon_style": "white",
