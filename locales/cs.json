@@ -201,7 +201,7 @@
         "card_issue_number_placeholder": "Číslo vydání",
         "card_change_label": "Změnit",
         "ends_with_label": "končící {{ last_digits }}",
-        "same_billing_address_label": "Stejné jako dodací adresa",
+        "same_billing_address_label": "Stejná jako dodací adresa",
         "different_billing_address_label": "Použít jinou fakturační adresu",
         "free_order_notice_html": "Vaše objednávka je <strong>zdarma<\/strong>. Není vyžadována žádná platba.",
         "offsite_gateway_redirect_hint": "Po kliknutí na \"{{ button_label }}\" budete přesměrováni na {{ gateway_label }}, abyste nákup dokončili bezpečně.",
