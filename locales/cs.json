@@ -418,7 +418,7 @@
         "authorize_purchase": "Autorizovat nákup",
         "title": "Zapamatovat",
         "label": "Uložení informací pro rychlejší rezervaci",
-        "description_html": "Příště se podívat zde nebo na jiné obchody poháněné Shopify, obdržíte kód SMS bezpečně koupit s Shopify platit.",
+        "description_html": "Při příštím nákupu zde nebo na jiných stránkách se službou Shopify, obdržíte textovou zprávou kód pro bezpečný nákup pomocí služby Shop Pay.",
         "mobile_phone_icon_alt": "Mobilní telefon",
         "mobile_phone_number": "Číslo mobilního telefonu",
         "terms_and_privacy_html": "Pokračováním vyjadřujete souhlas s tím, že Shopify <a class=\"link--muted\" data-modal=\"\" data-remember-policy-link=\"privacy_policy\" title=\"Shopify Pay Privacy Policy\" href=\"{{ privacy_href }}\">Zásady ochrany osobních údajů<\/a> a <a class=\"link--muted\" data-modal=\"\" data-remember-policy-link=\"terms\" title=\"Shopify Pay Terms of Service\" href=\"{{ terms_href }}\">podmínky služby<\/a>.",
