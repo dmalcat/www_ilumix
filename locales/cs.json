@@ -156,7 +156,8 @@
           "zero": "Žádné jiné metody nejsou k dispozici",
           "one": "1 další metoda dostupná na ",
           "other": "{{Count}} další metody, které jsou k dispozici od "
-        }
+        },
+        "shipping_method_title": "Způsob dopravy"
       },
       "payment": {
         "amazon_payments_label": "Amazon Pay",
