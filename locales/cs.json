@@ -219,7 +219,8 @@
         "card_fields_unavailable_html": {
           "one": "Platby kreditní a debetní kartou nejsou momentálně k dispozici.<br><a href=\"javascript:window.location.reload();\">aktualizujte tuto stránku<\/a> nebo akci zopakujte později.",
           "other": "Platby kreditní a debetní kartou nejsou momentálně k dispozici.<br><a href=\"javascript:window.location.reload();\">aktualizujte tuto stránku<\/a> nebo zkuste použít jiný způsob platby."
-        }
+        },
+        "billing_address_description": "Vyberte adresu, na kterou chcete vystavit fakturu."
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Aktuální zůstatek {{ amount }}",
