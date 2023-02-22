@@ -98,7 +98,8 @@
     {% if template contains 'customers' or 'cart' %}
     {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
     {% endif %}
-{% if content_for_header contains 'bss-b2b-cp' %}{% include 'bss-b2b-cp-header' %}{% endif %}</head>
+{% if content_for_header contains 'bss-b2b-cp' %}{% include 'bss-b2b-cp-header' %}{% endif %}
+</head>
   <body  id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template.name | handle }}">
     {%- if settings.enable_preloader -%}
     {% include 'preloader' %}
@@ -120,4 +121,5 @@
     {% include 'back-to-top' %}
   <!-- Necessary JS -->
     {% include 'footer-js' %}
+  </body>
 </html>
