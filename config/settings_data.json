@@ -1593,7 +1593,7 @@
           "about_product_padding_bottom_xs": 40,
           "section_sub_title": "20+ Year",
           "section_title": "of experience",
-          "section_arrow": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"22\" height=\"72\" viewbox=\"0 0 22 72\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n  <metadata><?xpacket begin=\"﻿\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\n<xmpmeta xmlns:x=\"adobe:ns:meta\/\" x:xmptk=\"Adobe XMP Core 5.6-c142 79.160924, 2017\/07\/13-01:06:39        \">\n   <rdf xmlns:rdf=\"http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#\">\n      <description rdf:about=\"\"><\/description>\n   <\/rdf>\n<\/xmpmeta>                     \n<?xpacket end=\"w\"?><\/metadata>\n<image id=\"arrow-right_1_\" data-name=\"arrow-right (1)\" width=\"22\" height=\"72\" xlink:href=\"data:img\/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAABICAQAAABYOc03AAAABGdBTUEAALGPC\/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflAhESDBi4Q+NPAAAArUlEQVRIx+3XOwoCQQyA4X91CsVC0c7WznuIhV5GEdwbaLdexkI81jZ2Y7E+ZjPjLgGtTMrwkUBIimQzEnEFFnG6gyIMGzZs2LBhw7\/ATlMijQca3NPgmwaXX5iG4T\/DBZ5jqzvgKRwbYA\/kjTTnxNZBK39QfLXPTfxF38v\/iQc0vJQUr9H6WUkuKHTHYdMLI3b0mQJzSSV+cseElaQxrviSYUwhS74eZ2AtKdwBZjYuUzbNzbEAAAAASUVORK5CYII=\"><\/image>\n<\/svg>"
+          "section_arrow": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"22\" height=\"72\" viewbox=\"0 0 22 72\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n <metadata><?xpacket begin=\"﻿\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\n<xmpmeta xmlns:x=\"adobe:ns:meta\/\" x:xmptk=\"Adobe XMP Core 5.6-c142 79.160924, 2017\/07\/13-01:06:39 \">\n   <rdf xmlns:rdf=\"http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#\">\n <description rdf:about=\"\"><\/description>\n   <\/rdf>\n<\/xmpmeta>                     \n<?xpacket end=\"w\"?><\/metadata>\n<image id=\"arrow-right_1_\" data-name=\"arrow-right (1)\" width=\"22\" height=\"72\" xlink:href=\"data:img\/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAABICAQAAABYOc03AAAABGdBTUEAALGPC\/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflAhESDBi4Q+NPAAAArUlEQVRIx+3XOwoCQQyA4X91CsVC0c7WznuIhV5GEdwbaLdexkI81jZ2Y7E+ZjPjLgGtTMrwkUBIimQzEnEFFnG6gyIMGzZs2LBhw7\/ATlMijQca3NPgmwaXX5iG4T\/DBZ5jqzvgKRwbYA\/kjTTnxNZBK39QfLXPTfxF38v\/iQc0vJQUr9H6WUkuKHTHYdMLI3b0mQJzSSV+cseElaQxrviSYUwhS74eZ2AtKdwBZjYuUzbNzbEAAAAASUVORK5CYII=\"><\/image>\n<\/svg>"
         }
       },
       "about-template2": {
@@ -2526,6 +2526,12 @@
       "14952540001915115444": {
         "type": "shopify:\/\/apps\/upcart-cart-drawer-cart-upsell\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "2342463f5fbe64e3a1": {
+        "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.embed.socialshopwave-helper\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+        "disabled": false,
         "settings": {
         }
       }
