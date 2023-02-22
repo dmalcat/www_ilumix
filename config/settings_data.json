@@ -2478,12 +2478,6 @@
         "settings": {
         }
       },
-      "15079184273603081885": {
-        "type": "shopify:\/\/apps\/essential-free-shipping-bar\/blocks\/app_embed\/4125375e-37c8-4137-949d-c4e1a3aac572",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "6471712195879653093": {
         "type": "shopify:\/\/apps\/customer-accounts-concierge\/blocks\/social_logins\/3c495b68-652c-468d-a0ef-5bad6935d104",
         "disabled": false,
@@ -2502,7 +2496,7 @@
       },
       "14952540001915115444": {
         "type": "shopify:\/\/apps\/upcart-cart-drawer-cart-upsell\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
