@@ -2494,12 +2494,6 @@
           "custom_css": ""
         }
       },
-      "14952540001915115444": {
-        "type": "shopify:\/\/apps\/upcart-cart-drawer-cart-upsell\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "15773640700261759505": {
         "type": "shopify:\/\/apps\/customerhub\/blocks\/mini-hub\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
         "disabled": true,
@@ -2531,6 +2525,12 @@
           "page_element": "",
           "proxy_element": "",
           "mount_json_code": ""
+        }
+      },
+      "14952540001915115444": {
+        "type": "shopify:\/\/apps\/upcart-cart-drawer-cart-upsell\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
+        "disabled": false,
+        "settings": {
         }
       }
     }
