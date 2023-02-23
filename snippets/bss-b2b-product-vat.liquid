@@ -1,3 +1,6 @@
+
+{%- include 'wcp_discount' with product -%}
+            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 {% if false %}
 						{% assign excluded_vat_text = "exc. VAT | " %}
 						{% assign included_vat_text = "inc. VAT" %}
@@ -26,11 +29,11 @@
                 "{{ variant.id }}": {
                     "product_id": {{ product.id | json }},
                     "taxable": {{ variant.taxable | json }},
-                    "price": {{ variant.price | json }},
-                    "price_formatted": {{ variant.price | money | json }},
-                    "price_formatted_without_trailing_zeros": {{ variant.price | money_without_trailing_zeros | json }},
-                    "compare_at_price_formatted": {{ variant.compare_at_price | money | json }},
-                    "compare_at_price_formatted_without_trailing_zeros": {{ variant.compare_at_price | money_without_trailing_zeros | json }}
+                    "price": {{ wcp_v_price | json }},
+                    "price_formatted": {{ wcp_v_price | money | json }},
+                    "price_formatted_without_trailing_zeros": {{ wcp_v_price | money_without_trailing_zeros | json }},
+                    "compare_at_price_formatted": {{ wcp_v_compare_at_price | money | json }},
+                    "compare_at_price_formatted_without_trailing_zeros": {{ wcp_v_compare_at_price | money_without_trailing_zeros | json }}
                 }{% unless forloop.last %},{% endunless %}
                 {% endfor %}
             }
@@ -91,11 +94,11 @@
         {% assign variant_id = variant.id %}
         item[{{ variant_id }}] = {{ variant | json }};
         item[{{ variant_id }}].taxable = {{ variant.taxable | json }};
-        item[{{ variant_id }}].price = {{ variant.price | json }};
-        item[{{ variant_id }}].price_formatted = {{ variant.price | money | json }};
-        item[{{ variant_id }}].price_formatted_without_trailing_zeros = {{ variant.price | money_without_trailing_zeros | json }};
-        item[{{ variant_id }}].compare_at_price_formatted = {{ variant.compare_at_price | money | json }};
-        item[{{ variant_id }}].compare_at_price_formatted_without_trailing_zeros = {{ variant.compare_at_price | money_without_trailing_zeros | json }};
+        item[{{ variant_id }}].price = {{ wcp_v_price | json }};
+        item[{{ variant_id }}].price_formatted = {{ wcp_v_price | money | json }};
+        item[{{ variant_id }}].price_formatted_without_trailing_zeros = {{ wcp_v_price | money_without_trailing_zeros | json }};
+        item[{{ variant_id }}].compare_at_price_formatted = {{ wcp_v_compare_at_price | money | json }};
+        item[{{ variant_id }}].compare_at_price_formatted_without_trailing_zeros = {{ wcp_v_compare_at_price | money_without_trailing_zeros | json }};
         item[{{ variant_id }}].product_id = {{ product.id | json }};
 
       {% endfor %}
@@ -104,3 +107,9 @@
     })();
 </script>
 {% endif %}
+{%- assign wcp_prd_var = product -%}
+{%- unless wcp_prd_var == empty -%}
+            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
+                {%- render 'wcp_product_json' with wcp_prd_var -%}
+            </script>
+{%- endunless -%}
