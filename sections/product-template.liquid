@@ -257,7 +257,7 @@
                 {%- if wcp_compare_at_price_max > wcp_price -%}
                 <span class="old-price" id="ComparePrice">{{ wcp_v_compare_at_price | money }}</span>
                 {%- endif -%}
-                <p><span class="new-price" id="ProductPrice">{{ wcp_v_price | money }}</span></p>
+                <p><span class="new-price 11" id="ProductPrice">{{ wcp_v_price | money }}</span></p>
                 <p class="price-no-vat"><span id="ProductPriceVat">{{ wcp_v_price | divided_by: 1.21 | money }}</span> bez DPH</p>
               </div>
             </div>
