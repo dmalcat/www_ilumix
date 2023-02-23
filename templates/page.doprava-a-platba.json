@@ -2,28 +2,6 @@
   "sections": {
     "about-template1": {
       "type": "about-template1",
-      "blocks": {
-        "363cfb65-24d9-4fb6-be05-f459679a31f2": {
-          "type": "about_section1",
-          "settings": {
-            "about_title": "Doprava",
-            "about_des1": "O potvrzení přijetí vaší objednávky budete informováni na Váš email do 15 minut od odeslání objednávky. Objednané zboží pro vás neprodleně zabalíme a odešleme vybraným způsobem dopravy po přijetí platby. O expedici zboží Vás budeme informovat emailem, ve kterém uvedeme všechny potřebné údaje. Reálně můžete očekávat doručení balíku během 1-4 pracovních dnů od odeslání.Ceny a způsoby doručeníVaši objednávku si můžete nechat doručit po celé České republice. Jako způsob dopravy můžete zvolit osobní odběr na prodejně ILUMIX light, osobní odběr na partnerském odběrném místě sítí Zásilkovna nebo přepravní službu GLS.Osobní odběr v síti ZásilkovnaPartnerská síť Zásilkovna disponuje více než 7000 odběrných míst, můžete si objednávku nechat doručit na jednu s nich.- Objednávku můžete sledovat online.- Při doručení objednávky na odběrné místo budete informováni mobilní aplikací, SMS a emailem, od této chvíle máte 7 dní na vyzvednutí.- Objednávku můžete vyzvednout díky zaslanému heslu, informační SMS nebo emailem.- Lhůtu k vyzvednutí si můžete prostřednictvím SMS prodloužit až na 21 dní.Přepravní služba GLS- Cestu zásilky lze sledovat na internetu pomocí zaslaného kódu s objednávkou, GLS doručuje balíky ve všední dny od 8 do 18 h.- V den doručení zásilky Vás bude GLS kontaktovat e-mailem a sms zprávou, aby jste případně mohli upřesnit podrobnosti předání - čas doručení, změnu adresy, atd.- V případě dobírky můžete uhradit částku za balík hotově nebo platební kartou přímo u řidiče při předání zásilky.Převzetí a reklamace - Pokud zjistíte při přebírání zásilky závadu, poškození či nekompletnost zásilky, je nutné ihned na místě sepsat s obsluhou výdejny nebo přepravním kurýrem zápis o škodě (obsluha je povinna jej mít u sebe), který podepíšou obě strany a příjemce si ponechá u sebe jeho kopii. Na pozdější reklamace způsobené přepravou nebude brán zřetel!",
-            "about_des2": ""
-          }
-        },
-        "eeff8617-0635-488c-8d91-c9ceb5137145": {
-          "type": "about_section1",
-          "settings": {
-            "about_title": "Our company",
-            "about_des1": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.",
-            "about_des2": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit."
-          }
-        }
-      },
-      "block_order": [
-        "363cfb65-24d9-4fb6-be05-f459679a31f2",
-        "eeff8617-0635-488c-8d91-c9ceb5137145"
-      ],
       "settings": {
         "about_product_padding_top": 60,
         "about_product_padding_bottom": 35,
@@ -35,9 +13,53 @@
         "section_title": "",
         "section_arrow": ""
       }
+    },
+    "35ba0121-b6d9-4916-a7e3-1d76c466b9c6": {
+      "type": "about-template2",
+      "blocks": {
+        "c03adff9-6167-4462-a5dc-b2c10da3f591": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Ceny a způsoby doručení",
+            "list_desc": "Vaši objednávku si můžete nechat doručit po celé České republice. Jako způsob dopravy můžete zvolit osobní odběr na prodejně ILUMIX light, osobní odběr na partnerském odběrném místě sítí Zásilkovna nebo přepravní službu GLS."
+          }
+        },
+        "4fd3da14-b40d-4737-b81b-c6e05a755593": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Osobní odběr v síti Zásilkovna",
+            "list_desc": "Partnerská síť Zásilkovna disponuje více než 7000 odběrných míst, můžete si objednávku nechat doručit na jednu s nich.\n- Objednávku můžete sledovat online.\n- Při doručení objednávky na odběrné místo budete informováni mobilní aplikací, SMS a emailem, od této chvíle máte 7 dní na vyzvednutí.\n- Objednávku můžete vyzvednout díky zaslanému heslu, informační SMS nebo emailem.\n- Lhůtu k vyzvednutí si můžete prostřednictvím SMS prodloužit až na 21 dní."
+          }
+        },
+        "a68ed735-cf57-41aa-a336-b9a0d9963a92": {
+          "type": "about_template2",
+          "settings": {
+            "list_title": "Přepravní služba GLS",
+            "list_desc": "- Cestu zásilky lze sledovat na internetu pomocí zaslaného kódu s objednávkou, GLS doručuje balíky ve všední dny od 8 do 18 h.\n- V den doručení zásilky Vás bude GLS kontaktovat e-mailem a sms zprávou, aby jste případně mohli upřesnit podrobnosti předání - čas doručení, změnu adresy, atd.\n- V případě dobírky můžete uhradit částku za balík hotově nebo platební kartou přímo u řidiče při předání zásilky."
+          }
+        }
+      },
+      "block_order": [
+        "c03adff9-6167-4462-a5dc-b2c10da3f591",
+        "4fd3da14-b40d-4737-b81b-c6e05a755593",
+        "a68ed735-cf57-41aa-a336-b9a0d9963a92"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_title": "Doprava",
+        "section_desc": "O potvrzení přijetí vaší objednávky budete informováni na Váš email do 15 minut od odeslání objednávky. Objednané zboží pro vás neprodleně zabalíme a odešleme vybraným způsobem dopravy po přijetí platby. O expedici zboží Vás budeme informovat emailem, ve kterém uvedeme všechny potřebné údaje. Reálně můžete očekávat doručení balíku během 1-4 pracovních dnů od odeslání.Převzetí a reklamace - Pokud zjistíte při přebírání zásilky závadu, poškození či nekompletnost zásilky, je nutné ihned na místě sepsat s obsluhou výdejny nebo přepravním kurýrem zápis o škodě (obsluha je povinna jej mít u sebe), který podepíšou obě strany a příjemce si ponechá u sebe jeho kopii. Na pozdější reklamace způsobené přepravou nebude brán zřetel!",
+        "more_button": "",
+        "more_button_url": ""
+      }
     }
   },
   "order": [
-    "about-template1"
+    "about-template1",
+    "35ba0121-b6d9-4916-a7e3-1d76c466b9c6"
   ]
 }
