@@ -60,12 +60,8 @@
         <li class="subtotal-info">
           <div class="subtotal-titles">
             <h3>{{ settings.cart_sub_total }}</h3>
-            <span id="cart-total" class="subtotal-price"><span class="wcp-original-cart-total">{{ cart.total_price | money}}</span>
-    <span class="wcp-cart-total"></span>
-    <div class="additional-notes">
-        <span class="wcp-minimums-note"></span>
-        <span class="wcp-extra-note "></span>
-    </div>{% render "wcp_multi_currency_msg" %}</span>
+            <span id="cart-total" class="subtotal-price"><span class="">{{ wcp_total_price | money}}</span>
+    </span>
           </div>
         </li>
         <li class="mini-cart-btns">
