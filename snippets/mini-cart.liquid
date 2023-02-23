@@ -20,7 +20,21 @@
         </ul>
       </div>
       <ul class="cart-item-loop" {{ itemStyle }}>
-        {% for item in cart.items %}
+        {%- assign wcp_total_price = 0 -%} 
+{% for item in cart.items %}
+{%- include 'wcp_discount' with item.product -%}
+{%- include 'wcp_variant' with item.variant -%}
+{%- include 'wcp_vd_discount' with item -%}  
+{%- assign  wcp_custom_final_Price = item.final_price  -%} 
+{%- if wcp_v_price < wcp_custom_final_Price -%}
+                  			{%- assign wcp_line_price = wcp_v_price | floor | minus: 0 | times: item.quantity -%}
+                {%- else -%}
+                               {%- assign wcp_line_price = wcp_custom_final_Price | floor | minus: 0 | times: item.quantity -%}
+                               {%- assign wcp_v_price = wcp_custom_final_Price | floor | minus: 0 -%}
+                {%- endif -%}
+ {%- assign wcp_total_price = wcp_total_price | plus: wcp_line_price -%}	
+ {{NextDiscountHtml}} 
+
         <li class="cart-item">
           <div class="cart-image">
             <a href="{{ item.url }}">
@@ -33,7 +47,7 @@
               
                 <span class="quantity">{{ item.quantity }} × </span>
                 
-                  <span class="new-price">{{ item.price | money }}</span>
+                  <span class="new-price">{{  wcp_v_price  | money }}</span>
                 
               
             </div>
@@ -46,7 +60,12 @@
         <li class="subtotal-info">
           <div class="subtotal-titles">
             <h3>{{ settings.cart_sub_total }}</h3>
-            <span id="cart-total" class="subtotal-price">{{ cart.total_price | money }}</span>
+            <span id="cart-total" class="subtotal-price"><span class="wcp-original-cart-total">{{ cart.total_price | money}}</span>
+    <span class="wcp-cart-total"></span>
+    <div class="additional-notes">
+        <span class="wcp-minimums-note"></span>
+        <span class="wcp-extra-note "></span>
+    </div>{% render "wcp_multi_currency_msg" %}</span>
           </div>
         </li>
         <li class="mini-cart-btns">
