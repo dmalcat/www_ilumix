@@ -1,5 +1,8 @@
+
+{%- include 'wcp_discount' with product -%}
+            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 {%- assign on_sale = false -%}
-{%- if product.compare_at_price > product.price -%}
+{%- if wcp_compare_at_price > wcp_price -%}
 {%- assign on_sale = true -%}
 {%- endif -%}
 {%- assign sold_out = true -%}
@@ -60,9 +63,9 @@
             <span class="shopify-product-reviews-badge" data-id="{{ variant.id }}"></span>
         </div>
         <div class="price-box">
-            <span class="new-price">{{ variant.price | money }}</span>
-            {% if product.compare_at_price_max > variant.price %}
-            <span class="old-price">{{ variant.compare_at_price | money }}</span>
+            <span class="new-price">{{ wcp_v_price | money }}</span>
+            {% if wcp_compare_at_price_max > wcp_v_price %}
+            <span class="old-price">{{ wcp_v_compare_at_price | money }}</span>
             {% endif %}
         </div>
         <div class="product-description">
@@ -95,3 +98,9 @@
         pointer-events: none;
     }
 </style>
+{%- assign wcp_prd_var = product -%}
+{%- unless wcp_prd_var == empty -%}
+            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
+                {%- render 'wcp_product_json' with wcp_prd_var -%}
+            </script>
+{%- endunless -%}
