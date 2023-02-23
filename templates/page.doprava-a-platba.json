@@ -91,7 +91,7 @@
         "section_padding_top": 100,
         "section_padding_bottom": 5,
         "section_padding_top_lg": 60,
-        "section_padding_bottom_lg": 60,
+        "section_padding_bottom_lg": 10,
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40,
         "section_title": "Platba",
@@ -133,7 +133,7 @@
       "settings": {
         "section_padding_top": 5,
         "section_padding_bottom": 100,
-        "section_padding_top_lg": 60,
+        "section_padding_top_lg": 5,
         "section_padding_bottom_lg": 60,
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40,
