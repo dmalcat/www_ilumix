@@ -345,6 +345,16 @@
                                 <div class="proceed-to-checkout btn btn-style2">
                                     <input type="submit" name="checkout" value="{{ section.settings.checkout_button_title }}">
                                 </div>
+                              <div>
+                                {% if customer.tags contains "wpdnet" %}
+                                    {% if shop.metafields.wcp_net.isNetEnabled == "true" or shop.metafields.wcp_net.isNetEnabled == "1" %}
+                                        <div style="margin-top:30px;float: right;">
+                                            <p>{{shop.metafields.wcp_net.netCartMsg}}</p>
+                                            <a id="wcp-30-open" class="btn">{{shop.metafields.wcp_net.netBtnMsg}}</a>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
 
                                 {%- if section.settings.cart_template_payment_img_enable -%}
                                 <div class="cart-payment-icon">
