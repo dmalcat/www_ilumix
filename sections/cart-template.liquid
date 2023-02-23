@@ -402,6 +402,16 @@
     </div>
 </section>
 
+              <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var WPD_reloadPage = function(e) {setTimeout(function(){window.location.reload();},2500);};
+    function wcp_build_event(x){for (var i = 0; i < x.length; i++) {x[i].addEventListener('click', WPD_reloadPage, false);}}
+    var x=document.querySelectorAll(".item-remove");wcp_build_event(x);
+    var x=document.querySelectorAll(".qtybutton");wcp_build_event(x);
+     function wcp_build_event_change(x){for (var i = 0; i < x.length; i++) {x[i].addEventListener('change', WPD_reloadPage, false);}}
+     var x=document.querySelectorAll("li.item-qty > div > div > div > input");wcp_build_event_change(x);
+  }, false);
+</script>
 {% schema %}
   {
     "name": "Cart Page",
