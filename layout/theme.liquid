@@ -41,22 +41,7 @@
     {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
     {%- endif -%}
-      <script>
-
-          const input = document.getElementById('search');
-          
-          // ✅ Move focus to Beginning of input field
-          //input.setSelectionRange(0, 0);
-          //input.focus();
-          
-          // ✅ Move focus to Beginning of input field on button click
-          const btn = document.getElementById('searchBtn');
-          
-          btn.addEventListener('click', function handleClick() {
-            //input.setSelectionRange(0, 0);
-            //input.focus();
-          });
-          </script>
+      
     <!-- Title and description -->
     {% capture seo_title %}
     {{ page_title }}
