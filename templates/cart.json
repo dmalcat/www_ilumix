@@ -1,1 +1,59 @@
-{"sections":{"cart-template":{"type":"cart-template","settings":{"bulb":"Svítidlo bez žárovky","cart_title":"Košík","cart_item_title":"Položka","cart_item_remove":"Odstranit","continue_shopping_title":"Zpět do obchodu","clear_cart_title":"Vymazat košík","cart_vendor_enable":false,"cart_notes_enable":true,"shipping_calculator_enable":false,"shipping_calculator_heading":"Shipping info","shipping_calculator_respose_text1":"There are","shipping_calculator_respose_text2":"shipping rates available for","shipping_calculator_respose_text3":"starting at","shipping_calculator_respose_text4":"There is one shipping rate available for","shipping_calculator_respose_text5":"We do not ship to this destination.","shipping_calculator_calculate_at_text":"at","shipping_calculator_button_title":"Calculate","cart_total_title":"Celkem","cart_discount_placeholder_text":"Slevový kód","checkout_button_title":"pokračovat na dopravu a platbu >","cart_template_payment_img_enable":false,"cart_empty_title1":"","cart_empty_title2":"","cart_empty_desc_text":"Nedá se svítit, ale váš košík v současné době neobsahuje žádné produkty."}},"16312579125deeeac2":{"type":"best-category","settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"section_sub_title":"","section_title":"Mohlo by se Vám líbit","section_product_limit":"4","section_product_limit_handle":"10","best_label_product":"prisazena-interierova-svitidla"}}},"order":["cart-template","16312579125deeeac2"]}
+{
+  "sections": {
+    "16766350232ceca4b3": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "cart-template": {
+      "type": "cart-template",
+      "settings": {
+        "bulb": "Svítidlo bez žárovky",
+        "cart_title": "Košík",
+        "cart_item_title": "Položka",
+        "cart_item_remove": "Odstranit",
+        "continue_shopping_title": "Zpět do obchodu",
+        "clear_cart_title": "Vymazat košík",
+        "cart_vendor_enable": false,
+        "cart_notes_enable": true,
+        "shipping_calculator_enable": false,
+        "shipping_calculator_heading": "Shipping info",
+        "shipping_calculator_respose_text1": "There are",
+        "shipping_calculator_respose_text2": "shipping rates available for",
+        "shipping_calculator_respose_text3": "starting at",
+        "shipping_calculator_respose_text4": "There is one shipping rate available for",
+        "shipping_calculator_respose_text5": "We do not ship to this destination.",
+        "shipping_calculator_calculate_at_text": "at",
+        "shipping_calculator_button_title": "Calculate",
+        "cart_total_title": "Celkem",
+        "cart_discount_placeholder_text": "Slevový kód",
+        "checkout_button_title": "pokračovat na dopravu a platbu >",
+        "cart_template_payment_img_enable": false,
+        "cart_empty_title1": "",
+        "cart_empty_title2": "",
+        "cart_empty_desc_text": "Nedá se svítit, ale váš košík v současné době neobsahuje žádné produkty."
+      }
+    },
+    "16312579125deeeac2": {
+      "type": "best-category",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "section_sub_title": "",
+        "section_title": "Mohlo by se Vám líbit",
+        "section_product_limit": "4",
+        "section_product_limit_handle": "10",
+        "best_label_product": "prisazena-interierova-svitidla"
+      }
+    }
+  },
+  "order": [
+    "16766350232ceca4b3",
+    "cart-template",
+    "16312579125deeeac2"
+  ]
+}
