@@ -403,7 +403,38 @@
     </div>
 </section>
 
-              <script>
+{% assign wcp_wholesale_customer = false %}
+{% if shop.metafields.wcp_status.wcp_status != 'disabled' and customer %}
+{% assign active_discounts = shop.metafields.wcp_active_discounts.wcp_active_discounts %}
+{% assign active_discounts_array = active_discounts | split: ',' %}
+{% assign customer_tags = blank %}
+{% for tag in customer.tags %}
+{% assign tempTag = tag | downcase %}
+{% assign customer_tags = customer_tags | prepend:tempTag %}
+{% unless forloop.last %}
+{% assign customer_tags = customer_tags | prepend:','  %}
+{% endunless %}
+{% endfor %}
+{% assign customer_tags = customer_tags | split:',' %}
+{% assign active_discounts = active_discounts | downcase %}
+{% for discount_key in active_discounts_array %}
+{% assign key_split = discount_key | split: '-' %}
+{% assign key_split_length = key_split | size %}
+{% if key_split_length > 2 %}
+{% assign removeable_key = key_split.last | prepend: '-' %}
+{% assign wcp_customer_tag = discount_key | remove_last: removeable_key %}
+{% else %}
+{% assign wcp_customer_tag = key_split[0] %}
+{% endif %}
+{% assign wcp_customer_tag = wcp_customer_tag | downcase %}
+{% if customer_tags contains wcp_customer_tag %}
+{% assign wcp_wholesale_customer = true %}
+{% endif %}
+{% endfor %}
+{% endif %}
+ 
+{% if wcp_wholesale_customer == true %}
+<script>
   document.addEventListener('DOMContentLoaded', function(){
     var WPD_reloadPage = function(e) {setTimeout(function(){window.location.reload();},2500);};
     function wcp_build_event(x){for (var i = 0; i < x.length; i++) {x[i].addEventListener('click', WPD_reloadPage, false);}}
@@ -413,6 +444,47 @@
      var x=document.querySelectorAll("li.item-qty > div > div > div > input");wcp_build_event_change(x);
   }, false);
 </script>
+<span class='wcp_price' style='display:none'> <span class='money'>{{wcp_total_price | money}}</span> </span>
+<span class='wcp_price_orignal' style='display:none'> <span class='money'>{{cart.total_price | money}}</span> </span>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var intver = setInterval(function(){
+          if(document.querySelector('.wcp-minimums-note').innerHTML != ""){
+            document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
+                element.style.display="none";
+            });
+          
+             document.querySelectorAll('.wcp-original-cart-total').forEach(function (element) {
+                    element.innerHTML= document.querySelector('.wcp_price_orignal').innerHTML; 
+                }); 
+             document.querySelectorAll('.wcp-net-cart-total').forEach(function (element) {
+                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;                        
+                });
+             document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
+                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;          
+                });
+            clearInterval(intver); 
+          }else{   
+            if(document.querySelector('.total-price .wcp-cart-total').getAttribute('wcp') == ""){          
+                document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
+                    element.getAttribute('wcp',document.querySelector('.wcp-cart-total').innerHTML.replace('$',""));
+                });        		
+                document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
+                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;          
+                });
+                document.querySelectorAll('.wcp-original-cart-total').forEach(function (element) {
+                    element.innerHTML= document.querySelector('.wcp_price_orignal').innerHTML; 
+                });        		         
+             	clearInterval(intver);                          
+            }
+          }
+      		 
+    },2500);  
+    }, false);
+</script>
+{% endif %}
+
+              
 {% schema %}
   {
     "name": "Cart Page",
