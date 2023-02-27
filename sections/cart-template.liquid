@@ -444,44 +444,7 @@
      var x=document.querySelectorAll("li.item-qty > div > div > div > input");wcp_build_event_change(x);
   }, false);
 </script>
-<span class='wcp_price' style='display:none'> <span class='money'>{{wcp_total_price | money}}</span> </span>
-<span class='wcp_price_orignal' style='display:none'> <span class='money'>{{cart.total_price | money}}</span> </span>
-<script>
-  document.addEventListener('DOMContentLoaded', function(){
-    var intver = setInterval(function(){
-          if(document.querySelector('.wcp-minimums-note').innerHTML != ""){
-            document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                element.style.display="none";
-            });
-          
-             document.querySelectorAll('.wcp-original-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price_orignal').innerHTML; 
-                }); 
-             document.querySelectorAll('.wcp-net-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;                        
-                });
-             document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;          
-                });
-            clearInterval(intver); 
-          }else{   
-            if(document.querySelector('.total-amount .wcp-cart-total').getAttribute('wcp') == ""){          
-                document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                    element.getAttribute('wcp',document.querySelector('.wcp-cart-total').innerHTML.replace('$',""));
-                });        		
-                document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;          
-                });
-                document.querySelectorAll('.wcp-original-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price_orignal').innerHTML; 
-                });        		         
-             	clearInterval(intver);                          
-            }
-          }
-      		 
-    },2500);  
-    }, false);
-</script>
+
 {% endif %}
 
               
