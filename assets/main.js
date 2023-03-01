@@ -72,12 +72,9 @@ $('.stickprcol-js').length && initStickPrLeft();
 
 $(document).ready(function() {
     $('.frcp-divider').each(function() {
-      // get element text
-      var text = $(this).text();
-      // modify text
-      text = text.replace('or', 'nebo');
-      // update element text
-      $(this).text(text); 
+      //var text = $(this).text();
+      //text = text.replace('or', 'nebo');
+      //$(this).text(text); 
   });
     
 });
