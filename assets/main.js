@@ -71,8 +71,8 @@ $('.stickprcol-js').length && initStickPrLeft();
 
 
 $(document).ready(function() {
-    var signDivider = $('.frcp-divider');
-    console.log(signDivider);
+    var signDividerText = $('.frcp-divider').text();
+    console.log(signDividerText);
 });
 
 /*--
