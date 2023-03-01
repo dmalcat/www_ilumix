@@ -5,6 +5,9 @@
         height: 1px;
         width: 45%;
         background-color: grey;
+        @include max480px {
+            width: 40%;
+        }
     }
 
     &:before {
