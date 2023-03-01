@@ -154,7 +154,11 @@
     text-align: center;
   }
   .customer-page .log-acc-page .login-form-container .form-action-button a{
-    margin-top: 10px;
+    {% if settings.enable_rtl %}
+    margin-right: 15px;
+    {% else %}
+    margin-left: 15px;
+    {% endif %}
   }
   @media(max-width: 767px){
     .customer-page .log-acc-page .login-form-container .form-action-button{
