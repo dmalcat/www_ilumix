@@ -1,5 +1,17 @@
 .frcp-divider {
+    text-align: center;
     &:before, &:after {
-        
+        content: '';
+        height: 1px;
+        width: 45%;
+        background-color: grey;
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    &:after {
+        right: 0;
     }
 }
