@@ -73,6 +73,15 @@ $('.stickprcol-js').length && initStickPrLeft();
 $(document).ready(function() {
     var signDividerText = $('.frcp-divider').text();
     signDividerText = signDividerText.replace('or', 'nebo');
+
+    $('.frcp-divider').each(function() {
+      // get element text
+      var text = $(this).text();
+      // modify text
+      text = text.replace('dog', 'doll');
+      // update element text
+      $(this).text(text); 
+  });
     
 });
 
