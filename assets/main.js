@@ -72,7 +72,8 @@ $('.stickprcol-js').length && initStickPrLeft();
 
 $(document).ready(function() {
     var signDividerText = $('.frcp-divider').text();
-    console.log(signDividerText);
+    signDividerText = signDividerText.replace('or', 'nebo');
+    
 });
 
 /*--
