@@ -1,6 +1,10 @@
 .header-element.logo {
     svg {
+        display: block;
         width: 200px;
         height: auto;
+        @include max480px {
+            width: 150px;    
+        }
     }
 }
