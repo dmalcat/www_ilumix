@@ -22,3 +22,19 @@
         }
     }
 }
+
+.product-beige {
+    @include max768px {
+        padding-top: 20px;
+        .product-title {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.product-sku-mobile {
+    flex-direction: column;
+    div {
+        margin-bottom: 5px;
+    }
+}
