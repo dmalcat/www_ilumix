@@ -1,11 +1,8 @@
-
-{%- include 'wcp_discount' with product -%}
-            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 <div class="product-variant-option">
   <div class="select-variant">
     <select name="id" id="productSelect" class="product-single__variants">
       {% for variant in product.variants %}
-      <option data-stocks="{{ variant.inventory_quantity }}" {% unless variant.available %} disabled="disabled" {% endunless %} {% if variant == current_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} {% if variant.available %}{% comment %}{{ wcp_v_price | money_with_currency }}{%endcomment%}{% else %}- {{ 'products.product.sold_out' | t }}{% endif %}</option>
+      <option data-stocks="{{ variant.inventory_quantity }}" {% unless variant.available %} disabled="disabled" {% endunless %} {% if variant == current_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} {% if variant.available %}{% comment %}{{ variant.price | money_with_currency }}{%endcomment%}{% else %}- {{ 'products.product.sold_out' | t }}{% endif %}</option>
       {% endfor %}
     </select>
   </div>
@@ -174,9 +171,3 @@
   }
 }
 </style>
-{%- assign wcp_prd_var = product -%}
-{%- unless wcp_prd_var == empty -%}
-            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
-                {%- render 'wcp_product_json' with wcp_prd_var -%}
-            </script>
-{%- endunless -%}
