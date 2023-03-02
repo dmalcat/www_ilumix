@@ -25,7 +25,6 @@
 
 .product-beige {
     @include max768px {
-        padding-top: 20px !important;
         .product-title {
             margin-bottom: 10px;
         }
