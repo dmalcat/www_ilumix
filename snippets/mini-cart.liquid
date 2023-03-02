@@ -20,21 +20,7 @@
         </ul>
       </div>
       <ul class="cart-item-loop" {{ itemStyle }}>
-        {%- assign wcp_total_price = 0 -%} 
-{% for item in cart.items %}
-{%- include 'wcp_discount' with item.product -%}
-{%- include 'wcp_variant' with item.variant -%}
-{%- include 'wcp_vd_discount' with item -%}  
-{%- assign  wcp_custom_final_Price = item.final_price  -%} 
-{%- if wcp_v_price < wcp_custom_final_Price -%}
-                  			{%- assign wcp_line_price = wcp_v_price | floor | minus: 0 | times: item.quantity -%}
-                {%- else -%}
-                               {%- assign wcp_line_price = wcp_custom_final_Price | floor | minus: 0 | times: item.quantity -%}
-                               {%- assign wcp_v_price = wcp_custom_final_Price | floor | minus: 0 -%}
-                {%- endif -%}
- {%- assign wcp_total_price = wcp_total_price | plus: wcp_line_price -%}	
- {{NextDiscountHtml}} 
-
+        {% for item in cart.items %}
         <li class="cart-item">
           <div class="cart-image">
             <a href="{{ item.url }}">
@@ -47,7 +33,7 @@
               
                 <span class="quantity">{{ item.quantity }} × </span>
                 
-                  <span class="new-price">{{  wcp_v_price  | money }}</span>
+                  <span class="new-price">{{ item.price | money }}</span>
                 
               
             </div>
@@ -60,48 +46,13 @@
         <li class="subtotal-info">
           <div class="subtotal-titles">
             <h3>{{ settings.cart_sub_total }}</h3>
-            <span id="cart-total" class="subtotal-price"><span class="">{{ wcp_total_price | money}}</span>
-    </span>
+            <span id="cart-total" class="subtotal-price">{{ cart.total_price | money }}</span>
           </div>
         </li>
         <li class="mini-cart-btns">
           <div class="cart-btns">
             <a href="/cart" class="btn btn-style2">{{ settings.cart_view }}</a>
-            {% assign wcp_wholesale_customer = false %}
-            {% if shop.metafields.wcp_status.wcp_status != 'disabled' and customer %}
-            {% assign active_discounts = shop.metafields.wcp_active_discounts.wcp_active_discounts %}
-            {% assign active_discounts_array = active_discounts | split: ',' %}
-            {% assign customer_tags = blank %}
-            {% for tag in customer.tags %}
-            {% assign tempTag = tag | downcase %}
-            {% assign customer_tags = customer_tags | prepend:tempTag %}
-            {% unless forloop.last %}
-            {% assign customer_tags = customer_tags | prepend:','  %}
-            {% endunless %}
-            {% endfor %}
-            {% assign customer_tags = customer_tags | split:',' %}
-            {% assign active_discounts = active_discounts | downcase %}
-            {% for discount_key in active_discounts_array %}
-            {% assign key_split = discount_key | split: '-' %}
-            {% assign key_split_length = key_split | size %}
-            {% if key_split_length > 2 %}
-            {% assign removeable_key = key_split.last | prepend: '-' %}
-            {% assign wcp_customer_tag = discount_key | remove_last: removeable_key %}
-            {% else %}
-            {% assign wcp_customer_tag = key_split[0] %}
-            {% endif %}
-            {% assign wcp_customer_tag = wcp_customer_tag | downcase %}
-            {% if customer_tags contains wcp_customer_tag %}
-            {% assign wcp_wholesale_customer = true %}
-            {% endif %}
-            {% endfor %}
-            {% endif %}
-            {% if wcp_wholesale_customer == true %}
-            <a href="/cart" class="btn btn-style2 style2-diff">{{ settings.cart_checkout }}</a>
-            {% else %}
-              <a href="/checkout" class="btn btn-style2 style2-diff">{{ settings.cart_checkout }}</a>
-            {% endif %}
-            
+            <a href="/checkout" class="btn btn-style2 style2-diff">{{ settings.cart_checkout }}</a>
           </div>
         </li>
       </ul>

@@ -8,29 +8,6 @@ Shopify.onCartUpdate = function(cart) {
 };
 
 Shopify.cartUpdateInfo = function(cart, cart_cell_id) {
-  var wcpcartdata = [];
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              wcpcartdata=JSON.parse(this.responseText);
-            }
-          };
-          xhttp.open("GET", "/search?&view=wcp_cart", false);
-          xhttp.send();
-		 
-	var CartVar=cart;
-          CartVar.total_price = wcpcartdata.wcp_cart_total;
-     for(var tempwcp1=0; tempwcp1 < CartVar.items.length; tempwcp1++){
-          for(var tempwcp=0; tempwcp < wcpcartdata.items.length; tempwcp++){
-            if(wcpcartdata.items[tempwcp].variant_id ==  CartVar.items[tempwcp1].variant_id){
-              CartVar.items[tempwcp1].price = wcpcartdata.items[tempwcp].wcp_v_price;
-              CartVar.items[tempwcp1].compare_at_price = wcpcartdata.items[tempwcp].wcp_v_compare_price;
-			  CartVar.items[tempwcp1].final_price = wcpcartdata.items[tempwcp].wcp_v_price;
-              CartVar.items[tempwcp1].final_line_price = wcpcartdata.items[tempwcp].wcp_v_price * wcpcartdata.items[tempwcp].quantity ;  			               
-            }
-          }
-     }
-    cart = CartVar;
   var formatMoney = "<span class='money'>{{amount}}</span>";
   if ((typeof cart_cell_id) === 'string') {
     var cart_cell = jQuery(cart_cell_id);

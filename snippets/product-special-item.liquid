@@ -1,8 +1,5 @@
-
-{%- include 'wcp_discount' with product -%}
-            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 {%- assign on_sale = false -%}
-{%- if wcp_compare_at_price > wcp_price -%}
+{%- if product.compare_at_price > product.price -%}
 {%- assign on_sale = true -%}
 {%- endif -%}
 {%- assign sold_out = true -%}
@@ -33,9 +30,9 @@
             <a href="{{ product.url | within: collection }}" title="{{ product.title }}">{{ product.title | truncate: 30 }}</a>
         </h6>
         <div class="price-box">
-            <span class="new-price">{{ wcp_price | money }}</span>
-            {% if wcp_compare_at_price_max > wcp_price %}
-            <span class="old-price">{{ wcp_compare_at_price | money }}</span>
+            <span class="new-price">{{ product.price | money }}</span>
+            {% if product.compare_at_price_max > product.price %}
+            <span class="old-price">{{ product.compare_at_price | money }}</span>
             {% endif %}
         </div>
         <p class="product-description">
@@ -76,9 +73,3 @@
         pointer-events: none;
     }
 </style>
-{%- assign wcp_prd_var = product -%}
-{%- unless wcp_prd_var == empty -%}
-            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
-                {%- render 'wcp_product_json' with wcp_prd_var -%}
-            </script>
-{%- endunless -%}

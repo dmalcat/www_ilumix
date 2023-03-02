@@ -1,6 +1,3 @@
-
-{%- include 'wcp_discount' with product -%}
-            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 <div class="productmodal">
   <div class="modal fade" id="quickViewModal">
     <div class="modal-dialog">
@@ -216,7 +213,7 @@
       var inv_qua = variant.inventory_quantity;
 
       //price
-      if( wcp_v_price < variant.compare_at_price) {
+      if(variant.price < variant.compare_at_price) {
         $('.price-part .new-price').addClass('amount');
         $('.price-part .old-price').show();
         changePriceValue('.price-part .new-price', variant.compare_at_price);
@@ -400,7 +397,7 @@
     jQuery(_parent + " .price-box").show();
     jQuery(_parent + " .qwt").show();
     jQuery(_parent + " .control-console").show();
-    if( wcp_v_price < variant.compare_at_price) {
+    if(variant.price < variant.compare_at_price) {
       jQuery(_parentprice + ' .new-price').addClass('price-box__old');
       jQuery(_parentprice + ' .old-price').show();
       changePriceValue(_parentprice + ' .new-price', variant.price);
@@ -710,9 +707,3 @@
     }
   }
 </style>
-{%- assign wcp_prd_var = product -%}
-{%- unless wcp_prd_var == empty -%}
-            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
-                {%- render 'wcp_product_json' with wcp_prd_var -%}
-            </script>
-{%- endunless -%}
