@@ -12,7 +12,7 @@
         "close_modal_label": "Zavřete",
         "continue_to_shipping_method": "Pokračovat na způsob dopravy",
         "continue_to_payment_method": "Pokračovat k platební metodě",
-        "continue_to_review": "Zkontrolovat objednávku",
+        "continue_to_review": "Pořadí revizí",
         "back_to_cart": "Návrat do košíku",
         "back_to_contact_information": "Zpět na informace o zákazníkovi",
         "back_to_shipping_method": "Návrat k způsobu dopravy",
@@ -48,13 +48,13 @@
         "optional_company_label": "Společnost (volitelná)",
         "company_placeholder": "Společnosti",
         "optional_company_placeholder": "Společnost (volitelná)",
-        "address1_label": "Adresa",
+        "address1_label": "Adresu",
         "address1_placeholder": "Adresu",
         "address2_label": "Apt, SUIT atd.",
-        "optional_address2_label": "Číslo bytu, apartmán (volitelné)",
+        "optional_address2_label": "Apt, Suite, atd. (volitelné)",
         "address2_placeholder": "Apt, SUIT atd.",
         "optional_address2_placeholder": "Apt, Suite, atd. (volitelné)",
-        "city_label": "Město",
+        "city_label": "Města",
         "city_placeholder": "Města",
         "country_label": "Země",
         "province_label": "Provincie",
@@ -115,7 +115,7 @@
         "shipping_information_does_not_meet_discount_requirements_notice": "Vaše přepravní informace nesplňují požadavky na kód {{ code }} sleva",
         "customer_already_used_once_per_customer_discount_notice": "Kód {{ code }} slevy již byl použit.",
         "subtotal_label": "Mezisoučet",
-        "shipping_label": "Doprava",
+        "shipping_label": "DealExtreme",
         "shipping_pending_message": "—",
         "taxes_label": "Daně",
         "total_label": "Celkem",
@@ -156,8 +156,7 @@
           "zero": "Žádné jiné metody nejsou k dispozici",
           "one": "1 další metoda dostupná na ",
           "other": "{{Count}} další metody, které jsou k dispozici od "
-        },
-        "shipping_method_title": "Způsob dopravy"
+        }
       },
       "payment": {
         "amazon_payments_label": "Amazon Pay",
@@ -201,7 +200,7 @@
         "card_issue_number_placeholder": "Číslo vydání",
         "card_change_label": "Změnit",
         "ends_with_label": "končící {{ last_digits }}",
-        "same_billing_address_label": "Stejná jako dodací adresa",
+        "same_billing_address_label": "Stejné jako dodací adresa",
         "different_billing_address_label": "Použít jinou fakturační adresu",
         "free_order_notice_html": "Vaše objednávka je <strong>zdarma<\/strong>. Není vyžadována žádná platba.",
         "offsite_gateway_redirect_hint": "Po kliknutí na \"{{ button_label }}\" budete přesměrováni na {{ gateway_label }}, abyste nákup dokončili bezpečně.",
@@ -219,8 +218,7 @@
         "card_fields_unavailable_html": {
           "one": "Platby kreditní a debetní kartou nejsou momentálně k dispozici.<br><a href=\"javascript:window.location.reload();\">aktualizujte tuto stránku<\/a> nebo akci zopakujte později.",
           "other": "Platby kreditní a debetní kartou nejsou momentálně k dispozici.<br><a href=\"javascript:window.location.reload();\">aktualizujte tuto stránku<\/a> nebo zkuste použít jiný způsob platby."
-        },
-        "billing_address_description": "Vyberte adresu, na kterou chcete vystavit fakturu."
+        }
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Aktuální zůstatek {{ amount }}",
@@ -323,7 +321,7 @@
         "print_link_label": "Tisk účtenky",
         "payment_information_title": "Informace o platbě",
         "shipping_information_title": "Informace o dopravě",
-        "page_title": "Děkujeme za objednávku!",
+        "page_title": "Být zavázán tebe {{ first_name }}!",
         "page_title_no_name": "Děkuju!",
         "cancelled_page_title": "Objednávka zrušena",
         "customer_information_title": "Informace o zákazníkovi",
@@ -418,7 +416,7 @@
         "authorize_purchase": "Autorizovat nákup",
         "title": "Zapamatovat",
         "label": "Uložení informací pro rychlejší rezervaci",
-        "description_html": "Při příštím nákupu zde nebo na jiných stránkách se službou Shopify, obdržíte textovou zprávou kód pro bezpečný nákup pomocí služby Shop Pay.",
+        "description_html": "Příště se podívat zde nebo na jiné obchody poháněné Shopify, obdržíte kód SMS bezpečně koupit s Shopify platit.",
         "mobile_phone_icon_alt": "Mobilní telefon",
         "mobile_phone_number": "Číslo mobilního telefonu",
         "terms_and_privacy_html": "Pokračováním vyjadřujete souhlas s tím, že Shopify <a class=\"link--muted\" data-modal=\"\" data-remember-policy-link=\"privacy_policy\" title=\"Shopify Pay Privacy Policy\" href=\"{{ privacy_href }}\">Zásady ochrany osobních údajů<\/a> a <a class=\"link--muted\" data-modal=\"\" data-remember-policy-link=\"terms\" title=\"Shopify Pay Terms of Service\" href=\"{{ terms_href }}\">podmínky služby<\/a>.",
