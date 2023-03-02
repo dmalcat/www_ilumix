@@ -1,8 +1,5 @@
-
-{%- include 'wcp_discount' with product -%}
-            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 {%- assign on_sale = false -%}
-{%- if wcp_compare_at_price > wcp_price -%}
+{%- if product.compare_at_price > product.price -%}
 {%- assign on_sale = true -%}
 {%- endif -%}
 {%- assign sold_out = true -%}
@@ -254,18 +251,18 @@
             <div class="price-box">
               <h6>{{ section.settings.product_cena }}</h6>
               <div class="price-flex">
-                {%- if wcp_compare_at_price_max > wcp_price -%}
-                <span class="old-price" id="ComparePrice">{{ wcp_v_compare_at_price | money }}</span>
+                {%- if product.compare_at_price_max > product.price -%}
+                <span class="old-price" id="ComparePrice">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
                 {%- endif -%}
-                <p><span class="new-price" id="ProductPrice">{{ wcp_v_price | money }}</span></p>
-                <p class="price-no-vat"><span id="ProductPriceVat">{{ wcp_v_price | divided_by: 1.21 | money }}</span> bez DPH</p>
+                <p><span class="new-price" id="ProductPrice">{{ product.selected_or_first_available_variant.price | money }}</span></p>
+                <p class="price-no-vat"><span id="ProductPriceVat">{{ product.selected_or_first_available_variant.price | divided_by: 1.21 | money }}</span> bez DPH</p>
               </div>
             </div>
             {% if on_sale %}
             {% if settings.sale_percent_enable %}
 
               <div class="product-label">
-                <span id="ProductDiscount">{{ wcp_v_compare_at_price | minus: wcp_v_price | times: 100.0 | divided_by: wcp_v_compare_at_price | money_without_currency | replace: ',', '.' | times: 100 | remove: '.0' }}</span>
+                <span id="ProductDiscount">{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | money_without_currency | replace: ',', '.' | times: 100 | remove: '.0' }}</span>
               </div>
 
             {% endif %}
@@ -2401,7 +2398,6 @@ video.media-video{
 @media (max-width: 767px){
   .product-beige{
     margin:0;
-    padding-top: 20px;
   }
 }
 .product_detail_img{
@@ -2617,9 +2613,3 @@ div.swatch-custom-container > div > div > div > a:nth-child(2) > label{
     cursor:pointer;
   }
 </style>
-{%- assign wcp_prd_var = product -%}
-{%- unless wcp_prd_var == empty -%}
-            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
-                {%- render 'wcp_product_json' with wcp_prd_var -%}
-            </script>
-{%- endunless -%}

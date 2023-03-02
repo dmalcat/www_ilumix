@@ -193,16 +193,6 @@ timber.productPage = function (options) {
   var moneyFormat = options.money_format,
       variant = options.variant,
       selector = options.selector;
-      var WCP_JSON=[];
-      if(document.getElementsByClassName('wcp_json_'+variant.id).length){
-        WCP_JSON=JSON.parse(document.getElementsByClassName('wcp_json_'+variant.id)[0].innerText);
-        for(var tempwcp=0; tempwcp < WCP_JSON.variants.length; tempwcp++){
-          if(variant.id==WCP_JSON.variants[tempwcp].id){
-            variant.price=WCP_JSON.variants[tempwcp].price;
-            variant.compare_at_price=WCP_JSON.variants[tempwcp].compare_at_price;
-          }
-        }
-      }
 
   // Selectors
   var $productImage = $('#slider-for'),
