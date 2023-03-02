@@ -71,12 +71,11 @@ $('.stickprcol-js').length && initStickPrLeft();
 
 
 $(document).ready(function() {
-    $('.frcp-divider').each(function() {
-      var text = $(this).text();
-      text = text.replace('or', 'nebo');
-      $(this).text(text); 
+  var addToCartButton = $('#AddToCart');
+
+  $(addToCartButton).click(function() {
+    //alert('přidáno');
   });
-    
 });
 
 /*--

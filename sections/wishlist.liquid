@@ -1,6 +1,3 @@
-
-{%- include 'wcp_discount' with product -%}
-            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 <section class="customer-page section-ptb">
   <div class="container">
     <div class="row">
@@ -55,11 +52,11 @@
                 </li>
                 <li class="item-price">
                   <span class="product-price">
-                    {% if wcp_compare_at_price > wcp_price %}
-                    <span class="price-sale">{{ wcp_price | money }}</span>
-                    <span class="compare-price">{{ wcp_compare_at_price | money }}</span>
+                    {% if product.compare_at_price > product.price %}
+                    <span class="price-sale">{{ product.price | money }}</span>
+                    <span class="compare-price">{{ product.compare_at_price | money }}</span>
                     {% else %}
-                    <span class="pro-price">{{ wcp_price | money }}</span>
+                    <span class="pro-price">{{ product.price | money }}</span>
                     {% endif %}
                   </span>
                   <span class="item-remove">
@@ -492,9 +489,3 @@
     }
   }
 </style>
-{%- assign wcp_prd_var = product -%}
-{%- unless wcp_prd_var == empty -%}
-            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
-                {%- render 'wcp_product_json' with wcp_prd_var -%}
-            </script>
-{%- endunless -%}

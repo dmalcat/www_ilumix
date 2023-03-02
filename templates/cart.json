@@ -1,10 +1,5 @@
 {
   "sections": {
-    "16766350232ceca4b3": {
-      "type": "apps",
-      "settings": {
-      }
-    },
     "cart-template": {
       "type": "cart-template",
       "settings": {
@@ -52,7 +47,6 @@
     }
   },
   "order": [
-    "16766350232ceca4b3",
     "cart-template",
     "16312579125deeeac2"
   ]
