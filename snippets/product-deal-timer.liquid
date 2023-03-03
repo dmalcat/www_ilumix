@@ -1,5 +1,8 @@
+
+{%- include 'wcp_discount' with product -%}
+            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 {%- assign on_sale = false -%}
-{%- if product.compare_at_price > product.price -%}
+{%- if wcp_compare_at_price > wcp_price -%}
 {%- assign on_sale = true -%}
 {%- endif -%}
 {%- assign sold_out = true -%}
@@ -45,9 +48,9 @@
         </div>
 
         <div class="price-box">
-            <span class="new-price">{{ product.price | money }}</span>
-            {% if product.compare_at_price_max > product.price %}
-            <span class="old-price">{{ product.compare_at_price | money }}</span>
+            <span class="new-price">{{ wcp_price | money }}</span>
+            {% if wcp_compare_at_price_max > wcp_price %}
+            <span class="old-price">{{ wcp_compare_at_price | money }}</span>
             {% endif %}
         </div>
         <p class="product-description">
@@ -71,3 +74,9 @@
     var $this = $(this).html(event.strftime('' + '<ul class="contdown_row"><li class="countdown_section"><span id="days" class="countdown_timer">%-D</span>{% if settings.count_text_enable %}<span class="countdown_title">{{ settings.day_title }}</span>{% endif %}</li>' + '<li class="countdown_section"><span id="hours" class="countdown_timer">%H</span>{% if settings.count_text_enable %}<span class="countdown_title">{{ settings.hour_title }}</span>{% endif %}</li>' + '<li class="countdown_section"><span id="minutes" class="countdown_timer">%M</span>{% if settings.count_text_enable %}<span class="countdown_title">{{ settings.minute_title }}</span>{% endif %}</li>' + '<li class="countdown_section"><span id="seconds" class="countdown_timer">%S</span>{% if settings.count_text_enable %}<span class="countdown_title">{{ settings.second_title }}</span>{% endif %}</li></ul>'))
     });
 </script>
+{%- assign wcp_prd_var = product -%}
+{%- unless wcp_prd_var == empty -%}
+            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
+                {%- render 'wcp_product_json' with wcp_prd_var -%}
+            </script>
+{%- endunless -%}
