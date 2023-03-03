@@ -15,7 +15,7 @@
     "topbar_notification_enable": true,
     "notification_bg_color": "#252525",
     "notification_txt_color": "#878787",
-    "topbar_notification_text2": "ILUMIX LIGHT design",
+    "topbar_notification_text2": "+420 773 33 55 35  |  info@360design.cz",
     "topbar_notification_text_link": "",
     "you_account_title": "Účet",
     "signin_title": "Přihlášení",
@@ -39,7 +39,7 @@
     "fax_icon": "",
     "mail_icon": "",
     "email": "Email: info@domain.com",
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify:\/\/shop_images\/360favicon-new_164a92ae-f320-4ea3-acbe-4616075577b8.png",
     "new_title": "New",
     "new_title_lable_color": "#000000",
     "sale_title": "Sale",
@@ -149,9 +149,9 @@
     "newsletter_img": "shopify:\/\/shop_images\/newslatter-bg.jpg",
     "newletter_title": "10% off your first order",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/360design_logo.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/360design_logo_df8f6bd9-b989-4414-bccb-0a0cf5555afe.svg",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "large",
+    "checkout_logo_size": "small",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
@@ -1593,7 +1593,7 @@
           "about_product_padding_bottom_xs": 40,
           "section_sub_title": "20+ Year",
           "section_title": "of experience",
-          "section_arrow": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"22\" height=\"72\" viewbox=\"0 0 22 72\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n <metadata><?xpacket begin=\"﻿\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\n<xmpmeta xmlns:x=\"adobe:ns:meta\/\" x:xmptk=\"Adobe XMP Core 5.6-c142 79.160924, 2017\/07\/13-01:06:39 \">\n   <rdf xmlns:rdf=\"http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#\">\n <description rdf:about=\"\"><\/description>\n   <\/rdf>\n<\/xmpmeta>                     \n<?xpacket end=\"w\"?><\/metadata>\n<image id=\"arrow-right_1_\" data-name=\"arrow-right (1)\" width=\"22\" height=\"72\" xlink:href=\"data:img\/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAABICAQAAABYOc03AAAABGdBTUEAALGPC\/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflAhESDBi4Q+NPAAAArUlEQVRIx+3XOwoCQQyA4X91CsVC0c7WznuIhV5GEdwbaLdexkI81jZ2Y7E+ZjPjLgGtTMrwkUBIimQzEnEFFnG6gyIMGzZs2LBhw7\/ATlMijQca3NPgmwaXX5iG4T\/DBZ5jqzvgKRwbYA\/kjTTnxNZBK39QfLXPTfxF38v\/iQc0vJQUr9H6WUkuKHTHYdMLI3b0mQJzSSV+cseElaQxrviSYUwhS74eZ2AtKdwBZjYuUzbNzbEAAAAASUVORK5CYII=\"><\/image>\n<\/svg>"
+          "section_arrow": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"22\" height=\"72\" viewbox=\"0 0 22 72\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n  <metadata><?xpacket begin=\"﻿\" id=\"W5M0MpCehiHzreSzNTczkc9d\"?>\n<xmpmeta xmlns:x=\"adobe:ns:meta\/\" x:xmptk=\"Adobe XMP Core 5.6-c142 79.160924, 2017\/07\/13-01:06:39        \">\n   <rdf xmlns:rdf=\"http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#\">\n      <description rdf:about=\"\"><\/description>\n   <\/rdf>\n<\/xmpmeta>                     \n<?xpacket end=\"w\"?><\/metadata>\n<image id=\"arrow-right_1_\" data-name=\"arrow-right (1)\" width=\"22\" height=\"72\" xlink:href=\"data:img\/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAABICAQAAABYOc03AAAABGdBTUEAALGPC\/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflAhESDBi4Q+NPAAAArUlEQVRIx+3XOwoCQQyA4X91CsVC0c7WznuIhV5GEdwbaLdexkI81jZ2Y7E+ZjPjLgGtTMrwkUBIimQzEnEFFnG6gyIMGzZs2LBhw7\/ATlMijQca3NPgmwaXX5iG4T\/DBZ5jqzvgKRwbYA\/kjTTnxNZBK39QfLXPTfxF38v\/iQc0vJQUr9H6WUkuKHTHYdMLI3b0mQJzSSV+cseElaQxrviSYUwhS74eZ2AtKdwBZjYuUzbNzbEAAAAASUVORK5CYII=\"><\/image>\n<\/svg>"
         }
       },
       "about-template2": {
@@ -2484,7 +2484,7 @@
         "settings": {
           "position": "below",
           "divider": true,
-          "style": "icon_and_text",
+          "style": "only_icon",
           "text_alignment": "center",
           "icon_alignment": "left",
           "icon_style": "white",
@@ -2494,21 +2494,25 @@
           "custom_css": ""
         }
       },
-      "12046557757412368804": {
-        "type": "shopify:\/\/apps\/customer-accounts-concierge\/blocks\/customer_account_page\/3c495b68-652c-468d-a0ef-5bad6935d104",
+      "15773640700261759505": {
+        "type": "shopify:\/\/apps\/customerhub\/blocks\/mini-hub\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
         "disabled": true,
         "settings": {
-          "style": "light",
-          "dropdownMenu": "slider",
-          "mobile_nav_offset_top": 0,
-          "shadow": true,
-          "border_radius": 4,
-          "background_color": "#ffffff",
-          "text_color": "#202202",
-          "primary_color": "#5873f9",
-          "btn_text_color": "#ffffff",
-          "max_width": 800,
-          "custom_css": ""
+          "primary_color": "#3ed1c2",
+          "secondary_color": "#2b5a7e",
+          "text_color": "#2b5a7e",
+          "background_color": "#FFFFFF",
+          "minihub_position": "right",
+          "minihub_load_from": "always_visible",
+          "show_recently_viewed": "yes",
+          "show_reorder": "yes",
+          "reorder_action": "checkout",
+          "hide_minihub_on_mobile": "show",
+          "hide_minihub_in_account": "show",
+          "show_paynow_button": "show",
+          "start_shopping_link": "",
+          "custom_css": "",
+          "url_override": ""
         }
       },
       "3838990611052461119": {
@@ -2525,7 +2529,7 @@
       },
       "14952540001915115444": {
         "type": "shopify:\/\/apps\/upcart-cart-drawer-cart-upsell\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       }
