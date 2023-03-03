@@ -1,0 +1,58 @@
+.company-order {
+    max-width: 1230px;
+    width: 100%;
+    margin: 2rem auto 0;
+    background-color: #EAEAEA;
+    .company-order__inner {
+        padding: 2rem;
+        @include max640px {
+            padding: 2rem 1rem;
+        }
+    }
+
+    .company-order__inputs {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        @include max640px {
+            flex-direction: column;
+        }
+    }
+
+    .company-order__group {
+        width: 31.5%;
+        @include max640px {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .custom_field {
+            max-width: 100%;
+        }
+    }
+
+    h5 {
+        @include max640px {
+            margin-bottom: 1rem;
+        }
+    }
+
+    p {
+        color: #000;
+        line-height: 1.5;
+        @include max640px {
+            margin-bottom: 2rem;
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.cart-total-custom {
+    @media (min-width: 1200px) {
+        width: 40.3666666667%;
+    }
+}
