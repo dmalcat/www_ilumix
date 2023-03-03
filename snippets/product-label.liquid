@@ -1,3 +1,6 @@
+
+{%- include 'wcp_discount' with product -%}
+            {%- include 'wcp_variant' with product.selected_or_first_available_variant -%}
 {% if product.description contains '[sale_products]' and product.available %}
 {% assign sale_products_first = product.description | split:'[/sale_products]' | first %}
 {% assign sale_products_final = sale_products_first | split:'[sale_products]' | last %}
@@ -30,9 +33,15 @@
 {% endif %}
 {% if on_sale %}
 <!-- {% if settings.sale_percent_enable and product.available %}
-<span class="percent-count">-{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | money_without_currency | replace: ',', '.' | times: 100 | remove: '.0'}}%</span>
+<span class="percent-count">-{{ wcp_v_compare_at_price | minus: wcp_v_price | times: 100.0 | divided_by: wcp_v_compare_at_price | money_without_currency | replace: ',', '.' | times: 100 | remove: '.0'}}%</span>
 {% endif %} -->
 {% endif %}
 {% if sold_out %}
 <span class="soldout-title">{{ 'products.general.out_of_stock' | t  }}</span>
 {% endif %}
+{%- assign wcp_prd_var = product -%}
+{%- unless wcp_prd_var == empty -%}
+            <script type='application/json' class='{%- for wcp_v in wcp_prd_var.variants -%} wcp_json_{{wcp_v.id}} {%- endfor -%} wcp_json_{{ wcp_prd_var.id }} wcp_json' id='wcp_json_{{ wcp_prd_var.id }}' > 
+                {%- render 'wcp_product_json' with wcp_prd_var -%}
+            </script>
+{%- endunless -%}
