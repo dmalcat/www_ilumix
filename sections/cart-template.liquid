@@ -273,6 +273,31 @@
                     </div>
                     {% endfor %}
                 </div>
+
+                <div class="company-order col-12">
+                    <div class="company-order__inner">
+                        <h5>1. krok - Nakupujete na firmu?</h5>
+                        <p>
+                            Pokud chcete vystavit fakturu na firmu, zadejte prosím níže údaje Vaší společnosti.
+                        </p>
+
+                        <div class="company-order__inputs">
+                            <div class="company-order__group">
+                                <label for="firma">Firma</label>
+                                <input type="text" class="custom_field" id="firma" name="attributes[firma]" value="{{ cart.attributes["firma"] }}">
+                            </div>
+                            <div class="company-order__group">
+                                <label for="ic">IČO</label>
+                                <input type="text" class="custom_field" id="ic" name="attributes[ico]" value="{{ cart.attributes["ico"] }}">
+                            </div>
+                            <div class="company-order__group">
+                                <label for="dic">DIČ</label>
+                                <input type="text" class="custom_field" id="dic" name="attributes[dic]" value="{{ cart.attributes["dic"] }}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="special-notes col-xl-7 col-lg-5 col-md-12 col-12">
                     <div class="cart-additional-company">
                         <h6>Nakupujete na firmu? Zadejte prosím níže Vaše firemní údaje.</h6>
@@ -291,6 +316,7 @@
                             </p>
                         </div>
                     </div>
+
                     
                     <div class="proceed-to-discount">
                         <label>Máte slevový kód?</label>
