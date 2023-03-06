@@ -37,3 +37,29 @@
         margin-bottom: 5px;
     }
 }
+
+.product-meta {
+    span {
+        border: 1px solid;
+    }
+
+    .product-meta__lightSource {
+        color: #E0B566;
+        border-color: #E0B566;
+    }
+
+    .product-meta__performance {
+        color: #69A2EC;
+        border-color:#69A2EC;
+    }
+
+    .product-meta__luminos {
+        color: #69EC6A;
+        border-color: #69EC6A;
+    }
+
+    .product-meta__color {
+        color: #EC6969;
+        border-color: #EC6969;
+    }
+}
