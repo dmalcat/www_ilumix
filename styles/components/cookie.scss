@@ -4,10 +4,17 @@
         left: 20px;
         bottom: 20px !important;
         right: auto;
+        padding: 2rem !important;
     }
 
     #cookies-message {
         text-align: left;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    #cookies-privacy {
+        padding-left: 2rem;
     }
 
     #cookies-more-info {
