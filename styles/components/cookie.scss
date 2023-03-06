@@ -1,0 +1,20 @@
+.otCookiesNotification {
+    #cookies-wrapper {
+        bottom: 20px;
+        left: 20px;
+        width: 400px;
+        flex-direction: column;
+    }
+
+    #cookies-message {
+        flex-direction: column;
+    }
+
+    #cookies-more-info {
+        text-align: left;
+    }
+
+    #cookies-dismiss {
+        display: none;
+    }
+}
