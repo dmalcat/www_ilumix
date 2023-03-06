@@ -227,21 +227,23 @@
                 <span class="variant-sku" id="variantsku">{{ current_variant.sku }}</span>
               </div>
               
-              {% if product.metafields.custom.typ_svetelneho_zdroje %}
-                {{ product.metafields.custom.typ_svetelneho_zdroje }}
-              {% endif %}
+              <span class="product-meta">
+                {% if product.metafields.custom.typ_svetelneho_zdroje %}
+                  {{ product.metafields.custom.typ_svetelneho_zdroje }}
+                {% endif %}
 
-              {% if product.metafields.custom.vykon %}
-                {{ product.metafields.custom.vykon }}
-              {% endif %}
+                {% if product.metafields.custom.vykon %}
+                  {{ product.metafields.custom.vykon }}
+                {% endif %}
 
-              {% if product.metafields.custom.svetelny_tok %}
-                {{ product.metafields.custom.svetelny_tok }}
-              {% endif %}
+                {% if product.metafields.custom.svetelny_tok %}
+                  {{ product.metafields.custom.svetelny_tok }}
+                {% endif %}
 
-              {% if product.metafields.custom.barevna_teplota %}
-                {{ product.metafields.custom.barevna_teplota }}
-              {% endif %}
+                {% if product.metafields.custom.barevna_teplota %}
+                  {{ product.metafields.custom.barevna_teplota }}
+                {% endif %}
+              </span>
 
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
