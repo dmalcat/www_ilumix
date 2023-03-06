@@ -226,6 +226,10 @@
                 <h6>{{ section.settings.product_sku_title }}</h6>
                 <span class="variant-sku" id="variantsku">{{ current_variant.sku }}</span>
               </div>
+              {% if product.metafields.custom.typ_svetelneho_zdroje %}
+
+              {% endif %}
+
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
                 <div class="product-badge"><p>{{product.metafields.custom.psaci_text_pod_vyrobcem}}</p></div>
