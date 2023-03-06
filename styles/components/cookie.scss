@@ -27,14 +27,14 @@
     }
 
     #cookies-preferences {
-        span {
+        > span {
             padding: 0.5em 1em;
             border: 0;
         }
     }
 
     #cookies-submit {
-        span {
+        > span {
             padding: 0.5em 1em;
             font-size: 1em;
         }
