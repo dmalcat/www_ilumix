@@ -229,19 +229,19 @@
               
               <span class="product-meta">
                 {% if product.metafields.custom.typ_svetelneho_zdroje %}
-                  <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
+                  <span class="product-meta__lightSource">{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
                 {% endif %}
 
                 {% if product.metafields.custom.vykon %}
-                  <span>{{ product.metafields.custom.vykon }}</span>
+                  <span class="product-meta__performance">{{ product.metafields.custom.vykon }}</span>
                 {% endif %}
 
                 {% if product.metafields.custom.svetelny_tok %}
-                  <span>{{ product.metafields.custom.svetelny_tok }}</span>
+                  <span class="product-meta__luminos">{{ product.metafields.custom.svetelny_tok }}</span>
                 {% endif %}
 
                 {% if product.metafields.custom.barevna_teplota %}
-                  <span>{{ product.metafields.custom.barevna_teplota }}</span>
+                  <span class="product-meta__color">{{ product.metafields.custom.barevna_teplota }}</span>
                 {% endif %}
               </span>
 
