@@ -228,7 +228,7 @@
               </div>
               
               <span class="product-meta">
-                <span class="product-meta__group">
+                <span class="product-meta__group product-meta__group--lumins">
                   {% if product.metafields.custom.typ_svetelneho_zdroje %}
                     <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
                   {% endif %}
@@ -245,7 +245,9 @@
                     <span>{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
                 </span>
-                <span class="product-meta__group">
+                <span class="product-meta__group product-meta__group--coverage">
+
+                </span>
               </span>
 
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
