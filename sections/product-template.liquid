@@ -228,21 +228,24 @@
               </div>
               
               <span class="product-meta">
-                {% if product.metafields.custom.typ_svetelneho_zdroje %}
-                  <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
-                {% endif %}
+                <span class="product-meta__group">
+                  {% if product.metafields.custom.typ_svetelneho_zdroje %}
+                    <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
+                  {% endif %}
 
-                {% if product.metafields.custom.vykon %}
-                  <span>{{ product.metafields.custom.vykon }}</span>
-                {% endif %}
+                  {% if product.metafields.custom.vykon %}
+                    <span>{{ product.metafields.custom.vykon }}</span>
+                  {% endif %}
 
-                {% if product.metafields.custom.svetelny_tok %}
-                  <span>{{ product.metafields.custom.svetelny_tok }}</span>
-                {% endif %}
+                  {% if product.metafields.custom.svetelny_tok %}
+                    <span>{{ product.metafields.custom.svetelny_tok }}</span>
+                  {% endif %}
 
-                {% if product.metafields.custom.barevna_teplota %}
-                  <span>{{ product.metafields.custom.barevna_teplota }}</span>
-                {% endif %}
+                  {% if product.metafields.custom.barevna_teplota %}
+                    <span>{{ product.metafields.custom.barevna_teplota }}</span>
+                  {% endif %}
+                </span>
+                <span class="product-meta__group">
               </span>
 
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
