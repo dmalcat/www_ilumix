@@ -28,15 +28,15 @@
 
     #cookies-prefrences {
         > span {
-            padding: 0.5em 1em;
-            border: 0;
+            padding: 0.7em 0.8em !important;
+            border-color: transparent !important;
         }
     }
 
     #cookies-submit {
         > span {
             padding: 0.5em 1em !important;
-            font-size: 1em !important;
+            font-size: 1.2em !important;
         }
     }
 }
