@@ -1,11 +1,15 @@
 .otCookiesNotification {
     #cookies-wrapper {
         width: 400px;
-        
+        left: 20px;
+        bottom: 20px;
+        right: auto;
     }
 
     #cookies-message {
-        
+        p {
+            text-align: left;
+        }
     }
 
     #cookies-more-info {
