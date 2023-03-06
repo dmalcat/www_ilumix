@@ -234,19 +234,21 @@
                   {% endif %}
 
                   {% if product.metafields.custom.vykon %}
-                    <span>{{ product.metafields.custom.vykon }}</span>
+                    <span>&nbsp;{{ product.metafields.custom.vykon }}</span>
                   {% endif %}
 
                   {% if product.metafields.custom.svetelny_tok %}
-                    <span>{{ product.metafields.custom.svetelny_tok }}</span>
+                    <span>&nbsp;{{ product.metafields.custom.svetelny_tok }}</span>
                   {% endif %}
 
                   {% if product.metafields.custom.barevna_teplota %}
-                    <span>{{ product.metafields.custom.barevna_teplota }}</span>
+                    <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
                 </span>
                 <span class="product-meta__group product-meta__group--coverage">
-
+                  {% if product.metafields.custom.typ_svetelneho_zdroje %}
+                    <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
+                  {% endif %}
                 </span>
               </span>
 
