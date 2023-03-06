@@ -26,7 +26,7 @@
         display: none;
     }
 
-    #cookies-preferences {
+    #cookies-prefrences {
         > span {
             padding: 0.5em 1em;
             border: 0;
@@ -35,8 +35,8 @@
 
     #cookies-submit {
         > span {
-            padding: 0.5em 1em;
-            font-size: 1em;
+            padding: 0.5em 1em !important;
+            font-size: 1em !important;
         }
     }
 }
