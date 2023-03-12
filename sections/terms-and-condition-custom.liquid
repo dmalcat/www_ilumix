@@ -6,7 +6,9 @@
                 {{ section.settings.custom_text_body }}
             </div>
             {% for block in section.blocks %}
-                {{ block.settings.list_title }}
+                <div class="tcCustom__body">
+                    {{ block.settings.custom_text_body_more }}
+                </div>
             {% endfor %}
         </div>
       </div>
