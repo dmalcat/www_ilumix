@@ -107,3 +107,44 @@
     }
    }
   </style>
+
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    $('#cat-slider').owlCarousel({
+      loop: false,
+      rewind: true,
+      margin: 50,
+      nav: false,
+      dots: false,
+      {%- if settings.enable_rtl -%}
+      rtl: true,
+      {%- endif -%}
+      responsive:{
+        0:{
+          items: 1,
+          margin: 15
+        },
+        479:{
+          items: 2,
+          margin: 15
+        },
+        768:{
+          items: 2,
+          margin: 30
+          
+        },
+        979:{
+          items: 2,
+          margin: 30
+        },
+        1199:{
+          items: 3,
+          margin: 30
+        },
+        1599:{
+          items: 4,
+          margin: 50
+        }
+      }
+    });
+  </script>
