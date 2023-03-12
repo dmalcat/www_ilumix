@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    
+
     li {
         position: relative;
         button {
@@ -30,4 +30,8 @@
             opacity: 0.6;
         }
     }
+}
+
+.owl-dots {
+    margin-top: 50px !important;
 }
