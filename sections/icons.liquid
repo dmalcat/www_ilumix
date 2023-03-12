@@ -14,17 +14,6 @@
     </div>
   </section>
 
-  <div class="testovic" id="test-slider">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-  </div>
-  
   {% schema %}
   {
     "name": "Icons",
@@ -137,6 +126,19 @@
           margin: 30
         }
       }
+    });
+
+    slick({
+      arrows: true,
+      autoplay: false,
+      dots: false,
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScoll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><i class="icon-arrow-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow-right"></i></button>',
     });
   });
   </script>
