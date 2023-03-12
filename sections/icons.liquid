@@ -1,148 +1,150 @@
 <!-- our-brand-area start -->
 <section class="icons-section">
-    <div class="container-fluid container-col">
-      <div class="icons-container">
-            {% for block in section.blocks %}
-            <div class="icon-col">
-                 {{ block.settings.brand_image | file_url | img_tag  }}
-                  <p class="icon-title">{{ block.settings.title}}</p>
-                  <p>{{ block.settings.text}}</p>
-              </div>
-            {% endfor %}
-        </div>
+  <div class="container-fluid container-col">
+    <div class="icons-container" id="icons-slider">
+          {% for block in section.blocks %}
+          <div class="icon-col">
+               {{ block.settings.brand_image | file_url | img_tag  }}
+                <p class="icon-title">{{ block.settings.title}}</p>
+                <p>{{ block.settings.text}}</p>
+            </div>
+          {% endfor %}
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Icons",
+  "settings": [
   
-  {% schema %}
+  ],
+  "blocks":[
   {
-    "name": "Icons",
+    "type": "Icon",
+    "name": "Icon",
     "settings": [
-    
-    ],
-    "blocks":[
     {
-      "type": "Icon",
-      "name": "Icon",
-      "settings": [
-      {
-        "type": "text",
-        "id": "brand_image",
-        "label": "Icon svg (files)"
-      },{
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      },{
-        "type": "text",
-        "id": "text",
-        "label": "Text"
-      }
-      ]
-    }
-    ],
-    "presets":[
-    {
-      "name": "Icons"
+      "type": "text",
+      "id": "brand_image",
+      "label": "Icon svg (files)"
+    },{
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },{
+      "type": "text",
+      "id": "text",
+      "label": "Text"
     }
     ]
   }
-  {% endschema %}
-  
-  <style>
-    .icons-section .container-col{
-        border-top:1px solid rgba(0,0,0,0.1);
-        border-bottom: 1px solid rgba(0,0,0,0.1);
-        max-width:1600px;
-        padding:50px 0;
-        margin:100px auto;
-    }
-   .icons-container{
-        display:flex;
-        justify-content: center;
-        text-align: center;
-        gap:40px;
-        padding:0 100px;
-   }
-   .icons-container img{
-       height:50px;
-       margin-bottom:20px;
-   }
-   .icon-col{
-       font-size:16px;
-       width: 25%;
-   }
-   .icon-col p{
-    margin:0;
-    line-height: 24px;
-   }
-   .icon-title{
-       font-weight: 700;
-       text-transform: uppercase;
-       color:#000;
-   }
-   @media(max-width:1200px){
-    .icons-section .container-col{
-        padding:30px 0;
-    }
-    .icons-container{
-        padding:50px 0;
-        flex-wrap: wrap;
-    }
-    .icon-col{
-        width:40%;
-    }
-   }
-   @media(max-width:600px){
-    .icons-section .container-col{
-        margin:50px auto;
-        padding:10px 0;
-    }
-    .icons-container{
-       flex-direction: column;
-    }
-    .icon-col{
-        width:80%;
-        margin:0 auto;
-    }
-   }
-  </style>
+  ],
+  "presets":[
+  {
+    "name": "Icons"
+  }
+  ]
+}
+{% endschema %}
 
-  <script type="text/javascript">
-  $( document ).ready(function() {
-    $('#icons-slider').owlCarousel({
-      loop: false,
-      rewind: true,
-      margin: 50,
-      nav: false,
+<style>
+  .icons-section .container-col{
+      border-top:1px solid rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      max-width:1600px;
+      padding:50px 0;
+      margin:100px auto;
+  }
+ .icons-container{
+      display:flex;
+      justify-content: center;
+      text-align: center;
+      gap:40px;
+      padding:0 100px;
+ }
+ .icons-container img{
+     height:50px;
+     margin-bottom:20px;
+ }
+ .icon-col{
+     font-size:16px;
+     width: 25%;
+     padding: 0 20px;
+ }
+ .icon-col p{
+  margin:0;
+  line-height: 24px;
+ }
+
+ .icon-col img {
+  display: block;
+  max-width: 54px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+ .icon-title{
+     font-weight: 700;
+     text-transform: uppercase;
+     color:#000;
+ }
+
+ @media(max-width:1200px){
+  .icons-section .container-col{
+      padding:30px 0;
+  }
+  .icons-container{
+      padding:50px 0;
+      flex-wrap: wrap;
+  }
+  .icon-col{
+      width:40%;
+  }
+ }
+
+@media(max-width:940px) {
+  .icons-container{
+    display:block;
+  }
+  .icon-col {
+    width: auto;
+  }   
+}
+</style>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  var blogSlider = $('#icons-slider');
+    blogSlider.slick({
+      arrows: true,
+      autoplay: false,
       dots: false,
-      responsive:{
-        0:{
-          items: 1,
-          margin: 15
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      infinite: true,
+      slidesToShow: 4,
+      prevArrow: '<button type="button" class="slick-prev"><i class="icon-arrow-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow-right"></i></button>',
+      responsive: [
+        {
+          breakpoint: 940,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true,
+          }
         },
-        479:{
-          items: 2,
-          margin: 15
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
         },
-        768:{
-          items: 2,
-          margin: 30
-          
-        },
-        979:{
-          items: 2,
-          margin: 30
-        },
-        1199:{
-          items: 3,
-          margin: 30
-        },
-        1599:{
-          items: 4,
-          margin: 50
-        }
-      }
+      ]
     });
   });
-  </script>
+</script>

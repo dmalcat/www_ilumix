@@ -1,0 +1,33 @@
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    li {
+        position: relative;
+        button {
+            color: transparent;
+        }
+    }
+
+    .slick-active {
+        button {
+            
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    button {
+        &:after {
+            content: '';
+            display: block;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #6f6f6f;
+            opacity: 0.6;
+        }
+    }
+}
