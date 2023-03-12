@@ -62,31 +62,35 @@
       rewind: true,
       margin: 50,
       nav: false,
-      dots: true,
+      dots: false,
       {%- if settings.enable_rtl -%}
       rtl: true,
       {%- endif -%}
       responsive:{
         0:{
           items: 1,
-          margin: 15
+          margin: 15,
+          dots: true
         },
         479:{
           items: 2,
-          margin: 15
+          margin: 15,
+          dots: true
         },
         768:{
           items: 2,
-          margin: 30
-          
+          margin: 30,
+          dots: true
         },
         979:{
           items: 2,
-          margin: 30
+          margin: 30,
+          dots: true
         },
         1199:{
           items: 3,
-          margin: 30
+          margin: 30,
+          dots: true
         },
         1599:{
           items: 4,
