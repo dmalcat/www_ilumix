@@ -243,7 +243,7 @@
         "address_province_blank": "Vyberte prosím váš stát\/provincii",
         "address_company_blank": "Zadejte název společnosti.",
         "address_phone_blank": "Zadejte platné telefonní číslo.",
-        "address_zip_blank": "Prosím, zadejte svůj zip\/PSČ",
+        "address_zip_blank": "Prosím, zadejte své PSČ",
         "address_zip_invalid_for_country": "Zadejte platný poštovní směrovací číslo pro {{ country }}",
         "address_zip_invalid_for_country_and_province": "Zadejte platný poštovní směrovací kód pro {{ province }}, {{ country }}",
         "credit_card_name_blank": "Prosím, zadejte své jméno, jak je uvedeno na kreditní kartě",
