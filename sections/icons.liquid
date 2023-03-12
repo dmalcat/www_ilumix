@@ -1,7 +1,7 @@
 <!-- our-brand-area start -->
 <section class="icons-section">
     <div class="container-fluid container-col">
-      <div class="icons-container">
+      <div class="icons-container" id="icons-slider">
             {% for block in section.blocks %}
             <div class="icon-col">
                  {{ block.settings.brand_image | file_url | img_tag  }}
@@ -110,7 +110,7 @@
 
   <script type="text/javascript">
   $( document ).ready(function() {
-    $('#cat-slider').owlCarousel({
+    $('#icons-slider').owlCarousel({
       loop: false,
       rewind: true,
       margin: 50,
