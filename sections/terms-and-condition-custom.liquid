@@ -5,16 +5,9 @@
             <div class="tcCustom__body">
                 {{ section.settings.custom_text_body }}
             </div>
-            <ul>
-              {% for block in section.blocks %}
-              <li class="wow animate__fadeInUp">
-                <div class="rule-wrapper">
-                  <h6>{{ block.settings.list_title }}</h6>
-                  <p>{{ block.settings.list_desc }}</p>
-              </li>
-              {% endfor %}
-            </ul>
-          
+            {% for block in section.blocks %}
+                {{ block.settings.list_title }}
+            {% endfor %}
         </div>
       </div>
     </div>
