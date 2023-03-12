@@ -26,21 +26,7 @@
                             
                         </div>
                         <div class="item-wrap">
-                            {%- assign wcp_total_price = 0 -%} 
-{% for item in cart.items %}
-{%- include 'wcp_discount' with item.product -%}
-{%- include 'wcp_variant' with item.variant -%}
-{%- include 'wcp_vd_discount' with item -%}  
-{%- assign  wcp_custom_final_Price = item.final_price  -%} 
-{%- if wcp_v_price < wcp_custom_final_Price -%}
-                  			{%- assign wcp_line_price = wcp_v_price | floor | minus: 0 | times: item.quantity -%}
-                {%- else -%}
-                               {%- assign wcp_line_price = wcp_custom_final_Price | floor | minus: 0 | times: item.quantity -%}
-                               {%- assign wcp_v_price = wcp_custom_final_Price | floor | minus: 0 -%}
-                {%- endif -%}
- {%- assign wcp_total_price = wcp_total_price | plus: wcp_line_price -%}	
- {{NextDiscountHtml}} 
-
+                            {% for item in cart.items %}
                             <ul class="cart-wrap">
                                 <li class="item-info">
                                     <div class="item-img">
@@ -109,10 +95,10 @@
                                     </div>
                                 </li>
                                 <li class="item-price">
-                                    <span class="money amount no-vat full-price">{{  wcp_line_price  | divided_by:1.21 | money }}</span>
+                                    <span class="money amount no-vat full-price">{{ item.line_price | divided_by:1.21 | money }}</span>
                                 </li>
                                 <li class="item-price">
-                                    <span class="money amount full-price">{{  wcp_line_price  | money }}</span>
+                                    <span class="money amount full-price">{{ item.line_price | money }}</span>
                                 </li>
                                 <li class="item-trash">
                                     <div class="item-remove">
@@ -148,21 +134,7 @@
                     
                 </div>
                 <div class="cart-item-wrap2 cart-mobile">
-                    {%- assign wcp_total_price = 0 -%} 
-{% for item in cart.items %}
-{%- include 'wcp_discount' with item.product -%}
-{%- include 'wcp_variant' with item.variant -%}
-{%- include 'wcp_vd_discount' with item -%}  
-{%- assign  wcp_custom_final_Price = item.final_price  -%} 
-{%- if wcp_v_price < wcp_custom_final_Price -%}
-                  			{%- assign wcp_line_price = wcp_v_price | floor | minus: 0 | times: item.quantity -%}
-                {%- else -%}
-                               {%- assign wcp_line_price = wcp_custom_final_Price | floor | minus: 0 | times: item.quantity -%}
-                               {%- assign wcp_v_price = wcp_custom_final_Price | floor | minus: 0 -%}
-                {%- endif -%}
- {%- assign wcp_total_price = wcp_total_price | plus: wcp_line_price -%}	
- {{NextDiscountHtml}} 
-
+                    {% for item in cart.items %}
                     <div class="cart-wrap item-block">
                         <div class="item-info">
                             <div class="item-info-row">
@@ -231,14 +203,14 @@
                                     <div class="cart-mobile-price">
                                         <h4 class="info-row__heading">Cena bez DPH</h4>
                                         <div class="item-price">
-                                            <span class="money amount no-vat full-price">{{  wcp_line_price  | divided_by:1.21 | money }}</span>
+                                            <span class="money amount no-vat full-price">{{ item.line_price | divided_by:1.21 | money }}</span>
                                         </div>
                                         <div class="mobile-remove"> </div>
                                     </div>
                                     <div class="cart-mobile-price">
                                             <h4 class="info-row__heading">Cena s DPH</h4>
                                             <div class="item-price">
-                                                <span class="money amount full-price">{{  wcp_line_price  | money }}</span>
+                                                <span class="money amount full-price">{{ item.line_price | money }}</span>
                                             </div>
                                         <div class="item-remove mobile-remove">
                                             <span class="remove-wrap">
@@ -320,6 +292,7 @@
                     </div>
                     
                 </div>
+                
                 <div class="cart-total-custom col-xl-5 col-lg-7 col-md-12 col-12">
                     <div class="cart-info-wrap">
                         {%- if section.settings.shipping_calculator_enable -%}
@@ -333,15 +306,8 @@
                             <div class="cart-total">
                                 <div class="total-amount">
                                     <span class="total-title">{{ section.settings.cart_total_title }}</span>
-                                    <span class="money amount total-price"><span class="wcp-original-cart-total">{{ cart.total_price | money}}</span>
-      <span class="wcp-cart-total" wcp=''></span>
-    </span>
+                                    <span class="money amount total-price">{{ cart.total_price | money }}</span>
                                 </div>
-      
-    <div class="additional-notes">
-        <span class="wcp-minimums-note"></span>
-        <span class="wcp-extra-note "></span>
-    </div>{% render "wcp_multi_currency_msg" %}
 
                                 {%- if cart.total_discounts > 0 -%}
                                 {% assign savings = cart.total_discounts | money %}
@@ -353,16 +319,6 @@
                                 <div class="proceed-to-checkout btn btn-style2">
                                     <input type="submit" name="checkout" value="{{ section.settings.checkout_button_title }}">
                                 </div>
-                              <div>
-                                {% if customer.tags contains "wpdnet" %}
-                                    {% if shop.metafields.wcp_net.isNetEnabled == "true" or shop.metafields.wcp_net.isNetEnabled == "1" %}
-                                        <div style="margin-top:30px;">
-                                            <p>{{shop.metafields.wcp_net.netCartMsg}}</p>
-                                            <a id="wcp-30-open" class="btn proceed-to-checkout btn btn-style2">{{shop.metafields.wcp_net.netBtnMsg}}</a>
-                                        </div>
-                                    {% endif %}
-                                {% endif %}
-                            </div>
 
                                 {%- if section.settings.cart_template_payment_img_enable -%}
                                 <div class="cart-payment-icon">
@@ -397,12 +353,7 @@
     <div class="cart-navbar cart-mobile container">
         <div class="total-amount">
             <span class="total-title">Celkem s DPH</span>
-            <span class="money amount total-price"><span class="wcp-original-cart-total">{{ cart.total_price | money}}</span>
-    <span class="wcp-cart-total"></span>
-    <div class="additional-notes">
-        <span class="wcp-minimums-note"></span>
-        <span class="wcp-extra-note "></span>
-    </div>{% render "wcp_multi_currency_msg" %}</span>
+            <span class="money amount total-price">{{ cart.total_price | money }}</span>
         </div>
         <a class="proceed-to-checkout btn btn-style2" href="/checkout">
             Pokračovat <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right-small"><path d="M9.294 8.777l-3.001-3a1 1 0 010-1.415l.069-.07a1 1 0 011.414 0l3.777 3.778a1 1 0 010 1.414l-3.777 3.777a1 1 0 01-1.414 0l-.07-.069a1 1 0 010-1.414l3.002-3.001z" fill="#fff" fill-rule="nonzero"/></svg>
@@ -410,88 +361,6 @@
     </div>
 </section>
 
-{% assign wcp_wholesale_customer = false %}
-{% if shop.metafields.wcp_status.wcp_status != 'disabled' and customer %}
-{% assign active_discounts = shop.metafields.wcp_active_discounts.wcp_active_discounts %}
-{% assign active_discounts_array = active_discounts | split: ',' %}
-{% assign customer_tags = blank %}
-{% for tag in customer.tags %}
-{% assign tempTag = tag | downcase %}
-{% assign customer_tags = customer_tags | prepend:tempTag %}
-{% unless forloop.last %}
-{% assign customer_tags = customer_tags | prepend:','  %}
-{% endunless %}
-{% endfor %}
-{% assign customer_tags = customer_tags | split:',' %}
-{% assign active_discounts = active_discounts | downcase %}
-{% for discount_key in active_discounts_array %}
-{% assign key_split = discount_key | split: '-' %}
-{% assign key_split_length = key_split | size %}
-{% if key_split_length > 2 %}
-{% assign removeable_key = key_split.last | prepend: '-' %}
-{% assign wcp_customer_tag = discount_key | remove_last: removeable_key %}
-{% else %}
-{% assign wcp_customer_tag = key_split[0] %}
-{% endif %}
-{% assign wcp_customer_tag = wcp_customer_tag | downcase %}
-{% if customer_tags contains wcp_customer_tag %}
-{% assign wcp_wholesale_customer = true %}
-{% endif %}
-{% endfor %}
-{% endif %}
- 
-{% if wcp_wholesale_customer == true %}
-<script>
-  document.addEventListener('DOMContentLoaded', function(){
-    var WPD_reloadPage = function(e) {setTimeout(function(){window.location.reload();},2500);};
-    function wcp_build_event(x){for (var i = 0; i < x.length; i++) {x[i].addEventListener('click', WPD_reloadPage, false);}}
-    var x=document.querySelectorAll(".item-remove");wcp_build_event(x);
-    var x=document.querySelectorAll(".qtybutton");wcp_build_event(x);
-     function wcp_build_event_change(x){for (var i = 0; i < x.length; i++) {x[i].addEventListener('change', WPD_reloadPage, false);}}
-     var x=document.querySelectorAll("li.item-qty > div > div > div > input");wcp_build_event_change(x);
-  }, false);
-</script>
-<span class='wcp_price' style='display:none'>{{wcp_total_price | money}}</span>
-<span class='wcp_price_orignal' style='display:none'>{{cart.total_price | money}}</span>
-<script>
-  document.addEventListener('DOMContentLoaded', function(){
-    var intver = setInterval(function(){
-          if(document.querySelector('.wcp-minimums-note').innerHTML != ""){
-            document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                element.style.display="none";
-            });
-          
-             document.querySelectorAll('.wcp-original-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price_orignal').innerHTML; 
-                }); 
-             document.querySelectorAll('.wcp-net-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;                        
-                });
-             document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;          
-                });
-            clearInterval(intver); 
-          }else{   
-            if(document.querySelector('.total-amount .wcp-cart-total').getAttribute('wcp') == ""){          
-                document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                    element.getAttribute('wcp',document.querySelector('.wcp-cart-total').innerHTML.replace('$',""));
-                });        		
-                document.querySelectorAll('.wcp-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price').innerHTML;          
-                });
-                document.querySelectorAll('.wcp-original-cart-total').forEach(function (element) {
-                    element.innerHTML= document.querySelector('.wcp_price_orignal').innerHTML; 
-                });        		         
-             	clearInterval(intver);                          
-            }
-          }
-      		 
-    },2500);  
-    }, false);
-</script>
-{% endif %}
-
-              
 {% schema %}
   {
     "name": "Cart Page",
