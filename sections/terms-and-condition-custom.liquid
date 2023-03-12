@@ -5,16 +5,11 @@
             <div class="tcCustom__body">
                 {{ section.settings.custom_text_body }}
             </div>
-            <ul>
-              {% for block in section.blocks %}
-              <li class="wow animate__fadeInUp">
-                <div class="rule-wrapper">
-                  <h6>{{ block.settings.list_title }}</h6>
-                  <p>{{ block.settings.list_desc }}</p>
-              </li>
-              {% endfor %}
-            </ul>
-          
+            {% for block in section.blocks %}
+                <div class="tcCustom__body">
+                    {{ block.settings.custom_text_body_more }}
+                </div>
+            {% endfor %}
         </div>
       </div>
     </div>
@@ -32,21 +27,15 @@
     ],
     "blocks":[
     {
-      "type": "terms-condition",
-      "name": "Terms & Condition",
+      "type": "terms-condition-custom",
+      "name": "Terms & Condition Custom",
       "settings": [
-      {
-        "type": "textarea",
-        "id": "list_title",
-        "label": "List Title",
-        "default": "Introduction"
-      },
-      {
-        "type": "textarea",
-        "id": "list_desc",
-        "label": "List Description",
-        "default": "These website standard terms and conditions written on this webpage shall manage your use of our website, webiste name accessible at website these terms will be applied fully and affect to your use of this website. by using this website, you agreed to accept all terms"
-      }
+        {
+            "type": "richtext",
+            "id": "custom_text_body_more",
+            "label": "Text",
+            "default": "<p>Terms & Condition Custom section</p>"
+        }
       ]
     }
     ],
