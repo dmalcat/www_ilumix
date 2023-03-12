@@ -111,7 +111,7 @@
       blogSlider.slick({
         arrows: true,
         autoplay: false,
-        dots: true,
+        dots: false,
         pauseOnFocus: true,
         pauseOnHover: true,
         infinite: true,
@@ -120,12 +120,11 @@
         nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow-right"></i></button>',
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 940,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: true,
             }
           },
           {
