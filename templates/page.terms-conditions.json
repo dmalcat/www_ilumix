@@ -236,11 +236,29 @@
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40
       }
+    },
+    "c7c4f957-24fb-4270-845d-8ab6660a4f6d": {
+      "type": "terms-and-condition-custom",
+      "blocks": {
+        "746376af-6f6a-496a-a52e-195200ba9180": {
+          "type": "terms-condition-custom",
+          "settings": {
+            "custom_text_body_more": "<h1>2. Kupní smlouva<\/h1><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><h2>2. Kupní smlouva<\/h2><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><h3>2. Kupní smlouva<\/h3><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><h4>2. Kupní smlouva<\/h4><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><h5>2. Kupní smlouva<\/h5><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><h6>2. Kupní smlouva<\/h6><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<\/p><p>1. Návrhem na uzavření Kupní smlouvy je umístění Předmětu koupě Prodávajícím na Webové stránce Prodávajícího.<br\/>2. Kupní smlouva je mezi Prodávajícím a Kupujícím uzavřena na základě objednávky učiněné Kupujícím prostřednictvím Webové stránky Prodávajícího, a to okamžikem doručení potvrzení objednávky Kupujícího ze strany Prodávajícího zaslaného Prodávajícím Kupujícímu prostřednictvím elektronické pošty na elektronickou adresu Kupujícího uvedenou v objednávce Kupujícího.<br\/>3. Do doby potvrzení objednávky Kupujícího Prodávajícím není tato objednávka pro Prodávajícího závazná a zavazuje pouze Kupujícího.<br\/>4. Prodávající není povinen na objednávku Kupujícího reagovat a jeho případnou nečinnost nelze považovat za přijetí objednávky Kupujícího.<br\/>5. Objednávku, jejíž přijetí Prodávající dosud nepotvrdil, může Kupující zrušit či změnit e‑mailem zaslaným na e-mailovou adresu Prodávajícího info@360design.cz Odeslaná zpráva musí obsahovat identifikační údaje Kupujícího, datum provedení objednávky a specifikaci Předmětu koupě.<br\/>6. Pozdější změna či zrušení přijaté objednávky ze strany Kupujícího jsou možné pouze na základě dohody mezi Kupujícím a Prodávajícím.<br\/>7. Prodávající vždy dodá Kupujícímu Předmět koupě v množstvích, termínech a za podmínek stanovených v potvrzené objednávce Kupujícího.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "746376af-6f6a-496a-a52e-195200ba9180"
+      ],
+      "settings": {
+        "custom_text_body": "<h6>1. Všeobecná ustanovení<\/h6><p>1. Níže uvedené obchodní podmínky upravují vzájemná práva a povinnosti vzniklé v souvislosti nebo na základě kupní smlouvy uzavírané mezi společností ILUMIX light s.r.o., IČO: 29115728 (dále jen Prodávající), a jejími zákazníky (dále jen Kupující) při prodeji\/nákupu výrobků, zboží a služeb nabízeného Prodávajícím (dále jen Předmět koupě) prostřednictvím internetového obchodu Prodávajícího provozovaného na webové stránce umístěné na internetové adrese www.360design.cz (dále jen Webová stránka Prodávajícího) a jsou její nedílnou součástí.<br\/>2. Pro účely těchto obchodních podmínek bude dále kupní smlouva uzavřená mezi Prodávajícím a Kupujícím označována také jako Kupní smlouva.<br\/>3. Tyto obchodní podmínky se vztahují na všechny kupní smlouvy, které byly uzavřeny mezi Prodávajícím a Kupujícím po nabytí jejich účinnosti.<br\/>4. Odchylná ujednání od těchto obchodních podmínek dohodnutá v Kupní smlouvě mají přednost před těmito obchodními podmínkami. Práva a povinnosti smluvních stran, která nejsou v Kupní smlouvě výslovně upravena, se řídí těmito obchodními podmínkami.<\/p>"
+      }
     }
   },
   "order": [
     "df8c9060-d64d-4db8-954b-e987a5bbae7d",
     "terms-conditions",
-    "69401360-c0a5-4786-b775-4f01ce56d679"
+    "69401360-c0a5-4786-b775-4f01ce56d679",
+    "c7c4f957-24fb-4270-845d-8ab6660a4f6d"
   ]
 }
