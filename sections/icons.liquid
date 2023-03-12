@@ -1,7 +1,7 @@
 <!-- our-brand-area start -->
 <section class="icons-section">
     <div class="container-fluid container-col">
-      <div class="icons-container">
+      <div class="icons-container" id="icons-slider">
             {% for block in section.blocks %}
             <div class="icon-col">
                  {{ block.settings.brand_image | file_url | img_tag  }}
@@ -95,14 +95,14 @@
    }
    @media(max-width:600px){
     .icons-section .container-col{
-        margin:50px auto;
-        padding:10px 0;
+        margin: 50px auto;
+        padding: 10px 0;
     }
     .icons-container{
-       flex-direction: column;
+       
     }
     .icon-col{
-        width:80%;
+        width: 100%;
         margin:0 auto;
     }
    }
