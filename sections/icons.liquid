@@ -13,7 +13,7 @@
       </div>
     </div>
   </section>
-  
+
   {% schema %}
   {
     "name": "Icons",
@@ -71,11 +71,20 @@
    .icon-col{
        font-size:16px;
        width: 25%;
+       padding: 0 20px;
    }
    .icon-col p{
     margin:0;
     line-height: 24px;
    }
+
+   .icon-col img {
+    display: block;
+    max-width: 54px;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
    .icon-title{
        font-weight: 700;
        text-transform: uppercase;
@@ -107,25 +116,35 @@
 
   <script type="text/javascript">
   $( document ).ready(function() {
-    $('#icons-slider').owlCarousel({
-      loop: false,
-      margin: 50,
-      nav: false,
-      dots: true,
-      responsive:{
-        0:{
-          items: 1,
-          margin: 15
-        },
-        479:{
-          items: 1,
-          margin: 15
-        },
-        940:{
-          items: 2,
-          margin: 30
-        }
-      }
+    var blogSlider = $('#icons-slider');
+      blogSlider.slick({
+        arrows: true,
+        autoplay: false,
+        dots: false,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        infinite: true,
+        slidesToShow: 4,
+        prevArrow: '<button type="button" class="slick-prev"><i class="icon-arrow-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 940,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true
+            }
+          },
+        ]
+      });
     });
-  });
   </script>
