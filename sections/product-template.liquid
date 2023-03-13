@@ -258,11 +258,7 @@
               <script>
                 $( document ).ready(function() {
 
-                  var swatchExists = $('.swatch-variant .CCT').length;
-
-                  console.log(swatchExists);
-                  
-                  if ($('input[type=radio][name=option-0]').length) {
+                  if ($('.swatch-variant .CCT').length) {
                     var selectedCct = $('input[type=radio][name=option-0]:checked').val();
                     var luminsElem = $('#meta-group-cct');
                     
