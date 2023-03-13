@@ -247,11 +247,11 @@
                   {% endif %}
                   <span id="meta-group-cct"></span>
                 </span>
+                {% if product.metafields.custom.stupen_kryti %}
                 <span class="product-meta__group product-meta__group--coverage">
-                  {% if product.metafields.custom.stupen_kryti %}
-                    <span>{{ product.metafields.custom.stupen_kryti }}</span>
-                  {% endif %}
+                  <span>{{ product.metafields.custom.stupen_kryti }}</span>
                 </span>
+              {% endif %}
               </span>
               {% endif %}
 
@@ -259,6 +259,9 @@
                 $( document ).ready(function() {
                   
                   var selectedCct = $('input[type=radio][name=option-0]:checked').val();
+                  
+                  console.log(selectedCct);
+
                   var luminsElem = $('#meta-group-cct');
                   $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
 
