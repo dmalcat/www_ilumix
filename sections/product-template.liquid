@@ -258,19 +258,19 @@
               <script>
                 $( document ).ready(function() {
                   
-                  var selectedCct = $('input[type=radio][name=option-0]:checked').val();
-                  
-                  console.log(selectedCct);
+                  if ($('input[type=radio][name=option-0]').length) {
+                    var selectedCct = $('input[type=radio][name=option-0]:checked').val();
+                    var luminsElem = $('#meta-group-cct');
+                    
+                    $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
 
-                  var luminsElem = $('#meta-group-cct');
-                  $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
+                    $(luminsElem).text(selectedCct);
 
-                  $(luminsElem).text(selectedCct);
-
-                  $( "input[type=radio][name=option-0]" ).change(function() {
-                      var selectedCct = $(this).attr('value');
-                      $(luminsElem).text(selectedCct);
-                  });
+                    $( "input[type=radio][name=option-0]" ).change(function() {
+                        var selectedCct = $(this).attr('value');
+                        $(luminsElem).text(selectedCct);
+                    });
+                  }
                 });
               </script>
               
