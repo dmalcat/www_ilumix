@@ -253,6 +253,12 @@
                 </span>
               </span>
               {% endif %}
+
+              <script>
+                $( document ).ready(function() {
+                  $('input[name=option-0]:checked')
+                });
+              </script>
               
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
