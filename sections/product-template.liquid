@@ -257,12 +257,10 @@
               <script>
                 $( document ).ready(function() {
                   
+                  var selectedCct = $('input[name=option0]:checked').val();
+                  
 
-                  function getCheckedOptionValue() {
-                    return $('input[name=option0]:checked');
-                  }
-
-                  getCheckedOptionValue();
+                  console.log(selectedCct);
                   
                 });
               </script>
