@@ -93,6 +93,9 @@
                 {% if section.settings.videoresponsive != '' %}
                 <source src="{{section.settings.video}}" type="video/mp4" media="(max-width:640px)">
                 {% endif %}
+
+                <source srcset="<?php echo $baseurl ?>/assets/images/covers/clenstvi/cover_375.jpg" media="(max-width: 375px)" type="image/jpeg">
+		        <source srcset="<?php echo $baseurl ?>/assets/images/covers/clenstvi/cover_540.jpg" media="(max-width: 540px)" type="image/jpeg">
             </video>
         </div>
     </div>
@@ -110,7 +113,7 @@
           "info":"Supports mp4, YouTube and Vimeo. Only mp4 videos will play on mobile."
        },
        {
-            "id":"video-responsive",
+            "id":"videoresponsive",
             "type":"text",
             "label":"Responsive video link",
             "info":"Supports mp4, YouTube and Vimeo. Only mp4 videos will play on mobile."
