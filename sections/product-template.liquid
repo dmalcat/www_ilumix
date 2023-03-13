@@ -258,8 +258,9 @@
               <script>
                 $( document ).ready(function() {
                   
-                  // get selected option on load
                   var selectedCct = $('input[type=radio][name=option-0]:checked').val();
+                  var luminsElem = $('#meta-group-cct');
+
                   $(luminsElem).prepend("<span>" + luminsElem + "</span>");
 
                   $( "input[type=radio][name=option-0]" ).change(function() {
@@ -268,7 +269,7 @@
                       $(luminsElem).prepend("<span>" + luminsElem + "</span>");
                   });
 
-                  var luminsElem = $('#meta-group-lumins');
+                  
 
                   
                   
