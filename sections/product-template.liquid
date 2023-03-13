@@ -229,7 +229,8 @@
               
               {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
               <span class="product-meta">
-                <span class="product-meta__group product-meta__group--lumins">
+                <span class="product-meta__group product-meta__group--lumins" id="meta-group-lumins">
+
                   {% if product.metafields.custom.typ_svetelneho_zdroje %}
                     <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
                   {% endif %}
