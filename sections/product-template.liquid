@@ -253,6 +253,24 @@
                 </span>
               </span>
               {% endif %}
+
+              <script>
+                $( document ).ready(function() {
+                  
+                  // get selected option on load
+                  var selectedCct = $('input[type=radio][name=option-0]:checked').val();
+                  $('#selected-cct').text(selectedCct);
+
+                  $( "input[type=radio][name=option-0]" ).change(function() {
+                      var selectedCct = $(this).attr('value');
+                      $('#selected-cct').text(selectedCct);
+                  });
+                  
+
+                  console.log(selectedCct);
+                  
+                });
+              </script>
               
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
