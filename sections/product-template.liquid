@@ -261,8 +261,7 @@
                   var selectedCct = $('input[type=radio][name=option-0]:checked').val();
 
                   $( "input[type=radio][name=option-0]" ).change(function() {
-                      var selectedCct = $(this).val();
-                      console.log(this);
+                      var selectedCct = $(this).attr('value');
                   });
                   
 
