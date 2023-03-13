@@ -2431,6 +2431,7 @@
         "type": "background-video",
         "settings": {
           "video": "https:\/\/www.ilumix.cz\/assets\/video\/svetla.mp4",
+          "videoresponsive": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f9cb8ea7e0c2475684addb41e07afc42.mp4",
           "subtitle": "Proč 360design?",
           "title": "Máme rádi světlo. A design.\nK tomu máme 15 let zkušeností.\nÚspěšně jsme rozzářili stovky projektů po celé ČR,\nod velkých komerčních objektů, po vyhlášené designové projekty.\n\nNadčasové provedení. Evropští výrobci.\nŠiroká nabídka svítidel všech typů, velikostí i cen. Přímé zastoupení mnoha výrobců.\nTo je 360design.",
           "button": "Více o nás",
