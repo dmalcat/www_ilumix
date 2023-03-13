@@ -245,14 +245,34 @@
                   {% if product.metafields.custom.barevna_teplota %}
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
+                  <span id="meta-group-cct"></span>
                 </span>
+                {% if product.metafields.custom.stupen_kryti %}
                 <span class="product-meta__group product-meta__group--coverage">
-                  {% if product.metafields.custom.stupen_kryti %}
-                    <span>{{ product.metafields.custom.stupen_kryti }}</span>
-                  {% endif %}
+                  <span>{{ product.metafields.custom.stupen_kryti }}</span>
                 </span>
+              {% endif %}
               </span>
               {% endif %}
+
+              <script>
+                $( document ).ready(function() {
+
+                  if ($('.swatch-variant .CCT').length) {
+                    var selectedCct = $('input[type=radio][name=option-0]:checked').val();
+                    var luminsElem = $('#meta-group-cct');
+                    
+                    $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
+
+                    $(luminsElem).text(selectedCct);
+
+                    $( "input[type=radio][name=option-0]" ).change(function() {
+                        var selectedCct = $(this).attr('value');
+                        $(luminsElem).text(selectedCct);
+                    });
+                  }
+                });
+              </script>
               
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
