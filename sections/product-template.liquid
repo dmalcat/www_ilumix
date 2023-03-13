@@ -257,6 +257,10 @@
 
               <script>
                 $( document ).ready(function() {
+
+                  var swatchExists = $('.swatch-variant .cct').lenght;
+
+                  console.log(swatchExists);
                   
                   if ($('input[type=radio][name=option-0]').length) {
                     var selectedCct = $('input[type=radio][name=option-0]:checked').val();
