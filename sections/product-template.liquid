@@ -256,8 +256,11 @@
 
               <script>
                 $( document ).ready(function() {
-                  var selectedCct = $('input[type=radio]:checked');
-                  console.log(selectedCct);
+                  getCheckedOptionValue();
+                  
+                  function getCheckedOptionValue() {
+                    return $('input[name=option0]:checked').val();
+                  }
                   
                 });
               </script>
