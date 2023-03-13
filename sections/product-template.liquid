@@ -261,12 +261,11 @@
                   var selectedCct = $('input[type=radio][name=option-0]:checked').val();
                   var luminsElem = $('#meta-group-cct');
 
-                  $(luminsElem).prepend("<span>" + luminsElem + "</span>");
+                  $(luminsElem).text(luminsElem);
 
                   $( "input[type=radio][name=option-0]" ).change(function() {
                       var selectedCct = $(this).attr('value');
                       $('#selected-cct').text(selectedCct);
-                      $(luminsElem).prepend("<span>" + luminsElem + "</span>");
                   });
 
                   
