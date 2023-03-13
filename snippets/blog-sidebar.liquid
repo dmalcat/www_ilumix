@@ -362,7 +362,6 @@
   }
   .blog-sidebar-wrap .blog-sidebar ul.archive-sidebar li::before{
     color: #222;
-    content: "\f178";
     position: absolute;
     {% if settings.enable_rtl %}
     right: 0;
@@ -372,8 +371,7 @@
     transform: translateY(50%) scaleX(1);
     {% endif %}
     bottom: 50%;
-    font: normal normal normal 14px/1 FontAwesome;
-  }
+}
   .blog-sidebar-wrap .blog-sidebar ul.archive-sidebar li:hover::before{
     color: {{ settings.color_primary }};
   }
