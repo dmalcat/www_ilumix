@@ -89,7 +89,10 @@
         <div class="video-box">
             <div class="video-overlay"></div>
             <video autoplay loop muted playsinline class="video-controls">
-                <source src="{{section.settings.video}}" type="video/mp4">
+                {% if section.settings.videoresponsive != '' %}
+                <source src="{{section.settings.videoresponsive}}" type="video/mp4" media="(max-width:640px)">
+                {% endif %}
+                <source src="{{section.settings.video}}" type="video/mp4" media="(min-width: 641px)">
             </video>
         </div>
     </div>
@@ -107,6 +110,12 @@
           "info":"Supports mp4, YouTube and Vimeo. Only mp4 videos will play on mobile."
        },
        {
+            "id":"videoresponsive",
+            "type":"text",
+            "label":"Responsive video link",
+            "info":"Supports mp4, YouTube and Vimeo. Only mp4 videos will play on mobile."
+        },
+        {
             "id":"subtitle",
             "type":"text",
             "label":"Subtitle",
