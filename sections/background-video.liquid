@@ -91,7 +91,7 @@
             <video autoplay loop muted playsinline class="video-controls">
                 <source src="{{section.settings.video}}" type="video/mp4" media="(max-width:640px)">
                 {% if section.settings.videoresponsive != '' %}
-                <source src="{{section.settings.video}}" type="video/mp4" media="(max-width:640px)">
+                <source src="{{section.settings.video}}" type="video/mp4" media="(min-width: 641px)">
                 {% endif %}
 
                 <source srcset="<?php echo $baseurl ?>/assets/images/covers/clenstvi/cover_375.jpg" media="(max-width: 375px)" type="image/jpeg">
