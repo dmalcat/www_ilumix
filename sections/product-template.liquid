@@ -260,13 +260,12 @@
                   
                   // get selected option on load
                   var selectedCct = $('input[type=radio][name=option-0]:checked').val();
-                  $('#selected-cct').text(selectedCct);
-                  luminsElem.prepend("<span>" + luminsElem + "</span>");
+                  $(luminsElem).prepend("<span>" + luminsElem + "</span>");
 
                   $( "input[type=radio][name=option-0]" ).change(function() {
                       var selectedCct = $(this).attr('value');
                       $('#selected-cct').text(selectedCct);
-                      luminsElem.prepend("<span>" + luminsElem + "</span>");
+                      $(luminsElem).prepend("<span>" + luminsElem + "</span>");
                   });
 
                   var luminsElem = $('#meta-group-lumins');
