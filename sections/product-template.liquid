@@ -256,11 +256,13 @@
 
               <script>
                 $( document ).ready(function() {
-                  getCheckedOptionValue();
                   
+
                   function getCheckedOptionValue() {
                     return $('input[name=option0]:checked').val();
                   }
+
+                  getCheckedOptionValue();
                   
                 });
               </script>
