@@ -257,7 +257,12 @@
               <script>
                 $( document ).ready(function() {
                   
+                  // get selected option on load
                   var selectedCct = $('input[type=radio][name=option-0]:checked').val();
+
+                  $( "input[type=radio][name=option-0]" ).change(function() {
+                      selectedCct = $(this).val();
+                  });
                   
 
                   console.log(selectedCct);
