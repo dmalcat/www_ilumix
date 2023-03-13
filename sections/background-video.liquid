@@ -90,7 +90,7 @@
             <div class="video-overlay"></div>
             <video autoplay loop muted playsinline class="video-controls">
                 {% if section.settings.videoresponsive != '' %}
-                <source src="{{section.settings.video}}" type="video/mp4" media="(max-width:640px)">
+                <source src="{{section.settings.videoresponsive}}" type="video/mp4" media="(max-width:640px)">
                 {% endif %}
                 <source src="{{section.settings.video}}" type="video/mp4" media="(min-width: 641px)">
             </video>
