@@ -1,5 +1,25 @@
 {
   "sections": {
+    "a239a5c8-921d-4c19-aaf4-8ac333e4f885": {
+      "type": "about-template1",
+      "settings": {
+        "about_product_padding_top": 100,
+        "about_product_padding_bottom": 100,
+        "about_product_padding_top_ipad": 60,
+        "about_product_padding_bottom_ipad": 60,
+        "about_product_padding_top_xs": 40,
+        "about_product_padding_bottom_xs": 40,
+        "section_sub_title": "",
+        "section_title": "Reklamační řád",
+        "section_arrow": ""
+      }
+    },
+    "e645ce89-9b2d-430d-95af-c93690490997": {
+      "type": "terms-and-condition-custom",
+      "settings": {
+        "custom_text_body": "<p>Potřebujete zboží reklamovat? Vytiskněte a vyplňte jednoduchý reklamační formulář, přiložte kopii daňového dokladu (faktury) a spolu se zbožím doste na naší kamennou prodejnu nebo zboží odešlete na adresu:<br\/><br\/><strong>\"REKLAMACE”<br\/>ILUMIX light s.r.o.<br\/>Holečkova 368\/4<br\/>Karlovy Vary, 36017<\/strong><br\/><br\/><br\/><em>Reklamované zboží nám prosím pošlete řádně zabalené proti poškození při přepravě. Reklamovaný výrobek posíláte na vlastní náklady a odpovědnost. Proto zvolte bezpečný způsob dodání zásilky, např. využijte kurýrní službu anebo pošlete balík s možností potvrzení odeslání. Balíček neposílejte na dobírku, taková zásilka nebude převzata.<\/em><br\/><br\/>Reklamaci vyřídíme nejpozději do 30 dnů, ale budeme se snažit o co nejrychlejší vyřízení. O výsledku reklamačního řízení Vás budeme informovat emailem. Záruční lhůta je zákonem stanovena na 24 měsíců a u našeho zboží slouží daňový doklad (faktura) zároveň jako záruční list. Reklamace se nevztahují na závady způsobené nesprávným použitím a opotřebením neodpovídajícím způsobem. Zákazník je povinen uplatnit reklamaci neprodleně po vzniku vady. Reklamaci budeme posuzovat v souladu s pokyny stanovenými výrobcem zboží nebo jeho zástupcem.<br\/><br\/>Podrobnější informace k reklamaci naleznete v <a href=\"\/pages\/obchodni-podminky\" target=\"_blank\" title=\"Obchodní podmínky\">obchodních podmínkách<\/a>.<br\/><br\/><br\/><strong>Jak postupovat, když Vám zakoupené zboží nevyhovuje a chcete ho vrátit v zákonné 14denní lhůtě?<\/strong><br\/>Jestliže Vám zakoupené zboží nevyhovuje, můžete ho vrátit v zákonné lhůtě 14 kalendářních dnů od převzetí zásilky bez udání důvodu a my Vám vrátíme peníze za vrácené zboží. O průběhu vrácení zboží Vás budeme informovat emailem. Vrácené zboží musí být čisté a nesmí jevit známky opotřebení. Podrobnější informace naleznete v obchodních podmínkách. Peníze za zboží pošleme na Váš bankovní účet co nejdříve, nejpozději do 14 dnů od odstoupení od smlouvy. Výměnu zboží neposkytujeme!<br\/><br\/>Možnosti vrácení zboží:<br\/>Vrácení na kamenné prodejně ILUMIX light, Holečkova 368\/4, Karlovy Vary 36017<br\/>Nevhodné zboží přineste spolu s fakturou na naší prodejnu a na místě s Vámi bude sepsán formulář ohledně vrácení zboží. Vrácení zboží je zdarma.<br\/><br\/>Vrácení poštou:<br\/>Pokud Vám nevyhovuje vrácení zboží zdarma osobně na naší prodejně, můžete nám ho samozřejmě poslat i poštou. V tomto případě však nebude poštovné zpětně propláceno.<br\/><br\/>Zboží zašlete zpět v originálním obalu, se všemi etiketami od výrobce a na faktuře označte zboží, které vracíte a připište na ni číslo účtu, kam pošleme peníze zpět. Vrácené zboží dobře zabalte, aby nedošlo k jeho poškození během přepravy.<br\/><br\/>Zboží odešlete doporučeně na adresu:<br\/><br\/><strong>“VRATKA”<br\/>ILUMIX light s.r.o.<br\/>Holečkova 368\/4<br\/>Karlovy Vary, 36017<br\/><br\/><\/strong><em><strong>(Zásilku neposílejte na dobírku, taková zásilka nebude převzata)<\/strong><\/em><\/p>"
+      }
+    },
     "return-policy-section2": {
       "type": "return-policy-section2",
       "settings": {
@@ -36,6 +56,8 @@
     }
   },
   "order": [
+    "a239a5c8-921d-4c19-aaf4-8ac333e4f885",
+    "e645ce89-9b2d-430d-95af-c93690490997",
     "return-policy-section2"
   ]
 }
