@@ -9,13 +9,14 @@
         "section_padding_bottom_lg": 0,
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 0,
-        "introduction_title1": "Our privacy policy",
-        "introduction_title2": "introduction",
-        "introduction_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic"
+        "introduction_title1": "Ochrana osobních údajů a zpracování cookies",
+        "introduction_title2": "",
+        "introduction_description": ""
       }
     },
     "privacy-policy-introduction2": {
       "type": "privacy-policy-introduction2",
+      "disabled": true,
       "settings": {
         "section_padding_top": 100,
         "section_padding_bottom": 100,
@@ -23,7 +24,6 @@
         "section_padding_bottom_lg": 60,
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40,
-        "privacy_img": "shopify:\/\/shop_images\/privacy-img_afc37f49-6a26-464f-a0e6-7f9f1b36ce30.jpg",
         "image_title": "We followed the law, follow our policies, we self-report",
         "content_title1": "Providing your personal data to others",
         "content_description1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -37,6 +37,7 @@
     },
     "privacy-policy-introduction3": {
       "type": "privacy-policy-introduction3",
+      "disabled": true,
       "settings": {
         "section_padding_top": 100,
         "section_padding_bottom": 100,
@@ -44,7 +45,6 @@
         "section_padding_bottom_lg": 60,
         "section_padding_top_xs": 40,
         "section_padding_bottom_xs": 40,
-        "privacy_img": "shopify:\/\/shop_images\/privacy-img2_d12ca585-d901-4009-8b15-7ff69db0ff3f.jpg",
         "main_title": "Watch information collected through technology and bt third-parties?",
         "content_description1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
         "content_description2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
@@ -54,6 +54,7 @@
     },
     "privacy-policy-introduction4": {
       "type": "privacy-policy-introduction4",
+      "disabled": true,
       "settings": {
         "section_padding_top": 100,
         "section_padding_bottom": 100,
@@ -66,12 +67,19 @@
         "content_title2": "Our detail information",
         "content_description2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
       }
+    },
+    "e6f82656-6c5b-4d6d-ab82-9a2b98e6f8e3": {
+      "type": "terms-and-condition-custom",
+      "settings": {
+        "custom_text_body": "<p>Terms & Condition Custom section<\/p>"
+      }
     }
   },
   "order": [
     "privacy-policy-introduction",
     "privacy-policy-introduction2",
     "privacy-policy-introduction3",
-    "privacy-policy-introduction4"
+    "privacy-policy-introduction4",
+    "e6f82656-6c5b-4d6d-ab82-9a2b98e6f8e3"
   ]
 }
