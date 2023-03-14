@@ -1,5 +1,19 @@
 {
   "sections": {
+    "b4b7b7f6-e150-49bd-a976-f2de247b4d3c": {
+      "type": "about-template1",
+      "settings": {
+        "about_product_padding_top": 100,
+        "about_product_padding_bottom": 100,
+        "about_product_padding_top_ipad": 60,
+        "about_product_padding_bottom_ipad": 60,
+        "about_product_padding_top_xs": 40,
+        "about_product_padding_bottom_xs": 40,
+        "section_sub_title": "DOPRAVA a platba",
+        "section_title": "Zásady ochrany osobních údajů a zpracování cookies",
+        "section_arrow": ""
+      }
+    },
     "privacy-policy-introduction": {
       "type": "privacy-policy-introduction",
       "settings": {
@@ -76,6 +90,7 @@
     }
   },
   "order": [
+    "b4b7b7f6-e150-49bd-a976-f2de247b4d3c",
     "privacy-policy-introduction",
     "privacy-policy-introduction2",
     "privacy-policy-introduction3",
