@@ -258,10 +258,10 @@
               <script>
                 $(document).ready(function() {
 
-                  var cctElem = $('.swatch-variant .CCT');
+                  var cctElem = $('.CCT').find('input[type=radio]:checked');
                   var selectedCCTRadio = $('input[type=radio]:checked');
 
-                  var cctSelected = $(cctElem).find('input[type=radio]:checked');
+                  var cctSelected = $(cctElem);
                   
                   console.log(cctSelected);
 
