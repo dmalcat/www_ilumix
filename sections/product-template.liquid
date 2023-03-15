@@ -256,17 +256,22 @@
               {% endif %}
 
               <script>
-                $( document ).ready(function() {
-                  if ($('.swatch-variant .CCT').length) {
-                    var selectedCct = $('input[type=radio][name=option-0]:checked').val();
+                $(document).ready(function() {
+                  
+                  var metaTarget = $('.cct-radio');
+                 
+                  if ($('.cct-radio').length) {
+                    var selectedCct = $('.cct-radio:checked').val();
+                    console.log(selectedCct);
                     var luminsElem = $('#meta-group-cct');
                     
                     $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
 
                     $(luminsElem).text(selectedCct);
 
-                    $( "input[type=radio][name=option-0]" ).change(function() {
+                    $(metaTarget).change(function() {
                         var selectedCct = $(this).attr('value');
+                        console.log(selectedCct);
                         $(luminsElem).text(selectedCct);
                     });
                   }
