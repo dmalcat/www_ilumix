@@ -262,6 +262,7 @@
                  
                   if ($('.cct-radio:checked').length) {
                     var selectedCct = $('.cct-radio:checked').val();
+                    console.log(selectedCct);
                     var luminsElem = $('#meta-group-cct');
                     
                     $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
