@@ -57,7 +57,7 @@
       {% assign values = values | append: ',' | append: value %} 
       {% assign values = values | split: ',' %}
       <div data-value="{{ value | escape }}" class="swatch-element {% if is_color %}color {% endif %}{{ value | handle }} {% if variant.available %}available{% else %}soldout{% endif %}">
-        <input class="{{ variant }}" id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if variant == current_variant %} checked{% endif %} {% comment %}{% unless variant.available %}disabled{% endunless %}{% endcomment %} />
+        <input class="{{ swatch }}" id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if variant == current_variant %} checked{% endif %} {% comment %}{% unless variant.available %}disabled{% endunless %}{% endcomment %} />
         {% if is_color %}
         <label class="tooltip--top color-swatch-hex" for="swatch-{{ option_index }}-{{ value | handle }}" style="background-color: {{ variant.metafields.custom.hex_kod }};" data-tooltip="{{ value}}">
           {% comment %}<img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" alt=""/>{% endcomment %}
