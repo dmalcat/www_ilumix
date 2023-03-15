@@ -257,6 +257,10 @@
 
               <script>
                 $( document ).ready(function() {
+
+                  var selectedCCT = $('.swatch-variant .CCT input[type=radio]');
+                  console.log(selectedCCT);
+
                   if ($('.swatch-variant .CCT').length) {
                     var selectedCct = $('input[type=radio][name=option-0]:checked').val();
                     var luminsElem = $('#meta-group-cct');
