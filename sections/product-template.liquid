@@ -261,7 +261,17 @@
                   var metaTarget = $('.cct-radio');
                  
                   if ($('.cct-radio:checked').length) {
+                    var selectedCct = $('.cct-radio:checked).val();
+                    var luminsElem = $('#meta-group-cct');
                     
+                    $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
+
+                    $(luminsElem).text(selectedCct);
+
+                    $( "input[type=radio][name=option-0]" ).change(function() {
+                        var selectedCct = $(this).attr('value');
+                        $(luminsElem).text(selectedCct);
+                    });
                   }
 
                   if ($('.swatch-variant .CCT').length) {
