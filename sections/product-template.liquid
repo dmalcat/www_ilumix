@@ -261,6 +261,10 @@
                   var cctElem = $('.CCT').find('input[type=radio]:checked');
                   var selectedCCTRadio = $('input[type=radio]:checked');
 
+                  $(":checkbox").each(function(elem) {
+                    $(elem).data("index", i);
+                  });
+
                   var cctSelected = $(cctElem);
                   
                   console.log(cctSelected);
