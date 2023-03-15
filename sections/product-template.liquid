@@ -258,14 +258,10 @@
               <script>
                 $(document).ready(function() {
 
-                  var cctElem = $('.CCT').('input[type=radio]:checked');
+                  var cctElem = $('.CCT').('input[type=radio]:checked').get(0);
                   var selectedCCTRadio = $('input[type=radio]:checked');
 
-                  $('.CCT').each(function() {
-                    
-                  });
-
-                  var cctSelected = $(cctElem).addClass('selected');
+                  var cctSelected = $(cctElem);
                   
                   console.log(cctSelected);
 
