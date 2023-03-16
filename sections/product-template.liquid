@@ -234,8 +234,12 @@
                     <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
                   {% endif %}
 
-                  {% if product.metafields.custom.vykon %}
+                  {% if product.metafields.custom.vykon%}
                     <span>&nbsp;{{ product.metafields.custom.vykon }}</span>
+                  {% endif %}
+
+                  {% if variant.metafields.custom.vykon %}
+                    <span>&nbsp;{{ variant.metafields.custom.vykon }}</span>
                   {% endif %}
 
                   {% if product.metafields.custom.svetelny_tok %}
