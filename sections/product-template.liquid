@@ -1208,31 +1208,32 @@ $(".pp-swatch").insertAfter(".swatch-custom-container");
 $(document).ready(function() {
   var metaTarget = $('.cct-radio');
     
-    if ($('.cct-radio').length) {
-      var selectedCct = $('.cct-radio:checked').val();
-      console.log(selectedCct);
-      var luminsElem = $('#meta-group-cct');
-      
-      //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
+  if ($('.cct-radio').length) {
+    var selectedCct = $('.cct-radio:checked').val();
 
-      $(luminsElem).text(selectedCct);
+    
+    var luminsElem = $('#meta-group-cct');
+    
+    //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
 
-      $(metaTarget).change(function() {
-          var selectedCct = $(this).attr('value');
-          var technicValue = $('.tok-varianty--active').attr('data-value');
-          console.log(technicValue);
-          
-          $(luminsElem).text(selectedCct);
-      });
+    $(luminsElem).text(selectedCct);
 
-      
-    } 
+    $(metaTarget).change(function() {
+        var selectedCct = $(this).attr('value');
+        var technicValue = $('.tok-varianty--active').attr('data-value');
+        console.log(technicValue);
+        
+        $(luminsElem).text(selectedCct);
+    });
+
+    
+  } 
       
       // get attribues (výkon, světelný tok, barevná teplota) of active variant
       
   var technicValue = $('.tok-varianty--active').attr('data-value');
   
-  console.log(technicValue);
+  
   
 });
 
