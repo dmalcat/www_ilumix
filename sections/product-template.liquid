@@ -1120,6 +1120,8 @@
       $('.rozmer-varianty').css('display', 'none');
       $('#' + variant.id + '1').css('display', 'table-row');
       $('.vykon-varianty').css('display', 'none');
+      $('.tok-varianty').removeClass('vykon-varianty--active');
+      $('#' + variant.id + '4').css('display', 'table-row');
       $('#' + variant.id + '4').css('display', 'table-row');
       $('.tok-varianty').css('display', 'none');
       $('.tok-varianty').removeClass('tok-varianty--active');
@@ -1209,8 +1211,9 @@ $(document).ready(function() {
   var metaTarget = $('.cct-radio');
     
   if ($('.cct-radio').length) {
-    var selectedCct = $('.cct-radio:checked').val();
-    var technicValue = $('.tok-varianty--active').attr('data-value');
+    var valueCct = $('.cct-radio:checked').val();
+    var valueTok = $('.tok-varianty--active').attr('data-value');
+    var valueTok = $('.tok-varianty--active').attr('data-value');
 
     var luminsElem = $('#meta-group-cct');
     
