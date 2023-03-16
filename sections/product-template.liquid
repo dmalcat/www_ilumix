@@ -1219,6 +1219,7 @@ $(document).ready(function() {
 
       $(metaTarget).change(function() {
           var selectedCct = $(this).attr('value');
+          var technicValue = $('.tok-varianty--active').attr('data-value');
           
           $(luminsElem).text(selectedCct);
       });
