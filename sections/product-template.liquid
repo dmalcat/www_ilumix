@@ -275,14 +275,6 @@
                 product.metafields.custom.stupen_kryti 
               %}
 
-              {% for variant in product.variants %}
-                {% if variant.metafields.custom.svetelny_tok %}
-                  <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
-                    <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
-                  </span>
-                {% endif %}
-              {% endfor %}
-
               <span class="product-meta">
                 <span class="product-meta__group product-meta__group--lumins">
                   {% if product.metafields.custom.typ_svetelneho_zdroje %}
@@ -304,6 +296,14 @@
                   {% if product.metafields.custom.barevna_teplota %}
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
+
+                  {% for variant in product.variants %}
+                    {% if variant.metafields.custom.svetelny_tok %}
+                      <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
+                        <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
+                      </span>
+                    {% endif %}
+                  {% endfor %}
 
                   <span id="meta-group-cct"></span>
                 </span>
