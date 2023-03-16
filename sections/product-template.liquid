@@ -455,7 +455,7 @@
                     {% endfor %}
 
                   {% if product.metafields.custom.vykon %}
-                    <tr class="technic-row">
+                    <tr class="technic-row" >
                       <td class="technic-title">Výkon</td>
                       <td class="technic-value">{{ product.metafields.custom.vykon }}</td>
                     </tr>
@@ -463,7 +463,7 @@
 
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
-                      <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
+                      <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;" data-value="{{ variant.metafields.custom.svetelny_tok }}">
                         <td class="technic-title">Světelný tok</td>
                         <td class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</td>
                       </tr>
