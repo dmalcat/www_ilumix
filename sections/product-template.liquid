@@ -227,7 +227,7 @@
                 <span class="variant-sku" id="variantsku">{{ current_variant.sku }}</span>
               </div>
               
-              {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or variant.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
+              {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
                 <span class="product-meta">
                 <span class="product-meta__group product-meta__group--lumins">
                   {% if product.metafields.custom.typ_svetelneho_zdroje %}
@@ -258,6 +258,15 @@
                 </span>
               {% endif %}
               </span>
+
+              {% for variant in product.variants %}
+                {% if variant.metafields.custom.svetelny_tok %}
+                  <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
+                    <span class="technic-title">Světelný tok</span>
+                    <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
+                  </span>
+                  {% endif %}
+                {% endfor %}
               
 
               <script>
