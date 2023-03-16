@@ -227,15 +227,19 @@
                 <span class="variant-sku" id="variantsku">{{ current_variant.sku }}</span>
               </div>
               
-              {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
+              {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or variant.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
               <span class="product-meta">
                 <span class="product-meta__group product-meta__group--lumins">
                   {% if product.metafields.custom.typ_svetelneho_zdroje %}
                     <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
                   {% endif %}
 
-                  {% if product.metafields.custom.vykon %}
+                  {% if product.metafields.custom.vykon%}
                     <span>&nbsp;{{ product.metafields.custom.vykon }}</span>
+                  {% endif %}
+
+                  {% if variant.metafields.custom.vykon %}
+                    <span>&nbsp;{{ variant.metafields.custom.vykon }}</span>
                   {% endif %}
 
                   {% if product.metafields.custom.svetelny_tok %}
@@ -274,7 +278,7 @@
                         console.log(selectedCct);
                         $(luminsElem).text(selectedCct);
                     });
-                  }
+                  } 
                 });
               </script>
               
