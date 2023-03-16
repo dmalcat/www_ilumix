@@ -274,7 +274,7 @@
                         console.log(selectedCct);
                         $(luminsElem).text(selectedCct);
                     });
-                  }
+                  } 
                 });
               </script>
               
@@ -435,11 +435,7 @@
                   {% if product.metafields.custom.vykon %}
                     <tr class="technic-row">
                       <td class="technic-title">Výkon</td>
-                      <td class="technic-value">
-                        {{ product.metafields.custom.vykon }}
-                        {{ product.metafields.custom.vykon }}
-                      </td>
-                      
+                      <td class="technic-value">{{ product.metafields.custom.vykon }}</td>
                     </tr>
                   {% endif %}
 
