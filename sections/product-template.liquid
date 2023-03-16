@@ -1206,29 +1206,25 @@ $(".pp-swatch").insertAfter(".swatch-custom-container");
 
 
 $(document).ready(function() {
-
-  
+  var metaTarget = $('.cct-radio');
     
+    if ($('.cct-radio').length) {
+      var selectedCct = $('.cct-radio:checked').val();
+      console.log(selectedCct);
+      var luminsElem = $('#meta-group-cct');
       
-      var metaTarget = $('.cct-radio');
-     
-      if ($('.cct-radio').length) {
-        var selectedCct = $('.cct-radio:checked').val();
-        console.log(selectedCct);
-        var luminsElem = $('#meta-group-cct');
-        
-        //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
+      //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
 
-        $(luminsElem).text(selectedCct);
+      $(luminsElem).text(selectedCct);
 
-        $(metaTarget).change(function() {
-            var selectedCct = $(this).attr('value');
-            
-            $(luminsElem).text(selectedCct);
-        });
+      $(metaTarget).change(function() {
+          var selectedCct = $(this).attr('value');
+          
+          $(luminsElem).text(selectedCct);
+      });
 
-        
-      } 
+      
+    } 
       
       // get attribues (výkon, světelný tok, barevná teplota) of active variant
       
