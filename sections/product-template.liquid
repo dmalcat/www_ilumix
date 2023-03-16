@@ -264,7 +264,14 @@
               </span>
               {% endcomment %}
               
-              {{ variant.metafields.custom.vykon }}
+              {% for variant in product.variants %}
+                {% if variant.metafields.custom.vykon %}
+                  
+                    
+                    <span class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</span>
+                  
+                  {% endif %}
+                {% endfor %}
               
 
               <script>
