@@ -228,36 +228,38 @@
               </div>
               
               {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or variant.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
-              <span class="product-meta">
-                <span class="product-meta__group product-meta__group--lumins">
-                  {% if product.metafields.custom.typ_svetelneho_zdroje %}
-                    <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
-                  {% endif %}
+                <span class="product-meta">
+                  <span class="product-meta__group product-meta__group--lumins">
+                    {% if product.metafields.custom.typ_svetelneho_zdroje %}
+                      <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
+                    {% endif %}
 
-                  {% if product.metafields.custom.vykon%}
-                    <span>&nbsp;{{ product.metafields.custom.vykon }}</span>
-                  {% endif %}
+                    {% if product.metafields.custom.vykon%}
+                      <span>&nbsp;{{ product.metafields.custom.vykon }}</span>
+                    {% endif %}
 
-                  {% if variant.metafields.custom.vykon %}
-                    <span>&nbsp;{{ variant.metafields.custom.vykon }}</span>
-                  {% endif %}
+                    {% if variant.metafields.custom.vykon %}
+                      <span>&nbsp;{{ variant.metafields.custom.vykon }}</span>
+                    {% endif %}
 
-                  {% if product.metafields.custom.svetelny_tok %}
-                    <span>&nbsp;{{ product.metafields.custom.svetelny_tok }}</span>
-                  {% endif %}
+                    {% if product.metafields.custom.svetelny_tok %}
+                      <span>&nbsp;{{ product.metafields.custom.svetelny_tok }}</span>
+                    {% endif %}
 
-                  {% if product.metafields.custom.barevna_teplota %}
-                    <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
-                  {% endif %}
-                  <span id="meta-group-cct"></span>
-                </span>
-                {% endif %}
+                    {% if product.metafields.custom.barevna_teplota %}
+                      <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
+                    {% endif %}
+                    <span id="meta-group-cct"></span>
+                  </span>
+
+              {% endif %}
                 {% if product.metafields.custom.stupen_kryti %}
                 <span class="product-meta__group product-meta__group--coverage">
                   <span>{{ product.metafields.custom.stupen_kryti }}</span>
                 </span>
               {% endif %}
               </span>
+              {{ variant.metafields.custom.vykon }}
               
 
               <script>
