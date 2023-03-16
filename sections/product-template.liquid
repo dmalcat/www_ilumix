@@ -1210,8 +1210,8 @@ $(document).ready(function() {
     
   if ($('.cct-radio').length) {
     var selectedCct = $('.cct-radio:checked').val();
+    var technicValue = $('.tok-varianty--active').attr('data-value');
 
-    
     var luminsElem = $('#meta-group-cct');
     
     //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
