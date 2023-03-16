@@ -265,7 +265,17 @@
                 </span>
               {% endif %}
               </span>
+              
+              {% 
+                if 
+                product.metafields.custom.typ_svetelneho_zdroje or 
+                product.metafields.custom.vykon or 
+                product.metafields.custom.svetelny_tok or 
+                product.metafields.custom.barevna_teplota or 
+                product.metafields.custom.stupen_kryti 
+              %}
 
+            {% endif %}
               <!-- 
               {% for variant in product.variants %}
                 {% if variant.metafields.custom.svetelny_tok %}
