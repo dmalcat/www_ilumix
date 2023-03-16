@@ -269,35 +269,6 @@
               </span>
 
               {% endif %}
-              <script>
-                $(document).ready(function() {
-                  
-                  var metaTarget = $('.cct-radio');
-                 
-                  if ($('.cct-radio').length) {
-                    var selectedCct = $('.cct-radio:checked').val();
-                    console.log(selectedCct);
-                    var luminsElem = $('#meta-group-cct');
-                    
-                    //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
-
-                    $(luminsElem).text(selectedCct);
-
-                    $(metaTarget).change(function() {
-                        var selectedCct = $(this).attr('value');
-                        
-                        $(luminsElem).text(selectedCct);
-                    });
-
-                    
-                  } 
-                  
-                  // get attribues (výkon, světelný tok, barevná teplota) of active variant
-                  
-                  
-                  
-                });
-              </script>
               
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
