@@ -334,6 +334,9 @@
                   // get attribues (výkon, světelný tok, barevná teplota) of active variant
                   var tok = $('.technic-row .tok-varianty.active .variant-tok');
 
+                  var activeTok = $('.tok-varianty').filter('.active');
+                  console.log(activeTok);
+
                   $('.tok-varianty').each(function(elem){
                     if (this.hasClass('active')) {
                       console.log(elem);
