@@ -263,7 +263,7 @@
                 <span class="product-meta__group product-meta__group--coverage">
                   <span>{{ product.metafields.custom.stupen_kryti }}</span>
                 </span>
-              {% endif %}
+                {% endif %}
               </span>
               
               {% 
@@ -299,6 +299,12 @@
 
                   <span id="meta-group-cct"></span>
                 </span>
+
+                {% if product.metafields.custom.stupen_kryti %}
+                  <span class="product-meta__group product-meta__group--coverage">
+                    <span>{{ product.metafields.custom.stupen_kryti }}</span>
+                  </span>
+                {% endif %}
               </span>
 
               {% endif %}
