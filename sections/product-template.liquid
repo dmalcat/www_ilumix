@@ -447,7 +447,7 @@
                   {% endif %}
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.vykon %}
-                      <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
+                      <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;" data-value="{{ variant.metafields.custom.vykon }}">
                         <td class="technic-title">Výkon</td>
                         <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
                       </tr>
