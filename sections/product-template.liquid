@@ -228,6 +228,8 @@
               </div>
               
               {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or variant.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
+              {% endif %}
+                {% comment %}
                 <span class="product-meta">
                   <span class="product-meta__group product-meta__group--lumins">
                     {% if product.metafields.custom.typ_svetelneho_zdroje %}
@@ -251,14 +253,17 @@
                     {% endif %}
                     <span id="meta-group-cct"></span>
                   </span>
+                {% endcomment %}
 
-              {% endif %}
+                {% comment %}
                 {% if product.metafields.custom.stupen_kryti %}
                 <span class="product-meta__group product-meta__group--coverage">
                   <span>{{ product.metafields.custom.stupen_kryti }}</span>
                 </span>
               {% endif %}
               </span>
+              {% endcomment %}
+              
               {{ variant.metafields.custom.vykon }}
               
 
