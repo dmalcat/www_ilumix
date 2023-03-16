@@ -332,14 +332,9 @@
                   } 
                   
                   // get attribues (výkon, světelný tok, barevná teplota) of active variant
-                  var tok = $('.technic-row .tok-varianty.active .variant-tok');
-
-                  var activeTok = $('.tok-varianty').filter('.active');
-                  console.log(activeTok.attr('id'));
-
-                  $('.tok-varianty').each(function(elem){
-                    
-                  });
+                  
+                  var technicValue = $('.tok-varianty.active .technic-value').text();
+                  console.log(technicValue);
                   
                 });
               </script>
