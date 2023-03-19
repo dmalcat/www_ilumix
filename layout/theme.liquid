@@ -57,6 +57,18 @@
   </noscript>
 <!-- End Facebook Pixel Code -->
 
+  <!-- Seznam retargeting -->
+  <script type="text/javascript" src="https://c.seznam.cz/js/rc.js"></script>
+<script>
+var retargetingConf = {
+  rtgId: 123456 /* identifikátor retargeting */
+};
+ // Ujistěte se, že metoda existuje, předtím než ji zavoláte
+ if (window.rc && window.rc.retargetingHit) {
+   window.rc.retargetingHit(retargetingConf);
+ }
+</script>
+
     <link rel="canonical" href="{{ canonical_url }}">
     {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
