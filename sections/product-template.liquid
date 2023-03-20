@@ -1216,12 +1216,13 @@ $(document).ready(function() {
     var valueVykon = $('.vykon-varianty--active').attr('data-value');
 
     var luminsElem = $('#meta-group-cct');
+
     console.log(valueVykon);
     console.log(valueTok);
     
     //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
 
-    //$(luminsElem).text(selectedCct);
+    $(luminsElem).text(valueCct + valueTok + valueVykon);
 
     $(metaTarget).click(function() {
         var valueVykon = $('.vykon-varianty--active').attr('data-value');
