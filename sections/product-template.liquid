@@ -1226,6 +1226,10 @@ $(document).ready(function() {
 
     $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
 
+    $(".swatch-element").on("click", "input[type=radio]", function (event) {
+      console.log('clicked');
+    });
+
     $(variantExist).click(function() {
       console.log('clicked');
         var valueCct = $('.cct-radio:checked').val();
