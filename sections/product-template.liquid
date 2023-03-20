@@ -1225,10 +1225,10 @@ $(document).ready(function() {
     $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
 
     $(metaTarget).click(function() {
+        var valueCct = $('.cct-radio:checked').val();
         var valueVykon = $('.vykon-varianty--active').attr('data-value');
         var valueTok = $('.tok-varianty--active').attr('data-value');
-        console.log(valueVykon);
-        console.log(valueTok);
+        $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
     });
 
     
