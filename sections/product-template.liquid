@@ -1211,8 +1211,7 @@ $(document).ready(function() {
   var metaTarget = $('.cct-radio');
 
   var variantExist = $('.swatch-element input[type=radio]').length;
-  console.log(elemExists);
-    
+  
   if (variantExist > 0) {
     var valueCct = $('.cct-radio:checked').val();
     var valueTok = $('.tok-varianty--active').attr('data-value');
@@ -1227,7 +1226,7 @@ $(document).ready(function() {
 
     $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
 
-    $(metaTarget).click(function() {
+    $(variantExist).click(function() {
         var valueCct = $('.cct-radio:checked').val();
         var valueVykon = $('.vykon-varianty--active').attr('data-value');
         var valueTok = $('.tok-varianty--active').attr('data-value');
