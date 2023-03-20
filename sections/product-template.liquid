@@ -397,7 +397,19 @@
               </form>
             </div>
           {%- when 'product_description_tab' -%}
-          <div class="product-b2b">{{section.settings.velkoobchod}}</div>
+          <div class="product-b2b">
+            <ul class="product-b2b__list">
+              <li>
+                <img class="product-b2b__icon" src="https://cdn.shopify.com/s/files/1/0619/9528/6737/files/icon-delivery_430x.svg?v=1679336021" alt="">Doprava od 2 500 Kč <u>ZDARMA</u>
+              </li>
+              <li>
+                <img class="product-b2b__icon" src="https://cdn.shopify.com/s/files/1/0619/9528/6737/files/icon-ribbon_430x.svg?v=1679336021" alt="">Objednávky do 14:00 skladem <u>odesíláme jště tentýž den</u>
+              </li>
+              <li>
+                <img class="product-b2b__icon" src="https://cdn.shopify.com/s/files/1/0619/9528/6737/files/icon-hands_430x.svg?v=1679336021" alt="">Nakupujete často? Využijte náš <a href="">B2B zákaznický program</a></u>
+              </li>
+            </ul>
+          </div>
           <div class="product-description-tab">
             <ul id="accordion">
 
@@ -688,12 +700,6 @@
       "id": "social_share_title",
       "label": "Social Share Title",
       "default": "Sdílet:"
-    },
-    {
-      "type": "richtext",
-      "id": "velkoobchod",
-      "label": "Věta o velkoobchodu",
-      "default": "<p>Jste z oboru? Zaregistrujte se do našeho <a href=\"\/pages\/velkoobchodni-program\" title=\"Velkoobchodní program\">velkoobchodního programu<\/a> a čerpejte veškeré výhody na maximum.<\/p>"
     },
     {
       "type": "text",
