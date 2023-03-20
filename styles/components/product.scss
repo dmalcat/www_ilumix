@@ -69,11 +69,11 @@
         margin-top: 40px;
         padding-left: 0;
         li {
-            margin-bottom: 7.5px;
+            margin-bottom: 10px;
             background-repeat: no-repeat;
-            background-position: 2px 0;
+            background-position: 0 1px;
             padding-left: 45px;
-            background-size: 21px auto;
+            background-size: 23px auto;
         }
 
         .free-delivery {
@@ -82,10 +82,12 @@
 
         .orders {
             background-image: url('https://cdn.shopify.com/s/files/1/0619/9528/6737/files/icon-ribbon_430x.svg?v=1679336021');
+            background-size: 21.5px auto;
         }
 
         .b2b {
             background-image: url('https://cdn.shopify.com/s/files/1/0619/9528/6737/files/icon-hands_430x.svg?v=1679336021');
+            background-size: 25px auto;
         }
 
         u {
