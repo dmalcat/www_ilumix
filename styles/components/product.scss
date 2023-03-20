@@ -63,10 +63,18 @@
 .product-b2b {
     .product-b2b__list {
         list-style: none;
-        margin-top: 30px;
+        margin-top: 40px;
         padding-left: 0;
         li {
             margin-bottom: 7.5px;
+        }
+
+        u {
+            color: black;
+        }
+
+        a {
+            text-decoration: underline;
         }
     }
 
