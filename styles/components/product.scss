@@ -35,6 +35,9 @@
     flex-direction: column;
     div {
         margin-bottom: 5px;
+        @media screen and (max-width: 375px) {
+            width: 100%;
+        }
     }
 }
 
