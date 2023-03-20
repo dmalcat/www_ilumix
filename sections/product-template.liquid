@@ -1210,10 +1210,10 @@ $(".pp-swatch").insertAfter(".swatch-custom-container");
 $(document).ready(function() {
   var metaTarget = $('.cct-radio');
 
-  var elemExists = $('.swatch-element input[type=radio]').length;
+  var variantExist = $('.swatch-element input[type=radio]').length;
   console.log(elemExists);
     
-  if ($('.cct-radio').length) {
+  if (variantExist > 0) {
     var valueCct = $('.cct-radio:checked').val();
     var valueTok = $('.tok-varianty--active').attr('data-value');
     var valueVykon = $('.vykon-varianty--active').attr('data-value');
