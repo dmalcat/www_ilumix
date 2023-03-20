@@ -124,15 +124,15 @@
         "banner1_padding_bottom_ipad": 30,
         "banner1_padding_top_xs": 0,
         "banner1_padding_bottom_xs": 20,
-        "banner_img": "shopify:\/\/shop_images\/ilumix_eshop_banner_2.jpg",
+        "banner_img": "shopify:\/\/shop_images\/ilumix_eshop_banner_MANTIS.jpg",
         "banner_txt_enable": true,
-        "banner_sub_title": "Akce měsíce:",
-        "banner_sub_title_bold": "3.751 Kč",
-        "banner_title1": "Stolní lampa Taichi T",
-        "banner_desc1": "<p>Elegantní kolekce svítidel Taichi od španělského výrobce Exo lighting <br\/>je dostupná ve stolní a stojací variantě.<\/p>",
+        "banner_sub_title": "Světlo měsíce:",
+        "banner_sub_title_bold": "3.932 Kč",
+        "banner_title1": "Stolní lampa Mantis",
+        "banner_desc1": "<p>Stolní svítidlo Mantis, vyrobené z oceli v bílém provedení, <br\/>je ideální stolní lampou pro pracovní prostory. <br\/>Jeho kulatá a plochá základna poskytuje svítidlu stabilitu <br\/>potřebnou k nastavení úhlu sklonu svitu.<\/p>",
         "banner_desc2": "",
         "banner_button_text": "Detail produktu",
-        "banner_url": "shopify:\/\/products\/taichi-t"
+        "banner_url": "shopify:\/\/products\/mantis"
       }
     }
   },
