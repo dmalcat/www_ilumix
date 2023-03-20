@@ -1227,6 +1227,7 @@ $(document).ready(function() {
     $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
 
     $(variantExist).click(function() {
+      console.log('clicked');
         var valueCct = $('.cct-radio:checked').val();
         var valueVykon = $('.vykon-varianty--active').attr('data-value');
         var valueTok = $('.tok-varianty--active').attr('data-value');
