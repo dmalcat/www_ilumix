@@ -227,16 +227,8 @@
                 <span class="variant-sku" id="variantsku">{{ current_variant.sku }}</span>
               </div>
               
-              {% 
-                if 
-                product.metafields.custom.typ_svetelneho_zdroje or 
-                product.metafields.custom.vykon or 
-                product.metafields.custom.svetelny_tok or 
-                product.metafields.custom.barevna_teplota or 
-                product.metafields.custom.stupen_kryti 
-              %}
-
-              <span class="product-meta">
+              {% if product.metafields.custom.typ_svetelneho_zdroje or product.metafields.custom.vykon or product.metafields.custom.svetelny_tok or product.metafields.custom.barevna_teplota or product.metafields.custom.stupen_kryti %}
+                <span class="product-meta">
                 <span class="product-meta__group product-meta__group--lumins">
                   {% if product.metafields.custom.typ_svetelneho_zdroje %}
                     <span>{{ product.metafields.custom.typ_svetelneho_zdroje }}</span>
@@ -257,34 +249,50 @@
                   {% if product.metafields.custom.barevna_teplota %}
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
-
-                  {% for variant in product.variants %}
-                    {% if variant.metafields.custom.barevna_teplota %}
-                      <span class="meta-barva-varianty" id="meta-{{ variant.id }}6" style="display:none;">
-                        <span class="variant-barva">{{ variant.metafields.custom.barevna_teplota }}</span>
-                      </span>
-                    {% endif %}
-                    {% if variant.metafields.custom.vykon %}
-                      <span class="meta-vykon-varianty" id="meta-{{ variant.id }}4" style="display:none;">
-                        <span class="variant-vykon">{{ variant.metafields.custom.vykon }}</span>
-                      </span>
-                    {% endif %}
-                    {% if variant.metafields.custom.svetelny_tok %}
-                      <span class="meta-tok-varianty" id="meta-{{ variant.id }}5" style="display:none;">
-                        <span class="variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
-                      </span>
-                      {% endif %}
-                  {% endfor %}
+                  <span id="meta-group-cct"></span>
+                 
                 </span>
-
-                {% if product.metafields.custom.stupen_kryti %}
-                  <span class="product-meta__group product-meta__group--coverage">
-                    <span>{{ product.metafields.custom.stupen_kryti }}</span>
-                  </span>
                 {% endif %}
+                {% if product.metafields.custom.stupen_kryti %}
+                <span class="product-meta__group product-meta__group--coverage">
+                  <span>{{ product.metafields.custom.stupen_kryti }}</span>
+                </span>
+              {% endif %}
               </span>
 
-              {% endif %}
+              <!-- 
+              {% for variant in product.variants %}
+                {% if variant.metafields.custom.svetelny_tok %}
+                  <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
+                    <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
+                  </span>
+                {% endif %}
+              {% endfor %}
+              -->
+              
+
+              <script>
+                $(document).ready(function() {
+                  
+                  var metaTarget = $('.cct-radio');
+                 
+                  if ($('.cct-radio').length) {
+                    var selectedCct = $('.cct-radio:checked').val();
+                    console.log(selectedCct);
+                    var luminsElem = $('#meta-group-cct');
+                    
+                    $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
+
+                    $(luminsElem).text(selectedCct);
+
+                    $(metaTarget).change(function() {
+                        var selectedCct = $(this).attr('value');
+                        console.log(selectedCct);
+                        $(luminsElem).text(selectedCct);
+                    });
+                  } 
+                });
+              </script>
               
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
@@ -390,7 +398,19 @@
               </form>
             </div>
           {%- when 'product_description_tab' -%}
-          <div class="product-b2b">{{section.settings.velkoobchod}}</div>
+          <div class="product-b2b">
+            <ul class="product-b2b__list">
+              <li class="free-delivery">
+                Doprava od 2 500 Kč <u>ZDARMA</u>
+              </li>
+              <li class="orders">
+                Objednávky do 14:00 skladem <u>odesíláme jště tentýž den</u>
+              </li>
+              <li class="b2b">
+                Nakupujete často? Využijte náš <a href="https://360design.cz/pages/b2b">B2B zákaznický program</a></u>
+              </li>
+            </ul>
+          </div>
           <div class="product-description-tab">
             <ul id="accordion">
 
@@ -433,15 +453,14 @@
                   {% endif %}
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.vykon %}
-                      <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;" data-value="{{ variant.metafields.custom.vykon }}">
-                        <td class="technic-title">Výkon</td>
+                      <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
                         <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
                       </tr>
                       {% endif %}
                     {% endfor %}
 
                   {% if product.metafields.custom.vykon %}
-                    <tr class="technic-row" >
+                    <tr class="technic-row">
                       <td class="technic-title">Výkon</td>
                       <td class="technic-value">{{ product.metafields.custom.vykon }}</td>
                     </tr>
@@ -449,7 +468,7 @@
 
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
-                      <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;" data-value="{{ variant.metafields.custom.svetelny_tok }}">
+                      <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
                         <td class="technic-title">Světelný tok</td>
                         <td class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</td>
                       </tr>
@@ -681,12 +700,6 @@
       "id": "social_share_title",
       "label": "Social Share Title",
       "default": "Sdílet:"
-    },
-    {
-      "type": "richtext",
-      "id": "velkoobchod",
-      "label": "Věta o velkoobchodu",
-      "default": "<p>Jste z oboru? Zaregistrujte se do našeho <a href=\"\/pages\/velkoobchodni-program\" title=\"Velkoobchodní program\">velkoobchodního programu<\/a> a čerpejte veškeré výhody na maximum.<\/p>"
     },
     {
       "type": "text",
@@ -1129,31 +1142,19 @@
   var selectCallback = function(variant, selector) {
       $('.variant-file').css('display', 'none');
       $('#' + variant.id).css('display', 'grid');
-
       $('.variant-sheet').css('display', 'none');
       $('#' + variant.id + '2').css('display', 'grid');
-
       $('.variant-ldt').css('display', 'none');
       $('#' + variant.id + '3').css('display', 'grid');
-
       $('.rozmer-varianty').css('display', 'none');
       $('#' + variant.id + '1').css('display', 'table-row');
-
+      $('#' + variant.id + '1').addClass('technic-row--active');
       $('.vykon-varianty').css('display', 'none');
-      $('.meta-vykon-varianty').css('display', 'none');
       $('#' + variant.id + '4').css('display', 'table-row');
-      $('#meta-' + variant.id + '4').css('display', 'inline-block');
-
       $('.tok-varianty').css('display', 'none');
-      $('.meta-tok-varianty').css('display', 'none');
       $('#' + variant.id + '5').css('display', 'table-row');
-      $('#meta-' + variant.id + '5').css('display', 'inline-block');
-
       $('.barva-varianty').css('display', 'none');
-      $('.meta-barva-varianty').css('display', 'none');
       $('#' + variant.id + '6').css('display', 'table-row');
-      $('#meta-' + variant.id + '6').css('display', 'inline-block');
-      
     timber.productPage({
       money_format: "{{ shop.money_format }}",
       variant: variant,
@@ -1230,7 +1231,6 @@ $(selector).on('click', function(){
 $(".pp-action").insertAfter(".product-inventory");
 $(".stock-inventory").appendTo(".product-inventory");
 $(".pp-swatch").insertAfter(".swatch-custom-container");
-
 </script>
 
 
