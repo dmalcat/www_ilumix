@@ -1231,38 +1231,6 @@ $(".pp-action").insertAfter(".product-inventory");
 $(".stock-inventory").appendTo(".product-inventory");
 $(".pp-swatch").insertAfter(".swatch-custom-container");
 
-
-$(document).ready(function() {
-  var metaTarget = $('.cct-radio');
-
-  var variantExist = $('.swatch-element input[type=radio]').length;
-  
-  if (variantExist > 0) {
-    var valueCct = $('.cct-radio:checked').val();
-    var valueTok = $('.tok-varianty--active').attr('data-value');
-    var valueVykon = $('.vykon-varianty--active').attr('data-value');
-
-    var luminsElem = $('#meta-group-cct');
-
-    console.log(valueVykon);
-    console.log(valueTok);
-    
-    //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
-
-    //$(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
-    $(luminsElem).text(valueCct);
-
-    $(".swatch-element").find("input[type=radio]").click(function(){
-      var clicked = $(this).val();
-      console.log(clicked);
-      var valueVykon = $('.vykon-varianty--active').attr('data-value');
-        var valueTok = $('.tok-varianty--active').attr('data-value');
-        //$(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
-        $(luminsElem).text(valueCct);
-    });
-  }
-});
-
 </script>
 
 
