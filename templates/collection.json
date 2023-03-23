@@ -28,15 +28,15 @@
         "banner1_padding_bottom_ipad": 30,
         "banner1_padding_top_xs": 0,
         "banner1_padding_bottom_xs": 20,
-        "banner_img": "shopify:\/\/shop_images\/ilumix_eshop_banner_VENICE.jpg",
+        "banner_img": "shopify:\/\/shop_images\/ilumix_eshop_banner_2.jpg",
         "banner_txt_enable": true,
-        "banner_sub_title": "Nabídka týdne: 3.025 Kč",
+        "banner_sub_title": "Nabídka týdne: 3.751 Kč",
         "banner_sub_title_bold": "",
-        "banner_title1": "Venice RGBW",
-        "banner_desc1": "<p>Přenosné svítidlo VENICE s RGBW (3000K) dobíjecí přes USB, s technologií WiFi. <br\/>K dispozici v antracitovém provedení. Lze jej ovládat <br\/>prostřednictvím aplikace SMART (Android 4.4 nebo iOS 9.0), <br\/>která je kompatibilní s Google Assistant a Amazon Alexa pro hlasové ovládání. <br\/>Umožňuje také nabíjení zařízení přes USB port.<\/p>",
+        "banner_title1": "Taichi T",
+        "banner_desc1": "<p>Elegantní kolekce svítidel Taichi od španělského výrobce Exo lighting <br\/>je dostupná ve stolní a stojací variantě.<\/p>",
         "banner_desc2": "",
         "banner_button_text": "Detail produktu",
-        "banner_url": "shopify:\/\/products\/prenosna-lampa-venice"
+        "banner_url": "shopify:\/\/products\/taichi-t"
       }
     }
   },
