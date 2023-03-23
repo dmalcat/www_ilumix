@@ -260,39 +260,6 @@
               {% endif %}
               </span>
 
-              <!-- 
-              {% for variant in product.variants %}
-                {% if variant.metafields.custom.svetelny_tok %}
-                  <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
-                    <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
-                  </span>
-                {% endif %}
-              {% endfor %}
-              -->
-              
-
-              <script>
-                $(document).ready(function() {
-                  
-                  var metaTarget = $('.cct-radio');
-                 
-                  if ($('.cct-radio').length) {
-                    var selectedCct = $('.cct-radio:checked').val();
-                    console.log(selectedCct);
-                    var luminsElem = $('#meta-group-cct');
-                    
-                    $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
-
-                    $(luminsElem).text(selectedCct);
-
-                    $(metaTarget).change(function() {
-                        var selectedCct = $(this).attr('value');
-                        console.log(selectedCct);
-                        $(luminsElem).text(selectedCct);
-                    });
-                  } 
-                });
-              </script>
               
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
