@@ -262,8 +262,8 @@
                   
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
-                      <span id="{{ variant.id }}5" style="display:none;" data-value="{{ variant.metafields.custom.svetelny_tok }}">
-                        <span>{{ variant.metafields.custom.svetelny_tok }}</span>
+                      <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;" data-value="{{ variant.metafields.custom.svetelny_tok }}">
+                        <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
                       </span>
                     {% endif %}
                   {% endfor %}
