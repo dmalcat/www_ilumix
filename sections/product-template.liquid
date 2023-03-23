@@ -1123,22 +1123,29 @@
   var selectCallback = function(variant, selector) {
       $('.variant-file').css('display', 'none');
       $('#' + variant.id).css('display', 'grid');
+
       $('.variant-sheet').css('display', 'none');
       $('#' + variant.id + '2').css('display', 'grid');
+
       $('.variant-ldt').css('display', 'none');
       $('#' + variant.id + '3').css('display', 'grid');
+
       $('.rozmer-varianty').css('display', 'none');
       $('#' + variant.id + '1').css('display', 'table-row');
+
       $('.vykon-varianty').css('display', 'none');
       $('.vykon-varianty').removeClass('vykon-varianty--active');
       $('#' + variant.id + '4').css('display', 'table-row');
       $('#' + variant.id + '4').addClass('vykon-varianty--active');
+
       $('.tok-varianty').css('display', 'none');
       $('.tok-varianty').removeClass('tok-varianty--active');
       $('#' + variant.id + '5').css('display', 'table-row');
       $('#' + variant.id + '5').addClass('tok-varianty--active');
+
       $('.barva-varianty').css('display', 'none');
       $('#' + variant.id + '6').css('display', 'table-row');
+      
     timber.productPage({
       money_format: "{{ shop.money_format }}",
       variant: variant,
