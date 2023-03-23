@@ -249,7 +249,24 @@
                   {% if product.metafields.custom.barevna_teplota %}
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
-                  <span id="meta-group-cct"></span>
+                  
+                  {% for variant in product.variants %}
+                    {% if variant.metafields.custom.barevna_teplota %}
+                      <span class="meta-barva-varianty" id="meta-{{ variant.id }}6" style="display:none;">
+                        <span class="variant-barva">{{ variant.metafields.custom.barevna_teplota }}</span>
+                      </span>
+                    {% endif %}
+                    {% if variant.metafields.custom.vykon %}
+                      <span class="meta-vykon-varianty" id="meta-{{ variant.id }}4" style="display:none;">
+                        <span class="variant-vykon">{{ variant.metafields.custom.vykon }}</span>
+                      </span>
+                    {% endif %}
+                    {% if variant.metafields.custom.svetelny_tok %}
+                      <span class="meta-tok-varianty" id="meta-{{ variant.id }}5" style="display:none;">
+                        <span class="variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
+                      </span>
+                      {% endif %}
+                  {% endfor %}
                  
                 </span>
                 {% endif %}
