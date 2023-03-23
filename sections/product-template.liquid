@@ -270,10 +270,9 @@
 
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
-                      <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;" data-value="{{ variant.metafields.custom.svetelny_tok }}">
-                        <td class="technic-title">Světelný tok</td>
-                        <td class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</td>
-                      </tr>
+                      <span class="meta-tok-varianty" id="meta-{{ variant.id }}5" style="display:none;">
+                        <span class="variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
+                      </span>
                       {% endif %}
                     {% endfor %}
 
