@@ -258,7 +258,23 @@
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
 
-                  <span id="meta-group-cct"></span>
+                  {% for variant in product.variants %}
+                    {% if variant.metafields.custom.barevna_teplota %}
+                      <span class="meta-barva-varianty" id="meta-{{ variant.id }}6" style="display:none;">
+                        <span class="variant-barva">{{ variant.metafields.custom.barevna_teplota }}</span>
+                      </span>
+                    {% endif %}
+                    {% if variant.metafields.custom.vykon %}
+                      <span class="meta-vykon-varianty" id="meta-{{ variant.id }}4" style="display:none;">
+                        <span class="variant-vykon">{{ variant.metafields.custom.vykon }}</span>
+                      </span>
+                    {% endif %}
+                    {% if variant.metafields.custom.svetelny_tok %}
+                      <span class="meta-tok-varianty" id="meta-{{ variant.id }}5" style="display:none;">
+                        <span class="variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
+                      </span>
+                      {% endif %}
+                  {% endfor %}
                 </span>
 
                 {% if product.metafields.custom.stupen_kryti %}
@@ -1113,22 +1129,31 @@
   var selectCallback = function(variant, selector) {
       $('.variant-file').css('display', 'none');
       $('#' + variant.id).css('display', 'grid');
+
       $('.variant-sheet').css('display', 'none');
       $('#' + variant.id + '2').css('display', 'grid');
+
       $('.variant-ldt').css('display', 'none');
       $('#' + variant.id + '3').css('display', 'grid');
+
       $('.rozmer-varianty').css('display', 'none');
       $('#' + variant.id + '1').css('display', 'table-row');
+
       $('.vykon-varianty').css('display', 'none');
-      $('.vykon-varianty').removeClass('vykon-varianty--active');
+      $('.meta-vykon-varianty').css('display', 'none');
       $('#' + variant.id + '4').css('display', 'table-row');
-      $('#' + variant.id + '4').addClass('vykon-varianty--active');
+      $('#meta-' + variant.id + '4').css('display', 'inline-block');
+
       $('.tok-varianty').css('display', 'none');
-      $('.tok-varianty').removeClass('tok-varianty--active');
+      $('.meta-tok-varianty').css('display', 'none');
       $('#' + variant.id + '5').css('display', 'table-row');
-      $('#' + variant.id + '5').addClass('tok-varianty--active');
+      $('#meta-' + variant.id + '5').css('display', 'inline-block');
+
       $('.barva-varianty').css('display', 'none');
+      $('.meta-barva-varianty').css('display', 'none');
       $('#' + variant.id + '6').css('display', 'table-row');
+      $('#meta-' + variant.id + '6').css('display', 'inline-block');
+      
     timber.productPage({
       money_format: "{{ shop.money_format }}",
       variant: variant,
@@ -1205,37 +1230,6 @@ $(selector).on('click', function(){
 $(".pp-action").insertAfter(".product-inventory");
 $(".stock-inventory").appendTo(".product-inventory");
 $(".pp-swatch").insertAfter(".swatch-custom-container");
-
-
-$(document).ready(function() {
-  var metaTarget = $('.cct-radio');
-
-  var variantExist = $('.swatch-element input[type=radio]').length;
-  
-  if (variantExist > 0) {
-    var valueCct = $('.cct-radio:checked').val();
-    var valueTok = $('.tok-varianty--active').attr('data-value');
-    var valueVykon = $('.vykon-varianty--active').attr('data-value');
-
-    var luminsElem = $('#meta-group-cct');
-
-    console.log(valueVykon);
-    console.log(valueTok);
-    
-    //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
-
-    $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
-
-    $(".swatch-element").find("input[type=radio]").click(function(){
-      var clicked = $(this).val();
-      console.log(clicked);
-      var valueVykon = $('.vykon-varianty--active').attr('data-value');
-        var valueTok = $('.tok-varianty--active').attr('data-value');
-        console.log(valueVykon);
-        $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
-    });
-  }
-});
 
 </script>
 
