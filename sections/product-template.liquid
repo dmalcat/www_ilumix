@@ -276,6 +276,14 @@
                       {% endif %}
                     {% endfor %}
 
+                    {% for variant in product.variants %}
+                      {% if variant.metafields.custom.barevna_teplota %}
+                        <span class="meta-barva-varianty" id="{{ variant.id }}6" style="display:none;">
+                          <span class="variant-barva">{{ variant.metafields.custom.barevna_teplota }}</td>
+                        </tr>
+                        {% endif %}
+                      {% endfor %}
+
                   
 
                 </span>
