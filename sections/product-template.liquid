@@ -1226,12 +1226,12 @@ $(document).ready(function() {
 
     $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
 
-    $(".swatch-element").find("input[type=radio]").click(function(){
+    $(".swatch-element").find("input[type=radio]").click(function() {
         var clicked = $(this).val();
         var valueVykon = $('.vykon-varianty--active').attr('data-value');
         var valueTok = $('.tok-varianty--active').attr('data-value');
-        console.log('Vykon:' + valueVykon);
-        console.log('Tok:' + valueTok);
+        //console.log('Vykon:' + valueVykon);
+        //console.log('Tok:' + valueTok);
         $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
     });
   }
