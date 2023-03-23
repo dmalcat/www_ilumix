@@ -249,7 +249,24 @@
                   {% if product.metafields.custom.barevna_teplota %}
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
-                  <span id="meta-group-cct"></span>
+                  
+                  {% for variant in product.variants %}
+                    {% if variant.metafields.custom.barevna_teplota %}
+                      <span class="meta-barva-varianty" id="meta-{{ variant.id }}6" style="display:none;">
+                        <span class="variant-barva">{{ variant.metafields.custom.barevna_teplota }}</span>
+                      </span>
+                    {% endif %}
+                    {% if variant.metafields.custom.vykon %}
+                      <span class="meta-vykon-varianty" id="meta-{{ variant.id }}4" style="display:none;">
+                        <span class="variant-vykon">{{ variant.metafields.custom.vykon }}</span>
+                      </span>
+                    {% endif %}
+                    {% if variant.metafields.custom.svetelny_tok %}
+                      <span class="meta-tok-varianty" id="meta-{{ variant.id }}5" style="display:none;">
+                        <span class="variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
+                      </span>
+                      {% endif %}
+                  {% endfor %}
                  
                 </span>
                 {% endif %}
@@ -260,39 +277,6 @@
               {% endif %}
               </span>
 
-              <!-- 
-              {% for variant in product.variants %}
-                {% if variant.metafields.custom.svetelny_tok %}
-                  <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
-                    <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
-                  </span>
-                {% endif %}
-              {% endfor %}
-              -->
-              
-
-              <script>
-                $(document).ready(function() {
-                  
-                  var metaTarget = $('.cct-radio');
-                 
-                  if ($('.cct-radio').length) {
-                    var selectedCct = $('.cct-radio:checked').val();
-                    console.log(selectedCct);
-                    var luminsElem = $('#meta-group-cct');
-                    
-                    $(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
-
-                    $(luminsElem).text(selectedCct);
-
-                    $(metaTarget).change(function() {
-                        var selectedCct = $(this).attr('value');
-                        console.log(selectedCct);
-                        $(luminsElem).text(selectedCct);
-                    });
-                  } 
-                });
-              </script>
               
               {% if product.metafields.custom.psaci_text_pod_vyrobcem %}
                 
@@ -454,6 +438,7 @@
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.vykon %}
                       <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
+                        <td class="technic-title">Výkon</td>
                         <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
                       </tr>
                       {% endif %}
@@ -1148,13 +1133,22 @@
       $('#' + variant.id + '3').css('display', 'grid');
       $('.rozmer-varianty').css('display', 'none');
       $('#' + variant.id + '1').css('display', 'table-row');
-      $('#' + variant.id + '1').addClass('technic-row--active');
+      
+
       $('.vykon-varianty').css('display', 'none');
+      $('.meta-vykon-varianty').css('display', 'none');
       $('#' + variant.id + '4').css('display', 'table-row');
+      $('#meta-' + variant.id + '4').css('display', 'inline-block');
+
       $('.tok-varianty').css('display', 'none');
+      $('.meta-tok-varianty').css('display', 'none');
       $('#' + variant.id + '5').css('display', 'table-row');
+      $('#meta-' + variant.id + '5').css('display', 'inline-block');
+
       $('.barva-varianty').css('display', 'none');
+      $('.meta-barva-varianty').css('display', 'none');
       $('#' + variant.id + '6').css('display', 'table-row');
+      $('#meta-' + variant.id + '6').css('display', 'inline-block');
     timber.productPage({
       money_format: "{{ shop.money_format }}",
       variant: variant,
