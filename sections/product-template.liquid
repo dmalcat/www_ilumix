@@ -250,15 +250,7 @@
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
                   <span id="meta-group-cct"></span>
-                  {% for variant in product.variants %}
-                    {% if variant.metafields.custom.svetelny_tok %}
-                      <span class="meta-group-cct">
-                        <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
-                          <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
-                        </span>
-                      </span>
-                    {% endif %}
-                  {% endfor %}
+                 
                 </span>
                 {% endif %}
                 {% if product.metafields.custom.stupen_kryti %}
