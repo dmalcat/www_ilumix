@@ -259,14 +259,6 @@
                   {% endif %}
 
                   <span id="meta-group-cct"></span>
-                  
-                  {% for variant in product.variants %}
-                    {% if variant.metafields.custom.svetelny_tok %}
-                      <span class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;" data-value="{{ variant.metafields.custom.svetelny_tok }}">
-                        <span class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</span>
-                      </span>
-                    {% endif %}
-                  {% endfor %}
                 </span>
 
                 {% if product.metafields.custom.stupen_kryti %}
@@ -1128,9 +1120,13 @@
       $('.rozmer-varianty').css('display', 'none');
       $('#' + variant.id + '1').css('display', 'table-row');
       $('.vykon-varianty').css('display', 'none');
+      $('.vykon-varianty').removeClass('vykon-varianty--active');
       $('#' + variant.id + '4').css('display', 'table-row');
+      $('#' + variant.id + '4').addClass('vykon-varianty--active');
       $('.tok-varianty').css('display', 'none');
+      $('.tok-varianty').removeClass('tok-varianty--active');
       $('#' + variant.id + '5').css('display', 'table-row');
+      $('#' + variant.id + '5').addClass('tok-varianty--active');
       $('.barva-varianty').css('display', 'none');
       $('#' + variant.id + '6').css('display', 'table-row');
     timber.productPage({
@@ -1223,20 +1219,20 @@ $(document).ready(function() {
 
     var luminsElem = $('#meta-group-cct');
 
-    //console.log(valueVykon);
-    //console.log(valueTok);
+    console.log(valueVykon);
+    console.log(valueTok);
     
     //$(luminsElem).prepend("<span id='lumins'>" + selectedCct + "</span>");
 
-    $(luminsElem).text(valueCct);
+    $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
 
-    $(".swatch-element").find("input[type=radio]").click(function() {
-        var clicked = $(this).val();
-        var valueVykon = $('.vykon-varianty--active').attr('data-value');
+    $(".swatch-element").find("input[type=radio]").click(function(){
+      var clicked = $(this).val();
+      console.log(clicked);
+      var valueVykon = $('.vykon-varianty--active').attr('data-value');
         var valueTok = $('.tok-varianty--active').attr('data-value');
-        //console.log('Vykon:' + valueVykon);
-        //console.log('Tok:' + valueTok);
-        $(luminsElem).text(clicked);
+        console.log(valueVykon);
+        $(luminsElem).text(valueCct + ' ' + valueTok + ' ' + valueVykon);
     });
   }
 });
