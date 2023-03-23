@@ -258,9 +258,7 @@
                     <span>&nbsp;{{ product.metafields.custom.barevna_teplota }}</span>
                   {% endif %}
 
-                  {% for variant in product.variants %}
-                    
-                  {% endfor %}
+                  
 
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.barevna_teplota %}
@@ -279,10 +277,6 @@
                       </span>
                       {% endif %}
                   {% endfor %}
-
-                  {% for variant in product.variants %}
-                    
-                    {% endfor %}
                 </span>
 
                 {% if product.metafields.custom.stupen_kryti %}
