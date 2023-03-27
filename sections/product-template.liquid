@@ -325,20 +325,42 @@
           </div>
             <div class="product-inventory" id="variant-inventory">
               <h6>{{ block.settings.availability_title }}</h6>
+              
+              {% comment %} Get and assign in-stock message {% endcomment %}
+              {% assign doba_dodani_skladem = shop.metaobjects.nastaveni_skladove_dostupnosti['default'].doba_dodani %}
+              {% assign jednotka_skladem = shop.metaobjects.nastaveni_skladove_dostupnosti['default'].jednotka %}
+              {% if doba_dodani_skladem > 1 %}
+                {% capture jednotka_skladem %}{% if jednotka_skladem == 'days' %}{{ 'general.delivery.days.many' | t }}{% elsif jednotka_skladem == 'weeks' %}{{ 'general.delivery.weeks.many' | t }}{% endif %}{% endcapture %}
+              {% else %}
+                {% capture jednotka_skladem %}{% if jednotka_skladem == 'days' %}{{ 'general.delivery.days.one' | t }}{% elsif jednotka_skladem == 'weeks' %}{{ 'general.delivery.weeks.one' | t }}{% endif %}{% endcapture %}
+              {% endif %}
+              {% assign in_stock_message = block.settings.in_stock_title | replace: '$doba_dodani', doba_dodani_skladem | replace: '$jednotka', jednotka_skladem %}
+              
+              {% comment %} Get and assign out-of-stock message {% endcomment %}
+              {% assign vendor_key = product.vendor | handleize %}
+              {% assign doba_dodani = shop.metaobjects.nastaveni_skladove_dostupnosti[vendor_key].doba_dodani %}
+              {% assign jednotka = shop.metaobjects.nastaveni_skladove_dostupnosti[vendor_key].jednotka %}
+              {% if doba_dodani > 1 %}
+                {% capture jednotka %}{% if jednotka == 'days' %}{{ 'general.delivery.days.many' | t }}{% elsif jednotka == 'weeks' %}{{ 'general.delivery.weeks.many' | t }}{% endif %}{% endcapture %}
+              {% else %}
+                {% capture jednotka %}{% if jednotka == 'days' %}{{ 'general.delivery.days.one' | t }}{% elsif jednotka == 'weeks' %}{{ 'general.delivery.weeks.one' | t }}{% endif %}{% endcapture %}
+              {% endif %}
+              {% assign out_of_stock_message = block.settings.out_of_stock_title | replace: '$doba_dodani', doba_dodani | replace: '$jednotka', jednotka %}
+              
               {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity == 0 %}
               <span class="out-stock text-danger">
-                <span>{{ block.settings.out_of_stock_title }}</i></span>
+                <span>{{ out_of_stock_message }}</i></span>
               </span>
               <span class="in-stock text-success">
-                <span>{{ block.settings.in_stock_title }}</span>
+                <span>{{ in_stock_message }}</span>
                 {{ block.settings.stock_vice }}
               </span>
               {% elsif product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
               <span class="in-stock text-success">
-                <span>{{ block.settings.in_stock_title }}</span>
+                <span>{{ in_stock_message }}</span>
               </span>
               <span class="out-stock text-danger">
-                <span>{{ block.settings.out_of_stock_title }}</span>
+                <span>{{ out_of_stock_message }}</span>
               </span>
               {% else %}
               <span class="in-stock d-block text-success">

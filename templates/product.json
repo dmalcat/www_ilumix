@@ -29,8 +29,8 @@
           "type": "product_availability",
           "settings": {
             "availability_title": "Dostupnost:",
-            "in_stock_title": "Ihned k odeslání",
-            "out_of_stock_title": "Skladem"
+            "in_stock_title": "Skladem (doručíme do $doba_dodani $jednotka)",
+            "out_of_stock_title": "Skladem u dodavatele (doručíme do $doba_dodani $jednotka)"
           }
         },
         "d2151862-b6be-4781-a6e9-b0743c4084c8": {
