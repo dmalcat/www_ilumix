@@ -1777,7 +1777,7 @@ $(".pp-swatch").insertAfter(".swatch-custom-container");
   /* product-inventory css*/
   .product_details_info .product-inventory{
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     /* text-transform: capitalize; */
     margin-top: 20px;
   }
@@ -1798,9 +1798,15 @@ $(".pp-swatch").insertAfter(".swatch-custom-container");
   }
   .product_details_info .product-inventory span.in-stock span,
   .product_details_info .product-inventory span.out-stock span{
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
+  }
+  .product_details_info .product-inventory span.in-stock span > span,
+  .product_details_info .product-inventory span.out-stock span > span{
+    font-size: 14px;
+    font-weight: normal;
+    color: #6f6f6f;
+    text-transform: none;
+    margin-inline-start: 5px;
   }
   .product_details_info .product-inventory span.in-stock span i,
   .product_details_info .product-inventory span.out-stock span i{
