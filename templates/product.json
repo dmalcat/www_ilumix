@@ -29,8 +29,8 @@
           "type": "product_availability",
           "settings": {
             "availability_title": "Dostupnost:",
-            "in_stock_title": "Ihned k odeslání",
-            "out_of_stock_title": "Skladem"
+            "in_stock_title": "Skladem <span>(doručíme do $doba_dodani $jednotka)<\/span>",
+            "out_of_stock_title": "Skladem u dodavatele <span>(doručíme do $doba_dodani $jednotka)<\/span>"
           }
         },
         "d2151862-b6be-4781-a6e9-b0743c4084c8": {
@@ -82,7 +82,7 @@
         "section_padding_bottom_xs": 0,
         "about_banner_img": "{{ product.metafields.my_fields.obr_zek_1.value }}",
         "about_title": "{{ product.metafields.my_fields.nadpis_u_obr_zku_1.value }}",
-        "about_des1": "<p>{{ product.metafields.my_fields.text_u_obr_zku_1 | metafield_tag }}<\/p>"
+        "about_des1": "<p>{{ product.metafields.my_fields.text_u_obr_zku_1 | metafield_tag }}</\p>"
       }
     },
     "165425517781de3512": {

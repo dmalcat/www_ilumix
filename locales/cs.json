@@ -578,6 +578,18 @@
         "share_on_twitter": "Sdílet na Twitteru",
         "share_on_pinterest": "Sdílet na Pinterestu"
       }
+    },
+    "delivery": {
+      "days": {
+        "one": "dne",
+        "many": "dnů",
+        "other": "dní"
+      },
+      "weeks": {
+        "one": "týdne",
+        "many": "týdnů",
+        "other": "týdny"
+      }
     }
   },
   "blogs": {
