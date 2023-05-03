@@ -1,6 +1,14 @@
-#product-grid .text-success span {
-    @media screen and (max-width: 1240px) {
-        font-size: 13px;
+#product-grid {
+    .text-success span {
+        @media screen and (max-width: 1240px) {
+            font-size: 13px;
+        }
+    }
+
+    .swatch-custom-container {
+        @media screen and (max-width: 1240px) {
+            width: 55%;
+        }
     }
 }
 
