@@ -124,10 +124,9 @@ reqJquery(function($){
         });  
   {% endif %}
   function wcpolesaleCheckout(){
-    if(window.location.host == "tungstenandtool.com"){
-      if(draftAPIRequestProcessing == true){return false;}
-      draftAPIRequestProcessing = true;
-    }
+    if(draftAPIRequestProcessing == true){return false;}
+    draftAPIRequestProcessing = true;
+    
     window.wcp_data.action_type = 'checkout';
     if ($("[name='note']").length) {
       window.wcp_data.wcp_cart.note = $("[name='note']")[0].value
@@ -236,7 +235,7 @@ reqJquery(function($){
               }
               setTimeout(function(){
                 wcpClearCart();
-                window.location.href = orderRedirectUrl;                     
+                checkInvoiceAvailability(orderRedirectUrl,1);                    
               },window.wpd_checkout_redirect_delay);
             } else {
               wcpClearCart();
@@ -251,6 +250,18 @@ reqJquery(function($){
 
   }
 
+  function checkInvoiceAvailability(url,tryCount) {    
+      fetch(url, {
+          method: "GET",
+          credentials: "same-origin",
+      }).then((response) => {
+          if(response.status != 200 && tryCount < 5){
+              setTimeout(function(){tryCount++; checkInvoiceAvailability(url,tryCount)},1000);
+          }else{
+              window.location.href = url;
+          }        
+      });    
+  }
 
   function sameDomainAjax (paramHash, successCallback) {
     $.ajax({
