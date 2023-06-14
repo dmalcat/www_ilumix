@@ -1381,6 +1381,11 @@ single product gride list
 .single-product-wrap .product-content-title h6 {
   max-width: 67.5%;
 }
+@media (max-width: 768px) {
+  .single-product-wrap .product-content-title h6 {
+    max-width: 100%;
+  }
+}
 .single-product-wrap .product-content .price-box .new-price,
 .single-product-wrap .product-content .price-box .old-price{
   font-size: 16px;
