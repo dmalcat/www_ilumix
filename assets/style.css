@@ -1618,19 +1618,20 @@ single product gride list
 }
 
 /* product content css */
-@media(min-width:1120px){
+@media(min-width:768px){
   .product-content h6{
     font-size: 13px;
     max-width: 75%;
   }
 }
 
-@media(max-width:768px){
+@media(max-width:1120px){
   .product-content h6{
-    
     max-width: 67.5%;
   }
 }
+
+
 /* product price css */
 /* .price-box{
   display: flex;
