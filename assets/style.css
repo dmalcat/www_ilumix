@@ -1618,9 +1618,16 @@ single product gride list
 }
 
 /* product content css */
-@media(min-width:768px){
+@media(min-width:1120px){
   .product-content h6{
     font-size: 13px;
+    max-width: 75%;
+  }
+}
+
+@media(max-width:768px){
+  .product-content h6{
+    
     max-width: 75%;
   }
 }
