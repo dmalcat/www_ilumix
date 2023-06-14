@@ -1,11 +1,16 @@
 #product-grid {
-    .text-success span {
+    .text-success span,
+    .text-danger span {
         @media screen and (max-width: 1240px) {
             font-size: 13px;
         }
 
         @media screen and (max-width: 1200px) {
             font-size: 12px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            font-size: 11px;
         }
     }
 
