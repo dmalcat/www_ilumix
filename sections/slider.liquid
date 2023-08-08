@@ -8,13 +8,6 @@
                     <div class="slide-image-cont">
                         <img class="img-fluid" src="{% if block.settings.slider_bg_img %}{{ block.settings.slider_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x1033/f7f7f7/999999{% endif %}">
                         <div class="slider-text-info{% if block.settings.slider_text_position == "right" %} slider-text-right{% elsif block.settings.slider_text_position == "left" %} slider-text-left{% else %} slider-text-center{% endif %}">
-                            {% if block.settings.slider_sub_title != '' %}
-                            <span class="sub-title" style="color:{{ block.settings.slider_sub_title_color }};">
-                                {{ block.settings.slider_sub_title }}
-                                <b>{{ block.settings.slider_sub_title_bold }}</b>
-                            </span>
-                            {% endif %}
-
                             {% if block.settings.slider_title != '' %}
                             <h2 style="color:{{ block.settings.slider_title_color }};">
                                 <span class="slider-subheading">{{ block.settings.slider_title1 }}</span>
@@ -25,6 +18,12 @@
                             <h2 class="badge-text" style="color:{{ block.settings.badge_color}}">
                                 {{ block.settings.slider_badge }}
                             </h2>
+                            {% endif %}
+                            {% if block.settings.slider_sub_title != '' %}
+                                <span class="sub-title" style="color:{{ block.settings.slider_sub_title_color }};">
+                                    {{ block.settings.slider_sub_title }}
+                                    <b>{{ block.settings.slider_sub_title_bold }}</b>
+                                </span>
                             {% endif %}
                             <div class="button-block">
                                 {% if block.settings.slider_button != '' %}
