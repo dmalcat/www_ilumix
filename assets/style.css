@@ -1377,6 +1377,15 @@ single product gride list
   justify-content: space-between;
   /* padding-top: 35px; */
 }
+
+.single-product-wrap .product-content-title h6 {
+  max-width: 67.5%;
+}
+@media screen and (max-width: 768px) {
+  .single-product-wrap .product-content-title h6 {
+    max-width: 100%;
+  }
+}
 .single-product-wrap .product-content .price-box .new-price,
 .single-product-wrap .product-content .price-box .old-price{
   font-size: 16px;
@@ -1624,6 +1633,14 @@ single product gride list
     max-width: 75%;
   }
 }
+
+@media(max-width:1120px){
+  .product-content h6{
+    max-width: 67.5%;
+  }
+}
+
+
 /* product price css */
 /* .price-box{
   display: flex;
@@ -2302,6 +2319,7 @@ height: 50px;
   @media(max-width:767px){
     .product-colection{
       text-align: center;
+      max-width: 100% !important;
     }
   }
 .product-variant-option  .select-variant{
