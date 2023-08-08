@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col">
         <ul class="notification-entry">
-          
+          {% comment %}
           <li class="notify-wrap">
             <div class="contact-wrap">
               <a href="tel:{{ settings.contact }}">
@@ -19,15 +19,15 @@
               </a>
             </div>
           </li>
+          {% endcomment %}
           
-          {% comment %}
           <li class="notify-wrap link-wrap">
             <p>
               <a class="notify-wrap__link" href="tel:{{ settings.topbar_notification_text2 }}">{{ settings.topbar_notification_text2 }}</a> 
               <a class="notify-wrap__link" href="mailto:{{ settings.topbar_notification_text_link }}">{{ settings.topbar_notification_text_link }}</a>
             </p>
           </li>
-          {% endcomment %}
+          
           {% comment %}
           <li class="notify-wrap social-wrap">
             {%- include 'social-midea' -%}
