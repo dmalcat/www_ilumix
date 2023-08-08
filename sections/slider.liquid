@@ -19,6 +19,12 @@
                                 {{ block.settings.slider_badge }}
                             </h2>
                             {% endif %}
+                            {% if block.settings.slider_sub_title != '' %}
+                                <span class="sub-title" style="color:{{ block.settings.slider_sub_title_color }};">
+                                    {{ block.settings.slider_sub_title }}
+                                    <b>{{ block.settings.slider_sub_title_bold }}</b>
+                                </span>
+                            {% endif %}
                             <div class="button-block">
                                 {% if block.settings.slider_button != '' %}
                                 <a href="{{ block.settings.slider_button_url }}" class="btn btn-style8">
@@ -342,7 +348,7 @@
     }
     .slider-content .home-slider .slide-image .slider-text-info h2{
         font-size: 70px;
-        margin-top: 30px;
+        margin-bottom: 40px;
         font-weight: 600;
         line-height: 1;
     }
