@@ -22,8 +22,8 @@
           {% endcomment %}
           <li class="notify-wrap link-wrap">
             <p>
-              <a href="tel:{{ settings.topbar_notification_text2 }}">{{ settings.topbar_notification_text2 }}</a> 
-              <a href="mailto:{{ settings.topbar_notification_text_link }}">{{ settings.topbar_notification_text_link }}</a>
+              <a class="notify-wrap__link" href="tel:{{ settings.topbar_notification_text2 }}">{{ settings.topbar_notification_text2 }}</a> 
+              <a class="notify-wrap__link" href="mailto:{{ settings.topbar_notification_text_link }}">{{ settings.topbar_notification_text_link }}</a>
             </p>
           </li>
           {% comment %}
@@ -75,6 +75,13 @@
     font-weight: 500;
     text-transform: uppercase;
     line-height: normal;
+  }
+  .top-notification-bar ul li.notify-wrap p .notify-wrap__link{
+    color: #878787;
+    text-decoration: none;
+  }
+  .top-notification-bar ul li.notify-wrap p .notify-wrap__link:hover{
+    color: #fff;
   }
   .top-notification-bar ul li.notify-wrap p a.link-text{
     position: relative;
