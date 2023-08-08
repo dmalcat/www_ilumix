@@ -1319,8 +1319,8 @@ single product gride list
 .single-product-wrap:hover .product-image .product-label span.percent-count,
 .single-product-wrap:hover .product-image .product-label span.soldout-title,
 .single-product-wrap:hover .product-image .product-label span.new-title{
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0.8;
+  /*visibility: hidden;*/
 }
 .single-product-wrap .product-image .product-label span.soldout-title{
   left: 0;
