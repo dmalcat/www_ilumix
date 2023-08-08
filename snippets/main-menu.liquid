@@ -55,14 +55,6 @@
         <div class="megamenu-overlay"></div>
       </a>
     </div>
-    {% elsif section.settings.product_3 and forloop.index == 3 %}
-    <div class="megamenu-buy">
-      {%- assign product = section.settings.product_3 -%}
-      <a href="{{ section.settings.product_3.url }}"><p class="megamenu-title">{{ section.settings.product_3.title }}</p>
-        <img class="img-fluid img1 megamenu-product" src="{{ product.featured_image.src | img_url : 'master' }}" alt="{{ product.featured_image.src.alt | escape  }}">
-        <div class="megamenu-overlay"></div>
-      </a>
-    </div>
     {% endif %}
     {% endif %}
   </ul>
