@@ -21,7 +21,10 @@
           </li>
           {% endcomment %}
           <li class="notify-wrap link-wrap">
-            <p>{{ settings.topbar_notification_text2 }} <b>{{ settings.topbar_notification_text_link }}</b></p>
+            <p>
+              <a href="tel:{{ settings.topbar_notification_text2 }}">{{ settings.topbar_notification_text2 }}</a> 
+              <a href="tel:{{ settings.contact }}">{{ settings.topbar_notification_text_link }}</a>
+            </p>
           </li>
           {% comment %}
           <li class="notify-wrap social-wrap">
