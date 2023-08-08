@@ -2343,7 +2343,7 @@ height: 50px;
 }
 
 .single-product-wrap  .pro-img:hover .img1{
-  opacity:0;
+  opacity: 0.9;
 }
 .single-product-wrap  .pro-img:hover .img2{
   opacity:1!important;
