@@ -116,7 +116,9 @@
 
       <script>
         $(function(){
-          $('.easyzoom').easyZoom();
+          $('.easyzoom').easyZoom({
+            linkAttribute: 'data-image'
+          });
         });
       </script>
       {% if section.settings.product_style_handle == 'style_2' %}
