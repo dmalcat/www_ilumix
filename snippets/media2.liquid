@@ -1,5 +1,5 @@
 {% capture media_class %}product-featured-media{% endcapture %}
-<div class="thumbnail-img2" data-image="{{ media.src | img_url: 'master' }}" data-image-id="{{ media.id }}">
+<div class="thumbnail-img2 easyzoom" data-image="{{ media.src | img_url: 'master' }}" data-image-id="{{ media.id }}">
   {% case media.media_type %}
     {% when 'image' %}
       {% capture zoom_media_id %}ImageZoom-{{ section.id }}-{{ media.id }}{% endcapture %}
