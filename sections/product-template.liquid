@@ -61,7 +61,7 @@
       </div>
       {% if section.settings.product_style_handle == 'style_1' %}
       <div class="col-xl-6 col-lg-6 col-md-12 col-12 product_details product_details_gallery">
-        <div class="product_detail_img easyzoom">
+        <div class="product_detail_img">
             {% for t in product.tags %}
             {% if t contains 'novinka' %}     
               <div class="product-detail_badge badge-text" style="color:#86BAF5">
@@ -113,6 +113,7 @@
         </div>
       </div>
       {% endif %}
+
       {% if section.settings.product_style_handle == 'style_2' %}
       <div class="col-xl-6 col-lg-6 col-md-12 col-12 product_details product_details_gallery">
         <div class="product_detail_img">
@@ -121,7 +122,7 @@
             <div class="slider-for" {% if settings.enable_rtl %}dir="rtl"{% endif %}>
               {%- assign featured_media = current_variant.featured_media | default: product.featured_media -%}
               {%- for media in product.media -%}
-              {% include 'media', media: media, featured_media: featured_media, height: height, enable_image_zoom: enable_image_zoom, image_zoom_size: product_image_zoom_size, image_scale: product_image_scale %}
+                {% include 'media', media: media, featured_media: featured_media, height: height, enable_image_zoom: enable_image_zoom, image_zoom_size: product_image_zoom_size, image_scale: product_image_scale %}
               {%- endfor -%}
             </div>
           </div>
