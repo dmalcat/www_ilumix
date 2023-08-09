@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css" integrity="sha512-GPEZI1E6wle+Inl8CkTU3Ncgc9WefoWH4Jp8urbxZNbaISy0AhzIMXVzdK2GEf1+OVhA+MlcwPuNve3rL1F9yg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js" integrity="sha512-jGARnXmmqjqH0OuF7bFoLjZiVwFwoFvkgGqJpUf2TNjMnKjK1rrVCwmFoUGq564c2Auaf6ULAknrnUGKK1SnqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+{{ 'easyzoom.js' | asset_url | script_tag }}
 
 <section class="product-details-page">
   <div class="container">
@@ -60,7 +61,7 @@
       </div>
       {% if section.settings.product_style_handle == 'style_1' %}
       <div class="col-xl-6 col-lg-6 col-md-12 col-12 product_details product_details_gallery">
-        <div class="product_detail_img">
+        <div class="product_detail_img easyzoom">
             {% for t in product.tags %}
             {% if t contains 'novinka' %}     
               <div class="product-detail_badge badge-text" style="color:#86BAF5">
