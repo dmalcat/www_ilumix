@@ -13,7 +13,6 @@
     },
     "ea5f593d-e910-4744-ac79-7ce9c5de9fd9": {
       "type": "our-team",
-      "disabled": true,
       "blocks": {
         "93bbdb45-2a2c-4231-9b69-8c3d848ad63a": {
           "type": "our-vision",
@@ -78,6 +77,7 @@
         "018479ef-9c98-41b3-bfda-9f60122099f4",
         "96489f55-2002-434d-987e-c2dac4fa77cf"
       ],
+      "disabled": true,
       "settings": {
         "section_padding_top": 100,
         "section_padding_bottom": 100,
@@ -105,7 +105,7 @@
         "phone_placeholder": "Telefon",
         "message_placeholder": "Zpráva",
         "form_button_name": "Odeslat",
-        "read_agree_text": "Odesláním souhlasíte se zpracováním osobních údajů."
+        "read_agree_text": "Odesláním souhlasíte se zpracováním <a href=\"https:\/\/360design.cz\/pages\/zasady-ochrany-osobnich-udaju\">osobních údajů<\/a>."
       }
     }
   },
