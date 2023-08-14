@@ -17,7 +17,7 @@
           <img src="{% if block.settings.slider_store_img %}{{ block.settings.slider_store_img | img_url: 'master' }}{% else %}https://dummyimage.com/442x564/f7f7f7/999999{% endif %}">
           <div class="location-block">
             <div class="loc-img">
-              <img src="{% if block.settings.loc_img %}{{ block.settings.loc_img | img_url: 'master' }}{% else %}https://dummyimage.com/44x26/f7f7f7/999999{% endif %}">
+              {% comment %}<img src="{% if block.settings.loc_img %}{{ block.settings.loc_img | img_url: 'master' }}{% else %}https://dummyimage.com/44x26/f7f7f7/999999{% endif %}">{% endcomment %}
               <h2>{{ block.settings.flag_country }}</h2>
             </div>
             <div class="contact-wrap">
