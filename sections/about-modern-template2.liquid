@@ -17,20 +17,10 @@
           <img src="{% if block.settings.slider_store_img %}{{ block.settings.slider_store_img | img_url: 'master' }}{% else %}https://dummyimage.com/442x564/f7f7f7/999999{% endif %}">
           <div class="location-block">
             <div class="loc-img">
-              {% comment %}<img src="{% if block.settings.loc_img %}{{ block.settings.loc_img | img_url: 'master' }}{% else %}https://dummyimage.com/44x26/f7f7f7/999999{% endif %}">{% endcomment %}
               <h2>{{ block.settings.reference_title }}</h2>
             </div>
             <div class="contact-wrap">
-              <span>{{ block.settings.mail_title }}</span>
-              {% comment %}
-              <div class="mobile">
-                <span>{{ block.settings.phone_title }}</span>
-                <a href="tel:{{ block.settings.contact_mobile }}">{{ block.settings.contact_mobile }}</a>
-              </div>
-              <div class="email">
-                <a href="mailto:{{ block.settings.contact_mail }}">{{ block.settings.contact_mail }}</a>
-              </div>
-              {% endcomment %}
+              <span>{{ block.settings.reference_description }}</span>
             </div>
           </div>
         </div>
@@ -160,27 +150,8 @@
         },
         {
           "type": "text",
-          "id": "phone_title",
-          "label": "Phone Title",
-          "default": "Phone :"
-        },
-        {
-          "type": "text",
-          "id": "contact_mobile",
-          "label": "Contact Mobile Number",
-          "default": "+44 12345 67890"
-        },
-        {
-          "type": "text",
-          "id": "mail_title",
-          "label": "Mail Title",
-          "default": "Email :"
-        },
-        {
-          "type": "text",
-          "id": "contact_mail",
-          "label": "Contact Email id",
-          "default": "info@staffy.com"
+          "id": "reference_description",
+          "label": "Reference description"
         }
       ]
     }
