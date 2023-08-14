@@ -17,7 +17,7 @@
           <img src="{% if block.settings.slider_store_img %}{{ block.settings.slider_store_img | img_url: 'master' }}{% else %}https://dummyimage.com/442x564/f7f7f7/999999{% endif %}">
           <div class="location-block">
             <div class="loc-img">
-              <h2>{{ block.settings.reference_title }}</h2>
+              <h2>{{ block.settings.reference_name }}</h2>
             </div>
             <div class="contact-wrap">
               <span>{{ block.settings.reference_description }}</span>
@@ -203,6 +203,7 @@
     padding-top: {{ section.settings.section_padding_top }}px;
     padding-bottom: {{ section.settings.section_padding_bottom }}px;
     background-color: #faf9f9;
+    margin-bottom: 7.5rem;
   }
   @media (max-width: 1199px) {
     .about-modern-section2 {
