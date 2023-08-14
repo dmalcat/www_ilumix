@@ -96,28 +96,36 @@
           "type": "about_template2",
           "settings": {
             "list_title": "Osobní vztahy s výrobci",
-            "list_desc": "Na původu svítidel i na kvalitě jejich provedení nám záleží. Všechny dodavatele známe osobně a spolupracujeme s nimi dlouhodobě."
+            "list_desc": "Na původu svítidel i na kvalitě jejich provedení nám záleží. Všechny dodavatele známe osobně a spolupracujeme s nimi dlouhodobě.",
+            "category_button": "",
+            "category_button_url": ""
           }
         },
         "9992ea8a-919a-4335-a1df-82cfbd2e904f": {
           "type": "about_template2",
           "settings": {
             "list_title": "Vážíme si každého zákazníka",
-            "list_desc": "Rádi vám poradíme s výběrem a je jedno, jestli hledáte jedno světlo do obýváku nebo chcete rozsvítit celý dům. Není malých projektů."
+            "list_desc": "Rádi vám poradíme s výběrem a je jedno, jestli hledáte jedno světlo do obýváku nebo chcete rozsvítit celý dům. Není malých projektů.",
+            "category_button": "",
+            "category_button_url": ""
           }
         },
         "a1e034f0-99d2-4224-9475-598b8756771e": {
           "type": "about_template2",
           "settings": {
             "list_title": "Dodržujeme termíny",
-            "list_desc": "Vše včas a bezpečně doručíme na domluvené místo. Dobře víme, že u velkých projektů je přesnost dílčích dodávek klíčová."
+            "list_desc": "Vše včas a bezpečně doručíme na domluvené místo. Dobře víme, že u velkých projektů je přesnost dílčích dodávek klíčová.",
+            "category_button": "",
+            "category_button_url": ""
           }
         },
         "3673201a-e681-4095-84b6-a0766e25ed7d": {
           "type": "about_template2",
           "settings": {
             "list_title": "Ekologie a udržitelnost",
-            "list_desc": "Naše světla jsou vybavena těmi nejmodernějšími čipy, takže mají vysokou svítivost a zároveň nízkou spotřebu energie."
+            "list_desc": "Naše světla jsou vybavena těmi nejmodernějšími čipy, takže mají vysokou svítivost a zároveň nízkou spotřebu energie.",
+            "category_button": "",
+            "category_button_url": ""
           }
         }
       },
@@ -228,7 +236,6 @@
     },
     "about-modern-template6": {
       "type": "about-modern-template6",
-      "disabled": true,
       "blocks": {
         "f640e173-f9e1-4969-8369-4a655b331d64": {
           "type": "store_location",
@@ -260,6 +267,7 @@
         "fe9647eb-206d-48fe-ac50-7382af721bec",
         "e1d76726-6347-47f5-9ca3-97eebfda9b03"
       ],
+      "disabled": true,
       "settings": {
         "section_padding_top": 100,
         "section_padding_bottom": 100,
