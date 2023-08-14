@@ -176,44 +176,32 @@
           "type": "about_template2",
           "settings": {
             "slider_store_img": "shopify:\/\/shop_images\/r2.jpg",
-            "flag_country": "Soukromá rezidence",
-            "phone_title": "",
-            "contact_mobile": "",
-            "mail_title": "Kompletní dodávka designových svítidel. Návrh Urban interior.",
-            "contact_mail": ""
+            "reference_name": "Soukromá rezidence",
+            "reference_description": "Kompletní dodávka designových svítidel. Návrh Urban interior."
           }
         },
         "0dde8c75-de32-4861-bbd7-7ace74b023cd": {
           "type": "about_template2",
           "settings": {
             "slider_store_img": "shopify:\/\/shop_images\/r3_039e505f-c9c7-4315-8b56-73101a96aa77.jpg",
-            "flag_country": "Cube Store",
-            "phone_title": "",
-            "contact_mobile": "",
-            "mail_title": "Realizace osvětlení prodejny Cube.",
-            "contact_mail": ""
+            "reference_name": "Cube store",
+            "reference_description": "Realizace osvětlení prodejny Cube."
           }
         },
         "e9b80f1f-9da8-470e-8bf4-d6d9777f1410": {
           "type": "about_template2",
           "settings": {
             "slider_store_img": "shopify:\/\/shop_images\/r4_bcfe2de8-9f01-42b7-94ac-fc4cb0569b37.jpg",
-            "flag_country": "Soukromá rezidence",
-            "phone_title": "",
-            "contact_mobile": "",
-            "mail_title": "Kompletní dodávka osvětlení bytu v projektu bytového domu ve spolupráci s BekArch.",
-            "contact_mail": ""
+            "reference_name": "Soukromá rezidence",
+            "reference_description": "Dodávka designových svítidel pro projekt bytového domu Sámova v pražských Vršovicích. Návrh BekArch s.r.o."
           }
         },
         "66858fa9-7814-40a1-b765-14a32c8552f1": {
           "type": "about_template2",
           "settings": {
             "slider_store_img": "shopify:\/\/shop_images\/r1_4fe1ab8d-9a2c-4c38-acbc-74f68ee4132e.jpg",
-            "flag_country": "Zubní ordinace",
-            "phone_title": "",
-            "contact_mobile": "",
-            "mail_title": "Kompletní dodávka designových a technických svítidel. Návrh BekArch s.r.o.",
-            "contact_mail": ""
+            "reference_name": "Zubní ordinace",
+            "reference_description": "Kompletní dodávka designových a technických svítidel. Návrh BekArch s.r.o."
           }
         }
       },
