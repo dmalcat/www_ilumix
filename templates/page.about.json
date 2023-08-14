@@ -188,21 +188,27 @@
           "type": "about_template2",
           "settings": {
             "list_title": "Interiérová svítidla",
-            "list_desc": "Nástěnná, závěsná, či zápustná svítidla. Stojací i stolní lampy. Bodová svítidla i svítidla do závěsných lišt."
+            "list_desc": "Nástěnná, závěsná, či zápustná svítidla. Stojací i stolní lampy. Bodová svítidla i svítidla do závěsných lišt.",
+            "category_button": "Prozkoumat",
+            "category_button_url": "shopify:\/\/collections\/interierova-svitidla"
           }
         },
         "823a988a-1780-48a7-9c08-afa51c064cca": {
           "type": "about_template2",
           "settings": {
             "list_title": "Venkovní svítidla",
-            "list_desc": "Sloupková svítidla, solární světla nebo světla s čidlem pohybu. Posvítí vám na (příjezdovou) cestu nebo dodají atmosféru večernímu posezení na terase."
+            "list_desc": "Sloupková svítidla, solární světla nebo světla s čidlem pohybu. Posvítí vám na (příjezdovou) cestu nebo dodají atmosféru večernímu posezení na terase.",
+            "category_button": "Prozkoumat",
+            "category_button_url": "shopify:\/\/collections\/exterierova-svitidla"
           }
         },
         "f481fae2-c446-4518-8094-f627c675f802": {
           "type": "about_template2",
           "settings": {
             "list_title": "Lištové systémy",
-            "list_desc": "S lištovými systémy vytvoříte osobité světelné systémy. Vynikají sou variabilitou a jednoduchou instalací. Originální, moderní a přesně na míru vašemu prostoru."
+            "list_desc": "S lištovými systémy vytvoříte osobité světelné systémy. Vynikají sou variabilitou a jednoduchou instalací. Originální, moderní a přesně na míru vašemu prostoru.",
+            "category_button": "Prozkoumat",
+            "category_button_url": "shopify:\/\/collections\/3f-listy"
           }
         }
       },
@@ -220,7 +226,7 @@
         "section_padding_bottom_xs": 40,
         "section_title": "360design",
         "section_desc": "S výrobci svítidel úzce spolupracujeme mnoho let a zakládáme si na osobních vztazích. Vyberete si u nás svítidla do domácnosti, na terasu nebo do bazénu.",
-        "more_button": "Naše produkty",
+        "more_button": "",
         "more_button_url": "shopify:\/\/collections\/all"
       }
     },
