@@ -209,11 +209,11 @@
           "type": "about_template2",
           "settings": {
             "slider_store_img": "shopify:\/\/shop_images\/r1_4fe1ab8d-9a2c-4c38-acbc-74f68ee4132e.jpg",
-            "flag_country": "Canada",
-            "phone_title": "Phone :",
-            "contact_mobile": "+44 12345 67890",
-            "mail_title": "Email :",
-            "contact_mail": "info@staffy.com"
+            "flag_country": "Zubní ordinace",
+            "phone_title": "",
+            "contact_mobile": "",
+            "mail_title": "Kompletní dodávka designových a technických svítidel. Návrh BekArch s.r.o.",
+            "contact_mail": ""
           }
         }
       },
