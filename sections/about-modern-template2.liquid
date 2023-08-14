@@ -21,6 +21,7 @@
               <h2>{{ block.settings.flag_country }}</h2>
             </div>
             <div class="contact-wrap">
+              {% comment %}
               <div class="mobile">
                 <span>{{ block.settings.phone_title }}</span>
                 <a href="tel:{{ block.settings.contact_mobile }}">{{ block.settings.contact_mobile }}</a>
@@ -29,6 +30,7 @@
                 <span>{{ block.settings.mail_title }}</span>
                 <a href="mailto:{{ block.settings.contact_mail }}">{{ block.settings.contact_mail }}</a>
               </div>
+              {% endcomment %}
             </div>
           </div>
         </div>
