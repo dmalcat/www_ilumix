@@ -230,6 +230,53 @@
         "more_button_url": "shopify:\/\/collections\/all"
       }
     },
+    "about-template4": {
+      "type": "about-template4",
+      "blocks": {
+        "658952b8-0e70-47d7-a819-318129dbfef2": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "interierova-svitidla",
+            "collection_img": "shopify:\/\/shop_images\/interier.jpg"
+          }
+        },
+        "a88264b6-8e2e-40d7-98fc-5b4c9454210d": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "exterierova-svitidla",
+            "collection_img": "shopify:\/\/shop_images\/exterier.jpg"
+          }
+        },
+        "5a51497b-47fa-4fa3-a801-3f1ef5ef4542": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "3f-listy",
+            "collection_img": "shopify:\/\/shop_images\/listove_systemy.jpg"
+          }
+        },
+        "d204988d-1561-43d6-82c2-899724c67569": {
+          "type": "about_category",
+          "settings": {
+            "slider_category_handle": "prislusenstvi",
+            "collection_img": "shopify:\/\/shop_images\/prislusenstvi_d1aba3de-6846-49fa-b60b-6f7db1977840.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "658952b8-0e70-47d7-a819-318129dbfef2",
+        "a88264b6-8e2e-40d7-98fc-5b4c9454210d",
+        "5a51497b-47fa-4fa3-a801-3f1ef5ef4542",
+        "d204988d-1561-43d6-82c2-899724c67569"
+      ],
+      "settings": {
+        "section_padding_top": 80,
+        "section_padding_bottom": 45,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 0,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 20
+      }
+    },
     "08ed1a96-0ab8-48b2-98b0-1720241ec3ee": {
       "type": "contact-store-information",
       "settings": {
@@ -248,7 +295,8 @@
         "info_link2": "info@360design.cz",
         "info_icon3": "<svg version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"42.4px\" height=\"33.8px\" viewbox=\"0 0 42.4 33.8\" style=\"enable-background:new 0 0 42.4 33.8;\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\">\n<defs>\n<\/defs>\n<path d=\"M24.2,0c4.9,0,9.4,1.4,12.7,3.7c3.4,2.4,5.5,5.7,5.5,9.4c0,1.9-0.6,3.7-1.6,5.4c-0.9,1.5-2.2,2.8-3.8,4l2,7.1\n\tc0.1,0.5-0.1,1-0.7,1.2c-0.3,0.1-0.6,0-0.8-0.1L29,25.8c-0.7,0.1-1.5,0.2-2.2,0.3c-0.9,0.1-1.8,0.1-2.6,0.1c-5,0-9.5-1.4-12.8-3.7\n\tC8.1,20.2,6,16.8,6,13.1c0-3.7,2.1-7,5.5-9.4C14.7,1.4,19.2,0,24.2,0L24.2,0z M5.3,9.3C3.2,11.2,2,13.5,2,16c0,1.6,0.5,3,1.3,4.4\n\tc0.9,1.4,2.2,2.7,3.8,3.7c0.4,0.3,0.6,0.7,0.4,1.1L6,30.7l6.7-3.9c0.2-0.1,0.5-0.1,0.7-0.1c0.8,0.1,1.5,0.3,2.3,0.4\n\tc0.8,0,1.6,0.1,2.4,0.1c0.4,0,0.8,0,1.1,0c1.7,0.3,3.4,0.4,5.1,0.4c0.2,0,0.4,0.1,0.4,0.3c0,0.2-0.1,0.4-0.3,0.5\n\tc-1.9,0.5-4.1,0.8-6.3,0.8c-0.9,0-1.8,0-2.6-0.1c-0.8-0.1-1.5-0.2-2.2-0.3l-8.5,4.9c-0.2,0.1-0.5,0.2-0.8,0.1\n\tc-0.5-0.1-0.8-0.7-0.7-1.2l2-7.1c-1.6-1.1-2.9-2.5-3.8-3.9C0.6,19.8,0,18,0,16c0-3.7,2.1-7,5.5-9.4C6.9,6.4,6.4,8.6,5.3,9.3L5.3,9.3\n\tz M35.8,5.4c-2.9-2.1-7-3.4-11.6-3.4s-8.7,1.3-11.6,3.4c-2.8,2-4.7,4.7-4.7,7.8c0,3,1.8,5.8,4.7,7.8c2.9,2.1,7.1,3.4,11.6,3.4\n\tc0.8,0,1.6,0,2.4-0.1c0.8-0.1,1.6-0.2,2.3-0.4c0.2,0,0.5,0,0.7,0.1l6.8,3.9l-1.6-5.5c-0.1-0.4,0-0.8,0.4-1c1.6-1.1,2.9-2.4,3.8-3.8\n\tc0.8-1.3,1.3-2.8,1.3-4.4C40.4,10.1,38.7,7.4,35.8,5.4L35.8,5.4z\"><\/path>\n<\/svg>",
         "info_title3": "Nechte nám zprávu",
-        "info_link3": "Kontaktní formulář"
+        "info_link3": "Kontaktní formulář",
+        "info_link3_url": ""
       }
     },
     "our-team": {
@@ -297,53 +345,6 @@
         "section_padding_bottom_xs": 40,
         "our_team_title": "Posvítíme si na to"
       }
-    },
-    "about-template4": {
-      "type": "about-template4",
-      "blocks": {
-        "658952b8-0e70-47d7-a819-318129dbfef2": {
-          "type": "about_category",
-          "settings": {
-            "slider_category_handle": "interierova-svitidla",
-            "collection_img": "shopify:\/\/shop_images\/interier.jpg"
-          }
-        },
-        "a88264b6-8e2e-40d7-98fc-5b4c9454210d": {
-          "type": "about_category",
-          "settings": {
-            "slider_category_handle": "exterierova-svitidla",
-            "collection_img": "shopify:\/\/shop_images\/exterier.jpg"
-          }
-        },
-        "5a51497b-47fa-4fa3-a801-3f1ef5ef4542": {
-          "type": "about_category",
-          "settings": {
-            "slider_category_handle": "3f-listy",
-            "collection_img": "shopify:\/\/shop_images\/listove_systemy.jpg"
-          }
-        },
-        "d204988d-1561-43d6-82c2-899724c67569": {
-          "type": "about_category",
-          "settings": {
-            "slider_category_handle": "prislusenstvi",
-            "collection_img": "shopify:\/\/shop_images\/prislusenstvi_d1aba3de-6846-49fa-b60b-6f7db1977840.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "658952b8-0e70-47d7-a819-318129dbfef2",
-        "a88264b6-8e2e-40d7-98fc-5b4c9454210d",
-        "5a51497b-47fa-4fa3-a801-3f1ef5ef4542",
-        "d204988d-1561-43d6-82c2-899724c67569"
-      ],
-      "settings": {
-        "section_padding_top": 80,
-        "section_padding_bottom": 45,
-        "section_padding_top_lg": 60,
-        "section_padding_bottom_lg": 0,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 20
-      }
     }
   },
   "order": [
@@ -355,8 +356,8 @@
     "ec0c0445-f222-402d-ae7f-063ec6754f6c",
     "a0675b43-1602-435f-a19d-dafbbe8cea87",
     "about-template2",
+    "about-template4",
     "08ed1a96-0ab8-48b2-98b0-1720241ec3ee",
-    "our-team",
-    "about-template4"
+    "our-team"
   ]
 }
