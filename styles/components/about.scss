@@ -47,7 +47,7 @@
         li {
             width: 30%;
             @include max768px {
-                width: 42.5%;
+                width: 100%;
                 padding: 0 1.5rem;
             }
 
