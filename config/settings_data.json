@@ -1888,73 +1888,37 @@
           "7abca543-8ac3-424d-9e4f-c6e82286c00d": {
             "type": "about_template2",
             "settings": {
-              "slider_store_img": "shopify:\/\/shop_images\/store-locations-04.jpg",
-              "loc_img": "shopify:\/\/shop_images\/contact-us-img-flag-03.jpg",
-              "flag_country": "Australia",
-              "phone_title": "Phone :",
-              "contact_mobile": "+44 12345 67890",
-              "mail_title": "Email :",
-              "contact_mail": "info@staffy.com"
+              "slider_store_img": "shopify:\/\/shop_images\/store-locations-04.jpg"
             }
           },
           "3c9df0a7-8f00-4913-beca-4f82b9349dc2": {
             "type": "about_template2",
             "settings": {
-              "slider_store_img": "shopify:\/\/shop_images\/store-locations-03.jpg",
-              "loc_img": "shopify:\/\/shop_images\/contact-us-img-flag-01.jpg",
-              "flag_country": "Canada",
-              "phone_title": "Phone :",
-              "contact_mobile": "+44 12345 67890",
-              "mail_title": "Email :",
-              "contact_mail": "info@staffy.com"
+              "slider_store_img": "shopify:\/\/shop_images\/store-locations-03.jpg"
             }
           },
           "fa7fed44-fd76-4bc8-abcd-1742dcc04b91": {
             "type": "about_template2",
             "settings": {
-              "slider_store_img": "shopify:\/\/shop_images\/store-locations-06.jpg",
-              "loc_img": "shopify:\/\/shop_images\/contact-us-img-flag-03.jpg",
-              "flag_country": "Australia",
-              "phone_title": "Phone :",
-              "contact_mobile": "+44 12345 67890",
-              "mail_title": "Email :",
-              "contact_mail": "info@staffy.com"
+              "slider_store_img": "shopify:\/\/shop_images\/store-locations-06.jpg"
             }
           },
           "1dd975ac-59b3-4b2c-a042-e7b0b9dbe990": {
             "type": "about_template2",
             "settings": {
-              "slider_store_img": "shopify:\/\/shop_images\/store-locations-02.jpg",
-              "loc_img": "shopify:\/\/shop_images\/contact-us-img-flag-01.jpg",
-              "flag_country": "Australia",
-              "phone_title": "Phone :",
-              "contact_mobile": "+44 12345 67890",
-              "mail_title": "Email :",
-              "contact_mail": "info@staffy.com"
+              "slider_store_img": "shopify:\/\/shop_images\/store-locations-02.jpg"
             }
           },
           "0f0eb5d9-0dd3-4955-94b5-5626e9a41cce": {
             "type": "about_template2",
             "settings": {
-              "slider_store_img": "shopify:\/\/shop_images\/store-locations-01.jpg",
-              "loc_img": "shopify:\/\/shop_images\/contact-us-img-flag-03.jpg",
-              "flag_country": "Canada",
-              "phone_title": "Phone :",
-              "contact_mobile": "+44 12345 67890",
-              "mail_title": "Email :",
-              "contact_mail": "info@staffy.com"
+              "slider_store_img": "shopify:\/\/shop_images\/store-locations-01.jpg"
             }
           },
           "601289f6-677f-4905-8e95-123c7652856f": {
             "type": "about_template2",
             "settings": {
-              "slider_store_img": "shopify:\/\/shop_images\/store-locations-05.jpg",
-              "loc_img": "shopify:\/\/shop_images\/contact-us-img-flag-03.jpg",
-              "flag_country": "Canada",
-              "phone_title": "Phone :",
-              "contact_mobile": "+44 12345 67890",
-              "mail_title": "Email :",
-              "contact_mail": "info@staffy.com"
+              "slider_store_img": "shopify:\/\/shop_images\/store-locations-05.jpg"
             }
           }
         },
