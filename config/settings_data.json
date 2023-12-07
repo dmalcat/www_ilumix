@@ -2208,6 +2208,24 @@
       "1614750626463e523c": {
         "type": "slider",
         "blocks": {
+          "2c4e6f44-084d-4684-8e2d-78a35b96f1ca": {
+            "type": "slide",
+            "settings": {
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_BUICK.jpg",
+              "slider_sub_title": "Cena",
+              "slider_sub_title_bold": "2.580 Kč",
+              "slider_sub_title_color": "#1d1d1d",
+              "slider_title1": "Přisazené svítidlo",
+              "slider_title2": "Buick",
+              "slider_badge": "",
+              "badge_color": "",
+              "slider_title_color": "#1d1d1d",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "shopify:\/\/products\/buick-led-prisazene-svitidlo",
+              "slider_content_position": "left",
+              "slider_text_position": "center"
+            }
+          },
           "bb9fac8d-7e9a-4e7a-8f12-8301f02d2fed": {
             "type": "slide",
             "settings": {
@@ -2264,6 +2282,7 @@
           }
         },
         "block_order": [
+          "2c4e6f44-084d-4684-8e2d-78a35b96f1ca",
           "bb9fac8d-7e9a-4e7a-8f12-8301f02d2fed",
           "ca134d30-d1e7-4b2a-ad45-dcf05dfc6023",
           "b2b230de-9ce3-4dc2-a873-9fef9cb04aba"
