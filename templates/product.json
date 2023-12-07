@@ -56,7 +56,6 @@
         "product_vendor_title": "Výrobce:",
         "product_cena": "Cena:",
         "social_share_title": "Sdílet:",
-        "velkoobchod": "<p>Jste z oboru? Zaregistrujte se do našeho <a href=\"\/pages\/b2b\" title=\"B2B\">B2B programu<\/a> a čerpejte veškeré výhody na maximum.<\/p>",
         "navod": "Návod k montáži:",
         "sheet": "Data sheet:",
         "download": "ke stažení",
@@ -82,7 +81,7 @@
         "section_padding_bottom_xs": 0,
         "about_banner_img": "{{ product.metafields.my_fields.obr_zek_1.value }}",
         "about_title": "{{ product.metafields.my_fields.nadpis_u_obr_zku_1.value }}",
-        "about_des1": "<p>{{ product.metafields.my_fields.text_u_obr_zku_1 | metafield_tag }}</\p>"
+        "about_des1": "<p>{{ product.metafields.my_fields.text_u_obr_zku_1 | metafield_tag }}<\/p>"
       }
     },
     "165425517781de3512": {
@@ -111,7 +110,7 @@
         "related_padding_bottom_ipad": 30,
         "related_padding_top_xs": 0,
         "related_padding_bottom_xs": 10,
-        "related_title": "Podobné produkty"
+        "related_title": "Mohlo by Vám také líbit"
       }
     },
     "16545024540f92bb28": {
