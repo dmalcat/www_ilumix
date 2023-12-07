@@ -2208,6 +2208,24 @@
       "1614750626463e523c": {
         "type": "slider",
         "blocks": {
+          "db589e9a-486b-4931-8f79-71e27c18a1cd": {
+            "type": "slide",
+            "settings": {
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_leaf.jpg",
+              "slider_sub_title": "Cena",
+              "slider_sub_title_bold": "2.750 Kč",
+              "slider_sub_title_color": "#1d1d1d",
+              "slider_title1": "Přisazené svítidlo",
+              "slider_title2": "Leaf LED",
+              "slider_badge": "",
+              "badge_color": "",
+              "slider_title_color": "#1d1d1d",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "shopify:\/\/products\/leaf-led-nastenne-svitidlo",
+              "slider_content_position": "left",
+              "slider_text_position": "left"
+            }
+          },
           "2c4e6f44-084d-4684-8e2d-78a35b96f1ca": {
             "type": "slide",
             "settings": {
@@ -2282,6 +2300,7 @@
           }
         },
         "block_order": [
+          "db589e9a-486b-4931-8f79-71e27c18a1cd",
           "2c4e6f44-084d-4684-8e2d-78a35b96f1ca",
           "bb9fac8d-7e9a-4e7a-8f12-8301f02d2fed",
           "ca134d30-d1e7-4b2a-ad45-dcf05dfc6023",
