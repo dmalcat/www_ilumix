@@ -349,7 +349,7 @@
               
               {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity == 0 %}
               <span class="out-stock text-danger">
-                <span>{{ out_of_stock_message }}</i></span>
+                <span>{{ out_of_stock_message }}</span>
               </span>
               <span class="in-stock text-success">
                 <span>{{ in_stock_message }}</span>
@@ -364,7 +364,7 @@
               </span>
               {% else %}
               <span class="in-stock d-block text-success">
-                <span>{{ block.settings.in_stock_title }}</span>
+                <span>{{ out_of_stock_message }}</span>
               </span>
               {% endif %}
             </div>
