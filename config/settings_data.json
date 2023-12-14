@@ -380,9 +380,9 @@
           "header_main_menu_title": "Menu",
           "header_vega_menu": "",
           "header_vega_menu_title": "Top Categories",
-          "product_1": "dirk-s-zlate",
-          "product_2": "lua",
-          "product_3": ""
+          "product_1": "barth-led-prisazene-svitidlo",
+          "product_2": "ring-puck-led-prisazene-svitidlo-ip65",
+          "product_3": "dea-juno-m-cerna"
         }
       },
       "collection-template": {
@@ -486,33 +486,27 @@
         "blocks": {
           "1578114441052": {
             "type": "single_brand",
-            "settings": {
-            }
+            "settings": {}
           },
           "1578114454082": {
             "type": "single_brand",
-            "settings": {
-            }
+            "settings": {}
           },
           "1578114460303": {
             "type": "single_brand",
-            "settings": {
-            }
+            "settings": {}
           },
           "1578114465107": {
             "type": "single_brand",
-            "settings": {
-            }
+            "settings": {}
           },
           "1578114470202": {
             "type": "single_brand",
-            "settings": {
-            }
+            "settings": {}
           },
           "1593869320576": {
             "type": "single_brand",
-            "settings": {
-            }
+            "settings": {}
           }
         },
         "block_order": [
@@ -2208,6 +2202,60 @@
       "1614750626463e523c": {
         "type": "slider",
         "blocks": {
+          "db589e9a-486b-4931-8f79-71e27c18a1cd": {
+            "type": "slide",
+            "settings": {
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_leaf.jpg",
+              "slider_sub_title": "Cena",
+              "slider_sub_title_bold": "2.750 Kč",
+              "slider_sub_title_color": "#1d1d1d",
+              "slider_title1": "Přisazené svítidlo",
+              "slider_title2": "Leaf LED",
+              "slider_badge": "",
+              "badge_color": "",
+              "slider_title_color": "#1d1d1d",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "shopify:\/\/products\/leaf-led-nastenne-svitidlo",
+              "slider_content_position": "left",
+              "slider_text_position": "left"
+            }
+          },
+          "2c4e6f44-084d-4684-8e2d-78a35b96f1ca": {
+            "type": "slide",
+            "settings": {
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_BUICK.jpg",
+              "slider_sub_title": "Cena",
+              "slider_sub_title_bold": "2.580 Kč",
+              "slider_sub_title_color": "#1d1d1d",
+              "slider_title1": "Přisazené svítidlo",
+              "slider_title2": "Buick",
+              "slider_badge": "",
+              "badge_color": "",
+              "slider_title_color": "#1d1d1d",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "shopify:\/\/products\/buick-led-prisazene-svitidlo",
+              "slider_content_position": "left",
+              "slider_text_position": "left"
+            }
+          },
+          "21233350-8dee-40e2-8f30-b9a5c22f4468": {
+            "type": "slide",
+            "settings": {
+              "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_carambol_e1e1f6af-299c-4aed-9c9e-dd8d264a5d95.jpg",
+              "slider_sub_title": "Cena",
+              "slider_sub_title_bold": "od 3.950 Kč",
+              "slider_sub_title_color": "#1d1d1d",
+              "slider_title1": "Závěsné svítidlo",
+              "slider_title2": "Carambol LED",
+              "slider_badge": "",
+              "badge_color": "",
+              "slider_title_color": "#1d1d1d",
+              "slider_button": "Zobrazit produkt",
+              "slider_button_url": "shopify:\/\/products\/carambol-led-zavesne-svitidlo-ra-90",
+              "slider_content_position": "left",
+              "slider_text_position": "left"
+            }
+          },
           "bb9fac8d-7e9a-4e7a-8f12-8301f02d2fed": {
             "type": "slide",
             "settings": {
@@ -2215,7 +2263,7 @@
               "slider_sub_title": "Cena:",
               "slider_sub_title_bold": "od 3.630 Kč",
               "slider_sub_title_color": "#252525",
-              "slider_title1": "Přisazené svítidlo",
+              "slider_title1": "Nástěnné svítidlo",
               "slider_title2": "Superficie Arm",
               "slider_badge": "",
               "badge_color": "",
@@ -2264,12 +2312,14 @@
           }
         },
         "block_order": [
+          "db589e9a-486b-4931-8f79-71e27c18a1cd",
+          "2c4e6f44-084d-4684-8e2d-78a35b96f1ca",
+          "21233350-8dee-40e2-8f30-b9a5c22f4468",
           "bb9fac8d-7e9a-4e7a-8f12-8301f02d2fed",
           "ca134d30-d1e7-4b2a-ad45-dcf05dfc6023",
           "b2b230de-9ce3-4dc2-a873-9fef9cb04aba"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "161517747313d55e55": {
         "type": "banner-grid",
@@ -2281,15 +2331,15 @@
           "banner1_padding_bottom_ipad": 0,
           "banner1_padding_top_xs": 40,
           "banner1_padding_bottom_xs": 0,
-          "banner_img": "shopify:\/\/shop_images\/ilumix_eshop_banner_TANIA_T.jpg",
+          "banner_img": "shopify:\/\/shop_images\/360_banner_doporucujeme.jpg",
           "banner_txt_enable": true,
           "banner_sub_title": "Doporučujeme:",
-          "banner_sub_title_bold": "8.470 Kč",
-          "banner_title1": "Tania T Zlaté",
-          "banner_desc1": "<p>Kolekce Tania je tvořena závěsnými, nástěnnými a stolními svítidly navrženými v moderním stylu. <br\/>Je vyrobena z oceli a je k dispozici ve čtyřech barvách: měděné, černé, bílé a zlaté. <br\/>Nevyžaduje žádné pomocné vybavení a její instalace je velmi snadná. <br\/>Jsou to lehká svítidla a dodají interiéru nádech čerstvého vzduchu.<\/p>",
+          "banner_sub_title_bold": "od 3.550 Kč",
+          "banner_title1": "Conical LED",
+          "banner_desc1": "<p>Závěsné LED svítidlo Conical v designu širokého stínidla <br\/>s kuželovitou základnou ze které svítí světlo nahoru a dolu. <br\/>Conical představuje spojení kvality a moderní estetiky. <br\/>Kvalitně zpracované z hliníku, toto svítidlo je k dispozici ve dvou velikostech <br\/>a třech elegantních barvách - černé, bílé a zlaté. <br\/>Jeho design umožňuje efektivní rozptyl světla, <br\/>vytvářející tak příjemnou atmosféru v místnosti.<\/p>",
           "banner_desc2": "",
-          "banner_button_text": "Detail produktu",
-          "banner_url": "shopify:\/\/products\/tania-t-zlate"
+          "banner_button_text": "Zobrazit produkt",
+          "banner_url": "shopify:\/\/products\/conical-led-zavesne-svitidlo"
         }
       },
       "wishlist": {
@@ -2375,8 +2425,7 @@
           "32f65623-c433-41f5-ae7e-1c76df05e419",
           "fd866b27-2656-4367-9c05-96f6137e08b7"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "1654772701a0209f69": {
         "type": "bestsellers",
@@ -2387,9 +2436,9 @@
           "section_padding_bottom_lg": 40,
           "section_padding_top_xs": 40,
           "section_padding_bottom_xs": 0,
-          "section_sub_title": "Závěsná svítidla",
-          "section_title": "Top produkty",
-          "best_label_product": "zavesna-interierova-svitidla"
+          "section_sub_title": "Interiérová svítidla",
+          "section_title": "Novinky",
+          "best_label_product": "interierova-svitidla"
         }
       },
       "16551950844e66ffa0": {
@@ -2412,9 +2461,9 @@
           "section_padding_bottom_lg": 40,
           "section_padding_top_xs": 40,
           "section_padding_bottom_xs": 0,
-          "section_sub_title": "Přisazená svítidla",
-          "section_title": "Top produkty",
-          "best_label_product": "prisazena-interierova-svitidla"
+          "section_sub_title": "Interiérová svítidla",
+          "section_title": "Doporučujeme",
+          "best_label_product": "top-produkty"
         }
       },
       "1658755145eb79d41e": {
@@ -2441,8 +2490,7 @@
       "6858403126979251294": {
         "type": "shopify:\/\/apps\/eu-gdpr-cookies-notification\/blocks\/omega-cookies-notification\/13cba824-a338-452e-9b8e-c83046a79f21",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "6471712195879653093": {
         "type": "shopify:\/\/apps\/customer-accounts-concierge\/blocks\/social_logins\/3c495b68-652c-468d-a0ef-5bad6935d104",
@@ -2496,8 +2544,7 @@
       "14952540001915115444": {
         "type": "shopify:\/\/apps\/upcart-cart-drawer-cart-upsell\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },

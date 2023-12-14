@@ -1,1 +1,152 @@
-{"sections":{"contact-store-information":{"type":"contact-store-information","settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"contact_drop_title":"Kontaktujte nás","info_icon1":"","info_title1":"Jak vám můžeme pomoci?","info_link1":"Napište nám zprávu","info_icon2":"","info_title2":"Chcete se s námi spojit?","info_link2":"Zavolejte nám","info_icon3":"","info_title3":"Chcete poradit s projektem?","info_link3":"Jsme tu pro vás"}},"form-contact":{"type":"form-contact","settings":{"contact_us_padding_top":60,"contact_us_padding_bottom":60,"contact_us_padding_top_ipad":30,"contact_us_padding_bottom_ipad":30,"contact_us_padding_top_xs":20,"contact_us_padding_bottom_xs":20,"section_bg_color":"#f6f6f6","section_title":"Máte nějaké otázky?","section_des":"Pomocí níže uvedeného formuláře můžete kontaktovat náš prodejní tým","name_placeholder":"Vaše jméno","email_placeholder":"Vaše adresa","phone_placeholder":"Váš telefon","message_placeholder":"Zpráva...","form_button_name":"Odeslat zprávu","read_agree_text":"Souhlasím s podmínkami a beru na vědomí, že mé údaje budou bezpečně uchovávány v souladu se zásadami ochrany osobních údajů."}},"16593554135bab25c0":{"type":"contact-store-information","settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"contact_drop_title":"ILUMIX light s.r.o.","info_icon1":"","info_title1":"IČO \/ DIČ","info_link1":"06027342 \/ CZ06027342","info_icon2":"","info_title2":"Obchodní rejstřík","info_link2":"Složka C","info_icon3":"","info_title3":"Bankovní spojení","info_link3":"4444444\/444"}},"1659354960613a8bef":{"type":"our-team","blocks":{"e58475d5-d614-4e5d-882f-940f5cf82e3e":{"type":"our-vision","settings":{"member_name":"Michal Oláh","member_position":"Obchod","member_desc":""}},"b495b1aa-788a-4cc6-b62b-e0ff83e5ef20":{"type":"our-vision","settings":{"member_name":"Libor Jára","member_position":"Expedice","member_desc":""}},"27c363d9-2f80-424d-a15a-891f64fc237f":{"type":"our-vision","settings":{"member_name":"David Helebrant","member_position":"Reklamace","member_desc":""}}},"block_order":["e58475d5-d614-4e5d-882f-940f5cf82e3e","b495b1aa-788a-4cc6-b62b-e0ff83e5ef20","27c363d9-2f80-424d-a15a-891f64fc237f"],"settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"our_team_title":"Kdo jsme"}},"165935510288bdd92c":{"type":"contact-map2","settings":{"section_padding_top":100,"section_padding_bottom":0,"section_padding_top_ipad":60,"section_padding_bottom_ipad":0,"section_padding_top_xs":40,"section_padding_bottom_xs":0,"map_frame":"<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"450\" id=\"gmap_canvas\" src=\"https:\/\/maps.google.com\/maps?q=Hole%C4%8Dkova%20368\/4%20Karlovy%20Vary&t=&z=15&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"><\/iframe><a href=\"https:\/\/fmovies-online.net\">fmovies<\/a><br><style>.mapouter{position:relative;text-align:right;height:450px;}<\/style>\n<a href=\"https:\/\/www.embedgooglemap.net\">embed google maps in gmail<\/a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:600px;}<\/style>\n<\/div><\/div>","section_title":"Showroom ILUMIX light","info_icon1":"","info_title1":"Adresa","info_link1":"Holečkova 368\/4, Karlovy Vary","info_icon2":"","info_title2":"Telefon","info_link2":"+420 773 900 507","info_icon3":"","info_title3":"Email","info_link3":"info@ilumix.cz"}},"16593552863f06db3a":{"type":"about-modern-template1","settings":{"section_padding_top":100,"section_padding_bottom":100,"section_padding_top_lg":60,"section_padding_bottom_lg":60,"section_padding_top_xs":40,"section_padding_bottom_xs":40,"banner_title":"500+","banner_sub_title":"úspěšně dokončených projektů","about_title":"ILUMIX light","about_des1":"Společnost ILUMIX light s.r.o. a její team, se zabývá prodejem osvětlení a veškerou činností spojenou s osvětlovací technikou již od roku 2010. Naší hlavní specializací jsou návrhy a realizace průmyslového, technického osvětlení. Nově pro Vás máme také eshop s designovým osvětlením, kde naleznete ekluzivně přední evropské návrháře, s kterými úzce spoluprace několik let. Již od začátku našeho působení, bylo naším hlavním cílem poskytovat produkty, které splňují nejvyšší nároky na kvalitu a efektivnost. A to je stále naší největší prioritou. Každý projekt je pro nás výzvou a žádný zákazník pro nás není malý. Každoročně prodáme přes více než 40.000 svítidel po celém území EU. Portfolio našich produktů zahrnuje to nejlepší ze světové produkce.","about_des2":"The background of several generations of shoemaking within the company was the ground for a versatile collection of styles."}}},"order":["contact-store-information","form-contact","16593554135bab25c0","1659354960613a8bef","165935510288bdd92c","16593552863f06db3a"]}
+{
+  "sections": {
+    "contact-store-information": {
+      "type": "contact-store-information",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "contact_drop_title": "Kontaktujte nás",
+        "info_icon1": "",
+        "info_title1": "Jak vám můžeme pomoci?",
+        "info_link1": "Napište nám zprávu",
+        "info_icon2": "",
+        "info_title2": "Chcete se s námi spojit?",
+        "info_link2": "Zavolejte nám",
+        "info_icon3": "",
+        "info_title3": "Chcete poradit s projektem?",
+        "info_link3": "Jsme tu pro vás"
+      }
+    },
+    "form-contact": {
+      "type": "form-contact",
+      "settings": {
+        "contact_us_padding_top": 60,
+        "contact_us_padding_bottom": 60,
+        "contact_us_padding_top_ipad": 30,
+        "contact_us_padding_bottom_ipad": 30,
+        "contact_us_padding_top_xs": 20,
+        "contact_us_padding_bottom_xs": 20,
+        "section_bg_color": "#f6f6f6",
+        "section_title": "Máte nějaké otázky?",
+        "section_des": "Pomocí níže uvedeného formuláře můžete kontaktovat náš prodejní tým",
+        "name_placeholder": "Vaše jméno",
+        "email_placeholder": "Vaše adresa",
+        "phone_placeholder": "Váš telefon",
+        "message_placeholder": "Zpráva...",
+        "form_button_name": "Odeslat zprávu",
+        "read_agree_text": "Souhlasím s podmínkami a beru na vědomí, že mé údaje budou bezpečně uchovávány v souladu se zásadami ochrany osobních údajů."
+      }
+    },
+    "16593554135bab25c0": {
+      "type": "contact-store-information",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "contact_drop_title": "ILUMIX light s.r.o.",
+        "info_icon1": "",
+        "info_title1": "IČO \/ DIČ",
+        "info_link1": "06027342 \/ CZ06027342",
+        "info_icon2": "",
+        "info_title2": "Obchodní rejstřík",
+        "info_link2": "Složka C",
+        "info_icon3": "",
+        "info_title3": "Bankovní spojení",
+        "info_link3": "4444444\/444"
+      }
+    },
+    "1659354960613a8bef": {
+      "type": "our-team",
+      "blocks": {
+        "e58475d5-d614-4e5d-882f-940f5cf82e3e": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Michal Oláh",
+            "member_position": "Obchod"
+          }
+        },
+        "b495b1aa-788a-4cc6-b62b-e0ff83e5ef20": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "Libor Jára",
+            "member_position": "Expedice"
+          }
+        },
+        "27c363d9-2f80-424d-a15a-891f64fc237f": {
+          "type": "our-vision",
+          "settings": {
+            "member_name": "David Helebrant",
+            "member_position": "Reklamace"
+          }
+        }
+      },
+      "block_order": [
+        "e58475d5-d614-4e5d-882f-940f5cf82e3e",
+        "b495b1aa-788a-4cc6-b62b-e0ff83e5ef20",
+        "27c363d9-2f80-424d-a15a-891f64fc237f"
+      ],
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "our_team_title": "Kdo jsme"
+      }
+    },
+    "165935510288bdd92c": {
+      "type": "contact-map2",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 0,
+        "section_padding_top_ipad": 60,
+        "section_padding_bottom_ipad": 0,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 0,
+        "map_frame": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"450\" id=\"gmap_canvas\" src=\"https:\/\/maps.google.com\/maps?q=Hole%C4%8Dkova%20368\/4%20Karlovy%20Vary&t=&z=15&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"><\/iframe><a href=\"https:\/\/fmovies-online.net\">fmovies<\/a><br><style>.mapouter{position:relative;text-align:right;height:450px;}<\/style>\n<a href=\"https:\/\/www.embedgooglemap.net\">embed google maps in gmail<\/a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:600px;}<\/style>\n<\/div><\/div>",
+        "section_title": "Showroom ILUMIX light",
+        "info_icon1": "",
+        "info_title1": "Adresa",
+        "info_link1": "Holečkova 368\/4, Karlovy Vary",
+        "info_icon2": "",
+        "info_title2": "Telefon",
+        "info_link2": "+420 773 900 507",
+        "info_icon3": "",
+        "info_title3": "Email",
+        "info_link3": "info@ilumix.cz"
+      }
+    },
+    "16593552863f06db3a": {
+      "type": "about-modern-template1",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "banner_title": "500+",
+        "banner_sub_title": "úspěšně dokončených projektů",
+        "about_title": "ILUMIX light",
+        "about_des1": "Společnost ILUMIX light s.r.o. a její team, se zabývá prodejem osvětlení a veškerou činností spojenou s osvětlovací technikou již od roku 2010. Naší hlavní specializací jsou návrhy a realizace průmyslového, technického osvětlení. Nově pro Vás máme také eshop s designovým osvětlením, kde naleznete ekluzivně přední evropské návrháře, s kterými úzce spoluprace několik let. Již od začátku našeho působení, bylo naším hlavním cílem poskytovat produkty, které splňují nejvyšší nároky na kvalitu a efektivnost. A to je stále naší největší prioritou. Každý projekt je pro nás výzvou a žádný zákazník pro nás není malý. Každoročně prodáme přes více než 40.000 svítidel po celém území EU. Portfolio našich produktů zahrnuje to nejlepší ze světové produkce.",
+        "about_des2": "The background of several generations of shoemaking within the company was the ground for a versatile collection of styles."
+      }
+    }
+  },
+  "order": [
+    "contact-store-information",
+    "form-contact",
+    "16593554135bab25c0",
+    "1659354960613a8bef",
+    "165935510288bdd92c",
+    "16593552863f06db3a"
+  ]
+}

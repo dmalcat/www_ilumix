@@ -283,7 +283,7 @@ timber.productPage = function (options) {
         $productSelectoption.each(function() {
           if($(this).val() == variant.id) {
             var in_stocks = $(this).attr('data-stocks');
-            if(in_stocks == 0) {
+            if(in_stocks <= 0) {
               $stockzero.show();
               $stockmore.hide();
               $availablestock.text(in_stocks);

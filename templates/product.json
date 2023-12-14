@@ -5,8 +5,7 @@
       "blocks": {
         "title_wrap": {
           "type": "title_wrap",
-          "settings": {
-          }
+          "settings": {}
         },
         "495fc553-1e36-4d91-be60-08907eb74999": {
           "type": "product_variant_picker",
@@ -110,7 +109,7 @@
         "related_padding_bottom_ipad": 30,
         "related_padding_top_xs": 0,
         "related_padding_bottom_xs": 10,
-        "related_title": "Podobné produkty"
+        "related_title": "Mohlo by se Vám také líbit"
       }
     },
     "16545024540f92bb28": {
