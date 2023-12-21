@@ -1290,17 +1290,16 @@ $(".pp-swatch").insertAfter(".swatch-custom-container");
       const targetElement = document.getElementById(targetId);
   
       // Pokud cílový prvek existuje
-    if (targetElement) {
-      // Změníme stav zobrazení/skrytí na základě aktuálního stavu
-      targetElement.classList.toggle('hidden');
-
-      // Změníme ikonu otazníku na křížek a zpět
-      const otherTrigger = document.querySelector(`[data-target="${targetId}${trigger.classList.contains('hidden') ? '' : '-close'}"]`);
-      if (otherTrigger) {
-        trigger.classList.toggle('hidden');
-        otherTrigger.classList.toggle('hidden');
-      }
-    
+      if (targetElement) {
+        // Zjistíme, zda je momentálně skrytý
+        const isHidden = targetElement.classList.contains('hidden');
+  
+        // Změníme stav zobrazení/skrytí na základě aktuálního stavu
+        if (isHidden) {
+          targetElement.classList.remove('hidden');
+        } else {
+          targetElement.classList.add('hidden');
+        }
       }
     });
   });
