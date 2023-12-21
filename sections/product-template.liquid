@@ -430,7 +430,13 @@
                   {% if product.metafields.custom.varianta_montaze %}
                     <tr class="technic-row">
                       <td class="technic-title">Varianta montáže</td>
-                      <td class="technic-value">{{ product.metafields.custom.varianta_montaze }}</td>
+                      <td class="technic-value">
+                        <ul>
+                          {% for value in product.metafields.custom.varianta_montaze %}
+                            <li>{{ value }}</li>
+                          {% endfor %}
+                        </ul>
+                      </td>
                     </tr>
                   {% endif %}
                   {% if product.metafields.custom.stupen_kryti %}
