@@ -514,7 +514,13 @@
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.barevna_teplota %}
                       <tr class="technic-row barva-varianty" id="{{ variant.id }}6" style="display:none;">
-                        <td class="technic-title">Barevná teplota</td>
+                        <td class="technic-title">
+                          Barevná teplota
+                          <span class="explenation">
+                            <span class="explenation__trigger">?</span>
+                            <span class="explenation__copy"></span>
+                          </span>
+                        </td>
                         <td class="technic-value variant-barva">{{ variant.metafields.custom.barevna_teplota }}</td>
                       </tr>
                       {% endif %}
@@ -2742,6 +2748,16 @@ div.swatch-custom-container > div > div > div > a:nth-child(2) > label{
   }
   .thumbnail-img2{
     cursor:pointer;
+  }
+
+  .explanation {
+    
+  }
+
+  .explanation .explanation__trigger {
+    border: 1px solid #6f6f6f;
+    border: radius: 50%;
+    padding: 3px;
   }
 </style>
 {%- assign wcp_prd_var = product -%}
