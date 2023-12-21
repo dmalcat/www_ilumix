@@ -668,7 +668,7 @@
           {% endfor %}
           {% for variant in product.variants %}
             {% if variant.metafields.custom.visual_model.value.url %}
-              <p class="variant-visual-model" style="display:none;" id="{{ variant.id }}7"><span>{{section.settings.visual_model }}</span> <a href="{{ variant.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+              <p class="variant-visual-model" style="display:none;" id="{{ variant.id }}7"><span>{{ section.settings.visual_model }}</span> <a href="{{ variant.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
             {% endif %}
             
           {% endfor %}
