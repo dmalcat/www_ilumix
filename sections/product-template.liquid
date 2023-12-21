@@ -461,16 +461,24 @@
                       <td class="technic-value">{{ product.metafields.custom.typ_svetelneho_zdroje }}</td>
                     </tr>
                   {% endif %}
-                  {% for variant in product.variants %}
-                    {% if variant.metafields.custom.vykon %}
-                      <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
-                        <td class="technic-title">Výkon a</td>
-                        <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
-                      </tr>
+                  
+                  {% if product.variants.size > 1 %}
+                    {% for variant in product.variants %}
+                      {% if variant.metafields.custom.vykon %}
+                        <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
+                          <td class="technic-title">Výkon</td>
+                          <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
+                        </tr>
                       {% endif %}
                     {% endfor %}
-
-                  
+                  {% else %}
+                    {% if variant.metafields.custom.vykon %}
+                        <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
+                          <td class="technic-title">Výkon</td>
+                          <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
+                        </tr>
+                      {% endif %}
+                  {% endif %}
 
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
