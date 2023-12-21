@@ -648,8 +648,8 @@
           {% if product.metafields.my_fields.data_sheet.value.url %}
             <p><span>{{section.settings.sheet }}</span> <a href="{{ product.metafields.my_fields.data_sheet.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
           {% endif %}
-          {% if product.metafields.my_fields.visual_model.value.url %}
-            <p><span>{{section.settings.visual_model }}</span> <a href="{{ product.metafields.my_fields.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+          {% if product.metafields.custom.visual_model.value.url %}
+            <p><span>{{section.settings.visual_model }}</span> <a href="{{ product.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
           {% endif %}
 {%- comment -%}
           {% for variant in product.variants %}
