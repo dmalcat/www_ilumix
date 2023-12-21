@@ -462,22 +462,20 @@
                     </tr>
                   {% endif %}
                   
-                  {% if product.has_only_default_variant %}
+                  {% for variant in product.variants %}
                     {% if variant.metafields.custom.vykon %}
-                        <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
-                          <td class="technic-title">Výkon</td>
-                          <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
-                        </tr>
-                      {% endif %}
-                  {% else %}
-                    {% for variant in product.variants %}
-                      {% if variant.metafields.custom.vykon %}
-                        <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
-                          <td class="technic-title">Výkon</td>
-                          <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
-                        </tr>
+                      <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
+                        <td class="technic-title">Výkon</td>
+                        <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
+                      </tr>
                       {% endif %}
                     {% endfor %}
+
+                  {% if product.metafields.custom.vykon %}
+                    <tr class="technic-row">
+                      <td class="technic-title">Výkon</td>
+                      <td class="technic-value">{{ product.metafields.custom.vykon }}</td>
+                    </tr>
                   {% endif %}
                     
                   {% for variant in product.variants %}
