@@ -517,8 +517,8 @@
                         <td class="technic-title">
                           Barevná teplota
                           <span class="explanation">
-                            <span class="explanation__trigger">?</span>
-                            <span class="explanation__copy"><strong>Barevná teplota</strong>, odborně <strong>teplota chromatičnosti</strong>, je vyjádření barvy, kterou vyzařuje dané svítidlo. Na rozdíl od běžných svítidel je poměrně těžké určit teplotu chromatičnosti LED svítidel – proto se většinou udává rozsah, ve kterém LED žárovka svítí.</span>
+                            <span class="explanation__trigger" tabindex>?</span>
+                            <span class="explanation__copy" ><strong>Barevná teplota</strong>, odborně <strong>teplota chromatičnosti</strong>, je vyjádření barvy, kterou vyzařuje dané svítidlo. Na rozdíl od běžných svítidel je poměrně těžké určit teplotu chromatičnosti LED svítidel – proto se většinou udává rozsah, ve kterém LED žárovka svítí.</span>
                           </span>
                         </td>
                         <td class="technic-value variant-barva">{{ variant.metafields.custom.barevna_teplota }}</td>
@@ -2768,6 +2768,15 @@ div.swatch-custom-container > div > div > div > a:nth-child(2) > label{
     margin-left: 5px;
   }
   
+  .explanation .explanation__trigger:hover {
+    background-color: #6f6f6f;
+    color: #fff;
+  }
+
+  .explanation .explanation__trigger:focus {
+    color: red;
+  }
+
   .explanation .explanation__trigger:hover {
     background-color: #6f6f6f;
     color: #fff;
