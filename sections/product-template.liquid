@@ -518,6 +518,7 @@
                           Barevná teplota
                           <span class="explanation">
                             <span class="explanation__trigger" data-target="expl-barevna-teplota">?</span>
+                            <span class="explanation__trigger hidden" data-target="expl-barevna-teplota-close">×</span>
                             <span class="explanation__copy hidden" id="expl-barevna-teplota"><strong>Barevná teplota</strong>, odborně <strong>teplota chromatičnosti</strong>, je vyjádření barvy, kterou vyzařuje dané svítidlo. Na rozdíl od běžných svítidel je poměrně těžké určit teplotu chromatičnosti LED svítidel – proto se většinou udává rozsah, ve kterém LED žárovka svítí.</span>
                           </span>
                         </td>
@@ -1293,6 +1294,13 @@ $(".pp-swatch").insertAfter(".swatch-custom-container");
       if (targetElement) {
         // Změníme stav zobrazení/skrytí na základě aktuálního stavu
         targetElement.classList.toggle('hidden');
+  
+        // Změníme ikonu otazníku na křížek
+        trigger.classList.toggle('hidden');
+        const closeTrigger = document.querySelector(`[data-target="${targetId}-close"]`);
+        if (closeTrigger) {
+          closeTrigger.classList.toggle('hidden');
+        }
       }
     });
   });
