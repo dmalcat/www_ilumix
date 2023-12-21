@@ -470,12 +470,7 @@
                       {% endif %}
                     {% endfor %}
 
-                  {% if product.metafields.custom.vykon %}
-                    <tr class="technic-row">
-                      <td class="technic-title">Výkon</td>
-                      <td class="technic-value">{{ product.metafields.custom.vykon }}</td>
-                    </tr>
-                  {% endif %}
+                  
 
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
