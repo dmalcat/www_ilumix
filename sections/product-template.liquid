@@ -462,7 +462,14 @@
                     </tr>
                   {% endif %}
                   
-                  {% if product.variants.size > 1 %}
+                  {% if product.has_only_default_variant %}
+                    {% if variant.metafields.custom.vykon %}
+                        <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
+                          <td class="technic-title">Výkon</td>
+                          <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
+                        </tr>
+                      {% endif %}
+                  {% else %}
                     {% for variant in product.variants %}
                       {% if variant.metafields.custom.vykon %}
                         <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
@@ -471,15 +478,8 @@
                         </tr>
                       {% endif %}
                     {% endfor %}
-                  {% else %}
-                    {% if variant.metafields.custom.vykon %}
-                        <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
-                          <td class="technic-title">Výkon</td>
-                          <td class="technic-value variant-vykon">{{ variant.metafields.custom.vykon }}</td>
-                        </tr>
-                      {% endif %}
                   {% endif %}
-
+                    
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
                       <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
