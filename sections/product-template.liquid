@@ -431,11 +431,9 @@
                     <tr class="technic-row">
                       <td class="technic-title">Varianta montáže</td>
                       <td class="technic-value">
-                        <ul>
-                          {% for value in product.metafields.custom.varianta_montaze %}
-                            <li>{{ value }}</li>
-                          {% endfor %}
-                        </ul>
+                        {% for value in product.metafields.custom.varianta_montaze %}
+                            <span>{{ value }}</span>
+                        {% endfor %}
                       </td>
                     </tr>
                   {% endif %}
