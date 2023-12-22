@@ -32,10 +32,10 @@ Akce
         <div class="variant-badge"><p>Více variant</p></div>
         {%- endif -%}
         
-        {% assign colorVariant = product.metafields.my_fields.color_swatche %}
+        {% assign countColorVariant = product.metafields.my_fields.color_swatche %}
         {% assign count = 0 %}
 
-        {% for item in colorArr %}
+        {% for item in countColorVariant %}
             {% assign count = count | plus: 1 %}
             {{ count }}
         {% endfor %}
