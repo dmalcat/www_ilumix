@@ -286,7 +286,7 @@
                 {{ product.description }}
 
                 {% if product.metafields.my_fields.nadpis_u_obr_zku_1 or product.metafields.my_fields.text_u_obr_zku_1 or product.metafields.my_fields.obr_zek_1 or product.metafields.my_fields.nadpis_u_obr_zku_2 or product.metafields.my_fields.text_u_obr_zku_1 or product.metafields.my_fields.obr_zek_2 %}
-                  <a href="#more-info">Více </a>
+                  <a class="product-desc__moreinfo" href="#more-info">Více </a>
                 {% endif %}
               </div>
             {%- when 'short_description' -%}
@@ -2833,6 +2833,11 @@ div.swatch-custom-container > div > div > div > a:nth-child(2) > label{
   .explanation .explanation__copy.hidden,
   .explanation .explanation__trigger.hidden {
     display: none;
+  }
+
+  .product-desc__moreinfo {
+    display: block;
+    margin-top: 10px;
   }
 </style>
 {%- assign wcp_prd_var = product -%}
