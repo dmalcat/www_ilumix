@@ -32,19 +32,11 @@ Akce
         <div class="variant-badge"><p>Více variant</p></div>
         {%- endif -%}
         
-        {% comment %}
-        {% assign countColorVariant = product.metafields.my_fields.color_swatche %}
-        {% assign countColors = 0 %}
-
-        {% for item in countColorVariant %}
-            {% assign countColors = countColors | plus: 1 %}
-        {% endfor %}
-
-        {% if countColors.size > 2 %}
+        {% assign countColorVariant = product.metafields.my_fields.color_swatche.value %}
+        
+        {% if countColorVariant.size > 1 %} 
             <div class="variant-badge variant-badge--color"><p>Více barev</p></div>
         {% endif %}
-
-        {% endcomment %}
 
         <a class="pro-img" href="{{ product.url | within: collection }}">
             <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '415X560', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
