@@ -29,7 +29,7 @@ Akce
 {% endif %}
     <div class="product-image {% unless product.available %}stock-out{% endunless %}">
         {%- if product.variants.size > 1 -%}
-        <div class="variant-badge"><p>Více variant</p></div>
+        <div class="variant-badge"><p>Více varian</p></div>
         {%- endif -%}
         <a class="pro-img" href="{{ product.url | within: collection }}">
             <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '415X560', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
