@@ -516,10 +516,12 @@
                       <tr class="technic-row barva-varianty" id="{{ variant.id }}6" style="display:none;">
                         <td class="technic-title">
                           Barevná teplota
+                          {% comment %}
                           <span class="explanation">
                             <span class="explanation__trigger" data-target="expl-barevna-teplota">?</span>
                             <span class="explanation__copy hidden" id="expl-barevna-teplota"><strong>Barevná teplota</strong>, odborně <strong>teplota chromatičnosti</strong>, je vyjádření barvy, kterou vyzařuje dané svítidlo. Na rozdíl od běžných svítidel je poměrně těžké určit teplotu chromatičnosti LED svítidel – proto se většinou udává rozsah, ve kterém LED žárovka svítí.</span>
                           </span>
+                          {% endcomment %}
                         </td>
                         <td class="technic-value variant-barva">{{ variant.metafields.custom.barevna_teplota }}</td>
                       </tr>
