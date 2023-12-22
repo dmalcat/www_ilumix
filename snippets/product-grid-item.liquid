@@ -33,14 +33,13 @@ Akce
         {%- endif -%}
         
         {% assign countColorVariant = product.metafields.my_fields.color_swatche %}
-        {% assign count = 0 %}
+        {% assign countColors = 0 %}
 
         {% for item in countColorVariant %}
-            {% assign count = count | plus: 1 %}
-            {{ count }}
+            {% assign countColors = countColors | plus: 1 %}
         {% endfor %}
 
-        {% if count.size > 2 %}
+        {% if countColors.size > 2 %}
             <div class="variant-badge variant-badge--color"><p>Více barev</p></div>
         {% endif %}
 
