@@ -43,7 +43,7 @@ Akce
         {% if count.size > 1 %}
             <div class="variant-badge"><p>Více barev</p></div>
         {% else %}
-            <div class="variant-badge"><p>Jedna barva</p></div>
+            <div class="variant-badge variant-badge--color"><p>Jedna barva</p></div>
         {% endif %}
 
         <a class="pro-img" href="{{ product.url | within: collection }}">
@@ -176,6 +176,16 @@ Akce
             width: 100%;
         }
     }
+
+    .variant-badge--color {
+      top: 5px;
+    }
+
+    .variant-badge + .variant-badge--color {
+      top: 29px;
+    }
+
+  
     
 </style>
 {%- assign wcp_prd_var = product -%}
