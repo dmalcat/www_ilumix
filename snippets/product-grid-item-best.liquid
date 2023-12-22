@@ -15,6 +15,11 @@
 {%- endif -%}
 <div class="single-product-wrap {% unless product.available %}stock-out{% endunless %}">
     <div class="product-image product-best__big{% unless product.available %}stock-out{% endunless %}">
+        {% assign countColorVariant = product.metafields.my_fields.color_swatche.value %}
+        
+        {% if countColorVariant.size > 1 %} 
+            <div class="variant-badge variant-badge--color"><p>Více barev</p></div>
+        {% endif %}
         {%- if product.variants.size > 1 -%}
         <div class="variant-badge"><p>Více variant</p></div>
         {%- endif -%}
