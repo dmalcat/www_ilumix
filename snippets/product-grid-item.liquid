@@ -34,6 +34,8 @@ Akce
         
         {% if product.options contains 'Color' %}
           <div class="variant-badge"><p>Více barev</p></div>
+        {% else %}
+          <div class="variant-badge"></div>
         {% endif %}
 
         <a class="pro-img" href="{{ product.url | within: collection }}">
