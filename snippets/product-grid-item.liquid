@@ -32,10 +32,18 @@ Akce
         <div class="variant-badge"><p>Více variant</p></div>
         {%- endif -%}
         
-        {% if product.options contains 'Color' %}
-          <div class="variant-badge"><p>Více barev</p></div>
+        {% assign colorVariant = product.metafields.my_fields.color_swatche %}
+        {% assign count = 0 %}
+
+        {% for item in colorArr %}
+            {% assign count = count | plus: 1 %}
+            {{ count }}
+        {% endfor %}
+
+        {% if count.size > 1 %}
+            <div class="variant-badge"><p>Více barev</p></div>
         {% else %}
-          
+            <div class="variant-badge"><p>Jedna barva</p></div>
         {% endif %}
 
         <a class="pro-img" href="{{ product.url | within: collection }}">
