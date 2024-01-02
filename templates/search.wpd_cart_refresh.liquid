@@ -84,7 +84,8 @@
 			"title": {{ item.title | json }},
 			"image": {{ item.image | img_url: '300x' | json }},
         	"singlePrice": {{ singlePrice | json}},
-          	"singleCompareAtPrice": {{ singleCompareAtPrice | json }}
+          	"singleCompareAtPrice": {{ singleCompareAtPrice | json }},
+			"sku": {{ item.sku | json }}
         }
 	 {% unless forloop.last%},{%endunless%}
       {% else %}
@@ -117,7 +118,8 @@
 			"title": {{ item.title | json }},
 			"image": {{ item.image | img_url: '300x' | json }},
             "singlePrice": {{ singlePrice | json}},
-          	"singleCompareAtPrice": {{ singleCompareAtPrice | json }}
+          	"singleCompareAtPrice": {{ singleCompareAtPrice | json }},
+			"sku": {{ item.sku | json }}
         }
     	{% unless forloop.last%},{%endunless%}
      {% endif %}

@@ -60,6 +60,7 @@
 	,"productDefaultVariantCompareAtPrice":{{productDefaultVariantCompareAtPrice | json}}
 	,"productDefaultVariantRawPrice": "{{productDefaultVariantRawPrice}}"
 	,"productDefaultVariantCompareAtRawPrice": "{{productDefaultVariantCompareAtRawPrice}}"
+    ,"productDefaultVariantSku": "{{ product.selected_or_first_available_variant.sku }}"
 	,"wholeVdData": {{ wcp_vd_HTML_table_tmp | json }}
     ,"productVariants":
         [
@@ -94,6 +95,9 @@
             ,"variantRawCompareAtPrice":"{{variantRawCompareAtPrice}}"            
             ,"variantImg": [{ "variantImages": {{ variantThumbURL | json }}}]
 			,"variantAvailable" : "{{ variant.available}}"
+            ,"variantInventory" : "{{ variant.inventory_quantity }}"
+            ,"variantInventoryManagement" : "{{ variant.inventory_management }}"
+            ,"variantInventoryPolicy" : "{{ variant.inventory_policy }}"
           }
           {% unless forloop.last %},{% endunless %}
           {% endfor %}

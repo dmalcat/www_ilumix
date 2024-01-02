@@ -40,7 +40,15 @@
   {% if v_discount_tag %}
     {% for sp in set_prices_array %}
       {% assign sp_arr = sp | split: '--' %}
-      {% assign sp_tag = sp_arr | first %}
+      
+      {% assign sp_arr_length = sp_arr | size %}
+      {% if sp_arr_length > 2 %}
+        {% assign sp_tag_removable_key = sp_arr.last | prepend: '--' %}
+        {% assign sp_tag = sp | remove_last: sp_tag_removable_key %}
+      {% else %}
+       {% assign sp_tag = sp_arr | first %}      
+      {% endif %}
+
       {% assign sp_tag = sp_tag | downcase %}        
         {% if customer_tags contains sp_tag and active_discount_keys contains sp_tag  %}          
           {% assign sp_var_arr = sp_arr | last | split: '^' %}

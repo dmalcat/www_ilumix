@@ -428,6 +428,17 @@
     from {-webkit-transform: rotate(0deg);}
     to {-webkit-transform: rotate(360deg);}
   }
+  #wpdShippingRateContainer{
+    display:flex;
+    gap:16px;
+    margin-bottom:10px;
+  }
+  #wpdFetchShippingRates{
+    min-width:180px;
+  }
+  #wpdShippingRates{
+    margin:0 !important;
+  }
 </style>
   <div id='wcp-wcpModal-container' style='display:none;' class='wcp-wrap wcp-hero-wcpModal'>
   <h3 style="font-weight:bold;font-size:22px;">{{shop.metafields.wcp_net.netConfMsg}}</h3>
@@ -654,6 +665,13 @@ function billingAddressManager()
     </div>
       
     </div>
+          {% if shop.metafields.wcp_net.isNetShippingsCost == "2" %} 
+            <div class='wcp_extraFied' id="wpdShippingRateContainer">
+              <select id="wpdShippingRates"><option value="-1">Fetch shipping rates</option></select>
+              <button id="wpdFetchShippingRates" type="button">Fetch shipping rates</button>
+            </div>
+          {% endif %}
+  
           <button id="wpd-net-place-order" type="submit">
           <div class="wpd-loader-wrapper"><div class="wpd-show-loader-spinner"></div></div>                
           <span class="wpd-button-text"><span class="wpd-loader-button-label">Place Order</span></span>  
@@ -667,6 +685,127 @@ function billingAddressManager()
   <script>
     new Shopify.CountryProvinceSelector('billingAddressCountry', 'billingAddressProvince',{ hideElement: 'billingAddressProvinceContainer' });
     new Shopify.CountryProvinceSelector('AddressCountry', 'AddressProvince',{ hideElement: 'AddressProvinceContainer' });
+    
+    {% if shop.metafields.wcp_net.isNetShippingsCost == "2" %} 
+      window.WPDFormValid = false;
+      window.WPDRatesFound = false;
+      window.wpdMoneyFormat = '{{ shop.money_format }}';
+      document.getElementById("wpdFetchShippingRates").addEventListener("click", function(event) {
+        this.disabled = true;
+        wpdPrepareShippingRates();
+        let asyncCallCounter = 0;
+        fetchRatesInterval = setInterval(() => {
+          if (window.WPDFormValid && !window.WPDRatesFound) {
+            if(asyncCallCounter > 5 && (window.fetchRateCallCount == undefined ||  window.fetchRateCallCount < 5) ){
+              if(window.fetchRateCallCount == undefined){
+                window.fetchRateCallCount = 0;
+              }else{
+                window.fetchRateCallCount++;
+              }
+              clearInterval( fetchRatesInterval );
+              this.click();
+              return;
+            }
+            wpdAsyncShippingRates();
+            asyncCallCounter++;
+          }
+        }, 500);
+      });
+      function wpdGetNetOrderAddress() {
+        const formElement = document.querySelector("#net-order-form");
+        const formData = new FormData(formElement);
+        const shippingFormData = Array.from(formData).filter(
+          (data) => data[0].includes("wcpaddress")
+        );
+    
+        return new URLSearchParams(shippingFormData).toString();
+      }
+  
+      function wpdGetShippingAddress() {
+        const wcpAddress = wpdGetNetOrderAddress();
+        return wcpAddress.replaceAll("wcpaddress", "shipping_address");
+      }
+      
+      function wpdPrepareShippingRates() {
+        const shippingAddress = wpdGetShippingAddress();
+        fetch(`/cart/prepare_shipping_rates.json?${shippingAddress}`, {
+          method: "POST",
+        }).then(async (r) => {
+          document.getElementById("wpdFetchShippingRates").disabled = false;
+          if (r.status === 422) {
+            const json = await r.json();
+              document.getElementById("wpdShippingRates").innerHTML = `<option>${Object.values(
+              json
+            )
+              .map((err) => err[0])
+              .join("</option><option>")}</option>`;
+          }
+    
+          if (r.status === 202) {
+            window.WPDFormValid = true;
+            window.WPDRatesFound = false;
+          }
+        });
+      }
+  
+      function wpdAsyncShippingRates() {
+        const shippingAddress = wpdGetShippingAddress();
+        fetch(`/cart/async_shipping_rates.json?${shippingAddress}`).then(
+          async (r) => {
+            if (r.status === 200) {
+              window.WPDRatesFound = true;
+              const json = await r.json();
+              if (!json || !json.shipping_rates.length) {
+                document.getElementById("wpdShippingRates").innerHTML = `<option>-- No eligible shipping methods found --</option>`;
+                return;
+              }
+    
+              document.getElementById("wpdShippingRates").innerHTML = `<option>-- Select a shipping --</option>`;
+    
+              json.shipping_rates.map((rate) => {
+                const option = document.createElement("option");
+                option.value = `${rate.presentment_name}:${rate.price}`;
+                option.setAttribute("data-rate",`${rate.price}`);
+                option.setAttribute("data-name",`${rate.presentment_name}`);
+                option.innerHTML = `${rate.presentment_name} @${wpdFormatAmount(
+                  rate.price
+                )}`;
+                document.getElementById("wpdShippingRates").appendChild(option);
+              });
+            }else if( r.status !== 202){
+              document.getElementById("wpdShippingRates").innerHTML = `<option>-- No eligible shipping methods found --</option>`;
+            }
+          }
+        );
+      }
+      function wcpAddShippingToWcpData(event) {
+        const selectedShipping = event.target.value;
+        if (!selectedShipping) {
+          wcpClearIntegrationShipping();
+          return;
+        }
+        let selectedOption = event.target.options[event.target.selectedIndex];        
+        const title = selectedOption.getAttribute("data-name");
+        const price = selectedOption.getAttribute("data-rate");
+        if (title == null || price == null) {
+          wcpClearIntegrationShipping();
+          return;
+        }
+        if (!window.wcp_data) {
+          return;
+        }
+        window.wcp_data.integrationShipping = {title,price};
+      }
+      function wcpClearIntegrationShipping() {
+        try {
+          delete window.wcp_data.integrationShipping;
+        } catch (e) {}
+      }
+      function wpdFormatAmount(amount){
+        return window.wpdMoneyFormat.replace("{% raw %}{{amount}}{% endraw %}",amount);
+      }
+      document.getElementById("wpdShippingRates").addEventListener("change",wcpAddShippingToWcpData);
+    {% endif %}
   </script>
 {% if shop.metafields.wcp_net.isdisplayDate == 'true' or shop.metafields.wcp_net.isdisplayDate == '1' %}
 <script>

@@ -11,6 +11,7 @@
   }else{
     Wpd_domain = window.wpd_domain_url;
   }
+var wpdNetVersion = 1;
 (function(window, document) {"use strict";
 
 function setCookie(cname, cvalue, exdays) {
@@ -123,6 +124,11 @@ reqJquery(function($){
             } 
         });  
   {% endif %}
+
+   document.addEventListener('DOMContentLoaded', function(){
+     if(document.querySelector("#wpdNetMainContainer") != null){wpdNetVersion = 2;}
+   });
+  
   function wcpolesaleCheckout(){
     if(draftAPIRequestProcessing == true){return false;}
     draftAPIRequestProcessing = true;
@@ -239,12 +245,18 @@ reqJquery(function($){
               },window.wpd_checkout_redirect_delay);
             } else {
               wcpClearCart();
+              draftAPIRequestProcessing = false;
               window.location.href = "/checkout";               
             }
           }       
+        },
+        error: function (jqXHR, exception) {
+          draftAPIRequestProcessing = false;
+          alert("Something went wrong while placing this order!");
         }
       });
     } else {
+      draftAPIRequestProcessing = false;
       window.location = '/checkout';
     }
 
@@ -255,12 +267,16 @@ reqJquery(function($){
           method: "GET",
           credentials: "same-origin",
       }).then((response) => {
-          if(response.status != 200 && tryCount < 5){
+          if(response.status != 200 && tryCount < 15){
               setTimeout(function(){tryCount++; checkInvoiceAvailability(url,tryCount)},1000);
           }else{
+              draftAPIRequestProcessing = false;
               window.location.href = url;
           }        
-      });    
+      }).catch((error) => {
+        // to handle CORS error
+        setTimeout(function(){draftAPIRequestProcessing = false; window.location.href = url},5000);
+      });   
   }
 
   function sameDomainAjax (paramHash, successCallback) {
@@ -295,7 +311,8 @@ reqJquery(function($){
         discount_code: wcp_data.discount_code};
 
     sameDomainAjax(paramHash, function (data) {
-      $('.apply-wcp-discount').attr('disabled',false);
+      $('.apply-wcp-discount, #wpdNetDiscountCodeBtn').attr('disabled',false);
+      $('.apply-wcp-discount, #wpdNetDiscountCodeBtn').removeClass('wpd-button-loading');
        if(localStorage.getItem('wpd_integration_fbt_bundle')!=null && localStorage.getItem('wpd_integration_fbt_bundle')!='' ){
     	    paramHash.FBT=JSON.parse(localStorage.getItem('wpd_integration_fbt_bundle'));
        }        
@@ -306,24 +323,44 @@ reqJquery(function($){
       {% if shop.metafields.wcp_net.isNetShippingsCost == "true" or shop.metafields.wcp_net.isNetShippingsCost == '1' %}
        if(data.hasOwnProperty('ShippingCharges') && data.ShippingCharges.hasOwnProperty('price')){
          TempShippingCharge= data.ShippingCharges.price;
-         $(".wpd_net_shipping_amount").html(data.currency + data.ShippingCharges.price);
-         $(".wpd_net_shipping_msg").html(data.ShippingCharges.title);              
+         if(document.querySelector("#wpdShippingChargeWrapper") != null){
+           document.querySelector("#wpdNetShippingChargeValue").innerHTML = data.currency + data.ShippingCharges.price;                      
+           document.querySelector("#wpdShippingChargeWrapper").style.display = "flex";           
+         }else{
+           $(".wpd_net_shipping_amount").html(data.currency + data.ShippingCharges.price);
+           $(".wpd_net_shipping_msg").html(data.ShippingCharges.title);                
+         }         
          TempNetOrderPrice=parseFloat(data.wcp_total)+parseFloat(data.ShippingCharges.price);
          TempNetOrderPrice = TempNetOrderPrice.toFixed(2);
          TempNetOrderPrice=data.currency + TempNetOrderPrice;
         
        }
+        if(wpdNetVersion == 2){
+          if (data.FlatMsgResponse != undefined && data.FlatMsgResponse != "" && data.minimumCartRequirement == true) {
+              document.getElementById("wpdNetShippingNote").innerHTML = data.FlatMsgResponse.replace("<br/>", "");
+              document.getElementById("wpdNetShippingNote").style.display = "block";
+          } else {
+              document.getElementById("wpdNetShippingNote").style.display = "none";
+          }
+        }
+        
+      {% endif %}    
       
-      {% endif %}           
-       var CodeFlag=false;
+      var CodeFlag=false;
       window.wcp_data.discounted_hash = data;
+      if(wpdNetVersion == 2){
+        document.getElementById("wpdNetCorrectDiscountCodeWrapper").classList.remove("success","error");
+        document.getElementById("wpdApplyDiscountWrapper").style.display = "none";
+        $("#wpdNetCorrectDiscountCodeWrapper").css('opacity',"1");
+      }
+      
       if (data.minimums_note != "") {
           $(".wcp-minimums-note").html(data.minimums_note);
         
           if (data.FlatShippingRule == '1' || data.FlatShippingRule == 1) {
             
               $(".wcp-cart-total").html(data.formatted_wcp_total);
-              $(".wcp-net-cart-total").html(TempNetOrderPrice);
+              $(".wcp-net-cart-total").html(TempNetOrderPrice);              
               $(".wcp-original-cart-total").css("text-decoration", "line-through");
               $(".wcp-original-cart-total").html(data.formatted_original_total);
 
@@ -337,10 +374,22 @@ reqJquery(function($){
                   if (window.wcp_data.discount_code) {
                       $('.wcp-discount-code').val(data.discount_code);
                       $('.wcp-discount-item').html(data.discount_item_html);
-
-                      if (data.ApplyDiscountCode) {
+                      if(wpdNetVersion == 2){
+                        document.getElementById("wpdNetCorrectDiscountCodeText").innerHTML = data.discount_item_html;                      
+                        document.getElementById("wpdNetDiscountCodeTxt").value = data.discount_code;
+                      }
+                      if (data.ApplyDiscountCode) {   
+                          if(wpdNetVersion == 2){
+                            document.getElementById("wpdApplyDiscountWrapper").style.display = "flex";
+                            document.getElementById("wpdNetDiscountCodeValue").innerHTML = "-" + data.currency + data.discountCodeamount;                          
+                            document.getElementById("wpdNetCorrectDiscountCodeWrapper").classList.add("success");    
+                          }
+                        
                           $('.wcp-discount-item').removeClass('DiscointCodeInvalid').addClass('DiscointCodeSuccess');
                       } else {
+                          if(wpdNetVersion == 2){
+                            document.getElementById("wpdNetCorrectDiscountCodeWrapper").classList.add("error");
+                          }
                           $('.wcp-discount-item').removeClass('DiscointCodeSuccess').addClass('DiscointCodeInvalid');
                       }
                   }
@@ -350,7 +399,7 @@ reqJquery(function($){
               $(".wcp-net-cart-total").html('');
             
               if(TempShippingCharge!=0){
-         			TempNetOrderPrice=data.currency + (parseFloat(data.wcp_total)+parseFloat(data.ShippingCharges.price)).toFixed(2);
+         			TempNetOrderPrice=data.currency + (parseFloat(data.wcp_total)+parseFloat(data.ShippingCharges.price)).toFixed(2);                    
        				$(".wcp-net-cart-total").html(TempNetOrderPrice);
             		$(".wcp-net-original-cart-total").css("text-decoration", "line-through");                 
               }
@@ -364,7 +413,8 @@ reqJquery(function($){
       } else {
           $(".wcp-minimums-note").html('');
       }
-
+      $("#wpdNetTotalValue").html(TempNetOrderPrice);
+      $("#wpdNetCrossOutTotalValue").html(data.formatted_original_total);
       if (data.formatted_original_total != data.formatted_wcp_total && data.discount_value !== false) {
           $(".wcp-original-cart-total").css("text-decoration", "line-through");
           $(".wcp-original-cart-total").html(data.formatted_original_total);
@@ -381,10 +431,21 @@ reqJquery(function($){
               if (window.wcp_data.discount_code) {
                   $('.wcp-discount-code').val(data.discount_code);
                   $('.wcp-discount-item').html(data.discount_item_html);
-
+                  if(wpdNetVersion == 2){
+                    document.getElementById("wpdNetCorrectDiscountCodeText").innerHTML = data.discount_item_html;                   
+                    document.getElementById("wpdNetDiscountCodeTxt").value = data.discount_code;
+                  }
                   if (data.ApplyDiscountCode) {
+                      if(wpdNetVersion == 2){
+                        document.getElementById("wpdApplyDiscountWrapper").style.display = "flex";
+                        document.getElementById("wpdNetDiscountCodeValue").innerHTML = "-" + data.currency + data.discountCodeamount;
+                        document.getElementById("wpdNetCorrectDiscountCodeWrapper").classList.add("success"); 
+                      }
                       $('.wcp-discount-item').removeClass('DiscointCodeInvalid').addClass('DiscointCodeSuccess');
                   } else {
+                      if(wpdNetVersion == 2){
+                        document.getElementById("wpdNetCorrectDiscountCodeWrapper").classList.add("error");
+                      }                    
                       $('.wcp-discount-item').removeClass('DiscointCodeSuccess').addClass('DiscointCodeInvalid');
                   }
               }
@@ -404,7 +465,7 @@ reqJquery(function($){
               }
         }      
       }
-      if (data.extra_note) { $(".wcp-extra-note").html(data.extra_note); }
+      if (data.extra_note) { $(".wcp-extra-note").html(data.extra_note); }      
       if (data.show_discount_code && CodeFlag != true) {
           if ($('.wcp-discount-code').length == 0) {
               $(".wcp-cart-total").after("<span class='wcp-messages'><div class='wcp-discount-item' id='wcp-discount-item'></div><div id='wcp-summary-item'></div><div class='wcp-discounts-wrapper'><input type='text' autocomplete='off' class='wcp-discount-code' id='wcp-discount-code' placeholder='Discount Code'><button id='apply-wcp-discount' class='btn btn--secondary apply-wcp-discount'>{{shop.metafields.wcp_net.DCBtnApplyDiscount | default:'Apply Discount'}}</button></div></span>");
@@ -412,15 +473,27 @@ reqJquery(function($){
           if (window.wcp_data.discount_code) {
               $('.wcp-discount-code').val(data.discount_code);
               $('.wcp-discount-item').html(data.discount_item_html);
+              if(wpdNetVersion == 2){
+                document.getElementById("wpdNetCorrectDiscountCodeText").innerHTML = data.discount_item_html;              
+                document.getElementById("wpdNetDiscountCodeTxt").value = data.discount_code;
+              }
               if (data.ApplyDiscountCode) {
+                  if(wpdNetVersion == 2){     
+                    document.getElementById("wpdApplyDiscountWrapper").style.display = "flex";
+                    document.getElementById("wpdNetDiscountCodeValue").innerHTML = "-" + data.currency + data.discountCodeamount;
+                    document.getElementById("wpdNetCorrectDiscountCodeWrapper").classList.add("success");
+                  }
                   $('.wcp-discount-item').removeClass('DiscointCodeInvalid').addClass('DiscointCodeSuccess');
               } else {
+                  if(wpdNetVersion == 2){
+                    document.getElementById("wpdNetCorrectDiscountCodeWrapper").classList.add("error");
+                  }
                   $('.wcp-discount-item').removeClass('DiscointCodeSuccess').addClass('DiscointCodeInvalid');
               }
-              }else{
-              	$('.wcp-discount-item').html('');
-                $('.wcp-discount-item').html('');
-              }
+          }else{
+            $('.wcp-discount-item').html('');
+            $('.wcp-discount-item').html('');
+          }
       }
       $("#wcp-wcpModal-container #net-30-summary").html(data.net_30_html);
       window.net_30_data = data;
@@ -665,8 +738,14 @@ var fnCalled = false;
       dataType: 'json',
       data: JSON.stringify(wcp_data),
       type: 'POST',
-      success: function (data, success) { 
-       $("#wcp-wcpModal-container").html($.parseHTML({{shop.metafields.wcp_net.netThankMsg | json}}));
+      success: function (data, success) {         
+        if(wpdNetVersion == 2){
+          $("#wpdNetOrderSuccessMsg").html($.parseHTML({{shop.metafields.wcp_net.netThankMsg | json}}));
+          $("#wpdNetOrderSuccessWrapper").css("display","flex");
+          $("#wpdNetContentWrapper, #wpdNetLeftContent, #wpdNetHeaderWrapper, #wpdNetMainForm").hide();          
+        }else{
+         $("#wcp-wcpModal-container").html($.parseHTML({{shop.metafields.wcp_net.netThankMsg | json}}));   
+        }
         wcpClearCartnet();
         //return false; 
         if(window.wpd_net_waiting_time==undefined || isNaN(window.wpd_net_waiting_time)){
@@ -694,8 +773,18 @@ var fnCalled = false;
   $(function(){
     var wcpQuery=$,wcpModals=[],getCurrent=function(){return wcpModals.length?wcpModals[wcpModals.length-1]:null},selectCurrent=function(){var a,b=!1;for(a=wcpModals.length-1;a>=0;a--)wcpModals[a].$blocker&&(wcpModals[a].$blocker.toggleClass("current",!b).toggleClass("behind",b),b=!0)};wcpQuery.wcpModal=function(a,b){var c,d;if(this.$body=wcpQuery("body"),this.options=wcpQuery.extend({},wcpQuery.wcpModal.defaults,b),this.options.doFade=!isNaN(parseInt(this.options.fadeDuration,10)),this.$blocker=null,this.options.closeExisting)for(;wcpQuery.wcpModal.isActive();)wcpQuery.wcpModal.close();if(wcpModals.push(this),a.is("a"))if(d=a.attr("href"),/^#/.test(d)){if(this.$elm=wcpQuery(d),1!==this.$elm.length)return null;this.$body.append(this.$elm),this.open()}else this.$elm=wcpQuery("<div>"),this.$body.append(this.$elm),c=function(a,b){b.elm.remove()},this.showSpinner(),a.trigger(wcpQuery.wcpModal.AJAX_SEND),wcpQuery.get(d).done(function(b){if(wcpQuery.wcpModal.isActive()){a.trigger(wcpQuery.wcpModal.AJAX_SUCCESS);var d=getCurrent();d.$elm.empty().append(b).on(wcpQuery.wcpModal.CLOSE,c),d.hideSpinner(),d.open(),a.trigger(wcpQuery.wcpModal.AJAX_COMPLETE)}}).fail(function(){a.trigger(wcpQuery.wcpModal.AJAX_FAIL);var b=getCurrent();b.hideSpinner(),wcpModals.pop(),a.trigger(wcpQuery.wcpModal.AJAX_COMPLETE)});else this.$elm=a,this.$body.append(this.$elm),this.open()},wcpQuery.wcpModal.prototype={constructor:wcpQuery.wcpModal,open:function(){var a=this;this.block(),this.options.doFade?setTimeout(function(){a.show()},this.options.fadeDuration*this.options.fadeDelay):this.show(),wcpQuery(document).off("keydown.wcpModal").on("keydown.wcpModal",function(a){var b=getCurrent();27==a.which&&b.options.escapeClose&&b.close()}),this.options.clickClose&&this.$blocker.click(function(a){a.target==this&&wcpQuery.wcpModal.close()})},close:function(){wcpModals.pop(),this.unblock(),this.hide(),wcpQuery.wcpModal.isActive()||wcpQuery(document).off("keydown.wcpModal")},block:function(){this.$elm.trigger(wcpQuery.wcpModal.BEFORE_BLOCK,[this._ctx()]),this.$body.css("overflow","hidden"),this.$blocker=wcpQuery('<div class="jquery-wcpModal blocker current"></div>').appendTo(this.$body),selectCurrent(),this.options.doFade&&this.$blocker.css("opacity",0).animate({opacity:1},this.options.fadeDuration),this.$elm.trigger(wcpQuery.wcpModal.BLOCK,[this._ctx()])},unblock:function(a){!a&&this.options.doFade?this.$blocker.fadeOut(this.options.fadeDuration,this.unblock.bind(this,!0)):(this.$blocker.children().appendTo(this.$body),this.$blocker.remove(),this.$blocker=null,selectCurrent(),wcpQuery.wcpModal.isActive()||this.$body.css("overflow",""))},show:function(){this.$elm.trigger(wcpQuery.wcpModal.BEFORE_OPEN,[this._ctx()]),this.options.showClose&&(this.closeButton=wcpQuery('<a href="#close-wcpModal" rel="wcpModal:close" class="close-wcpModal '+this.options.closeClass+'">'+this.options.closeText+"</a>"),this.$elm.append(this.closeButton)),this.$elm.addClass(this.options.wcpModalClass).appendTo(this.$blocker),this.options.doFade?this.$elm.css("opacity",0).show().animate({opacity:1},this.options.fadeDuration):this.$elm.show(),this.$elm.trigger(wcpQuery.wcpModal.OPEN,[this._ctx()])},hide:function(){this.$elm.trigger(wcpQuery.wcpModal.BEFORE_CLOSE,[this._ctx()]),this.closeButton&&this.closeButton.remove();var a=this;this.options.doFade?this.$elm.fadeOut(this.options.fadeDuration,function(){a.$elm.trigger(wcpQuery.wcpModal.AFTER_CLOSE,[a._ctx()])}):this.$elm.hide(0,function(){a.$elm.trigger(wcpQuery.wcpModal.AFTER_CLOSE,[a._ctx()])}),this.$elm.trigger(wcpQuery.wcpModal.CLOSE,[this._ctx()])},showSpinner:function(){this.options.showSpinner&&(this.spinner=this.spinner||wcpQuery('<div class="'+this.options.wcpModalClass+'-spinner"></div>').append(this.options.spinnerHtml),this.$body.append(this.spinner),this.spinner.show())},hideSpinner:function(){this.spinner&&this.spinner.remove()},_ctx:function(){return{elm:this.$elm,$blocker:this.$blocker,options:this.options}}},wcpQuery.wcpModal.close=function(a){if(wcpQuery.wcpModal.isActive()){a&&a.preventDefault();var b=getCurrent();return b.close(),b.$elm}},wcpQuery.wcpModal.isActive=function(){return wcpModals.length>0},wcpQuery.wcpModal.defaults={closeExisting:!0,escapeClose:!0,clickClose:!0,closeText:"Close",closeClass:"",wcpModalClass:"wcp-checkout-wcpModal",spinnerHtml:null,showSpinner:!0,showClose:!0,fadeDuration:null,fadeDelay:1},wcpQuery.wcpModal.BEFORE_BLOCK="wcpModal:before-block",wcpQuery.wcpModal.BLOCK="wcpModal:block",wcpQuery.wcpModal.BEFORE_OPEN="wcpModal:before-open",wcpQuery.wcpModal.OPEN="wcpModal:open",wcpQuery.wcpModal.BEFORE_CLOSE="wcpModal:before-close",wcpQuery.wcpModal.CLOSE="wcpModal:close",wcpQuery.wcpModal.AFTER_CLOSE="wcpModal:after-close",wcpQuery.wcpModal.AJAX_SEND="wcpModal:ajax:send",wcpQuery.wcpModal.AJAX_SUCCESS="wcpModal:ajax:success",wcpQuery.wcpModal.AJAX_FAIL="wcpModal:ajax:fail",wcpQuery.wcpModal.AJAX_COMPLETE="wcpModal:ajax:complete",wcpQuery.fn.wcpModal=function(a){return 1===this.length&&new wcpQuery.wcpModal(this,a),this},wcpQuery(document).on("click.wcpModal",'a[rel="wcpModal:close"]',wcpQuery.wcpModal.close),wcpQuery(document).on("click.wcpModal",'a[rel="wcpModal:open"]',function(a){a.preventDefault(),wcpQuery(this).wcpModal()});
 	var ExtraFields='';
-    $('body').on('click', "button#apply-wcp-discount", function(e) {
-    	$('.apply-wcp-discount').attr('disabled',true);  
+    $('body').on('click', "#wpdNetRemoveDiscountCode", function(e) {
+      $("#wpdNetCorrectDiscountCodeWrapper").css('opacity',"0.5");  
+      e.preventDefault();
+      setCookie('wcp_discount_' + window.wcp_data.wcp_cart.token,"")              
+      window.wcp_data.discount_code = '';      
+  	  wcpCheckCart(window.wcp_data);
+      
+    });
+
+    $('body').on('click', "button#apply-wcp-discount, #wpdNetDiscountCodeBtn", function(e) {
+      $(this).attr('disabled',true);  
+      $(this).addClass('wpd-button-loading');
       e.preventDefault();
       setCookie('wcp_discount_' + window.wcp_data.wcp_cart.token, $(this).prev().val().trim())              
       var wcpCookieCode = getCookie('wcp_discount_' + window.wcp_data.wcp_cart.token);
@@ -710,12 +799,19 @@ var fnCalled = false;
   	 wcpCheckCart(window.wcp_data);
       
     });
-
-    $('body').on('click', '#wcp-30-open', function(){
-      $('#wcp-wcpModal-container').wcpModal();
-     var wcpNoteValue = '';
+    
+    $('body').on('click', '#wcp-30-open', function(){            
+      if(document.querySelector("#wpdNetMainContainer") != null){
+        document.querySelector("#wpdNetOverlay").style.display = "block";
+        document.querySelector("#wpdNetMainContainer").style.display = "block";
+        document.body.style.overflow = "hidden";
+      }else{
+        $('#wcp-wcpModal-container').wcpModal();
+        $('#wcp-wcpModal-container').css('display','inline-block');  
+      }      
+      var wcpNoteValue = '';
       if($("[name='note']").length){
-     	wcpNoteValue= $("[name='note']")[0].value;
+     	  wcpNoteValue= $("[name='note']")[0].value;
       }
       $("textarea.net-notes").val(wcpNoteValue);
       return false;
@@ -724,32 +820,62 @@ var fnCalled = false;
     $('body').on('click', '.close-wcpModal', function(){
       $.wcpModal.close()
     });
+
+    $('body').on('click', '#wpdNetOverlay, #wpdCloseNetPopup', function(){
+        document.querySelector("#wpdNetOverlay").style.display = "none";
+        document.querySelector("#wpdNetMainContainer").style.display = "none";
+        document.body.style.overflow = "auto";
+    });
  
-    $('body').on('submit', 'form#net-order-form', function(){
-      
+    $('body').on('submit', 'form#net-order-form, form#wpdNetMainForm', function(e){ 
+      e.preventDefault();
       if(window.wcp_net_border_color==undefined){
       {% if shop.metafields.wcp_net.isDisplayBillingEmail == 'true'  or shop.metafields.wcp_net.isDisplayBillingEmail == '1'%}
-          window.wcp_net_border_color=document.getElementById("wcpbillingEmail").style.borderColor ;
+          if(wpdNetVersion == 2){
+            window.wcp_net_border_color=document.getElementById("wpdNetBillingEmail").style.borderColor;  
+          }else{
+            window.wcp_net_border_color=document.getElementById("wcpbillingEmail").style.borderColor;  
+          }
       {% endif %}
        {% if shop.metafields.wcp_net.isdisplayDate == 'true' or  shop.metafields.wcp_net.isdisplayDate == '1' %}
-           window.wcp_net_border_color=document.getElementById("datepicker").style.borderColor ;
+           if(wpdNetVersion == 2){
+             window.wcp_net_border_color=document.getElementById("wpdNetDeliveryDate").style.borderColor;
+           }else{
+             window.wcp_net_border_color=document.getElementById("datepicker").style.borderColor;  
+           }
       {% endif %}
       {% if shop.metafields.wcp_net.isPayment == 'true' or  shop.metafields.wcp_net.isPayment == '1' %}
       {% if shop.metafields.wcp_net.Payment !='' %}
-        window.wcp_net_border_color=document.getElementById("payment").style.borderColor;       
+        if(wpdNetVersion == 2){
+          window.wcp_net_border_color=document.getElementById("wpdNetPayment").style.borderColor;   
+        }else{
+          window.wcp_net_border_color=document.getElementById("payment").style.borderColor;   
+        }
       {% endif %}
       {% endif %}     
       }
       
       {% if shop.metafields.wcp_net.isDisplayBillingEmail == 'true'  or shop.metafields.wcp_net.isDisplayBillingEmail == '1'%}
-         document.getElementById("wcpbillingEmail").style.borderColor = window.wcp_net_border_color;
+          if(wpdNetVersion == 2){
+             document.getElementById("wpdNetBillingEmail").style.borderColor = window.wcp_net_border_color;  
+          }else{
+            document.getElementById("wcpbillingEmail").style.borderColor = window.wcp_net_border_color;
+          }
       {% endif %}
        {% if shop.metafields.wcp_net.isdisplayDate == 'true' or  shop.metafields.wcp_net.isdisplayDate == '1' %}
-          document.getElementById("datepicker").style.borderColor = window.wcp_net_border_color;
+          if(wpdNetVersion == 2){
+             document.getElementById("wpdNetDeliveryDate").style.borderColor = window.wcp_net_border_color;
+          }else{
+            document.getElementById("datepicker").style.borderColor = window.wcp_net_border_color;
+          }
       {% endif %}
       {% if shop.metafields.wcp_net.isPayment == 'true' or  shop.metafields.wcp_net.isPayment == '1' %}
       {% if shop.metafields.wcp_net.Payment !='' %}
-       document.getElementById("payment").style.borderColor = window.wcp_net_border_color;       
+       if(wpdNetVersion == 2){
+        document.getElementById("wpdNetPayment").style.borderColor = window.wcp_net_border_color;
+       }else{
+         document.getElementById("payment").style.borderColor = window.wcp_net_border_color;
+       }
       {% endif %}
       {% endif %}
      
@@ -765,78 +891,102 @@ var fnCalled = false;
       
       
       {% if shop.metafields.wcp_net.isDisplayBillingEmail == 'true'  or shop.metafields.wcp_net.isDisplayBillingEmail == '1'%}
-        if($('.wcpbillingEmail').val()!=''){          
-   			if (!/^\w+[^@]+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/.test($('.wcpbillingEmail').val().trim()))
+        let wcpbillingEmail = $('.wcpbillingEmail');
+        if(wpdNetVersion == 2){
+            wcpbillingEmail = $('#wpdNetBillingEmail');
+        }
+        if(wcpbillingEmail.val()!=''){          
+   			if (!/^\w+[^@]+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/.test(wcpbillingEmail.val().trim()))
   			{
-                document.getElementById("wcpbillingEmail").style.borderColor = "red"; 
-              document.getElementById("wcpbillingEmail").focus();
+                wcpbillingEmail.css("border-color","red");
+                wcpbillingEmail.focus();
                 alert("You have entered an invalid email address!");
     			return false;
                
     	    }
           if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Billing_Email')){
-            note=note+ '\\r\\n\\r\\n Billing Email:  '+$('.wcpbillingEmail').val();
-            note_data['Billing_Email']=$('.wcpbillingEmail').val();
+            note=note+ '\\r\\n\\r\\n Billing Email:  '+wcpbillingEmail.val();
+            note_data['Billing_Email']=wcpbillingEmail.val();
           }
         }else{
-          document.getElementById("wcpbillingEmail").focus();
+          wcpbillingEmail.focus();
           wcp_required=true;      
-          document.getElementById("wcpbillingEmail").style.borderColor = "red";
+          wcpbillingEmail.css("border-color","red");
         }
       {% endif %}
  
       
       
       {% if shop.metafields.wcp_net.isdisplayDate == 'true' or  shop.metafields.wcp_net.isdisplayDate == '1' %}
-       if($('#datepicker').val()==''){
-          document.getElementById("datepicker").focus();
-         document.getElementById("datepicker").style.borderColor = "red";
+       let datepicker = $('#datepicker');
+       if(wpdNetVersion == 2){
+          datepicker = $('#wpdNetDeliveryDate');
+       }
+       if(datepicker.val()==''){
+          datepicker.focus();
+          datepicker.css("border-color","red");
       	  wcp_required=true;        
       }else{
         if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('delivery_date')){
-           note=note +'\\r\\n\\r\\n Delivery Date: '+$('#datepicker').val();
-           note_data['delivery_date']=$('#datepicker').val();
+           note=note +'\\r\\n\\r\\n Delivery Date: '+datepicker.val();
+           note_data['delivery_date']=datepicker.val();
         }
       }
       {% endif %}
       {% if shop.metafields.wcp_net.isPayment == 'true' or  shop.metafields.wcp_net.isPayment == '1' %}
       {% if shop.metafields.wcp_net.Payment !='' %}
-       if($('#payment').val()=='-1'){
-         document.getElementById("payment").focus();
+       let payment = $('#payment');
+       if(wpdNetVersion == 2){
+          payment = $('#wpdNetPayment');
+       }
+       if(payment.val()=='-1'){
+         payment.focus();
          wcp_required=true;    
-         document.getElementById("payment").style.borderColor = "red";
+         payment.css("border-color","red");
       }else{        
         if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Payment_Option')){
-          note=note +'\\r\\n\\r\\n Payment Option: '+$('#payment').val();
-          note_data['Payment_Option']=$('#payment').val();
+          note=note +'\\r\\n\\r\\n Payment Option: '+payment.val();
+          note_data['Payment_Option']=payment.val();
         }
       }
       {% endif %}
       {% endif %}
       
       {% if shop.metafields.wcp_net.isdisplayPONo == 'true' or  shop.metafields.wcp_net.isdisplayPONo == '1' %}
-        if($('.wcpPONo').val()!=''){
+        let wcpPONo = $('.wcpPONo');
+        if(wpdNetVersion == 2){
+           wcpPONo = $('#wpdNetPoNumber');
+        }
+        if(wcpPONo.val()!=''){
           if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Purchase_Order_Number')){
-           note=note+ '\\r\\n\\r\\n Purchase Order Number: '+$('.wcpPONo').val();
-           note_data['Purchase_Order_Number']=$('.wcpPONo').val();
+           note=note+ '\\r\\n\\r\\n Purchase Order Number: '+wcpPONo.val();
+           note_data['Purchase_Order_Number']=wcpPONo.val();
           }
         }
       {% endif %}
 
       {% if shop.metafields.wcp_net.isdisplayUPSNo == 'true' or  shop.metafields.wcp_net.isdisplayUPSNo == '1' %}
-        if($('.wcpUPSNo').val()!=''){
+        let wcpUPSNo = $('.wcpUPSNo');
+        if(wpdNetVersion == 2){
+           wcpUPSNo = $('#wpdNetUpsNumber');
+        }
+        if(wcpUPSNo.val()!=''){
          if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('UPS_Shipping_Account_Number')){
-          note=note+ '\\r\\n\\r\\n UPS Shipping Account Number: '+$('.wcpUPSNo').val();
-          note_data['UPS_Shipping_Account_Number']=$('.wcpUPSNo').val();
+          note=note+ '\\r\\n\\r\\n UPS Shipping Account Number: '+wcpUPSNo.val();
+          note_data['UPS_Shipping_Account_Number']=wcpUPSNo.val();
          }
         }
       {% endif %}
 
       {% if shop.metafields.wcp_net.isdisplayShippingInst == 'true' or  shop.metafields.wcp_net.isdisplayShippingInst == '1' %}
-        if($('.wcpShippingInst').val()!=''){
+        let wcpShippingInst = $('.wcpShippingInst');
+        if(wpdNetVersion == 2){
+           wcpShippingInst = $('#wpdNetShippingInstructions');
+        }
+        if(wcpShippingInst.val()!=''){
          if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Shipping_Instructions')){
-          note=note+ '\\r\\n\\r\\n Shipping Instructions:  '+$('.wcpShippingInst').val();
-          note_data['Shipping_Instructions']=$('.wcpShippingInst').val();
+          note=note+ '\\r\\n\\r\\n Shipping Instructions:  '+wcpShippingInst.val();
+          note_data['Shipping_Instructions']=wcpShippingInst.val();
          }
         }
       {% endif %}
@@ -855,47 +1005,111 @@ var fnCalled = false;
       window.wcp_data.wcp_cart.note=note;      
       window.wcp_data.note_data=note_data; 
       
+      let noteAttributes = [];
+      $("[name^='attributes']").each(function() {
+        var attribute = $(this);
+        var name = $(this).attr("name");
+        name = name.replace(/^attributes\[/i, "").replace(/\]$/i, "");
+        var v = {
+          name: name,
+          value: attribute.val()
+        };
+        if (v.value == "") {
+          return
+        }
+        switch (attribute[0].tagName.toLowerCase()) {
+          case "input":
+            if (attribute.attr("type") == "checkbox") {
+              if (attribute.is(":checked")) {
+                noteAttributes.push(v)
+              }
+            } else {
+              noteAttributes.push(v)
+            }
+            break;
+          default:
+            noteAttributes.push(v)
+        }
+      });
+      window.wcp_data.wcp_cart.note_attributes = noteAttributes;
+      
       var address = {};
-      address.first_name = $("input[name='wcpaddress[first_name]']").val();
-      address.last_name = $("input[name='wcpaddress[last_name]']").val();
-      address.company = $("input[name='wcpaddress[company]']").val();
-      address.address1 = $("input[name='wcpaddress[address1]']").val();
-      address.address2 = $("input[name='wcpaddress[address2]']").val();
-      address.city  = $("input[name='wcpaddress[city]']").val();
-      address.province  = $("select[name='wcpaddress[province]']").val();
-      address.country  = $("select[name='wcpaddress[country]']").val();
-      address.zip  = $("input[name='wcpaddress[zip]']").val();
-      address.phone  = $("input[name='wcpaddress[phone]']").val();  
-       
+      if(wpdNetVersion == 2){
+        address.first_name = $("input[name='wpdNetShippingAddress[first_name]']").val();
+        address.last_name = $("input[name='wpdNetShippingAddress[last_name]']").val();
+        address.company = $("input[name='wpdNetShippingAddress[company]']").val();
+        address.address1 = $("input[name='wpdNetShippingAddress[address1]']").val();
+        address.address2 = $("input[name='wpdNetShippingAddress[address2]']").val();
+        address.city  = $("input[name='wpdNetShippingAddress[city]']").val();
+        address.province  = $("select[name='wpdNetShippingAddress[province]']").val();
+        address.country  = $("select[name='wpdNetShippingAddress[country]']").val();
+        address.zip  = $("input[name='wpdNetShippingAddress[zip]']").val();
+        address.phone  = $("input[name='wpdNetShippingAddress[phone]']").val();  
       
-      
-      var Billingaddress = {};
-      Billingaddress.first_name = $("input[name='wcpbillingaddress[first_name]']").val();
-      Billingaddress.last_name = $("input[name='wcpbillingaddress[last_name]']").val();
-      Billingaddress.company = $("input[name='wcpbillingaddress[company]']").val();
-      Billingaddress.address1 = $("input[name='wcpbillingaddress[address1]']").val();
-      Billingaddress.address2 = $("input[name='wcpbillingaddress[address2]']").val();
-      Billingaddress.city  = $("input[name='wcpbillingaddress[city]']").val();
-      Billingaddress.province  = $("select[name='wcpbillingaddress[province]']").val();
-      Billingaddress.country  = $("select[name='wcpbillingaddress[country]']").val();
-      Billingaddress.zip  = $("input[name='wcpbillingaddress[zip]']").val();
-      Billingaddress.phone  = $("input[name='wcpbillingaddress[phone]']").val();  
-      
-      window.wcp_data.address = address;      
-      window.wcp_data.Billingaddress = Billingaddress;  
-      
+        var Billingaddress = {};
+        Billingaddress.first_name = $("input[name='wpdNetBillingAddress[first_name]']").val();
+        Billingaddress.last_name = $("input[name='wpdNetBillingAddress[last_name]']").val();
+        Billingaddress.company = $("input[name='wpdNetBillingAddress[company]']").val();
+        Billingaddress.address1 = $("input[name='wpdNetBillingAddress[address1]']").val();
+        Billingaddress.address2 = $("input[name='wpdNetBillingAddress[address2]']").val();
+        Billingaddress.city  = $("input[name='wpdNetBillingAddress[city]']").val();
+        Billingaddress.province  = $("select[name='wpdNetBillingAddress[province]']").val();
+        Billingaddress.country  = $("select[name='wpdNetBillingAddress[country]']").val();
+        Billingaddress.zip  = $("input[name='wpdNetBillingAddress[zip]']").val();
+        Billingaddress.phone  = $("input[name='wpdNetBillingAddress[phone]']").val();  
+        window.wcp_data.isBillingSameAsShipping = document.getElementById('wpdSameBillingAddress').checked;         
+        $("#wpdNetPlaceOrder").addClass("wpd-button-loading");
+        $("#wpdNetPlaceOrder").prop("disabled", true);        
+        
+      }else{
+        address.first_name = $("input[name='wcpaddress[first_name]']").val();
+        address.last_name = $("input[name='wcpaddress[last_name]']").val();
+        address.company = $("input[name='wcpaddress[company]']").val();
+        address.address1 = $("input[name='wcpaddress[address1]']").val();
+        address.address2 = $("input[name='wcpaddress[address2]']").val();
+        address.city  = $("input[name='wcpaddress[city]']").val();
+        address.province  = $("select[name='wcpaddress[province]']").val();
+        address.country  = $("select[name='wcpaddress[country]']").val();
+        address.zip  = $("input[name='wcpaddress[zip]']").val();
+        address.phone  = $("input[name='wcpaddress[phone]']").val();  
+        
+        var Billingaddress = {};
+        Billingaddress.first_name = $("input[name='wcpbillingaddress[first_name]']").val();
+        Billingaddress.last_name = $("input[name='wcpbillingaddress[last_name]']").val();
+        Billingaddress.company = $("input[name='wcpbillingaddress[company]']").val();
+        Billingaddress.address1 = $("input[name='wcpbillingaddress[address1]']").val();
+        Billingaddress.address2 = $("input[name='wcpbillingaddress[address2]']").val();
+        Billingaddress.city  = $("input[name='wcpbillingaddress[city]']").val();
+        Billingaddress.province  = $("select[name='wcpbillingaddress[province]']").val();
+        Billingaddress.country  = $("select[name='wcpbillingaddress[country]']").val();
+        Billingaddress.zip  = $("input[name='wcpbillingaddress[zip]']").val();
+        Billingaddress.phone  = $("input[name='wcpbillingaddress[phone]']").val();  
+      window.wcp_data.isBillingSameAsShipping = document.getElementById('billingsameasshipping').checked;      
       window.wcp_data.isBillingSameAsShipping = document.getElementById('billingsameasshipping').checked;      
       
       window.wcp_data.net_30 = 1;
       window.wcp_data.action_type = 'checkout';
       
-      $("#net-order-form :input").prop("disabled", true);
-      $("#net-order-form :button").prop("disabled", true);
-            
-      $("#net-order-form-billing :input").prop("disabled", true);
-      $("#net-order-form-billing :button").prop("disabled", true);      
-      $("#wpd-net-place-order").prop("disabled", true);
-      $("#wpd-net-place-order").addClass("wpd-button-loading");
+        window.wcp_data.isBillingSameAsShipping = document.getElementById('billingsameasshipping').checked;      
+      
+      window.wcp_data.net_30 = 1;
+      window.wcp_data.action_type = 'checkout';
+      
+        $("#net-order-form :input").prop("disabled", true);
+        $("#net-order-form :button").prop("disabled", true);
+              
+        $("#net-order-form-billing :input").prop("disabled", true);
+        $("#net-order-form-billing :button").prop("disabled", true);      
+        $("#wpd-net-place-order").prop("disabled", true);
+        $("#wpd-net-place-order").addClass("wpd-button-loading");
+      }
+      
+      window.wcp_data.address = address;      
+      window.wcp_data.Billingaddress = Billingaddress;  
+      window.wcp_data.net_30 = 1;
+      window.wcp_data.action_type = 'checkout';
+      
+      
      setTimeout(function(){
        submitNet30(window.wcp_data); 
       }, 1000);       

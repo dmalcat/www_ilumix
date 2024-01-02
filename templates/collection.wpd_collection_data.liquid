@@ -64,6 +64,9 @@
 					,"productDefaultVariantCompareAtRawPrice": "{{productDefaultVariantCompareAtRawPrice}}"
 					,"productDefaultVariantAvailable" : "{{ product.selected_or_first_available_variant.available}}"
                     ,"productDefaultVariantSku" : {{ product.selected_or_first_available_variant.sku | json}}
+					,"productDefaultVariantInventory" : "{{ product.selected_or_first_available_variant.inventory_quantity }}"
+                    ,"productDefaultVariantInventoryManagement" : "{{ product.selected_or_first_available_variant.inventory_management }}"
+                    ,"productDefaultVariantInventoryPolicy" : "{{ product.selected_or_first_available_variant.inventory_policy }}"
                 },         
                
             {% endfor %}
