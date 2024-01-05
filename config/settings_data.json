@@ -2556,18 +2556,6 @@
         "settings": {
         }
       },
-      "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#101010",
-          "button_icon": "chat_bubble",
-          "button_text": "chat_with_us",
-          "button_horizontal_position": "bottom_left",
-          "button_vertical_position": "lowest",
-          "greeting_message": "👋 Dobrý den! Pokud máte otázky, napište nám zprávu. Rádi vám pomůžeme!"
-        }
-      },
       "10191866119664032810": {
         "type": "shopify:\/\/apps\/1-click-sticky-add-to-cart-bar\/blocks\/zoorix-head\/16cf6adc-8b22-4e73-be2b-b93c1acde1da",
         "disabled": false,
@@ -2580,6 +2568,12 @@
           "blacklisted_collections": [
 
           ]
+        }
+      },
+      "11853685111505846332": {
+        "type": "shopify:\/\/apps\/b2b-wholesale-pricing-forms\/blocks\/app-embeded\/658fafc9-ebc8-41ac-aa9b-57bf402459d6",
+        "disabled": false,
+        "settings": {
         }
       }
     }
