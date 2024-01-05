@@ -2570,9 +2570,9 @@
           ]
         }
       },
-      "11853685111505846332": {
-        "type": "shopify:\/\/apps\/b2b-wholesale-pricing-forms\/blocks\/app-embeded\/658fafc9-ebc8-41ac-aa9b-57bf402459d6",
-        "disabled": true,
+      "9513407616245537438": {
+        "type": "shopify:\/\/apps\/sami-wholesale\/blocks\/app-embed-block\/799b9db0-2c2b-4b20-8675-98acd123fbb2",
+        "disabled": false,
         "settings": {
         }
       }
