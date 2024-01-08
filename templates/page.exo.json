@@ -77,11 +77,31 @@
       ],
       "settings": {
       }
+    },
+    "4861d2a8-8aaa-493c-ad9c-aa7178113ce8": {
+      "type": "featured-product",
+      "settings": {
+        "pro_tab_padding_top": 60,
+        "pro_tab_padding_bottom": 60,
+        "pro_tab_padding_top_ipad": 30,
+        "pro_tab_padding_bottom_ipad": 30,
+        "pro_tab_padding_top_xs": 20,
+        "pro_tab_padding_bottom_xs": 20,
+        "section_subtitle": "",
+        "section_title": "Produkty od Exo",
+        "product_col": "1",
+        "slide_product_limit": "4",
+        "featured_product_limit_handle": "50",
+        "pro_tab_bg_color": "#fff",
+        "view_all_button": "Všechny produkty výrobce",
+        "view_all_button_url": "shopify:\/\/collections\/exo"
+      }
     }
   },
   "order": [
     "1ede04ae-144d-4693-8711-9ffa865623d7",
     "22a0f34a-311d-49cf-8272-0c5e77a30044",
-    "fee6769d-0ecb-46b4-a0d3-1b8816b57617"
+    "fee6769d-0ecb-46b4-a0d3-1b8816b57617",
+    "4861d2a8-8aaa-493c-ad9c-aa7178113ce8"
   ]
 }
