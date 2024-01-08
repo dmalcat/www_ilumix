@@ -80,6 +80,17 @@
     },
     "4861d2a8-8aaa-493c-ad9c-aa7178113ce8": {
       "type": "featured-product",
+      "blocks": {
+        "f968073b-de7f-463e-942d-f96cf50f6024": {
+          "type": "product_tab",
+          "settings": {
+            "tab_product": "exo"
+          }
+        }
+      },
+      "block_order": [
+        "f968073b-de7f-463e-942d-f96cf50f6024"
+      ],
       "settings": {
         "pro_tab_padding_top": 60,
         "pro_tab_padding_bottom": 60,
