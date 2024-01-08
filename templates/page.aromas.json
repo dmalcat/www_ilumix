@@ -13,9 +13,106 @@
         "section_title": "Představujeme výrobce",
         "section_arrow": "Lorem ipsum dolor sit amet."
       }
+    },
+    "77458ee0-430d-45af-ba62-90f7046aaa69": {
+      "type": "endless-gallery",
+      "blocks": {
+        "43b8f7fa-9ea6-4440-ba66-382b49ac3ec1": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "0e64807d-2e6d-4724-a324-6081036ad669": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "be69e9a6-d1a4-4161-802f-c322bfe6aeaa": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "7fdac958-5bfd-43ff-9b11-a9a2da986752": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "d9f5f70e-435c-44ab-a126-cd0d498a63de": {
+          "type": "image_block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "43b8f7fa-9ea6-4440-ba66-382b49ac3ec1",
+        "0e64807d-2e6d-4724-a324-6081036ad669",
+        "be69e9a6-d1a4-4161-802f-c322bfe6aeaa",
+        "7fdac958-5bfd-43ff-9b11-a9a2da986752",
+        "d9f5f70e-435c-44ab-a126-cd0d498a63de"
+      ],
+      "settings": {
+      }
+    },
+    "8b15ee17-6820-40ac-81f2-d3dc340f8110": {
+      "type": "documents",
+      "blocks": {
+        "e07abdcf-1d91-4927-81c1-da553adde726": {
+          "type": "document_block",
+          "settings": {
+            "document_name": "Document name",
+            "document_url": ""
+          }
+        },
+        "e9580f98-2fca-4387-bc83-b5b34585b7e3": {
+          "type": "document_block",
+          "settings": {
+            "document_name": "Document name",
+            "document_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "e07abdcf-1d91-4927-81c1-da553adde726",
+        "e9580f98-2fca-4387-bc83-b5b34585b7e3"
+      ],
+      "settings": {
+      }
+    },
+    "8bb6e63f-ac40-47a8-9785-fb9ea8686f87": {
+      "type": "featured-product",
+      "blocks": {
+        "caccc4c4-8429-4583-88ea-cdca2635ef74": {
+          "type": "product_tab",
+          "settings": {
+            "tab_product": "aromas-del-campo"
+          }
+        }
+      },
+      "block_order": [
+        "caccc4c4-8429-4583-88ea-cdca2635ef74"
+      ],
+      "settings": {
+        "pro_tab_padding_top": 60,
+        "pro_tab_padding_bottom": 60,
+        "pro_tab_padding_top_ipad": 30,
+        "pro_tab_padding_bottom_ipad": 30,
+        "pro_tab_padding_top_xs": 20,
+        "pro_tab_padding_bottom_xs": 20,
+        "section_subtitle": "",
+        "section_title": "Produkty od Aromas Del Campo",
+        "product_col": "3",
+        "slide_product_limit": "4",
+        "featured_product_limit_handle": "50",
+        "pro_tab_bg_color": "#fff",
+        "view_all_button": "Všechny produkty výrobce",
+        "view_all_button_url": "shopify:\/\/collections\/aromas-del-campo"
+      }
     }
   },
   "order": [
-    "1ede04ae-144d-4693-8711-9ffa865623d7"
+    "1ede04ae-144d-4693-8711-9ffa865623d7",
+    "77458ee0-430d-45af-ba62-90f7046aaa69",
+    "8b15ee17-6820-40ac-81f2-d3dc340f8110",
+    "8bb6e63f-ac40-47a8-9785-fb9ea8686f87"
   ]
 }
