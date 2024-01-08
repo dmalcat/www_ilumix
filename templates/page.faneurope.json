@@ -80,6 +80,17 @@
     },
     "a324ec76-818c-4233-b352-0c612e449815": {
       "type": "featured-product",
+      "blocks": {
+        "3f5a2e33-1c95-4eab-8d76-354b8a24aa29": {
+          "type": "product_tab",
+          "settings": {
+            "tab_product": "faneurope"
+          }
+        }
+      },
+      "block_order": [
+        "3f5a2e33-1c95-4eab-8d76-354b8a24aa29"
+      ],
       "settings": {
         "pro_tab_padding_top": 60,
         "pro_tab_padding_bottom": 60,
