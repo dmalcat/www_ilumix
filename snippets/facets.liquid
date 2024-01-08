@@ -111,8 +111,8 @@
                                 {% if value.active %}checked{% endif %}
                                 {% if value.count == 0 and value.active == false %}disabled{% endif %}
                               >
-                              <span class="cust-check barva-check" data-tag="{{aTag}}" data-remove-tag="{{tempTag.last}}"  style="background:  {{ value.label | escape | handle}} no-repeat center; background-size: initial;"></span>
-                              <!-- <span class="filter-name barva-filter">{{ value.label | escape }} <span class="pro-count">({{ value.count }})</span></span> -->
+                              <span class="cust-check barva-check" data-tag="{{aTag}}" data-remove-tag="{{tempTag.last}}"  style="background: no-repeat center; background-size: initial;"></span>
+                              <span class="filter-name barva-filter">{{ value.label | escape }} <span class="pro-count">({{ value.count }})</span></span>
                             </label>
                           </li>
                         {% else %}

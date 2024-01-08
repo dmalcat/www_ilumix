@@ -629,7 +629,7 @@ product tab slider css
   position: relative;
 }
 .product-area .tab ul.nav-tabs{
-  display: flex;
+  display: none;
   justify-content: center;
   position: relative;
   border-bottom: none;
