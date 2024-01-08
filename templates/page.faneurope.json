@@ -13,9 +13,95 @@
         "section_title": "Představujeme výrobce",
         "section_arrow": "Lorem ipsum dolor sit amet."
       }
+    },
+    "8b6a49bd-a8c3-4a38-af87-a022c49d71d6": {
+      "type": "endless-gallery",
+      "blocks": {
+        "f30fa840-57d8-4a80-82ec-4638fc988259": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "f96b97bb-c140-4b4d-80dd-09ec0005ef7b": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "6d38a9ec-20bc-463b-a6ca-3727da5a41d7": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "987d2581-8e68-4822-b5a4-64b55a2d3acb": {
+          "type": "image_block",
+          "settings": {
+          }
+        },
+        "7a4b0aad-7ec3-428b-b7a1-f723eb23e57b": {
+          "type": "image_block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "f30fa840-57d8-4a80-82ec-4638fc988259",
+        "f96b97bb-c140-4b4d-80dd-09ec0005ef7b",
+        "6d38a9ec-20bc-463b-a6ca-3727da5a41d7",
+        "987d2581-8e68-4822-b5a4-64b55a2d3acb",
+        "7a4b0aad-7ec3-428b-b7a1-f723eb23e57b"
+      ],
+      "settings": {
+      }
+    },
+    "92024503-c750-4367-8627-ffa7975c2c84": {
+      "type": "documents",
+      "blocks": {
+        "3c81ce86-01c7-4ff9-a33d-491823349899": {
+          "type": "document_block",
+          "settings": {
+            "document_name": "Document name",
+            "document_url": ""
+          }
+        },
+        "0ff14427-053f-4a90-b9e3-b6a25ab40c38": {
+          "type": "document_block",
+          "settings": {
+            "document_name": "Document name",
+            "document_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "3c81ce86-01c7-4ff9-a33d-491823349899",
+        "0ff14427-053f-4a90-b9e3-b6a25ab40c38"
+      ],
+      "settings": {
+      }
+    },
+    "a324ec76-818c-4233-b352-0c612e449815": {
+      "type": "featured-product",
+      "settings": {
+        "pro_tab_padding_top": 60,
+        "pro_tab_padding_bottom": 60,
+        "pro_tab_padding_top_ipad": 30,
+        "pro_tab_padding_bottom_ipad": 30,
+        "pro_tab_padding_top_xs": 20,
+        "pro_tab_padding_bottom_xs": 20,
+        "section_subtitle": "",
+        "section_title": "Produkty od Faneurope",
+        "product_col": "3",
+        "slide_product_limit": "4",
+        "featured_product_limit_handle": "50",
+        "pro_tab_bg_color": "#fff",
+        "view_all_button": "Všechny produkty výrobce",
+        "view_all_button_url": "shopify:\/\/collections\/faneurope"
+      }
     }
   },
   "order": [
-    "1ede04ae-144d-4693-8711-9ffa865623d7"
+    "1ede04ae-144d-4693-8711-9ffa865623d7",
+    "8b6a49bd-a8c3-4a38-af87-a022c49d71d6",
+    "92024503-c750-4367-8627-ffa7975c2c84",
+    "a324ec76-818c-4233-b352-0c612e449815"
   ]
 }
