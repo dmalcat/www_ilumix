@@ -1,0 +1,70 @@
+<section class="endGallery">
+  <div class="endGallery__wrapper">
+    <div class="endGallery__row">
+      {% for block in section.blocks %}
+        {% if block.settings.image_item != '' %}
+        <div class="endGallery__image">
+          <img src="{% if block.settings.image_item %}{{ block.settings.image_item | img_url: 'master' }}{% else %}https://dummyimage.com/300x300/f7f7f7/999999{% endif %}">
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Endless gallery",
+    "settings": [],
+    "blocks":[
+      {
+      "type": "image_block",
+      "name": "Image item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_item",
+          "label": "Image",
+          "info": "Recommended Size: 300 x 300px"
+        }
+      ]
+      }
+    ],
+    "presets":[
+    {
+        "name": "Endless gallery",
+        "category": "About Modern"
+    }
+    ]
+  }
+{% endschema %}
+
+<style>
+    .endGallery {
+      margin: 5rem 0;    
+    }
+
+    .endGallery__wrapper {
+      display: block;
+      max-width: calc(1500px + 2.5rem);
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .endGallery .endGallery__row {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      gap: 0.5rem;
+    }
+
+    .endGallery__image {
+      display: block;
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+</style>
+
+{% javascript %}
+{% endjavascript %}
