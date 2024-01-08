@@ -52,10 +52,36 @@
       ],
       "settings": {
       }
+    },
+    "fee6769d-0ecb-46b4-a0d3-1b8816b57617": {
+      "type": "documents",
+      "blocks": {
+        "2e12772b-120f-4cea-bd61-2856860be530": {
+          "type": "document_block",
+          "settings": {
+            "document_name": "Document name",
+            "document_url": ""
+          }
+        },
+        "501d29df-1bc5-446b-b0e1-1969c0f18dcf": {
+          "type": "document_block",
+          "settings": {
+            "document_name": "Document name",
+            "document_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "2e12772b-120f-4cea-bd61-2856860be530",
+        "501d29df-1bc5-446b-b0e1-1969c0f18dcf"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "1ede04ae-144d-4693-8711-9ffa865623d7",
-    "22a0f34a-311d-49cf-8272-0c5e77a30044"
+    "22a0f34a-311d-49cf-8272-0c5e77a30044",
+    "fee6769d-0ecb-46b4-a0d3-1b8816b57617"
   ]
 }
