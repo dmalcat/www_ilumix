@@ -2,6 +2,9 @@
   "sections": {
     "1ede04ae-144d-4693-8711-9ffa865623d7": {
       "type": "about-template1",
+      "custom_css": [
+
+      ],
       "settings": {
         "about_product_padding_top": 100,
         "about_product_padding_bottom": 100,
@@ -20,11 +23,13 @@
         "43b8f7fa-9ea6-4440-ba66-382b49ac3ec1": {
           "type": "image_block",
           "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_1.jpg"
           }
         },
         "0e64807d-2e6d-4724-a324-6081036ad669": {
           "type": "image_block",
           "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_2.jpg"
           }
         },
         "be69e9a6-d1a4-4161-802f-c322bfe6aeaa": {
