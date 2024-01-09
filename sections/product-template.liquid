@@ -1383,26 +1383,36 @@ $(".pp-action").insertAfter(".product-inventory");
 $(".stock-inventory").appendTo(".product-inventory");
 $(".pp-swatch").insertAfter(".swatch-custom-container");
 
-  // Najdeme všechny prvky s třídou 'explanation__trigger'
+// Najdeme všechny prvky s třídou 'explanation__trigger'
 const triggers = document.querySelectorAll('.explanation__trigger');
 const explanationCopies = document.querySelectorAll('.explanation__copy');
 
 // Pro každý nalezený prvek přidáme posluchač události 'click'
 triggers.forEach((trigger, index) => {
   trigger.addEventListener('click', () => {
-    // Skryjeme všechny explanation__copy
-    explanationCopies.forEach(copy => {
-      copy.classList.add('hidden');
-    });
-
     // Získáme ID cílového prvku z atributu 'data-target'
     const targetId = trigger.getAttribute('data-target');
 
     // Najdeme cílový prvek na základě ID
     const targetElement = document.getElementById(targetId);
 
-    // Pokud cílový prvek existuje, zobrazíme ho
-    if (targetElement) {
+    // Projdeme všechny explanation__copy a skryjeme je
+    explanationCopies.forEach(copy => {
+      if (copy !== targetElement) {
+        copy.classList.add('hidden');
+      }
+    });
+
+    // Zjistíme, zda je cílový prvek skrytý nebo viditelný
+    const isHidden = targetElement.classList.contains('hidden');
+
+    // Skryjeme všechny explanation__copy
+    explanationCopies.forEach(copy => {
+      copy.classList.add('hidden');
+    });
+
+    // Pokud cílový prvek existuje a je skrytý, zobrazíme ho
+    if (targetElement && isHidden) {
       targetElement.classList.remove('hidden');
     }
   });
