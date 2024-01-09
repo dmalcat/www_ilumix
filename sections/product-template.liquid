@@ -447,15 +447,17 @@
                   {% endif %}
                   {% if product.metafields.custom.stupen_kryti %}
                     <tr class="technic-row">
-                      <td class="technic-title">Stupeň krytí</td>
-                      <td class="technic-value">
-                        {{ product.metafields.custom.stupen_kryti }}
+                      <td class="technic-title">
+                        Stupeň krytí
                         <span class="explanation">                             
                           <span class="explanation__trigger" data-target="expl-stupen-kryti">?</span>                             
                           <span class="explanation__copy hidden" id="expl-stupen-kryti">
                             Krytí <strong>IP</strong> (Ingress Protection) u svítidel udává <strong>úroveň ochrany proti vniknutí prachu a vody</strong>. Číslice v kódu IP označují odolnost zařízení, přičemž první číslice značí ochranu proti prachu a druhá proti vodě. Například IP65 znamená, že svítidlo je chráněno proti prachu a odolá stříkající vodě, což je vhodné i pro venkovní použití. 
                           </span>                           
                         </span>
+                      </td>
+                      <td class="technic-value">
+                        {{ product.metafields.custom.stupen_kryti }}
                       </td>
                     </tr>
                   {% endif %}
