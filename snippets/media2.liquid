@@ -8,5 +8,9 @@
           class="img-fluid {{ media_class }} lazyload"
           src="{{ img_url }}"
           alt="{{ media.alt | escape }}">
+    {% when 'video' %}
+      <div class="product-single__media product-single__media--video product-single__media--{{ media.id }}">
+        {{ media | video_tag: class: 'media-video', autoplay: false, loop: true, controls: true}}
+      </div>
   {% endcase %}
 </div>
