@@ -220,8 +220,11 @@
             </div> -->
             <div class="product-infos mobile-hide">
                 <h6>{{ section.settings.product_vendor_title }}</h6>
+                <!--
                 {% assign manufacturer = product.vendor | handle %}
                 <a href="/pages/{{ manufacturer }}">{{ product.vendor }}</a>
+                -->
+                <span>{{ product.vendor }}</span>
               </div>
             <div class="product-infos mobile-hide">
                 <h6>{{ section.settings.product_sku_title }}</h6>
