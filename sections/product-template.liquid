@@ -523,7 +523,15 @@
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.svetelny_tok %}
                       <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
-                        <td class="technic-title">Světelný tok</td>
+                        <td class="technic-title">
+                          Světelný tok
+                          <span class="explanation">                             
+                            <span class="explanation__trigger" data-target="expl-svetelny-tok">?</span>                             
+                            <span class="explanation__copy hidden" id="expl-svetelny-tok">
+                              Světelný tok se měří v lumenech <strong>(lm)</strong> a udává <strong>množství světla, které světlo vydává</strong>. Čím vyšší hodnota lumenu, tím více světla svítidlo produkuje. Při výběru svítidel je důležité brát v úvahu potřebu dostatečného osvětlení daného prostoru a vybírat svítidla s odpovídajícím světelným tokem podle konkrétních potřeb
+                            </span>                           
+                          </span>
+                        </td>
                         <td class="technic-value variant-tok">{{ variant.metafields.custom.svetelny_tok }}</td>
                       </tr>
                       {% endif %}
@@ -531,7 +539,15 @@
 
                   {% if product.metafields.custom.svetelny_tok %}
                     <tr class="technic-row tok-varianty" id="{{ variant.id }}5" style="display:none;">
-                      <td class="technic-title">Světelný tok</td>
+                      <td class="technic-title">
+                        Světelný tok
+                        <span class="explanation">                             
+                            <span class="explanation__trigger" data-target="expl-svetelny-tok">?</span>                             
+                            <span class="explanation__copy hidden" id="expl-svetelny-tok">
+                              Světelný tok se měří v lumenech <strong>(lm)</strong> a udává <strong>množství světla, které světlo vydává</strong>. Čím vyšší hodnota lumenu, tím více světla svítidlo produkuje. Při výběru svítidel je důležité brát v úvahu potřebu dostatečného osvětlení daného prostoru a vybírat svítidla s odpovídajícím světelným tokem podle konkrétních potřeb
+                            </span>                           
+                          </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.svetelny_tok }}</td>
                     </tr>
                   {% endif %}
@@ -543,13 +559,29 @@
                   {% endif %}
                   {% if product.metafields.custom.index_barev %}
                     <tr class="technic-row">
-                      <td class="technic-title">Index podání barev (CRI)</td>
+                      <td class="technic-title">
+                        Index podání barev (CRI)
+                         <span class="explanation">                             
+                            <span class="explanation__trigger" data-target="expl-cri">?</span>                             
+                            <span class="explanation__copy hidden" id="expl-cri">
+                              Index podání barev <strong>(CRI)</strong> nebo <strong>(Ra)</strong> u svítidel udává, <strong>jak věrně světlo zobrazuje barvy ve srovnání s přirozeným slunečním světlem</strong>. Čím vyšší je hodnota CRI nebo Ra (maximálně 100), tím přesněji a věrněji světlo reprodukuje různé barvy. Vyšší hodnota CRI je obvykle žádoucí pro prostředí, kde je důležitá přesná vizuální identifikace barev, například v obchodech nebo interiérech.
+                            </span>                           
+                          </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.index_barev }}</td>
                     </tr>
                   {% endif %}
                   {% if product.metafields.custom.uhel_svitu %}
                     <tr class="technic-row">
-                      <td class="technic-title">Úhel svitu</td>
+                      <td class="technic-title">
+                        Úhel svitu
+                         <span class="explanation">                             
+                            <span class="explanation__trigger" data-target="expl-uhel-svitu">?</span>                             
+                            <span class="explanation__copy hidden" id="expl-uhel-svitu">
+                              Úhel svitu u svítidel odráží <strong>rozsah, ve kterém světlo je vyzařováno</strong>. Čím menší je úhel svitu, tím koncentrovaněji je světlo zaměřeno na určité místo, což je vhodné například pro osvětlení specifických objektů. Naopak svítidla s větším úhlem svitu jsou ideální pro rovnoměrnější osvětlení větších ploch nebo místností. Při výběru svítidel je třeba zohlednit požadovaný úhel svitu v závislosti na konkrétních potřebách a prostředí.
+                            </span>                           
+                          </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.uhel_svitu }}</td>
                     </tr>
                   {% endif %}
@@ -569,7 +601,13 @@
                     {% endfor %}
                   {% if product.metafields.custom.barevna_teplota %}
                     <tr class="technic-row">
-                      <td class="technic-title">Barevná teplota</td>
+                      <td class="technic-title">
+                        Barevná teplota
+                        <span class="explanation">
+                            <span class="explanation__trigger" data-target="expl-barevna-teplota">?</span>
+                            <span class="explanation__copy hidden" id="expl-barevna-teplota"><strong>Barevná teplota</strong>, odborně <strong>teplota chromatičnosti</strong>, je vyjádření barvy, kterou vyzařuje dané svítidlo. Na rozdíl od běžných svítidel je poměrně těžké určit teplotu chromatičnosti LED svítidel – proto se většinou udává rozsah, ve kterém LED žárovka svítí.</span>
+                          </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.barevna_teplota }}</td>
                     </tr>
                   {% endif %}
