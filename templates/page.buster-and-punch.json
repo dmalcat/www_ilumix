@@ -59,21 +59,14 @@
         "f0e4c7f3-d68b-416c-bcfa-f15b94658928": {
           "type": "document_block",
           "settings": {
-            "document_name": "Document name",
-            "document_url": ""
-          }
-        },
-        "ffb8289d-7468-4589-baf4-e0203bee8efc": {
-          "type": "document_block",
-          "settings": {
-            "document_name": "Document name",
-            "document_url": ""
+            "document_thumbnail_img": "shopify:\/\/shop_images\/buster_brochure.jpg",
+            "document_name": "Buster nad Punch Brochure 2023",
+            "document_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0619\/9528\/6737\/files\/BP_Main_Brochure_EU_2022-23_Digital.pdf?v=1704789642"
           }
         }
       },
       "block_order": [
-        "f0e4c7f3-d68b-416c-bcfa-f15b94658928",
-        "ffb8289d-7468-4589-baf4-e0203bee8efc"
+        "f0e4c7f3-d68b-416c-bcfa-f15b94658928"
       ],
       "settings": {
       }
