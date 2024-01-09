@@ -30,17 +30,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-          &nbsp;
-          {%- for media in product.media -%}
-            {% case media.media_type %}
-              {% when 'video' %}
-              <div class="media-video product-single__media--{{ media.id }}">
-                {{ media | video_tag: class: 'media-video', autoplay: false, loop: true, controls: true}}
-              </div>
-            {% endcase %}
-          {%- endfor -%}  
-        </div>
     </div>
 </section>
 
