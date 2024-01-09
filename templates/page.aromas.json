@@ -11,7 +11,7 @@
         "about_product_padding_bottom_xs": 40,
         "section_sub_title": "Aromas del campo",
         "section_title": "Představujeme výrobce",
-        "section_arrow": "Lorem ipsum dolor sit amet."
+        "section_arrow": "Společnost Aromas del Campo, založená v roce 1986 ve Valencii, začala svou poutavou cestu specializací na výrobu květinových váz se sušenými květinami a aromatických výrobků. Postupem času se rozšířila do výroby malých skleněných stolních lamp plněných sušenými květinami, a po dosažení stabilizace na trhu s osvětlením, přesunula svou činnost do města Bétera (Valencie). Zde centralizuje výrobu a mezinárodní distribuci svých unikátních světel.\n\nHlavním zaměřením Aromas del Campo je technologický design spojený s funkcionalitou a cenovou dostupností. Jejich svítidla se vyznačují čistými a jednoduchými liniemi, avšak nezapomínají na charakteristické rysy firmy Aromas. Ve svých kolekcích upřednostňují tradiční materiály, jako je mramor, dřevo nebo keramika, a zdůrazňují kov a sklo jako hlavní prvky. Vytvářejí tak elegantní a nadčasová svítidla, která spojují masivnost a lehkost.\n\nAromas del Campo věnuje zvláštní pozornost tradičně používaným materiálům a využívá při tom dekorativní prvky. Věří, že v kombinaci s kovem a sklem vytvářejí nejen odolné, ale i esteticky působivé produkty. Tato kombinace materiálů dává vzniknout svítidlům, které se vymykají konvenčním standardům a přinášejí na trh nový pohled na osvětlovací design.\n\nSpolečnost Aromas del Campo nespočívá pouze ve výrobě kvalitních svítidel. Věří v angažovanost firem při přechodu k ekologičtější budoucnosti. S tímto cílem vypracovala strategický plán, který podporuje transformaci společnosti směrem k udržitelnějšímu modelu v nadcházejících letech. Aromas del Campo tak nejen tvoří unikátní svítidla, ale i aktivně přispívá k pozitivním změnám ve prospěch životního prostředí a udržitelné budoucnosti."
       }
     },
     "77458ee0-430d-45af-ba62-90f7046aaa69": {
@@ -103,7 +103,7 @@
         "product_col": "3",
         "slide_product_limit": "4",
         "featured_product_limit_handle": "50",
-        "pro_tab_bg_color": "#fff",
+        "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
         "view_all_button_url": "shopify:\/\/collections\/aromas-del-campo"
       }
