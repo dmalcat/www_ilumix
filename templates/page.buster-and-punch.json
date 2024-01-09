@@ -94,7 +94,7 @@
         "featured_product_limit_handle": "50",
         "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
-        "view_all_button_url": ""
+        "view_all_button_url": "shopify:\/\/collections\/buster-punch"
       }
     }
   },
