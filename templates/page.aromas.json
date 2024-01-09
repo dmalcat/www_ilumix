@@ -71,11 +71,13 @@
         "f00b86f9-83b4-4862-8d27-d37d13a2c995": {
           "type": "image_block",
           "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_9.jpg"
           }
         },
         "d8eac85c-5fba-4945-9b4a-204ae2089d5d": {
           "type": "image_block",
           "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_10.jpg"
           }
         }
       },
