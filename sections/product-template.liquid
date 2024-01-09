@@ -475,7 +475,15 @@
                   {% endif %}
                   {% if product.metafields.custom.typ_svetelneho_zdroje %}
                     <tr class="technic-row">
-                      <td class="technic-title">Typ světelného zdroje</td>
+                      <td class="technic-title">
+                        Typ světelného zdroje
+                        <span class="explanation">                             
+                          <span class="explanation__trigger" data-target="expl-typ-svetelneho-zdroje">?</span>                             
+                          <span class="explanation__copy hidden" id="expl-typ-svetelneho-zdroje">
+                            Existují dva hlavní typy světelných zdrojů. Integrované světelné zdroje <strong>LED</strong>, které mají čipy a driver zabudované přímo do konstrukce svítidla. Nebo světelné zdroje s paticí na <strong>žárovku</strong>, jako je <strong>E14, E27, GU10</strong> apod. Tyto typy umožňují výměnu žárovky a nabízejí flexibilitu při výběru intenzity světla a barvy. Každý typ má své vlastní výhody.
+                          </span>                           
+                        </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.typ_svetelneho_zdroje }}</td>
                     </tr>
                   {% endif %}
