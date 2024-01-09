@@ -592,7 +592,9 @@
                           Barevná teplota
                           <span class="explanation">
                             <span class="explanation__trigger" data-target="expl-barevna-teplota">?</span>
-                            <span class="explanation__copy hidden" id="expl-barevna-teplota"><strong>Barevná teplota</strong>, odborně <strong>teplota chromatičnosti</strong>, je vyjádření barvy, kterou vyzařuje dané svítidlo. Na rozdíl od běžných svítidel je poměrně těžké určit teplotu chromatičnosti LED svítidel – proto se většinou udává rozsah, ve kterém LED žárovka svítí.</span>
+                            <span class="explanation__copy hidden" id="expl-barevna-teplota">
+                              <strong>Barevná teplota (CCT)</strong> u svítidel se vyjadřuje v kelvinech <strong>(K)</strong> a <strong>označuje odstín světla</strong>, které světlo vyzařuje. Nižší hodnoty CCT, například kolem 2700K, znamenají teplé, žlutavé světlo, vhodné pro atmosféru domova, zatímco vyšší hodnoty, například kolem 5000K, označují studenější, bílé nebo modré světlo, což může být vhodné pro pracovní prostředí. Volba CCT je důležitá při výběru světidel pro dosažení požadované estetiky a funkcionality osvětlení.
+                            </span>
                           </span>
                         </td>
                         <td class="technic-value variant-barva">{{ variant.metafields.custom.barevna_teplota }}</td>
@@ -605,7 +607,9 @@
                         Barevná teplota
                         <span class="explanation">
                             <span class="explanation__trigger" data-target="expl-barevna-teplota">?</span>
-                            <span class="explanation__copy hidden" id="expl-barevna-teplota"><strong>Barevná teplota</strong>, odborně <strong>teplota chromatičnosti</strong>, je vyjádření barvy, kterou vyzařuje dané svítidlo. Na rozdíl od běžných svítidel je poměrně těžké určit teplotu chromatičnosti LED svítidel – proto se většinou udává rozsah, ve kterém LED žárovka svítí.</span>
+                            <span class="explanation__copy hidden" id="expl-barevna-teplota">
+                              <strong>Barevná teplota (CCT)</strong> u svítidel se vyjadřuje v kelvinech <strong>(K)</strong> a <strong>označuje odstín světla</strong>, které světlo vyzařuje. Nižší hodnoty CCT, například kolem 2700K, znamenají teplé, žlutavé světlo, vhodné pro atmosféru domova, zatímco vyšší hodnoty, například kolem 5000K, označují studenější, bílé nebo modré světlo, což může být vhodné pro pracovní prostředí. Volba CCT je důležitá při výběru světidel pro dosažení požadované estetiky a funkcionality osvětlení.
+                            </span>
                           </span>
                       </td>
                       <td class="technic-value">{{ product.metafields.custom.barevna_teplota }}</td>
@@ -613,13 +617,29 @@
                   {% endif %}
                   {% if product.metafields.custom.zivnotnost_h_ %}
                     <tr class="technic-row">
-                      <td class="technic-title">Životnost (v hodinách)</td>
+                      <td class="technic-title">
+                        Životnost (v hodinách)
+                        <span class="explanation">
+                            <span class="explanation__trigger" data-target="expl-zivotnost-v-hodinach">?</span>
+                            <span class="explanation__copy hidden" id="expl-zivotnost-v-hodinach">
+                              <strong>Životnost svítidel</strong> vyjádřená v hodinách <strong>udává očekávanou dobu</strong>, po kterou může <strong>světelný zdroj</strong> fungovat bez významné degradace světelného výkonu. Čím delší je udávaná životnost v hodinách, tím méně často je potřeba světlo vyměňovat. To je důležité k faktoru úspory nákladů a pohodlnosti v péči o osvětlení.
+                            </span>
+                          </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.zivnotnost_h_ }}</td>
                     </tr>
                   {% endif %}
                   {% if product.metafields.custom.zivotnost %}
                     <tr class="technic-row">
-                      <td class="technic-title">Životnost</td>
+                      <td class="technic-title">
+                        Životnost
+                        <span class="explanation">
+                            <span class="explanation__trigger" data-target="expl-zivotnost">?</span>
+                            <span class="explanation__copy hidden" id="expl-zivotnost">
+                              Hodnoty jako <strong>L</strong>80 <strong>B</strong>50 při popisu <strong>životnosti svítidel</strong> znamenají specifické parametry. L80 udává <strong>procento světelných zdrojů</strong>, které zůstanou <strong>plně funkční po určité době</strong>, například 80 % z nich. B50 pak <strong>vyjadřuje procento světelných zdrojů</strong>, u kterých do té doby dojde k <strong>degradaci barvy</strong> na nebo pod 50 % původní hodnoty. Tyto údaje jsou klíčové pro predikci výkonu světelného zdroje v průběhu času.
+                            </span>
+                          </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.zivotnost }}</td>
                     </tr>
                   {% endif %}
