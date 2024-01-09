@@ -41,11 +41,31 @@
         "7fdac958-5bfd-43ff-9b11-a9a2da986752": {
           "type": "image_block",
           "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_4.jpg"
           }
         },
         "d9f5f70e-435c-44ab-a126-cd0d498a63de": {
           "type": "image_block",
           "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_5.jpg"
+          }
+        },
+        "60adc77f-9f4b-4096-8e0b-31af307f372c": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_6.jpg"
+          }
+        },
+        "77382f66-b945-4a91-8593-9baf0c79a3c0": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_7.jpg"
+          }
+        },
+        "19292759-9c11-4959-a196-7ef9afd2d44d": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_8.jpg"
           }
         }
       },
@@ -54,7 +74,10 @@
         "0e64807d-2e6d-4724-a324-6081036ad669",
         "be69e9a6-d1a4-4161-802f-c322bfe6aeaa",
         "7fdac958-5bfd-43ff-9b11-a9a2da986752",
-        "d9f5f70e-435c-44ab-a126-cd0d498a63de"
+        "d9f5f70e-435c-44ab-a126-cd0d498a63de",
+        "60adc77f-9f4b-4096-8e0b-31af307f372c",
+        "77382f66-b945-4a91-8593-9baf0c79a3c0",
+        "19292759-9c11-4959-a196-7ef9afd2d44d"
       ],
       "settings": {
       }
