@@ -507,7 +507,15 @@
 
                   {% if product.metafields.custom.vykon %}
                     <tr class="technic-row vykon-varianty" id="{{ variant.id }}4" style="display:none;">
-                      <td class="technic-title">Výkon</td>
+                      <td class="technic-title">
+                        Výkon
+                        <span class="explanation">                             
+                            <span class="explanation__trigger" data-target="expl-vykon">?</span>                             
+                            <span class="explanation__copy hidden" id="expl-vykon">
+                              Výkon svítidel se údává ve wattech <strong>(W)</strong> a udává, <strong>kolik elektrické energie světlo spotřebuje</strong>. Čím vyšší hodnota wattů, tím větší je obvykle světelný výkon svítidla. Při výběru světla je důležité zohlednit potřebu dostatečného osvětlení prostoru a také efektivitu svítidla vzhledem k energetické spotřebě. 
+                            </span>                           
+                          </span>
+                      </td>
                       <td class="technic-value">{{ product.metafields.custom.vykon }}</td>
                     </tr>
                   {% endif %}
