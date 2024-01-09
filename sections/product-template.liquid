@@ -1384,31 +1384,29 @@ $(".stock-inventory").appendTo(".product-inventory");
 $(".pp-swatch").insertAfter(".swatch-custom-container");
 
   // Najdeme všechny prvky s třídou 'explanation__trigger'
-  const triggers = document.querySelectorAll('.explanation__trigger');
-  
-  // Pro každý nalezený prvek přidáme posluchač události 'click'
-  triggers.forEach(trigger => {
-    trigger.addEventListener('click', () => {
-      // Získáme ID cílového prvku z atributu 'data-target'
-      const targetId = trigger.getAttribute('data-target');
-  
-      // Najdeme cílový prvek na základě ID
-      const targetElement = document.getElementById(targetId);
-  
-      // Pokud cílový prvek existuje
-      if (targetElement) {
-        // Zjistíme, zda je momentálně skrytý
-        const isHidden = targetElement.classList.contains('hidden');
-  
-        // Změníme stav zobrazení/skrytí na základě aktuálního stavu
-        if (isHidden) {
-          targetElement.classList.remove('hidden');
-        } else {
-          targetElement.classList.add('hidden');
-        }
-      }
+const triggers = document.querySelectorAll('.explanation__trigger');
+const explanationCopies = document.querySelectorAll('.explanation__copy');
+
+// Pro každý nalezený prvek přidáme posluchač události 'click'
+triggers.forEach((trigger, index) => {
+  trigger.addEventListener('click', () => {
+    // Skryjeme všechny explanation__copy
+    explanationCopies.forEach(copy => {
+      copy.classList.add('hidden');
     });
+
+    // Získáme ID cílového prvku z atributu 'data-target'
+    const targetId = trigger.getAttribute('data-target');
+
+    // Najdeme cílový prvek na základě ID
+    const targetElement = document.getElementById(targetId);
+
+    // Pokud cílový prvek existuje, zobrazíme ho
+    if (targetElement) {
+      targetElement.classList.remove('hidden');
+    }
   });
+});
   
 </script>
 
