@@ -80,6 +80,17 @@
     },
     "80819aca-63a4-4dbb-92b5-d4bd142c472e": {
       "type": "featured-product",
+      "blocks": {
+        "e07b4263-acef-4a98-bde4-beed977d24b1": {
+          "type": "product_tab",
+          "settings": {
+            "tab_product": "buster-punch"
+          }
+        }
+      },
+      "block_order": [
+        "e07b4263-acef-4a98-bde4-beed977d24b1"
+      ],
       "settings": {
         "pro_tab_padding_top": 60,
         "pro_tab_padding_bottom": 60,
