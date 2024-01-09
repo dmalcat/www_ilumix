@@ -59,21 +59,23 @@
         "e07abdcf-1d91-4927-81c1-da553adde726": {
           "type": "document_block",
           "settings": {
-            "document_name": "Document name",
-            "document_url": ""
+            "document_thumbnail_img": "shopify:\/\/shop_images\/aromas_katalog_2023_ad8fd81b-5aeb-4ba1-99c1-a1456fd730c4.jpg",
+            "document_name": "Aromas katalog - NEWS 2023",
+            "document_url": "https:\/\/www.aromasdelcampo.com\/wp-content\/uploads\/2023\/09\/Catalogo-novedades_Aromas_AW2023.pdf"
           }
         },
-        "e9580f98-2fca-4387-bc83-b5b34585b7e3": {
+        "cca24579-c1fe-4960-b966-ba0fa05729ff": {
           "type": "document_block",
           "settings": {
-            "document_name": "Document name",
-            "document_url": ""
+            "document_thumbnail_img": "shopify:\/\/shop_images\/aromas_katalog_2023_2.jpg",
+            "document_name": "Aromas katalog - kolekce 2023",
+            "document_url": "https:\/\/www.aromasdelcampo.com\/wp-content\/uploads\/2023\/02\/Catalogo-Aromas-2023-Digital-LOW.pdf"
           }
         }
       },
       "block_order": [
         "e07abdcf-1d91-4927-81c1-da553adde726",
-        "e9580f98-2fca-4387-bc83-b5b34585b7e3"
+        "cca24579-c1fe-4960-b966-ba0fa05729ff"
       ],
       "settings": {
       }
