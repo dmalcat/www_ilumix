@@ -2311,7 +2311,7 @@
               "badge_color": "",
               "slider_title_color": "#1d1d1d",
               "slider_button": "Zobrazit produkt",
-              "slider_button_url": "",
+              "slider_button_url": "https:\/\/360design.cz\/search?type=product&options%5Bunavailable_products%5D=show&options%5Bprefix%5D=last&q=dea+juno",
               "slider_content_position": "left",
               "slider_text_position": "left"
             }
