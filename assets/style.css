@@ -1686,6 +1686,7 @@ single product gride list
   -webkit-transition: all 0s ease-in-out 0s;
   -o-transition: all 0s ease-in-out 0s;
   transition: all 0s ease-in-out 0s;
+  line-height: 1.4;
 }
 @media (max-width: 1199px){
   .shop-product-wrap.grid-2 ul.product-view li.st-col-item,
