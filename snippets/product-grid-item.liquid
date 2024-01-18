@@ -36,7 +36,7 @@
         {%- endif -%}
 
         {% if on_sale %}
-        <div class="variant-badge"><p>Akce</p></div>
+        <div class="variant-badge variant-badge--sale"><p>Akce</p></div>
         {% endif %}
         
         <a class="pro-img" href="{{ product.url | within: collection }}">
@@ -170,11 +170,11 @@
         }
     }
 
-    .variant-badge--color {
+    .variant-badge--sale {
       top: 5px;
     }
 
-    .variant-badge + .variant-badge--color {
+    .variant-badge + .variant-badge--sale {
       top: 29px;
     }
 
