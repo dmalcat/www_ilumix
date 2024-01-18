@@ -1375,6 +1375,7 @@ single product gride list
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
   /* padding-top: 35px; */
 }
 
@@ -2076,7 +2077,7 @@ account page css
     height: 833px;
   }
   .single-product-wrap .price-box{
-    text-align: right;
+    text-align: left;
   }
 }
 @media(max-width:1199px){
