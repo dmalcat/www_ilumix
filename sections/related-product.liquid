@@ -14,7 +14,7 @@
 {% endif %}
 
 {% if collection and collection.products_count > 1 and section.settings.related_products_enable %}
-  <section class="related-product">
+  <section class="related-product product-recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=8&intent=related">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -35,7 +35,7 @@
           <div class="product-related-slider owl-carousel owl-theme" id="related-slider">
             {% assign current_product = product %}
             {% assign current_product_count = false %}
-            {% for product in collection.products %}
+            {%- for product in recommendations.products -%}
               {% if product.handle == current_product.handle %}
                 {% assign current_product_count = false %}
               {% else %}
@@ -58,40 +58,74 @@
 <!-- PRODUCT SECTION END -->
 
 <script>
-  $('#related-slider').owlCarousel({
-  loop: false,
-  rewind: true,
-  margin: 30,
-  nav: false,
-  navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-  dots: false,
-  {%- if settings.enable_rtl -%}
-  rtl: true,
-  {%- endif -%}
-  autoplay: true,
-  sautoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  responsive:{
-    0:{
-      items: 2,
-      margin: 15
-    },
-    479:{
-      items: 2,
-      margin: 15
-    },
-    768:{
-      items: 2
-    },
-    979:{
-      items: 3
-    },
-    1199:{
-      items: 4
-    }
-  }
-  });
+  const handleIntersection = (entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+
+    observer.unobserve(productRecommendationsSection);
+
+    const url = productRecommendationsSection.dataset.url;
+
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('.product-recommendations');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+
+          // Initialize the slider after recommendations have loaded
+          initializeSlider();
+        }
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  };
+
+  const initializeSlider = () => {
+    $('#related-slider').owlCarousel({
+      loop: false,
+      rewind: true,
+      margin: 30,
+      nav: false,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      dots: false,
+      {%- if settings.enable_rtl -%}
+      rtl: true,
+      {%- endif -%}
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 2,
+          margin: 15,
+        },
+        479: {
+          items: 2,
+          margin: 15,
+        },
+        768: {
+          items: 2,
+        },
+        979: {
+          items: 3,
+        },
+        1199: {
+          items: 4,
+        },
+      },
+    });
+  };
+
+  const productRecommendationsSection = document.querySelector('.product-recommendations');
+  const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 200px 0px' });
+
+  observer.observe(productRecommendationsSection);
 </script>
+
 {% schema %}
   {
     "name": "Related Product",
