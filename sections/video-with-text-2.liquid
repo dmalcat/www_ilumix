@@ -1,12 +1,235 @@
+{% if section.settings.video_url_2 or section.settings.video_desc_2 or section.settings.video_title_2 %}
+<section class="about-modern-section1 wow animate__fadeIn">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-responsive-img-second">
+              <div class="about-banner-img-cont">
+                  <div class="single-banner banner-image">
+                    {{ section.settings.video_url_2 }}
+                  </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                <div class="about-content">
+                  <div class="abt-banner-desc">
+                    {% if section.settings.video_title_2 != '' %}
+                      <h2>{{ section.settings.video_title_2 }}</h2>
+                    {% endif %}
+
+                    {% if section.settings.video_desc_2 != '' %}
+                      <p><span>{{ section.settings.video_desc_2 }}</span></p>
+                    {% endif %}
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Video with text 2",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Padding"
+      },
+      {
+        "type" : "paragraph",
+        "content" : "Desktop / Laptop"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "label": "Section Padding Top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "label": "Section Padding bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type" : "paragraph",
+        "content" : "Ipad pro / Ipad"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_lg",
+        "label": "Section Padding Top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 60
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_lg",
+        "label": "Section Padding bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 60
+      },
+      {
+        "type" : "paragraph",
+        "content" : "Mobile"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "label": "Section Padding Top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "label": "Section Padding bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 40
+      },
+      {
+        "type": "text",
+        "id": "video_title_2",
+        "label": "Title",
+        "default": "Video block title"
+      },
+      {
+        "type": "text",
+        "id": "video_desc_2",
+        "label": "Description",
+        "default": "Video block description"
+      },
+      {
+        "type": "text",
+        "id": "video_url_2",
+        "label": "Video Iframe code",
+        "default": "Video Iframe code"
+      }
+    ],
+    "presets":[
+    {
+        "name": "Video with text 2",
+        "category": "About Modern"
+    }
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+<style>
+    .about-modern-section1 .row{
+        align-items: center;
+    }
+    .about-modern-section1{
+      padding-top: {{ section.settings.section_padding_top }}px;
+      padding-bottom: {{ section.settings.section_padding_bottom }}px;
+    }
+    @media (max-width: 1199px){
+      .about-modern-section1{
+        padding-top: {{ section.settings.section_padding_top_ipad }}px;
+        padding-bottom: {{ section.settings.section_padding_bottom_ipad }}px;
+      }
+    }
+    @media (max-width: 767px){
+      .about-modern-section1{
+        padding-top: {{ section.settings.section_padding_top_xs }}px;
+        padding-bottom: {{ section.settings.section_padding_bottom_xs }}px;
+      }
+    }
+    .about-modern-section1 .about-banner-img-cont {
+      position: relative;
+    }
+    .about-modern-section1 .about-banner-img-cont .single-banner{
+      text-align: right;
+      margin-bottom: 60px;
+      width: 86%;
+      margin-left: auto;
+    }
+    .about-modern-section1 .about-banner-img-cont .single-banner{
+      border-radius: 5px;
+    }
+    .about-modern-section1 .about-content{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%
+    }
+    .about-modern-section1 .about-content .abt-banner-desc {
+      width: 80%;
+      margin-left: auto;
+    }
+    .about-modern-section1 .about-content .abt-banner-desc h2{
+      font-size: 35px;
+    }
+    .about-modern-section1 .about-content .abt-banner-desc p{
+      margin-top: 30px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      line-height: normal;
+      font-weight: 500;
+    }
+    @media (max-width: 1199px) {
+      .about-modern-section1 .about-content .abt-banner-desc{
+        width: 90%;
+        margin-left: auto;
+      }
+      .about-modern-section1 .about-content .abt-banner-desc h2{
+        font-size: 26px;
+      }
+      .about-modern-section1 .about-content .abt-banner-desc p{
+        margin-top: 15px;
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 991px) {
+      .about-modern-section1 .about-banner-img-cont .single-banner{
+        margin-bottom: 30px;
+        width: 90%;
+      }
+      .about-modern-section1 .about-content .abt-banner-desc{
+        width: 100%;
+      }
+      .about-modern-section1 .about-content .abt-banner-desc p{
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    @media (max-width: 767px) {
+      .about-modern-section1 .row .col-responsive-img-second {
+        order: 1;
+      }
+      .about-modern-section1 .about-banner-img-cont .single-banner{
+        margin-bottom: 0px;
+        width: 100%;
+      }
+      .about-modern-section1 .about-content .abt-banner-desc{
+        margin-top: 30px;
+      }
+      .about-modern-section1 .about-content .abt-banner-desc h2{
+        font-size: 20px;
+      }
+    }
+</style>
 
 {% javascript %}
 {% endjavascript %}
