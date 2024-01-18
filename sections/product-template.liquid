@@ -68,11 +68,13 @@
             </div>
             {% endif %}
          {% endfor %}
-         {% if on_sale %}
-          <div class="product-detail_badge badge-text" style="color:#FD1342">
-            Akce
-          </div>
-         {% endif %}
+           {% comment %}
+            {% if on_sale %}
+            <div class="product-detail_badge badge-text" style="color:#FD1342">
+              Akce
+            </div>
+            {% endif %}
+           {% endcomment %}
           <!-- product_big_images start -->
           <div class="product_img_top">
             <div class="slider-for" {% if settings.enable_rtl %}dir="rtl"{% endif %} id="slider-for">
