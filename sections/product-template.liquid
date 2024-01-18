@@ -758,7 +758,7 @@
           {% if product.metafields.custom.visual_model.value.url %}
             <p><span>{{section.settings.visual_model }}</span> <a href="{{ product.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
           {% endif %}
-{%- comment -%}
+          {%- comment -%}
           {% for variant in product.variants %}
               {% if product.selected_or_first_available_variant.id == variant.id %}
                 {% if variant.metafields.custom.data_sheet.value.url %}
@@ -798,6 +798,13 @@
     </div>
   </div>
   </div>
+  
+  {% if product.metafields.custom.video_1 %}
+  <div class="product-video-section">
+    <video src="{{ product.metafields.custom.video_1 }}"></video>
+  </div>
+  {% endif %}
+  
   {% if product.metafields.my_fields.nadpis_u_obr_zku_1 or product.metafields.my_fields.text_u_obr_zku_1 or product.metafields.my_fields.obr_zek_1 or product.metafields.my_fields.nadpis_u_obr_zku_2 or product.metafields.my_fields.text_u_obr_zku_1 or product.metafields.my_fields.obr_zek_2 %}
     <div id="more-info"></div>
   {% endif %}  
