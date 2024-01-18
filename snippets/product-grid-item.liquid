@@ -22,12 +22,7 @@
 </div>
 {% endif %}
 {% endfor %}
-{% if on_sale %}
-<div class="product-grid__badge badge-text" style="color:#FD1342">
-Akce
-</div>
-{% endif %}
-    <div class="product-image {% unless product.available %}stock-out{% endunless %}">
+  <div class="product-image {% unless product.available %}stock-out{% endunless %}">
         {% assign countColorVariant = product.metafields.my_fields.color_swatche.value %}
         
         {% comment %}}
@@ -39,6 +34,10 @@ Akce
         {%- if product.variants.size > 1 -%}
         <div class="variant-badge"><p>Více variant</p></div>
         {%- endif -%}
+
+        {% if on_sale %}
+        <div class="variant-badge"><p>Akce</p></div>
+        {% endif %}
         
         <a class="pro-img" href="{{ product.url | within: collection }}">
             <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '415X560', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
