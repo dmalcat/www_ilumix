@@ -58,6 +58,7 @@
         "social_share_title": "Sdílet:",
         "navod": "Návod k montáži:",
         "sheet": "Data sheet:",
+        "visual_model": "3D model:",
         "download": "ke stažení",
         "section_padding_top": 0,
         "section_padding_bottom": 100,
@@ -133,6 +134,20 @@
         "banner_button_text": "Detail produktu",
         "banner_url": "shopify:\/\/products\/mantis"
       }
+    },
+    "video_with_text_mgq4tX": {
+      "type": "video-with-text",
+      "settings": {
+        "section_padding_top": 100,
+        "section_padding_bottom": 100,
+        "section_padding_top_lg": 60,
+        "section_padding_bottom_lg": 60,
+        "section_padding_top_xs": 40,
+        "section_padding_bottom_xs": 40,
+        "video_title_1": "{{ product.metafields.custom.youtube_video_1_nadpis.value }}",
+        "video_desc_1": "{{ product.metafields.custom.youtube_video_1_popis.value }}",
+        "video_url_1": "{{ product.metafields.custom.youtube_video_1.value }}"
+      }
     }
   },
   "order": [
@@ -140,6 +155,7 @@
     "16542542550640dac9",
     "165425517781de3512",
     "related-product",
-    "16545024540f92bb28"
+    "16545024540f92bb28",
+    "video_with_text_mgq4tX"
   ]
 }
