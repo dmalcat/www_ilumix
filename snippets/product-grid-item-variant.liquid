@@ -107,6 +107,14 @@
         opacity: .65;
         pointer-events: none;
     }
+    
+    .variant-badge--sale {
+      top: 5px;
+    }
+
+    .variant-badge + .variant-badge--sale {
+      top: 29px;
+    }
 </style>
 {%- assign wcp_prd_var = product -%}
 {%- unless wcp_prd_var == empty -%}
