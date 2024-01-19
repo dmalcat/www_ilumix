@@ -92,9 +92,25 @@ Akce
             </div>
             <div class="product-content-title">
                 {% assign colorVariant = product.metafields.my_fields.color_swatche.value %}
+                {% assign colorOption = 'Barva' %}
+                
                 <div class="swatch-custom-container">
-                    {% include 'product-swatch-custom' %}
-                  </div>
+                    
+                    {% if colorVariant %}
+                        {% include 'product-swatch-custom' %}
+                    {% endif %}
+                    
+                    {% if product.options contains colorOption %}
+                        {% if product.variants.size > 1 %}
+                            <div class="product-variant-custom">
+                                <div class="swatch-variant">
+                                {% include 'swatch' with 'Barva' %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+
                 <div class="product-inventory" id="variant-inventory">
                     <h6>{{ section.settings.availability_title }}</h6>
                     {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}

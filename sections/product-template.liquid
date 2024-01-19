@@ -652,7 +652,7 @@
           {% if product.metafields.my_fields.data_sheet.value.url %}
             <p><span>{{section.settings.sheet }}</span> <a href="{{ product.metafields.my_fields.data_sheet.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
           {% endif %}
-{%- comment -%}
+          {%- comment -%}
           {% for variant in product.variants %}
               {% if product.selected_or_first_available_variant.id == variant.id %}
                 {% if variant.metafields.custom.data_sheet.value.url %}
