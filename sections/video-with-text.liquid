@@ -18,7 +18,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-12">
               <div class="about-banner-img-cont">
                   {% if section.settings.video_url_1 != '' %}
-                  <div class="single-banner banner-image">
+                  <div class="single-banner banner-image banner-image--video">
                     {{ section.settings.video_url_1 }}
                   </div>
                   {% endif %}
@@ -163,10 +163,13 @@
     }
     .about-modern-section1 .about-banner-img-cont .single-banner{
       text-align: right;
-      margin-bottom: 60px;
       width: 86%;
       margin-left: auto;
     }
+    .about-modern-section1 .about-banner-img-cont .banner-image--video {
+      margin-bottom: 0;
+    }
+  
     .about-modern-section1 .about-banner-img-cont .single-banner{
       border-radius: 5px;
     }
