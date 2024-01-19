@@ -1380,7 +1380,7 @@ single product gride list
 }
 
 .single-product-wrap .product-content-title h6 {
-  max-width: 67.5%;
+  max-width: 100%;
 }
 @media screen and (max-width: 768px) {
   .single-product-wrap .product-content-title h6 {
@@ -1637,7 +1637,7 @@ single product gride list
 
 @media(max-width:1120px){
   .product-content h6{
-    max-width: 67.5%;
+    max-width: 100%;
   }
 }
 
