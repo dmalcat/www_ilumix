@@ -98,9 +98,9 @@ var retargetingConf = {
     &ndash; {{ shop.name }}
     {% endunless %}
     {% endcapture %}
-    <title>{{ seo_title }}</title>
+    {%- comment smartseo_integration_begin_meta_data -%}<title>{{ seo_title }}</title>{%- endcomment smartseo_integration_end_meta_data -%}
     {%- if page_description -%}
-    <meta name="description" content="{{ page_description | escape }}">
+    {%- comment smartseo_integration_begin_meta_data -%}<meta name="description" content="{{ page_description | escape }}">{%- endcomment smartseo_integration_end_meta_data -%}
     {%- endif -%}
     <!-- Helpers -->
     {% include 'social-meta-tags' %}
