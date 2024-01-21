@@ -2355,6 +2355,7 @@ height: 50px;
   opacity:1!important;
 }
 
-#vyzva .breadcrumb-area {
+#vyzva .breadcrumb-area,
+#ucet .breadcrumb-area {
   display: none;
 }
