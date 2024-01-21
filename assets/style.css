@@ -2354,3 +2354,7 @@ height: 50px;
 .single-product-wrap  .pro-img:hover .img2{
   opacity:1!important;
 }
+
+#vyzva .breadcrumb-area {
+  display: none;
+}
