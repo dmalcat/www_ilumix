@@ -101,7 +101,19 @@
                 {% assign colorVariant = product.metafields.my_fields.color_swatche.value %}
                 <div class="swatch-custom-container">
                     {% include 'product-swatch-custom' %}
-                  </div>
+                </div>
+                
+                {% assign colorOption = 'Barva' %}
+                {% if product.options contains colorOption %}
+                  {% if product.variants.size > 1 %}
+                    <div class="product-variant-custom">
+                      <a class="swatch-variant" href="{{ product.url | within: collection }}" title="{{ product.title }}">
+                        {% include 'swatch' with 'Barva' %}
+                      </a>
+                    </div>
+                  {% endif %}
+                {% endif %}
+
                 <div class="product-inventory" id="variant-inventory">
                     <h6>{{ section.settings.availability_title }}</h6>
                     {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
