@@ -75,6 +75,22 @@
       </div>
     </div>
   </div>
+  <div class="footer__scrollingText">
+      <div class="scrollingText">
+        <ul class="scrollingText__container">
+          <li class="scrollingText__item">Přisazená svítidla</li>
+          <li class="scrollingText__item">Stojací svítidla</li>
+          <li class="scrollingText__item">Lištové systémy</li>
+          <li class="scrollingText__item">Žárovky a zdroje</li>
+        </ul>
+        <ul class="scrollingText__container">
+          <li class="scrollingText__item">Přisazená svítidla</li>
+          <li class="scrollingText__item">Stojací svítidla</li>
+          <li class="scrollingText__item">Lištové systémy</li>
+          <li class="scrollingText__item">Žárovky a zdroje</li>
+        </ul>
+      </div>
+    </div>
 </section>
 {% schema %}
 {
@@ -545,6 +561,56 @@
   @media screen and (max-width: 1599px) {
     .contact-icons span {
       font-size: 14px;
+    }
+  }
+
+  .scrollingText {
+    display: flex;
+    margin: 60px 0;
+    overflow: hidden;
+  }
+
+  .scrollingText .scrollingText__container {
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .scrollingText .scrollingText__item {
+    font-size: 60px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #fff;
+    white-space: nowrap;
+    width: 33%;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .scrollingText .scrollingText__item {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .scrollingText .scrollingText__item {
+      font-size: 40px;
+    }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(0%);
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
     }
   }
 </style>
