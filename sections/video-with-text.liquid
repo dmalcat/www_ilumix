@@ -2,16 +2,16 @@
 <section class="about-modern-section1 about-modern-section1--video wow animate__fadeIn">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="video">
               <div class="abt-banner-desc">
-                    {% if section.settings.video_title_1 != '' %}
-                      <h2>{{ section.settings.video_title_1 }}</h2>
-                    {% endif %}
+                {% if section.settings.video_title_1 != '' %}
+                  <h2>{{ section.settings.video_title_1 }}</h2>
+                {% endif %}
 
-                    {% if section.settings.video_desc_1 != '' %}
-                      <p><span>{{ section.settings.video_desc_1 }}</span></p>
-                    {% endif %}
-                  </div>
+                {% if section.settings.video_desc_1 != '' %}
+                  <p><span>{{ section.settings.video_desc_1 }}</span></p>
+                {% endif %}
+              </div>    
               <div class="about-banner-img-cont">
                   {% if section.settings.video_url_1 != '' %}
                   <div class="single-banner banner-image banner-image--video">
