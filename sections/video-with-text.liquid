@@ -3,8 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                <div class="about-content">
-                  <div class="abt-banner-desc">
+              <div class="abt-banner-desc">
                     {% if section.settings.video_title_1 != '' %}
                       <h2>{{ section.settings.video_title_1 }}</h2>
                     {% endif %}
@@ -13,9 +12,6 @@
                       <p><span>{{ section.settings.video_desc_1 }}</span></p>
                     {% endif %}
                   </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
               <div class="about-banner-img-cont">
                   {% if section.settings.video_url_1 != '' %}
                   <div class="single-banner banner-image banner-image--video">
@@ -186,6 +182,7 @@
     }
     .about-modern-section1 .about-content .abt-banner-desc h2{
       font-size: 35px;
+      text-align: center;
     }
     .about-modern-section1 .about-content .abt-banner-desc p{
       margin-top: 30px;
