@@ -2335,7 +2335,7 @@
           "banner1_padding_bottom": 0,
           "banner1_padding_top_ipad": 60,
           "banner1_padding_bottom_ipad": 0,
-          "banner1_padding_top_xs": 40,
+          "banner1_padding_top_xs": 20,
           "banner1_padding_bottom_xs": 0,
           "banner_img": "shopify:\/\/shop_images\/360_banner_doporucujeme.jpg",
           "banner_txt_enable": true,
