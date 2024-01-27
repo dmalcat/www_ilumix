@@ -48,6 +48,17 @@
     },
     "80819aca-63a4-4dbb-92b5-d4bd142c472e": {
       "type": "featured-product",
+      "blocks": {
+        "product_tab_trNdMU": {
+          "type": "product_tab",
+          "settings": {
+            "tab_product": "sylvania"
+          }
+        }
+      },
+      "block_order": [
+        "product_tab_trNdMU"
+      ],
       "settings": {
         "pro_tab_padding_top": 60,
         "pro_tab_padding_bottom": 60,
@@ -57,7 +68,7 @@
         "pro_tab_padding_bottom_xs": 20,
         "section_subtitle": "",
         "section_title": "LED žárovky od Sylvania",
-        "product_col": "1",
+        "product_col": "3",
         "slide_product_limit": "4",
         "featured_product_limit_handle": "50",
         "pro_tab_bg_color": "#ffffff",
