@@ -51,11 +51,19 @@
             "document_name": "Aromas katalog - kolekce 2023",
             "document_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0619\/9528\/6737\/files\/Catalogo-Aromas-2023-Digital-LOW.pdf?v=1704789872"
           }
+        },
+        "document_block_9TEh6p": {
+          "type": "document_block",
+          "settings": {
+            "document_name": "Document name",
+            "document_url": ""
+          }
         }
       },
       "block_order": [
         "e07abdcf-1d91-4927-81c1-da553adde726",
-        "cca24579-c1fe-4960-b966-ba0fa05729ff"
+        "cca24579-c1fe-4960-b966-ba0fa05729ff",
+        "document_block_9TEh6p"
       ],
       "settings": {
       }
@@ -66,7 +74,7 @@
         "caccc4c4-8429-4583-88ea-cdca2635ef74": {
           "type": "product_tab",
           "settings": {
-            "tab_product": "aromas-del-campo"
+            "tab_product": "ideal-lux"
           }
         }
       },
