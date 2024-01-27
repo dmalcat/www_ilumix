@@ -11,7 +11,7 @@
         "about_product_padding_bottom_xs": 40,
         "section_sub_title": "Faneurope",
         "section_title": "Představujeme výrobce",
-        "section_arrow": "Lorem ipsum dolor sit amet."
+        "section_arrow": "Představte si svět plný oslnivých světel, kde každý kout prostoru září elegancí a technologickým pokrokem. To je svět, do kterého vás zavádí společnost FAN Europe Lighting, která se v oblasti osvětlení pohybuje s jistotou a elegancí již více než dvě dekády. Jejich cesta za krásným osvětlením začala před více než 20 lety a od té doby se stali synonymem pro vysokou kvalitu a designovou originalitu.\n\nJejich svítidla zahrnují široký sortiment, od okouzlujících dekorací až po technicky dokonalé osvětlení pro různé aplikace a prostředí.\n\nSídlí v Itálii, v srdci Neapole a Milána, kde mají své kanceláře, logistiku a inspirativní showroomy. Tyto malebné lokality nejenže odrážejí jejich vášeň pro krásu a eleganci, ale také slouží jako místo setkání s partnery a zákazníky, kteří hledají to nejlepší osvětlení pro své prostory.\n\nOd roku 2023 se společnost rozšířila i do Francie, kde otevřeli showroom v kouzelném Montpellier. Jejich značky, INTEC a Luce Ambiente Design, jsou tu pro vás, abyste mohli realizovat veškeré své technologické i designové představy. Jsme hrdi že Vám můžeme produkty od FAN Europe nabídnout u nás na e-shopu. Připojte se k nám a nechte své prostory zářit s FAN Europe Lighting!"
       }
     },
     "8b6a49bd-a8c3-4a38-af87-a022c49d71d6": {
@@ -103,7 +103,7 @@
         "product_col": "3",
         "slide_product_limit": "4",
         "featured_product_limit_handle": "50",
-        "pro_tab_bg_color": "#fff",
+        "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
         "view_all_button_url": "shopify:\/\/collections\/faneurope"
       }
