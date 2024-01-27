@@ -25,73 +25,10 @@
           "settings": {
             "image_item": "shopify:\/\/shop_images\/aromas_1.jpg"
           }
-        },
-        "0e64807d-2e6d-4724-a324-6081036ad669": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_2.jpg"
-          }
-        },
-        "be69e9a6-d1a4-4161-802f-c322bfe6aeaa": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_3.jpg"
-          }
-        },
-        "7fdac958-5bfd-43ff-9b11-a9a2da986752": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_4.jpg"
-          }
-        },
-        "d9f5f70e-435c-44ab-a126-cd0d498a63de": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_5.jpg"
-          }
-        },
-        "60adc77f-9f4b-4096-8e0b-31af307f372c": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_6.jpg"
-          }
-        },
-        "77382f66-b945-4a91-8593-9baf0c79a3c0": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_7.jpg"
-          }
-        },
-        "19292759-9c11-4959-a196-7ef9afd2d44d": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_8.jpg"
-          }
-        },
-        "f00b86f9-83b4-4862-8d27-d37d13a2c995": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_9.jpg"
-          }
-        },
-        "d8eac85c-5fba-4945-9b4a-204ae2089d5d": {
-          "type": "image_block",
-          "settings": {
-            "image_item": "shopify:\/\/shop_images\/aromas_10.jpg"
-          }
         }
       },
       "block_order": [
-        "43b8f7fa-9ea6-4440-ba66-382b49ac3ec1",
-        "0e64807d-2e6d-4724-a324-6081036ad669",
-        "be69e9a6-d1a4-4161-802f-c322bfe6aeaa",
-        "7fdac958-5bfd-43ff-9b11-a9a2da986752",
-        "d9f5f70e-435c-44ab-a126-cd0d498a63de",
-        "60adc77f-9f4b-4096-8e0b-31af307f372c",
-        "77382f66-b945-4a91-8593-9baf0c79a3c0",
-        "19292759-9c11-4959-a196-7ef9afd2d44d",
-        "f00b86f9-83b4-4862-8d27-d37d13a2c995",
-        "d8eac85c-5fba-4945-9b4a-204ae2089d5d"
+        "43b8f7fa-9ea6-4440-ba66-382b49ac3ec1"
       ],
       "settings": {
       }
@@ -144,13 +81,13 @@
         "pro_tab_padding_top_xs": 20,
         "pro_tab_padding_bottom_xs": 20,
         "section_subtitle": "",
-        "section_title": "Produkty od Aromas Del Campo",
+        "section_title": "Produkty od Ideal lux",
         "product_col": "3",
         "slide_product_limit": "4",
         "featured_product_limit_handle": "50",
         "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
-        "view_all_button_url": "shopify:\/\/collections\/aromas-del-campo"
+        "view_all_button_url": "shopify:\/\/collections\/ideal-lux"
       }
     }
   },
