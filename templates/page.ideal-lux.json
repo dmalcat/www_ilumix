@@ -1,0 +1,163 @@
+{
+  "sections": {
+    "1ede04ae-144d-4693-8711-9ffa865623d7": {
+      "type": "about-template1",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "about_product_padding_top": 100,
+        "about_product_padding_bottom": 100,
+        "about_product_padding_top_ipad": 60,
+        "about_product_padding_bottom_ipad": 60,
+        "about_product_padding_top_xs": 40,
+        "about_product_padding_bottom_xs": 40,
+        "section_sub_title": "Aromas del campo",
+        "section_title": "Představujeme výrobce",
+        "section_arrow": "Společnost Aromas del Campo, založená v roce 1986 ve Valencii, začala svou poutavou cestu specializací na výrobu květinových váz se sušenými květinami a aromatických výrobků. Postupem času se rozšířila do výroby malých skleněných stolních lamp plněných sušenými květinami, a po dosažení stabilizace na trhu s osvětlením, přesunula svou činnost do města Bétera (Valencie). Zde centralizuje výrobu a mezinárodní distribuci svých unikátních světel.\n\nHlavním zaměřením Aromas del Campo je technologický design spojený s funkcionalitou a cenovou dostupností. Jejich svítidla se vyznačují čistými a jednoduchými liniemi, avšak nezapomínají na charakteristické rysy firmy Aromas. Ve svých kolekcích upřednostňují tradiční materiály, jako je mramor, dřevo nebo keramika, a zdůrazňují kov a sklo jako hlavní prvky. Vytvářejí tak elegantní a nadčasová svítidla, která spojují masivnost a lehkost.\n\nAromas del Campo věnuje zvláštní pozornost tradičně používaným materiálům a využívá při tom dekorativní prvky. Věří, že v kombinaci s kovem a sklem vytvářejí nejen odolné, ale i esteticky působivé produkty. Tato kombinace materiálů dává vzniknout svítidlům, které se vymykají konvenčním standardům a přinášejí na trh nový pohled na osvětlovací design.\n\nSpolečnost Aromas del Campo nespočívá pouze ve výrobě kvalitních svítidel. Věří v angažovanost firem při přechodu k ekologičtější budoucnosti. S tímto cílem vypracovala strategický plán, který podporuje transformaci společnosti směrem k udržitelnějšímu modelu v nadcházejících letech. Aromas del Campo tak nejen tvoří unikátní svítidla, ale i aktivně přispívá k pozitivním změnám ve prospěch životního prostředí a udržitelné budoucnosti."
+      }
+    },
+    "77458ee0-430d-45af-ba62-90f7046aaa69": {
+      "type": "endless-gallery",
+      "blocks": {
+        "43b8f7fa-9ea6-4440-ba66-382b49ac3ec1": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_1.jpg"
+          }
+        },
+        "0e64807d-2e6d-4724-a324-6081036ad669": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_2.jpg"
+          }
+        },
+        "be69e9a6-d1a4-4161-802f-c322bfe6aeaa": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_3.jpg"
+          }
+        },
+        "7fdac958-5bfd-43ff-9b11-a9a2da986752": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_4.jpg"
+          }
+        },
+        "d9f5f70e-435c-44ab-a126-cd0d498a63de": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_5.jpg"
+          }
+        },
+        "60adc77f-9f4b-4096-8e0b-31af307f372c": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_6.jpg"
+          }
+        },
+        "77382f66-b945-4a91-8593-9baf0c79a3c0": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_7.jpg"
+          }
+        },
+        "19292759-9c11-4959-a196-7ef9afd2d44d": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_8.jpg"
+          }
+        },
+        "f00b86f9-83b4-4862-8d27-d37d13a2c995": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_9.jpg"
+          }
+        },
+        "d8eac85c-5fba-4945-9b4a-204ae2089d5d": {
+          "type": "image_block",
+          "settings": {
+            "image_item": "shopify:\/\/shop_images\/aromas_10.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "43b8f7fa-9ea6-4440-ba66-382b49ac3ec1",
+        "0e64807d-2e6d-4724-a324-6081036ad669",
+        "be69e9a6-d1a4-4161-802f-c322bfe6aeaa",
+        "7fdac958-5bfd-43ff-9b11-a9a2da986752",
+        "d9f5f70e-435c-44ab-a126-cd0d498a63de",
+        "60adc77f-9f4b-4096-8e0b-31af307f372c",
+        "77382f66-b945-4a91-8593-9baf0c79a3c0",
+        "19292759-9c11-4959-a196-7ef9afd2d44d",
+        "f00b86f9-83b4-4862-8d27-d37d13a2c995",
+        "d8eac85c-5fba-4945-9b4a-204ae2089d5d"
+      ],
+      "settings": {
+      }
+    },
+    "8b15ee17-6820-40ac-81f2-d3dc340f8110": {
+      "type": "documents",
+      "blocks": {
+        "e07abdcf-1d91-4927-81c1-da553adde726": {
+          "type": "document_block",
+          "settings": {
+            "document_thumbnail_img": "shopify:\/\/shop_images\/aromas_katalog_2023_94672e66-e626-4426-b698-c9c2006b6e3a.jpg",
+            "document_name": "Aromas katalog - NEWS 2023",
+            "document_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0619\/9528\/6737\/files\/Catalogo-novedades_Aromas_AW2023.pdf?v=1704789878"
+          }
+        },
+        "cca24579-c1fe-4960-b966-ba0fa05729ff": {
+          "type": "document_block",
+          "settings": {
+            "document_thumbnail_img": "shopify:\/\/shop_images\/aromas_katalog_2023_2_fce23ad6-20ed-4764-b19a-16de62f21f8f.jpg",
+            "document_name": "Aromas katalog - kolekce 2023",
+            "document_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0619\/9528\/6737\/files\/Catalogo-Aromas-2023-Digital-LOW.pdf?v=1704789872"
+          }
+        }
+      },
+      "block_order": [
+        "e07abdcf-1d91-4927-81c1-da553adde726",
+        "cca24579-c1fe-4960-b966-ba0fa05729ff"
+      ],
+      "settings": {
+      }
+    },
+    "8bb6e63f-ac40-47a8-9785-fb9ea8686f87": {
+      "type": "featured-product",
+      "blocks": {
+        "caccc4c4-8429-4583-88ea-cdca2635ef74": {
+          "type": "product_tab",
+          "settings": {
+            "tab_product": "aromas-del-campo"
+          }
+        }
+      },
+      "block_order": [
+        "caccc4c4-8429-4583-88ea-cdca2635ef74"
+      ],
+      "settings": {
+        "pro_tab_padding_top": 60,
+        "pro_tab_padding_bottom": 60,
+        "pro_tab_padding_top_ipad": 30,
+        "pro_tab_padding_bottom_ipad": 30,
+        "pro_tab_padding_top_xs": 20,
+        "pro_tab_padding_bottom_xs": 20,
+        "section_subtitle": "",
+        "section_title": "Produkty od Aromas Del Campo",
+        "product_col": "3",
+        "slide_product_limit": "4",
+        "featured_product_limit_handle": "50",
+        "pro_tab_bg_color": "#ffffff",
+        "view_all_button": "Všechny produkty výrobce",
+        "view_all_button_url": "shopify:\/\/collections\/aromas-del-campo"
+      }
+    }
+  },
+  "order": [
+    "1ede04ae-144d-4693-8711-9ffa865623d7",
+    "77458ee0-430d-45af-ba62-90f7046aaa69",
+    "8b15ee17-6820-40ac-81f2-d3dc340f8110",
+    "8bb6e63f-ac40-47a8-9785-fb9ea8686f87"
+  ]
+}
