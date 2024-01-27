@@ -21,34 +21,10 @@
           "type": "image_block",
           "settings": {
           }
-        },
-        "7efcc47f-4004-4df1-b46b-f4d768dcb6ab": {
-          "type": "image_block",
-          "settings": {
-          }
-        },
-        "ac88f83e-958d-49c8-a792-1adb471e2aad": {
-          "type": "image_block",
-          "settings": {
-          }
-        },
-        "9b05b992-ab53-4810-b073-cf8d423d3739": {
-          "type": "image_block",
-          "settings": {
-          }
-        },
-        "ad40dfee-06d8-40d7-8a58-9677500c9f15": {
-          "type": "image_block",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "844fbcda-5350-4743-bb43-05c45e6ee7e0",
-        "7efcc47f-4004-4df1-b46b-f4d768dcb6ab",
-        "ac88f83e-958d-49c8-a792-1adb471e2aad",
-        "9b05b992-ab53-4810-b073-cf8d423d3739",
-        "ad40dfee-06d8-40d7-8a58-9677500c9f15"
+        "844fbcda-5350-4743-bb43-05c45e6ee7e0"
       ],
       "settings": {
       }
@@ -59,21 +35,13 @@
         "f0e4c7f3-d68b-416c-bcfa-f15b94658928": {
           "type": "document_block",
           "settings": {
-            "document_name": "Document name",
-            "document_url": ""
-          }
-        },
-        "ffb8289d-7468-4589-baf4-e0203bee8efc": {
-          "type": "document_block",
-          "settings": {
-            "document_name": "Document name",
+            "document_name": "Sylvania katalog LED",
             "document_url": ""
           }
         }
       },
       "block_order": [
-        "f0e4c7f3-d68b-416c-bcfa-f15b94658928",
-        "ffb8289d-7468-4589-baf4-e0203bee8efc"
+        "f0e4c7f3-d68b-416c-bcfa-f15b94658928"
       ],
       "settings": {
       }
@@ -88,13 +56,13 @@
         "pro_tab_padding_top_xs": 20,
         "pro_tab_padding_bottom_xs": 20,
         "section_subtitle": "",
-        "section_title": "Produkty od",
+        "section_title": "LED žárovky od Sylvania",
         "product_col": "1",
         "slide_product_limit": "4",
         "featured_product_limit_handle": "50",
         "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
-        "view_all_button_url": ""
+        "view_all_button_url": "shopify:\/\/collections\/sylvania"
       }
     }
   },
