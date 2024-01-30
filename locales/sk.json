@@ -448,6 +448,249 @@
         "handle_email_invalid": "Zadajte platný e-mail",
         "email_invalid": "Zadajte platnú e-mailovú adresu.",
         "email_or_phone_blank": "Zadajte prosím svoju e-mailovú adresu alebo číslo mobilného telefónu"
+      },
+      "payment_gateway": {
+        "order_due_on_fulfillment_payment": "Z vašej karty sa strhne príslušná čiastka, akonáhle dôjde k splneniu objednávky.",
+        "draft_order_payment_due_later_no_terms": "Vaša platba bude splatná, hneď ako dôjde k potvrdeniu objednávky.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Z vašej karty sa strhne príslušná čiastka, akonáhle dôjde k potvrdeniu objednávky.",
+        "draft_order_payment_due_later_terms": "Po potvrdení objednávky pre vás budú platiť tieto podmienky: {{translatedName}} .",
+        "draft_order_payment_due_on_fulfillment": "Vaša platba bude splatná, akonáhle dôjde k potvrdeniu a splneniu objednávky."
+      },
+      "thank_you": {
+        "title": "Ďakujeme vám za váš nákup!",
+        "confirmation_email_sent_text": "Potvrdzovací e-mail bol odoslaný na {{ email }}",
+        "return_to_store_link_label": "Späť do obchodu",
+        "print_link_label": "Tlač účtenky",
+        "payment_information_title": "Informácie o platbe",
+        "shipping_information_title": "Informácie o doprave",
+        "page_title": "Ďakujeme za objednávku!",
+        "page_title_no_name": "Ďakujem!",
+        "cancelled_page_title": "Objednávka zrušená",
+        "customer_information_title": "Informácie o zákazníkovi",
+        "contact_information_title": "Kontaktné údaje",
+        "billing_address_title": "Fakturačná adresa",
+        "shipping_address_title": "Dodacia adresa",
+        "shipping_address_map_title": "Zobrazenie dodacej adresy na mapách Google: %{address}",
+        "payment_method_title": "Spôsob platby",
+        "shipping_method_title": "Spôsob dopravy",
+        "tracking_number": "Sledovacie číslo:",
+        "company_tracking_number": "sledovacie číslo {{Company}} :",
+        "estimated_arrival": "Odhadovaný dátum dodania: ",
+        "re-order": "Zmeniť poradie rovnakých položiek",
+        "confirmed": "Potvrdzuje",
+        "thank_you_title": "Vaša objednávka je potvrdená",
+        "thank_you_confirmed_order_with_email": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_confirmed_order_with_phone": "Potvrdzovaciu textovku s číslom objednávky obdržíte už čoskoro.",
+        "thank_you_confirmed_order_with_email_and_phone": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_confirmed_order_with_missing": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "order_status_confirmed_order_with_email": "Keď bude vaša objednávka pripravená, dostanete e-mail.",
+        "order_status_confirmed_order_with_phone": "Keď bude vaša objednávka pripravená, pravdepodobne dostanete textovú správu.",
+        "order_status_confirmed_order_with_email_and_phone": "Keď bude vaša objednávka pripravená, dostanete e-mail.",
+        "order_status_updates_with_email": "Informácie o expedícii a doručení dostanete e-mailom.",
+        "order_status_updates_with_phone": "Informácie o expedícii a doručení pravdepodobne dostanete v textovej správe.",
+        "order_status_updates_with_email_and_phone": "Informácie o expedícii a doručení dostanete e-mailom.",
+        "order_status_updates_with_missing": "Vyberte, ako chcete prijímať aktualizácie zásielky.",
+        "confirmed_title": "Vaša zásielka je potvrdená",
+        "confirmed_description": "Prijali sme vašu objednávku a pripravujeme ju. Vráťte sa na túto stránku, kde nájdete informácie o stave zásielky.",
+        "order_updates_title": "Aktualizácia objednávok",
+        "order_updates_description_html": "Aktualizácie budú odoslané na {{ customer_contact }}",
+        "order_updates_current_step_prefix": "Aktuálny krok: ",
+        "order_updates_upcoming_step_prefix": "Ďalší krok: ",
+        "in_transit": "Na ceste",
+        "in_transit_title": "Vaša zásielka je na ceste",
+        "in_transit_description": "Vráťte sa na túto stránku, kde nájdete informácie o stave zásielky.",
+        "in_transit_description_days": "Balíček by ste mali dostať v nasledujúcich dňoch {{ number }} .",
+        "in_transit_description_today": "Mali by ste dostať balíček dnes.",
+        "in_transit_description_tomorrow": "Balíček by ste mali dostať na budúci deň.",
+        "no_tracking_number": "Pre túto dodávku neexistuje žiadne sledovacie číslo.",
+        "out_for_delivery": "Na dodanie",
+        "out_for_delivery_title": "Vaša zásielka je na dodanie",
+        "out_for_delivery_description_html": "Vaša zásielka je na dodávku kamiónu-očakávajú, že dorazí dnes. Pokiaľ ste ho ešte nedostali v nasledujúcich 2 dňoch, prosím {{ contact_us }} .",
+        "attempted_delivery": "Pokus o doručenie",
+        "attempted_delivery_title": "Bol urobený pokus doručiť vašu zásielku",
+        "attempted_delivery_description_html": "Bol urobený pokus doručiť vašu zásielku, ale to bolo neúspešné. Ak chcete zaistiť ďalší pokus o doručenie, zadajte {{ contact_us }} .",
+        "delivered": "Doručená",
+        "delivered_title": "Vaša zásielka bola doručená",
+        "delivered_description_html": "Vaša zásielka bola doručená na adresu, ktorú ste poskytli. Ak ste ho nedostali alebo máte iné problémy, {{ contact_us }} .",
+        "contact_us_html": "Potrebujete pomoc? {{ contact_us }}",
+        "updated_time": "Aktualizované {{ time_ago }} pred",
+        "failure": "Nedoručené",
+        "failed_title": "Vaša zásielka nemohla byť doručená",
+        "failed_contact_merchant": "Podľa {{ company }} nie je možné objednávku doručiť podľa plánu. Ak chcete zaistiť ďalší pokus o doručenie, kontaktujte prosím {{ company }} .",
+        "failed_contact_merchant_no_company": "Vaša objednávka nemohla byť doručená podľa plánu. Kontaktujte nás a dohodnite si ďalší pokus o doručenie.",
+        "non_shippable_title": "Vaša objednávka je dokončená",
+        "login_title": "Prihláste sa pre zobrazenie všetkých podrobností o zásielke",
+        "login_description": "Číslo vašej objednávky nájdete v účtenkách, ktoré ste obdržali prostredníctvom e-mailu.",
+        "login_description_phone": "Číslo objednávky nájdete v potvrdení, ktoré sme vám odoslali textovou správou.",
+        "login_not_customer_html": "Nie je {{ name }} ? Môžete {{ link }}",
+        "customer_information_hidden_fields_message": "Prihláste sa a pozrite sa na všetky údaje o zákazníkovi.",
+        "cancelled_title": "Vaša objednávka bola zrušená.",
+        "cancelled_description": "Vaša objednávka bola zrušená {{ date }} . Prosím, kontaktujte nás, ak máte nejaké otázky.",
+        "customer_validation_error": "Neplatné číslo e-mailu alebo objednávky.",
+        "customer_validation_error_phone": "Zadajte platné telefónne číslo alebo číslo objednávky.",
+        "login": "Prihlásiť sa",
+        "unfulfilled_items_title": "Príprava na expedíciu",
+        "unfulfilled_items_description": "Aktuálne pripravujeme tieto položky na expedíciu.",
+        "order_updates_description_missing": "Nedostávate zasielanie aktualizácií.",
+        "order_updates_subscribe_to_email_notifications": "Získajte zasielanie aktualizácií e-mailom",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Získajte zasielanie aktualizácií e-mailom alebo SMS",
+        "order_updates_subscribe_to_phone_notifications": "Získajte zasielanie aktualizácií pomocou SMS",
+        "order_updates_submit_subscription": "Odoslať",
+        "track_shipment": "Sledovať zásielku",
+        "order_status_confirmed_order_with_email_pick_up": "Keď bude vaša objednávka pripravená na vyzdvihnutie, príde vám e-mail.",
+        "order_status_confirmed_order_with_phone_pick_up": "Keď bude vaša objednávka pripravená na vyzdvihnutie, príde vám textová správa.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Keď bude vaša objednávka pripravená na vyzdvihnutie, príde vám e-mail a textová správa.",
+        "thank_you_confirmed_order_with_email_pick_up": "Keď bude vaša objednávka pripravená na vyzdvihnutie, príde vám e-mail.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Keď bude vaša objednávka pripravená na vyzdvihnutie, príde vám textová správa.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Keď bude vaša objednávka pripravená na vyzdvihnutie, príde vám e-mail.",
+        "ready_for_pickup_title": "Vaša objednávka je pripravená na vyzdvihnutie",
+        "ready_for_pickup_description": "Vaša objednávka je pripravená na vyzdvihnutie. Pri vyzdvihnutí objednávky majte pripravené potvrdenie objednávky.",
+        "picked_up_title": "Vaša objednávka bola vyzdvihnutá",
+        "picked_up_description_html": "Vaša objednávka bola vyzdvihnutá v lokalite %{location_name} dňa %{date}.",
+        "other_options": "Ďalšie možnosti"
+      },
+      "shop_policies": {
+        "terms_of_service": "Podmienky služby",
+        "legal_notice": "Právne upozornenie",
+        "shipping_policy": "Zásady pre doručovanie",
+        "terms_of_sale": "Podmienky predaja",
+        "subscription_policy": "Zásady predplatného",
+        "contact_information": "Kontaktné údaje",
+        "purchase_options_cancellation_policy": "Zásady pre zrušenie"
+      },
+      "notifications": {
+        "title": "Oznámenie"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Suma na zaplatenie za objednávku %{order_name}",
+        "additional_payment_requested": "Je nutné zaplatiť čiastku %{total_outstanding}",
+        "checkout_review_and_pay": "Vaša objednávka %{order_name} bola aktualizovaná. Skontrolujte zmeny a potom objednávku potvrďte zaplatením.",
+        "order_updated_on": "Vaša objednávka bola aktualizovaná dňa: %{last_edited_at}.",
+        "order_review_and_pay": "Vaša objednávka bola aktualizovaná. Skontrolujte ju a potvrďte zaplatením.",
+        "pay_now": "Zaplatiť",
+        "changes_summary": {
+          "added": {
+            "one": "Pridané",
+            "other": "Pridané: %{count}",
+            "few": "Pridané: %{count}",
+            "many": "Pridané: %{count}"
+          },
+          "removed": "Odstránené",
+          "subtracted": "Odstránené: %{count}",
+          "returned": "Vrátené: %{count}"
+        }
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Z vašej kreditnej karty bude strhnutá čiastka %{amount}",
+        "payment_total_label": "Platba celkom",
+        "change_currency_link": "Zmena na %{currency_name}",
+        "card_provider_fx_charges_warning": "Je možné, že váš poskytovateľ karty za transakcie v mene %{currency_code} účtuje poplatky.",
+        "currency_not_supported_by_shop": "Mena, ktorú ste vybrali, už nie je k dispozícii. Všetky ceny sú teraz uvedené v mene %{currency_code}."
+      },
+      "tips": {
+        "title": "Pridať sprepitné",
+        "description": "Prejavte svoju podporu tímu v obchode %{shop_name}",
+        "presets_description": "Vyberte percento sprepitného",
+        "custom_label": "Vlastné sprepitné",
+        "add_tip": "Pridať sprepitné",
+        "update_tip": "Aktualizovať sprepitné",
+        "message": "Ďakujeme. Ceníme si to.",
+        "no_tip_label": "Žiadne"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Kúpiť produkt %{product_name}",
+          "one": "Kúpiť produkt %{product_name} a %{count} ďalšiu položku",
+          "other": "Kúpiť produkt %{product_name} a tento počet ďalších položiek: %{count}",
+          "few": "Kúpiť produkt %{product_name} a tento počet ďalších položiek: %{count}",
+          "many": "Kúpiť produkt %{product_name} a tento počet ďalších položiek: %{count}"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Ďalšie informácie"
+        }
+      },
+      "post_purchase": {
+        "page_title": "Po nákupe",
+        "title": "Po nákupe",
+        "escape_confirmation": "Zaplatili ste za svoju objednávku.",
+        "escape_action": "Zobraziť potvrdenie objednávky ›",
+        "components": {
+          "close": "Zavrieť",
+          "expand": "Zobraziť viac",
+          "processing": "Spracovanie...",
+          "submit": "Odoslať"
+        }
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Váš košík bol aktualizovaný na základe krajiny doručenia.",
+        "cart_and_currency_updated_based_on_country": "Váš košík a mena boli aktualizované na základe dodacej krajiny."
+      },
+      "subscriptions": {
+        "recurring_totals": "%{total_price} čo %{interval}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Prvá platba: %{total_price}",
+            "other": "Prvé platby (počet: %{count}): %{total_price} (1 platba)",
+            "few": "Prvé platby (počet: %{count}): %{total_price} (1 platba)",
+            "many": "Prvé platby (počet: %{count}): %{total_price} (1 platba)"
+          },
+          "following_cycles": ", potom %{total_price} čo %{interval}"
+        },
+        "recurring_total_intervals": {
+          "day": {
+            "one": "deň"
+          },
+          "week": {
+            "one": "týždeň",
+            "other": "%{count} týždeň.",
+            "few": "%{count} týždeň.",
+            "many": "%{count} týždeň."
+          },
+          "month": {
+            "one": "mesiac",
+            "other": "%{count} mes.",
+            "few": "%{count} mes.",
+            "many": "%{count} mes."
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount": "Prvá platba: %{total_price_with_discount}, potom %{recurring_total}",
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", potom %{count} platba vo výške %{total_price}",
+            "other": ", potom ďalšie platby (celkom %{count}), každá vo výške %{total_price}",
+            "few": ", potom ďalšie platby (celkom %{count}), každá vo výške %{total_price}",
+            "many": ", potom ďalšie platby (celkom %{count}), každá vo výške %{total_price}"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Platobné metódy",
+        "title": "Platobné metódy",
+        "update_card_button_label": "Aktualizovať kartu",
+        "delete_customer_mandate": {
+          "generic_error": "Pri spracovaní vašej žiadosti došlo k problému.",
+          "success_message": "Vaša platobná metóda boli úspešne odstránená"
+        }
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Zmluvné podmienky registrovaného obchodníka",
+        "privacy_policy": "Zásady ochrany osobných údajov registrovaného obchodníka"
+      },
+      "contextual_availability": {
+        "products_not_available": {
+          "one": "Tento produkt bude z vášho košíka odobraný, pretože vo vašej krajine\/oblasti nie je k dispozícii.",
+          "other": "Tieto produkty budú z vášho košíka odobraté, pretože vo vašej krajine\/oblasti nie sú k dispozícii.",
+          "few": "Tieto produkty budú z vášho košíka odobraté, pretože vo vašej krajine\/oblasti nie sú k dispozícii.",
+          "many": "Tieto produkty budú z vášho košíka odobraté, pretože vo vašej krajine\/oblasti nie sú k dispozícii."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Tento produkt nie je vo vašej krajine\/oblasti k dispozícii.",
+          "other": "Tieto produkty nie sú vo vašej krajine\/oblasti k dispozícii.",
+          "few": "Tieto produkty nie sú vo vašej krajine\/oblasti k dispozícii.",
+          "many": "Tieto produkty nie sú vo vašej krajine\/oblasti k dispozícii."
+        }
       }
     }
   }
