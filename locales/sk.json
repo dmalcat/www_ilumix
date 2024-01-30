@@ -711,7 +711,65 @@
         "ready_for_pickup_description": "Vaša objednávka je pripravená na vyzdvihnutie. Pri vyzdvihnutí objednávky majte pripravené potvrdenie objednávky.",
         "picked_up_title": "Vaša objednávka bola vyzdvihnutá",
         "picked_up_description_html": "Vaša objednávka bola vyzdvihnutá v lokalite %{location_name} dňa %{date}.",
-        "other_options": "Ďalšie možnosti"
+        "other_options": "Ďalšie možnosti",
+        "order_status_payments_app_pending_payment_description_default_with_email": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone": "Čoskoro dostanete potvrdzovaciu textovú správu. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "Po vykonaní platby dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "Po vykonaní platby dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "Po vykonaní platby dostanete potvrdzovaciu textovú správu. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_failed_pending_payment": "Za objednávku sa nestrhla žiadna čiastka. Vráťte sa do košíka, skontrolujte si objednávku a skúste zaplatiť znova.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Po vykonaní platby dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "thank_you_confirmed_order_with_missing_payment": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_confirmed_order_with_draft_payment": "Dáme vám vedieť v prípade, že budeme potrebovať ďalšie informácie alebo že sa vaša objednávka potvrdí.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Dáme vám vedieť v prípade, že budeme potrebovať ďalšie informácie alebo že sa vaša objednávka potvrdí.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Za objednávku sa nestrhla žiadna čiastka. Vráťte sa do košíka, skontrolujte si objednávku a skúste zaplatiť znova.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Za objednávku sa nestrhla žiadna čiastka. Vráťte sa do košíka, skontrolujte si objednávku a skúste zaplatiť znova.",
+        "order_status_payments_app_pending_payment_description_default_with_missing": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "order_status_payments_app_pending_payment_description_default_with_missing_payment": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "order_status_payments_app_pending_payment_description_default_with_missing_pick_up": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_payment": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_pick_up": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone_payment": "Čoskoro dostanete potvrdzovaciu textovú správu. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone_pick_up": "Čoskoro dostanete potvrdzovaciu textovú správu. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Po vykonaní platby dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Po vykonaní platby dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Po vykonaní platby dostanete potvrdzovací e-mail. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Po vykonaní platby dostanete potvrdzovaciu textovú správu. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Po vykonaní platby dostanete potvrdzovaciu textovú správu. Objednávku môžete sledovať cez aplikáciu Shop.",
+        "order_status_payments_app_failed_pending_payment_payment": "Za objednávku sa nestrhla žiadna čiastka. Vráťte sa do košíka, skontrolujte si objednávku a skúste zaplatiť znova.",
+        "order_status_payments_app_failed_pending_payment_pick_up": "Za objednávku sa nestrhla žiadna čiastka. Vráťte sa do košíka, skontrolujte si objednávku a skúste zaplatiť znova.",
+        "order_status_confirmed_order_local_pick_up": "Vašu objednávku práve pripravujeme.",
+        "order_status_confirmed_order_local_payment": "Vašu objednávku práve pripravujeme.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Čoskoro vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "Čoskoro vám príde potvrdzovacia textová správa s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "Čoskoro vám príde potvrdzovacia textová správa s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "Čoskoro vám príde potvrdzovacia textová správa s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "Pokiaľ chcete potvrdenie objednávky, môžete nás kontaktovať e-mailom alebo telefonicky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "Po vykonaní platby vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Po vykonaní platby vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Po vykonaní platby vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "Po vykonaní platby vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Po vykonaní platby vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Po vykonaní platby vám príde potvrdzovací e-mail s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Po vykonaní platby vám príde potvrdzovacia textová správa s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Po vykonaní platby vám príde potvrdzovacia textová správa s číslom objednávky.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Po vykonaní platby vám príde potvrdzovacia textová správa s číslom objednávky."
       },
       "shop_policies": {
         "terms_of_service": "Podmienky služby",
@@ -720,7 +778,9 @@
         "terms_of_sale": "Podmienky predaja",
         "subscription_policy": "Zásady predplatného",
         "contact_information": "Kontaktné údaje",
-        "purchase_options_cancellation_policy": "Zásady pre zrušenie"
+        "purchase_options_cancellation_policy": "Zásady pre zrušenie",
+        "refund_policy": "Zásady vrátenia peňazí",
+        "privacy_policy": "Zásady ochrany osobných údajov"
       },
       "notifications": {
         "title": "Oznámenie"
@@ -979,6 +1039,59 @@
         "continue_to_payment_plans_button_label": "Pokračovať k splátkovým kalendárom (plánom)",
         "back_button_label": "Vrátiť",
         "choose_delivery_strategy": "Zvoľte metódu doručenia"
+      },
+      "review": {
+        "title": "Poradie revízií",
+        "review_title": "Skontrolujte a zaplaťte",
+        "checkout_as_guest": "Pokladňa ako hosť",
+        "blocks": {
+          "billing_address_title": "Fakturácia",
+          "shipping_address_title": "Doručiť na adresu",
+          "shipping_method_title": "Metóda dopravy",
+          "payment_method_title": "Platobná metóda",
+          "change_link_label": "Zmeniť",
+          "change_contact_method_link_label": "Zmeniť kontaktné údaje",
+          "change_billing_address_link_label": "Zmeniť fakturačnú adresu",
+          "change_shipping_address_link_label": "Zmeniť dodaciu adresu",
+          "change_shipping_method_link_label": "Zmeniť metódu dopravy",
+          "change_payment_method_link_label": "Zmeniť platobnú metódu",
+          "pick_up_in_store_shipping_method_html": "Vyzdvihnúť v obchode %{location_name}",
+          "purchase_order_number_title": "Číslo nákupnej objednávky",
+          "change_purchase_order_number_label": "Zmeniť číslo nákupnej objednávky",
+          "change_delivery_method_link_label": "Zmeniť metódu doručenia",
+          "no_address": "(Žiadna adresa)",
+          "no_purchase_order_number": "(žiadne číslo nákupnej objednávky)",
+          "due_after_order_reviewed_html": "Splatné po skontrolovaní objednávky",
+          "review_title_free_order": "Skontrolujte a dokončite svoju objednávku",
+          "payment_method_saved_company_location": "Uložiť kartu pre túto lokalitu"
+        },
+        "block_title": "Skontrolujte si údaje",
+        "checkout_a_different_way": "Iný spôsob platenia na pokladni"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Posielajte mi informácie a ponuky e-mailom",
+        "unsubscribe": {
+          "title": "Váš odber bol odhlásený",
+          "description": "Už vám nebudeme zasielať žiadne ďalšie pripomenutia ku košíku."
+        },
+        "accept_sms_checkbox_label": "Posielajte mi informácie a ponuky cez SMS",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "zásady ochrany osobných údajov",
+            "terms_of_service": "podmienky služby",
+            "description_html": "Pokiaľ sa zaregistrujete na odber cez SMS, súhlasíte s opakovaným doručovaním automatizovaných marketingových správ (vrátane pripomenutia košíkov) na zadané telefónne číslo. Súhlas nie je podmienený nákupom. Odber zrušíte odpovedí s textom STOP. Ak potrebujete pomoc, odpovedzte textom HELP. Frekvencia správ sa môže líšiť. Správy aj dáta môžu byť spoplatnené. Pozrite sa na naše %{privacy_policy_link} a %{terms_of_service_link}.",
+            "description_transactional_html": "Môžete dostávať textové správy súvisiace s potvrdením objednávky a aktuálnymi informáciami o zásielke. Odber zrušíte odpovedí s textom STOP. Ak potrebujete pomoc, odpovedzte textom HELP. Frekvencia správ sa môže líšiť. Správy aj dáta môžu byť spoplatnené. Pozrite sa na naše %{privacy_policy_modal_link} a %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Číslo mobilného telefónu",
+          "get_offers_by_text": "Dostávajte ponuky cez SMS"
+        },
+        "post_accept_marketing_checkbox_label": "Prihlásili ste sa na odber e-mailových noviniek a ponúk",
+        "pending_accept_marketing_checkbox_label": "Prejdite k e-mailom a potvrďte prihlásenie na odber noviniek a ponúk",
+        "accept_shop_pay_marketing_checkbox_label": "Chcem sa zaregistrovať k odberu noviniek a ponúk z tohto obchodu",
+        "disclaimer": {
+          "privacy_policy": "Zásady ochrany osobných údajov",
+          "terms_of_service": "Podmienky služby"
+        }
       }
     }
   },
