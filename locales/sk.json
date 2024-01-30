@@ -1,10 +1,65 @@
 {
   "customer": {
     "account": {
-      "title": "Môj účet"
+      "title": "Môj účet",
+      "view_addresses": "Zobraziť adresy",
+      "return": "Vrátiť sa na detail účtu"
     },
     "login": {
-      "title": "Prihlásenie"
+      "title": "Prihlásenie",
+      "forgot_password": "Zabudli ste heslo?",
+      "sign_in": "Prihlásiť sa",
+      "cancel": "Vrátiť sa do obchodu",
+      "guest_title": "Pokračovať ako hosť",
+      "guest_continue": "Pokračovať"
+    },
+    "activate_account": {
+      "title": "Aktivovať účet",
+      "subtext": "Vytvorte heslo pre aktiváciu účtu",
+      "submit": "Aktivovať účet",
+      "cancel": "Odmietnuť pozvanie"
+    },
+    "addresses": {
+      "title": "Vaša adresa",
+      "default": "Predvolené",
+      "add_new": "Pridať novú adresu",
+      "edit_address": "Upraviť adresu",
+      "first_name": "Meno",
+      "last_name": "Priezvisko",
+      "city": "Mesto",
+      "country": "Krajina",
+      "phone": "Telefón",
+      "set_default": "Nastaviť ako predvolený",
+      "add": "Pridať adresu",
+      "update": "Aktualizovať adresu",
+      "cancel": "Zrušiť",
+      "edit": "Upraviť",
+      "delete": "Zmazať"
+    },
+    "orders": {
+      "title": "História objednávok",
+      "date": "Dátum",
+      "total": "Celkom",
+      "none": "Nemáte žiadnu objednávku"
+    },
+    "order": {
+      "title": "Objednávka {{ name }}",
+      "date": "Objednané {{ date }}",
+      "cancelled": "Objednávka zrušená {{ date }}"
+    },
+    "recover_password": {
+      "title": "Resetovať heslo",
+      "submit": "Odoslať",
+      "cancel": "Zrušiť",
+      "subtext": "Odošleme vám email s pokynmi na resetovanie hesla",
+      "success": "Odoslali sme vám email"
+    },
+    "register": {
+      "title": "Vytvoriť účet",
+      "first_name": "Meno",
+      "last_name": "Priezvisko",
+      "submit": "Vytvoriť účet",
+      "cancel": "Vrátiť sa do obchodu"
     }
   },
   "shopify": {
@@ -804,6 +859,217 @@
         "cancel_adding_billing_address_accessibility_label": "Zrušiť pridanie fakturačnej adresy",
         "cancel_adding_shipping_address_accessibility_label": "Zrušiť pridanie dodacej adresy"
       }
+    },
+    "orders": {
+      "order_list": {
+        "pagination": {
+          "next_accessibility_label": "Ďalšie objednávky",
+          "previous": "Predchádzajúci",
+          "previous_accessibility_label": "Predchádzajúce objednávky",
+          "load_more": "Načítať ďalšie",
+          "load_more_accessibility_label": "Načítať ďalšie objednávky"
+        },
+        "sort_by": "Zoradiť podľa: {{option}}",
+        "sort_hide_options_accessibility_label": "Skryjete možnosti radenia pre potvrdené objednávky.",
+        "sort_show_options_accessibility_label": "Zobrazíte možnosti radenia pre potvrdené objednávky.",
+        "sort_title": "Zoradiť",
+        "sort": {
+          "date": {
+            "newest": "Od najnovšej po najstaršiu",
+            "oldest": "Od najstaršej po najnovšie"
+          },
+          "location": {
+            "ascending": "Lokalita (A-Z)",
+            "descending": "Lokalita (Z-A)"
+          },
+          "order_number": {
+            "ascending": "Číslo objednávky (od najnižšieho po najvyššie)",
+            "descending": "Číslo objednávky (od najvyššieho po najnižšie)"
+          },
+          "order_total": {
+            "ascending": "Objednávka celkom (od najnižšej po najvyššiu)",
+            "descending": "Objednávka celkom (od najvyššej po najnižšiu)"
+          }
+        },
+        "table_view": "Otvoriť zobrazenie tabuľky",
+        "one_images_accessibility_label": "Objednávka obsahuje: {{lineItemName1}}",
+        "two_images_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "no_filtered_results_description": "Odobraním alebo úpravou filtrov si zobrazíte svoje objednávky.",
+        "no_filtered_results_title": "Žiadne vyfiltrované výsledky",
+        "estimated_shortform": "Približne {{date}}",
+        "payment_status": {
+          "list_view": {
+            "due": "Splatnosť: {{date}}",
+            "due_without_date": "Splatnosť",
+            "due_on_fulfillment": "Splatnosť platby pri plnení",
+            "pay_to_confirm": "Platba na potvrdenie",
+            "payment_not_due": "Platba ešte nie je splatná"
+          },
+          "table_view": {
+            "due": "Splatnosť: {{date}}",
+            "due_today": "Splatnosť dnes",
+            "paid": "Zaplatené",
+            "due_on_fulfillment": "Splatnosť pri plnení",
+            "pay_to_confirm": "Platba na potvrdenie",
+            "payment_not_due": "Zatiaľ nie je splatné"
+          }
+        },
+        "sort_currently_sorted_by_accessibility_label": "Momentálne zoradené týmto spôsobom: {{option}}",
+        "carousel": {
+          "one_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} – množstvo: {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} – množstvo: {{lineItemQuantity1}} , {{lineItemName2}} – množstvo: {{lineItemQuantity2}} ,",
+          "three_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} – množstvo: {{lineItemQuantity1}} , {{lineItemName2}} – množstvo: {{lineItemQuantity2}} , {{lineItemName3}} – množstvo: {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} – množstvo: {{lineItemQuantity1}} , {{lineItemName2}} – množstvo: {{lineItemQuantity2}} , {{lineItemName3}} – množstvo: {{lineItemQuantity3}} , {{lineItemName4}} – množstvo: {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} – množstvo: {{lineItemQuantity1}} , {{lineItemName2}} – množstvo: {{lineItemQuantity2}} , {{lineItemName3}} – množstvo: {{lineItemQuantity3}} , {{lineItemName4}} – množstvo: {{lineItemQuantity4}} , {{lineItemName5}} – množstvo: {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} – množstvo: {{lineItemQuantity1}} , {{lineItemName2}} – množstvo: {{lineItemQuantity2}} , {{lineItemName3}} – množstvo: {{lineItemQuantity3}} , {{lineItemName4}} – množstvo: {{lineItemQuantity4}} , {{lineItemName5}} – množstvo: {{lineItemQuantity5}} , {{lineItemName6}} – množstvo: {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} – množstvo: {{lineItemQuantity1}} , {{lineItemName2}} – množstvo: {{lineItemQuantity2}} , {{lineItemName3}} – množstvo: {{lineItemQuantity3}} , {{lineItemName4}} – množstvo: {{lineItemQuantity4}} , {{lineItemName5}} – množstvo: {{lineItemQuantity5}} , {{lineItemName6}} – množstvo: {{lineItemQuantity6}} a ďalšie položky",
+          "view_order_details": "Zobraziť podrobnosti objednávky",
+          "previous": "Predchádzajúci",
+          "next": "Ďalšia"
+        },
+        "show_order_actions_accessibility_label": "Zobraziť akcie pre objednávku {{name}}",
+        "empty_state_title_for_pending_orders": "Žiadne čakajúce objednávky",
+        "more_than_four_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} a ďalšie produkty ( {{numberOfAdditionalProducts}} )",
+        "plus_more_products": "+ tento počet produktov: {{numberOfAdditionalProducts}}",
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Zobraziť objednávku a jej podrobnosti",
+            "estimated_delivery": "Odhadované doručenie: {{date}}",
+            "last_updated": "Posledná aktualizácia: {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Odhadované doručenie {{date}}"
+          }
+        },
+        "more_than_three_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} , {{lineItemName2}} a ďalšie produkty ( {{numberOfAdditionalProducts}} )",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "filter_title": "Filtrovať",
+        "filter": {
+          "clear_section": "Vymazať sekciu",
+          "clear_all": "Vymazať všetko",
+          "apply": "Použiť",
+          "date": {
+            "start_date": "Počiatočný dátum",
+            "end_date": "Koncový dátum",
+            "title": "Dátum objednávky",
+            "last_7_days": "Posledných 7 dní",
+            "last_30_days": "Posledných 30 dní",
+            "last_90_days": "Posledných 90 dní",
+            "last_365_days": "Posledných 12 mesiacov",
+            "custom": "Vlastné"
+          }
+        }
+      },
+      "order_status": {
+        "canceled_description": "Vaša objednávka bola zrušená dňa {{date}} .",
+        "canceled_label": "Zrušené",
+        "canceled_title": "Vaša objednávka bola zrušená",
+        "come_back": "Na tejto stránke nájdete nové informácie o stave svojej zásielky.",
+        "company_tracking_number": "{{company}} – číslo na sledovanie:",
+        "confirmed_label": "Potvrdené",
+        "confirmed_title": "Vaša objednávka je potvrdená",
+        "delivered_description": "Táto zásielka bola doručená.",
+        "delivered_label": "Doručené",
+        "delivered_title": "Vaša zásielka bola doručená",
+        "estimated_delivery": "Odhadované doručenie: {{date}}",
+        "in_review_description": "Dáme vám vedieť v prípade, že budeme potrebovať ďalšie informácie alebo že sa vaša objednávka potvrdí.",
+        "in_review_label": "Reviduje sa",
+        "in_review_title": "Vaša objednávka je posudzovaná",
+        "no_tracking_number": "Pre túto zásielku neexistuje číslo na sledovanie.",
+        "on_its_way_label": "Na ceste",
+        "on_its_way_title": "Vaša zásielka je na ceste",
+        "out_for_delivery_label": "Vyexpedované",
+        "out_for_delivery_title": "Vaša zásielka bola vyexpedovaná",
+        "resume_tracking": "Pokračovať v sledovaní",
+        "submitted_label": "Odoslané",
+        "track_shipment": "Sledovať zásielku",
+        "request_return": "Požiadať o vrátenie",
+        "attempted_delivery_label": "Pokus o doručenie",
+        "attempted_delivery_description": "Pokus o doručenie nebol úspešný.",
+        "confirmed_description": "Dostali sme vašu objednávku."
+      }
+    }
+  },
+  "general": {
+    "social": {
+      "share_on_pinterest": "Pripnúť",
+      "alt_text": {
+        "share_on_facebook": "Zdieľať na Facebooku",
+        "share_on_twitter": "Zdieľať na Twitteri",
+        "share_on_pinterest": "Zdieľať na Pintereste"
+      }
+    },
+    "delivery": {
+      "days": {
+        "one": "dňa",
+        "many": "dní"
+      },
+      "weeks": {
+        "one": "týždňa",
+        "many": "týždňov",
+        "other": "týždne"
+      }
+    }
+  },
+  "blogs": {
+    "sidebar": {
+      "categories": "Kategória"
+    }
+  },
+  "cart": {
+    "general": {
+      "remove": "Odstrániť",
+      "note": "Poznámka pre predajcov",
+      "subtotal": "Celkom",
+      "shipping_at_checkout": "Doprava a dane vypočítané pri platení",
+      "update": "Aktualizovať košík",
+      "checkout": "Do pokladne",
+      "empty": "Váš košík je momentálne prázdny.",
+      "continue_browsing_html": "Pokračujte v prezeraní <a href=\"\/collections\/all\">tu<\/a> .",
+      "close_cart": "Zavrieť košík"
+    }
+  },
+  "collections": {
+    "general": {
+      "empty_paragraph": "Výberu nezodpovedajú žiadne produkty."
+    },
+    "sorting": {
+      "title": "Zoradiť podľa",
+      "best_selling": "Najpredávanejšie",
+      "az": "Abecedne AZ",
+      "za": "Abecedne ZA",
+      "price_ascending": "Cena vzostupne",
+      "price_descending": "Cena zostupne",
+      "date_descending": "Najnovšie",
+      "date_ascending": "Najstaršie"
+    }
+  },
+  "contact": {
+    "form": {
+      "post_success": "Kontaktný formulár bol v poriadku odoslaný. Naši špecialisti sa vám čoskoro ozvú. "
+    }
+  },
+  "layout": {
+    "customer": {
+      "log_out": "Odhlásiť sa",
+      "log_in": "Prihlásiť",
+      "create_account": "Vytvoriť účet"
+    },
+    "footer": {
+      "accepted_payments": "Prijímame tieto platby"
+    }
+  },
+  "products": {
+    "general": {
+      "in_stock": "Ihneď na odoslanie",
+      "out_of_stock": "Skladom",
+      "custom": "Farba"
+    },
+    "product": {
+      "sold_out": "Vypredané",
+      "on_sale": "Zľava"
     }
   }
 }
