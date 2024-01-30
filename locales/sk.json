@@ -1038,7 +1038,63 @@
         "submit_for_review_notice_label": "Platba nebude splatná, pokiaľ neprebehne kontrola objednávky",
         "continue_to_payment_plans_button_label": "Pokračovať k splátkovým kalendárom (plánom)",
         "back_button_label": "Vrátiť",
-        "choose_delivery_strategy": "Zvoľte metódu doručenia"
+        "choose_delivery_strategy": "Zvoľte metódu doručenia",
+        "autocomplete_zero_item": "Žiadne položky nie sú k dispozícii",
+        "autocomplete_powered_by_google": "Používa technológie {{brandName}}",
+        "submit": "Odoslať",
+        "processing": "Spracovanie…",
+        "stepper": {
+          "increase": "Zvýšenie: {{type}}",
+          "decrease": "Zníženie: {{type}}",
+          "minimum_reached": "Bolo dosiahnuté minimum {{value}}",
+          "maximum_reached": "Bolo dosiahnuté maximum {{value}}"
+        },
+        "remove_item": "Odstrániť: %{label}",
+        "remove_tag": "Odobrať štítok",
+        "dates": {
+          "weekdays": {
+            "monday": "Pondelok",
+            "tuesday": "Utorok",
+            "wednesday": "Streda",
+            "thursday": "Štvrtok",
+            "friday": "Piatok",
+            "sunday": "Nedeľa"
+          },
+          "weekdays_abbreviation": {
+            "thursday": "Št",
+            "friday": "Pi",
+            "sunday": "Nie"
+          },
+          "months": {
+            "january": "Január",
+            "february": "Február",
+            "march": "Marec",
+            "april": "Apríl",
+            "may": "Máj",
+            "june": "Jún",
+            "july": "Júl",
+            "august": "August",
+            "september": "September",
+            "october": "Október",
+            "november": "November",
+            "december": "December"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Zobraziť predchádzajúci mesiac, {{month}} {{year}}",
+          "show_next_month": "Zobraziť budúci mesiac, {{month}} {{year}}",
+          "range_start": "Začiatok rozmedzia",
+          "in_range": "V rozmedzí",
+          "range_end": "Koniec rozmedzia"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Skupina značiek ( {{number}} )",
+            "other": "Skupina značiek ( {{number}} )",
+            "few": "Skupina značiek ( {{number}} )",
+            "many": "Skupina značiek ( {{number}} )"
+          }
+        }
       },
       "review": {
         "title": "Poradie revízií",
@@ -1092,6 +1148,45 @@
           "privacy_policy": "Zásady ochrany osobných údajov",
           "terms_of_service": "Podmienky služby"
         }
+      },
+      "contact": {
+        "title": "Informácie o zákazníkovi",
+        "delivery_option_title": "Metóda doručenia",
+        "email_or_phone_label": "Číslo e-mailu alebo mobilného telefónu",
+        "email_or_phone_placeholder": "Číslo e-mailu alebo mobilného telefónu",
+        "first_name_label": "Krstné meno",
+        "optional_first_name_label": "Krstné meno",
+        "last_name_label": "Priezvisko",
+        "company_label": "Spoločnosti",
+        "optional_company_label": "Spoločnosť (voliteľná)",
+        "address2_label": "Apt, SUIT atď.",
+        "optional_address2_label": "Číslo bytu, apartmán (voliteľné)",
+        "city_label": "Mesto",
+        "country_label": "Krajina",
+        "country_code": "Kód krajiny\/oblasti",
+        "province_label": "Provincia",
+        "province_placeholder": "Provincia",
+        "state_label": "Štát",
+        "state_placeholder": "Štát",
+        "region_label": "Región",
+        "region_placeholder": "Región",
+        "prefecture_label": "Prefektúra",
+        "prefecture_placeholder": "Prefektúra",
+        "state_and_territory_label": "Štát\/územie",
+        "state_and_territory_placeholder": "Štát\/územie",
+        "phone_label": "Telefón",
+        "optional_phone_label": "Telefón (voliteľné)",
+        "phone_placeholder": "Telefón",
+        "phone_tooltip": "Pre prípad, že by sme vás potrebovali kvôli vašej objednávke kontaktovať",
+        "postal_code_placeholder": "Poštové smerovacie číslo",
+        "region_none": "Nič nie je vybrané",
+        "civic_number_warning": "Pridajte číslo domu, ak existuje",
+        "optional_last_name_label": "Priezvisko (voliteľné)",
+        "optional_recipient_label": "Príjemca (voliteľné)",
+        "different_shipping_address_label": "Dodať na inú adresu",
+        "different_shipping_address_text": "Použiť pre túto objednávku jednorazovú adresu",
+        "change_company_location_link_label": "Zmeniť lokalitu spoločnosti",
+        "change_location_link_label": "Zmeniť lokalitu"
       }
     }
   },
@@ -1203,7 +1298,130 @@
         "add_shipping_address_section_accessibility_label": "Pridať dodaciu adresu",
         "billing_address_card_title": "Fakturačná adresa",
         "cancel_adding_billing_address_accessibility_label": "Zrušiť pridanie fakturačnej adresy",
-        "cancel_adding_shipping_address_accessibility_label": "Zrušiť pridanie dodacej adresy"
+        "cancel_adding_shipping_address_accessibility_label": "Zrušiť pridanie dodacej adresy",
+        "save_new_billing_address_accessibility_label": "Uložiť fakturačnú adresu",
+        "save_new_shipping_address_accessibility_label": "Uložiť dodaciu adresu",
+        "shipping_address_card_title": "Dodacia adresa"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Skryť všetko",
+          "show_all": "Zobraziť všetko",
+          "hide_all_accessibility_label": "Skryť všetky revidované objednávky",
+          "show_all_accessibility_label": "Zobraziť všetky revidované objednávky",
+          "title": "Čakajúce",
+          "pagination": {
+            "nav_accessibility_label": "Navigačné tlačidlá revidovaných objednávok"
+          },
+          "show_all_orders_in_review": "Zobraziť všetky revidované objednávky",
+          "show_less_orders_in_review": "Zobraziť menej revidovaných objednávok",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Nemáte žiadne čakajúce objednávky",
+            "pending_orders": {
+              "one": "Máte {{count}} čakajúcu objednávku",
+              "other": "Máte tento počet čakajúcich objednávok: {{count}}",
+              "few": "Máte tento počet čakajúcich objednávok: {{count}}",
+              "many": "Máte tento počet čakajúcich objednávok: {{count}}"
+            },
+            "more_than_pagination_length": "Máte viac ako tento počet čakajúcich objednávok: {{count}}"
+          },
+          "pending_orders_count_more_than_pagination_length": "Viac ako {{count}}"
+        },
+        "removed_company_contact_tooltip": "Odobrané zo spoločnosti"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "Potvrdené {{date}} z objednávky {{draftOrderName}}",
+        "loading": "Načítajú sa podrobnosti objednávky",
+        "loading_finished_accessibility_message": "Podrobnosti objednávky boli načítané",
+        "payment_status": {
+          "draft": {
+            "description": "O podrobnostiach platby sa rozhoduje pri potvrdení objednávky.",
+            "title": "Platba ešte nie je splatná",
+            "in_review": {
+              "description": "O podrobnostiach platby sa rozhoduje pri potvrdení objednávky.",
+              "title": "Platba ešte nie je splatná"
+            },
+            "submitted": {
+              "description": "Odošlite platbu, aby ste potvrdili túto objednávku.",
+              "title": "Platba na potvrdenie"
+            }
+          },
+          "paid": {
+            "description": "Vaša objednávka je plne uhradená.",
+            "title": "Zaplatené",
+            "title_with_date": "Zaplatené dňa {{date}}"
+          },
+          "pay_now": "Zaplatiť",
+          "pending": {
+            "banner_overdue": {
+              "one": "Vaša platba je {{count}} deň po splatnosti",
+              "other": "Vaša platba je tento počet dní po splatnosti: {{count}}",
+              "few": "Vaša platba je tento počet dní po splatnosti: {{count}}",
+              "many": "Vaša platba je tento počet dní po splatnosti: {{count}}"
+            },
+            "banner_due": {
+              "one": "Vaša platba je splatná za {{count}} deň",
+              "other": "Vaša platba je splatná za tento počet dní: {{count}}",
+              "few": "Vaša platba je splatná za tento počet dní: {{count}}",
+              "many": "Vaša platba je splatná za tento počet dní: {{count}}"
+            },
+            "banner_due_today": "Vaša platba je splatná dnes",
+            "title": "Splatnosť",
+            "title_with_date": "Splatnosť: {{date}}",
+            "description_overdue": "Vaša platba je oneskorená.",
+            "description_partially_paid": "Táto objednávka bola čiastočne uhradená. Máte zostávajúci zostatok.",
+            "description_authorized": "Suma bude zaplatená pomocou vašej platobnej metódy v deň splatnosti alebo ju môžete uhradiť hneď.",
+            "title_due_on_receipt": "Platba zatiaľ nie je splatná",
+            "description_due_on_receipt": "Akonáhle splatná bude, dostanete faktúru.",
+            "title_due_on_fulfillment": "Splatnosť platby pri plnení",
+            "description_due_on_fulfillment": "Platba je splatná, akonáhle dôjde k splneniu všetkých položiek v tejto objednávke."
+          },
+          "refund": {
+            "title": "Vrátené peniaze",
+            "title_with_date": "Dátum vrátenia peňazí: {{date}}",
+            "description_full_refund": "Za túto objednávku vám boli vrátené peniaze v plnej výške.",
+            "description_single_refund": "Za túto objednávku vám boli čiastočne vrátené peniaze.",
+            "description_multiple_refunds": "Za túto objednávku vám boli čiastočne vrátené peniaze."
+          },
+          "canceled": {
+            "title": "Platba bola zrušená",
+            "description": "Nič vám nebolo účtované."
+          },
+          "pay_now_accessibility_label": "Zaplatiť hneď za objednávku {{orderName}}"
+        },
+        "subtitle": "Odoslané: {{date}}",
+        "title": "Objednávka {{name}}",
+        "order_timeline": {
+          "expand_events_label": "Zobraziť podrobnosti",
+          "expand_events_accessibility_label": "Zobraziť podrobnosti návrhu objednávky",
+          "hide_events_label": "Skryť podrobnosti",
+          "hide_events_accessibility_label": "Skryť podrobnosti návrhu objednávky"
+        }
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Táto platobná metóda prestane byť k dispozícii pre budúce nákupy prostredníctvom danej lokality.",
+          "description_with_replacement": "Odstránenie tejto platobnej metódy ovplyvní vopred autorizované platby pre danú lokalitu. Nahraďte ju alternatívnou platobnou metódou, pokiaľ chcete dostávať ďalšie objednávky."
+        },
+        "payment_details": {
+          "order_label": "Objednávka {{name}}",
+          "draft_label": "Návrh objednávky {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Pridajte číslo nákupnej objednávky",
+        "add_modal_title": "Pridajte číslo nákupnej objednávky",
+        "cancel": "Zrušiť",
+        "close_modal_accessibility_label": "Zavrieť modálne okno čísla nákupnej objednávky",
+        "discard": "Zahodiť",
+        "discard_changes_modal_title": "Chcete zmeny zahodiť?",
+        "edit_accessibility_label": "Upravte číslo nákupnej objednávky",
+        "edit_modal_title": "Upravte číslo nákupnej objednávky",
+        "empty_state": "Žiadne číslo nákupnej objednávky",
+        "modal_po_number_input_label": "Číslo nákupnej objednávky",
+        "modal_po_number_input_max_length_error": "Čísla nákupných objednávok obsahujú maximálne tento počet znakov: {{maxLength}} .",
+        "save": "Uložiť",
+        "title": "Nákupná objednávka č. {{poNumber}}"
       }
     },
     "orders": {
@@ -1335,6 +1553,42 @@
         "attempted_delivery_label": "Pokus o doručenie",
         "attempted_delivery_description": "Pokus o doručenie nebol úspešný.",
         "confirmed_description": "Dostali sme vašu objednávku."
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Pri odstraňovaní tejto adresy došlo k problému. Skúste to znova alebo aktualizujte stránku."
+      },
+      "addresses_loading_issue": {
+        "description": "Chyba pripojenia. Skontrolujte pripojenie k internetu a skúste to znova."
+      },
+      "banner_title": {
+        "one": "Došlo k {{count}} chybe",
+        "other": "Došlo k {{count}} chybám",
+        "few": "Došlo k {{count}} chybám",
+        "many": "Došlo k {{count}} chybám"
+      },
+      "failed_address_creation": {
+        "description": "Pri vytváraní vašej adresy došlo k problému. Skúste aktualizovať stránku alebo skontrolovať pripojenie k internetu."
+      },
+      "failed_address_update": {
+        "description": "Pri aktualizácii vašej adresy došlo k problému. Skúste aktualizovať stránku alebo skontrolovať pripojenie k internetu."
+      },
+      "no_access": {
+        "back_to_authentication_link": "Prihláste sa cez iný účet",
+        "description": "Pri obchode {{shopName}} nie ste zaregistrovaní ako zákazník B2B",
+        "title": "Žiadny prístup"
+      },
+      "no_access_to_locations": {
+        "description": "Nemáte prístup k žiadnym lokalitám"
+      },
+      "not_found": {
+        "description": "Skontrolujte adresu URL alebo to skúste znova za niekoľko minút.",
+        "title": "Pri načítaní tejto stránky došlo k problému"
+      },
+      "order_not_found": {
+        "description": "Táto objednávka neexistuje alebo nemáte oprávnenie na jej zobrazenie.",
+        "title": "Objednávka nebola nájdená"
       }
     }
   },
