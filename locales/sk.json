@@ -489,7 +489,116 @@
           "add_label": "Pridať darčekovú kartu alebo kredit pre obchod",
           "manage_label": "Spravovať darčekové karty alebo kredit pre obchod"
         },
-        "saved_credit_card_cvv_verification": "Zadajte prosím pre účely overenia bezpečnostný kód svojej karty."
+        "saved_credit_card_cvv_verification": "Zadajte prosím pre účely overenia bezpečnostný kód svojej karty.",
+        "card_fields_container_prefix": "Kontajner za:",
+        "card_fields_processing_error": "Pri spracovaní informácií o platbe došlo k chybe. Skúste to prosím neskôr.",
+        "technical_error": "Platby nemôžu byť spracované práve teraz kvôli technickým problémom. Skúste to prosím znova za pár minút.",
+        "no_method_error": "Na základe vašej polohy alebo produktov v košíku nie sú k dispozícii žiadne spôsoby platby.",
+        "not_configured_error": "Momentálne nie je nakonfigurovaná žiadna platobná brána.",
+        "missing_credit_card_error": "Nie je možné spracovať platbu bez platobnej karty.",
+        "generic_incorrect_card_info": "Vaše platobné údaje nebolo možné overiť. Skontrolujte údaje na karte a skúste to znova.",
+        "sofort_label": "Bankový prevod Sofort",
+        "klarna_pay_now_label": "Zaplatiť ihneď pomocou služby Klarna",
+        "klarna_pay_later_label": "Zaplatiť neskôr pomocou služby Klarna",
+        "klarna_slice_it_label": "Financovanie so službou Klarna",
+        "card_information_notice": "Všetky transakcie sú zabezpečené a šifrované. Údaje o kreditnej karte sa nikdy neukladajú.",
+        "credit_card_start_month": "Mesiac začatia",
+        "credit_card_start_year": "Rok začatia",
+        "card_expiration_month_label": "Mesiac vypršania platnosti",
+        "card_expiration_year_label": "Rok vypršania platnosti",
+        "billing_address_not_supported_for_payment_method_error": "Táto platobná metóda nie je pre vašu fakturačnú adresu a menu k dispozícii. Skúste inú platobnú metódu.",
+        "change_currency_section_description": "Vyberte nastavenie meny",
+        "no_real_orders_dev_store": "Tento obchod nevie prijímať skutočné objednávky ani skutočné platby.",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Vaša objednávka je pokrytá darčekovou kartou.",
+          "other": "Vaša objednávka sa vzťahuje na vaše darčekové poukazy.",
+          "few": "Vaša objednávka je zaplatená z darčekových kariet.",
+          "many": "Vaša objednávka je zaplatená z darčekových kariet."
+        },
+        "card_fields_unavailable_html": {
+          "one": "Platby kreditnou a debetnou kartou nie sú momentálne k dispozícii.<br> <a href=\"javascript:window.location.reload();\">aktualizujte túto stránku<\/a> alebo akciu zopakujte neskôr.",
+          "other": "Platby kreditnou a debetnou kartou nie sú momentálne k dispozícii.<br> <a href=\"javascript:window.location.reload();\">aktualizujte túto stránku<\/a> alebo skúste použiť iný spôsob platby.",
+          "few": "Platby kreditnou a debetnou kartou nie sú v tejto chvíli dostupné.<br> <a href=\"%{current_url}\">Obnovte túto stránku<\/a> alebo skúste inú platobnú metódu.",
+          "many": "Platby kreditnou a debetnou kartou nie sú v tejto chvíli dostupné.<br> <a href=\"%{current_url}\">Obnovte túto stránku<\/a> alebo skúste inú platobnú metódu."
+        },
+        "subscription_agreement_label_html": "Uvedomujem si, že dávam súhlas s predplatným. Bude sa predlžovať za uvedenú cenu as daným opakovaním, kým neskončí alebo nebude\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">zrušené<\/a> .\n",
+        "waiting_on_payment_methods": "Získavanie platobnej metód k dispozícii...",
+        "apple_pay_payment_error": "Vaša platba nemohla byť dokončená. Skúste to znova alebo použite inú platobnú metódu.",
+        "subscription_card_update_agreement_label": "Zmenou platobnej metódy dôjde k aktualizácii vášho predplatného a budúcich opakovaných platieb.",
+        "card_security_vault_notice": "Potrebujeme vaše údaje pre budúce platby. Všetky transakcie sú zabezpečené a šifrované.",
+        "taxes_not_included": "Dane nie sú zahrnuté",
+        "no_taxes_banner_content": "Dane sa pri tejto objednávke nebudú účtovať. Po prijatí platby už ich nie je možné pridať.",
+        "card_update_label": "Aktualizovať kartu",
+        "paypal": {
+          "connect": "Kliknite a pripojte sa k svojmu účtu PayPal"
+        },
+        "subscription_agreement_label": "Najmenej jedna položka vo vašom košíku predstavuje odložený nákup alebo nákup predplatného. Pokračovaním v platbe vyjadrujete súhlas s tým, že sa cez vašu platobnú metódu bude automaticky strhávať cena uvedená na tejto stránke, a to s frekvenciou uvedenou na tejto stránke, kým príslušný produkt neskončí alebo kým ho nezrušíte. Pre všetky zrušenia platí %{cancelled}.",
+        "subscription_agreement_cancelled": "zásady pre zrušenie",
+        "card_expired": "Po skončení platnosti",
+        "card_verification_confirm": "Zadajte na účely overenia bezpečnostný kód svojej karty.",
+        "different_credit_card_label": "Použite inú kreditnú kartu",
+        "apple": {
+          "connect": "Kliknite a pripojte sa k svojmu účtu Apple Pay",
+          "not_available": "Apple Pay nie je v tomto prehliadači k dispozícii. Na pripojenie účtu Apple Pay je potrebné použiť prehliadač Safari na zariadení Apple."
+        },
+        "account_connected": "Účet je pripojený.",
+        "billing_address_associated_with_mandate": "Použiť adresu pridruženú k platobnej metóde",
+        "billing_address_associated_with_mandate_info": "Ak si chcete zmeniť fakturačnú adresu, odoberte prosím údaje o svojej kreditnej karte a zadajte ich znova.",
+        "delete_customer_mandate_modal_cancel": "Zrušiť",
+        "credit_card_vaulting_sign_in_banner_title": "Uložte si kreditnú kartu",
+        "credit_card_vaulting_sign_in_banner_info": "Ak si chcete svoju kreditnú kartu uložiť pre budúce nákupy, prihláste sa alebo si vytvorte účet.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Prihlásiť sa",
+        "expiry_long": "(Platnosť vyprší: %{month}\/%{year})",
+        "expiry_short": "(Koniec platnosti: %{month}\/%{year})",
+        "ftd_vault_credit_card_label": "Uložiť túto kreditnú kartu do môjho účtu pre rýchlejšie platenie",
+        "delete_customer_mandate_modal_title": "Chcete platobnú kartu odstrániť?",
+        "delete_customer_mandate_modal_body": "Ak kartu odoberiete, budete ju musieť znova pridať, než ju budete môcť použiť na platby.",
+        "delete_customer_mandate_modal_confirm": "Odobrať kartu",
+        "google": {
+          "connect": "Kliknite a pripojte sa k svojmu účtu Google Pay",
+          "error_authorizing": "Chyba pri autorizácii platby"
+        },
+        "mor_disclaimer_html": "Kliknutím nižšie a dokončením svojej objednávky súhlasíte s nákupom položiek od spoločnosti Global-e ako od registrovaného obchodníka\n pre túto transakciu, a to v súlade so <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">zmluvnými podmienkami<\/a>\n a <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">zásadami ochrany osobných údajov<\/a> uvedenej spoločnosti. Global-e je medzinárodným \nposkytovateľom služby plnenia obchodu %{shop_name}\n",
+        "purchase_options_card_update_agreement_label_html": "Aktualizáciou platobnej metódy autorizujete platby za akýkoľvek opakovaný alebo odložený nákup v súlade so <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">zásadami zrušenia<\/a> tohto obchodu.",
+        "receiver_payment_experience_hint": "Po zadaní objednávky obdržíte podrobnosti o platbe. Platbu vykonajte v sieti Multibanco alebo online do %{due_days} dní.",
+        "pending_payment": {
+          "due_notice": "Vaša platba vo výške %{amount_due} je splatná dňa %{due_date}.",
+          "multibanco": {
+            "instruction_html": "Zaplaťte cez sieť Multibanco alebo online pomocou nižšie uvedených podrobností. Ak máte otázky alebo chcete aktualizovať podrobnosti platby, %{contact_us}.",
+            "reference": "Referencie",
+            "amount": "Čiastka",
+            "find_nearest_atm": "Nájsť najbližší bankomat"
+          }
+        },
+        "purchase_options_agreement_label": "Najmenej jedna položka vo vašom košíku predstavuje odložený alebo opakovaný nákup. Pokračovaním v platbe vyjadrujete súhlas s tým, že sa cez vašu platobnú metódu bude automaticky strhávať cena uvedená na tejto stránke, a to s frekvenciou uvedenou na tejto stránke, kým príslušný produkt neskončí alebo kým ho nezrušíte. Pre všetky zrušenia platí %{cancellation_policy_label}.",
+        "update_payment_method": "Aktualizovať platobnú metódu",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Predplatné",
+          "order_contains_fixed_selling_plans": "Celková čiastka nemusí zahŕňať dane, dopravu, odložené platby a niektoré zľavy. Pokračujte na pokladňu, kde zistíte čiastku, ktorá má splatnosť dnes."
+        },
+        "purchase_options_agreement_label_html": "Beriem na vedomie, že minimálne jedna položka v mojom košíku predstavuje odložený alebo opakovaný nákup. Pokračovaním vyjadrujem súhlas so:\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">zásadami pre zrušenie<\/a> \na zároveň vás oprávňujem k strhávaniu platieb prostredníctvom mojej platobnej metódy v termínoch a intervaloch a za ceny uvedené na tejto stránke, pokiaľ moja objednávka nebude splnená alebo zrušená (pokiaľ je to povolené).\n",
+        "payment_method_saved": "Uložená platobná metóda",
+        "card_vaulted_company_location": "Uložená karta pre túto lokalitu",
+        "order_covered_by_store_credit_notice": "Vaša objednávka je pokrytá kreditom pre obchod.",
+        "order_covered_by_redeemables_notice": "Vaša objednávka je pokrytá.",
+        "store_credit": {
+          "label": "Kredit pre obchod",
+          "apply_label": "Uplatniť kredit pre obchod",
+          "add_label": "Pridať kredit pre obchod",
+          "manage_label": "Spravujte kredit pre obchod",
+          "buying_gift_card": "Darčekovú kartu nie je možné kúpiť prostredníctvom kreditu pre obchod.",
+          "no_fixed_selling_plans": "Kredit pre obchod nemôžete pri možnosti odloženého nákupu využiť."
+        },
+        "clear": "Vymazať",
+        "billing_must_match_shipping_notice": "Fakturačná adresa platobnej metódy musí zodpovedať dodacej adrese.",
+        "same_billing_address_checkbox_label": "Používať dodaciu adresu ako fakturačnú adresu",
+        "location_billing_address_label": "Fakturačná adresa lokality",
+        "fact_billing_address_label": "Fakturačná adresa",
+        "location_shipping_address_label": "Dodacia adresa lokality",
+        "no_working_method_error": "Tento obchod momentálne nemôže prijímať platby. Aktualizujte stránku alebo sa sem vráťte neskôr.",
+        "brand_not_available": "Tento obchod neprijíma karty {{brand}} . Použite prosím na platbu inú kartu.",
+        "shipping_rate_updated": "Boli aktualizované dostupné metódy dopravy. Potvrďte svoju voľbu pred zaplatením na pokladni.",
+        "billing_address_invalid_phone": "Ak chcete pokračovať, aktualizujte telefónne číslo vo fakturačnej adrese pre: {{label}} {{last_digits}} ."
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Aktuálny zostatok {{ amount }}",
