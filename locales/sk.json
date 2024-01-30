@@ -1,0 +1,10 @@
+{
+  "customer": {
+    "account": {
+      "title": "Môj účet"
+    },
+    "login": {
+      "title": "Prihlásenie"
+    }
+  }
+}
