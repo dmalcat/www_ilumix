@@ -1188,6 +1188,72 @@
         "change_company_location_link_label": "Zmeniť lokalitu spoločnosti",
         "change_location_link_label": "Zmeniť lokalitu"
       }
+    },
+    "email_marketing": {
+      "unsubscribed": {
+        "disclaimer": "Nebudete od nás už dostávať žiadne ďalšie marketingové aktualizácie. Môžete sa kedykoľvek znova prihlásiť na odber.",
+        "preview": "Zobrazuje sa vám náhľad informácií, ktoré uvidia zákazníci, keď si zrušia predplatné."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Udelili ste súhlas so sledovaním otvárania e-mailov.<\/b>",
+          "visibility": "Miery otvárania e-mailov sa budú vykazovať anonymne. Informácie o tom, či ste e-mail otvorili, zistíme len v rámci agregovanej miery otvárania e-mailov.",
+          "opt_out_html": "Ak nechcete uvedené informácie zdieľať, môžete súhlas so sledovaním otvárania e-mailov <a style=\"text-decoration:underline;\" href=\"%{link}\">odvolať<\/a> .",
+          "preview_bar": "Zobrazuje sa vám náhľad obsahu, ktorý uvidia zákazníci, keď udelia súhlas so sledovaním otvárania e-mailov."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Odvolali ste súhlas so sledovaním otvárania e-mailov.<\/b>",
+          "visibility": "Nezistíme, či ste naše e-maily otvorili.",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">Udeľte súhlas<\/a> so sledovaním otvárania e-mailov.",
+          "preview_bar": "Zobrazuje sa vám náhľad obsahu, ktorý uvidia zákazníci, keď neudelia súhlas so sledovaním otvárania e-mailov."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Prestali sme otváranie e-mailov sledovať.<\/b>",
+          "privacy_policy": "Po odoslaní tohto e-mailu sme aktualizovali naše zásady ochrany osobných údajov a prestali otváranie sledovať."
+        },
+        "track": {
+          "status_html": "<b>Sledovanie otvárania e-mailov sa vykazuje.<\/b>",
+          "visibility": "Informácie o tom, či ste e-mail otvorili, zistíme len v rámci celkovej miery otvárania e-mailov."
+        },
+        "updated_policy": {
+          "status_html": "<b>Sledovanie otvárania e-mailov sa vykazuje.<\/b>",
+          "visibility": "Aktualizovali sme naše zásady a teraz sledujeme otváranie e-mailov. Miery otvárania e-mailov sa budú vykazovať anonymne. Informácie o tom, či ste e-mail otvorili, zistíme len v rámci celkovej miery otvárania e-mailov.",
+          "opt_out_html": "Ak nechcete uvedené informácie zdieľať, môžete sa <a style=\"text-decoration:underline;\" href=\"%{link}\">odhlásiť<\/a> ."
+        }
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Zvyčajne pripravené za 1 hodinu",
+        "two_hours": "Zvyčajne pripravené za 2 hodiny",
+        "four_hours": "Obvykle pripravené za 4 hodiny",
+        "twenty_four_hours": "Zvyčajne pripravené za 24 hodín",
+        "two_to_four_days": "Obvykle pripravené za 2–4 ​​dni",
+        "five_or_more_days": "Zvyčajne pripravené za viac ako 5 dní",
+        "zero_to_two_hours": "Zvyčajne pripravené za 2 hodiny",
+        "two_to_four_hours": "Obvykle pripravené za 4 hodiny",
+        "immediately": "Pripravené na vyzdvihnutie hneď",
+        "next_day": "Pripravené na vyzdvihnutie nasledujúci deň"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Ihneď na odoslanie",
+          "out_of_stock": "Skladom"
+        }
+      },
+      "boolean": {
+        "true_label": "Áno",
+        "false_label": "Nie"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Relevantnosť",
+        "price_ascending": "Cena vzostupne",
+        "price_descending": "Cena zostupne"
+      }
     }
   },
   "customer_accounts": {
@@ -1431,7 +1497,9 @@
           "previous": "Predchádzajúci",
           "previous_accessibility_label": "Predchádzajúce objednávky",
           "load_more": "Načítať ďalšie",
-          "load_more_accessibility_label": "Načítať ďalšie objednávky"
+          "load_more_accessibility_label": "Načítať ďalšie objednávky",
+          "nav_accessibility_label": "Navigačné tlačidlá objednávok",
+          "next": "Ďalšia"
         },
         "sort_by": "Zoradiť podľa: {{option}}",
         "sort_hide_options_accessibility_label": "Skryjete možnosti radenia pre potvrdené objednávky.",
@@ -1524,7 +1592,25 @@
             "last_365_days": "Posledných 12 mesiacov",
             "custom": "Vlastné"
           }
-        }
+        },
+        "column_headers": {
+          "total": "Celkom"
+        },
+        "delivered": "Doručené {{date}}",
+        "empty_state_order_source_description": "Tu sa zobrazia iba objednávky zadané prostredníctvom e-mailu {{email}} .",
+        "empty_state_subtitle": "Prejdite do obchodu a zadajte objednávku.",
+        "empty_state_title": "Zatiaľ žiadne objednávky",
+        "estimated_delivery": "Odhadované doručenie: {{date}}",
+        "items": {
+          "one": "{{count}} položka",
+          "other": "{{count}} polož.",
+          "few": "{{count}} polož.",
+          "many": "{{count}} polož."
+        },
+        "list_view": "Otvoriť zobrazenie zoznamu",
+        "order_link": "Zobraziť objednávku {{name}}",
+        "order_number": "Objednávka {{name}}",
+        "orders_title": "Potvrdené"
       },
       "order_status": {
         "canceled_description": "Vaša objednávka bola zrušená dňa {{date}} .",
@@ -1553,7 +1639,8 @@
         "attempted_delivery_label": "Pokus o doručenie",
         "attempted_delivery_description": "Pokus o doručenie nebol úspešný.",
         "confirmed_description": "Dostali sme vašu objednávku."
-      }
+      },
+      "list_layout_accessibility_label": "Možnosti rozvrhnutia"
     },
     "errors": {
       "address_deletion_error": {
@@ -1590,6 +1677,61 @@
         "description": "Táto objednávka neexistuje alebo nemáte oprávnenie na jej zobrazenie.",
         "title": "Objednávka nebola nájdená"
       }
+    },
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Skryť ponuku Účet",
+        "show_accessibility_label": "Zobraziť ponuku Účet",
+        "nav_accessibility_label": "Navigácia účtu",
+        "open_menu_accessibility_label": "Otvoriť navigáciu účtu",
+        "close_menu_accessibility_label": "Zavrieť navigáciu účtu",
+        "loading_message": "Načíta sa navigácia účtu"
+      },
+      "action_menu_accessibility_label": "Ďalšie akcie",
+      "close_menu_accessibility_label": "Zavrieť hlavnú navigáciu",
+      "contact_email_subject": "Kontakt z online obchodu {{shopName}}",
+      "delete_confirmation": {
+        "cancel": "Zrušiť",
+        "delete": "Odstrániť"
+      },
+      "dismiss_toast": "Zavrieť",
+      "document_title": "{{sectionName}} – {{shopName}} – Účet",
+      "go_to_store_link": "Prejsť do obchodu",
+      "loading_message": "Načítanie",
+      "log_out_link": "Odhlásiť sa",
+      "logout_overlay_label": "Odhlasujeme vás...",
+      "nav_label_accessibility_label": "Hlavná navigácia",
+      "navigation_accessibility_message": "Prešli ste do sekcie {{sectionName}}",
+      "open_menu_accessibility_label": "Otvoriť hlavnú navigáciu",
+      "shop_logo_accessibility_label": "Logo {{shopName}}",
+      "subscriptions_link_label": "Predplatná",
+      "settings_link": "Nastavenia"
+    },
+    "account_information": {
+      "loading_accessibility_message": "Načítajú sa informácie o účte",
+      "loading_finished_accessibility_message": "Informácie o účte boli načítané",
+      "profile_card": {
+        "cancel": "Zrušiť",
+        "cancel_accessibility_label": "Zrušiť úpravy profilu",
+        "edit": "Upraviť",
+        "edit_accessibility_label": "Upraviť profil",
+        "email_help_text": "E-mail použitý na prihlásenie nemožno zmeniť",
+        "first_name": "Meno",
+        "last_name": "Priezvisko",
+        "phone_number_help_text": "Telefónne číslo použité na prihlásenie nie je možné zmeniť",
+        "save": "Uložiť",
+        "save_accessibility_label": "Uložiť profil",
+        "no_name_provided_accessibility_label": "Nebolo pridané žiadne meno alebo názov."
+      },
+      "profile_update_confirmation_message": "Profil bol aktualizovaný",
+      "people": {
+        "pagination": {
+          "load_more": "Načítať ďalšie",
+          "load_more_accessibility_label": "Načítať ďalšie osoby",
+          "loading_accessibility_label": "Načítajú sa osoby"
+        }
+      },
+      "add_button": "Pridať"
     }
   },
   "general": {
