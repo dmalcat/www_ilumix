@@ -693,5 +693,117 @@
         }
       }
     }
+  },
+  "customer_accounts": {
+    "addresses": {
+      "delete_button_accessibility_label": "Odstrániť adresu {{address}}",
+      "delete_confirmation_button": "Odstrániť adresu",
+      "delete_confirmation_button_accessibility_label": "Odstrániť adresu {{address}}",
+      "delete_confirmation_message": "Chcete odstrániť adresu? Na existujúce objednávky to nebude mať vplyv.",
+      "edit_button": "Upraviť",
+      "edit_button_accessibility_label": "Upraviť adresu {{address}}",
+      "edit_section_accessibility_label": "Upraviť adresu {{address}}",
+      "loading_accessibility_message": "Načíta sa adresa",
+      "loading_addresses_accessibility_message": "Načítajú sa adresy",
+      "loading_billing_accessibility_message": "Načíta sa fakturačná adresa",
+      "loading_finished_accessibility_message": "Načítala sa nová stránka adries",
+      "loading_shipping_accessibility_message": "Načíta sa dodacia adresa",
+      "pagination": {
+        "load_more": "Načítať ďalšie",
+        "load_more_accessibility_label": "Načítať ďalšie adresy"
+      },
+      "save_new_address_accessibility_label": "Uložiť adresu",
+      "delete_confirmation_title": "Chcete adresu odstrániť?",
+      "delete_confirmation_description": "Na existujúce objednávky to nebude mať vplyv.",
+      "edit_modal_title": {
+        "billing": "Upravte fakturačnú adresu",
+        "shipping": "Upravte dodaciu adresu"
+      },
+      "add_address_banner": "Zadajte adresy, ktoré chcete používať na pokladni",
+      "billing_address_dropdown_placeholder": "Fakturačná adresa",
+      "add_button_text": "Pridať",
+      "add_button_accessibility_label": "Pridať adresu",
+      "back_button": "Späť",
+      "back_button_accessibility_label": "Späť na úpravy adresy {{address}}",
+      "no_addresses_banner": "Neboli pridané žiadne adresy"
+    },
+    "address_form": {
+      "auto_complete_close_accessibility_label": "Zavrieť návrhy",
+      "billing_address": "Používať ako fakturačnú adresu",
+      "cancel": "Zrušiť",
+      "cancel_accessibility_label": "Zrušiť úpravy adresy {{address}}",
+      "creation_success_notification": "Adresa bola pridaná",
+      "default_address": "Toto je moja východisková adresa",
+      "default_address_creation_success_notification": "Bola pridaná východisková adresa",
+      "default_address_update_success_notification": "Predvolená adresa bola aktualizovaná",
+      "loading_add_form_accessibility_message": "Načíta sa formulár pre novú adresu",
+      "loading_edit_form_accessibility_message": "Načíta sa formulár na úpravu adresy",
+      "loading_finished_accessibility_message": "Formulár adresy sa načítal",
+      "save": "Uložiť",
+      "save_accessibility_label": "Uložiť adresu {{address}}",
+      "section_title_accessibility_label": "Pridať adresu",
+      "update_success_notification": "Adresa bola aktualizovaná",
+      "attention": "Príjemca",
+      "attention_help_text": "Meno osoby alebo názov oddelenia",
+      "loading_form_accessibility_message": "Načíta sa formulár adresy",
+      "attention_company": "Spoločnosť \/ K rukám"
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Názov spoločnosti",
+        "company_card_section_accessibility_label": "Spoločnosť"
+      },
+      "locations": {
+        "contact_list_title": "Ľudia",
+        "contact_name": "Meno",
+        "contact_permissions": "Oprávnenie",
+        "contact_phone_number": "Telefónne číslo",
+        "location_picker_label": "Názov lokality",
+        "net_payment_terms_description": "{{name}} : platby splatné do {{numberOfDays}} dní",
+        "payment_terms": "Platobné podmienky",
+        "permissions_label": "Vaše oprávnenie",
+        "permissions_title": "Oprávnenie",
+        "shipping_address_required": "Pridajte do tejto lokality dodaciu adresu, aby bolo možné začať zadávať objednávky.",
+        "tax_exemptions": "Daňové výnimky",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} ďalší(ch)",
+        "tax_exemptions_modal_close": "Zavrieť",
+        "taxes_none": "Žiadne",
+        "tax_exemptions_modal_button_accessibility_label": "Zobraziť všetky daňové výnimky",
+        "pagination": {
+          "load_more": "Načítať ďalšie",
+          "load_more_accessibility_label": "Načítať ďalšie lokality"
+        },
+        "staff_and_permissions_title": "Zamestnanci a oprávnenia",
+        "location_picker_accessibility_label": "Názov lokality: {{locationName}}"
+      },
+      "location_selection": {
+        "description": "Pokiaľ už máte položky v košíku, môže mať zmena lokality vplyv na ceny a množstvo v košíku.",
+        "list_accessibility_label": "Zoznam lokalít",
+        "list_item_without_address_accessibility_label": "{{name}} : Žiadna adresa",
+        "list_loading_accessibility_message": "Načíta sa zoznam lokalít",
+        "list_loading_address_accessibility_message": "Načíta sa adresa pre lokalitu {{locationName}}",
+        "list_loading_finished_accessibility_message": "Načítal sa zoznam lokalít",
+        "loading_store_accessibility_message": "Prechod do obchodu",
+        "selection_cancel_button": "Zrušiť",
+        "selection_confirmation_button": "Zvoliť lokalitu",
+        "title": "Pre ktorú lokalitu nakupujete?",
+        "continue_to_store": "Pokračovať do obchodu",
+        "no_location_title": "Iba osobné objednávky",
+        "no_location_description": "Nemáte už oprávnenie na zadávanie objednávok pre spoločnosť {{company}} . Môžete ale naďalej zadávať osobné objednávky.",
+        "no_locations_found": "Neboli nájdené žiadne lokality",
+        "search": "Vyhľadajte lokalitu",
+        "clear_search": "Vymazať hľadanie",
+        "try_new_search": "Skúste spustiť nové hľadanie"
+      },
+      "addresses": {
+        "add_billing_address_button": "Pridať fakturačnú adresu",
+        "add_billing_address_section_accessibility_label": "Pridať fakturačnú adresu",
+        "add_shipping_address_button": "Pridať dodaciu adresu",
+        "add_shipping_address_section_accessibility_label": "Pridať dodaciu adresu",
+        "billing_address_card_title": "Fakturačná adresa",
+        "cancel_adding_billing_address_accessibility_label": "Zrušiť pridanie fakturačnej adresy",
+        "cancel_adding_shipping_address_accessibility_label": "Zrušiť pridanie dodacej adresy"
+      }
+    }
   }
 }
