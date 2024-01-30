@@ -302,7 +302,7 @@
 {% endif %}
 {% assign wcp_price = wcp_price | floor %}
 {% if wcp_price > wcp_discount.price %}
-        	{% assign wcp_price = product.price %}
+        	{% assign wcp_price = wcp_discount.price %}
 {% endif %}
 {% assign wcp_compare_at_price = wcp_compare_at_price | floor %}
 {% assign wcp_compare_at_price_min = wcp_compare_at_price_min | floor %}
