@@ -978,7 +978,11 @@
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Po vykonaní platby vám príde potvrdzovací e-mail s číslom objednávky.",
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Po vykonaní platby vám príde potvrdzovacia textová správa s číslom objednávky.",
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Po vykonaní platby vám príde potvrdzovacia textová správa s číslom objednávky.",
-        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Po vykonaní platby vám príde potvrdzovacia textová správa s číslom objednávky."
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Po vykonaní platby vám príde potvrdzovacia textová správa s číslom objednávky.",
+        "order_updates_past_step_prefix": "Minulý krok: ",
+        "contact_us": "Kontaktuj nás",
+        "contact_us_lowercase": "kontaktuj nás",
+        "order_number_label": "Číslo objednávky"
       },
       "shop_policies": {
         "terms_of_service": "Podmienky služby",
