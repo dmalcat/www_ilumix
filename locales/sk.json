@@ -670,7 +670,15 @@
         "card_number_placeholder": "Číslo karty",
         "card_expiry_placeholder": "Mm\/rr",
         "card_verification_value_label": "CVV",
-        "card_verification_value_placeholder": "CVV"
+        "card_verification_value_placeholder": "CVV",
+        "card_start_placeholder": "Mm\/rr",
+        "masked_digits_label": "•••• %{last_digits}",
+        "paypal_label": "Výplata",
+        "ideal_label": "ideálny",
+        "bank_picker_label": "Banka",
+        "bancontact_label": "Pokladnica",
+        "giropay_label": "Giropay",
+        "eps_label": "EPS-řerweisung"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Aktuálny zostatok {{ amount }}",
