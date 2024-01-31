@@ -2611,7 +2611,8 @@
       "delete_confirmation_description": "Na existujúce objednávky to nebude mať vplyv.",
       "edit_modal_title": {
         "billing": "Upravte fakturačnú adresu",
-        "shipping": "Upravte dodaciu adresu"
+        "shipping": "Upravte dodaciu adresu",
+        "default": "Upraviť adresu"
       },
       "add_address_banner": "Zadajte adresy, ktoré chcete používať na pokladni",
       "billing_address_dropdown_placeholder": "Fakturačná adresa",
@@ -2619,7 +2620,18 @@
       "add_button_accessibility_label": "Pridať adresu",
       "back_button": "Späť",
       "back_button_accessibility_label": "Späť na úpravy adresy {{address}}",
-      "no_addresses_banner": "Neboli pridané žiadne adresy"
+      "no_addresses_banner": "Neboli pridané žiadne adresy",
+      "add_button": "Osloviť",
+      "address_deleted_notification": "Adresa vymazaná",
+      "cancel_adding_address_accessibility_label": "Zrušte pridanú adresu",
+      "cancel_deletion_button": "Zrušiť",
+      "cancel_deletion_button_accessibility_label": "Zrušiť odstránenie adresy {{address}}",
+      "default_address": {
+        "title": "Predvolená adresa",
+        "title_accessibility_label": "Predvolená adresa: {{address}}"
+      },
+      "delete_button": "Odložiť",
+      "title": "Osloviť"
     },
     "address_form": {
       "auto_complete_close_accessibility_label": "Zavrieť návrhy",
@@ -3311,7 +3323,32 @@
         "pickup_location": "Miesto na vyzdvihnutie"
       },
       "paid_with_shop_pay_installments_card": {
-        "paid_with_shop_pay_installments": "Platené prostredníctvom služby splátky platenia lode"
+        "paid_with_shop_pay_installments": "Platené prostredníctvom služby splátky platenia lode",
+        "description": "So spomienkou v obchode budete mať vždy prehľad svojho harmonogramu platieb.",
+        "payment_reminders_button": "Nechajte svoje platby pripomenúť",
+        "desktop_qr_code_content": {
+          "title": "Odvolanie",
+          "description": "Nechajte sa pripomenúť splátky prostredníctvom obchodu."
+        }
+      },
+      "order_details": "Podrobnosti o objednávke",
+      "contact_information": "Kontaktujte informácie",
+      "login_to_view_all_order_details": "Prihláste sa a prejdite všetky podrobnosti o svojej objednávke.",
+      "log_in": "Prihlásiť sa",
+      "paid_amount": "Platený",
+      "remaining_amount": "Zostatok",
+      "order_details_skeleton_accessibility_label": "Prihláste sa a prejdite všetky podrobnosti o svojej objednávke.",
+      "tip": "Tip",
+      "logged_in_account_no_permission_to_order": "Máte prihlásenie na účet {{email}}. Tento účet nepovoľuje príkaz na správu objednávky.",
+      "log_in_to_a_different_account": "Prihláste sa do iného účtu",
+      "duties": "Povinnosti",
+      "ok_duties_tooltip": "Tento príkaz je odoslaný z inej krajiny, a preto bola povinná pridaná do celkovej výšky príkazu.",
+      "error_duties_tooltip": "Táto objednávka sa dodáva z inej krajiny, takže povinnosti a dane môžu byť pri dodávke účtované.",
+      "zero_duties_tooltip": "Táto objednávka sa dodáva z inej krajiny. Objednávky v tejto hodnote nie sú účtované.",
+      "group_title_label": "Časť balíka: {{groupTitle}}",
+      "fees": {
+        "restocking_fee": "Vracajúci sa akciový poplatok",
+        "return_shipping_fee": "Preprava vráteného tovaru"
       }
     }
   },
