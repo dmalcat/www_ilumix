@@ -225,7 +225,8 @@
           "accessibility_label": "%{price} za položku",
           "label": "%{price} \/ počítače"
         },
-        "total_savings": "Celkové úspory"
+        "total_savings": "Celkové úspory",
+        "show_discount_form_link_label": "Máte zľavový kód? Kliknite sem a zadajte ho"
       },
       "shipping": {
         "title": "Spôsob dopravy",
@@ -690,7 +691,20 @@
         "shop_pay_installments_label": "Platiť",
         "order_edit_banner_updated_order_label": "Aktualizovaná objednávka",
         "afterpay_label": "Po odplate",
-        "cashapppay_label": "Platba v hotovosti"
+        "cashapppay_label": "Platba v hotovosti",
+        "show_gift_card_form_link_label": "Máte darčekovú kartu? Kliknite sem a zadajte ho",
+        "card_expiry_month_label": "Mesiac vypršania",
+        "card_expiry_month_placeholder": "Mm",
+        "card_expiry_year_label": "Minulý rok",
+        "card_expiry_year_placeholder": "Rizorný",
+        "card_expiry_short_label": "Mm\/rr",
+        "card_expiry_long_label": "Čas použiteľnosti (mm\/rr)",
+        "card_expiry_aria_description": "Vysvetlenie údajov: mesiac, mesiac, rok, rok",
+        "card_start_month_label": "Počiatočný mesiac",
+        "card_start_month_placeholder": "Mm",
+        "card_start_year_label": "Rok",
+        "card_start_year_placeholder": "Rizorný",
+        "card_start_long_label": "Dátum vydania (MM\/RR)"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Aktuálny zostatok {{ amount }}",
@@ -1114,7 +1128,12 @@
         "thank_you_title_payments_app_pending_buyer_action_required": "Vaša objednávka bola prijatá",
         "thank_you_title_payments_app_failed_pending_payment": "Vaša platba nedokázala spracovať",
         "thank_you_payments_app_failed_pending_payment": "Na objednávku nebola žiadna suma. Vráťte sa do košíka, skontrolujte svoju objednávku a skúste zaplatiť znova.",
-        "order_status_payments_app_pending_payment_description_default_with_email_and_phone": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať prostredníctvom obchodu."
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať prostredníctvom obchodu.",
+        "thank_you_description_html": "Prijali sme vašu objednávku a pripravili sme ju. Potvrdenie e-mailu bolo zaslané {{ email }}. Vráťte sa na túto stránku a aktualizujte stav objednávky.",
+        "thank_you_description": "Prijali sme vašu objednávku a pripravili sme ju. Vráťte sa na túto stránku a aktualizujte stav objednávky.",
+        "confirmed_description_html": "Prijali sme vašu objednávku a pripravili sme ju. Potvrdenie e-mailu bolo zaslané {{ email }}. Vráťte sa na túto stránku, kde nájdete informácie o stave zásielky.",
+        "opt_in_message_html": "Vaše informácie boli úspešne uložené s <span class=\"emphasis\">Kupovať<\/span>.",
+        "order_updates_description_email_and_phone_html": "Aktualizácie budú zaslané {{ email }} a {{ phone }}."
       },
       "shop_policies": {
         "terms_of_service": "Podmienky služby",
@@ -1717,7 +1736,19 @@
         "shipping_used_as_billing_notice": "Použije sa tiež ako vaša fakturačná adresa pre túto objednávku.",
         "company_attention_label": "Spoločnosť \/ K ruky",
         "optional_company_attention_label": "Spoločnosť\/príjemca (voliteľné)",
-        "country_placeholder": "Zem"
+        "country_placeholder": "Zem",
+        "shipping_address_title": "Adresa dodania",
+        "customer_information_title": "Informácie pre zákazníka",
+        "first_name_placeholder": "Krstné meno",
+        "optional_first_name_placeholder": "Krstné meno",
+        "last_name_placeholder": "Priezvisko",
+        "company_placeholder": "Spoločnosť",
+        "optional_company_placeholder": "Spoločnosť (voliteľné)",
+        "address1_placeholder": "Osloviť",
+        "address2_placeholder": "Apt, oblek atď.",
+        "optional_address2_placeholder": "Apt, Suite atď. (Voliteľné)",
+        "city_placeholder": "Mestá",
+        "optional_phone_placeholder": "Telefón (voliteľné)"
       },
       "delivery_options": {
         "ship": "Odoslať",
@@ -2244,6 +2275,41 @@
       },
       "company_location": {
         "location_title": "Miesto"
+      },
+      "alternative_payment_method": {
+        "button_html": "Pokladník s: {{ method }}"
+      },
+      "paypal": {
+        "button_html": "Pokladňa {{ logo }}"
+      },
+      "apple_pay": {
+        "button_html": "Kúpiť {{ logo }}"
+      },
+      "newsletter": {
+        "subscription_checkbox_label": "Prihláste sa do zbierky bulletinu"
+      },
+      "remember_me": {
+        "authorize_purchase": "Povoliť",
+        "title": "Zapamätať si",
+        "label": "Ukladanie informácií pre rýchlejšiu rezerváciu",
+        "description_html": "Ďalší nákup tu alebo iných stránok s Shopify dostanete kód na bezpečný nákup pomocou Shop Pay.",
+        "mobile_phone_icon_alt": "Mobilný telefón",
+        "mobile_phone_number": "Číslo mobilného telefónu",
+        "terms_and_privacy_html": "Pokračovaním súhlasíte s tým, že Shopify <a class=\"link--muted\" data-modal=\"\" data-remember-policy-link=\"privacy_policy\" title=\"Zásady ochrany osobných údajov Shopify\" href=\"{{ privacy_href }}\">Zásady ochrany osobných údajov<\/a> a <a class=\"link--muted\" data-modal=\"\" data-remember-policy-link=\"terms\" title=\"Shopify Pay podmienky služby\" href=\"{{ terms_href }}\">Podmienky služby<\/a>.",
+        "modal": {
+          "guest": {
+            "title": "Pomocou uložených informácií",
+            "paragraph": "Informácie ste uložili počas predchádzajúceho nákupu, aby ste ich už nemuseli zadávať. Ak chcete použiť tieto informácie o rezervácii, zadajte overovací kód odoslaný do telefónu."
+          },
+          "logged_in_customer": {
+            "title": "Odhlásenie rýchlejšie",
+            "paragraph": "Počas predchádzajúceho nákupu ste uložili svoje platobné údaje, takže ich už nebudete musieť zadávať. Ak chcete použiť tieto informácie o rezervácii, zadajte overovací kód odoslaný do telefónu."
+          },
+          "verification_code_label": "Číslo overovacieho kódu, ktoré ste dostali pomocou textovej správy",
+          "fill_manually": "Zavrieť",
+          "code_sending_html": "Odosielanie kódu (• • •) • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •<span data-remember-me-customer-phone=\"\"><\/span>",
+          "code_sent_html": "Kód poslaný (• • •) • • • •<span data-remember-me-customer-phone=\"\"><\/span>"
+        }
       }
     },
     "email_marketing": {
