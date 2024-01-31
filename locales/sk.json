@@ -155,7 +155,13 @@
           "many": "Skryť položky (%{count})"
         },
         "discount_discovery": {
-          "add_code": "Pridať zľavu"
+          "add_code": "Pridať zľavu",
+          "merchandise_quantity_label": {
+            "one": "%{count} položka",
+            "other": "%{count} ľahnúť si.",
+            "few": "%{count} ľahnúť si.",
+            "many": "%{count} ľahnúť si."
+          }
         },
         "alternative_payment_currency_total": "Strhnuté ako: %{amount_due}",
         "calculating": "Prebieha výpočet…",
@@ -213,7 +219,13 @@
         "gift_card_masked": "•••• %{last_characters}",
         "total_updated_label_with_price": "Aktualizovaná celková cena: %{totalPrice}",
         "recurring_payments": "Opakované platby",
-        "full_price": "Plná cena: %{price}"
+        "full_price": "Plná cena: %{price}",
+        "component_quantity_title": "%{quantity} × %{product_title}",
+        "price_per_item": {
+          "accessibility_label": "%{price} za položku",
+          "label": "%{price} \/ počítače"
+        },
+        "total_savings": "Celkové úspory"
       },
       "shipping": {
         "title": "Spôsob dopravy",
@@ -277,6 +289,12 @@
               "other": "každý %{count}. mesiac",
               "few": "každý %{count}. mesiac",
               "many": "každý %{count}. mesiac"
+            },
+            "year": {
+              "one": "Každý rok",
+              "other": "každý %{count}. rok",
+              "few": "každý %{count}. rok",
+              "many": "každý %{count}. rok"
             }
           },
           "multiple_subscriptions_shipping_price_label": "%{shipping_price} pri doručení",
@@ -367,7 +385,8 @@
         "split_cart_ships_date": "Dátum odoslania: %{date}",
         "split_cart_multiple_shipment_quantity_label": "Zásielky: %{quantity}",
         "split_cart_multiple_shipment_notice": "Vaša objednávka príde v niekoľkých zásielkach.",
-        "delivery_title": "Doručenie"
+        "delivery_title": "Doručenie",
+        "shipping_line_delivery_phone_label": "Mobilné číslo"
       },
       "payment": {
         "amazon_payments_login_hint": "Budete požiadaní o prihlásenie s Amazon.",
