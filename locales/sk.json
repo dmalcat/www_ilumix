@@ -2242,7 +2242,8 @@
     "email_marketing": {
       "unsubscribed": {
         "disclaimer": "Nebudete od nás už dostávať žiadne ďalšie marketingové aktualizácie. Môžete sa kedykoľvek znova prihlásiť na odber.",
-        "preview": "Zobrazuje sa vám náhľad informácií, ktoré uvidia zákazníci, keď si zrušia predplatné."
+        "preview": "Zobrazuje sa vám náhľad informácií, ktoré uvidia zákazníci, keď si zrušia predplatné.",
+        "confirmation": "Odhlásili ste sa z nášho zoznamu e-mailov."
       },
       "open_tracking": {
         "opt_in": {
@@ -2270,6 +2271,11 @@
           "visibility": "Aktualizovali sme naše zásady a teraz sledujeme otváranie e-mailov. Miery otvárania e-mailov sa budú vykazovať anonymne. Informácie o tom, či ste e-mail otvorili, zistíme len v rámci celkovej miery otvárania e-mailov.",
           "opt_out_html": "Ak nechcete uvedené informácie zdieľať, môžete sa <a style=\"text-decoration:underline;\" href=\"%{link}\">odhlásiť<\/a> ."
         }
+      },
+      "subscribed": {
+        "confirmation": "Ďakujeme, že ste sa prihlásili na odber nášho zoznamu e-mailov.",
+        "disclaimer": "Svoju zbierku môžete kedykoľvek zrušiť.",
+        "unsubscribe": "Predplatiť"
       }
     },
     "store_availability": {
@@ -2551,7 +2557,35 @@
       "products": "Produkty",
       "shopping_cart": "Váš nákupný vozík",
       "account": "Účtovať",
-      "create_account": "Vytvoriť účet"
+      "create_account": "Vytvoriť účet",
+      "reset_account": "Vynulovanie",
+      "addresses": "Osloviť",
+      "order": "objednať %{name}",
+      "search": "Vyhľadávanie",
+      "collections": "Zbierka",
+      "not_found": "404 nenájdené",
+      "challenge": "Zavolať",
+      "checkpoint": "Kontrolný bod",
+      "search_results": {
+        "one": "Hľadať: pre otázku {{ terms }} našlo sa {{ count }} vyplývať",
+        "other": "Hľadať: pre otázku {{ terms }} Tento počet výsledkov sa zistil: {{ count }}",
+        "few": "Hľadať: pre otázku {{ terms }} Tento počet výsledkov sa zistil: {{ count }}",
+        "many": "Hľadať: pre otázku {{ terms }} Tento počet výsledkov sa zistil: {{ count }}"
+      },
+      "blog_or_article_with_error": "Chyba: %{title}"
+    },
+    "cart": {
+      "discounts_with_count": "Počet použitých zliav: %{count}"
+    },
+    "challenge": {
+      "message": "Ak chcete pokračovať, musíte potvrdiť, že nie ste robot.   ",
+      "error": "Vaša odpoveď nebola správna, skúste to znova.",
+      "submit_button_text": "Odoslať"
+    },
+    "checkpoint": {
+      "message": "Vyriešte captcha, ak chcete pokračovať",
+      "error": "Overenie Captcha zlyhalo",
+      "submit_button_text": "Odoslať"
     }
   },
   "customer_accounts": {
