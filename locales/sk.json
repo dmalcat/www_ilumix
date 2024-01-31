@@ -2869,7 +2869,9 @@
             "due_without_date": "Splatnosť",
             "due_on_fulfillment": "Splatnosť platby pri plnení",
             "pay_to_confirm": "Platba na potvrdenie",
-            "payment_not_due": "Platba ešte nie je splatná"
+            "payment_not_due": "Platba ešte nie je splatná",
+            "overdue": "Oneskorené platby",
+            "due_today": "Platba je splatná dnes"
           },
           "table_view": {
             "due": "Splatnosť: {{date}}",
@@ -2877,7 +2879,9 @@
             "paid": "Zaplatené",
             "due_on_fulfillment": "Splatnosť pri plnení",
             "pay_to_confirm": "Platba na potvrdenie",
-            "payment_not_due": "Zatiaľ nie je splatné"
+            "payment_not_due": "Zatiaľ nie je splatné",
+            "overdue": "Oneskorený",
+            "due_without_date": "Splatný"
           }
         },
         "sort_currently_sorted_by_accessibility_label": "Momentálne zoradené týmto spôsobom: {{option}}",
@@ -2904,7 +2908,8 @@
             "last_updated": "Posledná aktualizácia: {{date}}"
           },
           "table_view": {
-            "estimated_delivery": "Odhadované doručenie {{date}}"
+            "estimated_delivery": "Odhadované doručenie {{date}}",
+            "last_updated": "{{date}}"
           }
         },
         "more_than_three_products_accessibility_label": "Objednávka obsahuje: {{lineItemName1}} , {{lineItemName2}} a ďalšie produkty ( {{numberOfAdditionalProducts}} )",
@@ -2922,7 +2927,8 @@
             "last_30_days": "Posledných 30 dní",
             "last_90_days": "Posledných 90 dní",
             "last_365_days": "Posledných 12 mesiacov",
-            "custom": "Vlastné"
+            "custom": "Vlastné",
+            "today": "Dnes"
           }
         },
         "column_headers": {
@@ -2944,7 +2950,8 @@
         "list_view": "Otvoriť zobrazenie zoznamu",
         "order_link": "Zobraziť objednávku {{name}}",
         "order_number": "Objednávka {{name}}",
-        "orders_title": "Potvrdené"
+        "orders_title": "Potvrdené",
+        "order_status_and_message": "{{orderStatus}} – {{message}}"
       },
       "order_status": {
         "canceled_description": "Vaša objednávka bola zrušená dňa {{date}} .",
