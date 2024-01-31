@@ -1125,7 +1125,8 @@
         "contact_information": "Kontaktné údaje",
         "purchase_options_cancellation_policy": "Zásady pre zrušenie",
         "refund_policy": "Zásady vrátenia peňazí",
-        "privacy_policy": "Zásady ochrany osobných údajov"
+        "privacy_policy": "Zásady ochrany osobných údajov",
+        "purchase_options_policy": "Možnosti nákupu - princípy"
       },
       "notifications": {
         "title": "Oznámenie"
@@ -1154,7 +1155,9 @@
         "payment_total_label": "Platba celkom",
         "change_currency_link": "Zmena na %{currency_name}",
         "card_provider_fx_charges_warning": "Je možné, že váš poskytovateľ karty za transakcie v mene %{currency_code} účtuje poplatky.",
-        "currency_not_supported_by_shop": "Mena, ktorú ste vybrali, už nie je k dispozícii. Všetky ceny sú teraz uvedené v mene %{currency_code}."
+        "currency_not_supported_by_shop": "Mena, ktorú ste vybrali, už nie je k dispozícii. Všetky ceny sú teraz uvedené v mene %{currency_code}.",
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}"
       },
       "tips": {
         "title": "Pridať sprepitné",
@@ -1164,7 +1167,8 @@
         "add_tip": "Pridať sprepitné",
         "update_tip": "Aktualizovať sprepitné",
         "message": "Ďakujeme. Ceníme si to.",
-        "no_tip_label": "Žiadne"
+        "no_tip_label": "Žiadne",
+        "preset_label": "%{tip_percent} %"
       },
       "open_graph_meta_tag": {
         "title_with_products": {
@@ -1209,7 +1213,10 @@
         },
         "recurring_total_intervals": {
           "day": {
-            "one": "deň"
+            "one": "deň",
+            "other": "%{count} d.",
+            "few": "%{count} d.",
+            "many": "%{count} d."
           },
           "week": {
             "one": "týždeň",
@@ -1222,6 +1229,12 @@
             "other": "%{count} mes.",
             "few": "%{count} mes.",
             "many": "%{count} mes."
+          },
+          "year": {
+            "one": "rok",
+            "other": "%{count} r.",
+            "few": "%{count} r.",
+            "many": "%{count} r."
           }
         },
         "recurring_totals_with_initial_order_shipping_discount": "Prvá platba: %{total_price_with_discount}, potom %{recurring_total}",
