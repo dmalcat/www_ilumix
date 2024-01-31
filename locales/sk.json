@@ -393,7 +393,9 @@
           "without_separator": "%{firstMethod}, %{secondMethod}",
           "with_separator": "%{rest}, %{current},",
           "combination": "%{rest} a %{current}"
-        }
+        },
+        "split_cart_merchandise_quantity_label_standard": "%{quantity} ľahnúť si.",
+        "merchandise_quantity_label_inline": "%{merchandise_title} ×%{quantity}"
       },
       "payment": {
         "amazon_payments_login_hint": "Budete požiadaní o prihlásenie s Amazon.",
@@ -661,7 +663,14 @@
         "no_working_method_error": "Tento obchod momentálne nemôže prijímať platby. Aktualizujte stránku alebo sa sem vráťte neskôr.",
         "brand_not_available": "Tento obchod neprijíma karty {{brand}} . Použite prosím na platbu inú kartu.",
         "shipping_rate_updated": "Boli aktualizované dostupné metódy dopravy. Potvrďte svoju voľbu pred zaplatením na pokladni.",
-        "billing_address_invalid_phone": "Ak chcete pokračovať, aktualizujte telefónne číslo vo fakturačnej adrese pre: {{label}} {{last_digits}} ."
+        "billing_address_invalid_phone": "Ak chcete pokračovať, aktualizujte telefónne číslo vo fakturačnej adrese pre: {{label}} {{last_digits}} .",
+        "amazon_payments_label": "Amazon",
+        "amount_left_to_pay_label": "Splatná platba:",
+        "card_number_label": "Číslo karty",
+        "card_number_placeholder": "Číslo karty",
+        "card_expiry_placeholder": "Mm\/rr",
+        "card_verification_value_label": "CVV",
+        "card_verification_value_placeholder": "CVV"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Aktuálny zostatok {{ amount }}",
