@@ -1126,12 +1126,17 @@
             "wednesday": "Streda",
             "thursday": "Štvrtok",
             "friday": "Piatok",
-            "sunday": "Nedeľa"
+            "sunday": "Nedeľa",
+            "saturday": "Sobota"
           },
           "weekdays_abbreviation": {
             "thursday": "Št",
             "friday": "Pi",
-            "sunday": "Nie"
+            "sunday": "Nie",
+            "monday": "Po",
+            "tuesday": "Utrpenie",
+            "wednesday": "Sv.",
+            "saturday": "Tak"
           },
           "months": {
             "january": "Január",
@@ -1205,7 +1210,22 @@
         },
         "full_price": "Plná cena:",
         "display_name": "{{firstName}} {{lastName}}",
-        "google_map_title": "Mapa Google"
+        "google_map_title": "Mapa Google",
+        "list_formatter": {
+          "and": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}} a {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} a {{secondWord}}"
+          },
+          "or": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}} alebo {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} alebo {{secondWord}}"
+          },
+          "narrow": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}"
+          }
+        }
       },
       "review": {
         "title": "Poradie revízií",
