@@ -982,7 +982,47 @@
         "order_updates_past_step_prefix": "Minulý krok: ",
         "contact_us": "Kontaktuj nás",
         "contact_us_lowercase": "kontaktuj nás",
-        "order_number_label": "Číslo objednávky"
+        "order_number_label": "Číslo objednávky",
+        "shop_phone_description": "Dostanete textovú správu s odkazom na obchod, ktorý vám pomôže sledovať vašu objednávku.",
+        "login_reorder_link_text": {
+          "one": "Kúpte si aj tento produkt ›",
+          "other": "Kúpte si tiež tieto výrobky ›",
+          "few": "Tieto výrobky si môžete kúpiť",
+          "many": "Tieto výrobky si môžete kúpiť"
+        },
+        "marker": {
+          "current": "Aktuálne umiestnenie zásielky",
+          "shipping": "Adresa dodania"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Položky v tejto zásielke",
+          "unfulfilled_table_title": "Položky prípravy doručenia",
+          "product_image_label": "Obrázok produktu",
+          "description_label": "Opis",
+          "quantity_label": "Výška"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Aktuálne miesto pre doručenie",
+          "shipping": "Miesto na vyzdvihnutie"
+        },
+        "ready_for_delivery_title": "Vaša objednávka je pripravená na doručenie",
+        "ready_for_delivery_description": "Pripravili sme vašu objednávku.",
+        "order_status_confirmed_order_local": "Pripravujeme vašu objednávku na doručenie.",
+        "delivery_information_label": "Informácie o dodaní:",
+        "gift_card_sent_confirmation": "Boli odoslané darčekové karty",
+        "out_for_delivery_local_title": "Vaša objednávka je doručená",
+        "out_for_delivery_local_description_html": "Vaša objednávka dorazí čoskoro.",
+        "delivered_local_title": "Vaša objednávka bola doručená",
+        "delivered_local_description_html": "Nedostali ste si objednávku? %{let_us_know}.",
+        "let_us_know": "Dajte nám o tom vedieť",
+        "qr_code": {
+          "title": "Postupujte podľa objednávky cez telefón",
+          "send_link_to_phone": "Prípadne pošlite odkaz na svoj telefón"
+        },
+        "gift_card_confirmation_by_text": "Ak ste ju nedostali, pošlite znova textovú správu alebo nás kontaktujte.",
+        "gift_card_confirmation_by_email": "Ak ste ho nedostali, pošlite znova e -mail alebo nás kontaktujte.",
+        "gift_card_title": "Darčekové poukážky",
+        "resend_gift_cards": "Re -send darčekové karty"
       },
       "shop_policies": {
         "terms_of_service": "Podmienky služby",
