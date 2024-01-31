@@ -2926,7 +2926,9 @@
           }
         },
         "column_headers": {
-          "total": "Celkom"
+          "total": "Celkom",
+          "items": "Položka",
+          "order": "objednať"
         },
         "delivered": "Doručené {{date}}",
         "empty_state_order_source_description": "Tu sa zobrazia iba objednávky zadané prostredníctvom e-mailu {{email}} .",
@@ -2972,7 +2974,8 @@
         "attempted_delivery_description": "Pokus o doručenie nebol úspešný.",
         "confirmed_description": "Dostali sme vašu objednávku."
       },
-      "list_layout_accessibility_label": "Možnosti rozvrhnutia"
+      "list_layout_accessibility_label": "Možnosti rozvrhnutia",
+      "list_title": "Príkazy"
     },
     "errors": {
       "address_deletion_error": {
@@ -3017,7 +3020,8 @@
         "nav_accessibility_label": "Navigácia účtu",
         "open_menu_accessibility_label": "Otvoriť navigáciu účtu",
         "close_menu_accessibility_label": "Zavrieť navigáciu účtu",
-        "loading_message": "Načíta sa navigácia účtu"
+        "loading_message": "Načíta sa navigácia účtu",
+        "label": "Účtovať"
       },
       "action_menu_accessibility_label": "Ďalšie akcie",
       "close_menu_accessibility_label": "Zavrieť hlavnú navigáciu",
@@ -3037,7 +3041,10 @@
       "open_menu_accessibility_label": "Otvoriť hlavnú navigáciu",
       "shop_logo_accessibility_label": "Logo {{shopName}}",
       "subscriptions_link_label": "Predplatná",
-      "settings_link": "Nastavenia"
+      "settings_link": "Nastavenia",
+      "contact_link": "Kontaktuj nás",
+      "generic_accessibility_label": "{{label}}: {{value}}",
+      "orders_link_label": "Príkazy"
     },
     "account_information": {
       "loading_accessibility_message": "Načítajú sa informácie o účte",
@@ -3053,7 +3060,8 @@
         "phone_number_help_text": "Telefónne číslo použité na prihlásenie nie je možné zmeniť",
         "save": "Uložiť",
         "save_accessibility_label": "Uložiť profil",
-        "no_name_provided_accessibility_label": "Nebolo pridané žiadne meno alebo názov."
+        "no_name_provided_accessibility_label": "Nebolo pridané žiadne meno alebo názov.",
+        "title": "Profil"
       },
       "profile_update_confirmation_message": "Profil bol aktualizovaný",
       "people": {
@@ -3063,7 +3071,8 @@
           "loading_accessibility_label": "Načítajú sa osoby"
         }
       },
-      "add_button": "Pridať"
+      "add_button": "Pridať",
+      "title": "Profil"
     }
   },
   "general": {
