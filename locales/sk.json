@@ -3242,7 +3242,77 @@
       "unit_price": "{{price}} \/ počítače",
       "location": "Miesto",
       "not_applicable": "–",
-      "fully_refunded_label": "Peniaze sa vrátili"
+      "fully_refunded_label": "Peniaze sa vrátili",
+      "partially_refunded_label": "Čiastočne sa vrátil",
+      "refunded_amount": "Vrátený",
+      "discount": "Zľavu",
+      "no_data": "Žiadny",
+      "pagination": {
+        "load_more": "Načítať",
+        "load_more_accessibility_label": "Načítajte ďalšie položky",
+        "loading_accessibility_label": "Nakladacie položky"
+      },
+      "returns": {
+        "expand_events_label": "Zobraziť podrobnosti",
+        "hide_events_label": "Podrobnosť",
+        "print_shipping_label": "Tlačiareň Zásielkový štítok",
+        "tracking_number": "Sledovanie čísla:",
+        "return_and_refund_modal_header": "Zásady vrátenia peňazí",
+        "ineligible_return_message": "Žiadne položky v tejto objednávke nespĺňajú podmienky na návratnosť.",
+        "ineligible_return_message_when_returned": "Žiadne ďalšie položky v tejto objednávke nespĺňajú podmienky na návrat."
+      },
+      "request_return_failed": "Pri spracovaní vašej aplikácie sa vyskytol problém. Prosím skúste znova.",
+      "mobile_summary_toggle_button": {
+        "open": "Zobraziť zhrnutie objednávky",
+        "closed": "Skryť zhrnutie objednávky"
+      },
+      "shipment_timeline": {
+        "expand_events_label": "Zobraziť podrobnosti",
+        "expand_events_accessibility_label": "Prezrite si podrobnosti o zásielke objednávky",
+        "hide_events_label": "Podrobnosť",
+        "hide_events_accessibility_label": "Skryť podrobnosti o zásielke objednávky"
+      },
+      "show_order_summary": "Zobraziť zhrnutie objednávky",
+      "hide_order_summary": "Skryť zhrnutie objednávky",
+      "company": "Spoločnosť",
+      "no_data_provided": "–",
+      "no_data_provided_accessibility_label": "Lúka {{fieldName}} Je to prázdne.",
+      "marketing_section_title": "Novinky a ponuky",
+      "marketing_description": "Dostanete marketingové e -maily. Svoju zbierku môžete kedykoľvek zrušiť.",
+      "marketing_checkbox_label": "Pošlite mi informácie o novinkách a ponukách e-mailom",
+      "marketing_checkmark_label": "Zaregistrovali ste sa, aby ste získali e-mailové správy a ponuky",
+      "image_gallery": {
+        "product_name_and_quantity": "Množstvo {{productName}}: {{quantity}}",
+        "next": "Zobraziť ďalšie položky",
+        "previous": "Zobraziť predchádzajúce položky"
+      },
+      "shop_order_tracking": {
+        "download_shop_to_track": "Stiahnite si obchodnú aplikáciu, ktorá umožňuje monitorovanie balíka",
+        "track_order_with_shop": "Sledujte objednávku v obchode",
+        "title_header": "Naskenujte kód telefonicky",
+        "real_time_delivery_updates": "Obchod vám pošle informácie -na -dátové informácie o reálnom doručení po doručení objednávky."
+      },
+      "shop_pay": {
+        "order_completed_with": "Objednávka bola dokončená prostredníctvom",
+        "learn_more": "Nájsť viac"
+      },
+      "edit_summary": {
+        "added": "Pridaný",
+        "added_with_quantity": "Pridané: {{quantity}}",
+        "removed": "Zhromaždený",
+        "removed_with_quantity": "Prihlásený na odber: {{quantity}}",
+        "updated_at": "Vaša objednávka bola aktualizovaná na: {{date}}",
+        "returned": "Vrátený",
+        "returned_with_quantities": "Vrátený: {{delta}} z {{total}}",
+        "removed_with_quantities": "Prihlásený na odber: {{delta}} z {{total}}"
+      },
+      "pickup": {
+        "pickup": "Zdvihnúť",
+        "pickup_location": "Miesto na vyzdvihnutie"
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Platené prostredníctvom služby splátky platenia lode"
+      }
     }
   },
   "general": {
