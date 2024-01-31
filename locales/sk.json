@@ -1592,7 +1592,13 @@
             "lastWordConnector": "{{previousWords}}, {{lastWord}}",
             "twoWordConnector": "{{firstWord}}, {{secondWord}}"
           }
-        }
+        },
+        "edit_shipping_address": "Upravte dodaciu adresu",
+        "edit_contact_information": "Upravte informácie o zákazníkoch",
+        "edit_shipping_method": "Upravte spôsob transportu",
+        "edit_payment_method": "Upravte spôsob platby",
+        "edit_billing_address": "Upravte fakturačnú adresu",
+        "footer": "Päta"
       },
       "review": {
         "title": "Poradie revízií",
@@ -1710,7 +1716,8 @@
         "ship_to_company": "Dodať {{companyName}}",
         "shipping_used_as_billing_notice": "Použije sa tiež ako vaša fakturačná adresa pre túto objednávku.",
         "company_attention_label": "Spoločnosť \/ K ruky",
-        "optional_company_attention_label": "Spoločnosť\/príjemca (voliteľné)"
+        "optional_company_attention_label": "Spoločnosť\/príjemca (voliteľné)",
+        "country_placeholder": "Zem"
       },
       "delivery_options": {
         "ship": "Odoslať",
@@ -3577,7 +3584,54 @@
       "thursday": "Štvrtok",
       "friday": "Piatok",
       "saturday": "Sobota",
-      "sunday": "Nedeľa"
+      "sunday": "Nedeľa",
+      "mondayAbbreviation": "po",
+      "tuesdayAbbreviation": "utrpenie",
+      "wednesdayAbbreviation": "sv.",
+      "thursdayAbbreviation": "Ct",
+      "fridayAbbreviation": "Zbohom",
+      "saturdayAbbreviation": "tak",
+      "sundayAbbreviation": "Nie",
+      "showNextMonth": "Zobraziť budúci mesiac, {{month}} {{year}}",
+      "showPreviousMonth": "Zobraziť predchádzajúci mesiac, {{month}} {{year}}",
+      "rangeStart": "Začiatok rozsahu",
+      "inRange": "V dosahu",
+      "rangeEnd": "Koniec rozsahu",
+      "autocompleteOptionsAvailable": {
+        "one": "Dostupné položky: {{count}}",
+        "other": "Dostupné položky: {{count}}",
+        "few": "Dostupné položky: {{count}}",
+        "many": "Dostupné položky: {{count}}"
+      },
+      "removeItem": "Odstrániť: {{label}}",
+      "removeTag": "Ustanoviť",
+      "month": {
+        "one": "Mesačný",
+        "other": "Mesiac.",
+        "few": "Mesiac.",
+        "many": "Mesiac."
+      }
+    },
+    "profile_preview_bar": {
+      "customize_button": "Prispôsobiť sa",
+      "hide_bar": "Skrytie",
+      "navigate_to_admin": "Prejdite k správcovi",
+      "previewing": "Pozeráte sa na ukážku:",
+      "saved_at": "Uložený {{date}} v {{time}}",
+      "viewing": "Pozerajúc sa na:",
+      "not_available": "Profilové údaje nie sú k dispozícii",
+      "close_preview": "Zavrieť",
+      "actions_button": "Akcia"
+    },
+    "settings": {
+      "loading_accessibility_message": "Stránka nastavenia je načítaná.",
+      "title": "nastavenie",
+      "log_out_everywhere": {
+        "title": "Odhláste sa zo všetkých zariadení",
+        "description": "Ak ste stratili svoje zariadenie alebo sa obávate bezpečnosti, uistite sa, že zabezpečenie vášho účtu sa odhlásite zo všetkých zariadení.",
+        "button": "Zhaste sa všade",
+        "warning_message": "Z tohto zariadenia sa tiež odhlásime."
+      }
     }
   },
   "general": {
@@ -3697,6 +3751,15 @@
       "on_sale": "Zľava",
       "add_to_cart": "Do košíka",
       "buy_now": "Pokladňa"
+    }
+  },
+  "sections": {
+    "header": {
+      "announcement_bar_label": "Oznámenie"
+    },
+    "map": {
+      "address_error": "Chyba pri hľadaní tejto adresy",
+      "address_no_results": "Žiadne výsledky pre túto adresu"
     }
   }
 }
