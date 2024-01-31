@@ -1272,7 +1272,14 @@
           "other": "Tieto produkty nie sú vo vašej krajine\/oblasti k dispozícii.",
           "few": "Tieto produkty nie sú vo vašej krajine\/oblasti k dispozícii.",
           "many": "Tieto produkty nie sú vo vašej krajine\/oblasti k dispozícii."
-        }
+        },
+        "title": {
+          "one": "Nedostupný produkt",
+          "other": "Nedostupné výrobky",
+          "few": "Nedostupné výrobky",
+          "many": "Nedostupné výrobky"
+        },
+        "unavailable_label": "Nie je k dispozícií"
       },
       "general": {
         "errors": {
@@ -1911,6 +1918,57 @@
         "payment_not_processed_title": "Vaša platba nedokázala spracovať",
         "payment_not_processed_text": "Nič sme vám neúčtovali. Vráťte sa do košíka a vyplňte nákup.",
         "return_to_cart_button_label": "Vráťte sa do koša"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Vaša krajina\/oblasť bola aktualizovaná. Ak chcete pokračovať v platení v pokladni, zadajte adresu doručenia."
+      },
+      "throttle": {
+        "line_to_check_out": "Ste vo fronte v pokladni",
+        "cart_summary_heading": "Váš kôš",
+        "merchandise": {
+          "sold_out": "Predaný",
+          "available": "Dostupný"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Časť tovaru vo vašom košíku je vypredaná a nebude k dispozícii v pokladni.",
+          "sold_out": {
+            "heading": "Tovar vo vašom vozíku je vypredaný",
+            "storefront_body": "Vráťte sa do obchodu a pokračujte v nákupe",
+            "no_storefront_body": "Bohužiaľ, položka, ktorú chcete kúpiť, už nie je k dispozícii.",
+            "link": "Späť do obchodu"
+          }
+        },
+        "title": "Predná strana",
+        "time_to_checkout_title": "Čas rezervácie v pokladni - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Odhadovaná čakacia doba sa vypočíta",
+          "less_than_one": "Pravdepodobný čakací čas: menej ako minúta",
+          "one": "Pravdepodobný čakací čas: {{count}} blesk",
+          "other": "Pravdepodobný čakací čas: {{count}} blesk",
+          "few": "Pravdepodobný čakací čas: {{count}} blesk",
+          "many": "Pravdepodobný čakací čas: {{count}} blesk"
+        },
+        "last_checked": "(Posledná kontrola: {{time}})",
+        "footer": {
+          "heading": "Neživujte túto stránku, automaticky sa aktualizuje.",
+          "body": "Položky vo vašom košíku nie sú rezervované, kým nedokončíte proces pokladnice."
+        },
+        "too_many_attempts": {
+          "message": "Príliš veľa pokusov",
+          "description": "Vyskúšajte to za pár minút znova"
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Pri spracovaní žiadosti sa vyskytol problém, kontaktujte vlastníka obchodu."
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Neexistuje žiadne doručenie pre %{count} položka",
+            "other": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}",
+            "few": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}"
+          }
+        }
       }
     },
     "email_marketing": {
