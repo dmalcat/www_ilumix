@@ -2485,9 +2485,73 @@
           "error": "Chyba"
         },
         "cancel_reason": {
-          "declined": "Platba zamietnutá"
+          "declined": "Platba zamietnutá",
+          "inventory": "Položky nedostupné",
+          "fraud": "Podvodný poriadok",
+          "customer": "Zákazník zmenil\/zrušil objednávku",
+          "other": "Druhý",
+          "few": "Druhý",
+          "many": "Druhý",
+          "staff": "Chyba zamestnancov"
+        },
+        "cash_on_delivery": "Hotovosť na doručenie (COD)"
+      },
+      "cart": {
+        "only_n_items_available": "Môžete pridať iba do košíka: %{count} %{name}.",
+        "too_many_items_in_cart": "Do koša nemôžete pridať ďalšie položky %{name}.",
+        "all_items_in_cart": "Máte všetko v koši: %{count} %{name}.",
+        "empty_update": "Nemožno aktualizovať prázdny kôš",
+        "missing_parameters": "Neexistuje žiadny platný parameter ID alebo riadku",
+        "generic_error": "Chyba koša",
+        "too_many_line_items_error": "Váš kôš nemôže obsahovať viac položiek ako: %{max}.",
+        "link_expired": "Platnosť referencie vypršala",
+        "link_no_longer_exists": "Odkaz už neexistuje.",
+        "stock_problems_html": "Jedna alebo niekoľko položiek už neexistuje. Vytvorili sme <a href='%{link}'>aktualizovaný košík<\/a>.",
+        "changed": "Kôš sa zmenil",
+        "items_changed": "Jedna alebo viac položiek sa zmenilo.",
+        "product_sold_out": "Produkt%{name}\"Už je vypredaný.\"",
+        "variant_not_found": "Variant nie je možné nájsť",
+        "variant_requires_selling_plan": "Variant je možné zakúpiť iba v rámci plánu predaja.",
+        "shipping_address_not_required": "Tento kôš nevyžaduje expedíciu",
+        "shipping_address_invalid": "Pri výpočte miery dopravy sa vyskytli problémy. Pred dokončením objednávky pokračujte v pokladni a vyberte sadzbu prepravy.",
+        "selling_plan_not_applicable": "Variant nemôže byť použitý v pláne predaja",
+        "selling_plan_not_available_for_company_locations": "Pre objednávky B2B je k dispozícii iba jeden nákup",
+        "digital_product_not_available_for_company_locations": "Túto položku nie je možné pridať do objednávky b2b",
+        "product_not_available": "Produkt nie je k dispozícii",
+        "less_than_minimum": "Minimum tejto položky je: %{min}.",
+        "more_than_maximum": "Maximálne z tejto položky je: %{max}.",
+        "not_respect_step": "Túto položku môžete pridať iba do prírastkov hodnoty %{step}.",
+        "bundle_requires_components": "Produkt %{name} Nie je možné pridať do košíka z balíka.",
+        "gift_card_with_components_not_supported": "Produkt %{name} Nie je možné pridať do košíka z balíka.",
+        "bundle_products_not_supported_for_b2b_draft": "Nie je možné pridať položky z balíka do objednávok B2B na tomto mieste.",
+        "view_lines_limit_reached": "Počet riadkov musí byť menší ako %{limit}.",
+        "merchandise_line_transformers": {
+          "run_error": "Vo vašom košíku bola chyba."
+        }
+      },
+      "storefront": {
+        "invalid_password": "Heslo je nesprávne, skúste to znova."
+      },
+      "tags": {
+        "add_articles": "Vyhľadajte hľadanie článkov, ktoré sú tiež označené štítkom %{tag}",
+        "add_products": "Vyjadrite výber produktov zodpovedajúcich štítku %{tag}",
+        "remove_articles": "Rozšírte hľadanie článkov, ktoré nie sú označené štítkom %{tag}",
+        "remove_products": "Ustanoviť %{tag}"
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Pridané: %{delta}",
+          "increment_item": "Pridané: %{delta}",
+          "decrement_item": "Prihlásený na odber: %{delta} z %{total}",
+          "decrement_fulfilled_line_item": "Vrátený: %{delta} z %{total}"
         }
       }
+    },
+    "page_titles": {
+      "products": "Produkty",
+      "shopping_cart": "Váš nákupný vozík",
+      "account": "Účtovať",
+      "create_account": "Vytvoriť účet"
     }
   },
   "customer_accounts": {
