@@ -3395,7 +3395,67 @@
       "terms_of_service": "Podmienky služby"
     },
     "payment_methods": {
-      "title": "Spôsob platby"
+      "title": "Spôsob platby",
+      "add_payment_method_button": "Pridať spôsob platby",
+      "payment_details": {
+        "title": "Podrobnosti o spôsobe platby",
+        "payment_method_expiring_on": "Vyprší deň {{expiryDate}}",
+        "preauthorized_payments": "Vopred autorizované platby",
+        "close_payment_modal": "Zavrieť",
+        "close_payment_modal_accessibility_label": "Zatvorte modálne okno podrobností o spôsobe platby",
+        "payment_method_not_found_error": "Nie je možné nájsť spôsob platby",
+        "payment_details_loading": "Podrobnosti o platbe sú načítané",
+        "pre_authorized_payments": "Platby schválené vopred",
+        "total_amount_of_subscription_line_items_left": "a {{total}} Ďalšie)",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "Celkový počet položiek: {{totalItems}}, počet zobrazených položiek: {{totalItemsToDisplay}}.",
+        "next_payment_due": "Ďalší dátum splatnosti: {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "Upraviť",
+        "edit_payment_method_button_accessibility_label": "Upravte spôsob platby koncovými číslicami {{lastDigits}}",
+        "credit_card_details_accessibility_label": "s koncovými číslicami {{lastDigits}}",
+        "billing_title": "Fakturačná adresa",
+        "card_info_title": "Informácie",
+        "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}",
+        "payment_method_expired_on": "Platnosť sa skončila: {{expiryDate}}",
+        "loading_shop_pay": "Plat v obchode sa nakladá",
+        "invalid_payment_method": "Neplatný spôsob platby",
+        "invalid_payment_method_message": "Ak chcete dostávať ďalšie objednávky, použite novú kreditnú kartu.",
+        "replace_payment_method": "Vymeňte spôsob platby",
+        "checkout_card_banner": "Tento spôsob platby sa dá použiť iba na autorizované platby vopred. Ak sa zaregistrujete do tohto obchodu, nezobrazí sa v pokladni.",
+        "default_checkbox": "Nastaviť ako predvolenú",
+        "default_checkbox_accessibility_label": "Nastavte tento spôsob platby ako predvolene"
+      },
+      "delete_payment_method_button": "Odložiť",
+      "delete_payment_method_button_accessibility_label": "Vymazať adresu {{paymentMethodName}}",
+      "back_button": "späť",
+      "back_button_accessibility_label": "Späť k: {{paymentMethodStepTitle}}",
+      "generic_card": "Karta",
+      "payment_delete": {
+        "title": "Odstránenie spôsobu platby",
+        "description_without_replacement": "Tento spôsob platby prestane byť k dispozícii pre budúce nákupy.",
+        "description_with_replacement": "Odstránenie tohto spôsobu platby vopred ovplyvní autorizovanú platbu. Ak chcete dostávať ďalšie objednávky, môžete ho voliteľne nahradiť iným spôsobom platby.",
+        "payment_method_selector_placeholder": "Vyberte metódu náhrady (voliteľné)",
+        "replace_method_with_new_method_description": "Vaša metóda {{currentPaymentMethodName}} bude odstránený a nahradený metódou {{newPaymentMethodName}}.",
+        "error_when_deleting": "Ospravedlňujeme sa, ale došlo k chybe, takže sme nemohli odstrániť tento spôsob platby. Skúste to znova neskôr alebo aktualizujte stránku.",
+        "delete_and_replace_button": "Vyberte a vymeňte",
+        "delete_and_replace_button_accessibility_label": "Odstránite metódu {{currentPaymentMethodName}} a nahradíte ho metódou {{newPaymentMethodName}}.",
+        "deleted_successfully": "Metóda platby bola úspešne odstránená.",
+        "payment_method_selector_no_alternative_payment": "Žiadna náhradná metóda",
+        "loading_available_payment_methods_accessibility_label": "Dostupné spôsoby platby sa načítajú.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "Odstránenie tohto spôsobu platby vopred ovplyvní autorizovanú platbu. Ak si nevyberiete alternatívny spôsob platby, budú naďalej ťahané metódou platby prostredníctvom existujúcich objednávok. Výber alternatívnej platobnej metódy vám umožňuje dostávať nepretržité príkazy na predplatné.",
+          "with_pending_orders": "Pri odstránení tohto spôsobu platby sa odstráni z vášho účtu a prestane byť k dispozícii pre budúce platby. Ak nevyberiete alternatívny spôsob platby, všetky neplatené zostatky existujúcich objednávok sa cez ňu budú naďalej ťahať.",
+          "with_subscriptions": "Odstránenie tohto spôsobu platby vopred ovplyvní autorizovanú platbu. Ak chcete dostávať ďalšie objednávky, vymeňte ho alternatívnym spôsobom platby."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Odstránenie tohto spôsobu platby vopred ovplyvní autorizovanú platbu. Všetky neplatené zostatky pre existujúce objednávky sa odpočítajú pomocou spôsobu platby, ale nedostanete žiadne ďalšie príkazy na predplatné. Ak chcete prijímať príkazy na predplatné, zadajte alternatívny spôsob platby.",
+          "with_pending_orders": "Pri odstránení tohto spôsobu platby sa odstráni z vášho účtu a prestane byť k dispozícii pre budúce platby. Budú naďalej ťahané všetkými neplatenými zostatkami existujúcich objednávok.",
+          "with_subscriptions": "Odstránenie tohto spôsobu platby vopred ovplyvní autorizovanú platbu. Ak chcete dostávať ďalšie objednávky, zadajte alternatívny spôsob platby."
+        }
+      },
+      "edit_payment_method": {
+        "title": "Upraviť spôsob platby",
+        "save_payment_method_button": "Uložiť"
+      }
     }
   },
   "general": {
