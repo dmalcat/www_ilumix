@@ -174,9 +174,10 @@ var retargetingConf = {
                {% endif %}
                <!-- WPD End -->
     
+{% if canonical_url contains '/apps/wpdapp' %}    
     <script>
       window.wpd_signup_error_message = "E-mail již byl přijat";
     </script>
-
+{% endif %}
   </body>
 </html>
