@@ -1094,7 +1094,8 @@
             "must_fulfill_from_constraint_not_satisfied": "Obmedzenia výkonnosti nie sú splnené, pretože položky nie je možné splniť na požadovaných miestach.",
             "must_fulfill_from_same_location_constraint_not_satisfied": "Obmedzenia výkonnosti nie sú splnené, pretože položky nemožno splniť na rovnakom mieste.",
             "delivery_strategy_conditions_not_satisfied": "Pre toto miesto sú k dispozícii dodacie stratégie, ale ich podmienky nie sú splnené.",
-            "out_of_stock_at_origin_location": "Na pôvodnom mieste nie sú žiadne zásoby skladov."
+            "out_of_stock_at_origin_location": "Na pôvodnom mieste nie sú žiadne zásoby skladov.",
+            "invalid_signature": "Podpis so zľavou nie je platný."
           }
         },
         "title": "Pokladňa – {{shopName}}",
@@ -1201,7 +1202,10 @@
         },
         "checkout_context": {
           "step_one": "%{shop_name} - Pokladňa"
-        }
+        },
+        "full_price": "Plná cena:",
+        "display_name": "{{firstName}} {{lastName}}",
+        "google_map_title": "Mapa Google"
       },
       "review": {
         "title": "Poradie revízií",
