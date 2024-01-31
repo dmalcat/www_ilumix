@@ -2308,7 +2308,35 @@
           "verification_code_label": "Číslo overovacieho kódu, ktoré ste dostali pomocou textovej správy",
           "fill_manually": "Zavrieť",
           "code_sending_html": "Odosielanie kódu (• • •) • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •<span data-remember-me-customer-phone=\"\"><\/span>",
-          "code_sent_html": "Kód poslaný (• • •) • • • •<span data-remember-me-customer-phone=\"\"><\/span>"
+          "code_sent_html": "Kód poslaný (• • •) • • • •<span data-remember-me-customer-phone=\"\"><\/span>",
+          "code_sending_clear_html": "Odosielanie kódu do {{ phone }}",
+          "code_sent_clear_html": "Kód odoslaný do {{ phone }}",
+          "errors": {
+            "enter_valid_code": "Zadaný kód nie je správny.",
+            "enter_a_code": "Zadajte platný overovací kód",
+            "code_not_received": {
+              "body": "Nedostali ste kód?",
+              "contact_information_step": {
+                "link": "Pokračujte v pravidelnom pokladni"
+              },
+              "payment_information_step": {
+                "link": "Zadajte podrobnosti platby"
+              }
+            },
+            "server": {
+              "title": "Shopify, aby ste zaplatili nedostupné",
+              "body": "Uložené informácie nie je možné použiť na tento nákup. Pokračujte v pravidelnej rezervácii."
+            },
+            "throttle": {
+              "title": "Je dosiahnutý limitom pokusu",
+              "body": "Kód bol mnohokrát nesprávne zadaný. Pokračujte v pravidelnej rezervácii."
+            },
+            "authorize": {
+              "title": "Shopify, aby ste zaplatili nedostupné",
+              "body": "Uložené informácie sa momentálne nemožno použiť. Ak chcete pokračovať, zadajte podrobnosti platby.",
+              "link": "Zadajte informácie o platbe"
+            }
+          }
         }
       }
     },
@@ -3773,7 +3801,8 @@
       "checkout": "Do pokladne",
       "empty": "Váš košík je momentálne prázdny.",
       "continue_browsing_html": "Pokračujte v prezeraní <a href=\"\/collections\/all\">tu<\/a> .",
-      "close_cart": "Zavrieť košík"
+      "close_cart": "Zavrieť košík",
+      "title": "Košík"
     }
   },
   "collections": {
