@@ -176,7 +176,14 @@
         "discount_not_found": "Nie je možné nájsť platnú zľavu zodpovedajúcu zadanému kódu",
         "return_restocking_fee_label": "Poplatok za vrátenie skladových zásob",
         "return_shipping_fee_label": "Doprava vráteného tovaru",
-        "enter_shipping_address": "Zadať dodaciu adresu"
+        "enter_shipping_address": "Zadať dodaciu adresu",
+        "title": "Zhrnutie objednávky",
+        "order_name_label": "objednať {{ name }}",
+        "shopping_cart_label": "Nákupný vozík",
+        "discount_title": "Zľavu",
+        "discount_label": "Zľavu",
+        "discount_placeholder": "Zľavu",
+        "gift_card_title": "Darčekové poukážky"
       },
       "shipping": {
         "title": "Spôsob dopravy",
@@ -1335,7 +1342,115 @@
         "emirate_placeholder": "Emirát",
         "zip_code_label": "PSČ",
         "zip_code_placeholder": "PSČ",
-        "postal_code_label": "PSČ"
+        "postal_code_label": "PSČ",
+        "postcode_label": "PSČ",
+        "postcode_placeholder": "PSČ",
+        "pincode_label": "PIN kód",
+        "pincode_placeholder": "Pin",
+        "company_contact_info": "{{companyName}} · {{contact}}",
+        "ship_to_company": "Dodať {{companyName}}",
+        "shipping_used_as_billing_notice": "Použije sa tiež ako vaša fakturačná adresa pre túto objednávku.",
+        "company_attention_label": "Spoločnosť \/ K ruky",
+        "optional_company_attention_label": "Spoločnosť\/príjemca (voliteľné)"
+      },
+      "delivery_options": {
+        "ship": "Odoslať",
+        "pick_up": "Na vyzdvihnutie",
+        "pick_up_in_two_hours": "Zvyčajne pripravené za 2 hodiny",
+        "pick_up_in_four_hours": "Zvyčajne pripravené do 3 hodín",
+        "pick_up_immediately": "Teraz pripravený vyzdvihnúť",
+        "pick_up_next_day": "Pripravený vyzdvihnúť nasledujúci deň",
+        "pick_up_in_one_hour": "Zvyčajne pripravené za 1 hodinu",
+        "pick_up_in_twenty_four_hours": "Zvyčajne pripravené do 24 hodín",
+        "pick_up_in_two_to_four_days": "Zvyčajne pripravené na 2-4 dni",
+        "pick_up_in_five_or_more_days": "Obvykle pripravené za viac ako 5 dní",
+        "pick_up_in_zero_to_two_hours": "Pripravený vyzdvihnúť za 2 hodiny",
+        "pick_up_in_two_to_four_hours": "Pripravený vyzdvihnúť za 4 hodiny",
+        "free_total_label": "zadarmo",
+        "shipping_address": "Adresa dodania",
+        "pick_up_locations": "Vyzdvihnúť",
+        "pickup_point_method_definition": "Doručte do zbierky",
+        "retail_method_definition": "Preprava na maloobchodný predaj",
+        "none_method_definition": "Bez prepravy",
+        "subscription_pickup_information": "Táto metóda doručenia je nastavená pre všetky položky v tomto poradí a pre všetky budúce objednávky v rámci daného predplatného."
+      },
+      "customer_account": {
+        "not_user_label": "Nie je {{ first_name }}?",
+        "have_an_account_label": "Máte už účet?",
+        "sign_in_link_label": "Prihlásiť sa",
+        "sign_out_link_label": "Odhlásiť sa",
+        "save_my_information_label": "Uložte tieto informácie nabudúce",
+        "invalid_address": "Vybraná adresa je neplatná. %{update_address_link} alebo vyberte inú adresu.",
+        "incomplete_address": "Vybraná adresa nie je úplná. %{update_address_link} alebo vyberte inú adresu.",
+        "rollup_label": "Účtovať",
+        "invalid_shipping_method_summary": "Vyberte platnú prepravnú adresu na zobrazenie dostupných metód prepravy"
+      },
+      "stock": {
+        "page_title": "Výdavky",
+        "title": "Výdavky",
+        "items_unavailable_notice": "Niektoré výrobky sa stali nedostupnými a váš košík bol aktualizovaný. Ospravedlňujeme sa za nepríjemnosti.",
+        "product_column_header": "Produkty",
+        "quantity_column_header": "Výška",
+        "price_column_header": "cena",
+        "status_column_header": "Štát",
+        "removed_from_cart_notice": "Odstránené z koša",
+        "sold_out_label": "Vypredané",
+        "reduced_label": "Znížený",
+        "reduced_with_quantity_label": "Iba {{ quantity_available }} vľavo",
+        "remove_from_cart_button_label": "Zložte kôš",
+        "continue_shopping_button_label": "ďalej",
+        "go_back_to_cart_button_label": "Vráťte sa do vozíka",
+        "remove": "Odložiť",
+        "empty_cart_label": "Vozík je prázdny",
+        "quantity_update": {
+          "page_title": "Aktualizácia",
+          "title": "Aktualizácia",
+          "description": "Dostupné množstvá sa zmenili pre tieto položky a aktualizované vo vašom košíku."
+        },
+        "unpurchasable_product": {
+          "title": "Produkt nie je možné kúpiť",
+          "header": "Niektoré položky boli odobraté z vášho košíka",
+          "message": "Tieto položky nie sú k dispozícii pre objednávky B2B.",
+          "status_column_header": "Nie je k dispozícií"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Nezasadený",
+          "header": "Niektoré položky boli odobraté z vášho košíka",
+          "message": "Uvedené položky nie sú k dispozícii.",
+          "status_column_header": "Nie je k dispozícií"
+        },
+        "unshippable_product": {
+          "title": "Nie je k dispozícii žiadne doručenie",
+          "header": {
+            "one": "Neexistuje žiadne doručenie pre %{count} položka",
+            "other": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}",
+            "few": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}",
+            "many": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}"
+          },
+          "message": {
+            "one": "V príslušnej položke bude odstránená z vášho košíka, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania.",
+            "other": "Relevantné položky sa z vášho košíka odstránia, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania.",
+            "few": "Relevantné položky sa z vášho košíka odstránia, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania.",
+            "many": "Relevantné položky sa z vášho košíka odstránia, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania."
+          },
+          "status_column_header": "Žiadne doručenie"
+        },
+        "price_update": {
+          "title": "Aktualizácia ceny",
+          "description": "Za tieto položky sa zmenili aj ceny, ktoré boli tiež aktualizované vo vašom košíku."
+        },
+        "return_to_store_label": "Späť do obchodu",
+        "item_label": {
+          "one": "{{count}} položka",
+          "other": "{{count}} ľahnúť si.",
+          "few": "{{count}} ľahnúť si.",
+          "many": "{{count}} ľahnúť si."
+        },
+        "continue_cta_label": "Naďalej platiť v pokladni",
+        "out_of_stock": {
+          "description": "Nasledujúce položky už nie sú k dispozícii a boli odobraté z vášho košíka.",
+          "items_unavailable": "Niektoré položky už nie sú k dispozícii a boli odobraté z vášho košíka."
+        }
       }
     },
     "email_marketing": {
