@@ -2119,7 +2119,87 @@
         }
       },
       "captcha": {
-        "title": "Pokračujte v vyplňovaní captcha"
+        "title": "Pokračujte v vyplňovaní captcha",
+        "errors": {
+          "not_solved": "Pokračujte v vyplňovaní captcha"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "Vaša objednávka sa nepodarilo spracovať, pretože váš zľavový kód už nie je k dispozícii. Skontrolujte celkovú sumu objednávky a skúste to znova."
+      },
+      "wallets": {
+        "return_to_store": "Späť do obchodu",
+        "redirect_hint": "Budete požiadaní, aby ste sa prihlásili pomocou účtu {{walletName}}.",
+        "logged_in": "Pripojený k: {{email}}",
+        "shipping_line_label": "Preprava",
+        "connect_shipping_methods": "{{method1}} a {{method2}}",
+        "payment_in_progress_title": "Platba sa koná",
+        "payment_in_progress_body": "Vaša platba je spracovaná. Vaša objednávka bude čoskoro dokončená.",
+        "call_to_action": "Platiť {{walletName}}",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} nie je k dispozícií",
+            "description": "{{walletName}} nebol k dispozícii. Použite inú platobnú metódu alebo skúste znova neskôr.",
+            "instructions": "S problémom sa vyskytol problém {{walletName}}. Vráťte sa do obchodu a skúste to znova alebo skúste iným spôsobom."
+          },
+          "generic": "S problémom sa vyskytol problém {{walletName}}Em. Skúste to znova alebo použite iný spôsob platby.",
+          "terminal": "S problémom sa vyskytol problém {{walletName}}Em. Použite inú platobnú metódu.",
+          "detour": {
+            "stock_problems": "Niektoré položky už nie sú k dispozícii. Zavrieť {{walletName}} A skúste to znova.",
+            "price_change": "Ceny niektorých položiek sa zmenili. Zavrieť {{walletName}}, skontrolujte svoju objednávku a skúste to znova.",
+            "queue": "Boli ste zahrnutí do frontu v pokladni. Ak chcete pokračovať, zatvorte {{walletName}}."
+          },
+          "unsupported": {
+            "address": "Obchodník nemôže doručiť na vybranú dodaciu adresu.",
+            "postal_code": "Toto miesto nie je podporované"
+          },
+          "outdated": {
+            "shipping_method": "Preprava sa zmenila pre vašu objednávku. Skontrolujte vybranú možnosť."
+          },
+          "invalid": {
+            "shipping_address": "Zadajte platnú dodaciu adresu",
+            "billing_address": "Zadajte platnú fakturačnú adresu",
+            "shipping_option": "Vyberte platnú možnosť prepravy",
+            "email": "Zadajte platný e -mail",
+            "zone": "Zadajte platný štát\/provincia",
+            "postal_code": "Zadajte platný poštový kód",
+            "reduction_code": "Zadajte platný diskontný kód alebo darčekovú kartu"
+          },
+          "missing": {
+            "first_name": "Zadajte meno",
+            "last_name": "Zadajte priezvisko",
+            "address1": "Zadajte adresu",
+            "address2": "Zadajte číslo bytu, jednotky atď.",
+            "city": "Vstúpte do mesta",
+            "province": "Vyberte štát\/provinciu",
+            "country": "Vyberte si krajinu\/oblasť",
+            "zip": "Zadajte PSČ",
+            "phone": "Zadajte telefónne číslo"
+          },
+          "formatting": {
+            "name_contains_emojis": "Odstráňte emodži z mena\/mena",
+            "postal_code_contains_emoji": "Odstráňte emodži z PSČ",
+            "first_name_too_long": "Názov obsahuje príliš veľa písmen",
+            "last_name_too_long": "Priezvisko obsahuje príliš veľa listov"
+          }
+        },
+        "redirection_notice": "Po kliknutí na možnosť {{buttonLabel}} Budete presmerovaní na: {{walletName}}, kde môžete bezpečne dokončiť nákup."
+      },
+      "markets": {
+        "invalid_market_manager_error": "Skontrolujte svoje kontaktné informácie, aby ste dokončili platbu."
+      },
+      "store_credit_errors": {
+        "generic_error": "Vyskytol sa problém s obchodným úverom. Skúste to znova alebo znova načítať stránku."
+      },
+      "note": {
+        "length_exceeds_maximum": "Poznámku skráťte na maximálne 5 000 znakov."
+      },
+      "billing": {
+        "billing_address_title": "Faktúra:",
+        "same_as_shipping": "Rovnaké ako dodacia adresa",
+        "add_address": "Použite inú adresu",
+        "edit": "Upraviť",
+        "delete": "Odložiť"
       }
     },
     "email_marketing": {
