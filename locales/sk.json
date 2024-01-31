@@ -810,7 +810,24 @@
         "draft_order_payment_due_later_no_terms": "Vaša platba bude splatná, hneď ako dôjde k potvrdeniu objednávky.",
         "draft_order_payment_due_later_no_terms_payment_selected": "Z vašej karty sa strhne príslušná čiastka, akonáhle dôjde k potvrdeniu objednávky.",
         "draft_order_payment_due_later_terms": "Po potvrdení objednávky pre vás budú platiť tieto podmienky: {{translatedName}} .",
-        "draft_order_payment_due_on_fulfillment": "Vaša platba bude splatná, akonáhle dôjde k potvrdeniu a splneniu objednávky."
+        "draft_order_payment_due_on_fulfillment": "Vaša platba bude splatná, akonáhle dôjde k potvrdeniu a splneniu objednávky.",
+        "credit_card_label": "Kreditná karta",
+        "bank_deposit_label": "bankový prevod",
+        "cash_on_delivery_label": "Hotovosť na doručenie (COD)",
+        "money_order_label": "Poštová poukážka",
+        "debit_card_label": "Debetná karta",
+        "deferred_payment_label": "Vyberte spôsob platby neskôr",
+        "generic_payment_terms": "Vzťahujú sa na vás nasledujúce podmienky: {{translatedName}}. Vaša platba bude splatná {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "Ak chcete pridať alebo používať uložené spôsoby platby, {{logIn}} na účet s prístupom na dané miesto.",
+            "link": "Prihlásiť sa"
+          }
+        },
+        "direct_payment_terms": "Vzťahujú sa na vás nasledujúce podmienky: {{translatedName}}. Platba bude vytiahnutá z vašej karty na: {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "Vaša platba bude splatná hneď po splnení objednávky.",
+        "fixed_payment_label": "Vaša platba bude splatná deň: {{dueDate}}.",
+        "fixed_direct_payment_terms": "Platba bude vytiahnutá z vašej karty na: {{dueDate}}."
       },
       "thank_you": {
         "title": "Ďakujeme vám za váš nákup!",
@@ -1732,9 +1749,18 @@
           "medium": {
             "one": "Vaša objednávka je spracovaná. Očakávaný čakacia doba je 1 minúta.",
             "other": "Vaša objednávka je spracovaná. Očakávaný čakacia doba je {{ count }} minúty.",
-            "few": "Vaša objednávka je spracovaná. Pravdepodobný čas čakania je %{count} min."
+            "few": "Vaša objednávka je spracovaná. Pravdepodobný čas čakania je %{count} min.",
+            "many": "Vaša objednávka je spracovaná. Pravdepodobný čas čakania je %{count} min."
           }
-        }
+        },
+        "action_required": "Vyžaduje sa akcia"
+      },
+      "failed_payment": {
+        "page_title": "Platba nebolo možné spracovať",
+        "title": "Platba nebolo možné spracovať",
+        "payment_not_processed_title": "Vaša platba nedokázala spracovať",
+        "payment_not_processed_text": "Nič sme vám neúčtovali. Vráťte sa do košíka a vyplňte nákup.",
+        "return_to_cart_button_label": "Vráťte sa do koša"
       }
     },
     "email_marketing": {
