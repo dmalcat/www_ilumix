@@ -1670,7 +1670,71 @@
         "processing_error": "Pri spracovaní vašej platby sa vyskytol problém. Skúste to znova alebo použite iný spôsob platby.",
         "call_issuer": "Vaša karta bola zamietnutá. Používajte iný spôsob platby alebo kontaktujte svoju banku a požiadajte o ďalšie informácie.",
         "test_mode_live_card": "Tento obchod nemôže akceptovať skutočné objednávky alebo skutočné platby.",
-        "transient_error": "Pri spracovaní vašej platby sa vyskytol problém. Pokúste sa obnoviť túto stránku alebo skontrolujte pripojenie na internet."
+        "transient_error": "Pri spracovaní vašej platby sa vyskytol problém. Pokúste sa obnoviť túto stránku alebo skontrolujte pripojenie na internet.",
+        "missing_shipping_address": "Vaša platba nebolo možné spracovať, pretože doručovacia adresa chýba. Pridajte uvedenú adresu a skúste to znova.",
+        "invalid_shipping_address": "Svoju platbu ste nemohli spracovať, pretože sme nenašli vašu dodaciu adresu. Skontrolujte uvedenú adresu a skúste to znova.",
+        "successful_offsite_with_gift_card_error": "Pri spracovaní platby darčekovej karty sa vyskytol problém. Skúste to znova alebo použite iný spôsob platby.",
+        "development_store_order_limit_reached": "Prostredníctvom tohto spracovateľa platby ste dosiahli limit obchodných príkazov pre vývojárov. Ak chcete zadať inú objednávku, budete musieť použiť skúšobnú bránu. Zistite viac o %{development_store_order_testing_docs_link}.",
+        "development_store_with_order_limit": "Ak chcete zadať skúšobnú objednávku, budete musieť použiť skúšobnú bránu. Zistite viac o %{development_store_order_testing_docs_link}.",
+        "development_store_order_testing_docs_link": "Testovacie objednávky v obchodoch s vývojármi",
+        "method_not_available": "Požadovaný spôsob platby nie je k dispozícii.",
+        "available_methods_updated": "Dostupné spôsoby platby boli aktualizované.",
+        "selected_payment_method": "Vyskytol sa problém s vybraným spôsobom platby a suma nemala sumu. Skúste to znova alebo použite iný spôsob platby.",
+        "payment_method_billing_address": "Vyskytol sa problém s fakturačnou adresou zvoleného spôsobu platby a suma nemala sumu. Skontrolujte adresu a skúste to znova alebo použite iný spôsob platby.",
+        "processing_error_checkout_as_guest": "Pri spracovaní vašej platby sa vyskytol problém. Skúste to znova s ​​iným spôsobom platby alebo {{checkout_as_guest_link}}."
+      },
+      "shipping_errors": {
+        "shipping_method": "Váš košík bol zmenený a miera prepravy, ktorú ste predtým vybrali, už nie je platná. Vyberte novú sadzbu.",
+        "shipping_method_not_available": "Váš košík bol aktualizovaný a položky, ktoré ste pridali, nemožno zadať na vašu adresu. Vyberte položky na vyplnenie objednávky.",
+        "shipping_method_not_available_generic": {
+          "one": "Vaša objednávka nie je možné poslať na vybranú adresu. Správne skontrolujte adresu a skúste to znova alebo vyberte inú adresu.",
+          "other": "Niektoré položky v košíku nemožno odoslať do zadanej adresy. Skontrolujte adresu a zistite, či je správna, a skúste to znova. Prípadne zadajte inú adresu.",
+          "few": "Niektoré položky v košíku nemožno odoslať do zadanej adresy. Skontrolujte adresu a zistite, či je správna, a skúste to znova. Prípadne zadajte inú adresu.",
+          "many": "Niektoré položky v košíku nemožno odoslať do zadanej adresy. Skontrolujte adresu a zistite, či je správna, a skúste to znova. Prípadne zadajte inú adresu."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "Pridaná položka nie je možné dodať do vašej polohy. Odstráňte ho skôr, ako pôjdete na platbu alebo kontaktujte obchod.",
+          "other": "Na vašu polohu nie je možné dodať jednu alebo viac pridaných položiek. Odstráňte ich skôr, ako pôjdete na platbu alebo kontaktujte obchod.",
+          "few": "Na vašu polohu nie je možné dodať jednu alebo viac pridaných položiek. Odstráňte ich skôr, ako pôjdete na platbu alebo kontaktujte obchod.",
+          "many": "Na vašu polohu nie je možné dodať jednu alebo viac pridaných položiek. Odstráňte ich skôr, ako pôjdete na platbu alebo kontaktujte obchod."
+        },
+        "payment_method_not_supported": "Tento spôsob platby nemôžete použiť pre krajinu: %{country}. Ak chcete dodať tovar do tejto krajiny, použite inú platobnú metódu.",
+        "empty_state": "Zadajte prepravnú adresu, aby ste videli metódy, ktoré sú k dispozícii prepravné.",
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Položky vo vozíku nespĺňajú požiadavky na cenu alebo hmotnosť, takže nemajú nárok na prepravu. Aktualizujte kôš a skúste to znova.",
+        "title": "Doprava nie je k dispozícii"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Terminál",
+        "or": "Alebo",
+        "show_more_options": "Zobraziť viac možností",
+        "hide_more_options": "Skryť ďalšie možnosti"
+      },
+      "processing": {
+        "redirecting_page_title": "Presmerovanie ...",
+        "redirecting_title": "Presmerovanie ...",
+        "redirecting_notice": "Počkajte, až vás presmerujete.",
+        "complete_your_purchase_title": "Dokončenie nákupu",
+        "continue_to_payment_gateway_notice": "Pokračujte v platobnej bráne a pridajte informácie o platbe.",
+        "continue_to_payment_gateway_button_label": "Pokračujte v platobnej bráne",
+        "complete_your_purchase_title_error": "Opravte podrobnosti platby",
+        "continue_to_payment_gateway_notice_error": "Vaše platobné informácie obsahujú chyby. Vráťte sa na platobnú bránu a opravte ich.",
+        "continue_to_payment_gateway_button_label_error": "Vráťte sa na platobnú bránu",
+        "page_title": "Poradie spracovania",
+        "title": "Poradie spracovania",
+        "your_order_has_been_received_title": "Ďakujem za objednávku",
+        "you_will_receive_confirmation": "Teraz máme veľa objednávok. Čo najskôr vám pošleme potvrdenie e-mailom alebo textovou správou. Ak v nasledujúcej hodine nedostanete potvrdenie, dajte nám vedieť.",
+        "you_will_not_be_charged": "Zatiaľ vám nebude účtovaný",
+        "wait": {
+          "short": "Vaša objednávka je spracovaná.",
+          "long": "Po spracovaní vašej objednávky dostanete e-mail. V súčasnosti je vysoký objem objednávok.",
+          "no_auto_refresh_html": "Ak nie ste automaticky presmerovaní, {{ link }}.",
+          "refresh_this_page": "Aktualizujte túto stránku",
+          "medium": {
+            "one": "Vaša objednávka je spracovaná. Očakávaný čakacia doba je 1 minúta.",
+            "other": "Vaša objednávka je spracovaná. Očakávaný čakacia doba je {{ count }} minúty.",
+            "few": "Vaša objednávka je spracovaná. Pravdepodobný čas čakania je %{count} min."
+          }
+        }
       }
     },
     "email_marketing": {
