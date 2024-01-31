@@ -2979,7 +2979,36 @@
         "request_return": "Požiadať o vrátenie",
         "attempted_delivery_label": "Pokus o doručenie",
         "attempted_delivery_description": "Pokus o doručenie nebol úspešný.",
-        "confirmed_description": "Dostali sme vašu objednávku."
+        "confirmed_description": "Dostali sme vašu objednávku.",
+        "on_its_way_description": "Táto zásielka je na ceste.",
+        "out_for_delivery_description": "Táto zásielka sa dodáva.",
+        "preparing_for_shipping_label": "Expedícia",
+        "preparing_for_shipping_description": "Tieto položky sa pripravujú na prepravu.",
+        "ready_for_pickup_label": "Pripravený na vyzdvihnutie",
+        "ready_for_pickup_description": "Tieto položky sú pripravené na vyzdvihnutie. Pri vyzdvihnutí objednávky buďte pripravení potvrdiť svoju objednávku.",
+        "picked_up_label": "Vyzdvihnúť",
+        "picked_up_description": "Tieto položky boli vyzdvihnuté.",
+        "submitted_description": "Skontrolujte údaje o objednávke a platbe.",
+        "last_updated": "Posledná aktualizácia: {{date}}",
+        "multiple_shipments_label": "Viac zásielok",
+        "view_order_for_details": "Zobraziť objednávku a jeho podrobnosti",
+        "confirmed_description_digital": "Keď je vaša objednávka pripravená, dostanete e-mail.",
+        "delivered_description_digital": "Vaša objednávka je dokončená.",
+        "delivered_description_gift_card": {
+          "one": "Darčeková karta bola odoslaná e-mailom.",
+          "other": "Darčekové karty boli zaslané e-mailom.",
+          "few": "Darčekové karty boli zaslané e-mailom.",
+          "many": "Darčekové karty boli zaslané e-mailom."
+        },
+        "gift_card_label": {
+          "one": "Darčeková karta",
+          "other": "Darčekové poukážky",
+          "few": "Darčekové poukážky",
+          "many": "Darčekové poukážky"
+        },
+        "gift_card_resend": {
+          "one": "Znovu otvoriť e-mail"
+        }
       },
       "list_layout_accessibility_label": "Možnosti rozvrhnutia",
       "list_title": "Príkazy"
