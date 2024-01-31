@@ -386,7 +386,14 @@
         "split_cart_multiple_shipment_quantity_label": "Zásielky: %{quantity}",
         "split_cart_multiple_shipment_notice": "Vaša objednávka príde v niekoľkých zásielkach.",
         "delivery_title": "Doručenie",
-        "shipping_line_delivery_phone_label": "Mobilné číslo"
+        "shipping_line_delivery_phone_label": "Mobilné číslo",
+        "estimated_time": "Odhad: %{time}",
+        "delivery_date_range": "%{min_time} – %{max_time}",
+        "shipping_method_combinations": {
+          "without_separator": "%{firstMethod}, %{secondMethod}",
+          "with_separator": "%{rest}, %{current},",
+          "combination": "%{rest} a %{current}"
+        }
       },
       "payment": {
         "amazon_payments_login_hint": "Budete požiadaní o prihlásenie s Amazon.",
