@@ -2406,6 +2406,86 @@
           "store_unavailable": "Ospravedlňujeme sa, tento obchod je momentálne nedostupný.",
           "store_not_exist": "Tento obchod neexistuje.",
           "no_storefront": "Tento obchod ešte nie je k dispozícii."
+        },
+        "links": {
+          "explore_other_stores": "Preskúmajte ďalšie obchody",
+          "start_free_trial": "Začnite bezplatné skúšobné obdobie"
+        },
+        "owner_ctas": {
+          "header": "Ste majiteľom obchodu?",
+          "fix_domain": "Vyplňte svoje nové nastavenia webovej adresy, prejdite na %{domain_settings_link}. Kliknutím pripojíte doménu a zadajte: %{domain}.<br>Ak máte problémy s presťahovaním sa do obchodu, vyskúšajte stránku pre %{forgot_your_store_link}.",
+          "fix_domain_link_text": "Nastavenie domény",
+          "forgot_your_store_link_text": "Zabudol",
+          "add_storefront": "Môžete nastaviť web tak, aby ste %{admin_link} Pridáte kanál internetového obchodu. Ak máte problémy s presťahovaním sa do obchodu, vyskúšajte stránku pre %{forgot_your_store_link}.",
+          "admin_link_text": "správca"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Začnite osobným predajom",
+            "caption": "Uistite sa, že funkcie potrebné na prevádzku maloobchodu, či už začínate alebo rozširujete svoje podnikanie.",
+            "link_text": "Začnite bezplatné skúšobné obdobie"
+          },
+          "open_a_store": {
+            "header": "Otvorte nový obchod Shopify",
+            "caption": "Začnite s 3 -dňovým bezplatným skúšobným obdobím a potom pokračujte ďalšie 3 mesiace za 1 USD mesačne.",
+            "link_text": "Registrovať"
+          },
+          "editions": {
+            "header": "Pozrite sa na vydania Shopify",
+            "caption": "Viac ako 100 aktualizácií produktov vám umožňuje získať vyššiu produktivitu, kreativitu a efektívnosť pri obchodovaní, ako ste si kedy predstavovali.",
+            "link_text": "Prejsť posledné vydania"
+          },
+          "store_owner": {
+            "header": "Ste majiteľom obchodu?",
+            "caption": "Máte problémy s presťahovaním sa do obchodu? Vyskúšajte funkciu pre %{forgot_your_store_link}. Ak chcete znovu aktivovať obchod, kontaktujte prosím %{shopify_support_link}.",
+            "shopify_support_link_text": "Podpora nakupovať"
+          }
+        }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Chyba obnovenia hesla",
+        "no_account_found": "Nebol nájdený žiadny účet s týmto e -mailom.",
+        "invalid_credentials": "Nesprávny email alebo heslo.",
+        "denylisted_reset_password": "Váš účet nedokázal prístup, pretože aktuálne heslo nie je bezpečné. Získate e -mail na aktualizáciu hesla."
+      },
+      "address": {
+        "updated": "Adresa bola úspešne aktualizovaná.",
+        "error_updating": "Chyba pri aktualizácii adresy",
+        "created": "Adresa bola úspešne vytvorená",
+        "error_creating": "Chyba pri vytváraní adresy.",
+        "deleted": "Adresa úspešne vymazaná",
+        "error_deleting": "Chyba pri odstraňovaní adresy."
+      },
+      "order": {
+        "not_available": "Táto objednávka nie je k dispozícii",
+        "financial_status": {
+          "authorized": "Oprávnený",
+          "pending": "Čakajúci",
+          "paid": "Platený",
+          "unpaid": "Neplatený",
+          "voided": "Zrušený",
+          "partially_paid": "Čiastočne platený",
+          "partially_refunded": "Čiastočne sa vrátil",
+          "refunded": "Vrátený",
+          "expired": "Po konci platnosti"
+        },
+        "fulfillment_status": {
+          "fulfilled": "hotový",
+          "complete": "Dokončiť",
+          "partial": "Čiastočne",
+          "unfulfilled": "Nenaplnený",
+          "restocked": "Rezervy úložiska sa vrátili"
+        },
+        "transaction_status": {
+          "success": "Mať",
+          "pending": "Čakajúci",
+          "failure": "Zlyhanie",
+          "error": "Chyba"
+        },
+        "cancel_reason": {
+          "declined": "Platba zamietnutá"
         }
       }
     }
