@@ -3007,11 +3007,81 @@
           "many": "Darčekové poukážky"
         },
         "gift_card_resend": {
-          "one": "Znovu otvoriť e-mail"
-        }
+          "one": "Znovu otvoriť e-mail",
+          "other": "Znovu vysielajte e-maily",
+          "few": "Znovu vysielajte e-maily",
+          "many": "Znovu vysielajte e-maily"
+        },
+        "gift_card_resend_description": {
+          "one": "Ak to neprišlo, pošlite znova e -mail alebo",
+          "other": "Ak neprišli, pošlite znova e -maily alebo",
+          "few": "Ak neprišli, pošlite znova e -maily alebo",
+          "many": "Ak neprišli, pošlite znova e -maily alebo"
+        },
+        "ready_for_pickup_location": "Vaša objednávka je pripravená vyzdvihnúť na mieste",
+        "confirmed_description_pickup": "Ak je vaša objednávka pripravená na vyzdvihnutie, dostanete e-mail.",
+        "confirmed_gift_card_additional_description": {
+          "one": "Darčeková karta bude odoslaná v samostatnom e-maile.",
+          "other": "Každá darčeková karta bude odoslaná v samostatnom e-maile.",
+          "few": "Každá darčeková karta bude odoslaná v samostatnom e-maile.",
+          "many": "Každá darčeková karta bude odoslaná v samostatnom e-maile."
+        },
+        "confirmed_description_gift_card_text": "Keď je vaša objednávka pripravená, dostanete textovú správu.",
+        "delivered_description_gift_card_text": {
+          "one": "Darčeková karta bola odoslaná v textovej správe.",
+          "other": "Darčekové karty boli odoslané v textovej správe.",
+          "few": "Darčekové karty boli odoslané v textovej správe.",
+          "many": "Darčekové karty boli odoslané v textovej správe."
+        },
+        "gift_card_resend_text": {
+          "one": "Pošlite textovú správu",
+          "other": "Re -send textové správy",
+          "few": "Re -send textové správy",
+          "many": "Re -send textové správy"
+        },
+        "gift_card_resend_description_text": {
+          "one": "Ak to neprišlo, pošlite znova textovú správu alebo",
+          "other": "Ak neprišli, pošlite znova textové správy alebo",
+          "few": "Ak neprišli, pošlite znova textové správy alebo",
+          "many": "Ak neprišli, pošlite znova textové správy alebo"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Darčeková karta bude odoslaná v samostatnej textovej správe.",
+          "other": "Každá darčeková karta bude odoslaná v samostatnej textovej správe.",
+          "few": "Každá darčeková karta bude odoslaná v samostatnej textovej správe.",
+          "many": "Každá darčeková karta bude odoslaná v samostatnej textovej správe."
+        },
+        "gift_resend_success": {
+          "one": "Darčeková karta bola odoslaná znova",
+          "other": "Darčekové karty boli zaslané znova",
+          "few": "Darčekové karty boli zaslané znova",
+          "many": "Darčekové karty boli zaslané znova"
+        },
+        "gift_resend_failure": {
+          "one": "Znovu sa vyskytol problém s darčekovou kartou. Skúste to znova alebo nás kontaktujte.",
+          "other": "Znova sa vyskytol problém s darčekovými kartami. Skúste to znova alebo nás kontaktujte.",
+          "few": "Znova sa vyskytol problém s darčekovými kartami. Skúste to znova alebo nás kontaktujte.",
+          "many": "Znova sa vyskytol problém s darčekovými kartami. Skúste to znova alebo nás kontaktujte."
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Sledujte a spravujte svoju objednávku prostredníctvom nákupu s Prime",
+            "new_window_disclaimer": "(Otvára nové okno)"
+          }
+        },
+        "attempted_to_deliver_label": "Uskutočnil sa pokus o doručenie",
+        "there_was_a_problem_label": "Vyskytol sa problém"
       },
       "list_layout_accessibility_label": "Možnosti rozvrhnutia",
-      "list_title": "Príkazy"
+      "list_title": "Príkazy",
+      "status_mark_as_delivered": "Štítok",
+      "status_title": "Stav objednávky",
+      "buy_again": "Kupovať",
+      "buy_again_accessibility_label": "Opätovné nákup na objednávku {{orderId}}",
+      "manage": "Spravovať",
+      "manage_accessiblity_label": "objednať {{orderId}}",
+      "group_title_label": "Časť balíka: {{groupTitle}}",
+      "havent_received_your_delivery": "Nemáte ešte svoju zásielku?"
     },
     "errors": {
       "address_deletion_error": {
