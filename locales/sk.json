@@ -1966,7 +1966,81 @@
           "title": {
             "one": "Neexistuje žiadne doručenie pre %{count} položka",
             "other": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}",
-            "few": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}"
+            "few": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}",
+            "many": "Neexistuje žiadne doručenie pre tento počet položiek: %{count}"
+          },
+          "message": {
+            "one": "V príslušnej položke bude odstránená z vášho košíka, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania.",
+            "other": "Relevantné položky sa z vášho košíka odstránia, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania.",
+            "few": "Relevantné položky sa z vášho košíka odstránia, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania.",
+            "many": "Relevantné položky sa z vášho košíka odstránia, pretože pre vašu adresu nie sú k dispozícii žiadne metódy dodania."
+          },
+          "label": "Žiadne doručenie"
+        }
+      },
+      "no_address_location": {
+        "title": "Adresa bez adresy",
+        "header": "Dodacia adresa nie je uvedená na tomto mieste",
+        "message": "Ak chcete dokončiť proces pokladnice, kontaktujte nás a pridajte adresu pre toto miesto.",
+        "email_us_button_label": "Poslať email",
+        "alt_header": "Chýbajúca doručovacia adresa"
+      },
+      "order_errors": {
+        "creation_failure": "Pri vytváraní objednávky bol problém. Skúste to znova, alebo ak potrebujete viac podrobností, kontaktujte nás.",
+        "network_failure": "Vaša objednávka sa nedokázala odoslať z dôvodu chyby siete. Skontrolujte pripojenie a skúste to znova.",
+        "inventory_reservation_failure": "Niektoré položky už nie sú k dispozícii."
+      },
+      "session_errors": {
+        "session_not_unique": "Pri spracovaní vašej objednávky bol problém. Ak sa chcete vrátiť do obchodu, aktualizujte túto stránku.",
+        "session_already_finished": "Táto objednávka už bola odoslaná. Môžete sa vrátiť do obchodu a začať s novou objednávkou."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "ZATVORENÉ",
+        "business_hours": "OTVÁRACIE HODINY",
+        "title": "Dodávateľský bod",
+        "or": "alebo",
+        "search_button": "Vyhľadávanie",
+        "selector_tabs": "Výber bodu dodávky",
+        "selector_tab_map": "Mapovať",
+        "selector_tab_list": "Zoznam",
+        "could_not_resolve_address": "Vaša adresa nedokázala nájsť. Skúste to znova alebo zadajte inú adresu.",
+        "no_pickup_points_near_you": "V blízkosti vybranej adresy neboli nájdené žiadne body",
+        "no_pickup_points_near_location": "V blízkosti vašej polohy neboli nájdené žiadne body",
+        "no_pickup_points_found": "Neboli nájdené žiadne body",
+        "paginator": {
+          "next_accessibility_label": "Ďalšia strana",
+          "previous_accessibility_label": "Predchádzajúca strana",
+          "header": {
+            "one": "Zobrazuje sa %{first} – %{last} z %{count} bod",
+            "other": "Zobrazuje sa %{first} – %{last} z %{count} body",
+            "few": "Zobrazuje sa %{first} – %{last} z %{count} body",
+            "many": "Zobrazuje sa %{first} – %{last} z %{count} body"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} z %{count} bod",
+            "other": "%{pickup_point_index} z %{count} body",
+            "few": "%{pickup_point_index} z %{count} body",
+            "many": "%{pickup_point_index} z %{count} body"
+          },
+          "selected_page": {
+            "one": "%{first} – %{last} z %{count} bod",
+            "other": "%{first} – %{last} z %{count} body",
+            "few": "%{first} – %{last} z %{count} body",
+            "many": "%{first} – %{last} z %{count} body"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} Sepply umiestnite blízko vašej polohy",
+          "other": "Vynikajúce body v blízkosti vašej polohy: %{count}",
+          "few": "Vynikajúce body v blízkosti vašej polohy: %{count}",
+          "many": "Vynikajúce body v blízkosti vašej polohy: %{count}"
+        },
+        "change": "Meniť",
+        "waiting_on_pickup_point_location_notice": "Hľadajú zberné body ...",
+        "geolocation": {
+          "shared_location_button": "Použite moju pozíciu",
+          "errors": {
+            "unsuported_by_browser": "Váš prehliadač nepodporuje umiestnenie. Skúste to znova alebo použite iný prehliadač."
           }
         }
       }
