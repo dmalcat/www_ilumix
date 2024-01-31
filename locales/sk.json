@@ -3081,7 +3081,17 @@
       "manage": "Spravovať",
       "manage_accessiblity_label": "objednať {{orderId}}",
       "group_title_label": "Časť balíka: {{groupTitle}}",
-      "havent_received_your_delivery": "Nemáte ešte svoju zásielku?"
+      "havent_received_your_delivery": "Nemáte ešte svoju zásielku?",
+      "didnt_pick_up_order": "Už ste si nevyzdvihli svoju objednávku?",
+      "let_us_know": "Dajte nám o tom vedieť",
+      "contact_us": "Kontaktuj nás.",
+      "if_you_didnt_receive_this": "Ak ste nedostali tovar,",
+      "if_not_received": {
+        "one": "Ak nedošlo k žiadnemu doručeniu,",
+        "other": "Ak nedošlo k žiadnemu doručeniu,",
+        "few": "Ak nedošlo k žiadnemu doručeniu,",
+        "many": "Ak nedošlo k žiadnemu doručeniu,"
+      }
     },
     "errors": {
       "address_deletion_error": {
@@ -3179,6 +3189,60 @@
       },
       "add_button": "Pridať",
       "title": "Profil"
+    },
+    "order_details": {
+      "addresses_section_title": "Fakturácia",
+      "billing_address": "Fakturačná adresa",
+      "card_ending_with": "končí to {{lastDigits}}",
+      "contact": "Kontakt",
+      "hide_items": "Skryť",
+      "loading": "Podrobnosti o objednávke sú načítané",
+      "loading_finished_accessibility_message": "Podrobnosti o objednávke boli načítané",
+      "payment": {
+        "status_in_review": "Platba splatná po preskúmaní",
+        "status_unpaid": "Splatnosť: {{date}}",
+        "title": "Platba",
+        "card_payment_details": "s koncovými znakmi {{lastDigits}}: {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Platené prostredníctvom platby za splácanie",
+          "view_schedule": "Prezrite si splátkový kalendár"
+        },
+        "gift_card_payment_details": "s koncovými znakmi {{lastDigits}}: {{formattedTransactionAmount}}",
+        "manual_payment_methods": {
+          "money_order": "Poštový poukaz\/pošta: {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Hotovosť na doručenie (COD): {{formattedTransactionAmount}}",
+          "bank_deposit": "Bankový vklad: {{formattedTransactionAmount}}",
+          "manual": "Malé: {{formattedTransactionAmount}}"
+        },
+        "store_credit_payment_details": "Úver za obchod: {{formattedTransactionAmount}}",
+        "transactions": {
+          "show_all": "Ukázať všetko",
+          "show_less": "Menej"
+        }
+      },
+      "shipping": {
+        "address": "Adresa dodania",
+        "address_map_marker": "Adresa dodania",
+        "method": "Preprava",
+        "summary": "Expedícia",
+        "free": "zadarmo",
+        "free_shipping_discount": "Preprava zadarmo",
+        "one_time": "Preprava na jeden -časový nákup",
+        "subscription": "Expedícia"
+      },
+      "show_items": "Zobraziť položky",
+      "subtitle": "Potvrdený {{date}}",
+      "subtotal": "Úškrt",
+      "summary_list_title_accessibility_label": "Objednávacie položky",
+      "summary_title": "Zhrnutie objednávky",
+      "summary_totals_title_accessibility_label": "Celkovo",
+      "taxes": "Zdanenie",
+      "title": "objednať {{name}}",
+      "total": "Celkom",
+      "unit_price": "{{price}} \/ počítače",
+      "location": "Miesto",
+      "not_applicable": "–",
+      "fully_refunded_label": "Peniaze sa vrátili"
     }
   },
   "general": {
