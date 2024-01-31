@@ -3454,8 +3454,76 @@
       },
       "edit_payment_method": {
         "title": "Upraviť spôsob platby",
-        "save_payment_method_button": "Uložiť"
-      }
+        "save_payment_method_button": "Uložiť",
+        "cancel_edit_payment_method_button": "Zrušiť",
+        "payment_method_updated_toast": "Metóda platby bola aktualizovaná",
+        "billing_address": "Fakturačná adresa",
+        "billing_address_add_new": "Pridať nové",
+        "billing_address_choose_from_list": "Vyberte zo zoznamu",
+        "future_purchases_notice": "Tento spôsob platby sa ušetrí pre ďalšie nákupy.",
+        "generic_error": "Počas aktualizácie sa vyskytol problém. Prosím skúste znova."
+      },
+      "card_fields": {
+        "card_number_label": "Číslo karty",
+        "card_number_placeholder": "Číslo karty",
+        "name_on_card_label": "Meno na karte",
+        "name_on_card_placeholder": "Meno na karte",
+        "card_expiry_label": "Dátum ukončenia (mm\/rr)",
+        "card_expiry_placeholder": "Dátum ukončenia (mm\/rr)",
+        "card_verification_value_label": "Bezpečnostný kód",
+        "card_verification_value_placeholder": "Bezpečnostný kód",
+        "card_start_label": "Dátum vydania (MM\/RR)",
+        "card_start_placeholder": "Dátum vydania (MM\/RR)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Viac informácií",
+          "card_verification_value_explanation_amex": "Štyri -digitový bezpečnostný kód na prednej strane karty",
+          "card_verification_value_explanation_other": "Tri -Digit Security Code na zadnej strane karty",
+          "card_verification_value_explanation": "Tri -digitový bezpečnostný kód sa zvyčajne nachádza na zadnej strane karty. Karty American Express majú na prednej strane štvor -rozkošný kód.",
+          "card_security_notice": "Všetky transakcie sú bezpečné a šifrované."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Uveďte svoje meno presne tak, ako je to zobrazené na svojej karte",
+          "credit_card_number_invalid": "Zadajte platné číslo karty",
+          "credit_card_expiry_invalid": "Zadajte správny dátum ukončenia karty",
+          "credit_card_verification_value_blank": "Zadajte CVV alebo bezpečnostný kód karty"
+        }
+      },
+      "add_payment_method": {
+        "title": "Pridajte spôsob platby",
+        "payment_method_added_confirmation": "Metóda platby bola pridaná",
+        "billing_address": {
+          "title": "Fakturačná adresa",
+          "add_billing_address_button": "Pridať nové",
+          "add_billing_address_button_accessibility_label": "Pridajte novú fakturačnú adresu",
+          "choose_billing_address_from_list_button": "Vyberte zo zoznamu",
+          "choose_billing_address_from_list_button_accessibility_label": "Vyberte fakturačnú adresu zo zoznamu",
+          "missing_billing_address_error_message": "Zadajte fakturačnú adresu",
+          "default_checkbox": "Nastavte sa ako predvolená metóda platby"
+        }
+      },
+      "expires_soon": "Táto karta čoskoro vyprší.",
+      "expired": "Platnosť tejto karty vypršala platnosť.",
+      "card_update_consent": "Tento spôsob platby sa ušetrí pre ďalšie nákupy.",
+      "digital_wallet_title": "Digitálna peňaženka",
+      "credit_or_debit_card_title": "Kreditná alebo debetná karta",
+      "google_pay": {
+        "errors": {
+          "generic": "S Google Pay sa vyskytol problém. Skúste to znova alebo použite iný spôsob platby.",
+          "missing_billing_address": "Google Pay vyžaduje fakturačnú adresu. Zadajte ho so svojím účtom."
+        },
+        "loading": "Google Pay sa načítava"
+      },
+      "apple_pay": {
+        "loading": "Apple Pay sa načítava",
+        "errors": {
+          "generic": "Vyskytol sa problém s Apple Pay. Skúste to znova alebo použite iný spôsob platby.",
+          "not_available": "Apple Pay nie je k dispozícii na tomto zariadení.",
+          "missing_billing_address": "Apple Pay vyžaduje fakturačnú adresu. Zadajte ho so svojím účtom."
+        }
+      },
+      "add_payment_method_banner": "Pridaním spôsobu platby sa proces pokladnice vopred zrýchli alebo schváli služby.",
+      "edit_payment_method_button_accessibility_label": "Upraviť: {{paymentMethodName}} s koncovými číslicami {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Upraviť: {{paymentMethodName}}"
     }
   },
   "general": {
