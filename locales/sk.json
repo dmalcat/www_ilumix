@@ -3,7 +3,8 @@
     "account": {
       "title": "Môj účet",
       "view_addresses": "Zobraziť adresy",
-      "return": "Vrátiť sa na detail účtu"
+      "return": "Vrátiť sa na detail účtu",
+      "details": "Detaily účtu"
     },
     "login": {
       "title": "Prihlásenie",
@@ -11,13 +12,17 @@
       "sign_in": "Prihlásiť sa",
       "cancel": "Vrátiť sa do obchodu",
       "guest_title": "Pokračovať ako hosť",
-      "guest_continue": "Pokračovať"
+      "guest_continue": "Pokračovať",
+      "email": "E-mail",
+      "password": "Heslo"
     },
     "activate_account": {
       "title": "Aktivovať účet",
       "subtext": "Vytvorte heslo pre aktiváciu účtu",
       "submit": "Aktivovať účet",
-      "cancel": "Odmietnuť pozvanie"
+      "cancel": "Odmietnuť pozvanie",
+      "password": "Heslo",
+      "password_confirm": "Potvrďte heslo"
     },
     "addresses": {
       "title": "Vaša adresa",
@@ -34,13 +39,20 @@
       "update": "Aktualizovať adresu",
       "cancel": "Zrušiť",
       "edit": "Upraviť",
-      "delete": "Zmazať"
+      "delete": "Zmazať",
+      "company": "Pevný",
+      "address1": "Adresa 1",
+      "address2": "adresa 2",
+      "zip": "PSČ"
     },
     "orders": {
       "title": "História objednávok",
       "date": "Dátum",
       "total": "Celkom",
-      "none": "Nemáte žiadnu objednávku"
+      "none": "Nemáte žiadnu objednávku",
+      "order_number": "objednať",
+      "payment_status": "Stav platby",
+      "fulfillment_status": "Stav objednávky"
     },
     "order": {
       "title": "Objednávka {{ name }}",
@@ -52,14 +64,17 @@
       "submit": "Odoslať",
       "cancel": "Zrušiť",
       "subtext": "Odošleme vám email s pokynmi na resetovanie hesla",
-      "success": "Odoslali sme vám email"
+      "success": "Odoslali sme vám email",
+      "email": "E-mail"
     },
     "register": {
       "title": "Vytvoriť účet",
       "first_name": "Meno",
       "last_name": "Priezvisko",
       "submit": "Vytvoriť účet",
-      "cancel": "Vrátiť sa do obchodu"
+      "cancel": "Vrátiť sa do obchodu",
+      "email": "E-mail",
+      "password": "Heslo"
     }
   },
   "shopify": {
@@ -3817,7 +3832,8 @@
       "price_ascending": "Cena vzostupne",
       "price_descending": "Cena zostupne",
       "date_descending": "Najnovšie",
-      "date_ascending": "Najstaršie"
+      "date_ascending": "Najstaršie",
+      "featured": "Vybraný"
     }
   },
   "contact": {
