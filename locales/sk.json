@@ -2199,7 +2199,44 @@
         "same_as_shipping": "Rovnaké ako dodacia adresa",
         "add_address": "Použite inú adresu",
         "edit": "Upraviť",
-        "delete": "Odložiť"
+        "delete": "Odložiť",
+        "address_more": "Ďalšia akcia pre túto adresu",
+        "address_edit": "Upraviť adresu",
+        "address_delete": "Vymazať adresu",
+        "address_confirm": "Naozaj chcete túto adresu odstrániť z vášho účtu?",
+        "address_form": {
+          "add_address": "Osloviť",
+          "save": "Uložiť",
+          "cancel": "Zrušiť"
+        }
+      },
+      "address_management": {
+        "confirm_address_deletion": "Naozaj chcete odstrániť adresu {{address}}?"
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Darčeková karta už bola použitá s vašou objednávkou.",
+          "insufficient_funds": "Na tejto darčekovej karte nezostali žiadne zdroje.",
+          "expired": "Platnosť tejto darčekovej karty vypršala.",
+          "not_available": "Táto darčeková karta už nie je k dispozícii.",
+          "invalid": "Zadajte platnú darčekovú kartu",
+          "currency_mismatch": "Prijímajú sa iba darčekové karty v mene %{shop_currency}.",
+          "generic": "Darčeková karta nedokázala pridať do procesu pokladne.",
+          "throttle_limit_exceeded": "Prekročili ste maximálny počet pokusov. Skúste to znova neskôr."
+        }
+      },
+      "vaulted": {
+        "change_button": "Meniť"
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "Pri nakladaní obchodu sa vyskytol problém",
+          "try_again_later": "Skontrolujte pripojenie alebo zatvorte toto okno a skúste to znova o chvíľu."
+        },
+        "return_to_store": "Späť do obchodu {{shopName}}"
+      },
+      "company_location": {
+        "location_title": "Miesto"
       }
     },
     "email_marketing": {
@@ -2272,6 +2309,49 @@
       "words_connector": ", ",
       "two_words_connector": " a ",
       "last_word_connector": "a "
+    },
+    "pagination": {
+      "previous": "Predchádzajúci",
+      "next": "Ďalšie"
+    },
+    "links": {
+      "powered_by_shopify": "Používa obchod.",
+      "learn_more": "Nájsť viac"
+    },
+    "feed": {
+      "more": "Viac"
+    },
+    "attributes": {
+      "email": "e-mail",
+      "password": "heslo",
+      "password_confirmation": "potvrdenie hesla",
+      "first_name": "názov",
+      "last_name": "priezvisko",
+      "body": "tela",
+      "signature": "Osloviť"
+    },
+    "addresses": {
+      "zip_code": "PSČ",
+      "postal_code": "PSČ",
+      "postcode": "PSČ",
+      "pincode": "PIN kód",
+      "region": "Región",
+      "prefecture": "Prefektúra",
+      "province": "Provincie",
+      "state": "Štát",
+      "state_and_territory": "Štát\/územie",
+      "county": "Okresný",
+      "emirate": "Emirát",
+      "governorate": "Guvernér",
+      "confirm": "Naozaj chcete túto adresu vymazať?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Povýšený",
+        "best_selling": "Najpredávanejší",
+        "az": "Abecedne, -od",
+        "za": "Abecedne, z -a"
+      }
     }
   },
   "customer_accounts": {
