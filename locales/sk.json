@@ -2040,9 +2040,86 @@
         "geolocation": {
           "shared_location_button": "Použite moju pozíciu",
           "errors": {
-            "unsuported_by_browser": "Váš prehliadač nepodporuje umiestnenie. Skúste to znova alebo použite iný prehliadač."
+            "unsuported_by_browser": "Váš prehliadač nepodporuje umiestnenie. Skúste to znova alebo použite iný prehliadač.",
+            "permission_not_allowed": "Nechajte zdieľať svoju polohu.",
+            "permission_denied": "Vaša poloha to nedokázala zistiť. Skús to znova."
           }
         }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Pri dokončení nákupu sa vyskytol problém",
+          "message": "Aktualizujte túto stránku alebo skúste to znova o pár minút",
+          "action": {
+            "cta": "Obnoviť"
+          },
+          "request_id": "ID žiadosti: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Vráťte sa do vozíka",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} a aktualizovať množstvo.",
+        "subscription_changed": "Jeden z vašich predplatných sa zmenil.",
+        "company_location_changed": "Váš košík bol aktualizovaný. Pred odoslaním skontrolujte svoju objednávku.",
+        "violations_title": "{{violation}} chýba alebo neplatí",
+        "individual_violations_title": {
+          "DeliveryViolations": "Adresa dodania",
+          "PaymentViolations": "Fakturačná adresa",
+          "OtherViolations": "Informácie o objednávke"
+        },
+        "all_violations_content": "Zavolajte nám alebo nám pošlite {{emailLink}}S cieľom aktualizovať tieto informácie a vyplniť objednávku:",
+        "all_violations_email_link": "e-mail",
+        "editable_shipping_address_violations_message_title": "Zadajte nasledujúce informácie a vyplňte objednávku:",
+        "editable_shipping_address_violations_message_footer": "Ak chcete natrvalo aktualizovať adresu pre toto miesto, {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "kontaktuj nás",
+        "company_location_changed_product_removed": "Váš košík bol aktualizovaný, pretože niektoré produkty nie sú k dispozícii na tomto mieste. Pred odoslaním skontrolujte svoju objednávku.",
+        "shipping_address_incomplete_title": "Dodacia adresa nie je úplná",
+        "calculating_shipping": "Transport sa stále počíta. Skúste to znova za pár sekúnd. Nič sme vám neúčtovali.",
+        "calculating_taxes": "Dane sa stále počítajú. Skúste to znova za pár sekúnd. Nič sme vám neúčtovali."
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Štúdium",
+          "link_label": "Podmienky spoločnosti {{partnerDisplayName}}"
+        }
+      },
+      "online_store_chat": {
+        "title": "Máš otázky? Porozprávajte sa s nami"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "%{count} Obchod v blízkosti adresy %{address}",
+          "other": "%{count} Komunita. S skladmi v blízkosti adresy %{address}",
+          "few": "%{count} Komunita. S skladmi v blízkosti adresy %{address}",
+          "many": "%{count} Komunita. S skladmi v blízkosti adresy %{address}"
+        },
+        "toggle_location": "Zmeňte umiestnenie",
+        "or": "Alebo",
+        "cancel": "Zrušiť",
+        "your_location": "Vaša poloha",
+        "search_button": "Nájdite obchody",
+        "no_stores_found": "Nenašli sa žiadne obchody",
+        "could_not_resolve_address": "Vaša adresa nedokázala nájsť. Skúste to znova alebo zadajte inú adresu.",
+        "paginator": {
+          "accessibility_label": "Stránka na miestny pickup",
+          "previous": "Predchádzajúca strana",
+          "next": "Ďalšia strana",
+          "label": {
+            "one": "%{first} – %{last} z %{count} obchod",
+            "other": "%{first} – %{last} z %{count} obchodovať",
+            "few": "%{first} – %{last} z %{count} obchodovať",
+            "many": "%{first} – %{last} z %{count} obchodovať"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Zobrazenie %{count} iné miesto",
+          "other": "Zobraziť tento počet ďalších miest: %{count}",
+          "few": "Zobraziť tento počet ďalších miest: %{count}",
+          "many": "Zobraziť tento počet ďalších miest: %{count}"
+        }
+      },
+      "captcha": {
+        "title": "Pokračujte v vyplňovaní captcha"
       }
     },
     "email_marketing": {
