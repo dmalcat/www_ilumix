@@ -2688,7 +2688,8 @@
         "tax_details_title": "Daňové údaje",
         "tax_id": "Vintový",
         "multiple_tax_exemptions_and": "a",
-        "tax_exemption_not_applicable": "–"
+        "tax_exemption_not_applicable": "–",
+        "own_role_contact_name": "Vy"
       },
       "location_selection": {
         "description": "Pokiaľ už máte položky v košíku, môže mať zmena lokality vplyv na ceny a množstvo v košíku.",
@@ -2707,7 +2708,9 @@
         "no_locations_found": "Neboli nájdené žiadne lokality",
         "search": "Vyhľadajte lokalitu",
         "clear_search": "Vymazať hľadanie",
-        "try_new_search": "Skúste spustiť nové hľadanie"
+        "try_new_search": "Skúste spustiť nové hľadanie",
+        "list_item_accessibility_label": "{{name}}: {{address}}",
+        "search_location_title": "Vyberte lokalitu"
       },
       "addresses": {
         "add_billing_address_button": "Pridať fakturačnú adresu",
@@ -2745,7 +2748,9 @@
           },
           "pending_orders_count_more_than_pagination_length": "Viac ako {{count}}"
         },
-        "removed_company_contact_tooltip": "Odobrané zo spoločnosti"
+        "removed_company_contact_tooltip": "Odobrané zo spoločnosti",
+        "order_list_column_headers_location": "Miesto",
+        "order_list_column_headers_contact": "Kontakt"
       },
       "draft_order_details": {
         "draft_order_subtitle": "Potvrdené {{date}} z objednávky {{draftOrderName}}",
@@ -2805,7 +2810,8 @@
             "title": "Platba bola zrušená",
             "description": "Nič vám nebolo účtované."
           },
-          "pay_now_accessibility_label": "Zaplatiť hneď za objednávku {{orderName}}"
+          "pay_now_accessibility_label": "Zaplatiť hneď za objednávku {{orderName}}",
+          "title": "Stav platby"
         },
         "subtitle": "Odoslané: {{date}}",
         "title": "Objednávka {{name}}",
