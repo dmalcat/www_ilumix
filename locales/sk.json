@@ -1088,7 +1088,33 @@
           "other": "Darčekové karty boli odoslané e-mailom",
           "few": "Darčekové karty boli odoslané e-mailom",
           "many": "Darčekové karty boli odoslané e-mailom"
-        }
+        },
+        "gift_card_text_title": {
+          "one": "Darčeková karta bola odoslaná textovou správou",
+          "other": "Darčekové karty boli odoslané textovou správou",
+          "few": "Darčekové karty boli odoslané textovou správou",
+          "many": "Darčekové karty boli odoslané textovou správou"
+        },
+        "resend_gift_cards_by_email": "Znovu otvoriť e-mail",
+        "resend_gift_cards_by_text": "Pošlite textovú správu",
+        "gift_card_resent_confirmation": {
+          "one": "Darčeková karta bola opäť odoslaná.",
+          "other": "Darčekové karty boli zaslané znova.",
+          "few": "Darčekové karty boli zaslané znova.",
+          "many": "Darčekové karty boli zaslané znova."
+        },
+        "gift_card_resend_failure": {
+          "one": "Znovu sa vyskytol problém s darčekovou kartou. Skúste to znova alebo nás kontaktujte.",
+          "other": "Znova sa vyskytol problém s darčekovými kartami. Skúste to znova alebo nás kontaktujte.",
+          "few": "Znova sa vyskytol problém s darčekovými kartami. Skúste to znova alebo nás kontaktujte.",
+          "many": "Znova sa vyskytol problém s darčekovými kartami. Skúste to znova alebo nás kontaktujte."
+        },
+        "failed_pending_payment_page_title": "Vyskytol sa problém s vašou platbou",
+        "thank_you_title_payments_app_pending_default": "Vaša platba je spracovaná",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Vaša objednávka bola prijatá",
+        "thank_you_title_payments_app_failed_pending_payment": "Vaša platba nedokázala spracovať",
+        "thank_you_payments_app_failed_pending_payment": "Na objednávku nebola žiadna suma. Vráťte sa do košíka, skontrolujte svoju objednávku a skúste zaplatiť znova.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone": "Čoskoro dostanete potvrdzovací e-mail. Objednávku môžete sledovať prostredníctvom obchodu."
       },
       "shop_policies": {
         "terms_of_service": "Podmienky služby",
@@ -1571,7 +1597,8 @@
           "no_purchase_order_number": "(žiadne číslo nákupnej objednávky)",
           "due_after_order_reviewed_html": "Splatné po skontrolovaní objednávky",
           "review_title_free_order": "Skontrolujte a dokončite svoju objednávku",
-          "payment_method_saved_company_location": "Uložiť kartu pre túto lokalitu"
+          "payment_method_saved_company_location": "Uložiť kartu pre túto lokalitu",
+          "contact_method_title": "Kontakt"
         },
         "block_title": "Skontrolujte si údaje",
         "checkout_a_different_way": "Iný spôsob platenia na pokladni"
