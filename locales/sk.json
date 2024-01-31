@@ -1022,7 +1022,73 @@
         "gift_card_confirmation_by_text": "Ak ste ju nedostali, pošlite znova textovú správu alebo nás kontaktujte.",
         "gift_card_confirmation_by_email": "Ak ste ho nedostali, pošlite znova e -mail alebo nás kontaktujte.",
         "gift_card_title": "Darčekové poukážky",
-        "resend_gift_cards": "Re -send darčekové karty"
+        "resend_gift_cards": "Re -send darčekové karty",
+        "attempted_delivery_local_title": "Zmeškané doručenie",
+        "attempted_delivery_local_description_html": "Nemohli sme doručiť vašu objednávku. %{contact_us}že môžeme naplánovať ďalšie doručenie.",
+        "thank_you_title_payment": "Vaša platba je potvrdená",
+        "thank_you_confirmed_order_with_email_payment": "Platba ste uskutočnili v objednávke: %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Platba ste uskutočnili v objednávke: %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Platba ste uskutočnili v objednávke: %{date}.",
+        "order_status_confirmed_order_with_email_payment": "Platba ste uskutočnili v objednávke: %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "Platba ste uskutočnili v objednávke: %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Platba ste uskutočnili v objednávke: %{date}.",
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Naskenujte kód telefonicky"
+          },
+          "sms": {
+            "title": "Prípadne pošlite odkaz na svoj telefón"
+          }
+        },
+        "estimated_delivery": "Aktuálny odhad doručenia: ",
+        "view_business_customer_account": "Pozrieť účet",
+        "company_location_title": "Miesto",
+        "thank_you_title_review": "Vaša objednávka bola odoslaná na kontrolu",
+        "thank_you_confirmed_order_with_draft": "Dáme vám vedieť, či potrebujeme viac informácií alebo že vaša objednávka bude potvrdená.",
+        "payment_method_draft_order": "Z dôvodu kontroly objednávky",
+        "breadcrumbs_submitted": "Odoslaný",
+        "breadcrumbs_in_review": "Kontrola",
+        "breadcrumbs_confirmed": "Potvrdený",
+        "missing_shipping_address_banner": {
+          "title": "Objednávka neobsahuje dodaciu adresu",
+          "text_html": "%{contact_us} a zadajte svoju adresu",
+          "contact_us": "kontaktuj nás"
+        },
+        "order_status_confirmed_with_installments_payment_return": "Znova venujte pozornosť predajcom.",
+        "order_status_confirmed_with_installments_payment_confirm": "Čoskoro dostanete e-mail s číslom objednávky a podrobnosti o harmonograme splácania.",
+        "first_payment_complete": "Bola vykonaná prvá platba",
+        "in_store_purchase": "Nákup",
+        "choose_payment_method_later": "Vyberte spôsob platby neskôr",
+        "purchase_order_number_title": "Nákupné číslo %{purchase_order_number}",
+        "location_title": "Miesto",
+        "thank_you_ready_for_picked_up": "Vaša objednávka bola vyzdvihnutá na adrese %{address}.",
+        "ready_for_delivery": "Pripravený na doručenie",
+        "order_updates_subscribe_to_email_notifications_failed": "Tento e -mail nemôžeme uložiť na aktualizácie. Skúste to znova alebo použite iný e -mail.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "E-mail, ktorý ste zadali, už existuje.",
+        "subscriptions_management": {
+          "title": "Predplatné",
+          "description": "Ak chcete zobraziť a spravovať predplatné, prejdite na svoj účet.",
+          "button_label": "Predplatné"
+        },
+        "manage_order_label": "Spravujte svoje objednávky",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "V priebehu niekoľkých minút dostanete textovú správu s darčekovou kartou.",
+          "other": "V priebehu niekoľkých minút dostanete textovú správu s darčekovými kartami.",
+          "few": "V priebehu niekoľkých minút dostanete textovú správu s darčekovými kartami.",
+          "many": "V priebehu niekoľkých minút dostanete textovú správu s darčekovými kartami."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "V priebehu niekoľkých minút dostanete e-mail s darčekovou kartou.",
+          "other": "V priebehu niekoľkých minút dostanete e-mail s darčekovými kartami.",
+          "few": "V priebehu niekoľkých minút dostanete e-mail s darčekovými kartami.",
+          "many": "V priebehu niekoľkých minút dostanete e-mail s darčekovými kartami."
+        },
+        "gift_card_email_title": {
+          "one": "Darčeková karta bola zaslaná e-mailom",
+          "other": "Darčekové karty boli odoslané e-mailom",
+          "few": "Darčekové karty boli odoslané e-mailom",
+          "many": "Darčekové karty boli odoslané e-mailom"
+        }
       },
       "shop_policies": {
         "terms_of_service": "Podmienky služby",
