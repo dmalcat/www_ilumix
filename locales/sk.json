@@ -2652,7 +2652,8 @@
       "attention": "Príjemca",
       "attention_help_text": "Meno osoby alebo názov oddelenia",
       "loading_form_accessibility_message": "Načíta sa formulár adresy",
-      "attention_company": "Spoločnosť \/ K rukám"
+      "attention_company": "Spoločnosť \/ K rukám",
+      "auto_complete_title": "Návrhy"
     },
     "B2B": {
       "account_information": {
@@ -2680,7 +2681,14 @@
           "load_more_accessibility_label": "Načítať ďalšie lokality"
         },
         "staff_and_permissions_title": "Zamestnanci a oprávnenia",
-        "location_picker_accessibility_label": "Názov lokality: {{locationName}}"
+        "location_picker_accessibility_label": "Názov lokality: {{locationName}}",
+        "contact_email": "E-mail",
+        "payment_details_title": "Podrobnosti o platbe",
+        "section_title": "Miesto",
+        "tax_details_title": "Daňové údaje",
+        "tax_id": "Vintový",
+        "multiple_tax_exemptions_and": "a",
+        "tax_exemption_not_applicable": "–"
       },
       "location_selection": {
         "description": "Pokiaľ už máte položky v košíku, môže mať zmena lokality vplyv na ceny a množstvo v košíku.",
