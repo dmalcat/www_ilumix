@@ -1223,7 +1223,9 @@
             "twoWordConnector": "{{firstWord}} alebo {{secondWord}}"
           },
           "narrow": {
-            "wordConnector": "{{previousWords}}, {{anotherWord}}"
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}}, {{lastWord}}",
+            "twoWordConnector": "{{firstWord}}, {{secondWord}}"
           }
         }
       },
@@ -1317,7 +1319,23 @@
         "different_shipping_address_label": "Dodať na inú adresu",
         "different_shipping_address_text": "Použiť pre túto objednávku jednorazovú adresu",
         "change_company_location_link_label": "Zmeniť lokalitu spoločnosti",
-        "change_location_link_label": "Zmeniť lokalitu"
+        "change_location_link_label": "Zmeniť lokalitu",
+        "address_title": "Osloviť",
+        "contact_method_title": "Kontakt",
+        "email_label": "-",
+        "email_placeholder": "-",
+        "stored_addresses_label": "Uložené adresy",
+        "new_address_label": "Nová adresa...",
+        "address1_label": "Osloviť",
+        "county_label": "Okresný",
+        "county_placeholder": "Okresný",
+        "governorate_label": "Guvernér",
+        "governorate_placeholder": "Guvernér",
+        "emirate_label": "Emirát",
+        "emirate_placeholder": "Emirát",
+        "zip_code_label": "PSČ",
+        "zip_code_placeholder": "PSČ",
+        "postal_code_label": "PSČ"
       }
     },
     "email_marketing": {
