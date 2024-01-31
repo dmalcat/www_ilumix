@@ -1028,6 +1028,19 @@
           },
           "fx_reconciliation_override": {
             "shop_currency_mismatch": "Prijatá čiastka musí byť v mene obchodu."
+          },
+          "session_identifier_not_unique_error": "Pre objednávku bol problém. Skúste znova zaplatiť v pokladni.",
+          "line_item_limit_reached": "Dosiahol sa maximálny počet samostatných položiek.",
+          "only_empty_terms_accepted": "Tento princíp akceptuje iba prázdne podmienky.",
+          "session_is_already_finished": "Táto relácia pokladne už bola dokončená.",
+          "merchandise": {
+            "only_value_constraint": "Vstup tovaru umožňuje iba presné hodnoty.",
+            "merchandise_not_found": "Produkt nebol nájdený.",
+            "merchandise_variant_not_found": "Variant produktu nebol nájdený.",
+            "merchandise_not_applicable": "Variant produktu nie je možné zakúpiť.",
+            "digital_products_not_supported_for_b2b": "Digitálne výrobky nie sú k dispozícii v kontexte B2B.",
+            "bundle_products_not_supported_for_b2b": "Nie je možné pridať položky z balíka do objednávok B2B na tomto mieste.",
+            "gift_card_quantity_mismatch": "Pri zadávaní kódov darčekových kariet musí ich číslo zodpovedať množstvu príslušnej samostatnej položky."
           }
         },
         "title": "Pokladňa – {{shopName}}",
@@ -1094,6 +1107,46 @@
             "few": "Skupina značiek ( {{number}} )",
             "many": "Skupina značiek ( {{number}} )"
           }
+        },
+        "page_title": "Odhlásiť sa",
+        "error_page_title": "Chyba",
+        "skip_to_content": "Obsah",
+        "breadcrumb": "Opis",
+        "continue_button_label": "ďalej",
+        "complete_purchase_button_label": "Úplná objednávka",
+        "pay_now_button_label": "Platiť",
+        "authenticate_purchase_button_label": "Overte platbu",
+        "edit_link_label": "Upraviť",
+        "all_rights_reserved": "Všetky práva vyhradené {{ shop_name }}",
+        "print_policies_link_label": "Tlač",
+        "cart": "Košík",
+        "close_modal_label": "Zavrieť",
+        "close_notice_label": "Zavrieť",
+        "expand_notice_label": "Zobraziť viac",
+        "continue_to_shipping_method": "Pokračovať v spôsobe dopravy",
+        "continue_to_payment_method": "Pokračujte v spôsobe platby",
+        "continue_to_review": "Skontrolujte objednávku",
+        "back_to_cart": "Vráťte sa do koša",
+        "back_to_contact_information": "Späť na informácie o zákazníkoch",
+        "back_to_shipping_method": "Návrat na spôsob dopravy",
+        "back_to_payment_method": "Vráťte sa k platobným metódam",
+        "choose_shipping_method": "Výber metódy prepravy",
+        "choose_payment_method": "Vyberte spôsob platby",
+        "choose_billing_address": "Vyberte fakturačnú adresu",
+        "contact_us_html": "Kontaktujte nás pre viac informácií",
+        "autocomplete_title": "Návrhy",
+        "autocomplete_single_item": "Jedna položka je k dispozícii",
+        "autocomplete_multi_item": "Dostupné položky: {{number}}",
+        "autocomplete_selection": "{{number}}\/{{total}}",
+        "autocomplete_close": "Zavrieť",
+        "tooltip_accessibility_label": "Podrobnosti",
+        "forwarding_indicator": {
+          "new_window": "Otvára sa v novom okne.",
+          "external": "Otvorí externú webovú stránku.",
+          "external_and_new_window": "Otvorí externú webovú stránku v novom okne."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Pokladňa"
         }
       },
       "review": {
@@ -1254,6 +1307,11 @@
         "price_ascending": "Cena vzostupne",
         "price_descending": "Cena zostupne"
       }
+    },
+    "sentence": {
+      "words_connector": ", ",
+      "two_words_connector": " a ",
+      "last_word_connector": "a "
     }
   },
   "customer_accounts": {
