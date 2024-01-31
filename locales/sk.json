@@ -439,7 +439,8 @@
         "billing_address_invalid_phone_no_card": "Ak chcete pokračovať, aktualizujte telefónne číslo vo fakturačnej adrese.",
         "preview_not_available": {
           "title": "Náhľad nie je k dispozícii",
-          "content": "Nemusíte sa obávať. Táto expresná pokladňa pre vašich zákazníkov funguje."
+          "content": "Nemusíte sa obávať. Táto expresná pokladňa pre vašich zákazníkov funguje.",
+          "button": "V poriadku"
         },
         "card_fields": {
           "errors": {
@@ -462,7 +463,8 @@
         "saved_credit_card_info": "Posledné štyri číslice",
         "saved_credit_cards_modal": {
           "view_all_label": "Zobrazenie všetkých uložených kariet",
-          "cancel": "Zrušiť"
+          "cancel": "Zrušiť",
+          "done": "hotový"
         },
         "expired_cards_info": {
           "one": "K dispozícii je %{count} karta so skončenou platnosťou, ktorú môžete zobraziť a upraviť na svojom účte.",
@@ -540,8 +542,10 @@
             "expiry": "Dátum konca platnosti",
             "security_code": "Bezpečnostný kód",
             "name": "Meno na karte",
-            "billing": "Fakturácia:"
-          }
+            "billing": "Fakturácia:",
+            "card_number": "Číslo karty"
+          },
+          "done": "hotový"
         },
         "payment_method": "Platobná metóda",
         "expired_payment_method": "Platnosť vybranej platobnej metódy vypršala",
@@ -632,7 +636,8 @@
             "instruction_html": "Zaplaťte cez sieť Multibanco alebo online pomocou nižšie uvedených podrobností. Ak máte otázky alebo chcete aktualizovať podrobnosti platby, %{contact_us}.",
             "reference": "Referencie",
             "amount": "Čiastka",
-            "find_nearest_atm": "Nájsť najbližší bankomat"
+            "find_nearest_atm": "Nájsť najbližší bankomat",
+            "entity": "Entita"
           }
         },
         "purchase_options_agreement_label": "Najmenej jedna položka vo vašom košíku predstavuje odložený alebo opakovaný nákup. Pokračovaním v platbe vyjadrujete súhlas s tým, že sa cez vašu platobnú metódu bude automaticky strhávať cena uvedená na tejto stránke, a to s frekvenciou uvedenou na tejto stránke, kým príslušný produkt neskončí alebo kým ho nezrušíte. Pre všetky zrušenia platí %{cancellation_policy_label}.",
@@ -678,7 +683,11 @@
         "bank_picker_label": "Banka",
         "bancontact_label": "Pokladnica",
         "giropay_label": "Giropay",
-        "eps_label": "EPS-řerweisung"
+        "eps_label": "EPS-řerweisung",
+        "klarna_label": "Hlina",
+        "multibanco_label": "Multibanco",
+        "waiting_on_taxes_notice": "Výpočet",
+        "shop_pay_installments_label": "Platiť"
       },
       "payment_summary": {
         "gift_card_current_balance_notice": "Aktuálny zostatok {{ amount }}",
