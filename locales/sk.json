@@ -3153,6 +3153,26 @@
       "order_not_found": {
         "description": "Táto objednávka neexistuje alebo nemáte oprávnenie na jej zobrazenie.",
         "title": "Objednávka nebola nájdená"
+      },
+      "profile_update_error": {
+        "description": "Pri aktualizácii vášho profilu sa vyskytol problém. Pokúste sa aktualizovať stránku alebo skontrolujte pripojenie na internet."
+      },
+      "retry_action_label": "Skúste to znova",
+      "load_orders_error": {
+        "title": "Nie je možné načítať objednávky",
+        "description": "Vyskúšajte to znova alebo sa sem vráťte neskôr.",
+        "retry_button": "Skúste to znova"
+      },
+      "load_paypal_error": {
+        "description": "Pri načítaní PayPal nastane chyba. Prosím skúste znova."
+      },
+      "load_extension_error": {
+        "title": "Chyba",
+        "description": "Aktualizujte túto stránku alebo skúste znova o pár minút.",
+        "refresh_button": "Aktualizujte stránku"
+      },
+      "logout_everywhere": {
+        "description": "Pri odhlásení sa vyskytla chyba. Prosím skúste znova."
       }
     },
     "navigation_and_structure": {
@@ -3364,6 +3384,18 @@
         "restocking_fee": "Vracajúci sa akciový poplatok",
         "return_shipping_fee": "Preprava vráteného tovaru"
       }
+    },
+    "shop_policies": {
+      "legal_notice": "Výstraha",
+      "privacy_policy": "Zásady ochrany osobných údajov",
+      "refund_policy": "Zásady návratu peňazí",
+      "shipping_policy": "Zásady",
+      "subscription_policy": "Zásady",
+      "terms_of_sale": "Predajné podmienky",
+      "terms_of_service": "Podmienky služby"
+    },
+    "payment_methods": {
+      "title": "Spôsob platby"
     }
   },
   "general": {
