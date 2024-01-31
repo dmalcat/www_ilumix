@@ -1741,18 +1741,55 @@
         "share_on_facebook": "Zdieľať na Facebooku",
         "share_on_twitter": "Zdieľať na Twitteri",
         "share_on_pinterest": "Zdieľať na Pintereste"
-      }
+      },
+      "share_on_facebook": "zdieľam",
+      "share_on_twitter": "Tweet"
     },
     "delivery": {
       "days": {
         "one": "dňa",
-        "many": "dní"
+        "many": "dní",
+        "other": "dni"
       },
       "weeks": {
         "one": "týždňa",
         "many": "týždňov",
         "other": "týždne"
       }
+    },
+    "accessibility": {
+      "skip_to_content": "Obsah",
+      "close_modal": "Zavrieť",
+      "link_messages": {
+        "new_window": "Otvára sa v novom okne.",
+        "external": "Otvorí externú webovú stránku.",
+        "new_window_and_external": "V novom okne sa otvoria externé webové stránky."
+      },
+      "refresh_page": "Výber výberu vedie k úplnému obnoveniu stránky.",
+      "selection_help": "Stlačte vesmírnu tabuľku a potom šípky výberu.",
+      "error": "Chyba"
+    },
+    "meta": {
+      "tags": "Štítky “{{ tags }}\""
+    },
+    "404": {
+      "title": "404 Strana sa nenašla",
+      "subtext_html": "Neexistuje žiadna stránka. Kliknutie <a href=\"\/collections\/all\">tu<\/a> Pokračovať v kupovaní."
+    },
+    "breadcrumbs": {
+      "home": "Zavedenie",
+      "home_link_title": "Späť na domovskú stránku"
+    },
+    "newsletter_form": {
+      "submit": "Zaberať",
+      "confirmation": "Ďakujeme za vašu zbierku"
+    },
+    "search": {
+      "no_results_html": "Vaše hľadanie “{{ terms }}„Neexistovali žiadne výsledky.",
+      "results_for_html": "Vaše hľadanie “{{ terms }}„Odhalil nasledujúce:",
+      "title": "Vyhľadávanie produktov na našej stránke",
+      "placeholder": "Zadajte vyhľadávací termín",
+      "submit": "Vyhľadávanie"
     }
   },
   "blogs": {
