@@ -1641,6 +1641,7 @@ single product gride list
     display: block;
     opacity: 1;
     font-size: 12px;
+    visibility: visible;
   }
 }
 
