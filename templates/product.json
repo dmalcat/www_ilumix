@@ -119,11 +119,11 @@
       "type": "related-product",
       "settings": {
         "related_products_enable": true,
-        "related_padding_top": 50,
+        "related_padding_top": 0,
         "related_padding_bottom": 50,
         "related_padding_top_ipad": 0,
         "related_padding_bottom_ipad": 30,
-        "related_padding_top_xs": 0,
+        "related_padding_top_xs": 40,
         "related_padding_bottom_xs": 10,
         "related_title": "Mohlo by se Vám také líbit"
       }
