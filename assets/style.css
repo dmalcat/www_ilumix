@@ -2360,12 +2360,6 @@ height: 50px;
   opacity:1!important;
 }
 
-@media screen and (max-width: 600px) {
-  .otCookiesNotification #cookies-wrapper {
-    bottom: 0 !important;
-  }
-}
-
 #vyzva .breadcrumb-area,
 #ucet .breadcrumb-area,
 #360design .breadcrumb-area {
