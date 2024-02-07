@@ -1993,6 +1993,14 @@ triggers.forEach((trigger, index) => {
     text-transform: none;
     margin-inline-start: 5px;
   }
+
+  @media screen and (max-width: 500px) {
+    .product_details_info .product-inventory span.in-stock span > span,
+    .product_details_info .product-inventory span.out-stock span > span {
+      margin-inline-start: 0;  
+    }  
+  }
+  
   .product_details_info .product-inventory span.in-stock span i,
   .product_details_info .product-inventory span.out-stock span i{
     display: block;
