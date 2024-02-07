@@ -186,8 +186,13 @@ p{
 }
 @media (max-width: 767px){
   .btn-style3 {
-    font-size: 14px;
+    font-size: 11px;
+    padding: 10px 20px;
   }
+}
+
+@media (max-width: 767px) {
+  
 }
 
 /* btn4 */
