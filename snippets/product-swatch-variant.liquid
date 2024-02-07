@@ -5,7 +5,7 @@
   <div class="select-variant">
     <select name="id" id="productSelect" class="product-single__variants">
       {% for variant in product.variants %}
-      <option data-stocks="{{ variant.inventory_quantity }}" {% unless variant.available %} disabled="disabled" {% endunless %} {% if variant == current_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} {% if variant.available %}{% comment %}{{ wcp_v_price | money_with_currency }}{%endcomment%}{% else %}- {{ 'products.product.sold_out' | t }}{% endif %}</option>
+      <option data-stocks="{{ variant.inventory_quantity }}" {% unless variant.available %} disabled="disabled" {% endunless %} {% if variant == current_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} {% if variant.available %}{% comment %}{{ wcp_v_price | money_with_currency }}{% endcomment %}{% else %}- {{ 'products.product.sold_out' | t }}{% endif %}</option>
       {% endfor %}
     </select>
   </div>
@@ -76,6 +76,8 @@
   padding: 10px 18px;
   margin-bottom: 0;
 }
+
+
 .product-variant-option .swatch-variant .swatch .swatch-element label:hover,
 .product-variant-option .swatch-variant .swatch .swatch-element input:checked + label{
   border: 2px solid black;
