@@ -1640,7 +1640,6 @@ single product gride list
   .single-product-wrap .product-image a.cart-desktop {
     display: block;
     opacity: 1;
-    visibility: hidden;
     font-size: 12px;
   }
 }
