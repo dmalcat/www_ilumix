@@ -65,7 +65,7 @@
         "section_padding_top_ipad": 0,
         "section_padding_bottom_ipad": 60,
         "section_padding_top_xs": 0,
-        "section_padding_bottom_xs": 40,
+        "section_padding_bottom_xs": 0,
         "product_style_handle": "style_1",
         "pro_bg_color": "#ffffff",
         "zoom_enable": false
