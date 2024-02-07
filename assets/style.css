@@ -590,14 +590,21 @@ section title css
   }
 }
 @media (max-width: 767px) {
-  .section-capture{
+  .section-capture {
     margin-bottom: 40px;
   }
+
+  .section-capture {
+    margin-bottom: 20px;
+  }
+
   .section-title > span {
     font-size: 16px;
   }
+  
   .section-title h2 {
     font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 
