@@ -7,8 +7,8 @@
         "about_product_padding_bottom": 100,
         "about_product_padding_top_ipad": 60,
         "about_product_padding_bottom_ipad": 60,
-        "about_product_padding_top_xs": 40,
-        "about_product_padding_bottom_xs": 40,
+        "about_product_padding_top_xs": 20,
+        "about_product_padding_bottom_xs": 20,
         "section_sub_title": "B2B PROGRAM",
         "section_title": "Pojďme to rozsvítit společně",
         "section_arrow": "Naším cílem je vždy ukázat krásu prostoru v tom správném světle. \nRádi spolupracujeme s architekty a designéry – z těchto spoluprací obvykle vzejdou ty nejvíc oslňující projekty.\nSpolečně vybereme taková svítidla, která fungují i jako designový doplněk."
@@ -55,8 +55,8 @@
         "section_padding_bottom": 100,
         "section_padding_top_lg": 60,
         "section_padding_bottom_lg": 60,
-        "section_padding_top_xs": 40,
-        "section_padding_bottom_xs": 40
+        "section_padding_top_xs": 20,
+        "section_padding_bottom_xs": 20
       }
     },
     "309a85dd-bc30-4375-96b7-16d1ef20f8c5": {
