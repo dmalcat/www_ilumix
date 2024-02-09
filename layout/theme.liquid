@@ -38,25 +38,35 @@
 </script>
 <!-- Foxentry end -->
 
-    <!-- Facebook Pixel Code -->
+  <!-- Facebook Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window,document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-   fbq('init', '154931874118599'); 
-  fbq('track', 'PageView');
+    function initializeFacebookPixel() {
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    }
+
+    function trackFacebookPageView() {
+      fbq('init', '154931874118599');
+      fbq('track', 'PageView');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeFacebookPixel();
+      trackFacebookPageView();
+    });
   </script>
   <noscript>
-   <img height="1" width="1" 
-  src="https://www.facebook.com/tr?id=154931874118599&ev=PageView
-  &noscript=1"/>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=154931874118599&ev=PageView
+    &noscript=1"/>
   </noscript>
-<!-- End Facebook Pixel Code -->
+  <!-- End Facebook Pixel Code -->
 
   <!-- Seznam retargeting -->
   <script type="text/javascript" src="https://c.seznam.cz/js/rc.js"></script>
@@ -68,16 +78,6 @@ var retargetingConf = {
  if (window.rc && window.rc.retargetingHit) {
    window.rc.retargetingHit(retargetingConf);
  }
-</script>
-
-  <!-- Google tag retargeteing (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=11090323988"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config','11090323988');
 </script>
 
     <link rel="canonical" href="{{ canonical_url }}">
