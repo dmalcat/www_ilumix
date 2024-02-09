@@ -2377,7 +2377,6 @@ height: 50px;
 }
 
 #vyzva .breadcrumb-area,
-#ucet .breadcrumb-area,
-#360design .breadcrumb-area {
+#ucet .breadcrumb-area {
   display: none;
 }
