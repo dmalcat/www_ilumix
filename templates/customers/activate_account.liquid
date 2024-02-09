@@ -15,16 +15,18 @@
                   {% form 'activate_customer_password' %}
     
                   {{ form.errors | default_errors }}
-                  <label for="CustomerPassword" class="hidden-label">{{ 'customer.activate_account.password' | t }}</label>
-                  <input type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full" placeholder="{{ 'customer.activate_account.password' | t }}">
-    
-                  <label for="CustomerPasswordConfirmation" class="hidden-label">{{ 'customer.activate_account.password_confirm' | t }}</label>
-                  <input type="password" value="" name="customer[password_confirmation]" id="CustomerPasswordConfirmation" class="input-full" placeholder="{{ 'customer.activate_account.password_confirm' | t }}">
-    
-                  <div class="form-action-button">
-                    <button type="submit" class="btn btn-style7">{{ 'customer.activate_account.submit' | t }}</button>
-                    <button type="submit" class="btn btn-style11" name="decline">{{ 'customer.activate_account.cancel' | t }}</button>
-                  </div>
+                  <ul class="fill-form">
+                    <label for="CustomerPassword" class="hidden-label">{{ 'customer.activate_account.password' | t }}</label>
+                    <input type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full" placeholder="{{ 'customer.activate_account.password' | t }}">
+      
+                    <label for="CustomerPasswordConfirmation" class="hidden-label">{{ 'customer.activate_account.password_confirm' | t }}</label>
+                    <input type="password" value="" name="customer[password_confirmation]" id="CustomerPasswordConfirmation" class="input-full" placeholder="{{ 'customer.activate_account.password_confirm' | t }}">
+      
+                    <div class="form-action-button">
+                      <button type="submit" class="btn btn-style7">{{ 'customer.activate_account.submit' | t }}</button>
+                      <button type="submit" class="btn btn-style11" name="decline">{{ 'customer.activate_account.cancel' | t }}</button>
+                    </div>
+                  </ul>
                   {% endform %}
                 </div>
   
