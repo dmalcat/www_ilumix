@@ -8,7 +8,7 @@
           <div class="item">
             <div class="brand-img">
               <a href="javascript:void(0)">
-                <img class="img-fluid" src="{% if block.settings.brand_image %}{{ block.settings.brand_image | img_url: 'master' }} {% else %}https://dummyimage.com/100x140/f7f7f7/999999 {% endif %}" alt="{{ block.settings.brand_image.alt }}">
+                <img class="img-fluid" loading="lazy" src="{% if block.settings.brand_image %}{{ block.settings.brand_image | img_url: 'master' }} {% else %}https://dummyimage.com/100x140/f7f7f7/999999 {% endif %}" alt="{{ block.settings.brand_image.alt }}">
               </a>
             </div>
           </div>

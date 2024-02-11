@@ -16,7 +16,7 @@
 <div class="single-product-wrap trending-product {% unless product.available %}stock-out{% endunless %}">
     <div class="product-image {% unless product.available %}stock-out{% endunless %}">
         <a class="pro-img" href="{{ product.url | within: collection }}">
-            <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '555X400', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
+            <img class="img-fluid img1" loading="lazy" src="{{ product.featured_image.src | img_url : '555X400', crop: 'center' }}" alt="{{ product.featured_image.src.alt | escape  }}">
         </a>
         {% if product.available %}
         <div class="product-action">

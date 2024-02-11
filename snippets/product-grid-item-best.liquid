@@ -29,7 +29,7 @@
         <div class="variant-badge variant-badge--sale"><p>Akce</p></div>
         {% endif %}
         <a class="pro-img img-best" href="{{ product.url | within: collection }}">
-                <img class="img-fluid img1 img1-best" src="{{ product.images[1] | img_url: '415X560', crop: 'center' }}" alt="{{ product.images.last.alt | escape }}" />
+                <img class="img-fluid img1 img1-best" loading="lazy" src="{{ product.images[1] | img_url: '415X560', crop: 'center' }}" alt="{{ product.images.last.alt | escape }}" />
             </a>
         <div class="product-label">
             {%- include 'product-label' -%}

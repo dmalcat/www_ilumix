@@ -4,7 +4,7 @@
         <li class="big-banner">
             <div class="big-banner-img">
                 <div class="banner-hover">
-                    <img class="img-fluid" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x693/f7f7f7/999999{% endif %}">
+                    <img class="img-fluid" loading="lazy" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x693/f7f7f7/999999{% endif %}">
                     <div class="view-collection">
                         {% if section.settings.banner_button != '' %}
                         <a href="{{ section.settings.banner_button_url }}" class="btn btn-style7">

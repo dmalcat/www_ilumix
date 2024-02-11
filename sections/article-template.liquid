@@ -5,7 +5,7 @@
                 <div class="single-blog-area">
                     <div class="blog-image">
                         <a href="{{ article.url }}" class="banner-hover">
-                            <img src="{{ article.image | img_url: '1140x600', crop: 'center' }}" alt="{{ article.title | escape }}" class="img-fluid" />
+                            <img src="{{ article.image | img_url: '1140x600', crop: 'center' }}" alt="{{ article.title | escape }}" class="img-fluid" loading="lazy"/>
                         </a>
                         {% if article.content contains '[blog_video]' %}
                         {% assign blog_video_first = article.content | split:'[/blog_video]' | first %}

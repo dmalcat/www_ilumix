@@ -14,7 +14,7 @@
                         {% for block in section.blocks %}
                         <li class="team-content wow animate__fadeIn">
                             <a href="javascript:void(0)" class="banner-hover">
-                                <img class="img-fluid" src="{% if block.settings.member_img %}{{ block.settings.member_img | img_url: 'master' }}{% else %}https://dummyimage.com/449x566/f7f7f7/999999{% endif %}">
+                                <img class="img-fluid" loading="lazy" src="{% if block.settings.member_img %}{{ block.settings.member_img | img_url: 'master' }}{% else %}https://dummyimage.com/449x566/f7f7f7/999999{% endif %}">
                             </a>
                             <div class="team-info">
                                 <h6>{{ block.settings.member_name }}</h6>

@@ -17,7 +17,7 @@
 <div class="single-product-wrap">
     <div class="{% if product.available %}product-image{% else %}product-image stock-out{% endif %}">
         <a class="pro-img" href="{{ product.url | within: collection }}">
-            <img class="img-fluid img1" src="{{ product.featured_image.src | img_url : '350X400', crop: 'center' }}" alt="{{ image.alt | escape  }}">
+            <img class="img-fluid img1" loading="lazy" src="{{ product.featured_image.src | img_url : '350X400', crop: 'center' }}" alt="{{ image.alt | escape  }}">
         </a>
         <div class="product-label">
             {%- include 'product-label' -%}
