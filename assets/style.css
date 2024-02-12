@@ -1393,6 +1393,7 @@ single product gride list
 
 .single-product-wrap .product-content-title .product-swatches {
   display: flex;
+  margin-top: 5px;
 }
 
 .single-product-wrap .product-content-title h6 {
