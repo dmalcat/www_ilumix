@@ -1394,6 +1394,7 @@ single product gride list
 .single-product-wrap .product-content-title .product-swatches {
   display: flex;
   margin-top: 5px;
+  gap: 0;
 }
 
 .single-product-wrap .product-content-title h6 {
