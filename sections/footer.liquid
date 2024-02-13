@@ -59,7 +59,7 @@
                 <span>{{ block.settings.footer_menu_title }}</span>
                 <i class="ti-plus"></i>
               </span>
-              <ul class="footer-sublist collapse" id="collapse-{{ block.settings.footer_menu_title | replace: ' ' , '-' | remove: '&' }}">
+              <ul class="footer-sublist">
                 {% assign footer_menu = block.settings.footer_menu_handle %}
                 {% for link in linklists[footer_menu].links %}
                 {% if linklists[footer_menu].links != '' %}
