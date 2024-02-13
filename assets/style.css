@@ -1440,7 +1440,7 @@ single product gride list
 @media (max-width: 767px){
   .single-product-wrap .product-content .price-box .old-price{
     margin-left: 0;
-    margin-top: 5px;
+    margin-top: 0;
   }
 }
 /* product img css */
