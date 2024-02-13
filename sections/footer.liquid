@@ -55,10 +55,10 @@
             {% for block in section.blocks %}
             <li class="ftlink-li link-list">
               <h2 class="ft-title">{{ block.settings.footer_menu_title }}</h2>
-              <a data-bs-toggle="collapse" href="#collapse-{{ block.settings.footer_menu_title | replace: ' ' , '-' | remove: '&' }}" class="ft-title">
+              <span class="ft-title">
                 <span>{{ block.settings.footer_menu_title }}</span>
                 <i class="ti-plus"></i>
-              </a>
+              </span>
               <ul class="footer-sublist collapse" id="collapse-{{ block.settings.footer_menu_title | replace: ' ' , '-' | remove: '&' }}">
                 {% assign footer_menu = block.settings.footer_menu_handle %}
                 {% for link in linklists[footer_menu].links %}
@@ -73,11 +73,11 @@
             {% endfor %}
             <li class="ftlink-li link-list kontakt-list">
               <h2 class="ft-title">{{ section.settings.footer_kontakt }}</h2>
-              <a data-bs-toggle="collapse" href="#collapse-{{ section.settings.footer_kontakt | replace: ' ' , '-' | remove: '&' }}" class="ft-title">
+              <span class="ft-title">
                 <span>{{ section.settings.footer_kontakt }}</span>
                 <i class="ti-plus"></i>
-              </a>
-              <ul class="footer-sublist collapse" id="collapse-{{ section.settings.footer_kontakt | replace: ' ' , '-' | remove: '&' }}">
+              </span>
+              <ul class="footer-sublist">
                 <li class="ftsublink-li contact-icons">
                   {% render 'headset' %}
                   <span class="ft-sublink">{{ section.settings.call }}</span>
