@@ -55,7 +55,7 @@
             {% for block in section.blocks %}
             <li class="ftlink-li link-list">
               <h2 class="ft-title">{{ block.settings.footer_menu_title }}</h2>
-              <a href="#collapse-{{ block.settings.footer_menu_title | replace: ' ' , '-' | remove: '&' }}" class="ft-title">
+              <a data-bs-toggle="collapse" href="#collapse-{{ block.settings.footer_menu_title | replace: ' ' , '-' | remove: '&' }}" class="ft-title">
                 <span>{{ block.settings.footer_menu_title }}</span>
                 <i class="ti-plus"></i>
               </a>
@@ -519,7 +519,7 @@
       margin-bottom: 30px;
     }
     .footer-list-wrap ul.footer-list li.ftlink-li .footer-sublist.collapse:not(.show){
-      /*display: none;*/
+      /*display: none;
     }
     .footer-list-wrap ul.footer-list li.ftlink-li ul.footer-sublist li.ftsublink-li:first-child{
       margin-top: 15px;
