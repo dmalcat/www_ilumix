@@ -2390,7 +2390,7 @@ height: 50px;
   }
 
   .contactPage .contactPage__row {
-     margin-top: 1rem; 
+     margin-top: 1rem !important; 
   }
 
   .contactPage .contactPage__companyName {
