@@ -2388,6 +2388,10 @@ height: 50px;
   .contactPage .contactPage__wrapper {
     margin: 30px auto;    
   }
+
+  .contactPage .contactPage__row {
+     margin-top: 1rem; 
+  }
 }
 
 #vyzva .breadcrumb-area,
