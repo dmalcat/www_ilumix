@@ -2399,7 +2399,7 @@ height: 50px;
   }
 
   .contactPage .contactPage__sectionHeadline {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
