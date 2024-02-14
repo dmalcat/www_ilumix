@@ -15,7 +15,7 @@
                           <div  class="section-arrow"><p>{{ section.settings.section_arrow }}</p></div>
                           {% endif %}
                           {% if section.settings.section_button_link != '' %}
-                            <a href="{{ section.settings.section_button_link }}" class="btn btn-style3">{{ section.settings.about_button_text }}</a>
+                            <a href="{{ section.settings.section_button_link }}" class="btn btn-style3">{{ section.settings.section_button_text }}</a>
                           {% endif %}
                       </div>
                     </div>
@@ -144,9 +144,14 @@
         "label": "Section Arrow"
     },
     {
-        "type": "url",
-        "id": "about_button_button",
+        "type": "text",
+        "id": "section_button_text",
         "label": "Section button"
+    },
+    {
+        "type": "url",
+        "id": "section_button_link",
+        "label": "Section button URL"
     }
     ],
     "blocks":[
