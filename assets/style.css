@@ -2397,6 +2397,10 @@ height: 50px;
     font-size: 19px;
     font-weight: 400;
   }
+
+  .contactPage .contactPage__sectionHeadline {
+    font-size: 18px;
+  }
 }
 
 #vyzva .breadcrumb-area,
