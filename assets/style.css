@@ -2392,6 +2392,11 @@ height: 50px;
   .contactPage .contactPage__row {
      margin-top: 1rem; 
   }
+
+  .contactPage .contactPage__companyName {
+    font-size: 19px;
+    font-weight: 400;
+  }
 }
 
 #vyzva .breadcrumb-area,
