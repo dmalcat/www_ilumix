@@ -2192,7 +2192,7 @@
           "foot_padding_top_ipad": 60,
           "foot_padding_bottom_ipad": 60,
           "foot_padding_top_xs": 40,
-          "foot_padding_bottom_xs": 40,
+          "foot_padding_bottom_xs": 20,
           "footer_bg_img_enable": false,
           "footer_bg_color": "#f4f2f1",
           "logo_description": "Jsme předními odborníky na osvětlení v ČR. Oslňujeme kvalitním evropským designem. Zastupujeme přední evropské značky svítidel, se kterými už 15 let svítíme na cestu velkým i malým projektům.",
