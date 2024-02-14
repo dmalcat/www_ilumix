@@ -2384,6 +2384,12 @@ height: 50px;
   opacity:1!important;
 }
 
+@media screen and (max-width: 600px) {
+  .contactPage .contactPage__wrapper {
+    margin: 50px auto;    
+  }
+}
+
 #vyzva .breadcrumb-area,
 #ucet .breadcrumb-area {
   display: none;
