@@ -1656,15 +1656,6 @@ single product gride list
   }
 }
 
-@media screen and (max-width: 600px) {
-  .single-product-wrap .product-image a.cart-desktop {
-    display: block;
-    opacity: 1;
-    font-size: 12px;
-    visibility: visible;
-  }
-}
-
 /* product content css */
 @media(min-width:768px){
   .product-content h6{
