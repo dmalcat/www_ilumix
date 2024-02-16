@@ -33,7 +33,9 @@
                         </div>
                         {% endcase %}
                         {% endfor %}
-                         <a class="btn btn-style7" href="{{ section.settings.banner_button_link }}">{{ section.settings.banner_button }}</a>
+                        {% if section.settings.banner_button_link != blank %}
+                            <a class="btn btn-style7" href="{{ section.settings.banner_button_link }}">{{ section.settings.banner_button }}</a>
+                        {% endif %}
                     </div>                   
                 </div>        
             </div>

@@ -6,10 +6,10 @@
                 <div class="banner-hover">
                     <img class="img-fluid" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x693/f7f7f7/999999{% endif %}">
                     <div class="view-collection">
-                        {% if section.settings.banner_button != '' %}
-                        <a href="{{ section.settings.banner_button_url }}" class="btn btn-style7">
-                            <span>{{ section.settings.banner_button }}</span>
-                        </a>
+                        {% if section.settings.banner_button_url != blank %}
+                            <a href="{{ section.settings.banner_button_url }}" class="btn btn-style7">
+                                <span>{{ section.settings.banner_button }}</span>
+                            </a>
                         {% endif %}
                     </div>
                 </div>

@@ -19,10 +19,10 @@
             <input class="btn btn-style10" type="button" value="{{ section.settings.back_button }}" onclick="history.go(-1)">
             </form>
 
-            {% if settings.button_title !='' %}
-            <a href="/" class="btn btn-style10">
-              {{ section.settings.home_button }}
-            </a>
+            {% if section.settings.home_button != blank %}
+              <a href="/" class="btn btn-style10">
+                {{ section.settings.home_button }}
+              </a>
             {% endif %}
           </div>
         </div>

@@ -19,7 +19,7 @@
               <div class="list-block">
                 <h6>{{ block.settings.list_title }}</h6>
                 <p>{{ block.settings.list_desc }}</p>
-                {% if block.settings.category_button != '' %}
+                {% if block.settings.category_button_url != blank %}
                   <a href="{{ block.settings.category_button_url }}" class="btn btn-style3">
                       <span>{{ block.settings.category_button }}</span>
                       <i class="fa fa-long-arrow-right"></i>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    {% if section.settings.more_button != '' %}
+    {% if section.settings.more_button_url != blank %}
     <div class="row row--button">
         <a href="{{ section.settings.more_button_url }}" class="btn btn-style3">
             <span>{{ section.settings.more_button }}</span>

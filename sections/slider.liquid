@@ -6,7 +6,7 @@
             <div class="swiper-slide">
                 <div class="slide-image{% if block.settings.slider_content_position == "right" %} slider-content-right{% else %} slider-content-left{% endif %}">
                     <div class="slide-image-cont">
-                        <img class="img-fluid" src="{% if block.settings.slider_bg_img %}{{ block.settings.slider_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x1033/f7f7f7/999999{% endif %}">
+                        <img class="img-fluid" src="{% if block.settings.slider_bg_img %}{{ block.settings.slider_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x1033/f7f7f7/999999{% endif %}" alt="{{ block.settings.slider_bg_img.alt }}">
                         <div class="slider-text-info{% if block.settings.slider_text_position == "right" %} slider-text-right{% elsif block.settings.slider_text_position == "left" %} slider-text-left{% else %} slider-text-center{% endif %}">
                             {% if block.settings.slider_title != '' %}
                             <h2 style="color:{{ block.settings.slider_title_color }};">
@@ -26,10 +26,10 @@
                                 </span>
                             {% endif %}
                             <div class="button-block">
-                                {% if block.settings.slider_button != '' %}
-                                <a href="{{ block.settings.slider_button_url }}" class="btn btn-style8">
-                                    <span>{{ block.settings.slider_button }}</span>
-                                </a>
+                                {% if block.settings.slider_button_url != blank %}
+                                    <a href="{{ block.settings.slider_button_url }}" class="btn btn-style8">
+                                        <span>{{ block.settings.slider_button }}</span>
+                                    </a>
                                 {% endif %}
                             </div>
                             {% if block.settings.slider_bottom_title != '' %}

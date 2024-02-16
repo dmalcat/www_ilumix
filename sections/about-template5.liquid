@@ -5,7 +5,9 @@
         <div class="main-title">
           <span>{{ section.settings.section_sub_title }}</span>
           <h2>{{ section.settings.section_title }}</h2>
-          <a class="btn btn-style7" href="{{ section.settings.title_button_url }}">{{ section.settings.title_button }}</a>
+          {% if section.settings.title_button_url != blank %}
+            <a class="btn btn-style7" href="{{ section.settings.title_button_url }}">{{ section.settings.title_button }}</a>
+          {% endif %}
         </div>
       </div>
       <div class="col-xl-8 col-lg-8 col-md-12 col-12">

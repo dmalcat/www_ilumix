@@ -7,7 +7,9 @@
         <div class="banner-text">
             <span class="sub-title">{{ section.settings.banner_sub_title }}</span>
             <h2 class="main-title">{{ section.settings.banner_title }}</h2>
-            <a class="btn btn-style6" href="{{ block.settings.banner_url }}">{{ section.settings.banner_button }}</a>
+            {% if block.settings.banner_url != blank %}
+                <a class="btn btn-style6" href="{{ block.settings.banner_url }}">{{ section.settings.banner_button }}</a>
+            {% endif %}
         </div>
     </div>
 </section>

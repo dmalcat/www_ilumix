@@ -22,7 +22,7 @@
                             <p>{{ section.settings.best_desc }}</p>
                             {% endif %}
 
-                            {%if section.settings.button_text != '' %} 
+                            {%if section.settings.button_url != blank %} 
                             <a href="{{ section.settings.button_url }}" class="btn btn-style3"><span>{{ section.settings.button_text }}</span>
                                 <i class="fa fa-long-arrow-right"></i>
                             </a>
