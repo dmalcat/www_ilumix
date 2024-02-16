@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-5 col-12 best-quality-img">
                         <span>
-                            <img class="lazyload img-fluid" src="{% if section.settings.best_quality_img %}{{ section.settings.best_quality_img | img_url: 'master' }}{% else %}https://dummyimage.com/711x546/f7f7f7/999999{% endif %}');">
+                            <img class="lazyload img-fluid" src="{% if section.settings.best_quality_img %}{{ section.settings.best_quality_img | img_url: 'master' }}{% else %}https://dummyimage.com/711x546/f7f7f7/999999{% endif %}');" alt="{{ section.settings.best_quality_img.alt }}">
                         </span>
                     </div>
                 </div>

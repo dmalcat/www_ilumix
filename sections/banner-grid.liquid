@@ -5,7 +5,7 @@
             {% if section.settings.banner_url != blank %}
             <a href="{{ section.settings.banner_url }}">
             {% endif %}
-                <img class="img-fluid" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x678/f7f7f7/999999{% endif %}">
+                <img class="img-fluid" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x678/f7f7f7/999999{% endif %}" alt="{{ section.settings.banner_img.alt }}">
             {% if section.settings.banner_url != blank %}
             </a>
             {% endif %}

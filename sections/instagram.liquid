@@ -27,7 +27,7 @@
                         {% for block in section.blocks %}
                         <div class="item wow animate__fadeInUp">
                             <a class="insta-content banner-hover" href="{{ block.settings.slider_banner_url }}" target="blank">
-                                <img src="{% if block.settings.insta_img %}{{ block.settings.insta_img | img_url: 'master' }}{% else %}https://via.placeholder.com/320x320{% endif %}">
+                                <img src="{% if block.settings.insta_img %}{{ block.settings.insta_img | img_url: 'master' }}{% else %}https://via.placeholder.com/320x320{% endif %}" alt="{{ block.settings.insta_img.alt }}">
                                 <span class="insta-icon"><i class="fa fa-instagram"></i></span>
                             </a>
                         </div>

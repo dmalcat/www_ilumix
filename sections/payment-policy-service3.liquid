@@ -12,7 +12,7 @@
           <li class="service-wrapper wow animate__fadeInUp">
             <div class="service-block">
               <div class="payment-img">
-                <img src="{% if block.settings.service_img %}{{ block.settings.service_img | img_url: 'master' }}{% else %}https://dummyimage.com/38x24/f7f7f7/999999{% endif %}">
+                <img src="{% if block.settings.service_img %}{{ block.settings.service_img | img_url: 'master' }}{% else %}https://dummyimage.com/38x24/f7f7f7/999999{% endif %}" alt="{{ block.settings.service_img.alt }}">
               </div>
               {%if block.settings.service_title != '' %}
               <h6>{{ block.settings.service_title }}</h6>

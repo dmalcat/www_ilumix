@@ -15,7 +15,7 @@
         </div>
         <div class="col-xl-7 col-lg-7 col-md-12 col-12">
           <div class="term-condition-img wow animate__fadeIn">
-            <img src="{% if section.settings.term_condition_img %}{{ section.settings.term_condition_img | img_url: 'master' }}{% else %}https://dummyimage.com/503x338/f7f7f7/999999{% endif %}">
+            <img src="{% if section.settings.term_condition_img %}{{ section.settings.term_condition_img | img_url: 'master' }}{% else %}https://dummyimage.com/503x338/f7f7f7/999999{% endif %}" alt="{{ section.settings.term_condition_img.alt }}">
           </div>
         </div>
       </div>

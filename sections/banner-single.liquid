@@ -2,7 +2,7 @@
 <section class="banner-grid banner2">
     <div class="banner-block">
         <a href="{{ section.settings.banner2_url }}">
-            <img class="img-fluid" src="{% if section.settings.banner2_img %}{{ section.settings.banner2_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x417/f7f7f7/999999{% endif %}">
+            <img class="img-fluid" src="{% if section.settings.banner2_img %}{{ section.settings.banner2_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x417/f7f7f7/999999{% endif %}" alt="{{ section.settings.banner2_img.alt }}">
         </a>
         <div class="banner-text">
             <span class="sub-title">{{ section.settings.banner_sub_title }}</span>

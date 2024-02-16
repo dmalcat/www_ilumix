@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-12">
           <div class="privacy-img wow animate__fadeIn">
-            <img src="{% if section.settings.privacy_img %}{{ section.settings.privacy_img | img_url: 'master' }}{% else %}https://dummyimage.com/583x546/f7f7f7/999999{% endif %}">
+            <img src="{% if section.settings.privacy_img %}{{ section.settings.privacy_img | img_url: 'master' }}{% else %}https://dummyimage.com/583x546/f7f7f7/999999{% endif %}" alt="{{ section.settings.privacy_img.alt }}">
             <div class="img-text-content wow animate__fadeInUp">
               <h3>{{ section.settings.image_title }}</h3>
             </div>

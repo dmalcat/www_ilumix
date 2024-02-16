@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xl-5 col-lg-5 col-md-5 col-12">
           <div class="term-condition-img  wow animate__fadeIn">
-            <img src="{% if section.settings.term_condition_img %}{{ section.settings.term_condition_img | img_url: 'master' }}{% else %}https://dummyimage.com/716x505/f7f7f7/999999{% endif %}">
+            <img src="{% if section.settings.term_condition_img %}{{ section.settings.term_condition_img | img_url: 'master' }}{% else %}https://dummyimage.com/716x505/f7f7f7/999999{% endif %}" alt="{{ section.settings.term_condition_img.alt }}">
           </div>
           <div class="term-condition-img-text">
             <h6>{{ section.settings.term_condition_img_title }}</h6>

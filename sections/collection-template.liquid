@@ -5,7 +5,7 @@
       <div class="{% if section.settings.sidebar_handle == 'without_sidebar' %}col{% else %}col-lg-9 col-md-8 col-12 pro-grli-wrap{% endif %}">
         {%- if section.settings.collection_info_enable -%}
         <div class="collection-main-bg">
-          <img src="{% if section.settings.collection_banner %}{{ section.settings.collection_banner | img_url: 'master' }}{% else %}https://dummyimage.com/960x260/f7f7f7/999999{% endif %}">
+          <img src="{% if section.settings.collection_banner %}{{ section.settings.collection_banner | img_url: 'master' }}{% else %}https://dummyimage.com/960x260/f7f7f7/999999{% endif %}" alt="{{ section.settings.collection_banner.alt }}">
         </div> 
         {%- endif -%}
         <div class="ajax-filter-loader">
@@ -65,7 +65,7 @@
           {% if section.settings.showing_sidebar_image %}
             <div class="shop-sidebar shop-sidebar-banner">
             <a href="{{ section.settings.sidebanner_url }}">
-              <img src="{% if section.settings.sidebanner_img %}{{ section.settings.sidebanner_img | img_url: 'master' }}{% else %}https://dummyimage.com/500x700/f7f7f7/999999{% endif %}">
+              <img src="{% if section.settings.sidebanner_img %}{{ section.settings.sidebanner_img | img_url: 'master' }}{% else %}https://dummyimage.com/500x700/f7f7f7/999999{% endif %}" alt="{{ section.settings.sidebanner_img.alt }}">
             </a>
           </div> 
            {% endif %}
