@@ -10,7 +10,7 @@
         <input type="hidden" name="type" value="article">
         <input type="hidden" name="options[prefix]" value="last">
         <input id="search" type="search" name="q" class="input-text" value="{{ search.terms | escape }}" placeholder="{{ settings.blog_search_placeholder }}">
-        <button class="btn-search" type="submit">{% if settings.search_icon %}{{ settings.search_icon }}{% else %}<i class="ti-search"></i>{% endif %}</button>
+        <button class="btn-search" type="submit" name="submit_button">{% if settings.search_icon %}{{ settings.search_icon }}{% else %}<i class="ti-search"></i>{% endif %}</button>
       </form>
     </div>
   </div>

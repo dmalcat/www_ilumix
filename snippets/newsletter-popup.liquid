@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
-          <button type="button" class="close" data-bs-dismiss="modal"><i class="ti-close"></i></button>
+          <button name="close_button" type="button" class="close" data-bs-dismiss="modal"><i class="ti-close"></i></button>
           <div class="newsletter-wrap">
             <div class="newsletter-wrpaper newsletter-bg" style="background-image: url('{% if settings.newsletter_img %}{{ settings.newsletter_img | img_url: 'master' }}{% else %}https://dummyimage.com/700x450/f7f7f7/999999{% endif %}');">
             </div>
