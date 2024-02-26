@@ -5,21 +5,21 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-responsive-img-second">
               <div class="about-banner-img-cont">
                   <div class="single-banner banner-image">
-                    <img src="{% if section.settings.about_banner_img %}{{ section.settings.about_banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/505x553/f7f7f7/999999{% endif %}">
+                    <img src="{% if section.settings.about_banner_img %}{{ section.settings.about_banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/505x553/f7f7f7/999999{% endif %}" alt="{{ section.settings.about_banner_img.alt }}">
                   </div>
               </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-12">
                 <div class="about-content">
                   <div class="abt-banner-desc">
-                            {% if section.settings.about_title != '' %}
-                            <h2>{{ section.settings.about_title }}</h2>
-                            {% endif %}
+                        {% if section.settings.about_title != '' %}
+                        <h2>{{ section.settings.about_title }}</h2>
+                        {% endif %}
 
-                            {% if section.settings.about_des1 != '' %}
-                            <p>{{ section.settings.about_des1 }}</p>
-                            {% endif %}
-                        </div>
+                        {% if section.settings.about_des1 != '' %}
+                          {{ section.settings.about_des1 }}
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -194,7 +194,7 @@
       font-size: 35px;
     }
     .about-modern-left .about-content .abt-banner-desc p{
-      margin-top: 10px;
+      margin-top: 20px;
       font-size: 14px;
       line-height: normal;
       font-weight: 500;

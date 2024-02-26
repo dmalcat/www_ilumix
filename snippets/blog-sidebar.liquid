@@ -10,7 +10,7 @@
         <input type="hidden" name="type" value="article">
         <input type="hidden" name="options[prefix]" value="last">
         <input id="search" type="search" name="q" class="input-text" value="{{ search.terms | escape }}" placeholder="{{ settings.blog_search_placeholder }}">
-        <button class="btn-search" type="submit">{% if settings.search_icon %}{{ settings.search_icon }}{% else %}<i class="ti-search"></i>{% endif %}</button>
+        <button class="btn-search" type="submit" name="submit_button">{% if settings.search_icon %}{{ settings.search_icon }}{% else %}<i class="ti-search"></i>{% endif %}</button>
       </form>
     </div>
   </div>
@@ -19,7 +19,7 @@
   <div class="blog-sidebar blog-author">
     <div class="author-wrap">
       <div class="img-content">
-      <img src="{% if settings.author_img %}{{ settings.author_img | img_url: '93x93', crop: "center" }}{% else %}https://dummyimage.com/93x93/f7f7f7/999999{% endif %}">
+      <img src="{% if settings.author_img %}{{ settings.author_img | img_url: '93x93', crop: "center" }}{% else %}https://dummyimage.com/93x93/f7f7f7/999999{% endif %}" alt="{{ settings.author_img.alt }}">
       <div class="author-detail">
         <h6>{{ settings.author_name }}</h6>
         <p>{{ settings.author_founder }}</p>
@@ -222,32 +222,32 @@
       <ul class="insta-wrap">
         <li class="insta-wrapper">
           <a href="{{ settings.insta_url1 }}" class="banner-hover">
-            <img src="{% if settings.insta_img1 %}{{ settings.insta_img1 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}">
+            <img src="{% if settings.insta_img1 %}{{ settings.insta_img1 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}" alt="{{ settings.insta_img1.alt }}">
           </a>
         </li>
         <li class="insta-wrapper">
           <a href="{{ settings.insta_url2 }}" class="banner-hover">
-            <img src="{% if settings.insta_img2 %}{{ settings.insta_img2 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}">
+            <img src="{% if settings.insta_img2 %}{{ settings.insta_img2 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}" alt="{{ settings.insta_img2.alt }}">
           </a>
         </li>
         <li class="insta-wrapper">
           <a href="{{ settings.insta_url3 }}" class="banner-hover">
-            <img src="{% if settings.insta_img3 %}{{ settings.insta_img3 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}">
+            <img src="{% if settings.insta_img3 %}{{ settings.insta_img3 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}" alt="{{ settings.insta_img3.alt }}">
           </a>
         </li>
         <li class="insta-wrapper">
           <a href="{{ settings.insta_url4 }}" class="banner-hover">
-            <img src="{% if settings.insta_img4 %}{{ settings.insta_img4 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}">
+            <img src="{% if settings.insta_img4 %}{{ settings.insta_img4 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}" alt="{{ settings.insta_img4.alt }}">
           </a>
         </li>
         <li class="insta-wrapper">
           <a href="{{ settings.insta_url5 }}" class="banner-hover">
-            <img src="{% if settings.insta_img5 %}{{ settings.insta_img5 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}">
+            <img src="{% if settings.insta_img5 %}{{ settings.insta_img5 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}" alt="{{ settings.insta_img5.alt }}">
           </a>
         </li>
         <li class="insta-wrapper">
           <a href="{{ settings.insta_url6 }}" class="banner-hover">
-            <img src="{% if settings.insta_img6 %}{{ settings.insta_img6 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}">
+            <img src="{% if settings.insta_img6 %}{{ settings.insta_img6 | img_url: '150x150', crop: "center" }}{% else %}https://dummyimage.com/150x150/f7f7f7/999999{% endif %}" alt="{{ settings.insta_img6.alt }}">
           </a>
         </li>
       </ul>

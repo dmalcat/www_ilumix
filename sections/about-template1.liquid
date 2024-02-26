@@ -14,6 +14,9 @@
                           {% if section.settings.section_arrow != '' %}
                           <div  class="section-arrow"><p>{{ section.settings.section_arrow }}</p></div>
                           {% endif %}
+                          {% if section.settings.section_button_link != blank %}
+                            <a href="{{ section.settings.section_button_link }}" class="btn btn-style3">{{ section.settings.section_button_text }}</a>
+                          {% endif %}
                       </div>
                     </div>
                     <div class="about-banner-area">
@@ -33,8 +36,7 @@
                                 {% if block.settings.about_des2 != '' %}
                                 <p>{{ block.settings.about_des2 }}</p>
                                 {% endif %}
-
-                            </div>
+                          </div>
                         </div>
                         {% endfor %}
                     </div>
@@ -140,6 +142,16 @@
         "type": "textarea",
         "id": "section_arrow",
         "label": "Section Arrow"
+    },
+    {
+        "type": "text",
+        "id": "section_button_text",
+        "label": "Section button"
+    },
+    {
+        "type": "url",
+        "id": "section_button_link",
+        "label": "Section button URL"
     }
     ],
     "blocks":[
@@ -225,6 +237,11 @@
     .about-section1 .main-title .section-arrow svg{
       opacity: .2;
     }
+
+    .about-section1 .main-title .btn {
+      margin-top: 2rem;
+    }
+  
     @media(max-width: 1199px){
       .about-section1 .main-title span.section-sub-title{
         font-size: 62px;

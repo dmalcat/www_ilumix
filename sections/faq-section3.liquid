@@ -35,10 +35,10 @@
                 </li>
                 {% endfor %}
               </ul>
-              {% if section.settings.faq_button != '' %}
-              <a href="{{ section.settings.faq_button_url }}" class="faq-button btn btn-style7">
-                  <span>{{ section.settings.faq_button }}</span>
-              </a>
+              {% if section.settings.faq_button_url != blank %}
+                <a href="{{ section.settings.faq_button_url }}" class="faq-button btn btn-style7">
+                    <span>{{ section.settings.faq_button }}</span>
+                </a>
               {% endif %}
             </div>
           </div>

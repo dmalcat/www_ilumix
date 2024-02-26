@@ -13,7 +13,7 @@
           {% for block in section.blocks %}
           <div class="item wow animate__fadeInUp">
               <div class="store-img-cont">
-                <img class="img-fluid" loading="lazy" src="{% if block.settings.store_img %}{{ block.settings.store_img | img_url: 'master' }}{% else %}https://dummyimage.com/498x366/f7f7f7/999999{% endif %}">
+                <img class="img-fluid" loading="lazy" src="{% if block.settings.store_img %}{{ block.settings.store_img | img_url: 'master' }}{% else %}https://dummyimage.com/498x366/f7f7f7/999999{% endif %}" alt="{{ block.settings.store_img.alt }}">
                 <div class="store-text">
                   <h6 class="store-title"><span>{{ block.settings.store_title }}</span></h6>
                   <div class="store-address">

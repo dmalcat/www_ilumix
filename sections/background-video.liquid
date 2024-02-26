@@ -101,7 +101,7 @@
         <div class="video-text">
             <h3>{{section.settings.subtitle}}</h3>
             <p>{{section.settings.title | newline_to_br}}</p>
-            {% if section.settings.button != '' %}
+            {% if section.settings.button_url != blank %}
                 <a href="{{ section.settings.button_url }}" class="btn btn-style3">
                     <span>{{ section.settings.button }}</span>
                     <i class="fa fa-long-arrow-right"></i>

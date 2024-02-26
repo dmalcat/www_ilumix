@@ -8,9 +8,9 @@
             <div class="ser-block">
               <a href="javascript:void(0)">
                 {% if block.settings.service_img %}
-                <img class="img-fluid img1" loading="lazy" src="{{ block.settings.service_img | img_url: '50x50' }}">
+                <img class="img-fluid img1" loading="lazy" src="{{ block.settings.service_img | img_url: '50x50' }}" alt="{{ block.settings.service_img.alt }}">
                 {% if block.settings.service_img2 %}
-                <img class="img-fluid img2" loading="lazy" src="{{ block.settings.service_img2 | img_url: '50x50' }}">
+                <img class="img-fluid img2" loading="lazy" src="{{ block.settings.service_img2 | img_url: '50x50' }}" alt="{{ block.settings.service_img2.alt }}">
                 {% endif %}
                 {% elsif block.settings.service_svg_icon %}
                 {{ block.settings.service_svg_icon }}

@@ -1393,6 +1393,8 @@ single product gride list
 
 .single-product-wrap .product-content-title .product-swatches {
   display: flex;
+  margin: 5px 0;
+  gap: 0;
 }
 
 .single-product-wrap .product-content-title h6 {
@@ -1436,11 +1438,22 @@ single product gride list
   }
 }
 @media (max-width: 767px){
+  .single-product-wrap .product-content .price-box {
+    flex-direction: initial;  
+  }
+  
   .single-product-wrap .product-content .price-box .old-price{
     margin-left: 0;
-    margin-top: 5px;
+    margin-top: 0;
+  }
+
+  .product-variant-custom .swatch-variant .swatch {
+    margin-top: 20px !important;
   }
 }
+
+
+
 /* product img css */
 .single-product-wrap{
   position: relative;
@@ -1640,15 +1653,6 @@ single product gride list
   }
   .single-product-wrap .product-image a.cart-desktop{
     display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .single-product-wrap .product-image a.cart-desktop {
-    display: block;
-    opacity: 1;
-    font-size: 12px;
-    visibility: visible;
   }
 }
 
@@ -2295,6 +2299,10 @@ height: 50px;
   margin-left:5px;
 }
 
+.single-product-wrap .product-variant-custom .swatch-variant .swatch .swatch-element:first-child {
+  margin-left: 0;
+}
+
 .single-product-wrap div.swatch-custom-container > div > div > div > a:nth-child(2){
   margin-left: 0!important;
 }
@@ -2374,6 +2382,25 @@ height: 50px;
 }
 .single-product-wrap  .pro-img:hover .img2{
   opacity:1!important;
+}
+
+@media screen and (max-width: 600px) {
+  .contactPage .contactPage__wrapper {
+    margin: 30px auto;    
+  }
+
+  .contactPage .contactPage__row {
+     margin-top: 1rem !important; 
+  }
+
+  .contactPage .contactPage__companyName {
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .contactPage .contactPage__sectionHeadline {
+    font-size: 18px !important;
+  }
 }
 
 #vyzva .breadcrumb-area,

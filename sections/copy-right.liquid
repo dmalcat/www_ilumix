@@ -12,7 +12,7 @@
           </li>
           <li class="ftlink-li">
             <div class="payment-img">
-              <img src="{% if section.settings.payment_img %}{{ section.settings.payment_img | img_url: 'master' }}{% else %}https://dummyimage.com/197x35/f7f7f7/999999{% endif %}">
+              <img src="{% if section.settings.payment_img %}{{ section.settings.payment_img | img_url: 'master' }}{% else %}https://dummyimage.com/197x35/f7f7f7/999999{% endif %}" alt="{{ section.settings.payment_img.alt }}">
             </div>
           </li>
         </ul>

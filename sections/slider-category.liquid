@@ -10,7 +10,7 @@
           <div class="item{% if block.settings.cat_banner_size == "small" %} cat-banner-small{% else %} cat-banner-medium{% endif %}">
             <div class="category-wrap">
               <a href="{{ category_product.url }}" class="cat-img">
-                <img class="img-fluid" loading="lazy" src="{% if category_product.image.src %}{{ category_product.image.src | img_url: 'master' }}{% else %}{% if block.settings.cat_banner_size == "small" %}https://dummyimage.com/463x538/f7f7f7/999999{% else %}https://dummyimage.com/541x564/f7f7f7/999999{% endif %}{% endif %}">
+                <img class="img-fluid" loading="lazy" src="{% if category_product.image.src %}{{ category_product.image.src | img_url: 'master' }}{% else %}{% if block.settings.cat_banner_size == "small" %}https://dummyimage.com/463x538/f7f7f7/999999{% else %}https://dummyimage.com/541x564/f7f7f7/999999{% endif %}{% endif %}" alt="{{ category_product.title }}">
               </a>
               <div class="text-content">
                 <div class="content-left">

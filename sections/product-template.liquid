@@ -717,7 +717,7 @@
 
             {%- if block.settings.sizeguide_enable -%}
             <div class="size-guide">
-              <button type="button" class="sizeguide-title" data-bs-toggle="modal" data-bs-target="#modalsizeguid">
+              <button type="button" name="modal_toggler" class="sizeguide-title" data-bs-toggle="modal" data-bs-target="#modalsizeguid">
                 <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
                 {{ block.settings.sizeguide_title }}
               </button>
@@ -729,7 +729,7 @@
                       {% assign page_content = block.settings.sizeguide_page %}  
                       {{ pages[page_content].content }}
                     </div>
-                    <button type="button" class="close" data-bs-dismiss="modal"><i class="ti-close"></i></button>
+                    <button type="button" name="close_modal" class="close" data-bs-dismiss="modal"><i class="ti-close"></i></button>
                   </div>
                 </div>
               </div>
@@ -761,7 +761,9 @@
             <p><span>{{section.settings.sheet }}</span> <a href="{{ product.metafields.my_fields.data_sheet.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
           {% endif %}
           {% if product.metafields.custom.visual_model.value.url %}
-            <p><span>{{section.settings.visual_model }}</span> <a href="{{ product.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+            {% if customer %}
+              <p><span>{{section.settings.visual_model }}</span> <a href="{{ product.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+            {% endif %}
           {% endif %}
           {%- comment -%}
           {% for variant in product.variants %}
@@ -2823,6 +2825,7 @@ video.media-video{
     align-items: center;
     margin-top: 40px;
   }
+
   .product-variant-custom .swatch-variant .swatch h6{
     font-size: 16px;
     text-transform: uppercase;
@@ -2853,6 +2856,7 @@ div.swatch-custom-container > div > div > div > a:nth-child(2) > label{
     }
     .product-title h6{
       font-size:24px;
+      line-height: 1.2;
     }
     .product-infos h6{
       width:unset;
@@ -2904,6 +2908,10 @@ div.swatch-custom-container > div > div > div > a:nth-child(2) > label{
     .color-swatch-hex {
       width: 40px;
       height: 40px;
+    }
+
+    .product-sku-mobile div {
+      margin-bottom: 0;
     }
   }
           

@@ -78,10 +78,10 @@
           {% endcase %}
           {% endfor %}
         </div>
-        {% if section.settings.view_all_button != '' %}
-        <div class="view-all-collection">
-          <a href="{{ section.settings.view_all_button_url }}" class="btn btn-style5">{{ section.settings.view_all_button }}</a>
-        </div>
+        {% if section.settings.view_all_button_url != blank %}
+          <div class="view-all-collection">
+            <a href="{{ section.settings.view_all_button_url }}" class="btn btn-style5">{{ section.settings.view_all_button }}</a>
+          </div>
         {% endif %}
       </div>
     </div>

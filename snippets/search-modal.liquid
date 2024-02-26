@@ -8,12 +8,12 @@
             <input type="hidden" name="options[unavailable_products]" value="show">
             <input type="hidden" name="options[prefix]" value="last">
             <input type="search" name="q" placeholder="{{ 'general.search.placeholder' | t }}" value="{{ search.terms | escape }}" id="search" class="input-text" aria-label="{{ 'general.search.placeholder' | t }}" required>
-            <button class="search-btn" type="submit">
+            <button class="search-btn" type="submit" name="submit_button">
               {% if settings.search_icon != "" %}{{ settings.search_icon }}{% else %}<i class="ti-search"></i>{% endif %}
             </button>
           </div>
         </form>
-        <button type="button" class="btn close" data-bs-dismiss="modal"><i class="ti-close"></i></button>
+        <button type="button" name="close_button" class="btn close" data-bs-dismiss="modal"><i class="ti-close"></i></button>
       </div>
     </div>
   </div>

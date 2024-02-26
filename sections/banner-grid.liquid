@@ -2,9 +2,13 @@
 <section class="banner-grid banner1 {% if section.settings.mobile_design %} hide-mobile{% endif %}">
     <ul class="banner-grid-wrap">
         <li class="banner-block">
+            {% if section.settings.banner_url != blank %}
             <a href="{{ section.settings.banner_url }}">
-                <img class="img-fluid" loading="lazy" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x678/f7f7f7/999999{% endif %}">
+            {% endif %}
+                <img class="img-fluid" loading="lazy" src="{% if section.settings.banner_img %}{{ section.settings.banner_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x678/f7f7f7/999999{% endif %}" alt="{{ section.settings.banner_img.alt }}">
+            {% if section.settings.banner_url != blank %}
             </a>
+            {% endif %}
             {% if section.settings.banner_txt_enable %}
             <div class="banner-content">
                 <span>
@@ -16,7 +20,9 @@
                     <p>{{ section.settings.banner_desc1 }}</p>
                     <p>{{ section.settings.banner_desc2 }}</p>
                 </div>
-                <a href="{{ section.settings.banner_url }}" class="btn btn-style8">{{ section.settings.banner_button_text }}</a>
+                {% if section.settings.banner_url != blank %}
+                    <a href="{{ section.settings.banner_url }}" class="btn btn-style8">{{ section.settings.banner_button_text }}</a>
+                {% endif %}
             </div>
             {% endif %}
         </li>
