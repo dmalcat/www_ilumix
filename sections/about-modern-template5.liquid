@@ -9,12 +9,14 @@
                 <span>{{ section.settings.section_title }}</span>
               </h2>
               <p>{{ section.settings.section_sub_des }}</p>
-              <a class="btn btn-style7" href="{{ section.settings.title_button_url }}">{{ section.settings.title_button }}</a>
+              {% if section.settings.title_button_url != blank %}
+                <a class="btn btn-style7" href="{{ section.settings.title_button_url }}">{{ section.settings.title_button }}</a>
+              {% endif %}
             </div>
           </div>
           <div class="col-xl-5 col-lg-5 col-md-6 col-12">
             <div class="about-banner wow animate__fadeIn">
-              <img class="img-fluid" src="{% if section.settings.about_banner %}{{ section.settings.about_banner | img_url: 'master' }}{% else %}https://dummyimage.com/500x565/f7f7f7/999999{% endif %}" alt="">
+              <img class="img-fluid" src="{% if section.settings.about_banner %}{{ section.settings.about_banner | img_url: 'master' }}{% else %}https://dummyimage.com/500x565/f7f7f7/999999{% endif %}" alt="{{ section.settings.about_banner.alt }}">
             </div>
           </div>
           <div class="col-xl-3 col-lg-3 col-md-6 col-12">

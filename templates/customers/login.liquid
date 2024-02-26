@@ -29,7 +29,7 @@
                     {% endif %}
                   </ul>
                   <div class="form-action-button">
-                    <button class="btn btn-style7" type="submit">{{ 'customer.login.sign_in' | t }}</button>
+                    <button class="btn btn-style7" type="submit" name="submit_button">{{ 'customer.login.sign_in' | t }}</button>
                     {% if form.password_needed %}
                     <a class="btn btn-style11" href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a>
                     {% endif %}
@@ -65,7 +65,7 @@
                   </li>
                 </ul>
                 <div class="form-action-button">
-                  <button class="btn btn-style7" type="submit">{{ 'customer.recover_password.submit' | t }}</button>
+                  <button class="btn btn-style7" type="submit" name="submit_button">{{ 'customer.recover_password.submit' | t }}</button>
                   <a class="btn btn-style11" href="#" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</a>
                 </div>
               </div>

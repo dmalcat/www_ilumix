@@ -12,10 +12,10 @@
             <div class="category-wrap">
               <a href="{{ category_product.url }}" class="img-content">
                 <span class="visible-img">
-                  <img src="{% if block.settings.cat_img %}{{ block.settings.cat_img | img_url: 'master' }}{% else %}https://dummyimage.com/60x60/f7f7f7/999999{% endif %}">
+                  <img src="{% if block.settings.cat_img %}{{ block.settings.cat_img | img_url: 'master' }}{% else %}https://dummyimage.com/60x60/f7f7f7/999999{% endif %}" alt="{{ block.settings.cat_img.alt }}">
                 </span>
                 <span class="hover-img">
-                  <img src="{% if block.settings.cat_hover_img %}{{ block.settings.cat_hover_img | img_url: 'master' }}{% else %}https://dummyimage.com/60x60/f7f7f7/999999{% endif %}">
+                  <img src="{% if block.settings.cat_hover_img %}{{ block.settings.cat_hover_img | img_url: 'master' }}{% else %}https://dummyimage.com/60x60/f7f7f7/999999{% endif %}" alt="{{ block.settings.cat_hover_img.alt }}">
                 </span>
               </a>
               <a href="{{ category_product.url }}" class="text-content">

@@ -34,7 +34,7 @@
           {% endfor %}
         </div>
         {% endunless %}
-        {% if section.settings.blog_view_btn_enable %}
+        {% if section.settings.blog_view_btn_enable and section.settings.blog_view_btn_url != blank %}
         <div class="blog-view-wrap">
           <a href="{{ section.settings.blog_view_btn_url }}" class="btn btn-style9">{{ section.settings.blog_view_btn }}</a>
         </div>

@@ -4,7 +4,7 @@
       {% for block in section.blocks %}
         {% if block.settings.image_item != '' %}
         <div class="endGallery__image">
-          <img src="{% if block.settings.image_item %}{{ block.settings.image_item | img_url: 'master' }}{% else %}https://dummyimage.com/300x300/f7f7f7/999999{% endif %}">
+          <img src="{% if block.settings.image_item %}{{ block.settings.image_item | img_url: 'master' }}{% else %}https://dummyimage.com/300x300/f7f7f7/999999{% endif %}" alt="{{ block.settings.image_item.alt }}">
         </div>
         {% endif %}
       {% endfor %}

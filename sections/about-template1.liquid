@@ -14,7 +14,7 @@
                           {% if section.settings.section_arrow != '' %}
                           <div  class="section-arrow"><p>{{ section.settings.section_arrow }}</p></div>
                           {% endif %}
-                          {% if section.settings.section_button_text != '' %}
+                          {% if section.settings.section_button_link != blank %}
                             <a href="{{ section.settings.section_button_link }}" class="btn btn-style3">{{ section.settings.section_button_text }}</a>
                           {% endif %}
                       </div>

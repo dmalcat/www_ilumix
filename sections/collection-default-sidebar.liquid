@@ -5,9 +5,9 @@
         {%- if section.settings.collection_info_enable -%}
         <div class="collection-main-bg">
           {%- if section.settings.collection_img -%}
-          <img src="{% if collection.image %}{{ collection.image | img_url: 'master' }}{% else %}https://dummyimage.com/1920x500/f7f7f7/999999{% endif %}">
+          <img src="{% if collection.image %}{{ collection.image | img_url: 'master' }}{% else %}https://dummyimage.com/1920x500/f7f7f7/999999{% endif %}" alt="{{ collection.title }}">
           {%- else -%}
-          <img src="{% if section.settings.collection_banner %}{{ section.settings.collection_banner | img_url: 'master' }}{% else %}https://dummyimage.com/1920x500/f7f7f7/999999{% endif %}">
+          <img src="{% if section.settings.collection_banner %}{{ section.settings.collection_banner | img_url: 'master' }}{% else %}https://dummyimage.com/1920x500/f7f7f7/999999{% endif %}" alt="{{ section.settings.collection_banner.alt }}">
           {%- endif -%}
           {%- if section.settings.collection_desc -%}
           <div class="collection-dec">{{ collection.description }}</div>
@@ -73,7 +73,7 @@
           {% if section.settings.showing_sidebar_image %}
             <div class="shop-sidebar shop-sidebar-banner">
             <a href="{{ section.settings.sidebanner_url }}">
-              <img src="{% if section.settings.sidebanner_img %}{{ section.settings.sidebanner_img | img_url: 'master' }}{% else %}https://dummyimage.com/500x700/f7f7f7/999999{% endif %}">
+              <img src="{% if section.settings.sidebanner_img %}{{ section.settings.sidebanner_img | img_url: 'master' }}{% else %}https://dummyimage.com/500x700/f7f7f7/999999{% endif %}" alt="{{ section.settings.sidebanner_img.alt }}">
             </a>
           </div> 
            {% endif %}

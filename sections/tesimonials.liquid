@@ -16,7 +16,7 @@
                   </div>
                   <div class="testi-info">
                     <span class="quots-img">
-                      <img src="{% if block.settings.quots_img %}{{ block.settings.quots_img | img_url: 'master' }}{% else %}https://dummyimage.com/74x74/f7f7f7/999999{% endif %}">
+                      <img src="{% if block.settings.quots_img %}{{ block.settings.quots_img | img_url: 'master' }}{% else %}https://dummyimage.com/74x74/f7f7f7/999999{% endif %}" alt="{{ block.settings.quots_img.alt }}">
                     </span>
                     <div class="testi-author">
                       <h6>{{ block.settings.testi_authrname }}</h6>
