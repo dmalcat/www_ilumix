@@ -6,7 +6,7 @@
           <div class="ser-block">
             <a href="javascript:void(0)">
               {% if settings.truck_img %}
-              <img class="img-fluid" src="{{ settings.truck_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.truck_img.alt }}">
+              <img class="img-fluid" loading="lazy" src="{{ settings.truck_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.truck_img.alt }}">
               {% else %}
               <i class="{{ settings.truck_icon }}"></i>
               {% endif %}
@@ -25,7 +25,7 @@
           <div class="ser-block">
             <a href="javascript:void(0)">
               {% if settings.money_img %}
-              <img class="img-fluid" src="{{ settings.money_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.money_img.alt }}">
+              <img class="img-fluid" loading="lazy" src="{{ settings.money_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.money_img.alt }}">
               {% else %}
               <i class="{{ settings.money_icon }}"></i>
               {% endif %}
@@ -44,7 +44,7 @@
           <div class="ser-block">
             <a href="javascript:void(0)">
               {% if settings.support_img %}
-              <img class="img-fluid" src="{{ settings.support_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.support_img.alt }}">
+              <img class="img-fluid" loading="lazy" src="{{ settings.support_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.support_img.alt }}">
               {% else %}
               <i class="{{ settings.support_icon }}"></i>
               {% endif %}
@@ -63,7 +63,7 @@
           <div class="ser-block">
             <a href="javascript:void(0)">
               {% if settings.gift_img %}
-              <img class="img-fluid" src="{{ settings.gift_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.gift_img.alt }}">
+              <img class="img-fluid" loading="lazy" src="{{ settings.gift_img | img_url: '40x40', crop: 'center' }}" alt="{{ settings.gift_img.alt }}">
               {% else %}
               <i class="{{ settings.gift_icon }}"></i>
               {% endif %}

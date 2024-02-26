@@ -4,9 +4,9 @@
   <a class="link-title" href="javascript:void(0)">
     {% assign collection =  link.object %}
     {% if collection.image %}
-    <img class="img-fluid" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
+    <img class="img-fluid" loading="lazy" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
     {% else %}
-    <img class="img-fluid" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}" />
+    <img class="img-fluid" loading="lazy" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}" />
     {% endif %}
     <span class="sp-link-title">{{ link.title }}</span>
     <i class="fa fa-angle-right"></i>
@@ -14,9 +14,9 @@
   <a data-bs-toggle="collapse" href="#collapse-{{ link.title | handleize }}" class="link-title link-title-lg">
     {% assign collection =  link.object %}
     {% if collection.image %}
-    <img class="img-fluid" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
+    <img class="img-fluid" loading="lazy" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
     {% else %}
-    <img class="img-fluid" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}" />
+    <img class="img-fluid" loading="lazy" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}" />
     {% endif %}
     <span class="sp-link-title">{{ link.title }}</span>
     <i class="fa fa-angle-right"></i>
@@ -68,18 +68,18 @@
     <a href="{{ link.url }}" class="link-title">
       {% assign collection =  link.object %}
       {% if collection.image %}
-      <img class="img-fluid" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
+      <img class="img-fluid" loading="lazy" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
       {% else %}
-      <img class="img-fluid" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.title | escape }}" />
+      <img class="img-fluid" loading="lazy" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.title | escape }}" />
       {% endif %}
       <span class="sp-link-title">{{ link.title }}</span>
     </a>
     <a href="{{ link.url }}" class="link-title link-title-lg">
       {% assign collection =  link.object %}
       {% if collection.image %}
-      <img class="img-fluid" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
+      <img class="img-fluid" loading="lazy" src="{{ collection | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}"/>
       {% else %}
-      <img class="img-fluid" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}" />
+      <img class="img-fluid" loading="lazy" src="{{ collection.products.first | img_url: '28x28', crop: 'center' }}" alt="{{ collection.image.alt }}" />
       {% endif %}
       <span class="sp-link-title">{{ link.title }}</span>
     </a>

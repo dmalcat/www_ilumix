@@ -45,7 +45,7 @@
                                 <li class="item-info">
                                     <div class="item-img">
                                         <a href="{{ item.url }}">
-                                            <img class="img-fluid" src="{{ item | img_url: '100x120', crop: 'center' }}" alt="{{ item.title | escape }}" />
+                                            <img class="img-fluid" loading="lazy" src="{{ item | img_url: '100x120', crop: 'center' }}" alt="{{ item.title | escape }}" />
                                         </a>
                                     </div>
                                     <div class="item-title">
@@ -168,7 +168,7 @@
                             <div class="item-info-row">
                                 <div class="item-img">
                                     <a href="{{ item.url }}">
-                                        <img class="img-fluid" src="{{ item | img_url: '100x120', crop: 'center' }}" alt="{{ item.title | escape }}" />
+                                        <img class="img-fluid" loading="lazy" src="{{ item | img_url: '100x120', crop: 'center' }}" alt="{{ item.title | escape }}" />
                                     </a>
                                 </div>
                                 <div class="item-title">

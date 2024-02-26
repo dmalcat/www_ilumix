@@ -6,7 +6,26 @@
             <div class="swiper-slide">
                 <div class="slide-image{% if block.settings.slider_content_position == "right" %} slider-content-right{% else %} slider-content-left{% endif %}">
                     <div class="slide-image-cont">
-                        <img class="img-fluid" src="{% if block.settings.slider_bg_img %}{{ block.settings.slider_bg_img | img_url: 'master' }}{% else %}https://dummyimage.com/1920x1033/f7f7f7/999999{% endif %}" alt="{{ block.settings.slider_bg_img.alt }}">
+                        {%- liquid
+                            assign full_width = '100vw'
+                            assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                            assign image_class = 'img-fluid'
+                            assign sizes = full_width
+                            assign fetch_priority = 'auto'
+                            if section.index == 1
+                              assign fetch_priority = 'high'
+                            endif
+                        -%}
+                        {{
+                            block.settings.slider_bg_img
+                            | image_url: width: 3840
+                            | image_tag:
+                              width: block.settings.slider_bg_img.width,
+                              class: image_class,
+                              sizes: sizes,
+                              widths: widths,
+                              fetchpriority: fetch_priority
+                        }}
                         <div class="slider-text-info{% if block.settings.slider_text_position == "right" %} slider-text-right{% elsif block.settings.slider_text_position == "left" %} slider-text-left{% else %} slider-text-center{% endif %}">
                             {% if block.settings.slider_title != '' %}
                             <h2 style="color:{{ block.settings.slider_title_color }};">

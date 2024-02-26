@@ -16,7 +16,7 @@
               <div class="item wow animate__fadeIn">
                 <div class="store-text">
                   <div class="title-block">
-                    <img class="img-fluid" src="{% if block.settings.store_img %}{{ block.settings.store_img | img_url: 'master' }}{% else %}https://dummyimage.com/44x26/f7f7f7/999999{% endif %}" alt="{{ block.settings.store_img.alt }}">
+                    <img class="img-fluid" loading="lazy" src="{% if block.settings.store_img %}{{ block.settings.store_img | img_url: 'master' }}{% else %}https://dummyimage.com/44x26/f7f7f7/999999{% endif %}" alt="{{ block.settings.store_img.alt }}">
                     <h6 class="store-title"><span>{{ block.settings.store_title }}</span></h6>
                   </div>
                   <div class="store-address">

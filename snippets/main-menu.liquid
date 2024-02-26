@@ -43,7 +43,7 @@
     <div class="megamenu-buy">
       {%- assign product = section.settings.product_1 -%}
       <a href="{{ section.settings.product_1.url }}"><p class="megamenu-title">{{ section.settings.product_1.title }}</p>
-        <img class="img-fluid img1 megamenu-product" src="{{ product.featured_image.src | img_url : 'master' }}" alt="{{ product.featured_image.src.alt | escape  }}">
+        <img class="img-fluid img1 megamenu-product" loading="lazy" src="{{ product.featured_image.src | img_url : 'master' }}" alt="{{ product.featured_image.src.alt | escape  }}">
         <div class="megamenu-overlay"></div>
       </a>
     </div>
@@ -51,7 +51,7 @@
     <div class="megamenu-buy">
       {%- assign product = section.settings.product_2 -%}
       <a href="{{ section.settings.product_2.url }}"><p class="megamenu-title">{{ section.settings.product_2.title }}</p>
-        <img class="img-fluid img1 megamenu-product" src="{{ product.featured_image.src | img_url : 'master' }}" alt="{{ product.featured_image.src.alt | escape  }}">
+        <img class="img-fluid img1 megamenu-product" loading="lazy" src="{{ product.featured_image.src | img_url : 'master' }}" alt="{{ product.featured_image.src.alt | escape  }}">
         <div class="megamenu-overlay"></div>
       </a>
     </div>
@@ -59,7 +59,7 @@
     <div class="megamenu-buy">
       {%- assign product = section.settings.product_3 -%}
       <a href="{{ section.settings.product_3.url }}"><p class="megamenu-title">{{ section.settings.product_3.title }}</p>
-        <img class="img-fluid img1 megamenu-product" src="{{ product.featured_image.src | img_url : 'master' }}" alt="{{ product.featured_image.src.alt | escape  }}">
+        <img class="img-fluid img1 megamenu-product" loading="lazy" src="{{ product.featured_image.src | img_url : 'master' }}" alt="{{ product.featured_image.src.alt | escape  }}">
         <div class="megamenu-overlay"></div>
       </a>
     </div>

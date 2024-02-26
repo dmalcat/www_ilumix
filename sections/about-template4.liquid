@@ -7,7 +7,7 @@
       <div class="category-wrap">
         <div class="category-img-cont">
           <a href="{{ category_product.url }}" class="banner-hover cat-img">
-            <img class="img-fluid" src="{% if block.settings.collection_img %}{{ block.settings.collection_img | img_url: 'master' }}{% else %}https://dummyimage.com/620x557/f7f7f7/999999{% endif %}" alt="{{ block.settings.collection_img.alt }}">
+            <img class="img-fluid" loading="lazy" src="{% if block.settings.collection_img %}{{ block.settings.collection_img | img_url: 'master' }}{% else %}https://dummyimage.com/620x557/f7f7f7/999999{% endif %}" alt="{{ block.settings.collection_img.alt }}">
             <div class="explor-btn">
               <h6 class="cat-title"><span>{{ category_product.title }}</span></h6>
             </div>

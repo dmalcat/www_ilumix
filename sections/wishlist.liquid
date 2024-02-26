@@ -21,7 +21,7 @@
                 <li class="wishlist-info">
                   <div class="item-img">
                     <a href="{{ product.url }}">
-                      <img class="img-fluid" src="{{ product.featured_image | product_img_url: '120x120', crop: 'center' }}" alt="{{ product.title | escape }}" />
+                      <img class="img-fluid" loading="lazy" src="{{ product.featured_image | product_img_url: '120x120', crop: 'center' }}" alt="{{ product.title | escape }}" />
                     </a>
                   </div>
                   <div class="item-title">

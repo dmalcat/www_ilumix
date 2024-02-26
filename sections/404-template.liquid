@@ -9,9 +9,8 @@
           </h2>
           
           <div class="section-img">
-            <img class="img-fluid" src="{% if section.settings.section_img %}{{ section.settings.section_img | img_url: 'master' }}{% else %}https://dummyimage.com/660x350/f6f6f6/999{% endif %}" alt="{{ section.settings.section_img.alt }}"/>
+            <img class="img-fluid" loading="lazy" src="{% if section.settings.section_img %}{{ section.settings.section_img | img_url: 'master' }}{% else %}https://dummyimage.com/660x350/f6f6f6/999{% endif %}" alt="{{ section.settings.section_img.alt }}"/>
           </div>
-          
 
           <p>{{ section.settings.section_des }}</p>
           <div class="home-btn">
