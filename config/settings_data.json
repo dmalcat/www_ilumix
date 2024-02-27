@@ -2230,6 +2230,7 @@
             "type": "slide",
             "settings": {
               "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_BUICK.jpg",
+              "slider_bg_img_tablet": "shopify:\/\/shop_images\/360design_carousel_slide2_tablet.jpg",
               "slider_sub_title": "Cena",
               "slider_sub_title_bold": "2.580 Kč",
               "slider_sub_title_color": "#1d1d1d",
@@ -2248,6 +2249,7 @@
             "type": "slide",
             "settings": {
               "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_carambol_e1e1f6af-299c-4aed-9c9e-dd8d264a5d95.jpg",
+              "slider_bg_img_tablet": "shopify:\/\/shop_images\/360design_carousel_slide3_tablet.jpg",
               "slider_sub_title": "Cena",
               "slider_sub_title_bold": "od 3.950 Kč",
               "slider_sub_title_color": "#1d1d1d",
@@ -2266,6 +2268,7 @@
             "type": "slide",
             "settings": {
               "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_SUPERFICIE.jpg",
+              "slider_bg_img_tablet": "shopify:\/\/shop_images\/360design_carousel_slide4_tablet_6ddc4bbd-6503-41e8-a937-32293a151376.jpg",
               "slider_sub_title": "Cena:",
               "slider_sub_title_bold": "od 3.630 Kč",
               "slider_sub_title_color": "#252525",
@@ -2284,6 +2287,7 @@
             "type": "slide",
             "settings": {
               "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_BUCKET.jpg",
+              "slider_bg_img_tablet": "shopify:\/\/shop_images\/360design_carousel_slide5_tablet_be00b367-d597-4f94-b1bd-044ecd400f54.jpg",
               "slider_sub_title": "Cena:",
               "slider_sub_title_bold": "od 4.991 Kč",
               "slider_sub_title_color": "#252525",
@@ -2302,6 +2306,7 @@
             "type": "slide",
             "settings": {
               "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_DEA.jpg",
+              "slider_bg_img_tablet": "shopify:\/\/shop_images\/360design_carousel_slide6_tablet.jpg",
               "slider_sub_title": "Cena:",
               "slider_sub_title_bold": "5.445 Kč",
               "slider_sub_title_color": "#1d1d1d",
