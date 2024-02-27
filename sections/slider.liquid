@@ -411,7 +411,9 @@
     }
     @media(max-width: 767px){
         .slider-content .home-slider .slide-image .slider-text-info{
-            bottom: 75px;
+            top: 50%;
+            transform: translateY(-50%);
+            bottom: auto;
         }
         .slider-content .home-slider .slide-image .slider-text-info .badge-text{
             top:52%;
@@ -423,6 +425,49 @@
         
         .slider-content .home-slider .slide-image .slider-text-info .button-block .btn {
             margin-top: 25px;
+        }
+    }
+
+  @media(max-width: 600px) {
+        .slider-content .home-slider .slide-image .slider-text-info h2,
+        .slider-content .home-slider .slide-image .slider-text-info .slider-subheading {
+            font-size: 30px;
+        }
+
+        .slider-content .home-slider .slide-image img {
+            height: auto;
+            object-fit: initial;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .slider-content .home-slider .slide-image .slider-text-info h2 {
+            margin: 0 0 15px;
+        }
+
+        .slider-content .home-slider .slide-image .slider-text-info .button-block .btn {
+            margin-top: 20px;
+        }
+
+        .slider-content .home-slider .slide-image .btn-style8 {
+            font-size: 11px;
+            padding: 10px 25px;
+        }
+
+    }
+
+    @media screen and (max-width: 440px) {
+        .slider-content .home-slider .slide-image .slider-text-info h2,
+        .slider-content .home-slider .slide-image .slider-text-info .slider-subheading {
+            font-size: 22px;
+        }
+
+        .slider-content .home-slider .slide-image .slider-text-info span.sub-title {
+            font-size: 13px;
+        }
+
+        .slider-content .home-slider .slide-image .slider-text-info .button-block .btn {
+            margin-top: 15px;
         }
     }
 
@@ -499,6 +544,7 @@
             height: 40px;
         }
     }
+  
     @media (max-width: 767px){
         .home-slider .swiper-pagination{
             bottom: 15px;
@@ -509,6 +555,15 @@
             left: auto;
             right: 15px;
             {% endif %}
+        }
+    }
+
+  
+    @media (max-width: 440px) {
+        .home-slider .swiper-pagination span.swiper-pagination-bullet {
+            font-size: 11px;
+            width: 30px;
+            height: 30px;
         }
     }
 </style>
