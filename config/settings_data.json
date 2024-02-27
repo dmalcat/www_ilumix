@@ -2211,6 +2211,7 @@
             "type": "slide",
             "settings": {
               "slider_bg_img": "shopify:\/\/shop_images\/360design_eshop_carousel_leaf.jpg",
+              "slider_bg_img_tablet": "shopify:\/\/shop_images\/360design_carousel_slide1_tablet_54fdd1b9-c64d-4ef6-9894-7ab27496b1e0.jpg",
               "slider_sub_title": "Cena",
               "slider_sub_title_bold": "2.750 Kč",
               "slider_sub_title_color": "#1d1d1d",
