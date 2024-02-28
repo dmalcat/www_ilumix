@@ -764,7 +764,7 @@
             {% if customer %}
               <p><span>{{section.settings.visual_model }}</span> <a href="{{ product.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
             {% else %}
-              <p><span>{{section.settings.visual_model }}</span> <span>Pro stažení 3D modelu se <a href="https://360design.cz/account/login">přihlaste</a> nebo <a href="https://360design.cz/apps/wpdapp">zaregistrujte</a>.</span> </p>
+              <p><span>{{section.settings.visual_model }}</span> <span class="product-download__sign">Pro stažení 3D modelu se <a href="https://360design.cz/account/login">přihlaste</a> nebo <a href="https://360design.cz/apps/wpdapp">zaregistrujte</a>.</span> </p>
             {% endif %}
           {% endif %}
           {%- comment -%}
@@ -2744,6 +2744,15 @@ video.media-video{
 .product-download svg{
   height: 20px;
 }
+
+.product-download .product-download__sign {
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 400;
+  color:#000;
+  white-space: nowrap;
+}
+
 .product-infos .variant-sku{
     font-size: 16px;
     margin-left: 15px;
