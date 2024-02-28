@@ -750,21 +750,21 @@
 
         <div class="product-download">
           {% if product.metafields.my_fields.n_vod_k_mont_i.value.url %}
-            <p><span>{{section.settings.navod }}</span> <a href="{{ product.metafields.my_fields.n_vod_k_mont_i.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'pdf' %}</p>
+            <p><span class="product-download__label">{{section.settings.navod }}</span> <a href="{{ product.metafields.my_fields.n_vod_k_mont_i.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'pdf' %}</p>
           {% endif %}
           {% for variant in product.variants %}
               {% if variant.metafields.custom.n_vod_k_mont_i.value.url %}
-                  <p class="variant-file" style="display:none;" id="{{ variant.id }}"><span>{{section.settings.navod }}</span> <a href="{{ variant.metafields.custom.n_vod_k_mont_i.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+                  <p class="variant-file" style="display:none;" id="{{ variant.id }}"><span class="product-download__label">{{section.settings.navod }}</span> <a href="{{ variant.metafields.custom.n_vod_k_mont_i.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
               {% endif %}
           {% endfor %} 
           {% if product.metafields.my_fields.data_sheet.value.url %}
-            <p><span>{{section.settings.sheet }}</span> <a href="{{ product.metafields.my_fields.data_sheet.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+            <p><span class="product-download__label">{{section.settings.sheet }}</span> <a href="{{ product.metafields.my_fields.data_sheet.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
           {% endif %}
           {% if product.metafields.custom.visual_model.value.url %}
             {% if customer %}
-              <p><span>{{section.settings.visual_model }}</span> <a href="{{ product.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+              <p><span class="product-download__label">{{section.settings.visual_model }}</span> <a href="{{ product.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
             {% else %}
-              <p><span>{{section.settings.visual_model }}</span> <span class="product-download__sign">Pro stažení 3D modelu se <a href="https://360design.cz/account/login">přihlaste</a> nebo <a href="https://360design.cz/apps/wpdapp">zaregistrujte</a>.</span> </p>
+              <p><span class="product-download__label">{{section.settings.visual_model }}</span> <span class="product-download__sign">Pro stažení 3D modelu se <a href="https://360design.cz/account/login">přihlaste</a> nebo <a href="https://360design.cz/apps/wpdapp">zaregistrujte</a>.</span> </p>
             {% endif %}
           {% endif %}
           {%- comment -%}
