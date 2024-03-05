@@ -2500,12 +2500,6 @@
       "1658755145eb79d41e"
     ],
     "blocks": {
-      "6858403126979251294": {
-        "type": "shopify:\/\/apps\/eu-gdpr-cookies-notification\/blocks\/omega-cookies-notification\/13cba824-a338-452e-9b8e-c83046a79f21",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "6471712195879653093": {
         "type": "shopify:\/\/apps\/customer-accounts-concierge\/blocks\/social_logins\/3c495b68-652c-468d-a0ef-5bad6935d104",
         "disabled": false,
@@ -2578,6 +2572,12 @@
       "6406956604159796213": {
         "type": "shopify:\/\/apps\/smartseo\/blocks\/smartseo\/7b0a6064-ca2e-4392-9a1d-8c43c942357b",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "6858403126979251294": {
+        "type": "shopify:\/\/apps\/omega-cookie-banner\/blocks\/omega-cookies-notification\/13cba824-a338-452e-9b8e-c83046a79f21",
+        "disabled": true,
         "settings": {
         }
       }
