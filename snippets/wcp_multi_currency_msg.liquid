@@ -28,7 +28,7 @@
     {% endif %}
   {% endfor %}
 {% endif %}
-{% if is_wcp_wholesale_customer == true %}
+{% if is_wcp_wholesale_customer == true and shop.metafields.wpd.subscribed_plan != 'global' %}
   {% unless currencyCount == 1 %}
     {% unless shop.metafields.wcp_net.MultiCurrencyMsg == blank or shop.metafields.wcp_net.MultiCurrencyMsg == '' %}
       {% assign MultiCurrency_Msg = shop.metafields.wcp_net.MultiCurrencyMsg | replace: "[currency]", shop.currency %}
