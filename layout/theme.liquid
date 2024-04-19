@@ -38,6 +38,30 @@
 </script>
 <!-- Foxentry end -->
 
+<script>
+window.LeadhubData = {
+  {% if product %}
+  product: {{ product|json }},
+  {% endif %}
+  {% if customer %}
+  customer: {
+      accepts_marketing: {{ customer.accepts_marketing|json }},
+      addresses: {{ customer.addresses|json }},
+      default_address: {{ customer.default_address|json }},
+      email: {{ customer.email|json }},
+      first_name: {{ customer.first_name|json }},
+      last_name: {{ customer.last_name|json }},
+      name: {{ customer.name|json }},
+      order_count: {{ customer.order_count|json }},
+      has_account: {{ customer.has_account|json }},
+      id: {{ customer.id|json }}
+  },
+  {% endif %}
+  cart: {{ cart|json }}
+}
+</script>
+<script src="https://www.lhinsights.com/shopify-st.js?shop=EvvGFgi9QwWEaef" defer="defer"></script>
+    
   <!-- Facebook Pixel Code -->
   <script>
     function initializeFacebookPixel() {
