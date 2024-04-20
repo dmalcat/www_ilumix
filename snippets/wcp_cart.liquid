@@ -885,7 +885,7 @@ var fnCalled = false;
       var note='';
       var note_data={};
       if($(".net-notes").val() !=''){
-        note="\\r\\n\\r\\n Notes: "+ $(".net-notes").val();
+        note="Notes: "+ $(".net-notes").val();
         note_data['Notes']=$('.net-notes').val();
       }
       var wcp_required=false;
@@ -906,7 +906,7 @@ var fnCalled = false;
                
     	    }
           if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Billing_Email')){
-            note=note+ '\\r\\n\\r\\n Billing Email:  '+wcpbillingEmail.val();
+            note=note+ '\nBilling Email:  '+wcpbillingEmail.val();
             note_data['Billing_Email']=wcpbillingEmail.val();
           }
         }else{
@@ -929,7 +929,7 @@ var fnCalled = false;
       	  wcp_required=true;        
       }else{
         if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('delivery_date')){
-           note=note +'\\r\\n\\r\\n Delivery Date: '+datepicker.val();
+           note=note +'\nDelivery Date: '+datepicker.val();
            note_data['delivery_date']=datepicker.val();
         }
       }
@@ -946,7 +946,7 @@ var fnCalled = false;
          payment.css("border-color","red");
       }else{        
         if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Payment_Option')){
-          note=note +'\\r\\n\\r\\n Payment Option: '+payment.val();
+          note=note +'\nPayment Option: '+payment.val();
           note_data['Payment_Option']=payment.val();
         }
       }
@@ -960,7 +960,7 @@ var fnCalled = false;
         }
         if(wcpPONo.val()!=''){
           if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Purchase_Order_Number')){
-           note=note+ '\\r\\n\\r\\n Purchase Order Number: '+wcpPONo.val();
+           note=note+ '\nPurchase Order Number: '+wcpPONo.val();
            note_data['Purchase_Order_Number']=wcpPONo.val();
           }
         }
@@ -973,7 +973,7 @@ var fnCalled = false;
         }
         if(wcpUPSNo.val()!=''){
          if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('UPS_Shipping_Account_Number')){
-          note=note+ '\\r\\n\\r\\n UPS Shipping Account Number: '+wcpUPSNo.val();
+          note=note+ '\nUPS Shipping Account Number: '+wcpUPSNo.val();
           note_data['UPS_Shipping_Account_Number']=wcpUPSNo.val();
          }
         }
@@ -986,7 +986,7 @@ var fnCalled = false;
         }
         if(wcpShippingInst.val()!=''){
          if(window.wpdNetremoveAttributes == undefined || !window.wpdNetremoveAttributes.includes('Shipping_Instructions')){
-          note=note+ '\\r\\n\\r\\n Shipping Instructions:  '+wcpShippingInst.val();
+          note=note+ '\nShipping Instructions:  '+wcpShippingInst.val();
           note_data['Shipping_Instructions']=wcpShippingInst.val();
          }
         }
