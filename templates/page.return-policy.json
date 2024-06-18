@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "a239a5c8-921d-4c19-aaf4-8ac333e4f885": {
@@ -11,7 +20,9 @@
         "about_product_padding_bottom_xs": 40,
         "section_sub_title": "",
         "section_title": "Reklamační řád",
-        "section_arrow": ""
+        "section_arrow": "",
+        "section_button_text": "",
+        "section_button_link": ""
       }
     },
     "e645ce89-9b2d-430d-95af-c93690490997": {
@@ -31,7 +42,7 @@
         "section_padding_bottom_xs": 40,
         "return_refund_title": "Vzorové formuláře",
         "return_list1_title": "Vzorový formulář pro odstoupení od kupní smlouvy",
-        "return_list1_des1": "Oznámení o odstoupení od kupní smlouvy ze dne ………….…Adresát:Oznamuji\/Oznamujeme, že tímto odstupuji\/odstupujeme od kupní smlouvy ze dne ……………………………..Jméno a příjmení kupujícího\/kupujícíchAdresa kupujícího\/kupujících DatumPodpis kupujícího\/kupujících(pouze pokud je tento formulář zasílán v listinné podobě) ",
+        "return_list1_des1": "<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0619\/9528\/6737\/files\/odstoupeni_od_kupni_smlouvy_360designcz.pdf?v=1718713513\" target=\"_blank\">Vzorový formulář odstoupení od kupní smlouvy (PDF)<\/a>",
         "return_list1_des2": "",
         "return_list2_title": "Vzorový formulář pro reklamaci",
         "return_list2_des1": "Adresát:Uplatnění reklamaceDatum uzavření Kupní smlouvy:Jméno a příjmení:Adresa:E-mailová adresa:Předmět koupě, který je reklamován:Popis vad Předmětu koupě:Navrhovaný způsob pro vyřízení reklamace, případně uvedení čísla bankovního účtu pro poskytnutí slevy:Zároveň žádám o vystavení potvrzení o uplatnění reklamace s uvedením, kdy jsem toto právo uplatnil, co je obsahem reklamace spolu s mým nárokem včetně data a způsobu vyřízení reklamace.DatumPodpis",
