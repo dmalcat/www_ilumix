@@ -782,12 +782,17 @@
               <p class="variant-sheet" style="display:none;" id="{{ variant.id }}2"><span class="product-download__label">{{section.settings.sheet }}</span> <a href="{{ variant.metafields.custom.data_sheet.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
             {% endif %}
           {% endfor %}
-          {% for variant in product.variants %}
-            {% if variant.metafields.custom.visual_model.value.url %}
-              <p class="variant-visual-model" style="display:none;" id="{{ variant.id }}7"><span class="product-download__label">{{ section.settings.visual_model }}</span> <a href="{{ variant.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
-            {% endif %}
-            
-          {% endfor %}
+          
+          {% if customer %}
+            {% for variant in product.variants %}
+              {% if variant.metafields.custom.visual_model.value.url %}
+                <p class="variant-visual-model" style="display:none;" id="{{ variant.id }}7"><span class="product-download__label">{{ section.settings.visual_model }}</span> <a href="{{ variant.metafields.custom.visual_model.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
+              {% endif %}
+            {% endfor %}
+            {% else %}
+              <p><span class="product-download__label">{{section.settings.visual_model }}</span><span class="product-download__sign">Pro stažení 3D modelu se <a href="https://360design.cz/account/login?return_to={{ url }}/{{ product.handle }}">přihlaste</a> nebo <a href="https://360design.cz/apps/wpdapp">zaregistrujte</a>.</span> </p>
+          {% endif %}
+          
           {% for variant in product.variants %}
             {% if variant.metafields.custom.ldt_data.value.url %}
             <p class="variant-ldt" style="display:none;" id="{{ variant.id }}3"><span class="product-download__label">LDT data</span> <a href="{{ variant.metafields.custom.ldt_data.value.url }}" target="_blank">{{section.settings.download }}</a> {% include 'file' %}</p>
