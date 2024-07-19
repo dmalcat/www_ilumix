@@ -41,10 +41,11 @@
               {% else %}
                 {% unless current_product_count == true and forloop.last %}
                   {% if product.available %}
-
+                    {% unless product.title contains 'fee' or product.title contains 'Fee' %}
                     <div class="item wow animate__animated animate__fadeIn">
                       {% include 'product-grid-item' %}
                     </div>
+                    {% endunless %}
                   {% endif %}
                 {% endunless %}
               {% endif %}
