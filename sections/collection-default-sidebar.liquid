@@ -30,9 +30,11 @@
                   <div id="product-container" class="shop-product-wrap grid-4 collection">
                     <ul id="product-grid" data-id="{{ section.id }}" class="product-view">
                       {%- for product in collection.products -%}
-                      <li class="st-col-item">
-                        {% include 'product-grid-item' %}
-                      </li>
+                        {% unless product.title contains 'fee' or product.title contains 'Fee' %}
+                          <li class="st-col-item">
+                            {% include 'product-grid-item' %}
+                          </li>
+                        {% endunless %}
                       {%- endfor -%}
                     </ul>
                     <div class="paginatoin-area">
