@@ -784,7 +784,6 @@
           {% endfor %}
           
           
-            {% assign message_displayed = false %}
             {% for variant in product.variants %}
               {% if variant.metafields.custom.visual_model.value.url %}
                 {% if customer %}
@@ -794,13 +793,10 @@
                     {% include 'file' %}
                   </p>
                 {% else %}
-                  {% if message_displayed == false %}
-                    <p>
-                      <span class="product-download__label">{{ section.settings.visual_model }}</span>
-                      <span class="product-download__sign">Pro stažení 3D modelu se <a href="https://360design.cz/account/login?return_to={{ url }}/{{ product.handle }}">přihlaste</a> nebo <a href="https://360design.cz/apps/wpdapp">zaregistrujte</a>.</span>
-                    </p>
-                    {% assign message_displayed = true %}
-                  {% endif %}
+                  <p>
+                    <span class="product-download__label">{{ section.settings.visual_model }}</span>
+                    <span class="product-download__sign">Pro stažení 3D modelu se <a href="https://360design.cz/account/login?return_to={{ url }}/{{ product.handle }}">přihlaste</a> nebo <a href="https://360design.cz/apps/wpdapp">zaregistrujte</a>.</span>
+                  </p>
                 {% endif %}
               {% endif %}
             {% endfor %}
