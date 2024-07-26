@@ -242,7 +242,7 @@ reqJquery(function($){
               }
               setTimeout(function(){
                 wcpClearCart();
-                checkInvoiceAvailability(orderRedirectUrl,1);                    
+                window.location.href = orderRedirectUrl;
               },window.wpd_checkout_redirect_delay);
             } else {
               wcpClearCart();
@@ -268,7 +268,7 @@ reqJquery(function($){
           method: "GET",
           credentials: "same-origin",
       }).then((response) => {
-          if(response.status != 200 && tryCount < 15){
+          if(response.status != 200 && tryCount < 5){
               setTimeout(function(){tryCount++; checkInvoiceAvailability(url,tryCount)},1000);
           }else{
               draftAPIRequestProcessing = false;
@@ -584,7 +584,7 @@ var fnCalled = false;
    	  {% include 'wcp_vd_discount' with item %}
         window.wcp_data.wcp_cart.active_tags.push("{{p_discount_tag}}")
                                                   
-       {% unless p_discount_tag == blank  %}                                                        
+       {% if p_discount_tag != blank or v_discount_tag != blank %}                                                        
          if(!isWPDTagValueAvailableInArray(window.wcp_data.wcp_cart.ApplyDiscountDetails,"{{p_discount_tag}}","{{p_discount_value}}","{{v_discount_tag}}")){         
          window.wcp_data.wcp_cart.ApplyDiscountDetails.push({
             "value":"{% if v_discount_tag %}{{ wcp_v_price | divided_by: 100.0 }}{% else %}{{p_discount_value}}{% endif %}",
@@ -592,7 +592,7 @@ var fnCalled = false;
             "is_individual_price":"{% if v_discount_tag %}true{% else %}false{% endif %}",                        
          });       
        }
-      {% endunless %}
+      {% endif %}
       {% if set_price or wcp_discount_value < 1 or p_discount_value == 0 %}		
 
         {% if wcp_v_price > item.final_price %}

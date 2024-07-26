@@ -1245,7 +1245,8 @@
         } catch (e) {}
       }
       function wpdFormatAmount(amount){
-        return window.wpdMoneyFormat.replace("{% raw %}{{amount}}{% endraw %}",amount);
+        amount = (amount * parseFloat(window.Shopify.currency.rate)).toFixed(2);
+        return window.wpdMoneyFormat.replace(/({% raw %}{{{% endraw %}\s*amount\s*{% raw %}}}{% endraw %})/g,amount);        
       }
       document.getElementById("wpdShippingRates").addEventListener("change",wcpAddShippingToWcpData);
     {% endif %}

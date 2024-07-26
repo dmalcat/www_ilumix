@@ -22,7 +22,7 @@
 	  {% assign active_tags = active_tags | append: p_discount_tag %}	
 	  {% unless forloop.last %}{% assign active_tags = active_tags | append: ',' %}{% endunless %}
 	  {%- capture ApplyDiscountDetails  -%}{}{%- endcapture -%}
-	  {% unless p_discount_tag == blank  %}                                                        
+	  {% if p_discount_tag != blank or v_discount_tag != blank %}                                                     
 	  
 	  		
 			{%- capture ApplyDiscountDetails  -%}
@@ -34,7 +34,7 @@
 			{%- endcapture -%}
 
 	 
-	  {% endunless %}
+	  {% endif %}
 
 	{% assign ApplyDiscountDetailsObj = ApplyDiscountDetailsObj | append: ApplyDiscountDetails %}
  	{% unless forloop.last %}{% assign ApplyDiscountDetailsObj = ApplyDiscountDetailsObj | append: ',' %}{% endunless %}
