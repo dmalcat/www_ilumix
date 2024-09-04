@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "1ede04ae-144d-4693-8711-9ffa865623d7": {
@@ -9,9 +18,11 @@
         "about_product_padding_bottom_ipad": 60,
         "about_product_padding_top_xs": 40,
         "about_product_padding_bottom_xs": 40,
-        "section_sub_title": "Výrobce",
-        "section_title": "Představujeme výrobce",
-        "section_arrow": "Lorem ipsum dolor sit amet."
+        "section_sub_title": "Gibas",
+        "section_title": "Gibas",
+        "section_arrow": "Gibas",
+        "section_button_text": "",
+        "section_button_link": ""
       }
     },
     "02d05a5b-bf0c-45d8-8d6a-ad88beda70c0": {
@@ -92,7 +103,7 @@
         "product_col": "1",
         "slide_product_limit": "4",
         "featured_product_limit_handle": "50",
-        "pro_tab_bg_color": "#fff",
+        "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
         "view_all_button_url": ""
       }
