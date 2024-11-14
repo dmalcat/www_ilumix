@@ -47,6 +47,7 @@
 
 
                 {% assign productImage = product.featured_image | product_img_url: 'large' %}
+				{% assign wpdProductCollectionIds = product.collections | map:'id' %}
 
                 {
                     "WPDVdTable":{{ WPDVdTable | json }}
@@ -67,6 +68,9 @@
 					,"productDefaultVariantInventory" : "{{ product.selected_or_first_available_variant.inventory_quantity }}"
                     ,"productDefaultVariantInventoryManagement" : "{{ product.selected_or_first_available_variant.inventory_management }}"
                     ,"productDefaultVariantInventoryPolicy" : "{{ product.selected_or_first_available_variant.inventory_policy }}"
+					,"collectionIds": "{{ wpdProductCollectionIds | join:',' }}"
+					,"productDefaultVariantOriginalPrice": "{{product.selected_or_first_available_variant.price}}"
+                    ,"productDefaultVariantOriginalCompareAtPrice":"{{product.selected_or_first_available_variant.compare_at_price}}"
                 },         
                
             {% endfor %}

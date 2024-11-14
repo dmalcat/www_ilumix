@@ -29,6 +29,7 @@
     {% endunless %}          
 
     {% assign productImage = product.images[0] | product_img_url: 'master' %}
+    {% assign wpdProductCollectionIds = product.collections | map:'id' %}
 
     "WPDVdTable":{{ WPDVdTable | json }}
     ,"productId"  : "{{ product.id}}"
@@ -62,6 +63,7 @@
 	,"productDefaultVariantCompareAtRawPrice": "{{productDefaultVariantCompareAtRawPrice}}"
     ,"productDefaultVariantSku": "{{ product.selected_or_first_available_variant.sku }}"
 	,"wholeVdData": {{ wcp_vd_HTML_table_tmp | json }}
+    ,"collectionIds": "{{ wpdProductCollectionIds | join:',' }}"
     ,"productVariants":
         [
           {% for variant in product.variants %}
@@ -98,6 +100,8 @@
             ,"variantInventory" : "{{ variant.inventory_quantity }}"
             ,"variantInventoryManagement" : "{{ variant.inventory_management }}"
             ,"variantInventoryPolicy" : "{{ variant.inventory_policy }}"
+            ,"originalCompareAtPrice": "{{ variant.compare_at_price }}"
+            ,"originalPrice": "{{ variant.price }}"
           }
           {% unless forloop.last %},{% endunless %}
           {% endfor %}

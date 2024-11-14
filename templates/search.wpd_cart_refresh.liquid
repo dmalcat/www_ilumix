@@ -18,7 +18,8 @@
       {% include 'wcp_discount' with item.product , wpd_discount_variant:item.variant %}
       {% include 'wcp_variant' with item.variant %}
 
-	  
+	  {% assign CurrectCollectionIds = item.product.collections | map: 'id' %}
+
 	  {% assign active_tags = active_tags | append: p_discount_tag %}	
 	  {% unless forloop.last %}{% assign active_tags = active_tags | append: ',' %}{% endunless %}
 	  {%- capture ApplyDiscountDetails  -%}{}{%- endcapture -%}
@@ -73,8 +74,7 @@
 			"wcp_vd_price": {{wcp_v_price}},
           	"price": {{item.variant.price}},
           	"compare_at_price": {% if item.variant.compare_at_price == blank %} "null" {% else %} {{item.variant.compare_at_price}} {% endif %},
-          	"wcp_discount": "{{item.product.metafields.wcp_discount | json}}",
-			{% assign CurrectCollectionIds = item.product.collections | map: 'id' %}
+          	"wcp_discount": "{{item.product.metafields.wcp_discount | json}}",			
 			"currenctProductCollection":{{CurrectCollectionIds | json}},
 			"VDNextDiscountHtml" : {{ NextDiscountHtml | json }},
 			"lineItemPrice": {{ lineItemPrice | json }},
@@ -85,7 +85,8 @@
 			"image": {{ item.image | img_url: '300x' | json }},
         	"singlePrice": {{ singlePrice | json}},
           	"singleCompareAtPrice": {{ singleCompareAtPrice | json }},
-			"sku": {{ item.sku | json }}
+			"sku": {{ item.sku | json }},
+			"collectionIds": "{{ CurrectCollectionIds | join:',' }}"
         }
 	 {% unless forloop.last%},{%endunless%}
       {% else %}
@@ -119,7 +120,8 @@
 			"image": {{ item.image | img_url: '300x' | json }},
             "singlePrice": {{ singlePrice | json}},
           	"singleCompareAtPrice": {{ singleCompareAtPrice | json }},
-			"sku": {{ item.sku | json }}
+			"sku": {{ item.sku | json }},
+			"collectionIds": "{{ CurrectCollectionIds | join:',' }}"
         }
     	{% unless forloop.last%},{%endunless%}
      {% endif %}
