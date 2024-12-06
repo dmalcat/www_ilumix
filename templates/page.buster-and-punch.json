@@ -79,7 +79,7 @@
         "e07b4263-acef-4a98-bde4-beed977d24b1": {
           "type": "product_tab",
           "settings": {
-            "tab_product": "vendors-q-buster-20-26-20punch"
+            "tab_product": "buster-and-punch"
           }
         }
       },
@@ -100,7 +100,7 @@
         "featured_product_limit_handle": "50",
         "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
-        "view_all_button_url": "shopify://collections/vendors-q-buster-20-26-20punch"
+        "view_all_button_url": "shopify://collections/buster-and-punch"
       }
     }
   },
