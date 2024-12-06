@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1ede04ae-144d-4693-8711-9ffa865623d7": {
@@ -19,28 +28,23 @@
       "blocks": {
         "844fbcda-5350-4743-bb43-05c45e6ee7e0": {
           "type": "image_block",
-          "settings": {
-          }
+          "settings": {}
         },
         "7efcc47f-4004-4df1-b46b-f4d768dcb6ab": {
           "type": "image_block",
-          "settings": {
-          }
+          "settings": {}
         },
         "ac88f83e-958d-49c8-a792-1adb471e2aad": {
           "type": "image_block",
-          "settings": {
-          }
+          "settings": {}
         },
         "9b05b992-ab53-4810-b073-cf8d423d3739": {
           "type": "image_block",
-          "settings": {
-          }
+          "settings": {}
         },
         "ad40dfee-06d8-40d7-8a58-9677500c9f15": {
           "type": "image_block",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -50,8 +54,7 @@
         "9b05b992-ab53-4810-b073-cf8d423d3739",
         "ad40dfee-06d8-40d7-8a58-9677500c9f15"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "2c688341-bd13-483f-99ba-b7b67cbe3180": {
       "type": "documents",
@@ -59,17 +62,16 @@
         "f0e4c7f3-d68b-416c-bcfa-f15b94658928": {
           "type": "document_block",
           "settings": {
-            "document_thumbnail_img": "shopify:\/\/shop_images\/buster_brochure.jpg",
+            "document_thumbnail_img": "shopify://shop_images/buster_brochure.jpg",
             "document_name": "Buster nad Punch Brochure 2023",
-            "document_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0619\/9528\/6737\/files\/BP_Main_Brochure_EU_2022-23_Digital.pdf?v=1704789642"
+            "document_url": "https://cdn.shopify.com/s/files/1/0619/9528/6737/files/BP_Main_Brochure_EU_2022-23_Digital.pdf?v=1704789642"
           }
         }
       },
       "block_order": [
         "f0e4c7f3-d68b-416c-bcfa-f15b94658928"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "80819aca-63a4-4dbb-92b5-d4bd142c472e": {
       "type": "featured-product",
@@ -77,7 +79,7 @@
         "e07b4263-acef-4a98-bde4-beed977d24b1": {
           "type": "product_tab",
           "settings": {
-            "tab_product": "buster-punch"
+            "tab_product": "vendors-q-buster-20-26-20punch"
           }
         }
       },
@@ -98,7 +100,7 @@
         "featured_product_limit_handle": "50",
         "pro_tab_bg_color": "#ffffff",
         "view_all_button": "Všechny produkty výrobce",
-        "view_all_button_url": "shopify:\/\/collections\/buster-punch"
+        "view_all_button_url": "shopify://collections/vendors-q-buster-20-26-20punch"
       }
     }
   },
